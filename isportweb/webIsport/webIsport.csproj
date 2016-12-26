@@ -1,0 +1,486 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D50F54BD-5BF8-46D5-A795-D2FD28124D57}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>webIsport</RootNamespace>
+    <AssemblyName>webIsport</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MobileLibrary, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\isport\isport\bin\MobileLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="WebLibrary, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\isport\isport\bin\WebLibrary.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="assets\css\docs.css" />
+    <Content Include="assets\css\pygments-manni.css" />
+    <Content Include="assets\ico\apple-touch-icon-114-precomposed.png" />
+    <Content Include="assets\ico\apple-touch-icon-144-precomposed.png" />
+    <Content Include="assets\ico\apple-touch-icon-57-precomposed.png" />
+    <Content Include="assets\ico\apple-touch-icon-72-precomposed.png" />
+    <Content Include="assets\ico\favicon.png" />
+    <Content Include="assets\js\application.js" />
+    <Content Include="assets\js\customizer.js" />
+    <Content Include="assets\js\filesaver.js" />
+    <Content Include="assets\js\holder.js" />
+    <Content Include="assets\js\html5shiv.js" />
+    <Content Include="assets\js\jquery.js" />
+    <Content Include="assets\js\jszip.js" />
+    <Content Include="assets\js\less.js" />
+    <Content Include="assets\js\raw-files.js" />
+    <Content Include="assets\js\respond.min.js" />
+    <Content Include="assets\js\uglify.js" />
+    <Content Include="bin\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="bin\isport_service.dll" />
+    <Content Include="bin\isport_service.pdb" />
+    <Content Include="bin\isport_service.XmlSerializers.dll" />
+    <Content Include="bin\Microsoft.ApplicationBlocks.Data.dll" />
+    <Content Include="bin\MobileLibrary.dll" />
+    <Content Include="bin\MobileLibrary.pdb" />
+    <Content Include="bin\OracleDataAccress.dll" />
+    <Content Include="bin\OracleDataAccress.pdb" />
+    <Content Include="bin\webIsport.dll" />
+    <Content Include="bin\webIsport.pdb" />
+    <Content Include="bin\WebLibrary.dll" />
+    <Content Include="bin\WebLibrary.pdb" />
+    <Content Include="carousel.css" />
+    <Content Include="check.aspx" />
+    <Content Include="detail.aspx" />
+    <Content Include="dist\css\customCSS.css" />
+    <Content Include="images\amazon.png" />
+    <Content Include="images\android.png" />
+    <Content Include="images\apple.png" />
+    <Content Include="images\home_88.png" />
+    <Content Include="images\ic_program.png" />
+    <Content Include="images\logo-isport.png" />
+    <Content Include="images\news-icon.png" />
+    <Content Include="images\overlay2.png" />
+    <Content Include="images\pr.png" />
+    <Content Include="images\promo2_big.png" />
+    <Content Include="msdn.aspx" />
+    <Content Include="pr.aspx" />
+    <Content Include="pr.html" />
+    <Content Include="dist\css\bootstrap-theme.css" />
+    <Content Include="dist\css\bootstrap-theme.min.css" />
+    <Content Include="dist\css\bootstrap.css" />
+    <Content Include="dist\css\bootstrap.min.css" />
+    <Content Include="dist\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="dist\js\bootstrap.js" />
+    <Content Include="dist\js\bootstrap.min.js" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\promo1_big.jpg" />
+    <Content Include="images\promo2.gif" />
+    <Content Include="images\banner4.gif" />
+    <Content Include="images\banner1.gif" />
+    <Content Include="images\banner2.gif" />
+    <Content Include="images\bg.jpg" />
+    <Content Include="images\promo1.gif" />
+    <Content Include="images\download.png" />
+    <Content Include="images\logo_isport.png" />
+    <Content Include="images\promo3.jpg" />
+    <Content Include="images\promo3_big.jpg" />
+    <Content Include="images\social.png" />
+    <Content Include="images\starsoccer.png" />
+    <Content Include="index.html" />
+    <Content Include="js\affix.js" />
+    <Content Include="js\alert.js" />
+    <Content Include="js\button.js" />
+    <Content Include="js\carousel.js" />
+    <Content Include="js\collapse.js" />
+    <Content Include="js\dropdown.js" />
+    <Content Include="js\modal.js" />
+    <Content Include="js\popover.js" />
+    <Content Include="js\scrollspy.js" />
+    <Content Include="js\tab.js" />
+    <Content Include="js\tests\index.html" />
+    <Content Include="js\tests\phantom.js" />
+    <Content Include="js\tests\server.js" />
+    <Content Include="js\tests\unit\affix.js" />
+    <Content Include="js\tests\unit\alert.js" />
+    <Content Include="js\tests\unit\button.js" />
+    <Content Include="js\tests\unit\carousel.js" />
+    <Content Include="js\tests\unit\collapse.js" />
+    <Content Include="js\tests\unit\dropdown.js" />
+    <Content Include="js\tests\unit\modal.js" />
+    <Content Include="js\tests\unit\phantom.js" />
+    <Content Include="js\tests\unit\popover.js" />
+    <Content Include="js\tests\unit\scrollspy.js" />
+    <Content Include="js\tests\unit\tab.js" />
+    <Content Include="js\tests\unit\tooltip.js" />
+    <Content Include="js\tests\unit\transition.js" />
+    <Content Include="js\tests\vendor\jquery.js" />
+    <Content Include="js\tests\vendor\qunit.css" />
+    <Content Include="js\tests\vendor\qunit.js" />
+    <Content Include="js\tooltip.js" />
+    <Content Include="js\transition.js" />
+    <Content Include="logo.ico" />
+    <Content Include="images\banner3.gif" />
+    <Content Include="navbar-fixed-top.css" />
+    <Content Include="sub.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="www1\css\backg.css" />
+    <Content Include="www1\css\bootstrap.css" />
+    <Content Include="www1\css\bootstrap.min.css" />
+    <Content Include="www1\css\component.css" />
+    <Content Include="www1\css\custom.css" />
+    <Content Include="www1\css\discus.css" />
+    <Content Include="www1\css\font-awesome.css" />
+    <Content Include="www1\css\navv.css" />
+    <Content Include="www1\css\scroll.css" />
+    <Content Include="www1\css\slider.css" />
+    <Content Include="www1\css\work.css" />
+    <Content Include="www1\fonts\bpicons\bpicons.svg" />
+    <Content Include="www1\fonts\bpicons\license.txt" />
+    <Content Include="www1\fonts\fontawesome-webfont.svg" />
+    <Content Include="www1\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="www1\fonts\mdicons\license.txt" />
+    <Content Include="www1\fonts\mdicons\md-icons.dev.svg" />
+    <Content Include="www1\fonts\mdicons\md-icons.svg" />
+    <Content Include="www1\images\1.png" />
+    <Content Include="www1\images\2.png" />
+    <Content Include="www1\images\3.png" />
+    <Content Include="www1\images\4.png" />
+    <Content Include="www1\images\5.png" />
+    <Content Include="www1\images\6.png" />
+    <Content Include="www1\images\amazon.png" />
+    <Content Include="www1\images\android.png" />
+    <Content Include="www1\images\apple.png" />
+    <Content Include="www1\images\bg.jpg" />
+    <Content Include="www1\images\bg2.jpg" />
+    <Content Include="www1\images\bg3.jpg" />
+    <Content Include="www1\images\overlay.png" />
+    <Content Include="www1\images\overlay2.png" />
+    <Content Include="www1\images\overlay3.png" />
+    <Content Include="www1\images\overlay4.png" />
+    <Content Include="images\promo2_big.gif" />
+    <Content Include="www1\images\site2.gif" />
+    <Content Include="www1\images\site22.jpg" />
+    <Content Include="www1\images\site3.jpg" />
+    <Content Include="www1\images\site4.jpg" />
+    <Content Include="www1\images\src2.png" />
+    <Content Include="www1\images\src7.png" />
+    <Content Include="www1\images\src9.png" />
+    <Content Include="www1\images\tm.jpg" />
+    <Content Include="www1\images\tm1.jpg" />
+    <Content Include="www1\images\tm2.jpg" />
+    <Content Include="www1\images\tm3.jpg" />
+    <Content Include="www1\images\tm4.jpg" />
+    <Content Include="www1\images\tm5.jpg" />
+    <Content Include="www1\images\tm6.jpg" />
+    <Content Include="www1\images\windows.png" />
+    <Content Include="www1\images\wp.png" />
+    <Content Include="www1\index.html" />
+    <Content Include="www1\js\backg.js" />
+    <Content Include="www1\js\backg.min.js" />
+    <Content Include="www1\js\bootstrap.js" />
+    <Content Include="www1\js\bootstrap.min.js" />
+    <Content Include="www1\js\cbpScroller.js" />
+    <Content Include="www1\js\classie.js" />
+    <Content Include="www1\js\img-hover.js" />
+    <Content Include="www1\js\jquery.backg.min.js" />
+    <Content Include="www1\js\jquery.js" />
+    <Content Include="www1\js\modernizr.custom.js" />
+    <Content Include="www1\js\modernizr.custom2.js" />
+    <Content Include="www1\js\morphingdevice.js" />
+    <Content Include="www1\js\sl-cbpFixedScrollLayout.min.js" />
+    <Content Include="www1\js\sl-jquery.debouncedresize.js" />
+    <Content Include="www1\js\sl-jquery.easing.min.js" />
+    <Content Include="www1\js\sl-waypoints.min.js" />
+    <Content Include="www1\js\toucheffects.js" />
+    <Content Include="www1\js\work-jquery.hoverdir.js" />
+    <Content Include="www\assets_v\css\bootstrap.css" />
+    <Content Include="www\assets_v\css\custom.css" />
+    <Content Include="www\assets_v\css\font-awesome.css" />
+    <Content Include="www\assets_v\css\prettyPhoto.css" />
+    <Content Include="www\assets_v\fonts\fontawesome-webfont.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="www\assets_v\fonts\glyphicons-halflings-regular.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="www\assets_v\img\contact.jpg" />
+    <Content Include="www\assets_v\img\portfolio\a.jpg" />
+    <Content Include="www\assets_v\img\portfolio\b.jpg" />
+    <Content Include="www\assets_v\img\portfolio\c.jpg" />
+    <Content Include="www\assets_v\img\prettyPhoto\dark_rounded\btnNext.png" />
+    <Content Include="www\assets_v\img\prettyPhoto\dark_rounded\btnPrevious.png" />
+    <Content Include="www\assets_v\img\prettyPhoto\dark_rounded\contentPattern.png" />
+    <Content Include="www\assets_v\img\prettyPhoto\dark_rounded\default_thumbnail.gif" />
+    <Content Include="www\assets_v\img\prettyPhoto\dark_rounded\loader.gif" />
+    <Content Include="www\assets_v\img\prettyPhoto\dark_rounded\sprite.png" />
+    <Content Include="www\assets_v\img\prettyPhoto\dark_square\btnNext.png" />
+    <Content Include="www\assets_v\img\prettyPhoto\dark_square\btnPrevious.png" />
+    <Content Include="www\assets_v\img\prettyPhoto\dark_square\contentPattern.png" />
+    <Content Include="www\assets_v\img\prettyPhoto\dark_square\default_thumbnail.gif" />
+    <Content Include="www\assets_v\img\prettyPhoto\dark_square\loader.gif" />
+    <Content Include="www\assets_v\img\prettyPhoto\dark_square\sprite.png" />
+    <Content Include="www\assets_v\img\prettyPhoto\default\default_thumb.png" />
+    <Content Include="www\assets_v\img\prettyPhoto\default\loader.gif" />
+    <Content Include="www\assets_v\img\prettyPhoto\default\sprite.png" />
+    <Content Include="www\assets_v\img\prettyPhoto\default\sprite_next.png" />
+    <Content Include="www\assets_v\img\prettyPhoto\default\sprite_prev.png" />
+    <Content Include="www\assets_v\img\prettyPhoto\default\sprite_x.png" />
+    <Content Include="www\assets_v\img\prettyPhoto\default\sprite_y.png" />
+    <Content Include="www\assets_v\img\prettyPhoto\facebook\btnNext.png" />
+    <Content Include="www\assets_v\img\prettyPhoto\facebook\btnPrevious.png" />
+    <Content Include="www\assets_v\img\prettyPhoto\facebook\contentPatternBottom.png" />
+    <Content Include="www\assets_v\img\prettyPhoto\facebook\contentPatternLeft.png" />
+    <Content Include="www\assets_v\img\prettyPhoto\facebook\contentPatternRight.png" />
+    <Content Include="www\assets_v\img\prettyPhoto\facebook\contentPatternTop.png" />
+    <Content Include="www\assets_v\img\prettyPhoto\facebook\default_thumbnail.gif" />
+    <Content Include="www\assets_v\img\prettyPhoto\facebook\loader.gif" />
+    <Content Include="www\assets_v\img\prettyPhoto\facebook\sprite.png" />
+    <Content Include="www\assets_v\img\prettyPhoto\light_rounded\btnNext.png" />
+    <Content Include="www\assets_v\img\prettyPhoto\light_rounded\btnPrevious.png" />
+    <Content Include="www\assets_v\img\prettyPhoto\light_rounded\default_thumbnail.gif" />
+    <Content Include="www\assets_v\img\prettyPhoto\light_rounded\loader.gif" />
+    <Content Include="www\assets_v\img\prettyPhoto\light_rounded\sprite.png" />
+    <Content Include="www\assets_v\img\prettyPhoto\light_square\btnNext.png" />
+    <Content Include="www\assets_v\img\prettyPhoto\light_square\btnPrevious.png" />
+    <Content Include="www\assets_v\img\prettyPhoto\light_square\default_thumbnail.gif" />
+    <Content Include="www\assets_v\img\prettyPhoto\light_square\loader.gif" />
+    <Content Include="www\assets_v\img\prettyPhoto\light_square\sprite.png" />
+    <Content Include="www\assets_v\img\vijaya.png" />
+    <Content Include="www\assets_v\js\bootstrap.js" />
+    <Content Include="www\assets_v\js\custom.js" />
+    <Content Include="www\assets_v\js\jquery-1.11.1.js" />
+    <Content Include="www\assets_v\js\jquery.easing.min.js" />
+    <Content Include="www\assets_v\js\jquery.mb.YTPlayer.js" />
+    <Content Include="www\assets_v\js\jquery.mixitup.min.js" />
+    <Content Include="www\assets_v\js\jquery.nicescroll.min.js" />
+    <Content Include="www\assets_v\js\jquery.prettyPhoto.js" />
+    <Content Include="www\css\bootstrap.min.css" />
+    <Content Include="www\css\styles.css" />
+    <Content Include="www\images\service1.gif" />
+    <Content Include="www\images\service2.png" />
+    <Content Include="www\images\service3.gif" />
+    <Content Include="www\index.html" />
+    <Content Include="www\js\bootstrap.min.js" />
+    <Content Include="www\js\scripts.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Data\AppMain.cs" />
+    <Compile Include="check.aspx.cs">
+      <DependentUpon>check.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="check.aspx.designer.cs">
+      <DependentUpon>check.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="detail.aspx.cs">
+      <DependentUpon>detail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="detail.aspx.designer.cs">
+      <DependentUpon>detail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="master_isport.Master.cs">
+      <DependentUpon>master_isport.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="master_isport.Master.designer.cs">
+      <DependentUpon>master_isport.Master</DependentUpon>
+    </Compile>
+    <Compile Include="master_isport_sub.Master.cs">
+      <DependentUpon>master_isport_sub.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="master_isport_sub.Master.designer.cs">
+      <DependentUpon>master_isport_sub.Master</DependentUpon>
+    </Compile>
+    <Compile Include="msdn.aspx.cs">
+      <DependentUpon>msdn.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="msdn.aspx.designer.cs">
+      <DependentUpon>msdn.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pr.aspx.cs">
+      <DependentUpon>pr.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pr.aspx.designer.cs">
+      <DependentUpon>pr.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="sub.aspx.cs">
+      <DependentUpon>sub.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sub.aspx.designer.cs">
+      <DependentUpon>sub.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="bin\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="bin\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="bin\webIsport.dll.config" />
+    <None Include="dist\fonts\glyphicons-halflings-regular.eot" />
+    <None Include="dist\fonts\glyphicons-halflings-regular.ttf" />
+    <None Include="dist\fonts\glyphicons-halflings-regular.woff" />
+    <None Include="fonts\glyphicons-halflings-regular.eot">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="fonts\glyphicons-halflings-regular.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="fonts\glyphicons-halflings-regular.woff">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="js\.jshintrc" />
+    <Content Include="master_isport.Master" />
+    <Content Include="master_isport_sub.Master" />
+    <None Include="Properties\PublishProfiles\Profile1.pubxml" />
+    <None Include="www1\css\custom.css.bak" />
+    <None Include="www1\fonts\bpicons\bpicons.eot" />
+    <None Include="www1\fonts\bpicons\bpicons.ttf" />
+    <None Include="www1\fonts\bpicons\bpicons.woff" />
+    <None Include="www1\fonts\fontawesome-webfont.eot" />
+    <None Include="www1\fonts\fontawesome-webfont.ttf" />
+    <None Include="www1\fonts\fontawesome-webfont.woff" />
+    <None Include="www1\fonts\FontAwesome.otf" />
+    <None Include="www1\fonts\glyphicons-halflings-regular.eot" />
+    <None Include="www1\fonts\glyphicons-halflings-regular.ttf" />
+    <None Include="www1\fonts\glyphicons-halflings-regular.woff" />
+    <None Include="www1\fonts\mdicons\md-icons.eot" />
+    <None Include="www1\fonts\mdicons\md-icons.ttf" />
+    <None Include="www1\fonts\mdicons\md-icons.woff" />
+    <None Include="www\assets_v\fonts\fontawesome-webfont.eot">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="www\assets_v\fonts\fontawesome-webfont.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="www\assets_v\fonts\fontawesome-webfont.woff">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="www\assets_v\fonts\FontAwesome.otf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="www\assets_v\fonts\glyphicons-halflings-regular.eot">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="www\assets_v\fonts\glyphicons-halflings-regular.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="www\assets_v\fonts\glyphicons-halflings-regular.woff">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="error\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\isport_service\isport_service.csproj">
+      <Project>{291E8F03-00D0-4A4F-8F96-C12FDC524233}</Project>
+      <Name>isport_service</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\OracleDataAccress\OracleDataAccress.csproj">
+      <Project>{32393693-8B5F-4D5B-A7AB-42CB574AD1E4}</Project>
+      <Name>OracleDataAccress</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>32814</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

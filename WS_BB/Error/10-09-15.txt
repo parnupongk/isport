@@ -1,0 +1,35 @@
+
+Log Entry : 
+10/09/2015 18:05:04
+ IP :  ::1 
+Error in: http://localhost:4358/imobilegame.aspx. Error Message:Logs_Insert >> ORA-12154: TNS:äÁèÊÒÁÒÃ¶á»Å¤èÒµÑÇÃÐºØ¡ÒÃàª×èÍÁµèÍ·ÕèÃÐºØ
+imei:imsi:phone_nomodel:opt_code:logsIP:::1
+__________________________
+
+Log Entry : 
+10/09/2015 18:05:16
+ IP :  ::1 
+Error in: http://localhost:4358/imobilegame.aspx?imei=12345&imsi=12345. Error Message:Logs_Insert >> ORA-12154: TNS:äÁèÊÒÁÒÃ¶á»Å¤èÒµÑÇÃÐºØ¡ÒÃàª×èÍÁµèÍ·ÕèÃÐºØ
+imei:12345imsi:12345phone_nomodel:opt_code:logsIP:::1
+__________________________
+
+Log Entry : 
+10/09/2015 18:05:35
+ IP :  ::1 
+Error in: http://localhost:4358/imobilegame.aspx?imei=12345&imsi=12345&ap=isoccer&pn=. Error Message:Logs_Insert >> ORA-12154: TNS:äÁèÊÒÁÒÃ¶á»Å¤èÒµÑÇÃÐºØ¡ÒÃàª×èÍÁµèÍ·ÕèÃÐºØ
+imei:12345imsi:12345phone_nomodel:opt_code:logsIP:::1
+__________________________
+
+Log Entry : 
+10/09/2015 18:05:54
+ IP :  ::1 
+Error in: http://localhost:4358/imobilegame.aspx?imei=12345&imsi=12345&ap=isoccer&pn=. Error Message:Logs_Insert >> ORA-12154: TNS:äÁèÊÒÁÒÃ¶á»Å¤èÒµÑÇÃÐºØ¡ÒÃàª×èÍÁµèÍ·ÕèÃÐºØ
+imei:12345imsi:12345phone_nomodel:opt_code:logsIP:::1
+__________________________
+
+Log Entry : 
+10/09/2015 18:07:06
+ IP :  ::1 
+Error in: http://localhost:4358/imobilegame.aspx?imei=12345&imsi=12345&ap=iSoccer&pn=. Error Message:Main >>ORA-12154: TNS:äÁèÊÒÁÒÃ¶á»Å¤èÒµÑÇÃÐºØ¡ÒÃàª×èÍÁµèÍ·ÕèÃÐºØ
+
+__________________________

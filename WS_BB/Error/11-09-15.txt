@@ -1,0 +1,218 @@
+
+Log Entry : 
+11/09/2015 10:12:54
+ IP :  ::1 
+Error in: http://localhost:4358/imobilegame.aspx. Error Message:Logs_Insert >> OCIEnvCreate failed with return code -1 but error message text was not available.imei:imsi:phone_nomodel:opt_code:logsIP:::1
+__________________________
+
+Log Entry : 
+11/09/2015 10:12:58
+ IP :  ::1 
+Error in: http://localhost:4358/imobilegame.aspx?ap=iSoccer&pn=Main&imei=123456&imsi=123456&model=imobile&sporttype=00001&date=20150915&contentgroupid=21. Error Message:Main Main>>iSoccer Get Program>>OCIEnvCreate failed with return code -1 but error message text was not available.
+__________________________
+
+Log Entry : 
+11/09/2015 10:14:16
+ IP :  ::1 
+Error in: http://localhost:4358/imobilegame.aspx?ap=iSoccer&pn=Main&imei=123456&imsi=123456&model=imobile&sporttype=00001&date=20150915&contentgroupid=21. Error Message:Main Main>>iSoccer Get Program>>OCIEnvCreate failed with return code -1 but error message text was not available.
+__________________________
+
+Log Entry : 
+11/09/2015 10:14:19
+ IP :  ::1 
+Error in: http://localhost:4358/imobilegame.aspx?ap=iSoccer&pn=Main&imei=123456&imsi=123456&model=imobile&sporttype=00001&date=20150915&contentgroupid=21. Error Message:Main Main>>iSoccer Get Program>>OCIEnvCreate failed with return code -1 but error message text was not available.
+__________________________
+
+Log Entry : 
+11/09/2015 10:14:19
+ IP :  ::1 
+Error in: http://localhost:4358/imobilegame.aspx?ap=iSoccer&pn=Main&imei=123456&imsi=123456&model=imobile&sporttype=00001&date=20150915&contentgroupid=21. Error Message:Main Main>>iSoccer Get Program>>OCIEnvCreate failed with return code -1 but error message text was not available.
+__________________________
+
+Log Entry : 
+11/09/2015 10:14:20
+ IP :  ::1 
+Error in: http://localhost:4358/imobilegame.aspx?ap=iSoccer&pn=Main&imei=123456&imsi=123456&model=imobile&sporttype=00001&date=20150915&contentgroupid=21. Error Message:Main Main>>iSoccer Get Program>>OCIEnvCreate failed with return code -1 but error message text was not available.
+__________________________
+
+Log Entry : 
+11/09/2015 10:14:21
+ IP :  ::1 
+Error in: http://localhost:4358/imobilegame.aspx?ap=iSoccer&pn=Main&imei=123456&imsi=123456&model=imobile&sporttype=00001&date=20150915&contentgroupid=21. Error Message:Main Main>>iSoccer Get Program>>OCIEnvCreate failed with return code -1 but error message text was not available.
+__________________________
+
+Log Entry : 
+11/09/2015 10:14:21
+ IP :  ::1 
+Error in: http://localhost:4358/imobilegame.aspx?ap=iSoccer&pn=Main&imei=123456&imsi=123456&model=imobile&sporttype=00001&date=20150915&contentgroupid=21. Error Message:Main Main>>iSoccer Get Program>>OCIEnvCreate failed with return code -1 but error message text was not available.
+__________________________
+
+Log Entry : 
+11/09/2015 10:14:21
+ IP :  ::1 
+Error in: http://localhost:4358/imobilegame.aspx?ap=iSoccer&pn=Main&imei=123456&imsi=123456&model=imobile&sporttype=00001&date=20150915&contentgroupid=21. Error Message:Main Main>>iSoccer Get Program>>OCIEnvCreate failed with return code -1 but error message text was not available.
+__________________________
+
+Log Entry : 
+11/09/2015 10:14:22
+ IP :  ::1 
+Error in: http://localhost:4358/imobilegame.aspx?ap=iSoccer&pn=Main&imei=123456&imsi=123456&model=imobile&sporttype=00001&date=20150915&contentgroupid=21. Error Message:Main Main>>iSoccer Get Program>>OCIEnvCreate failed with return code -1 but error message text was not available.
+__________________________
+
+Log Entry : 
+11/09/2015 10:14:22
+ IP :  ::1 
+Error in: http://localhost:4358/imobilegame.aspx?ap=iSoccer&pn=Main&imei=123456&imsi=123456&model=imobile&sporttype=00001&date=20150915&contentgroupid=21. Error Message:Main Main>>iSoccer Get Program>>OCIEnvCreate failed with return code -1 but error message text was not available.
+__________________________
+
+Log Entry : 
+11/09/2015 10:14:22
+ IP :  ::1 
+Error in: http://localhost:4358/imobilegame.aspx?ap=iSoccer&pn=Main&imei=123456&imsi=123456&model=imobile&sporttype=00001&date=20150915&contentgroupid=21. Error Message:Main Main>>iSoccer Get Program>>OCIEnvCreate failed with return code -1 but error message text was not available.
+__________________________
+
+Log Entry : 
+11/09/2015 10:14:22
+ IP :  ::1 
+Error in: http://localhost:4358/imobilegame.aspx?ap=iSoccer&pn=Main&imei=123456&imsi=123456&model=imobile&sporttype=00001&date=20150915&contentgroupid=21. Error Message:Main Main>>iSoccer Get Program>>OCIEnvCreate failed with return code -1 but error message text was not available.
+__________________________
+
+Log Entry : 
+11/09/2015 10:14:23
+ IP :  ::1 
+Error in: http://localhost:4358/imobilegame.aspx?ap=iSoccer&pn=Main&imei=123456&imsi=123456&model=imobile&sporttype=00001&date=20150915&contentgroupid=21. Error Message:Main Main>>iSoccer Get Program>>OCIEnvCreate failed with return code -1 but error message text was not available.
+__________________________
+
+Log Entry : 
+11/09/2015 10:14:23
+ IP :  ::1 
+Error in: http://localhost:4358/imobilegame.aspx?ap=iSoccer&pn=Main&imei=123456&imsi=123456&model=imobile&sporttype=00001&date=20150915&contentgroupid=21. Error Message:Main Main>>iSoccer Get Program>>OCIEnvCreate failed with return code -1 but error message text was not available.
+__________________________
+
+Log Entry : 
+11/09/2015 10:14:43
+ IP :  ::1 
+Error in: http://localhost:4358/imobilegame.aspx. Error Message:Logs_Insert >> OCIEnvCreate failed with return code -1 but error message text was not available.imei:imsi:phone_nomodel:opt_code:logsIP:::1
+__________________________
+
+Log Entry : 
+11/09/2015 10:15:19
+ IP :  ::1 
+Error in: http://localhost:4358/imobilegame.aspx?ap=iSoccer&pn=Main&imei=123456&imsi=123456&model=imobile&sporttype=00001&date=20150915&contentgroupid=21. Error Message:Main Main>>iSoccer Get Program>>OCIEnvCreate failed with return code -1 but error message text was not available.
+__________________________
+
+Log Entry : 
+11/09/2015 10:15:35
+ IP :  ::1 
+Error in: http://localhost:4358/imobilegame.aspx?ap=iSoccer&pn=Main&imei=123456&imsi=123456&model=imobile&sporttype=00001&date=20150915&contentgroupid=21. Error Message:Logs_Insert >> OCIEnvCreate failed with return code -1 but error message text was not available.imei:123456imsi:123456phone_nomodel:imobileopt_code:logsIP:::1
+__________________________
+
+Log Entry : 
+11/09/2015 10:15:45
+ IP :  ::1 
+Error in: http://localhost:4358/imobilegame.aspx. Error Message:Logs_Insert >> OCIEnvCreate failed with return code -1 but error message text was not available.imei:imsi:phone_nomodel:opt_code:logsIP:::1
+__________________________
+
+Log Entry : 
+11/09/2015 10:16:20
+ IP :  ::1 
+Error in: http://localhost:4358/imobilegame.aspx?ap=iSoccer&pn=Main&imei=123456&imsi=123456&model=imobile&sporttype=00001&date=20150915&contentgroupid=21. Error Message:Logs_Insert >> OCIEnvCreate failed with return code -1 but error message text was not available.imei:123456imsi:123456phone_nomodel:imobileopt_code:logsIP:::1
+__________________________
+
+Log Entry : 
+11/09/2015 10:17:03
+ IP :  ::1 
+Error in: http://localhost:4358/imobilegame.aspx?ap=iSoccer&pn=Main&imei=123456&imsi=123456&model=imobile&sporttype=00001&date=20150915&contentgroupid=21. Error Message:Logs_Insert >> OCIEnvCreate failed with return code -1 but error message text was not available.imei:123456imsi:123456phone_nomodel:imobileopt_code:logsIP:::1
+__________________________
+
+Log Entry : 
+11/09/2015 11:21:28
+ IP :  ::1 
+Error in: http://localhost:4358/imobilegame.aspx?ap=iSoccer&pn=Main&imei=123456&imsi=123456&model=imobile&sporttype=00001&date=20150915&contentgroupid=21. Error Message:Logs_Insert >> OCIEnvCreate failed with return code -1 but error message text was not available.imei:123456imsi:123456phone_nomodel:imobileopt_code:logsIP:::1
+__________________________
+
+Log Entry : 
+11/09/2015 11:47:22
+ IP :  ::1 
+Error in: http://localhost:4358/imobilegame.aspx?ap=iSoccer&pn=Main&imei=123456&imsi=123456&model=imobile&sporttype=00001&date=20150915&contentgroupid=21. Error Message:Logs_Insert >> ORA-12154: TNS:äÁèÊÒÁÒÃ¶á»Å¤èÒµÑÇÃÐºØ¡ÒÃàª×èÍÁµèÍ·ÕèÃÐºØ
+imei:123456imsi:123456phone_nomodel:imobileopt_code:logsIP:::1
+__________________________
+
+Log Entry : 
+11/09/2015 11:47:26
+ IP :  ::1 
+Error in: http://localhost:4358/imobilegame.aspx?ap=iSoccer&pn=Main&imei=123456&imsi=123456&model=imobile&sporttype=00001&date=20150915&contentgroupid=21. Error Message:Logs_Insert >> ORA-12154: TNS:äÁèÊÒÁÒÃ¶á»Å¤èÒµÑÇÃÐºØ¡ÒÃàª×èÍÁµèÍ·ÕèÃÐºØ
+imei:123456imsi:123456phone_nomodel:imobileopt_code:logsIP:::1
+__________________________
+
+Log Entry : 
+11/09/2015 11:55:06
+ IP :  ::1 
+Error in: http://localhost:4358/imobilegame.aspx?ap=iSoccer&pn=Main&imei=123456&imsi=123456&model=imobile&sporttype=00001&date=20150915&contentgroupid=21. Error Message:Logs_Insert >> ORA-12154: TNS:äÁèÊÒÁÒÃ¶á»Å¤èÒµÑÇÃÐºØ¡ÒÃàª×èÍÁµèÍ·ÕèÃÐºØ
+imei:123456imsi:123456phone_nomodel:imobileopt_code:logsIP:::1
+__________________________
+
+Log Entry : 
+11/09/2015 13:01:10
+ IP :  ::1 
+Error in: http://localhost:4358/imobilegame.aspx?ap=iSoccer&pn=Main&imei=123456&imsi=123456&model=imobile&sporttype=00001&date=20150915&contentgroupid=21. Error Message:Logs_Insert >> ORA-12154: TNS:äÁèÊÒÁÒÃ¶á»Å¤èÒµÑÇÃÐºØ¡ÒÃàª×èÍÁµèÍ·ÕèÃÐºØ
+imei:123456imsi:123456phone_nomodel:imobileopt_code:logsIP:::1
+__________________________
+
+Log Entry : 
+11/09/2015 16:39:57
+ IP :  ::1 
+Error in: http://localhost:4358/imobilegame.aspx. Error Message:Logs_Insert >> ORA-12154: TNS:äÁèÊÒÁÒÃ¶á»Å¤èÒµÑÇÃÐºØ¡ÒÃàª×èÍÁµèÍ·ÕèÃÐºØ
+imei:imsi:phone_nomodel:opt_code:logsIP:::1
+__________________________
+
+Log Entry : 
+11/09/2015 16:40:04
+ IP :  ::1 
+Error in: http://localhost:4358/imobilegame.aspx?ap=iSoccer&pn=Awards&imei=123456&imsi=123456&model=imobile&sporttype=00001&date=20150915&contentgroupid=21. Error Message:Main Awards>>Data at the root level is invalid. Line 1, position 1.
+__________________________
+
+Log Entry : 
+11/09/2015 16:41:40
+ IP :  ::1 
+Error in: http://localhost:4358/imobilegame.aspx?ap=iSoccer&pn=Awards&imei=123456&imsi=123456&model=imobile&sporttype=00001&date=20150915&contentgroupid=21. Error Message:Main Awards>>Data at the root level is invalid. Line 1, position 1.
+__________________________
+
+Log Entry : 
+11/09/2015 16:41:40
+ IP :  ::1 
+Error in: http://localhost:4358/imobilegame.aspx?ap=iSoccer&pn=Awards&imei=123456&imsi=123456&model=imobile&sporttype=00001&date=20150915&contentgroupid=21. Error Message:Main Awards>>Data at the root level is invalid. Line 1, position 1.
+__________________________
+
+Log Entry : 
+11/09/2015 16:41:41
+ IP :  ::1 
+Error in: http://localhost:4358/imobilegame.aspx?ap=iSoccer&pn=Awards&imei=123456&imsi=123456&model=imobile&sporttype=00001&date=20150915&contentgroupid=21. Error Message:Main Awards>>Data at the root level is invalid. Line 1, position 1.
+__________________________
+
+Log Entry : 
+11/09/2015 16:41:42
+ IP :  ::1 
+Error in: http://localhost:4358/imobilegame.aspx?ap=iSoccer&pn=Awards&imei=123456&imsi=123456&model=imobile&sporttype=00001&date=20150915&contentgroupid=21. Error Message:Main Awards>>Data at the root level is invalid. Line 1, position 1.
+__________________________
+
+Log Entry : 
+11/09/2015 16:43:35
+ IP :  ::1 
+Error in: http://localhost:4358/imobilegame.aspx?ap=iSoccer&pn=Awards&imei=123456&imsi=123456&model=imobile&sporttype=00001&date=20150915&contentgroupid=21. Error Message:Logs_Insert >> ORA-12154: TNS:äÁèÊÒÁÒÃ¶á»Å¤èÒµÑÇÃÐºØ¡ÒÃàª×èÍÁµèÍ·ÕèÃÐºØ
+imei:123456imsi:123456phone_nomodel:imobileopt_code:logsIP:::1
+__________________________
+
+Log Entry : 
+11/09/2015 16:47:08
+ IP :  ::1 
+Error in: http://localhost:4358/imobilegame.aspx?ap=iSoccer&pn=Awards&imei=123456&imsi=123456&model=imobile&sporttype=00001&date=20150915&contentgroupid=21. Error Message:Logs_Insert >> ORA-12154: TNS:äÁèÊÒÁÒÃ¶á»Å¤èÒµÑÇÃÐºØ¡ÒÃàª×èÍÁµèÍ·ÕèÃÐºØ
+imei:123456imsi:123456phone_nomodel:imobileopt_code:logsIP:::1
+__________________________
+
+Log Entry : 
+11/09/2015 16:55:59
+ IP :  ::1 
+Error in: http://localhost:4358/imobilegame.aspx?ap=iSoccer&pn=Rules&imei=123456&imsi=123456&model=imobile&sporttype=00001&date=20150915&contentgroupid=21. Error Message:Logs_Insert >> ORA-12154: TNS:äÁèÊÒÁÒÃ¶á»Å¤èÒµÑÇÃÐºØ¡ÒÃàª×èÍÁµèÍ·ÕèÃÐºØ
+imei:123456imsi:123456phone_nomodel:imobileopt_code:logsIP:::1
+__________________________

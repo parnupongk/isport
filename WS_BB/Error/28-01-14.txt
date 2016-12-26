@@ -1,0 +1,59 @@
+
+Log Entry : 
+28/01/2014 13:37:17
+Error in: http://localhost:4358/starsoccer.aspx. Error Message:Logs_Insert >> ORA-12154: TNS:could not resolve the connect identifier specified
+imei:imsi:phone_nomodel:opt_code:logsIP:127.0.0.1
+__________________________
+
+Log Entry : 
+28/01/2014 13:37:22
+Error in: http://localhost:4358/starsoccer.aspx?ap=StarSoccer&pn=program&date=20140128&contentgroupid=&sportType=00001&lang=th&imei=866389014204465&model=i-mobile+IQ+5.3&imsi=null&type=android. Error Message:Logs_Insert >> ORA-12154: TNS:could not resolve the connect identifier specified
+imei:866389014204465imsi:nullphone_nomodel:i-mobile IQ 5.3opt_code:01logsIP:127.0.0.1
+__________________________
+
+Log Entry : 
+28/01/2014 13:38:50
+Error in: http://localhost:4358/starsoccer.aspx?ap=StarSoccer&pn=program&date=20140128&contentgroupid=&sportType=00001&lang=th&imei=866389014204465&model=i-mobile+IQ+5.3&imsi=null&type=android. Error Message:Logs_Insert >> ORA-12154: TNS:could not resolve the connect identifier specified
+imei:866389014204465imsi:nullphone_nomodel:i-mobile IQ 5.3opt_code:01logsIP:127.0.0.1
+__________________________
+
+Log Entry : 
+28/01/2014 13:39:04
+Error in: http://localhost:4358/starsoccer.aspx?ap=StarSoccer&pn=getnews&date=&sportType=00001&rowcount=&lang=th&imei=355965023498590&model=i-mobile+IQ+X3A&imsi=null&type=android. Error Message:Logs_Insert >> ORA-12154: TNS:could not resolve the connect identifier specified
+imei:355965023498590imsi:nullphone_nomodel:i-mobile IQ X3Aopt_code:01logsIP:127.0.0.1
+__________________________
+
+Log Entry : 
+28/01/2014 13:42:41
+Error in: http://localhost:4358/starsoccer.aspx?ap=StarSoccer&pn=getnews&date=&sportType=00001&rowcount=&lang=th&imei=355965023498590&model=i-mobile+IQ+X3A&imsi=null&type=android. Error Message:Logs_Insert >> ORA-12154: TNS:could not resolve the connect identifier specified
+imei:355965023498590imsi:nullphone_nomodel:i-mobile IQ X3Aopt_code:01logsIP:127.0.0.1
+__________________________
+
+Log Entry : 
+28/01/2014 13:42:42
+Error in: http://localhost:4358/starsoccer.aspx?ap=StarSoccer&pn=getnews&date=&sportType=00001&rowcount=&lang=th&imei=355965023498590&model=i-mobile+IQ+X3A&imsi=null&type=android. Error Message:Logs_Insert >> ORA-12154: TNS:could not resolve the connect identifier specified
+imei:355965023498590imsi:nullphone_nomodel:i-mobile IQ X3Aopt_code:01logsIP:127.0.0.1
+__________________________
+
+Log Entry : 
+28/01/2014 13:42:42
+Error in: http://localhost:4358/starsoccer.aspx?ap=StarSoccer&pn=getnews&date=&sportType=00001&rowcount=&lang=th&imei=355965023498590&model=i-mobile+IQ+X3A&imsi=null&type=android. Error Message:Logs_Insert >> ORA-12154: TNS:could not resolve the connect identifier specified
+imei:355965023498590imsi:nullphone_nomodel:i-mobile IQ X3Aopt_code:01logsIP:127.0.0.1
+__________________________
+
+Log Entry : 
+28/01/2014 13:59:41
+Error in: http://localhost:4358/starsoccer.aspx. Error Message:Logs_Insert >> ORA-12154: TNS:could not resolve the connect identifier specified
+imei:imsi:phone_nomodel:opt_code:logsIP:127.0.0.1
+__________________________
+
+Log Entry : 
+28/01/2014 14:00:01
+Error in: http://localhost:4358/starsoccer.aspx?ap=StarSoccer&pn=smsservice&sportType=00001&lang=th&imei=357238059413828&model=i-mobile+IQ1-1A&imsi=520152100481668&type=android. Error Message:CommandGetSubscribeService >> Cannot find table 0.
+__________________________
+
+Log Entry : 
+28/01/2014 14:00:10
+Error in: http://localhost:4358/starsoccer.aspx?ap=StarSoccer&pn=smsservice&sportType=00001&lang=th&imei=357238059413828&model=i-mobile+IQ1-1A&imsi=520152100481668&type=android. Error Message:Logs_Insert >> ORA-12154: TNS:could not resolve the connect identifier specified
+imei:357238059413828imsi:520152100481668phone_nomodel:i-mobile IQ1-1Aopt_code:05logsIP:127.0.0.1
+__________________________

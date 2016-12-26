@@ -1,0 +1,74 @@
+
+Log Entry : 
+03/11/2016 17:21:12
+ IP :  ::1 
+Error in: http://localhost:4358/imobilegame.aspx. Error Message:Logs_Insert >> ORA-06550: line 1, column 7:
+PLS-00306: wrong number or types of arguments in call to 'SPORTAPP_INSERT_LOGS'
+ORA-06550: line 1, column 7:
+PL/SQL: Statement ignored
+imei:imsi:phone_nomodel:opt_code:logsIP:::1
+__________________________
+
+Log Entry : 
+03/11/2016 17:21:16
+ IP :  ::1 
+Error in: http://localhost:4358/imobilegame.aspx?ap=iSoccer&pn=Main&date=&lang=th&imei=354016076692720&model=ASUS_Z00AD&imsi=520002018961828&type=android&contentgroupid=21. Error Message:CommandGetProgramByLeague >> Specified cast is not valid.
+__________________________
+
+Log Entry : 
+03/11/2016 17:25:20
+ IP :  ::1 
+Error in: http://localhost:4358/imobilegame.aspx?ap=iSoccer&pn=Main&date=&lang=th&imei=354016076692720&model=ASUS_Z00AD&imsi=520002018961828&type=android&contentgroupid=21. Error Message:CommandGetProgramByLeague >> Specified cast is not valid.
+__________________________
+
+Log Entry : 
+03/11/2016 17:27:31
+ IP :  ::1 
+Error in: http://localhost:4358/imobilegame.aspx. Error Message:Logs_Insert >> ORA-06550: line 1, column 7:
+PLS-00306: wrong number or types of arguments in call to 'SPORTAPP_INSERT_LOGS'
+ORA-06550: line 1, column 7:
+PL/SQL: Statement ignored
+imei:imsi:phone_nomodel:opt_code:logsIP:::1
+__________________________
+
+Log Entry : 
+03/11/2016 17:30:50
+ IP :  ::1 
+Error in: http://localhost:4358/imobilegame.aspx?ap=iSoccer&pn=Main&date=&lang=th&imei=354016076692720&model=ASUS_Z00AD&imsi=520002018961828&type=android&contentgroupid=21. Error Message:CommandGetProgramByLeague >> Specified cast is not valid.
+__________________________
+
+Log Entry : 
+03/11/2016 17:33:30
+ IP :  ::1 
+Error in: http://localhost:4358/imobilegame.aspx. Error Message:Logs_Insert >> ORA-06550: line 1, column 7:
+PLS-00306: wrong number or types of arguments in call to 'SPORTAPP_INSERT_LOGS'
+ORA-06550: line 1, column 7:
+PL/SQL: Statement ignored
+imei:imsi:phone_nomodel:opt_code:logsIP:::1
+__________________________
+
+Log Entry : 
+03/11/2016 17:34:02
+ IP :  ::1 
+Error in: http://localhost:4358/imobilegame.aspx?ap=iSoccer&pn=Main&date=&lang=th&imei=354016076692720&model=ASUS_Z00AD&imsi=520002018961828&type=android&contentgroupid=21. Error Message:CommandGetProgramByLeague >> Specified cast is not valid.
+__________________________
+
+Log Entry : 
+03/11/2016 17:34:21
+ IP :  ::1 
+Error in: http://localhost:4358/imobilegame.aspx. Error Message:Logs_Insert >> ORA-06550: line 1, column 7:
+PLS-00306: wrong number or types of arguments in call to 'SPORTAPP_INSERT_LOGS'
+ORA-06550: line 1, column 7:
+PL/SQL: Statement ignored
+imei:imsi:phone_nomodel:opt_code:logsIP:::1
+__________________________
+
+Log Entry : 
+03/11/2016 17:34:57
+ IP :  ::1 
+Error in: http://localhost:4358/imobilegame.aspx. Error Message:Logs_Insert >> ORA-06550: line 1, column 7:
+PLS-00306: wrong number or types of arguments in call to 'SPORTAPP_INSERT_LOGS'
+ORA-06550: line 1, column 7:
+PL/SQL: Statement ignored
+imei:imsi:phone_nomodel:opt_code:logsIP:::1
+__________________________

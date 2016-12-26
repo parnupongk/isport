@@ -1,0 +1,24 @@
+
+Log Entry : 
+13/06/2016 11:06:22
+ IP :  ::1 
+Error in: http://localhost:4358/starsoccer.aspx. Error Message:Logs_Insert >> OCIEnvCreate failed with return code -1 but error message text was not available.imei:imsi:phone_nomodel:opt_code:logsIP:::1
+__________________________
+
+Log Entry : 
+13/06/2016 11:11:36
+ IP :  ::1 
+Error in: http://localhost:4358/starsoccer.aspx?ap=StarSoccer&pn=leaguetable&imei=123456&imsi=123456&model=imobile&sporttype=00001&lng=L&mp_code=0025&sg=&prj=1&size=&mp=0025&class_id=&contentgroupid=807. Error Message:CommandGetLeagueTable >> Object reference not set to an instance of an object.
+__________________________
+
+Log Entry : 
+13/06/2016 11:11:36
+ IP :  ::1 
+Error in: http://localhost:4358/starsoccer.aspx?ap=StarSoccer&pn=leaguetable&imei=123456&imsi=123456&model=imobile&sporttype=00001&lng=L&mp_code=0025&sg=&prj=1&size=&mp=0025&class_id=&contentgroupid=807. Error Message:Logs_Insert >> OCIEnvCreate failed with return code -1 but error message text was not available.imei:123456imsi:123456phone_nomodel:imobileopt_code:logsIP:::1
+__________________________
+
+Log Entry : 
+13/06/2016 11:12:30
+ IP :  ::1 
+Error in: http://localhost:4358/starsoccer.aspx?ap=StarSoccer&pn=leaguetable&imei=123456&imsi=123456&model=imobile&sporttype=00001&lng=L&mp_code=0025&sg=&prj=1&size=&mp=0025&class_id=&contentgroupid=807. Error Message:Logs_Insert >> OCIEnvCreate failed with return code -1 but error message text was not available.imei:123456imsi:123456phone_nomodel:imobileopt_code:logsIP:::1
+__________________________

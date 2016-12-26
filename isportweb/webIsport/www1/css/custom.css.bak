@@ -1,0 +1,377 @@
+@charset "utf-8";
+/* GLOBAL CSS */
+
+
+body{overflow-x: hidden;
+}
+p{ font-size: 14px;
+   line-height: 24px;}
+
+img.team-img{
+	width: 200px;
+	height: 200px;
+    margin-right: 50px;
+	border-radius: 50%;}
+
+h2{
+  font-family: 'Cuprum', sans-serif;
+  font-weight: 700;
+  padding-bottom: 0;
+  letter-spacing: 0.8px;
+  word-spacing: 2px;
+}
+h4{
+  font-family: 'Droid Sans', sans-serif; 
+  letter-spacing: 0.5px;
+  word-spacing: 0.5px;
+  padding-bottom: 15px;
+}
+
+.btn-lg{background-color: rgb(6, 186, 143);
+}
+.btn-lg:hover{background-color: rgb(17, 162, 129);
+}
+
+/* ==========================================================================
+   Interface
+   ========================================================================== */
+  .md-slider .logo {
+   font-family: 'Cuprum', sans-serif; 
+   font-size: 15px;
+   font-weight: bolder;
+   color: #FFFFFF;
+   line-height: 30px;
+   background-color: rgba(6, 186, 143,0.9);
+    border-radius: 50%;
+	letter-spacing:0.5px;
+	padding: 6px;
+	position: fixed;
+	float:left;
+	z-index: 9999;
+	left: 14px;
+	top: 4%;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+.md-slider .logo a{
+     color: #FFFFFF;          
+}   
+
+
+.md-slider .logo a:hover{
+     color: #FFFFFF;
+     text-decoration: none; 	 
+} 
+
+.md-slider .logo a:focus {
+     color: #FFFFFF;
+     text-decoration: none;
+}    
+
+   .md-slider .llogo2{
+    color: #FFFFFF;
+    letter-spacing:1px;
+    background-color: rgb(6, 186, 143);
+	border-radius: 50%;
+	padding: 6px 5px;
+}
+   .title{
+   font-family: 'Open Sans Condensed', sans-serif;
+   text-align:center;
+    font-size: 45px;
+	line-height: 60px;
+	letter-spacing:1px;
+	font-weight: 900;
+	color:rgb(6, 186, 143);
+	margin-bottom:20px;
+}
+
+   .sub-title{
+    color: #ccc;
+    font-size: 17px;
+	font-weight: 300;
+	
+	letter-spacing:0.8px;
+	word-spacing:1.5px;
+	margin-bottom:36px;
+	padding:0px;
+    	
+}
+   .pre-title{
+   font-family: 'Open Sans Condensed', sans-serif;
+   font-weight: normal;
+   text-transform: uppercase;
+   word-spacing: 10px;
+}
+   .nav-font{
+    padding: 5px 0 0 5px;
+}
+   
+/* ==========================================================================
+   home
+   ========================================================================== */
+   #home {
+    background: url(../images/overlay3.png) scroll repeat;
+	background-color: rgba(14, 53, 69,0.8);
+	hheight: 100%;
+}	
+   
+/* ==========================================================================
+   Services
+   ========================================================================== */
+   #services{
+    background: transparent;
+}   
+
+   #services  h2{ 
+    padding-bottom: 70px;
+ } 
+ 
+   .services {
+   padding: 80px 0px 100px 0px;
+   background: url(../images/overlay.png) scroll repeat; 
+   background-color: #FFFFFF;
+}
+    
+	.padding-1{
+     padding-top: 56px;	
+
+}
+
+    .features-bg{
+    background: rgba(6, 186, 143,0.8);
+	padding: 170px 0px 120px 0px;
+
+} 
+    #services h4{
+    margin-top: 30px; 	
+} 
+    .features-bg a h2 {
+    color: #FFFFFF;
+    font-size: 40px;
+    font-weight: bold; 	
+    line-height: 40px;	
+	letter-spacing: 0px;
+}   
+
+    .features-bg h2 ,a:hover {
+	text-decoration: none;
+}
+
+   
+/* ==========================================================================
+   work
+   ========================================================================== */ 
+   #work {
+	background: url(../images/overlay4.png) scroll repeat; 
+	background-color: #232527;
+	padding: 80px 0px 100px 0px;
+	height: auto;	
+} 
+  
+    #work h2{
+	color: #cccccc;
+    padding-bottom: 70px;
+}
+
+   .da-thumbs li a div {
+	top: 0px;
+	left: -100%;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+   .da-thumbs li a:hover div{
+	left: 0px;
+}
+
+	/* Caption Style */	
+	.grid-2 {
+		list-style: none;
+	}
+
+	.grid-2 li {
+		display: inline-block;
+		margin: 0;
+		padding: 20px;
+		text-align: left;
+		position: relative;
+	}
+
+	.grid-2 figure {
+		margin: 0;
+		position: relative;
+	}
+
+	.grid-2 figure img {
+		max-width: 100%;
+		display: block;
+		position: relative;
+	}
+
+	.grid-2 figcaption {
+		position: absolute;
+		top: 0;
+		left: 0;
+		font-size: 16px;
+		padding: 20px;
+		background: rgb(14, 53, 69);
+		color: #ed4e6e;
+	}
+
+	.grid-2 figcaption h3 {
+		margin: 0;
+		padding: 0 0 6px 0;
+		color: #fff;
+	}
+
+	.grid-2 figcaption span:before {
+		content: ' ';
+	}
+
+	.grid-2 figcaption a {
+		text-decoration: none;
+		text-align: center;
+		padding: 5px 10px;
+		border-radius: 2px;
+		display: inline-block;
+		background: #ed4e6e;
+		color: #fff;
+	}
+
+	/* Individual Caption Styles */
+	.cs-style-1 figcaption {
+		border: none;
+		border-radius: 50%;
+		height: 200px;
+		width: 200px;
+		opacity: 0;
+		text-align: center;
+		-webkit-backface-visibility: hidden;
+		-moz-backface-visibility: hidden;
+		backface-visibility: hidden;
+		-webkit-transition: -webkit-transform 0.5s, opacity 0.8s;
+		-moz-transition: -moz-transform 0.5s, opacity 0.8s;
+		transition: transform 0.5s, opacity 0.8s;
+	}
+
+	.no-touch .cs-style-1 figure:hover figcaption,
+	.cs-style-1 figure.cs-hover figcaption {
+		opacity: 1;
+		-webkit-transform: translate(15px, 0px);
+		-moz-transform: translate(15px, 0px);
+		-ms-transform: translate(15px, 0px);
+		transform: translate(20px, 0px);
+	}
+
+	.cs-style-1 figcaption h3 {
+		margin-top: 30px;
+	}
+
+	.cs-style-1 figcaption span {
+		display: block;
+	}
+
+	.cs-style-1 figcaption a {
+		margin-top: 30px;
+	}
+	/* End Caption */
+
+ /* ==========================================================================
+   team
+   ========================================================================== */
+   #team {
+	background: transparent;
+	
+}
+
+   #team h2{
+    padding-bottom: 80px;
+	color: #fff;
+	font-weight: 400;
+}
+
+   .team-overlay {
+	background: rgba(14, 62, 74,0.8);
+	padding: 80px 0px 30px 0px;
+}
+
+    img.team-img{
+	width: 200px;
+	height: 200px;
+    margin-right: 50px;
+	border-radius: 50%;
+}
+
+   .action{
+	background: url(../images/overlay2.png) scroll repeat; 
+	background-color: rgba(14, 62, 74, 0.8);
+	padding: 40px 0 120px 0;;
+}   
+   
+/* ==========================================================================
+   discussion
+   ========================================================================== */
+   #discussion {
+	background: url(../images/overlay.png) scroll  repeat; 
+	background-color: #fff;
+	padding: 80px 0px 100px 0px;
+ }  
+ 
+    #discussion h2{
+	padding-top: 20px;
+	padding-bottom: 70px;
+}
+
+/* ================================================================================
+   contact
+   ==================================================================== */   
+
+
+/* ================================================================================
+   social
+   ==================================================================== */
+    #social{
+	background: url(../images/overlay2.png) scroll  repeat; 
+	background-color: rgb(14, 62, 74);
+} 
+  
+   .social{
+    display: block;
+	list-style:none;
+}
+   
+    .social-ft{color:  rgb(6, 186, 143);
+    background-color: rgb( 9, 35, 46); 
+    border-radius:	50%;
+} 
+   .social2-ft{
+    margin: 45px 25px 35px 0;	
+}
+   .social-ft:hover{
+    color: #ffffff;
+    background-color: rgb(6, 186, 143);
+	-webkit-transition: all 1s ease-in-out;
+	-moz-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;	
+}	
+   .footer{
+    letter-spacing: 0.1px;
+	background: url(../images/overlay2.png) scroll repeat;    
+	background-color: rgb(16, 16, 16);
+	padding: 15px 0;
+}   
+
+    .footer a:hover{
+     color: rgb(6, 186, 143);
+	 text-decoration: none;
+}
+
+   .featured-thumb{
+     margin: 0 auto;
+}

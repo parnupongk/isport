@@ -1,0 +1,54 @@
+
+Log Entry : 
+10/12/2558 10:42:37
+ IP :  ::1 
+Error in: http://localhost:32814/pr.aspx. Error Message:Subscribe_portal_log_Insert>>OCIEnvCreate failed with return code -1 but error message text was not available.
+__________________________
+
+Log Entry : 
+10/12/2558 10:42:46
+ IP :  ::1 
+Error in: http://localhost:32814/pr.aspx?p=t03campaign2. Error Message:Subscribe_portal_log_Insert>>OCIEnvCreate failed with return code -1 but error message text was not available.
+__________________________
+
+Log Entry : 
+10/12/2558 10:43:07
+ IP :  ::1 
+Error in: http://localhost:32814/pr.aspx?p=t03campaign2. Error Message:Subscribe_portal_log_Insert>>OCIEnvCreate failed with return code -1 but error message text was not available.
+__________________________
+
+Log Entry : 
+10/12/2558 10:44:48
+ IP :  ::1 
+Error in: http://localhost:32814/pr.aspx?p=t03campaign2. Error Message:Subscribe_portal_log_Insert>>OCIEnvCreate failed with return code -1 but error message text was not available.
+__________________________
+
+Log Entry : 
+10/12/2558 10:45:50
+ IP :  ::1 
+Error in: http://localhost:32814/pr.aspx?p=t03campaign2. Error Message:Subscribe_portal_log_Insert>>OCIEnvCreate failed with return code -1 but error message text was not available.
+__________________________
+
+Log Entry : 
+10/12/2558 11:22:55
+ IP :  ::1 
+Error in: http://localhost:32814/pr.aspx. Error Message:Subscribe_portal_log_Insert>>OCIEnvCreate failed with return code -1 but error message text was not available.
+__________________________
+
+Log Entry : 
+10/12/2558 11:23:02
+ IP :  ::1 
+Error in: http://localhost:32814/pr.aspx?p=t03campaign2. Error Message:Subscribe_portal_log_Insert>>OCIEnvCreate failed with return code -1 but error message text was not available.
+__________________________
+
+Log Entry : 
+10/12/2558 11:24:30
+ IP :  ::1 
+Error in: http://localhost:32814/pr.aspx?p=t03campaign2. Error Message:Subscribe_portal_log_Insert>>OCIEnvCreate failed with return code -1 but error message text was not available.
+__________________________
+
+Log Entry : 
+10/12/2558 11:26:57
+ IP :  ::1 
+Error in: http://localhost:32814/pr.aspx?p=isportweb_pr1. Error Message:Subscribe_portal_log_Insert>>OCIEnvCreate failed with return code -1 but error message text was not available.
+__________________________

@@ -1,0 +1,63 @@
+
+Log Entry : 
+03/06/2015 09:53:27
+ IP :  127.0.0.1 
+Error in: http://localhost:4358/kissmodel.aspx. Error Message:Logs_Insert >> ORA-12154: TNS:could not resolve the connect identifier specified
+imei:imsi:phone_nomodel:opt_code:logsIP:127.0.0.1
+__________________________
+
+Log Entry : 
+03/06/2015 10:05:53
+ IP :  127.0.0.1 
+Error in: http://localhost:4358/kissmodel.aspx?ap=KissModel. Error Message:Logs_Insert >> ORA-12154: TNS:could not resolve the connect identifier specified
+imei:imsi:phone_nomodel:opt_code:logsIP:127.0.0.1
+__________________________
+
+Log Entry : 
+03/06/2015 10:06:01
+ IP :  127.0.0.1 
+Error in: http://localhost:4358/kissmodel.aspx?ap=KissModel&pn=main. Error Message:Logs_Insert >> ORA-12154: TNS:could not resolve the connect identifier specified
+imei:imsi:phone_nomodel:opt_code:logsIP:127.0.0.1
+__________________________
+
+Log Entry : 
+03/06/2015 10:06:23
+ IP :  127.0.0.1 
+Error in: http://localhost:4358/kissmodel.aspx?ap=KissModel&pn=main. Error Message:Logs_Insert >> ORA-12154: TNS:could not resolve the connect identifier specified
+imei:imsi:phone_nomodel:opt_code:logsIP:127.0.0.1
+__________________________
+
+Log Entry : 
+03/06/2015 10:06:23
+ IP :  127.0.0.1 
+Error in: http://localhost:4358/kissmodel.aspx?ap=KissModel&pn=main. Error Message:Logs_Insert >> ORA-12154: TNS:could not resolve the connect identifier specified
+imei:imsi:phone_nomodel:opt_code:logsIP:127.0.0.1
+__________________________
+
+Log Entry : 
+03/06/2015 10:06:45
+ IP :  127.0.0.1 
+Error in: http://localhost:4358/kissmodel.aspx?ap=KissModel&pn=main. Error Message:Logs_Insert >> ORA-12154: TNS:could not resolve the connect identifier specified
+imei:imsi:phone_nomodel:opt_code:logsIP:127.0.0.1
+__________________________
+
+Log Entry : 
+03/06/2015 10:06:45
+ IP :  127.0.0.1 
+Error in: http://localhost:4358/kissmodel.aspx?ap=KissModel&pn=main. Error Message:Logs_Insert >> ORA-12154: TNS:could not resolve the connect identifier specified
+imei:imsi:phone_nomodel:opt_code:logsIP:127.0.0.1
+__________________________
+
+Log Entry : 
+03/06/2015 10:44:57
+ IP :  127.0.0.1 
+Error in: http://localhost:4358/kissmodel.aspx?ap=KissModel&pn=main&date=06032015. Error Message:Logs_Insert >> ORA-12154: TNS:could not resolve the connect identifier specified
+imei:imsi:phone_nomodel:opt_code:logsIP:127.0.0.1
+__________________________
+
+Log Entry : 
+03/06/2015 10:45:14
+ IP :  127.0.0.1 
+Error in: http://localhost:4358/kissmodel.aspx?ap=KissModel&pn=main&date=06032015&imei=12345&imsi=12345. Error Message:Main main>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________

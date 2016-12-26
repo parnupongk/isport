@@ -1,0 +1,34 @@
+
+Log Entry : 
+25/01/2016 15:12:35
+ IP :  ::1 
+Error in: http://localhost:4358/isportphone.asmx/Isport_GetSportProgram?contestGroupId=&sportType=00001&lang=th&code=21a00001&type=nokia. Error Message:Logs_Insert >> ORA-12154: TNS:could not resolve the connect identifier specified
+imei:imsi:phone_nomodel:opt_code:logsIP:::1
+__________________________
+
+Log Entry : 
+25/01/2016 15:13:23
+ IP :  ::1 
+Error in: http://localhost:4358/isportphone.asmx/Isport_GetSportProgram?contestGroupId=&sportType=00001&lang=th&code=21a00001&type=nokia. Error Message:CommandGetProgramByLeague >> A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+__________________________
+
+Log Entry : 
+25/01/2016 15:14:00
+ IP :  ::1 
+Error in: http://localhost:4358/isportphone.asmx/Isport_GetSportProgram?contestGroupId=&sportType=00001&lang=th&code=21a00001&type=nokia. Error Message:Logs_Insert >> ORA-12154: TNS:could not resolve the connect identifier specified
+imei:imsi:phone_nomodel:opt_code:logsIP:::1
+__________________________
+
+Log Entry : 
+25/01/2016 15:27:52
+ IP :  ::1 
+Error in: http://localhost:4358/isportphone.asmx/Isport_GetSportProgram?contestGroupId=&sportType=00001&lang=th&code=21a00001&type=nokia. Error Message:Logs_Insert >> ORA-12154: TNS:could not resolve the connect identifier specified
+imei:imsi:phone_nomodel:opt_code:logsIP:::1
+__________________________
+
+Log Entry : 
+25/01/2016 15:29:27
+ IP :  ::1 
+Error in: http://localhost:4358/isportphone.asmx/Isport_GetSportProgram?contestGroupId=&sportType=00001&lang=th&code=21a00001&type=nokia. Error Message:Logs_Insert >> ORA-12154: TNS:could not resolve the connect identifier specified
+imei:imsi:phone_nomodel:opt_code:logsIP:::1
+__________________________

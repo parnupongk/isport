@@ -1,0 +1,60 @@
+
+Log Entry : 
+24/09/2015 16:06:10
+ IP :  ::1 
+Error in: http://localhost:4358/imobilegame.aspx. Error Message:Logs_Insert >> OCIEnvCreate failed with return code -1 but error message text was not available.imei:imsi:phone_nomodel:opt_code:logsIP:::1
+__________________________
+
+Log Entry : 
+24/09/2015 16:06:17
+ IP :  ::1 
+Error in: http://localhost:4358/imobilegame.aspx?ap=CheerBallThai&pn=Rewards&imei=123456&imsi=123456&model=imobile&sporttype=00001&date=20150915&contentgroupid=21. Error Message:Logs_Insert >> OCIEnvCreate failed with return code -1 but error message text was not available.imei:123456imsi:123456phone_nomodel:imobileopt_code:logsIP:::1
+__________________________
+
+Log Entry : 
+24/09/2015 16:20:21
+ IP :  ::1 
+Error in: http://localhost:4358/imobilegame.aspx?ap=CheerBallThai&pn=Rewards&imei=123456&imsi=123456&model=imobile&sporttype=00001&date=20150915&contentgroupid=21. Error Message:Logs_Insert >> OCIEnvCreate failed with return code -1 but error message text was not available.imei:123456imsi:123456phone_nomodel:imobileopt_code:logsIP:::1
+__________________________
+
+Log Entry : 
+24/09/2015 16:20:24
+ IP :  ::1 
+Error in: http://localhost:4358/imobilegame.aspx?ap=CheerBallThai&pn=Rewards&imei=123456&imsi=123456&model=imobile&sporttype=00001&date=20150915&contentgroupid=21. Error Message:Logs_Insert >> OCIEnvCreate failed with return code -1 but error message text was not available.imei:123456imsi:123456phone_nomodel:imobileopt_code:logsIP:::1
+__________________________
+
+Log Entry : 
+24/09/2015 16:20:49
+ IP :  ::1 
+Error in: http://localhost:4358/imobilegame.aspx?ap=CheerBallThai&pn=Rewards&imei=123456&imsi=123456&model=imobile&sporttype=00001&date=20150915&contentgroupid=21. Error Message:Logs_Insert >> OCIEnvCreate failed with return code -1 but error message text was not available.imei:123456imsi:123456phone_nomodel:imobileopt_code:logsIP:::1
+__________________________
+
+Log Entry : 
+24/09/2015 16:20:50
+ IP :  ::1 
+Error in: http://localhost:4358/imobilegame.aspx?ap=CheerBallThai&pn=Rewards&imei=123456&imsi=123456&model=imobile&sporttype=00001&date=20150915&contentgroupid=21. Error Message:Logs_Insert >> OCIEnvCreate failed with return code -1 but error message text was not available.imei:123456imsi:123456phone_nomodel:imobileopt_code:logsIP:::1
+__________________________
+
+Log Entry : 
+24/09/2015 16:20:50
+ IP :  ::1 
+Error in: http://localhost:4358/imobilegame.aspx?ap=CheerBallThai&pn=Rewards&imei=123456&imsi=123456&model=imobile&sporttype=00001&date=20150915&contentgroupid=21. Error Message:Logs_Insert >> OCIEnvCreate failed with return code -1 but error message text was not available.imei:123456imsi:123456phone_nomodel:imobileopt_code:logsIP:::1
+__________________________
+
+Log Entry : 
+24/09/2015 16:20:51
+ IP :  ::1 
+Error in: http://localhost:4358/imobilegame.aspx?ap=CheerBallThai&pn=Rewards&imei=123456&imsi=123456&model=imobile&sporttype=00001&date=20150915&contentgroupid=21. Error Message:Logs_Insert >> OCIEnvCreate failed with return code -1 but error message text was not available.imei:123456imsi:123456phone_nomodel:imobileopt_code:logsIP:::1
+__________________________
+
+Log Entry : 
+24/09/2015 16:20:51
+ IP :  ::1 
+Error in: http://localhost:4358/imobilegame.aspx?ap=CheerBallThai&pn=Rewards&imei=123456&imsi=123456&model=imobile&sporttype=00001&date=20150915&contentgroupid=21. Error Message:Logs_Insert >> OCIEnvCreate failed with return code -1 but error message text was not available.imei:123456imsi:123456phone_nomodel:imobileopt_code:logsIP:::1
+__________________________
+
+Log Entry : 
+24/09/2015 16:21:31
+ IP :  ::1 
+Error in: http://localhost:4358/imobilegame.aspx?ap=CheerBallThai&pn=Rewards&imei=123456&imsi=123456&model=imobile&sporttype=00001&date=20150915&contentgroupid=21. Error Message:Logs_Insert >> OCIEnvCreate failed with return code -1 but error message text was not available.imei:123456imsi:123456phone_nomodel:imobileopt_code:logsIP:::1
+__________________________

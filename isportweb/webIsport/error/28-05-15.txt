@@ -1,0 +1,21 @@
+
+Log Entry : 
+28/05/2015 16:13:46
+ IP :  127.0.0.1 
+Error in: http://localhost:32814/sub.aspx. Error Message:ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+28/05/2015 16:18:47
+ IP :  127.0.0.1 
+Error in: http://localhost:32814/sub.aspx. Error Message:ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+28/05/2015 16:18:58
+ IP :  127.0.0.1 
+Error in: http://localhost:32814/sub.aspx?p=kiss_sub_3. Error Message:Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________

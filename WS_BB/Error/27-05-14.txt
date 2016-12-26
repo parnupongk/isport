@@ -1,0 +1,120 @@
+
+Log Entry : 
+27/05/2014 10:55:45
+Error in: http://localhost:4358/feedais.aspx. Error Message:Logs_Insert >> ORA-12154: TNS:could not resolve the connect identifier specified
+imei:imsi:phone_nomodel:opt_code:logsIP:127.0.0.1
+__________________________
+
+Log Entry : 
+27/05/2014 14:01:29
+Error in: http://localhost:4358/feedais.aspx?ap=aisfeed&pn=getscore&imei=123456789&imsi=1234567878&type=mobile&lang=en. Error Message:Main getscore>>aisfeed_GetResult>>startIndex cannot be larger than length of string.
+Parameter name: startIndex
+__________________________
+
+Log Entry : 
+27/05/2014 14:20:42
+Error in: http://localhost:4358/feedais.aspx?ap=aisfeed&pn=getnews&imei=123456789&imsi=1234567878&type=mobile&lang=en. Error Message:CommandGetScoreDetail >> Value cannot be null.
+Parameter name: String
+__________________________
+
+Log Entry : 
+27/05/2014 14:20:53
+Error in: http://localhost:4358/feedais.aspx?ap=aisfeed&pn=getnews&imei=123456789&imsi=1234567878&type=mobile&lang=en&row=5. Error Message:CommandGetScoreDetail >> ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+27/05/2014 14:38:38
+Error in: http://localhost:4358/feedais.aspx?ap=aisfeed&pn=getnews&imei=123456789&imsi=1234567878&type=mobile&lang=en&machid=1310230235. Error Message:CommandGetScoreDetail >> Value cannot be null.
+Parameter name: String
+__________________________
+
+Log Entry : 
+27/05/2014 14:38:46
+Error in: http://localhost:4358/feedais.aspx?ap=aisfeed&pn=getnews&imei=123456789&imsi=1234567878&type=mobile&lang=en&matchid=1310230235. Error Message:CommandGetScoreDetail >> Value cannot be null.
+Parameter name: String
+__________________________
+
+Log Entry : 
+27/05/2014 14:38:48
+Error in: http://localhost:4358/feedais.aspx?ap=aisfeed&pn=getnews&imei=123456789&imsi=1234567878&type=mobile&lang=en&matchid=1310230235. Error Message:CommandGetScoreDetail >> Value cannot be null.
+Parameter name: String
+__________________________
+
+Log Entry : 
+27/05/2014 14:38:58
+Error in: http://localhost:4358/feedais.aspx?ap=aisfeed&pn=getnews&imei=123456789&imsi=1234567878&type=mobile&lang=en&matchid=1310230235&mschid=. Error Message:CommandGetScoreDetail >> Value cannot be null.
+Parameter name: String
+__________________________
+
+Log Entry : 
+27/05/2014 14:38:59
+Error in: http://localhost:4358/feedais.aspx?ap=aisfeed&pn=getnews&imei=123456789&imsi=1234567878&type=mobile&lang=en&matchid=1310230235&mschid=. Error Message:CommandGetScoreDetail >> Value cannot be null.
+Parameter name: String
+__________________________
+
+Log Entry : 
+27/05/2014 14:38:59
+Error in: http://localhost:4358/feedais.aspx?ap=aisfeed&pn=getnews&imei=123456789&imsi=1234567878&type=mobile&lang=en&matchid=1310230235&mschid=. Error Message:CommandGetScoreDetail >> Value cannot be null.
+Parameter name: String
+__________________________
+
+Log Entry : 
+27/05/2014 14:39:00
+Error in: http://localhost:4358/feedais.aspx?ap=aisfeed&pn=getnews&imei=123456789&imsi=1234567878&type=mobile&lang=en&matchid=1310230235&mschid=. Error Message:CommandGetScoreDetail >> Value cannot be null.
+Parameter name: String
+__________________________
+
+Log Entry : 
+27/05/2014 14:39:00
+Error in: http://localhost:4358/feedais.aspx?ap=aisfeed&pn=getnews&imei=123456789&imsi=1234567878&type=mobile&lang=en&matchid=1310230235&mschid=. Error Message:CommandGetScoreDetail >> Value cannot be null.
+Parameter name: String
+__________________________
+
+Log Entry : 
+27/05/2014 14:39:00
+Error in: http://localhost:4358/feedais.aspx?ap=aisfeed&pn=getnews&imei=123456789&imsi=1234567878&type=mobile&lang=en&matchid=1310230235&mschid=. Error Message:CommandGetScoreDetail >> Value cannot be null.
+Parameter name: String
+__________________________
+
+Log Entry : 
+27/05/2014 14:39:01
+Error in: http://localhost:4358/feedais.aspx?ap=aisfeed&pn=getnews&imei=123456789&imsi=1234567878&type=mobile&lang=en&matchid=1310230235&mschid=. Error Message:CommandGetScoreDetail >> Value cannot be null.
+Parameter name: String
+__________________________
+
+Log Entry : 
+27/05/2014 14:39:01
+Error in: http://localhost:4358/feedais.aspx?ap=aisfeed&pn=getnews&imei=123456789&imsi=1234567878&type=mobile&lang=en&matchid=1310230235&mschid=. Error Message:CommandGetScoreDetail >> Value cannot be null.
+Parameter name: String
+__________________________
+
+Log Entry : 
+27/05/2014 14:39:01
+Error in: http://localhost:4358/feedais.aspx?ap=aisfeed&pn=getnews&imei=123456789&imsi=1234567878&type=mobile&lang=en&matchid=1310230235&mschid=. Error Message:CommandGetScoreDetail >> Value cannot be null.
+Parameter name: String
+__________________________
+
+Log Entry : 
+27/05/2014 14:39:01
+Error in: http://localhost:4358/feedais.aspx?ap=aisfeed&pn=getnews&imei=123456789&imsi=1234567878&type=mobile&lang=en&matchid=1310230235&mschid=. Error Message:CommandGetScoreDetail >> Value cannot be null.
+Parameter name: String
+__________________________
+
+Log Entry : 
+27/05/2014 14:39:02
+Error in: http://localhost:4358/feedais.aspx?ap=aisfeed&pn=getnews&imei=123456789&imsi=1234567878&type=mobile&lang=en&matchid=1310230235&mschid=. Error Message:CommandGetScoreDetail >> Value cannot be null.
+Parameter name: String
+__________________________
+
+Log Entry : 
+27/05/2014 14:39:02
+Error in: http://localhost:4358/feedais.aspx?ap=aisfeed&pn=getnews&imei=123456789&imsi=1234567878&type=mobile&lang=en&matchid=1310230235&mschid=. Error Message:CommandGetScoreDetail >> Value cannot be null.
+Parameter name: String
+__________________________
+
+Log Entry : 
+27/05/2014 14:39:02
+Error in: http://localhost:4358/feedais.aspx?ap=aisfeed&pn=getnews&imei=123456789&imsi=1234567878&type=mobile&lang=en&matchid=1310230235&mschid=. Error Message:CommandGetScoreDetail >> Value cannot be null.
+Parameter name: String
+__________________________

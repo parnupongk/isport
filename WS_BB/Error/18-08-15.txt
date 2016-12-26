@@ -1,0 +1,6 @@
+
+Log Entry : 
+18/08/2015 10:13:46
+ IP :  ::1 
+Error in: http://localhost:4358/kissmodel.aspx. Error Message:Logs_Insert >> OCIEnvCreate failed with return code -1 but error message text was not available.imei:imsi:phone_nomodel:opt_code:logsIP:::1
+__________________________

@@ -1,0 +1,12 @@
+
+Log Entry : 
+03/08/2015 17:21:47
+ IP :  ::1 
+Error in: http://localhost:32814/sub.aspx. Error Message:OCIEnvCreate failed with return code -1 but error message text was not available.
+__________________________
+
+Log Entry : 
+03/08/2015 17:25:48
+ IP :  ::1 
+Error in: http://localhost:32814/sub.aspx. Error Message:OCIEnvCreate failed with return code -1 but error message text was not available.
+__________________________

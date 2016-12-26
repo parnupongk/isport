@@ -1,0 +1,22 @@
+/* -- ASPxRoundPanel -- */
+.dxrpControl_RedLine td.dxrp
+{
+	font-size: 10px;
+	font-family: Verdana;
+	color: #000000;	
+	text-align: justify;
+}
+/* Header */
+.dxrpHeader_RedLine td.dxrp
+{
+    font-size: 12px;    
+	font-family: Arial;    
+	font-weight: bold;	
+	color: #343434;
+}
+/* Disabled */
+.dxrpDisabled_RedLine, .dxrpDisabled_RedLine td.dxrp
+{
+	color: #808080;
+	cursor: default;
+}

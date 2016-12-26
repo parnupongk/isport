@@ -1,0 +1,12 @@
+
+Log Entry : 
+13/02/2014 14:27:49
+Error in: http://localhost:4358/sportpool.aspx. Error Message:Logs_Insert >> ORA-12154: TNS:could not resolve the connect identifier specified
+imei:imsi:phone_nomodel:opt_code:logsIP:127.0.0.1
+__________________________
+
+Log Entry : 
+13/02/2014 14:28:55
+Error in: http://localhost:4358/sportpool.aspx?ap=SportPool&pn=program&sportType=00001&lang=th&imei=357445049627173&model=i-mobile+IQ+2A&imsi=520036200077047&type=genfile. Error Message:CommandGetProgramByLeague >> ORA-12154: TNS:could not resolve the connect identifier specified
+ 1310222876
+__________________________

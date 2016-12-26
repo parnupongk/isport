@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<SportApp>
+  <menu nameth="สตาร์ซอคเกอร์" nameen="สตาร์ซอคเกอร์" url="startsoccer.htm" icon=""/>
+  <menu nameth="สปอร์ตพลู" nameen="สปอร์ตพลู" url="sportpool.htm?type=main" icon=""/>
+  <menu nameth="สยามกีฬา" nameen="สยามกีฬา" url="siamsport.htm" icon=""/>
+  <menu nameth="ผลสด" nameen="ผลสด" url="sportpool.htm?type=livescore" icon=""/>
+  <menu nameth="โปรแกรม" nameen="โปรแกรม" url="sportpool.htm?type=program" icon=""/>
+  <menu nameth="สรุปผล" nameen="สรุปผล" url="sportpool.htm?type=resultscore" icon=""/>
+  <menu nameth="วิเคราะห์" nameen="วิเคราะห์" url="sportpool.htm?type=main" icon=""/>
+  <menu nameth="ตารางคะแนน" nameen="ตารางคะแนน" url="sportpool.htm?type=leaguetable" icon=""/>
+  <menu nameth="Privilege" nameen="Privilege" url="main.htm?type=privilege" icon=""/>
+  <menu nameth="About us" nameen="About us" url="" icon=""/>
+  <menu nameth="Setting" nameen="Setting" url="" icon=""/>
+</SportApp>

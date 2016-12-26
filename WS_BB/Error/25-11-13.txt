@@ -1,0 +1,12 @@
+
+Log Entry : 
+25/11/2013 14:49:51
+Error in: http://localhost:4358/sportpool.aspx. Error Message:Logs_Insert >> ORA-12154: TNS:could not resolve the connect identifier specified
+imei:imsi:phone_nomodel:opt_code:logsIP:127.0.0.1
+__________________________
+
+Log Entry : 
+25/11/2013 15:02:42
+Error in: http://localhost:4358/sportpool.aspx. Error Message:Logs_Insert >> ORA-12154: TNS:could not resolve the connect identifier specified
+imei:imsi:phone_nomodel:opt_code:logsIP:127.0.0.1
+__________________________

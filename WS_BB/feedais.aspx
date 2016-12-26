@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="feedais.aspx.cs" Inherits="WS_BB.feedais1" ContentType="text/xml" %>

@@ -1,0 +1,56 @@
+
+Log Entry : 
+28/07/2016 09:17:19
+ IP :  ::1 
+Error in: http://localhost:4358/kissmodel.aspx. Error Message:Logs_Insert >> ORA-06550: line 1, column 7:
+PLS-00306: wrong number or types of arguments in call to 'SPORTAPP_INSERT_LOGS'
+ORA-06550: line 1, column 7:
+PL/SQL: Statement ignored
+imei:imsi:phone_nomodel:opt_code:logsIP:::1
+__________________________
+
+Log Entry : 
+28/07/2016 09:17:19
+ IP :  ::1 
+Error in: http://localhost:4358/kissmodel.aspx. Error Message:Logs_Insert >> ORA-06550: line 1, column 7:
+PLS-00306: wrong number or types of arguments in call to 'SPORTAPP_INSERT_LOGS'
+ORA-06550: line 1, column 7:
+PL/SQL: Statement ignored
+imei:imsi:phone_nomodel:opt_code:logsIP:::1
+__________________________
+
+Log Entry : 
+28/07/2016 09:20:20
+ IP :  ::1 
+Error in: http://localhost:4358/kissmodel.aspx?ap=KissModel&pn=main&date=07272016&imei=12345&imsi=12345. Error Message:Main main>>GenSMSService >>Duplicate attribute.
+__________________________
+
+Log Entry : 
+28/07/2016 09:22:23
+ IP :  ::1 
+Error in: http://localhost:4358/kissmodel.aspx. Error Message:Logs_Insert >> ORA-06550: line 1, column 7:
+PLS-00306: wrong number or types of arguments in call to 'SPORTAPP_INSERT_LOGS'
+ORA-06550: line 1, column 7:
+PL/SQL: Statement ignored
+imei:imsi:phone_nomodel:opt_code:logsIP:::1
+__________________________
+
+Log Entry : 
+28/07/2016 09:22:23
+ IP :  ::1 
+Error in: http://localhost:4358/kissmodel.aspx. Error Message:Logs_Insert >> ORA-06550: line 1, column 7:
+PLS-00306: wrong number or types of arguments in call to 'SPORTAPP_INSERT_LOGS'
+ORA-06550: line 1, column 7:
+PL/SQL: Statement ignored
+imei:imsi:phone_nomodel:opt_code:logsIP:::1
+__________________________
+
+Log Entry : 
+28/07/2016 09:24:52
+ IP :  ::1 
+Error in: http://localhost:4358/kissmodel.aspx. Error Message:Logs_Insert >> ORA-06550: line 1, column 7:
+PLS-00306: wrong number or types of arguments in call to 'SPORTAPP_INSERT_LOGS'
+ORA-06550: line 1, column 7:
+PL/SQL: Statement ignored
+imei:imsi:phone_nomodel:opt_code:logsIP:::1
+__________________________

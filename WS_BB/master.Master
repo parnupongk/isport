@@ -1,0 +1,25 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="master.master.cs" Inherits="WS_BB.master" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <meta property="fb:app_id" content="234540040014586" />
+    <meta property="og:image" content="http://wap.isport.co.th/isportws/images/ic_launcher.png" />
+    <title></title>
+    <link href="Site.css" type="text/css" rel="Stylesheet" rev="Stylesheet" />
+    <link rel="image_src" href="http://wap.isport.co.th/isportws/images/ic_final.png" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div style="width:100%;text-align:center;"><iframe src="http://wap.isport.co.th/ads_manager/smslivescore728.html" width="750px" height="110px" scrolling="no" frameborder=0></iframe></div>
+    <div style="width:100%;text-align:center;">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>

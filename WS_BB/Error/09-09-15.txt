@@ -1,0 +1,61 @@
+
+Log Entry : 
+09/09/2015 11:43:47
+ IP :  ::1 
+Error in: http://localhost:4358/imobilegame.aspx. Error Message:Logs_Insert >> ORA-12154: TNS:äÁèÊÒÁÒÃ¶á»Å¤èÒµÑÇÃÐºØ¡ÒÃàª×èÍÁµèÍ·ÕèÃÐºØ
+imei:imsi:phone_nomodel:opt_code:logsIP:::1
+__________________________
+
+Log Entry : 
+09/09/2015 11:44:45
+ IP :  ::1 
+Error in: http://localhost:4358/imobilegame.aspx?ap=iSoccer&pn=DataRegis&&imei=12345&model=&imsi=12345&type=android&name=ภาณุพงศ์&idcard=035434354326456456&birthDay=10032526&sex=ชาย&region=นนทบุรี&phone=. Error Message:|ภาณุพงศ์|035434354326456456 10032526 ชาย นนทบุรี 
+__________________________
+
+Log Entry : 
+09/09/2015 11:44:49
+ IP :  ::1 
+Error in: http://localhost:4358/imobilegame.aspx?ap=iSoccer&pn=DataRegis&&imei=12345&model=&imsi=12345&type=android&name=ภาณุพงศ์&idcard=035434354326456456&birthDay=10032526&sex=ชาย&region=นนทบุรี&phone=. Error Message:Logs_Insert >> ORA-12154: TNS:äÁèÊÒÁÒÃ¶á»Å¤èÒµÑÇÃÐºØ¡ÒÃàª×èÍÁµèÍ·ÕèÃÐºØ
+imei:12345imsi:12345phone_nomodel:opt_code:logsIP:::1
+__________________________
+
+Log Entry : 
+09/09/2015 12:03:15
+ IP :  ::1 
+Error in: http://localhost:4358/imobilegame.aspx. Error Message:Logs_Insert >> ORA-12154: TNS:äÁèÊÒÁÒÃ¶á»Å¤èÒµÑÇÃÐºØ¡ÒÃàª×èÍÁµèÍ·ÕèÃÐºØ
+imei:imsi:phone_nomodel:opt_code:logsIP:::1
+__________________________
+
+Log Entry : 
+09/09/2015 12:03:40
+ IP :  ::1 
+Error in: http://localhost:4358/imobilegame.aspx?ap=iSoccer&pn=DataRegis&&imei=12345&model=&imsi=12345&type=android&name=ภาณุพงศ์&idcard=035434354326456456&birthDay=10032526&sex=ชาย&region=นนทบุรี&phone=. Error Message:|ภาณุพงศ์|035434354326456456 10032526 ชาย นนทบุรี 
+__________________________
+
+Log Entry : 
+09/09/2015 12:03:40
+ IP :  ::1 
+Error in: http://localhost:4358/imobilegame.aspx?ap=iSoccer&pn=DataRegis&&imei=12345&model=&imsi=12345&type=android&name=ภาณุพงศ์&idcard=035434354326456456&birthDay=10032526&sex=ชาย&region=นนทบุรี&phone=. Error Message:Logs_Insert >> ORA-12154: TNS:äÁèÊÒÁÒÃ¶á»Å¤èÒµÑÇÃÐºØ¡ÒÃàª×èÍÁµèÍ·ÕèÃÐºØ
+imei:12345imsi:12345phone_nomodel:opt_code:logsIP:::1
+__________________________
+
+Log Entry : 
+09/09/2015 17:40:50
+ IP :  ::1 
+Error in: http://localhost:4358/imobilegame.aspx. Error Message:Logs_Insert >> ORA-12154: TNS:äÁèÊÒÁÒÃ¶á»Å¤èÒµÑÇÃÐºØ¡ÒÃàª×èÍÁµèÍ·ÕèÃÐºØ
+imei:imsi:phone_nomodel:opt_code:logsIP:::1
+__________________________
+
+Log Entry : 
+09/09/2015 17:41:31
+ IP :  ::1 
+Error in: http://localhost:4358/imobilegame.aspx?ap=iSoccer&pn=News&date=&lang=th&imei=12345&model=&imsi=12345&type=android&contentgroupid=21. Error Message:CommandGetScoreDetail >> ORA-12154: TNS:äÁèÊÒÁÒÃ¶á»Å¤èÒµÑÇÃÐºØ¡ÒÃàª×èÍÁµèÍ·ÕèÃÐºØ
+
+__________________________
+
+Log Entry : 
+09/09/2015 17:41:31
+ IP :  ::1 
+Error in: http://localhost:4358/imobilegame.aspx?ap=iSoccer&pn=News&date=&lang=th&imei=12345&model=&imsi=12345&type=android&contentgroupid=21. Error Message:Logs_Insert >> ORA-12154: TNS:äÁèÊÒÁÒÃ¶á»Å¤èÒµÑÇÃÐºØ¡ÒÃàª×èÍÁµèÍ·ÕèÃÐºØ
+imei:12345imsi:12345phone_nomodel:opt_code:logsIP:::1
+__________________________

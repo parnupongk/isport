@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="sportpool.aspx.cs" Inherits="WS_BB.sportpool" ContentType="text/xml" ResponseEncoding="UTF-8" %>

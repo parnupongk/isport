@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="bbws.aspx.cs" Inherits="WS_BB.bbws" ContentType="text/xml" ResponseEncoding="UTF-8"  %>

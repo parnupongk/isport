@@ -1,0 +1,7 @@
+
+Log Entry : 
+27/11/2015 15:30:13
+ IP :  ::1 
+Error in: http://localhost:4358/starsoccer.aspx. Error Message:Logs_Insert >> ORA-12154: TNS:could not resolve the connect identifier specified
+imei:imsi:phone_nomodel:opt_code:logsIP:::1
+__________________________

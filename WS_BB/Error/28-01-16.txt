@@ -1,0 +1,105 @@
+
+Log Entry : 
+28/01/2016 10:31:01
+ IP :  ::1 
+Error in: http://localhost:4358/isportchkact.aspx?p=ccafekey. Error Message:Logs_Insert >> ORA-12154: TNS:could not resolve the connect identifier specified
+imei:imsi:phone_nomodel:opt_code:logsIP:::1
+__________________________
+
+Log Entry : 
+28/01/2016 10:31:04
+ IP :  ::1 
+Error in: http://localhost:4358/isportchkact.aspx?p=ccafekey. Error Message:Logs_Insert >> ORA-12154: TNS:could not resolve the connect identifier specified
+imei:imsi:phone_nomodel:opt_code:logsIP:::1
+__________________________
+
+Log Entry : 
+28/01/2016 10:31:05
+ IP :  ::1 
+Error in: http://localhost:4358/isportchkact.aspx?p=ccafekey. Error Message:Logs_Insert >> ORA-12154: TNS:could not resolve the connect identifier specified
+imei:imsi:phone_nomodel:opt_code:logsIP:::1
+__________________________
+
+Log Entry : 
+28/01/2016 10:31:05
+ IP :  ::1 
+Error in: http://localhost:4358/isportchkact.aspx?p=ccafekey. Error Message:Logs_Insert >> ORA-12154: TNS:could not resolve the connect identifier specified
+imei:imsi:phone_nomodel:opt_code:logsIP:::1
+__________________________
+
+Log Entry : 
+28/01/2016 10:31:05
+ IP :  ::1 
+Error in: http://localhost:4358/isportchkact.aspx?p=ccafekey. Error Message:Logs_Insert >> ORA-12154: TNS:could not resolve the connect identifier specified
+imei:imsi:phone_nomodel:opt_code:logsIP:::1
+__________________________
+
+Log Entry : 
+28/01/2016 10:31:06
+ IP :  ::1 
+Error in: http://localhost:4358/isportchkact.aspx?p=ccafekey. Error Message:Logs_Insert >> ORA-12154: TNS:could not resolve the connect identifier specified
+imei:imsi:phone_nomodel:opt_code:logsIP:::1
+__________________________
+
+Log Entry : 
+28/01/2016 10:31:32
+ IP :  ::1 
+Error in: http://localhost:4358/isportchkact.aspx?p=ccafekey. Error Message:Logs_Insert >> ORA-12154: TNS:could not resolve the connect identifier specified
+imei:imsi:phone_nomodel:opt_code:logsIP:::1
+__________________________
+
+Log Entry : 
+28/01/2016 10:34:30
+ IP :  ::1 
+Error in: http://localhost:4358/isportchkact.aspx?p=ccafekey. Error Message:Logs_Insert >> ORA-12154: TNS:could not resolve the connect identifier specified
+imei:imsi:phone_nomodel:opt_code:logsIP:::1
+__________________________
+
+Log Entry : 
+28/01/2016 10:34:31
+ IP :  ::1 
+Error in: http://localhost:4358/isportchkact.aspx?p=ccafekey. Error Message:Logs_Insert >> ORA-12154: TNS:could not resolve the connect identifier specified
+imei:imsi:phone_nomodel:opt_code:logsIP:::1
+__________________________
+
+Log Entry : 
+28/01/2016 10:34:32
+ IP :  ::1 
+Error in: http://localhost:4358/isportchkact.aspx?p=ccafekey. Error Message:Logs_Insert >> ORA-12154: TNS:could not resolve the connect identifier specified
+imei:imsi:phone_nomodel:opt_code:logsIP:::1
+__________________________
+
+Log Entry : 
+28/01/2016 10:34:32
+ IP :  ::1 
+Error in: http://localhost:4358/isportchkact.aspx?p=ccafekey. Error Message:Logs_Insert >> ORA-12154: TNS:could not resolve the connect identifier specified
+imei:imsi:phone_nomodel:opt_code:logsIP:::1
+__________________________
+
+Log Entry : 
+28/01/2016 10:34:33
+ IP :  ::1 
+Error in: http://localhost:4358/isportchkact.aspx?p=ccafekey. Error Message:Logs_Insert >> ORA-12154: TNS:could not resolve the connect identifier specified
+imei:imsi:phone_nomodel:opt_code:logsIP:::1
+__________________________
+
+Log Entry : 
+28/01/2016 10:34:33
+ IP :  ::1 
+Error in: http://localhost:4358/isportchkact.aspx?p=ccafekey. Error Message:Logs_Insert >> ORA-12154: TNS:could not resolve the connect identifier specified
+imei:imsi:phone_nomodel:opt_code:logsIP:::1
+__________________________
+
+Log Entry : 
+28/01/2016 10:41:36
+ IP :  ::1 
+Error in: http://localhost:4358/isportphone.asmx/Isport_GetSportNews?contestGroupId=21&sportType=00001&newsRowCount=10&lang=th&code=21a00001&type=android&key=4354365ijodsijgodsigtju439u54t54. Error Message:CommandGetScoreDetail >> ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+28/01/2016 10:41:36
+ IP :  ::1 
+Error in: http://localhost:4358/isportphone.asmx/Isport_GetSportNews?contestGroupId=21&sportType=00001&newsRowCount=10&lang=th&code=21a00001&type=android&key=4354365ijodsijgodsigtju439u54t54. Error Message:Logs_Insert >> ORA-12154: TNS:could not resolve the connect identifier specified
+imei:imsi:phone_nomodel:opt_code:logsIP:::1
+__________________________

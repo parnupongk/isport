@@ -1,0 +1,10 @@
+﻿
+<?xml version="1.0" encoding="UTF-8"?>
+-<SportApp date="จ. 28 พ.ย. 2554" header="อัพเดทล่าสุดวัน">
+  <Clip clip_date="28/11/2011" clip_url="http://sstv.siamsport.co.th/clips/mp4/2011/11/00028830.mp4" clip_images="http://203.149.30.76/isportimage/images/120x75/00028830.jpg" clip_topic="สัมภาษณ์ พิเชษฐ์ สุโพธิ์เมือง โค้ช ขอนแก่น เอฟซี หลังแพ้ ชลบุรี เอฟซี 0-2" clip_id="00028830"/>
+  <Clip clip_date="28/11/2011" clip_url="http://sstv.siamsport.co.th/clips/mp4/2011/11/00028829.mp4" clip_images="http://203.149.30.76/isportimage/images/120x75/00028829.jpg" clip_topic="สัมภาษณ์ วิทยา เลาหกุล โค้ช ชลบุรี เอฟซี หลังชนะ ขอนแก่น เอฟซี 2-0" clip_id="00028829"/>
+  <Clip clip_date="28/11/2011" clip_url="http://sstv.siamsport.co.th/clips/mp4/2011/11/00028828.mp4" clip_images="http://203.149.30.76/isportimage/images/120x75/00028828.jpg" clip_topic="สัมภาษณ์ สมชาย ชวยบุญชุม โค้ช ราชนาวี หลังแพ้ บุรีรัมย์ พีอีเอ 0-1" clip_id="00028828"/>
+  <Clip clip_date="28/11/2011" clip_url="http://sstv.siamsport.co.th/clips/mp4/2011/11/00028827.mp4" clip_images="http://203.149.30.76/isportimage/images/120x75/00028827.jpg" clip_topic="สัมภาษณ์ อรรถพล ปุษปาคม โค้ช บุรีรัมย์ พีอีเอ หลังชนะ ราชนาวี 1-0" clip_id="00028827"/>
+  <status>success</status>
+  <message> </message>
+</SportApp>

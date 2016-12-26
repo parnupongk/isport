@@ -1,0 +1,48 @@
+
+Log Entry : 
+08/09/2015 13:24:14
+ IP :  ::1 
+Error in: http://localhost:4358/imobilegame.aspx. Error Message:Logs_Insert >> OCIEnvCreate failed with return code -1 but error message text was not available.imei:imsi:phone_nomodel:opt_code:logsIP:::1
+__________________________
+
+Log Entry : 
+08/09/2015 13:24:34
+ IP :  ::1 
+Error in: http://localhost:4358/imobilegame.aspx?ap=iSoccer&pn=Main&date=&lang=th&imei=12345&model=&imsi=12345&type=android&contentgroupid=21. Error Message:Logs_Insert >> OCIEnvCreate failed with return code -1 but error message text was not available.imei:12345imsi:12345phone_nomodel:opt_code:logsIP:::1
+__________________________
+
+Log Entry : 
+08/09/2015 13:27:31
+ IP :  ::1 
+Error in: http://localhost:4358/imobilegame.aspx?ap=iSoccer&pn=Main&date=&lang=th&imei=12345&model=&imsi=12345&type=android&contentgroupid=21. Error Message:Logs_Insert >> OCIEnvCreate failed with return code -1 but error message text was not available.imei:12345imsi:12345phone_nomodel:opt_code:logsIP:::1
+__________________________
+
+Log Entry : 
+08/09/2015 13:27:36
+ IP :  ::1 
+Error in: http://localhost:4358/imobilegame.aspx?ap=iSoccer&pn=Main&date=&lang=th&imei=12345&model=&imsi=12345&type=android&contentgroupid=21. Error Message:Logs_Insert >> OCIEnvCreate failed with return code -1 but error message text was not available.imei:12345imsi:12345phone_nomodel:opt_code:logsIP:::1
+__________________________
+
+Log Entry : 
+08/09/2015 13:27:37
+ IP :  ::1 
+Error in: http://localhost:4358/imobilegame.aspx?ap=iSoccer&pn=Main&date=&lang=th&imei=12345&model=&imsi=12345&type=android&contentgroupid=21. Error Message:Logs_Insert >> OCIEnvCreate failed with return code -1 but error message text was not available.imei:12345imsi:12345phone_nomodel:opt_code:logsIP:::1
+__________________________
+
+Log Entry : 
+08/09/2015 13:30:16
+ IP :  ::1 
+Error in: http://localhost:4358/imobilegame.aspx. Error Message:Logs_Insert >> OCIEnvCreate failed with return code -1 but error message text was not available.imei:imsi:phone_nomodel:opt_code:logsIP:::1
+__________________________
+
+Log Entry : 
+08/09/2015 13:30:50
+ IP :  ::1 
+Error in: http://localhost:4358/imobilegame.aspx?ap=iSoccer&pn=Main&date=&lang=th&imei=12345&model=&imsi=12345&type=android&contentgroupid=21. Error Message:Logs_Insert >> OCIEnvCreate failed with return code -1 but error message text was not available.imei:12345imsi:12345phone_nomodel:opt_code:logsIP:::1
+__________________________
+
+Log Entry : 
+08/09/2015 13:31:16
+ IP :  ::1 
+Error in: http://localhost:4358/imobilegame.aspx?ap=iSoccer&pn=Main&date=&lang=th&imei=12345&model=&imsi=12345&type=android&contentgroupid=21. Error Message:Logs_Insert >> OCIEnvCreate failed with return code -1 but error message text was not available.imei:12345imsi:12345phone_nomodel:opt_code:logsIP:::1
+__________________________

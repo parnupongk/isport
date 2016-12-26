@@ -1,0 +1,12 @@
+
+Log Entry : 
+26/05/2014 14:17:29
+Error in: http://localhost:4358/feedais.aspx. Error Message:Logs_Insert >> ORA-12154: TNS:could not resolve the connect identifier specified
+imei:imsi:phone_nomodel:opt_code:logsIP:127.0.0.1
+__________________________
+
+Log Entry : 
+26/05/2014 14:18:19
+Error in: http://localhost:4358/feedais.aspx. Error Message:Logs_Insert >> ORA-12154: TNS:could not resolve the connect identifier specified
+imei:imsi:phone_nomodel:opt_code:logsIP:127.0.0.1
+__________________________

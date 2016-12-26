@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="isportgcm.aspx.cs" Inherits="WS_BB.isportgcm" ContentType="application/json" ResponseEncoding="UTF-8" %>

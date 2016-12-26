@@ -1,0 +1,21 @@
+
+Log Entry : 
+15/07/2015 16:32:16
+ IP :  127.0.0.1 
+Error in: http://localhost:4358/starsoccer.aspx. Error Message:Logs_Insert >> ORA-12154: TNS:could not resolve the connect identifier specified
+imei:imsi:phone_nomodel:opt_code:logsIP:127.0.0.1
+__________________________
+
+Log Entry : 
+15/07/2015 16:32:33
+ IP :  127.0.0.1 
+Error in: http://localhost:4358/starsoccer.aspx?ap=StarSoccer&pn=result&imei=124324&imsi=android&contentGroupId=&type=genfile&date=20150715&sporttype=0001. Error Message:Logs_Insert >> ORA-12154: TNS:could not resolve the connect identifier specified
+imei:124324imsi:androidphone_nomodel:opt_code:logsIP:127.0.0.1
+__________________________
+
+Log Entry : 
+15/07/2015 16:37:32
+ IP :  127.0.0.1 
+Error in: http://localhost:4358/starsoccer.aspx?scoreDate=&contestGroupId=&countryId=&lang=th&code=&type=genfile. Error Message:Logs_Insert >> ORA-12154: TNS:could not resolve the connect identifier specified
+imei:imsi:phone_nomodel:opt_code:logsIP:127.0.0.1
+__________________________

@@ -1,0 +1,1655 @@
+/* -- ASPxCallbackPanel -- */
+.dxcpLoadingPanel_Office2003_Blue
+{
+	font: 9pt Tahoma, Verdana, Arial;
+	color: #303030;
+}
+.dxcpLoadingPanel_Office2003_Blue td.dx
+{
+	white-space: nowrap;
+	text-align: center;
+	padding: 12px 12px 12px 12px;
+}
+/* Disabled */
+.dxcpDisabled_Office2003_Blue
+{
+	color: #808080;
+	cursor: default;
+}
+
+/* -- ASPxRoundPanel -- */
+.dxrpControl_Office2003_Blue td.dxrp
+{
+    font: 9pt Tahoma, Verdana, Arial;
+    color: #000;
+}
+.dxrpControl_Office2003_Blue .dxrpHeader_Office2003_Blue td.dxrp
+{
+    font-weight: bold;
+}
+
+/* -- ASPxCloudControl -- */
+.dxccControl_Office2003_Blue a
+{
+	color: #629DB6;	
+	text-decoration: none!important;
+	
+}
+.dxccControl_Office2003_Blue a:hover
+{	
+    text-decoration: underline!important;
+}
+.dxccControl_Office2003_Blue
+{
+	color: #629DB6;
+	background-color: #D0E2F9;
+	border: solid 1px #002D96;
+	font-family: Tahoma, Verdana, Arial;	
+	font-size: 25px;
+	line-height: 25px;
+}
+/* Disabled */
+.dxccDisabled_Office2003_Blue
+{
+	color: #808080;
+	cursor: default;
+}
+
+/* -- ASPxDataView -- */
+.dxdvControl_Office2003_Blue
+{
+	font: 9pt Tahoma;
+	color: black;
+	padding: 0px;
+}
+.dxdvLoadingPanel_Office2003_Blue
+{
+	font: 9pt Tahoma;
+	color: #303030;
+}
+.dxdvLoadingPanel_Office2003_Blue td.dx
+{
+	white-space: nowrap;
+	text-align: center;
+	padding: 14px 20px 14px 50px;
+}
+.dxdvContent_Office2003_Blue
+{
+	border-top: Solid 1px #4F93E3;
+	border-bottom: Solid 1px #4F93E3;
+}
+.dxdvItem_Office2003_Blue
+{
+	font: 9pt Tahoma;
+	color: Black;
+	padding: 26px 50px;
+	height: 180px;
+	/*if IE*/	
+	height:expression("154px");
+}
+.dxdvEmptyItem_Office2003_Blue
+{
+	font: 9pt Tahoma;
+	color: Black;
+	text-align: left;
+	vertical-align: top;
+	padding: 26px 50px;
+	height: 180px;
+	/*if IE*/
+	height:expression("154px");
+}
+.dxdvPagerPanel_Office2003_Blue
+{
+	font: 9pt Tahoma;
+	background-color: #BCD5FC;
+	padding: 6px 0px;
+}
+/* Disabled */
+.dxdvDisabled_Office2003_Blue
+{
+	color: #808080;
+	cursor: default;
+}
+
+/* -- ASPxMenu -- */
+.dxmControl_Office2003_Blue 
+{
+	font: 9pt Tahoma;
+	color: black;
+}
+.dxmControl_Office2003_Blue a, .dxmMenu_Office2003_Blue a, .dxmVerticalMenu_Office2003_Blue a, .dxmSubMenu_Office2003_Blue a
+{
+	color: black;
+	text-decoration: none;
+}
+.dxmMenu_Office2003_Blue, .dxmVerticalMenu_Office2003_Blue
+{
+	font: 9pt Tahoma;
+	color: black;	
+	background: url(mItemBack.gif) repeat-y left top #C3DAF9;
+	border: solid 1px #002D96;
+	padding: 3px;
+}
+.dxmMenuGutter_Office2003_Blue
+{
+}
+.dxmMenuSeparator_Office2003_Blue
+{
+	background-image: url(mItemSeparatorBack.gif);
+	background-position: left top;
+	background-repeat: repeat-y;
+}
+.dxmMenuItem_Office2003_Blue, .dxmMenuItemWithImage_Office2003_Blue, .dxmMenuItemWithPopOutImage_Office2003_Blue, .dxmMenuItemWithImageWithPopOutImage_Office2003_Blue,
+.dxmVerticalMenuItem_Office2003_Blue, .dxmVerticalMenuItemWithImage_Office2003_Blue, .dxmVerticalMenuItemWithPopOutImage_Office2003_Blue, .dxmVerticalMenuItemWithImageWithPopOutImage_Office2003_Blue, 
+.dxmMenuLargeItem_Office2003_Blue, .dxmMenuLargeItemWithImage_Office2003_Blue, .dxmMenuLargeItemWithPopOutImage_Office2003_Blue, .dxmMenuLargeItemWithImageWithPopOutImage_Office2003_Blue,
+.dxmVerticalMenuLargeItem_Office2003_Blue, .dxmVerticalMenuLargeItemWithImage_Office2003_Blue, .dxmVerticalMenuLargeItemWithPopOutImage_Office2003_Blue, .dxmVerticalMenuLargeItemWithImageWithPopOutImage_Office2003_Blue
+{
+	font: 9pt Tahoma;
+	color: black;
+	white-space: nowrap;
+}
+.dxmMenuItem_Office2003_Blue, .dxmMenuItemWithImage_Office2003_Blue
+{
+	padding-top: 4px;
+	padding-right: 8px;
+	padding-bottom: 5px;
+	padding-left: 8px;
+}
+.dxmMenuItemWithPopOutImage_Office2003_Blue, .dxmMenuItemWithImageWithPopOutImage_Office2003_Blue
+{
+	padding-top: 4px;
+	padding-right: 6px;
+	padding-bottom: 5px;
+	padding-left: 8px;
+}	
+.dxmVerticalMenuItem_Office2003_Blue
+{
+	padding-top: 4px;
+	padding-right: 19px;
+	padding-bottom: 5px;
+	padding-left: 8px;
+}
+.dxmVerticalMenuItemWithImage_Office2003_Blue
+{
+	padding-top: 4px;	
+	padding-right: 19px;	
+	padding-bottom: 5px;	
+	padding-left: 3px;	
+}
+.dxmVerticalMenuItemWithPopOutImage_Office2003_Blue
+{
+	padding-top: 4px;	
+	padding-right: 6px;	
+	padding-bottom: 5px;	
+	padding-left: 8px;	
+}
+.dxmVerticalMenuItemWithImageWithPopOutImage_Office2003_Blue
+{
+	padding-top: 4px;	
+	padding-right: 6px;	
+	padding-bottom: 5px;	
+	padding-left: 3px;	
+}
+.dxmMenuLargeItem_Office2003_Blue, .dxmMenuLargeItemWithImage_Office2003_Blue
+{
+	padding-top: 2px;
+	padding-right: 12px;
+	padding-bottom: 2px;
+	padding-left: 11px;
+}
+.dxmMenuLargeItemWithPopOutImage_Office2003_Blue, .dxmMenuLargeItemWithImageWithPopOutImage_Office2003_Blue
+{
+	padding-top: 2px;
+	padding-right: 6px;
+	padding-bottom: 2px;
+	padding-left: 11px;
+}
+.dxmVerticalMenuLargeItem_Office2003_Blue, .dxmVerticalMenuLargeItemWithImage_Office2003_Blue
+{
+	padding-top: 2px;
+	padding-right: 12px;
+	padding-bottom: 2px;
+	padding-left: 11px;
+}
+.dxmVerticalMenuLargeItemWithPopOutImage_Office2003_Blue, .dxmVerticalMenuLargeItemWithImageWithPopOutImage_Office2003_Blue
+{
+	padding-top: 2px;
+	padding-right: 6px;
+	padding-bottom: 2px;
+	padding-left: 11px;
+}
+.dxmMenuItemSelected_Office2003_Blue, .dxmMenuItemSelectedWithImage_Office2003_Blue, .dxmMenuItemSelectedWithPopOutImage_Office2003_Blue, .dxmMenuItemSelectedWithImageWithPopOutImage_Office2003_Blue,
+.dxmVerticalMenuItemSelected_Office2003_Blue, .dxmVerticalMenuItemSelectedWithImage_Office2003_Blue, .dxmVerticalMenuItemSelectedWithPopOutImage_Office2003_Blue, .dxmVerticalMenuItemSelectedWithImageWithPopOutImage_Office2003_Blue,
+.dxmMenuLargeItemSelected_Office2003_Blue, .dxmMenuLargeItemSelectedWithImage_Office2003_Blue, .dxmMenuLargeItemSelectedWithPopOutImage_Office2003_Blue, .dxmMenuLargeItemSelectedWithImageWithPopOutImage_Office2003_Blue,
+.dxmVerticalMenuLargeItemSelected_Office2003_Blue, .dxmVerticalMenuLargeItemWithImageSelected_Office2003_Blue, .dxmVerticalMenuLargeItemSelectedWithPopOutImage_Office2003_Blue, .dxmVerticalMenuLargeItemSelectedWithImageWithPopOutImage_Office2003_Blue
+{
+	background: url(mItemSBack.gif) repeat-x center top #FFAD55;
+	border: solid 1px #002D96;
+}
+.dxmMenuItemSelected_Office2003_Blue, .dxmMenuItemSelectedWithImage_Office2003_Blue
+{
+	padding-top: 3px;
+	padding-right: 7px;
+	padding-bottom: 4px;
+	padding-left: 7px;
+}
+.dxmMenuItemSelectedWithPopOutImage_Office2003_Blue, .dxmMenuItemSelectedWithImageWithPopOutImage_Office2003_Blue
+{
+	padding-top: 3px;
+	padding-right: 5px;
+	padding-bottom: 4px;
+	padding-left: 7px;
+}	
+.dxmVerticalMenuItemSelected_Office2003_Blue
+{
+	padding-top: 3px;
+	padding-right: 18px;
+	padding-bottom: 4px;
+	padding-left: 7px;
+}
+.dxmVerticalMenuItemSelectedWithImage_Office2003_Blue
+{
+	padding-top: 3px;	
+	padding-right: 18px;	
+	padding-bottom: 4px;	
+	padding-left: 2px;	
+}
+.dxmVerticalMenuItemSelectedWithPopOutImage_Office2003_Blue
+{
+	padding-top: 3px;	
+	padding-right: 5px;	
+	padding-bottom: 4px;	
+	padding-left: 7px;	
+}
+.dxmVerticalMenuItemSelectedWithImageWithPopOutImage_Office2003_Blue
+{
+	padding-top: 3px;	
+	padding-right: 5px;	
+	padding-bottom: 4px;	
+	padding-left: 2px;	
+}
+.dxmMenuLargeItemSelected_Office2003_Blue, .dxmMenuLargeItemSelectedWithImage_Office2003_Blue
+{
+	padding-top: 1px;
+	padding-right: 11px;
+	padding-bottom: 1px;
+	padding-left: 10px;
+}
+.dxmMenuLargeItemSelectedWithPopOutImage_Office2003_Blue, .dxmMenuLargeItemSelectedWithImageWithPopOutImage_Office2003_Blue
+{
+	padding-top: 1px;
+	padding-right: 5px;
+	padding-bottom: 1px;
+	padding-left: 10px;
+}
+.dxmVerticalMenuLargeItemSelected_Office2003_Blue, .dxmVerticalMenuLargeItemSelectedWithImage_Office2003_Blue
+{
+	padding-top: 1px;
+	padding-right: 11px;
+	padding-bottom: 1px;
+	padding-left: 10px;
+}
+.dxmVerticalMenuLargeItemSelectedWithPopOutImage_Office2003_Blue, .dxmVerticalMenuLargeItemSelectedWithImageWithPopOutImage_Office2003_Blue
+{
+	padding-top: 1px;
+	padding-right: 5px;
+	padding-bottom: 1px;
+	padding-left: 10px;
+}
+.dxmMenuItemChecked_Office2003_Blue, .dxmMenuItemCheckedWithImage_Office2003_Blue, .dxmMenuItemCheckedWithPopOutImage_Office2003_Blue, .dxmMenuItemCheckedWithImageWithPopOutImage_Office2003_Blue,
+.dxmVerticalMenuItemChecked_Office2003_Blue, .dxmVerticalMenuItemCheckedWithImage_Office2003_Blue, .dxmVerticalMenuItemCheckedWithPopOutImage_Office2003_Blue, .dxmVerticalMenuItemCheckedWithImageWithPopOutImage_Office2003_Blue,
+.dxmMenuLargeItemChecked_Office2003_Blue, .dxmMenuLargeItemCheckedWithImage_Office2003_Blue, .dxmMenuLargeItemCheckedWithPopOutImage_Office2003_Blue, .dxmMenuLargeItemCheckedWithImageWithPopOutImage_Office2003_Blue,
+.dxmVerticalMenuLargeItemChecked_Office2003_Blue, .dxmVerticalMenuLargeItemWithImageChecked_Office2003_Blue, .dxmVerticalMenuLargeItemCheckedWithPopOutImage_Office2003_Blue, .dxmVerticalMenuLargeItemCheckedWithImageWithPopOutImage_Office2003_Blue
+{
+	background: url(mItemSBack.gif) repeat-x center top #FFAD55;
+	border: solid 1px #002D96;
+}
+.dxmMenuItemChecked_Office2003_Blue, .dxmMenuItemCheckedWithImage_Office2003_Blue
+{
+	padding-top: 3px;
+	padding-right: 7px;
+	padding-bottom: 4px;
+	padding-left: 7px;
+}
+.dxmMenuItemCheckedWithPopOutImage_Office2003_Blue, .dxmMenuItemCheckedWithImageWithPopOutImage_Office2003_Blue
+{
+	padding-top: 3px;
+	padding-right: 5px;
+	padding-bottom: 4px;
+	padding-left: 7px;
+}	
+.dxmVerticalMenuItemChecked_Office2003_Blue
+{
+	padding-top: 3px;
+	padding-right: 18px;
+	padding-bottom: 4px;
+	padding-left: 7px;
+}
+.dxmVerticalMenuItemCheckedWithImage_Office2003_Blue
+{
+	padding-top: 3px;	
+	padding-right: 18px;	
+	padding-bottom: 4px;	
+	padding-left: 2px;	
+}
+.dxmVerticalMenuItemCheckedWithPopOutImage_Office2003_Blue
+{
+	padding-top: 3px;	
+	padding-right: 5px;	
+	padding-bottom: 4px;	
+	padding-left: 7px;	
+}
+.dxmVerticalMenuItemCheckedWithImageWithPopOutImage_Office2003_Blue
+{
+	padding-top: 3px;	
+	padding-right: 5px;	
+	padding-bottom: 4px;	
+	padding-left: 2px;	
+}
+.dxmMenuLargeItemChecked_Office2003_Blue, .dxmMenuLargeItemCheckedWithImage_Office2003_Blue
+{
+	padding-top: 1px;
+	padding-right: 11px;
+	padding-bottom: 1px;
+	padding-left: 10px;
+}
+.dxmMenuLargeItemCheckedWithPopOutImage_Office2003_Blue, .dxmMenuLargeItemCheckedWithImageWithPopOutImage_Office2003_Blue
+{
+	padding-top: 1px;
+	padding-right: 5px;
+	padding-bottom: 1px;
+	padding-left: 10px;
+}
+.dxmVerticalMenuLargeItemChecked_Office2003_Blue, .dxmVerticalMenuLargeItemCheckedWithImage_Office2003_Blue
+{
+	padding-top: 1px;
+	padding-right: 11px;
+	padding-bottom: 1px;
+	padding-left: 10px;
+}
+.dxmVerticalMenuLargeItemCheckedWithPopOutImage_Office2003_Blue, .dxmVerticalMenuLargeItemCheckedWithImageWithPopOutImage_Office2003_Blue
+{
+	padding-top: 1px;
+	padding-right: 5px;
+	padding-bottom: 1px;
+	padding-left: 10px;
+}
+.dxmMenuItemHover_Office2003_Blue, .dxmMenuItemHoverWithImage_Office2003_Blue, .dxmMenuItemHoverWithPopOutImage_Office2003_Blue, .dxmMenuItemHoverWithImageWithPopOutImage_Office2003_Blue, 
+.dxmVerticalMenuItemHover_Office2003_Blue, .dxmVerticalMenuItemHoverWithImage_Office2003_Blue, .dxmVerticalMenuItemHoverWithPopOutImage_Office2003_Blue, .dxmVerticalMenuItemHoverWithImageWithPopOutImage_Office2003_Blue, 
+.dxmMenuLargeItemHover_Office2003_Blue, .dxmMenuLargeItemHoverWithImage_Office2003_Blue, .dxmMenuLargeItemHoverWithPopOutImage_Office2003_Blue, .dxmMenuLargeItemHoverWithImageWithPopOutImage_Office2003_Blue, 
+.dxmVerticalMenuLargeItemHover_Office2003_Blue, .dxmVerticalMenuLargeItemHoverWithImage_Office2003_Blue, .dxmVerticalMenuLargeItemHoverWithPopOutImage_Office2003_Blue, .dxmVerticalMenuLargeItemHoverWithImageWithPopOutImage_Office2003_Blue
+{
+	background: url(mItemHBack.gif) repeat-x center top #FFD69A;
+	border: solid 1px #002D96;
+}
+.dxmMenuItemHover_Office2003_Blue, .dxmMenuItemHoverWithImage_Office2003_Blue
+{
+	padding-top: 3px;
+	padding-right: 7px;
+	padding-bottom: 4px;
+	padding-left: 7px;
+}
+.dxmMenuItemHoverWithPopOutImage_Office2003_Blue, .dxmMenuItemHoverWithImageWithPopOutImage_Office2003_Blue
+{
+	padding-top: 3px;
+	padding-right: 5px;
+	padding-bottom: 4px;
+	padding-left: 7px;
+}	
+.dxmVerticalMenuItemHover_Office2003_Blue
+{
+	padding-top: 3px;
+	padding-right: 18px;
+	padding-bottom: 4px;
+	padding-left: 7px;
+}
+.dxmVerticalMenuItemHoverWithImage_Office2003_Blue
+{
+	padding-top: 3px;	
+	padding-right: 18px;	
+	padding-bottom: 4px;	
+	padding-left: 2px;	
+}
+.dxmVerticalMenuItemHoverWithPopOutImage_Office2003_Blue
+{
+	padding-top: 3px;	
+	padding-right: 5px;	
+	padding-bottom: 4px;	
+	padding-left: 7px;	
+}
+.dxmVerticalMenuItemHoverWithImageWithPopOutImage_Office2003_Blue
+{
+	padding-top: 3px;	
+	padding-right: 5px;	
+	padding-bottom: 4px;	
+	padding-left: 2px;	
+}
+.dxmMenuLargeItemHover_Office2003_Blue, .dxmMenuLargeItemHoverWithImage_Office2003_Blue
+{
+	padding-top: 1px;
+	padding-right: 11px;
+	padding-bottom: 1px;
+	padding-left: 10px;
+}
+.dxmMenuLargeItemHoverWithPopOutImage_Office2003_Blue, .dxmMenuLargeItemHoverWithImageWithPopOutImage_Office2003_Blue
+{
+	padding-top: 1px;
+	padding-right: 5px;
+	padding-bottom: 1px;
+	padding-left: 10px;
+}
+.dxmVerticalMenuLargeItemHover_Office2003_Blue, .dxmVerticalMenuLargeItemHoverWithImage_Office2003_Blue
+{
+	padding-top: 1px;
+	padding-right: 11px;
+	padding-bottom: 1px;
+	padding-left: 10px;
+}
+.dxmVerticalMenuLargeItemHoverWithPopOutImage_Office2003_Blue, .dxmVerticalMenuLargeItemHoverWithImageWithPopOutImage_Office2003_Blue
+{
+	padding-top: 1px;
+	padding-right: 5px;
+	padding-bottom: 1px;
+	padding-left: 10px;
+}
+.dxmSubMenu_Office2003_Blue
+{
+	font: 9pt Tahoma;
+	color: black;
+	background-color: #F6F6F6;
+	border: solid 1px #002D96;
+	padding: 1px 1px 1px 1px;
+}
+.dxmSubMenuGutter_Office2003_Blue
+{
+	background: url(mPopupBack.gif) repeat-y left top;
+}
+.dxmSubMenuSeparator_Office2003_Blue
+{
+	background-color: #6A8CCB;
+}
+.dxmSubMenuItem_Office2003_Blue, .dxmSubMenuItemWithImage_Office2003_Blue, .dxmSubMenuItemWithPopOutImage_Office2003_Blue, .dxmSubMenuItemWithImageWithPopOutImage_Office2003_Blue
+{
+	font: 8pt Tahoma;
+	color: black;
+	white-space: nowrap;
+}
+.dxmSubMenuItem_Office2003_Blue 
+{
+	padding-top: 4px;
+	padding-right: 9px;
+	padding-bottom: 5px;
+	padding-left: 3px;	
+}
+.dxmSubMenuItemWithImage_Office2003_Blue 
+{
+	padding-top: 2px;
+	padding-right: 9px;
+	padding-bottom: 2px;
+	padding-left: 3px;
+	height: 19px;
+}
+.dxmSubMenuItemWithPopOutImage_Office2003_Blue
+{
+	padding-top: 4px;
+	padding-right: 9px;
+	padding-bottom: 5px;
+	padding-left: 3px;
+}
+.dxmSubMenuItemWithImageWithPopOutImage_Office2003_Blue 
+{
+	padding-top: 2px;
+	padding-right: 9px;
+	padding-bottom: 2px;
+	padding-left: 3px;
+	height: 19px;
+}
+.dxmSubMenuItemSelected_Office2003_Blue, .dxmSubMenuItemSelectedWithImage_Office2003_Blue, .dxmSubMenuItemSelectedWithPopOutImage_Office2003_Blue, .dxmSubMenuItemSelectedWithImageWithPopOutImage_Office2003_Blue
+{
+	background: url(mItemSBack.gif) repeat-x center top #FFAD55;
+	border: solid 1px #002D96;
+}
+.dxmSubMenuItemSelected_Office2003_Blue
+{
+	padding-top: 3px;
+	padding-right: 8px;
+	padding-bottom: 4px;
+	padding-left: 2px;
+}
+.dxmSubMenuItemSelectedWithImage_Office2003_Blue 
+{
+	padding-top: 1px;
+	padding-right: 8px;
+	padding-bottom: 1px;
+	padding-left: 2px;
+}
+.dxmSubMenuItemSelectedWithPopOutImage_Office2003_Blue
+{
+	padding-top: 3px;
+	padding-right: 8px;
+	padding-bottom: 4px;
+	padding-left: 2px;
+}
+.dxmSubMenuItemSelectedWithImageWithPopOutImage_Office2003_Blue
+{
+	padding-top: 1px;
+	padding-right: 8px;
+	padding-bottom: 1px;
+	padding-left: 2px;
+}
+.dxmSubMenuItemChecked_Office2003_Blue, .dxmSubMenuItemCheckedWithImage_Office2003_Blue, .dxmSubMenuItemCheckedWithPopOutImage_Office2003_Blue, .dxmSubMenuItemCheckedWithImageWithPopOutImage_Office2003_Blue
+{
+}
+.dxmSubMenuItemChecked_Office2003_Blue
+{
+}
+.dxmSubMenuItemCheckedWithImage_Office2003_Blue 
+{
+}
+.dxmSubMenuItemCheckedWithPopOutImage_Office2003_Blue
+{
+}
+.dxmSubMenuItemCheckedWithImageWithPopOutImage_Office2003_Blue
+{
+}
+.dxmSubMenuItemHover_Office2003_Blue, .dxmSubMenuItemHoverWithImage_Office2003_Blue, .dxmSubMenuItemHoverWithPopOutImage_Office2003_Blue, .dxmSubMenuItemHoverWithImageWithPopOutImage_Office2003_Blue
+{
+	background: url(mPopupHBack.gif) repeat-x center top #FFEEC2;
+	border: solid 1px #002D96;
+}
+.dxmSubMenuItemHover_Office2003_Blue
+{
+	padding-top: 3px;
+	padding-right: 8px;
+	padding-bottom: 4px;
+	padding-left: 2px;
+}
+.dxmSubMenuItemHoverWithImage_Office2003_Blue
+{
+	padding-top: 1px;
+	padding-right: 8px;
+	padding-bottom: 1px;
+	padding-left: 2px;
+}
+.dxmSubMenuItemHoverWithPopOutImage_Office2003_Blue
+{
+	padding-top: 3px;
+	padding-right: 8px;
+	padding-bottom: 4px;
+	padding-left: 2px;
+}
+.dxmSubMenuItemHoverWithImageWithPopOutImage_Office2003_Blue
+{
+	padding-top: 1px;
+	padding-right: 8px;
+	padding-bottom: 1px;
+	padding-left: 2px;
+}
+.dxmSubMenuBorderCorrector_Office2003_Blue
+{
+    position: absolute;
+    border: 0px;
+    padding: 0px;
+}
+/* Disabled */
+.dxmDisabled_Office2003_Blue
+{
+	color: #808080;
+	cursor: default;
+}
+
+/* -- ASPxNavBar -- */
+.dxnbControl_Office2003_Blue 
+{
+	font: 9pt Tahoma;
+	color: black;
+	background: url(nbBack.gif) repeat-x center top #4B7AC9;
+	padding: 5px;
+}
+.dxnbControl_Office2003_Blue a
+{
+	color: black;
+}
+.dxnbLoadingPanel_Office2003_Blue
+{
+	font: 9pt Tahoma;
+	color: #4B77B8;
+}
+.dxnbLoadingPanel_Office2003_Blue td.dx
+{
+	white-space: nowrap;
+	text-align: center;
+	padding: 12px 6px;
+}
+.dxnbGroupHeader_Office2003_Blue
+{
+	font: bold 9pt Tahoma;
+	color: black;
+	background: url(nbGroupHeaderBack.gif) repeat-x left bottom #DAEAFD;
+	border: solid 1px #002D96;
+	padding: 5px 7px 5px 10px;
+}
+.dxnbGroupHeader_Office2003_Blue table.dxnb
+{
+	font: bold 9pt Tahoma;
+	color: black;
+}
+.dxnbGroupHeader_Office2003_Blue td.dxnb
+{
+	white-space: nowrap;
+}
+.dxnbGroupHeaderCollapsed_Office2003_Blue
+{
+	font: bold 9pt Tahoma;
+	color: black;
+	background: url(nbGroupHeaderBack.gif) repeat-x left bottom #DAEAFD;
+	border: solid 1px #002D96;
+	padding: 5px 7px 5px 10px;	
+}
+.dxnbGroupHeaderCollapsed_Office2003_Blue table.dxnb
+{
+	font: bold 9pt Tahoma;
+	color: black;
+}
+.dxnbGroupHeaderCollapsed_Office2003_Blue td.dxnb
+{
+	white-space: nowrap;
+}
+.dxnbGroupContent_Office2003_Blue
+{
+	font: 9pt Tahoma;
+	color: black;
+	border: solid 1px #002D96;	
+	background: url(nbGroupBack.gif) repeat-x left bottom #DDECFE;
+	padding: 1px;
+}
+.dxnbItem_Office2003_Blue, .dxnbLargeItem_Office2003_Blue, .dxnbBulletItem_Office2003_Blue
+{
+	font: 9pt Tahoma;
+	color: black;
+	text-align: left;
+}
+.dxnbItem_Office2003_Blue
+{
+	padding-top: 4px;
+	padding-right: 5px;
+	padding-bottom: 5px;
+	padding-left: 9px;
+}
+.dxnbLargeItem_Office2003_Blue
+{	
+	padding-top: 3px;
+	padding-right: 12px;
+	padding-bottom: 4px;
+	padding-left: 9px;
+}
+.dxnbItemSelected_Office2003_Blue, .dxnbLargeItemSelected_Office2003_Blue, .dxnbBulletItemSelected_Office2003_Blue
+{
+	background: url(nbSBack.gif) repeat-x center top #FFAD55;
+	border: solid 1px #002D96;
+}
+.dxnbItemSelected_Office2003_Blue
+{
+	padding-top: 3px;
+	padding-right: 4px;
+	padding-bottom: 4px;
+	padding-left: 8px;
+}
+.dxnbLargeItemSelected_Office2003_Blue
+{
+	padding-top: 2px;
+	padding-right: 11px;
+	padding-bottom: 3px;
+	padding-left: 8px;
+}
+.dxnbItemHover_Office2003_Blue, .dxnbLargeItemHover_Office2003_Blue, .dxnbBulletItemHover_Office2003_Blue
+{
+	background: url(nbHBack.gif) repeat-x center top #FFEEC2;
+	border: solid 1px #002D96;
+}
+.dxnbItemHover_Office2003_Blue
+{
+	padding-top: 3px;
+	padding-right: 4px;
+	padding-bottom: 4px;
+	padding-left: 8px;
+}
+.dxnbLargeItemHover_Office2003_Blue
+{
+	padding-top: 2px;
+	padding-right: 11px;
+	padding-bottom: 3px;
+	padding-left: 8px;
+}
+.dxnbGroupHeader_Office2003_Blue, .dxnbGroupHeaderCollapsed_Office2003_Blue
+{
+    text-align: left;
+}
+.dxnbItem_Office2003_Blue, .dxnbItemHover_Office2003_Blue, .dxnbItemSelected_Office2003_Blue,
+.dxnbBulletItem_Office2003_Blue, .dxnbBulletItemHover_Office2003_Blue, .dxnbBulletItemSelected_Office2003_Blue
+{
+    text-align: left;
+}
+.dxnbLargeItem_Office2003_Blue, .dxnbLargeItemHover_Office2003_Blue, .dxnbLargeItemSelected_Office2003_Blue
+{
+    text-align: center;
+}
+.dxnbGroupHeaderHover_Office2003_Blue
+{
+}
+.dxnbGroupHeaderCollapsedHover_Office2003_Blue
+{
+}
+/* Disabled */
+.dxnbDisabled_Office2003_Blue
+{
+	color: #808080;
+	cursor: default;
+}
+
+/* -- ASPxPager -- */
+.dxpControl_Office2003_Blue
+{
+	font: 9pt Tahoma;
+	color: black;
+	padding: 5px 2px 5px 2px;
+}
+.dxpButton_Office2003_Blue
+{
+	font: 9pt Tahoma;
+	color: black;
+	text-decoration: underline;
+	white-space: nowrap;
+	text-align: center;
+	vertical-align: middle;
+}
+.dxpButton_Office2003_Blue a
+{
+	font: 9pt Tahoma;
+	color: black;
+	text-decoration: underline;
+	white-space: nowrap;
+}
+.dxpDisabledButton_Office2003_Blue
+{
+	font: 9pt Tahoma;
+	color: black;
+	text-decoration: none;
+}
+.dxpPageNumber_Office2003_Blue
+{
+	font: 9pt Tahoma;
+	color: black;
+	text-decoration: underline;
+	text-align: center;
+	vertical-align: middle;
+	padding: 0px 5px 0px 5px;
+}
+.dxpPageNumber_Office2003_Blue a
+{
+	font: 9pt Tahoma;
+	color: black;
+	text-decoration: underline;
+}
+.dxpCurrentPageNumber_Office2003_Blue
+{
+	font: 9pt Tahoma;
+	color: black;
+	background: #c1d7f8;
+	text-decoration: none;
+	padding: 0px 3px 0px 3px;
+}
+.dxpSummary_Office2003_Blue
+{
+	font: 9pt Tahoma;
+	color: black;
+	white-space: nowrap;
+	text-align: center;
+	vertical-align: middle;
+	padding: 0px 4px 0px 4px;
+}
+.dxpSeparator_Office2003_Blue
+{
+	background-color: #c1d7f8;
+}
+/* Disabled */
+.dxpDisabled_Office2003_Blue
+{
+	color: #808080;
+	border-color: #808080;
+	cursor: default;
+}
+
+/* -- ASPxPopupControl -- */
+.dxpcControl_Office2003_Blue
+{
+	font: 9pt Tahoma;
+	color: black;
+	background-color: white;
+	border: solid 1px #002D96;
+}
+.dxpcControl_Office2003_Blue a
+{
+	color: black;
+}
+.dxpcCloseButton_Office2003_Blue
+{
+	font: 9pt Tahoma;
+	color: black;
+	padding: 1px 1px 1px 2px;	
+}
+.dxpcCloseButtonHover_Office2003_Blue
+{
+}
+.dxpcContent_Office2003_Blue
+{
+	background: white;
+	font: 9pt Tahoma;
+	color: black;
+	white-space: normal;
+	padding: 9px 12px 30px 12px;
+	border: 0px;
+	vertical-align:top;
+}
+.dxpcFooter_Office2003_Blue
+{
+	font: 9pt Tahoma;
+	color: #597DB2;
+	background-color: #CFE1F9;
+	border-top: solid 1px #7BA4E0;
+	font-weight: bold;
+}
+.dxpcFooter_Office2003_Blue td.dxpc
+{
+	font: 9pt Tahoma;
+	color: #597DB2;
+	white-space: nowrap;
+	padding: 6px 12px 8px 12px;
+	font-weight: bold;
+}
+.dxpcHeader_Office2003_Blue
+{
+	font: 9pt Tahoma;
+	color: black;
+	background: url(pcHeaderBack.gif) repeat-x #7BA4E0;	
+	border-bottom: solid 1px #002D96;
+	padding: 6px 6px 6px 12px;
+}
+.dxpcHeader_Office2003_Blue td.dxpc
+{
+	font: 9pt Tahoma;
+	color: black;
+	white-space: nowrap;
+	padding-top: 4px;
+	padding-bottom: 5px;
+}
+.dxpcModalBackground_Office2003_Blue
+{
+	background-image: url('pcModalBack.gif');
+    background-repeat: repeat;
+}
+/* Disabled */
+.dxpcDisabled_Office2003_Blue
+{
+	color: #808080;
+	cursor: default;
+}
+
+/* -- ASPxSiteMapControl -- */
+.dxsmControl_Office2003_Blue a:hover
+{
+    text-decoration:underline!important;
+}
+.dxsmControl_Office2003_Blue a:visited
+{
+    color:#990099!important;
+}
+
+.dxsmControl_Office2003_Blue 
+{	
+	color: black;
+	background: url(smBack.gif) repeat-x center bottom #DDECFE;
+	font-family: Verdana, Tahoma, Arial;
+	font-size: 9pt;
+	border: Solid 1px #002D96;
+}
+/* - Category Level - */
+.dxsmCategoryLevel_Office2003_Blue, .dxsmCategoryLevel_Office2003_Blue a
+{
+    color: black;    
+    font-weight: bold;
+    font-size: 13.5pt;
+    font-family: Verdana;
+    text-decoration: none;	
+}
+.dxsmCategoryLevel_Office2003_Blue
+{
+    white-space: nowrap;
+    padding: 0px 0px 5px 0px;
+}
+.dxsmCategoryLevel_Office2003_Blue
+{
+    border-bottom: solid 1px #1e90ff;
+    padding: 3px 10px 7px 10px;
+	background: url(smFirstLevelBack.gif) repeat-x center bottom #DDECFE;		
+}
+ /*flow layout*/
+.dxsmLevelCategoryFlow_Office2003_Blue, .dxsmLevelCategoryFlow_Office2003_Blue a
+{
+    color: black;
+    font-weight: bold;
+    font-size: 13.5pt;
+    font-family: Tahoma, Verdana, Arial;	
+	text-decoration: underline;
+}
+/* - Level 0 - */
+.dxsmLevel0_Office2003_Blue, .dxsmLevel0_Office2003_Blue a, .dxsmLevel0Categorized_Office2003_Blue a, .dxsmLevel0Categorized_Office2003_Blue
+{
+    color: black;	
+    font-weight: bold;
+    font-size: 9pt;
+    font-family: Verdana;
+    text-decoration: none;
+}
+.dxsmLevel0Categorized_Office2003_Blue a, .dxsmLevel0Categorized_Office2003_Blue
+{
+	color: #0000de;
+}
+.dxsmLevel0_Office2003_Blue
+{	
+	white-space: nowrap;    	
+	background: url(smFirstLevelBack.gif) repeat-x center bottom #DDECFE;	
+    border-bottom: solid 1px #1e90ff;
+    padding: 3px 10px 7px 10px;
+}
+.dxsmLevel0Categorized_Office2003_Blue 
+{
+	white-space: nowrap;    	
+	padding: 0px 10px 2px 10px;
+}
+ /*flow layout*/
+.dxsmLevel0Flow_Office2003_Blue, .dxsmLevel0Flow_Office2003_Blue a, .dxsmLevel0CategorizedFlow_Office2003_Blue a, .dxsmLevel0CategorizedFlow_Office2003_Blue
+{
+    color: #0000cd;    
+    font-family: Tahoma, Verdana, Arial;	
+    font-weight: bold;
+    font-size: 9pt;
+	text-decoration: underline;
+}
+.dxsmLevel0Flow_Office2003_Blue
+{
+    padding: 0px 0px 0px 0px;    
+}
+.dxsmLevel0Flow_Office2003_Blue
+{
+    text-decoration: none;    
+}
+.dxsmLevel0CategorizedFlow_Office2003_Blue
+{
+	padding: 1px 16px;
+}
+
+/* - Level 1 - */
+.dxsmLevel1_Office2003_Blue, .dxsmLevel1_Office2003_Blue a, .dxsmLevel1Categorized_Office2003_Blue a, .dxsmLevel1Categorized_Office2003_Blue
+{    
+    font-family: 9pt;
+    font-family: Verdana;
+    color: #0000cd;  
+    font-size: 8pt;
+    text-decoration: none;    
+}
+.dxsmLevel1_Office2003_Blue, .dxsmLevel1Categorized_Office2003_Blue
+{
+    white-space: nowrap;  
+    padding: 0px 10px;
+}
+
+/*flow layout*/
+.dxsmLevel1Flow_Office2003_Blue, .dxsmLevel1Flow_Office2003_Blue a, .dxsmLevel1CategorizedFlow_Office2003_Blue, .dxsmLevel1CategorizedFlow_Office2003_Blue a
+{    
+    color: #0000cd;    
+    font-family: Tahoma, Verdana, Arial;	
+    font-size: 9pt;
+	text-decoration: underline;
+}
+.dxsmLevel1Flow_Office2003_Blue
+{
+    text-decoration: none;
+    padding: 0px 0px 0px 0px;
+}
+
+/* - Level 2 - */
+.dxsmLevel2_Office2003_Blue, .dxsmLevel2_Office2003_Blue a, .dxsmLevel2Categorized_Office2003_Blue a, .dxsmLevel2Categorized_Office2003_Blue
+{    
+    font-size: 8pt;
+    font-family: Verdana;
+    color: #bebebe;
+    text-decoration: none;    
+}
+.dxsmLevel2_Office2003_Blue, .dxsmLevel2Categorized_Office2003_Blue
+{
+    white-space:nowrap;
+    padding: 0px 10px;
+}
+/*flow layout*/
+.dxsmLevel2Flow_Office2003_Blue, .dxsmLevel2Flow_Office2003_Blue a
+{
+    color: #0000cd;
+    font-size: 8pt;    
+    font-family: Tahoma, Verdana, Arial;	
+	text-decoration:underline;    
+}
+.dxsmLevel2Flow_Office2003_Blue
+{
+    padding: 0px 0px 0px 0px;
+}
+/* - Level 3 - */
+.dxsmLevel3_Office2003_Blue, .dxsmLevel3_Office2003_Blue a
+{    
+    font-size: 7pt;
+    font-family: Verdana;
+    color: #4682b4;
+    text-decoration: none;
+}
+.dxsmLevel3_Office2003_Blue
+{
+    white-space: nowrap;        
+    padding: 0px 10px;
+}
+/*flow layout*/
+.dxsmLevel3Flow_Office2003_Blue, .dxsmLevel3Flow_Office2003_Blue a
+{    
+    color: #0000cd;
+    font-size: 7pt;
+    font-family: Tahoma, Verdana, Arial;	
+	text-decoration: underline;    
+}
+/* - Level 4 - */
+.dxsmLevel4_Office2003_Blue, .dxsmLevel4_Office2003_Blue a
+{    
+    font-size: 7pt;
+    font-family: Verdana;
+    color: #6495ed;
+    text-decoration: none;
+}
+.dxsmLevel4_Office2003_Blue
+{
+    white-space: nowrap;
+    padding: 0px 10px;
+}
+/*flow layout*/
+.dxsmLevel4Flow_Office2003_Blue, .dxsmLevel4Flow_Office2003_Blue a
+{
+    color: #0000cd;
+    font-family: Tahoma, Verdana, Arial;	
+    font-size: 7pt;
+	text-decoration: underline;        
+}
+.dxsmLevel4Flow_Office2003_Blue
+{
+    padding: 0px 0px 0px 0px;        
+}
+/* - Other Levels - */
+.dxsmLevelOther_Office2003_Blue
+{    
+    font-size: 7pt;
+    font-family: Verdana;
+    color: #A8A8A8;
+    text-decoration: none;
+}
+.dxsmLevelOther_Office2003_Blue
+{
+    white-space:nowrap;
+    padding: 0px 0px 0px 0px;            
+}
+/*flow layout*/
+.dxsmLevelOtherFlow_Office2003_Blue, .dxsmLevelOtherFlow_Office2003_Blue a
+{
+    color: #A8A8A8;
+    font-family: Tahoma, Verdana, Arial;	
+    font-size: 7pt;
+	text-decoration: underline;            
+}
+/* Disabled */
+.dxsmDisabled_Office2003_Blue
+{
+	color: #808080;
+	cursor: default;
+}
+
+/* -- ASPxTabControl, ASPxPageControl -- */
+.dxtcControl_Office2003_Blue 
+{
+	font: 9pt Tahoma;
+	color: black;
+	/*background: url(tcBack.gif) repeat-x center bottom #DDECFE;*/
+}
+.dxtcLoadingPanel_Office2003_Blue
+{
+	font: 9pt Tahoma;
+	color: #4B77B8;
+}
+.dxtcLoadingPanel_Office2003_Blue td.dx
+{
+	white-space: nowrap;
+	text-align: center;
+	padding: 12px 12px 12px 12px;
+}
+/* Tab hyperlink */
+.dxtcTab_Office2003_Blue a, .dxtcTabWithTabPositionLeft_Office2003_Blue a, .dxtcTabWithTabPositionBottom_Office2003_Blue a, .dxtcTabWithTabPositionRight_Office2003_Blue a,
+.dxtcActiveTab_Office2003_Blue a, .dxtcActiveTabWithTabPositionBottom_Office2003_Blue a, .dxtcActiveTabWithTabPositionLeft_Office2003_Blue a, .dxtcActiveTabWithTabPositionRight_Office2003_Blue a,
+.dxtcTabHover_Office2003_Blue a, .dxtcTabHoverWithTabPositionBottom_Office2003_Blue a, .dxtcTabHoverWithTabPositionLeft_Office2003_Blue a, .dxtcTabHoverWithTabPositionRight_Office2003_Blue a
+{
+	text-decoration: none;
+	color: black;    
+}
+
+.dxtcActiveTab_Office2003_Blue, .dxtcActiveTabWithTabPositionBottom_Office2003_Blue,
+.dxtcActiveTabWithTabPositionLeft_Office2003_Blue, .dxtcActiveTabWithTabPositionRight_Office2003_Blue
+{
+	font: 9pt Tahoma;
+	color: black;
+	border: solid 1px #002D96;
+	padding: 4px 12px 4px 12px;
+	background: url(tcTabABack.gif) repeat-x center bottom #DDECFE;
+}
+/* Active Tab */
+.dxtcActiveTab_Office2003_Blue table.dxtc, .dxtcActiveTabWithTabPositionBottom_Office2003_Blue table.dxtc,
+.dxtcActiveTabWithTabPositionLeft_Office2003_Blue table.dxtc, .dxtcActiveTabWithTabPositionRight_Office2003_Blue table.dxtc
+{
+	font: 9pt Tahoma;
+	color: black;    
+}
+.dxtcActiveTab_Office2003_Blue td.dxtc, .dxtcActiveTabWithTabPositionBottom_Office2003_Blue td.dxtc,
+.dxtcActiveTabWithTabPositionLeft_Office2003_Blue td.dxtc, .dxtcActiveTabWithTabPositionRight_Office2003_Blue td.dxtc
+{
+	white-space: nowrap;
+    background-color: transparent!important;
+    background-image: url('')!important;
+    border-width: 0px!important;
+    padding: 0px!important;
+}
+.dxtcActiveTabHover_Office2003_Blue
+{	
+	background: url(tcTabAHBack.gif) repeat-x center bottom #DDECFE;
+}
+/* Tab */
+.dxtcTab_Office2003_Blue, .dxtcTabWithTabPositionLeft_Office2003_Blue, 
+.dxtcTabWithTabPositionBottom_Office2003_Blue, .dxtcTabWithTabPositionRight_Office2003_Blue
+{
+	font: 9pt Tahoma;
+	color: black;
+	background: url(tcTabBack.gif) repeat-x center bottom #DDECFE;
+	border: solid 1px #002D96;
+	padding: 4px 12px 4px 12px;
+}
+.dxtcTab_Office2003_Blue table.dxtc, .dxtcTabWithTabPositionBottom_Office2003_Blue table.dxtc, 
+.dxtcTabWithTabPositionLeft_Office2003_Blue table.dxtc, .dxtcTabWithTabPositionRight_Office2003_Blue table.dxtc
+{
+	font: 9pt Tahoma;
+	color: black;    
+}
+.dxtcTab_Office2003_Blue td.dxtc, .dxtcTabWithTabPositionBottom_Office2003_Blue td.dxtc, 
+.dxtcTabWithTabPositionLeft_Office2003_Blue td.dxtc, .dxtcTabWithTabPositionRight_Office2003_Blue td.dxtc
+{
+	white-space: nowrap;
+    background-color: transparent!important;
+    background-image: url('')!important;
+    border-width: 0px!important;
+    padding: 0px!important;
+}
+.dxtcTabWithTabPositionBottom_Office2003_Blue
+{
+}
+.dxtcTabWithTabPositionLeft_Office2003_Blue
+{
+}
+.dxtcTabWithTabPositionRight_Office2003_Blue
+{
+}
+/* Hover */
+.dxtcTabHover_Office2003_Blue, .dxtcTabHoverWithTabPositionBottom_Office2003_Blue,
+.dxtcTabHoverWithTabPositionLeft_Office2003_Blue, .dxtcTabHoverWithTabPositionRight_Office2003_Blue
+{
+	background: url(tcTabHBack.gif) repeat-x center top #FFD091;
+}
+.dxtcPageContent_Office2003_Blue, .dxtcPageContentWithTabPositionBottom_Office2003_Blue, 
+.dxtcPageContentWithTabPositionLeft_Office2003_Blue, .dxtcPageContentWithTabPositionRight_Office2003_Blue
+{
+	font: 9pt Tahoma;
+	color: black;
+	background-color: #DDECFE;
+	vertical-align: top;	
+}
+.dxtcContent_Office2003_Blue
+{
+	font: 8pt Tahoma;
+	color: black;	
+	background-color: white;
+	vertical-align: top;
+}
+/* Disabled */
+.dxtcDisabled_Office2003_Blue, .dxtcDisabled_Office2003_Blue table.dxtc
+{
+	color: #808080;
+	cursor: default;
+}
+
+/* -- ASPxTitleIndex -- */
+.dxtiControl_Office2003_Blue a:hover
+{
+}
+.dxtiControl_Office2003_Blue a:visited
+{
+}
+.dxtiControl_Office2003_Blue
+{
+	font: 11px Verdana;
+	color: #1E3695;
+	background-color: white;
+	font-family: Verdana, Tahoma, Arial;
+}
+.dxtiLoadingPanel_Office2003_Blue td.dx
+{
+	font: 9pt Tahoma;
+	color: #303030;	
+	white-space: nowrap;
+	text-align: center;
+	padding: 12px 12px 12px 12px;
+}
+.dxtiItem_Office2003_Blue, .dxtiItem_Office2003_Blue a
+{
+	font: 9pt Tahoma;
+	color: #3F66A0;
+	text-decoration: underline;	
+}
+.dxtiItem_Office2003_Blue a:hover
+{
+    color: #FF0000;
+}
+.dxtiItem_Office2003_Blue a:visited
+{
+    color: #990099;
+}
+
+.dxtiItem_Office2003_Blue
+{
+	white-space: nowrap;
+}
+.dxtiGroupHeader_Office2003_Blue, .dxtiGroupHeaderCategorized_Office2003_Blue
+{
+	font: 13pt Tahoma;
+	text-decoration: none;
+	
+}
+.dxtiGroupHeader_Office2003_Blue, .dxtiGroupHeaderCategorized_Office2003_Blue
+{
+	white-space:nowrap;
+	padding: 0px 0px 2px 0px;
+}
+.dxtiGroupHeaderCategorized_Office2003_Blue
+{
+	background-color: #E3EDFE;
+}
+/* -- GroupHeaderText -- */
+.dxtiGroupHeaderText_Office2003_Blue
+{
+    background-color: #B4B4B4;
+    color: #283B56;
+}
+.dxtiGroupHeaderText_Office2003_Blue
+{
+    padding: 0px 5px;
+	background-color: #E3EDFE;
+}
+
+.dxtiGroupHeaderTextCategorized_Office2003_Blue
+{
+    color: #283B56;
+    font-size: 13pt;
+}
+.dxtiGroupHeaderTextCategorized_Office2003_Blue
+{
+    padding: 0px 6px;
+}
+/* -- FilterBox -- */
+.dxtiFilterBoxInfoText_Office2003_Blue
+{
+    font: 8pt Verdana;
+    color: #636567;
+    font-weight: normal;
+    padding-top: 6px;
+    padding-bottom: 4px;
+}
+.dxtiFilterBoxEdit_Office2003_Blue
+{
+    font-size: 9pt;
+    width: 158px;    
+    border: Solid 1px #6A8CCB;
+    padding-left: 3px;
+}
+.dxtiFilterBox_Office2003_Blue, .dxtiFilterBox_Office2003_Blue table
+{
+    color: Black;
+    font: 9pt Tahoma;
+}
+.dxtiFilterBox_Office2003_Blue
+{
+    background-color: #BCD5FC;
+    padding: 10px 15px 6px;
+}
+/* -- IndexPanel -- */
+.dxtiIndexPanel_Office2003_Blue
+{
+	padding-left: 10px;
+	padding-right: 10px;
+    padding-bottom: 4px;
+    text-decoration: none;
+}
+.dxtiIndexPanelItem_Office2003_Blue, .dxtiIndexPanelItem_Office2003_Blue a, .dxtiCurrentIndexPanelItem_Office2003_Blue
+{
+    font-size: 11pt;
+    color: Black;
+    font-family: Tahoma;
+    text-decoration: underline;
+}
+.dxtiIndexPanelItem_Office2003_Blue, .dxtiCurrentIndexPanelItem_Office2003_Blue
+{
+    padding: 0px 3px 2px 3px;
+}
+.dxtiIndexPanelItem_Office2003_Blue a:visited
+{
+	color: #990099;
+}
+.dxtiIndexPanelItem_Office2003_Blue a:hover
+{
+	color: #FF0000;
+}
+.dxtiCurrentIndexPanelItem_Office2003_Blue
+{
+    color: #000000;
+    background-color: #E0E0E0;
+}
+/* -- BackToTop -- */
+.dxtiBackToTop_Office2003_Blue a
+{
+    font: 11px Tahoma;
+    text-decoration: underline;
+    color: #337898;
+    white-space:nowrap;
+}
+.dxtiBackToTop_Office2003_Blue a
+{
+    color: #3F66A0;
+}
+.dxtiBackToTop_Office2003_Blue a:hover
+{
+    color: #FF0000;
+}
+.dxtiBackToTop_Office2003_Blue a:visited
+{
+    color: #990099;
+}
+.dxtiBackToTop_Office2003_Blue
+{
+    padding: 0px 0px 12px 8px;
+}
+/* Disabled */
+.dxtiDisabled_Office2003_Blue
+{
+	color: #808080;
+	cursor: default;
+}
+
+/* -- ASPxHeadline -- */
+.dxhlControl_Office2003_Blue
+{
+	font: 10px Verdana;
+	color: black;
+}
+.dxhlContent_Office2003_Blue
+{
+	font: 9pt Tahoma;
+	color: #424242;
+} 
+.dxhlDate_Office2003_Blue
+{
+	font: 9pt Tahoma;
+	color: #4F93E3;
+	white-space: nowrap;
+}
+.dxhlHeader_Office2003_Blue
+{
+	font: 11pt Tahoma;
+	color: Black;
+	padding-bottom: 6px;
+	font-weight: bold;
+	line-height: 17px;
+}
+.dxhlDateHeader_Office2003_Blue
+{
+	font: 9pt Tahoma;
+	color: Gray;
+	font-weight: normal;
+}
+.dxhlLeftPanel_Office2003_Blue
+{
+	font: 10px Verdana;
+	color: black;
+}
+.dxhlRightPanel_Office2003_Blue
+{
+	font: 10px Verdana;
+	color: black;
+}
+.dxhlDateLeftPanel_Office2003_Blue
+{
+	font: 10px Verdana;
+	color: Gray;
+	white-space: nowrap;
+}
+.dxhlDateRightPanel_Office2003_Blue
+{
+	font: 10px Verdana;
+	color: Gray;
+	white-space: nowrap;
+}
+.dxhlTailDiv_Office2003_Blue
+{
+	font: 10px Verdana;
+	color: Black;
+	background-color: #EEF2F5;
+}
+.dxhlTailDiv_Office2003_Blue a
+{
+	color: #3F66A0;
+	text-decoration: underline;
+}
+.dxhlTailDiv_Office2003_Blue a:hover
+{
+	color: #FF0000;
+    text-decoration: underline;
+}
+.dxhlTailDiv_Office2003_Blue a:visited
+{
+	color: #990099;
+    text-decoration: underline;
+}
+.dxhlContent_Office2003_Blue a.dxhl span
+{
+	color: #3e6b96;
+	text-decoration: underline;
+} 
+.dxhlContent_Office2003_Blue a.dxhl:visited span
+{
+	color: #990099;
+    text-decoration: underline;
+}
+.dxhlContent_Office2003_Blue a.dxhl:hover span
+{
+	color: #FF0000;
+    text-decoration: underline;
+}
+.dxhlContent_Office2003_Blue a.dxhl
+{
+	color: #3F66A0;
+	text-decoration: underline;
+} 
+.dxhlContent_Office2003_Blue a.dxhl:visited
+{
+	color: #990099;
+    text-decoration: underline;
+}
+.dxhlContent_Office2003_Blue a.dxhl:hover
+{
+	color: #FF0000;
+    text-decoration: underline;
+}
+/* Disabled */
+.dxhlDisabled_Office2003_Blue
+{
+	color: #808080;
+	cursor: default;
+}
+
+/* -- ASPxNewsControl -- */
+.dxncControl_Office2003_Blue
+{
+	font: 10px Tahoma;
+	color: black;
+	background-color: White;
+	padding: 18px 18px 18px 18px;
+}
+.dxncLoadingPanel_Office2003_Blue
+{
+	font: 9pt Tahoma;
+	color: #303030;
+}
+.dxncLoadingPanel_Office2003_Blue td.dx
+{
+	white-space: nowrap;
+	text-align: center;
+	padding: 12px 12px 12px 12px;
+}
+.dxncContent_Office2003_Blue
+{
+}
+.dxncPagerPanel_Office2003_Blue
+{
+	padding: 0px 3px 0px 3px;
+}
+.dxncItem_Office2003_Blue
+{
+	font: 9pt Tahoma;
+	vertical-align: top;
+	padding: 12px 8px 12px 8px;
+}
+.dxncEmptyItem_Office2003_Blue
+{
+	font: 10px Tahoma;
+	vertical-align: top;
+	padding: 12px 12px 12px 14px;
+}
+.dxncBackToTop_Office2003_Blue
+{
+	font: 10px Tahoma;
+	color: #404040;
+}
+.dxncBackToTop_Office2003_Blue a
+{
+	font: 10px Tahoma;
+	color: #0d45b7;
+}
+.dxncBackToTop_Office2003_Blue a:hover
+{
+	font: 10px Tahoma;
+	color: #5494ea;
+}
+.dxncBackToTop_Office2003_Blue a:visited
+{
+	font: 10px Tahoma;
+	color: #ab59a6;
+}
+
+/* Headline */
+.dxncItemContent_Office2003_Blue
+{
+	font: 9pt Tahoma;
+	color: #424242;
+} 
+.dxncItemDate_Office2003_Blue
+{
+	color: #4F93E3;
+	white-space: nowrap;
+}
+.dxncItemHeader_Office2003_Blue
+{
+	font: 11pt Tahoma;
+	color: Black;
+	font-weight: bold;
+	line-height: 17px;
+	padding-bottom: 6px;
+}
+.dxncItemHeader_Office2003_Blue .dxncItemDate
+{
+	font: 10pt Tahoma;
+	color: Gray;
+	font-weight: normal;
+}
+.dxncItemLeftPanel_Office2003_Blue
+{
+	font: 10px Verdana;
+	color: black;
+}
+.dxncItemRightPanel_Office2003_Blue
+{
+	font: 10px Verdana;
+	color: black;
+}
+.dxncItemDateLeftPanel_Office2003_Blue
+{
+	font: 10px Verdana;
+	color: Gray;
+	white-space: nowrap;
+}
+.dxncItemDateRightPanel_Office2003_Blue
+{
+	font: 10px Verdana;
+	color: Gray;
+	white-space: nowrap;
+}
+.dxncItemTailDiv_Office2003_Blue
+{
+	font: 10px Verdana;
+	color: Black;
+}
+.dxncItemTailDiv_Office2003_Blue a
+{
+	color: #1E3695;
+}
+.dxncItemTailDiv_Office2003_Blue a:hover
+{
+    text-decoration: none;
+}
+.dxncItemTailDiv_Office2003_Blue a:visited
+{
+    color: #996085;
+}
+.dxncItemContent_Office2003_Blue a.dxhl
+{
+	color: #1E3695;
+} 
+.dxncItemContent_Office2003_Blue a.dxhl:hover
+{
+    text-decoration: none;
+}
+.dxncItemContent_Office2003_Blue a.dxhl:visited
+{
+    color: #996085;
+}
+/* Disabled */
+.dxncDisabled_Office2003_Blue
+{
+	color: #808080;
+	cursor: default;
+}

@@ -1,0 +1,35 @@
+
+Log Entry : 
+11/06/2015 13:27:28
+ IP :  127.0.0.1 
+Error in: http://localhost:4358/kissmodel.aspx. Error Message:Logs_Insert >> ORA-12154: TNS:could not resolve the connect identifier specified
+imei:imsi:phone_nomodel:opt_code:logsIP:127.0.0.1
+__________________________
+
+Log Entry : 
+11/06/2015 16:48:34
+ IP :  127.0.0.1 
+Error in: http://localhost:4358/kissmodel.aspx. Error Message:Logs_Insert >> ORA-12154: TNS:could not resolve the connect identifier specified
+imei:imsi:phone_nomodel:opt_code:logsIP:127.0.0.1
+__________________________
+
+Log Entry : 
+11/06/2015 16:48:46
+ IP :  127.0.0.1 
+Error in: http://localhost:4358/kissmodel.aspx?ap=KissModel&pn=service&date=06032015&imei=12345&imsi=12345. Error Message:CommangGetPrivilege_IsportSportPool >> GetBannerByAppName >> ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+11/06/2015 16:48:46
+ IP :  127.0.0.1 
+Error in: http://localhost:4358/kissmodel.aspx?ap=KissModel&pn=service&date=06032015&imei=12345&imsi=12345. Error Message:CommandGetScoreDetail >> ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+11/06/2015 16:48:46
+ IP :  127.0.0.1 
+Error in: http://localhost:4358/kissmodel.aspx?ap=KissModel&pn=service&date=06032015&imei=12345&imsi=12345. Error Message:Logs_Insert >> ORA-12154: TNS:could not resolve the connect identifier specified
+imei:12345imsi:12345phone_nomodel:opt_code:logsIP:127.0.0.1
+__________________________

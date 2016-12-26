@@ -1,0 +1,320 @@
+
+Log Entry : 
+27/07/2016 15:52:35
+ IP :  ::1 
+Error in: http://localhost:4358/kissmodel.aspx. Error Message:Logs_Insert >> ORA-12154: TNS:could not resolve the connect identifier specified
+imei:imsi:phone_nomodel:opt_code:logsIP:::1
+__________________________
+
+Log Entry : 
+27/07/2016 15:52:35
+ IP :  ::1 
+Error in: http://localhost:4358/kissmodel.aspx. Error Message:Logs_Insert >> ORA-12154: TNS:could not resolve the connect identifier specified
+imei:imsi:phone_nomodel:opt_code:logsIP:::1
+__________________________
+
+Log Entry : 
+27/07/2016 15:52:53
+ IP :  ::1 
+Error in: http://localhost:4358/kissmodel.aspx?ap=KissModel&pn=main&date=20160727&imei=12345&imsi=12345. Error Message:CheckActiveandPromotion>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+27/07/2016 15:52:53
+ IP :  ::1 
+Error in: http://localhost:4358/kissmodel.aspx?ap=KissModel&pn=main&date=20160727&imei=12345&imsi=12345. Error Message:Main main>>The DateTime represented by the string is not supported in calendar System.Globalization.GregorianCalendar.
+__________________________
+
+Log Entry : 
+27/07/2016 15:52:53
+ IP :  ::1 
+Error in: http://localhost:4358/kissmodel.aspx?ap=KissModel&pn=main&date=20160727&imei=12345&imsi=12345. Error Message:CheckActiveandPromotion>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+27/07/2016 15:52:53
+ IP :  ::1 
+Error in: http://localhost:4358/kissmodel.aspx?ap=KissModel&pn=main&date=20160727&imei=12345&imsi=12345. Error Message:Main main>>The DateTime represented by the string is not supported in calendar System.Globalization.GregorianCalendar.
+__________________________
+
+Log Entry : 
+27/07/2016 15:53:29
+ IP :  ::1 
+Error in: http://localhost:4358/kissmodel.aspx?ap=KissModel&pn=main&date=07272016&imei=12345&imsi=12345. Error Message:CheckActiveandPromotion>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+27/07/2016 15:53:29
+ IP :  ::1 
+Error in: http://localhost:4358/kissmodel.aspx?ap=KissModel&pn=main&date=07272016&imei=12345&imsi=12345. Error Message:Main main>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+27/07/2016 15:53:29
+ IP :  ::1 
+Error in: http://localhost:4358/kissmodel.aspx?ap=KissModel&pn=main&date=07272016&imei=12345&imsi=12345. Error Message:CheckActiveandPromotion>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+27/07/2016 15:53:29
+ IP :  ::1 
+Error in: http://localhost:4358/kissmodel.aspx?ap=KissModel&pn=main&date=07272016&imei=12345&imsi=12345. Error Message:Main main>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+27/07/2016 16:43:56
+ IP :  ::1 
+Error in: http://localhost:4358/kissmodel.aspx. Error Message:Logs_Insert >> ORA-12154: TNS:could not resolve the connect identifier specified
+imei:imsi:phone_nomodel:opt_code:logsIP:::1
+__________________________
+
+Log Entry : 
+27/07/2016 16:43:56
+ IP :  ::1 
+Error in: http://localhost:4358/kissmodel.aspx. Error Message:Logs_Insert >> ORA-12154: TNS:could not resolve the connect identifier specified
+imei:imsi:phone_nomodel:opt_code:logsIP:::1
+__________________________
+
+Log Entry : 
+27/07/2016 16:44:44
+ IP :  ::1 
+Error in: http://localhost:4358/kissmodel.aspx?ap=main&imei=1234&imsi=1234&date=07272016. Error Message:Logs_Insert >> ORA-12154: TNS:could not resolve the connect identifier specified
+imei:1234imsi:1234phone_nomodel:opt_code:logsIP:::1
+__________________________
+
+Log Entry : 
+27/07/2016 16:44:44
+ IP :  ::1 
+Error in: http://localhost:4358/kissmodel.aspx?ap=main&imei=1234&imsi=1234&date=07272016. Error Message:Logs_Insert >> ORA-12154: TNS:could not resolve the connect identifier specified
+imei:1234imsi:1234phone_nomodel:opt_code:logsIP:::1
+__________________________
+
+Log Entry : 
+27/07/2016 16:45:09
+ IP :  ::1 
+Error in: http://localhost:4358/kissmodel.aspx?ap=main&imei=1234&imsi=1234&date=07272016. Error Message:Logs_Insert >> ORA-12154: TNS:could not resolve the connect identifier specified
+imei:1234imsi:1234phone_nomodel:opt_code:logsIP:::1
+__________________________
+
+Log Entry : 
+27/07/2016 16:45:10
+ IP :  ::1 
+Error in: http://localhost:4358/kissmodel.aspx?ap=main&imei=1234&imsi=1234&date=07272016. Error Message:Logs_Insert >> ORA-12154: TNS:could not resolve the connect identifier specified
+imei:1234imsi:1234phone_nomodel:opt_code:logsIP:::1
+__________________________
+
+Log Entry : 
+27/07/2016 16:45:27
+ IP :  ::1 
+Error in: http://localhost:4358/kissmodel.aspx?pn=main&imei=1234&imsi=1234&date=07272016. Error Message:Logs_Insert >> ORA-12154: TNS:could not resolve the connect identifier specified
+imei:1234imsi:1234phone_nomodel:opt_code:logsIP:::1
+__________________________
+
+Log Entry : 
+27/07/2016 16:45:27
+ IP :  ::1 
+Error in: http://localhost:4358/kissmodel.aspx?pn=main&imei=1234&imsi=1234&date=07272016. Error Message:Logs_Insert >> ORA-12154: TNS:could not resolve the connect identifier specified
+imei:1234imsi:1234phone_nomodel:opt_code:logsIP:::1
+__________________________
+
+Log Entry : 
+27/07/2016 16:45:38
+ IP :  ::1 
+Error in: http://localhost:4358/kissmodel.aspx?pn=main&imei=1234&imsi=1234&date=07272016&ap=kiss. Error Message:CheckActiveandPromotion>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+27/07/2016 16:46:06
+ IP :  ::1 
+Error in: http://localhost:4358/kissmodel.aspx?pn=main&imei=1234&imsi=1234&date=07272016&ap=kiss. Error Message:Main main>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+27/07/2016 16:46:06
+ IP :  ::1 
+Error in: http://localhost:4358/kissmodel.aspx?pn=main&imei=1234&imsi=1234&date=07272016&ap=kiss. Error Message:CheckActiveandPromotion>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+27/07/2016 16:46:06
+ IP :  ::1 
+Error in: http://localhost:4358/kissmodel.aspx?pn=main&imei=1234&imsi=1234&date=07272016&ap=kiss. Error Message:Main main>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+27/07/2016 16:46:57
+ IP :  ::1 
+Error in: http://localhost:4358/kissmodel.aspx. Error Message:Logs_Insert >> ORA-12154: TNS:could not resolve the connect identifier specified
+imei:imsi:phone_nomodel:opt_code:logsIP:::1
+__________________________
+
+Log Entry : 
+27/07/2016 16:46:57
+ IP :  ::1 
+Error in: http://localhost:4358/kissmodel.aspx. Error Message:Logs_Insert >> ORA-12154: TNS:could not resolve the connect identifier specified
+imei:imsi:phone_nomodel:opt_code:logsIP:::1
+__________________________
+
+Log Entry : 
+27/07/2016 16:47:03
+ IP :  ::1 
+Error in: http://localhost:4358/kissmodel.aspx?pn=main&imei=1234&imsi=1234&date=07272016&ap=kiss. Error Message:CheckActiveandPromotion>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+27/07/2016 16:51:45
+ IP :  ::1 
+Error in: http://localhost:4358/kissmodel.aspx?pn=main&imei=1234&imsi=1234&date=07272016&ap=kiss. Error Message:Main main>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+27/07/2016 16:51:45
+ IP :  ::1 
+Error in: http://localhost:4358/kissmodel.aspx?pn=main&imei=1234&imsi=1234&date=07272016&ap=kiss. Error Message:CheckActiveandPromotion>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+27/07/2016 16:51:45
+ IP :  ::1 
+Error in: http://localhost:4358/kissmodel.aspx?pn=main&imei=1234&imsi=1234&date=07272016&ap=kiss. Error Message:Main main>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+27/07/2016 17:08:04
+ IP :  ::1 
+Error in: http://localhost:4358/kissmodel.aspx. Error Message:Logs_Insert >> ORA-12154: TNS:could not resolve the connect identifier specified
+imei:imsi:phone_nomodel:opt_code:logsIP:::1
+__________________________
+
+Log Entry : 
+27/07/2016 17:08:04
+ IP :  ::1 
+Error in: http://localhost:4358/kissmodel.aspx. Error Message:Logs_Insert >> ORA-12154: TNS:could not resolve the connect identifier specified
+imei:imsi:phone_nomodel:opt_code:logsIP:::1
+__________________________
+
+Log Entry : 
+27/07/2016 17:08:10
+ IP :  ::1 
+Error in: http://localhost:4358/kissmodel.aspx?pn=main&imei=1234&imsi=1234&date=07272016&ap=kiss. Error Message:CheckActiveandPromotion>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+27/07/2016 17:08:20
+ IP :  ::1 
+Error in: http://localhost:4358/kissmodel.aspx?pn=main&imei=1234&imsi=1234&date=07272016&ap=kiss. Error Message:Main main>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+27/07/2016 17:08:22
+ IP :  ::1 
+Error in: http://localhost:4358/kissmodel.aspx?pn=main&imei=1234&imsi=1234&date=07272016&ap=kiss. Error Message:CheckActiveandPromotion>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+27/07/2016 17:08:22
+ IP :  ::1 
+Error in: http://localhost:4358/kissmodel.aspx?pn=main&imei=1234&imsi=1234&date=07272016&ap=kiss. Error Message:Main main>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+27/07/2016 17:23:18
+ IP :  ::1 
+Error in: http://localhost:4358/kissmodel.aspx?pn=main&imei=1234&imsi=1234&date=07272016&ap=kiss. Error Message:CheckActiveandPromotion>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+27/07/2016 17:23:35
+ IP :  ::1 
+Error in: http://localhost:4358/kissmodel.aspx?pn=main&imei=1234&imsi=1234&date=07272016&ap=kiss. Error Message:Main main>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+27/07/2016 17:23:35
+ IP :  ::1 
+Error in: http://localhost:4358/kissmodel.aspx?pn=main&imei=1234&imsi=1234&date=07272016&ap=kiss. Error Message:CheckActiveandPromotion>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+27/07/2016 17:23:35
+ IP :  ::1 
+Error in: http://localhost:4358/kissmodel.aspx?pn=main&imei=1234&imsi=1234&date=07272016&ap=kiss. Error Message:Main main>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+27/07/2016 17:23:43
+ IP :  ::1 
+Error in: http://localhost:4358/kissmodel.aspx?pn=main&imei=1234&imsi=1234&date=07272016&ap=kiss. Error Message:CheckActiveandPromotion>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+27/07/2016 17:23:43
+ IP :  ::1 
+Error in: http://localhost:4358/kissmodel.aspx?pn=main&imei=1234&imsi=1234&date=07272016&ap=kiss. Error Message:Main main>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+27/07/2016 17:23:43
+ IP :  ::1 
+Error in: http://localhost:4358/kissmodel.aspx?pn=main&imei=1234&imsi=1234&date=07272016&ap=kiss. Error Message:CheckActiveandPromotion>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+27/07/2016 17:23:43
+ IP :  ::1 
+Error in: http://localhost:4358/kissmodel.aspx?pn=main&imei=1234&imsi=1234&date=07272016&ap=kiss. Error Message:Main main>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+27/07/2016 17:23:45
+ IP :  ::1 
+Error in: http://localhost:4358/kissmodel.aspx?pn=main&imei=1234&imsi=1234&date=07272016&ap=kiss. Error Message:CheckActiveandPromotion>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+27/07/2016 17:23:45
+ IP :  ::1 
+Error in: http://localhost:4358/kissmodel.aspx?pn=main&imei=1234&imsi=1234&date=07272016&ap=kiss. Error Message:Main main>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+27/07/2016 17:23:45
+ IP :  ::1 
+Error in: http://localhost:4358/kissmodel.aspx?pn=main&imei=1234&imsi=1234&date=07272016&ap=kiss. Error Message:CheckActiveandPromotion>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+27/07/2016 17:23:45
+ IP :  ::1 
+Error in: http://localhost:4358/kissmodel.aspx?pn=main&imei=1234&imsi=1234&date=07272016&ap=kiss. Error Message:Main main>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________

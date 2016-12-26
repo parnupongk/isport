@@ -1,0 +1,52 @@
+/* The nav is fixed on the right side  and we center it by translating it 50% 
+(we don't know it's height so we can't use the negative margin trick) */
+.cbp-fbscroller > nav {
+	position: fixed;
+	z-index: 9999;
+	left: 10px;
+	top: 50%;
+	margin-top: 50px;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+.cbp-fbscroller > nav a {
+	display: block;
+	position: relative;
+	z-index: 9999;
+	color:#fff;
+	width: 28px;
+	height: 28px;
+	outline: none;
+	margin: 8px 0;
+	border-radius: 50%;
+	background-color: rgba(14, 53, 69,0.8);
+	border: 2px solid rgba(14, 53, 69,0.1);
+}
+
+.no-touch .cbp-fbscroller > nav a:hover {
+	background: rgba(6, 186, 143,0.5);
+	border: none;
+	padding: 2.5px 0 0 2.5px;
+}
+
+.cbp-fbscroller > nav a.cbp-fbcurrent {
+	background: rgba(6, 186, 143,1);
+	border:none;
+	padding: 2.5px 0 0 2.5px;
+}
+
+/* background-attachment does the trick */
+.cbp-fbscroller section {
+	position: relative;
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.no-touch .cbp-fbscroller section {
+	background-attachment: fixed;
+}
+
