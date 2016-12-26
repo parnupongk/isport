@@ -1,0 +1,377 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="isportDS" targetNamespace="http://tempuri.org/isportDS.xsd" xmlns:mstns="http://tempuri.org/isportDS.xsd" xmlns="http://tempuri.org/isportDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="1" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="IsportConnectionString" IsAppSettingsProperty="true" Modifier="Assembly" Name="IsportConnectionString (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.IsportConnectionString.ConnectionString" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="wisportConnectionString" IsAppSettingsProperty="true" Modifier="Assembly" Name="wisportConnectionString (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.wisportConnectionString.ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="isportDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="isportDS" msprop:Generator_DataSetName="isportDS" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="wapisport_images" msprop:Generator_UserTableName="wapisport_images" msprop:Generator_RowDeletedName="wapisport_imagesRowDeleted" msprop:Generator_RowChangedName="wapisport_imagesRowChanged" msprop:Generator_RowClassName="wapisport_imagesRow" msprop:Generator_RowChangingName="wapisport_imagesRowChanging" msprop:Generator_RowEvArgName="wapisport_imagesRowChangeEvent" msprop:Generator_RowEvHandlerName="wapisport_imagesRowChangeEventHandler" msprop:Generator_TableClassName="wapisport_imagesDataTable" msprop:Generator_TableVarName="tablewapisport_images" msprop:Generator_RowDeletingName="wapisport_imagesRowDeleting" msprop:Generator_TablePropName="wapisport_images">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="images_id" msprop:Generator_UserColumnName="images_id" msprop:Generator_ColumnPropNameInRow="images_id" msprop:Generator_ColumnVarNameInTable="columnimages_id" msprop:Generator_ColumnPropNameInTable="images_idColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="36" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="images_date" msprop:Generator_UserColumnName="images_date" msprop:Generator_ColumnPropNameInRow="images_date" msprop:Generator_ColumnVarNameInTable="columnimages_date" msprop:Generator_ColumnPropNameInTable="images_dateColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="images_path" msprop:Generator_UserColumnName="images_path" msprop:Generator_ColumnPropNameInRow="images_path" msprop:Generator_ColumnVarNameInTable="columnimages_path" msprop:Generator_ColumnPropNameInTable="images_pathColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1000" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="images_type" msprop:Generator_UserColumnName="images_type" msprop:Generator_ColumnPropNameInRow="images_type" msprop:Generator_ColumnVarNameInTable="columnimages_type" msprop:Generator_ColumnPropNameInTable="images_typeColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="wapisport_footer" msprop:Generator_UserTableName="wapisport_footer" msprop:Generator_RowDeletedName="wapisport_footerRowDeleted" msprop:Generator_RowChangedName="wapisport_footerRowChanged" msprop:Generator_RowClassName="wapisport_footerRow" msprop:Generator_RowChangingName="wapisport_footerRowChanging" msprop:Generator_RowEvArgName="wapisport_footerRowChangeEvent" msprop:Generator_RowEvHandlerName="wapisport_footerRowChangeEventHandler" msprop:Generator_TableClassName="wapisport_footerDataTable" msprop:Generator_TableVarName="tablewapisport_footer" msprop:Generator_RowDeletingName="wapisport_footerRowDeleting" msprop:Generator_TablePropName="wapisport_footer">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="footer_id" msprop:Generator_UserColumnName="footer_id" msprop:Generator_ColumnVarNameInTable="columnfooter_id" msprop:Generator_ColumnPropNameInRow="footer_id" msprop:Generator_ColumnPropNameInTable="footer_idColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="36" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="footer_level" msprop:Generator_UserColumnName="footer_level" msprop:Generator_ColumnVarNameInTable="columnfooter_level" msprop:Generator_ColumnPropNameInRow="footer_level" msprop:Generator_ColumnPropNameInTable="footer_levelColumn" type="xs:int" />
+              <xs:element name="footer_index" msprop:Generator_UserColumnName="footer_index" msprop:Generator_ColumnVarNameInTable="columnfooter_index" msprop:Generator_ColumnPropNameInRow="footer_index" msprop:Generator_ColumnPropNameInTable="footer_indexColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="footer_operator" msprop:Generator_UserColumnName="footer_operator" msprop:Generator_ColumnVarNameInTable="columnfooter_operator" msprop:Generator_ColumnPropNameInRow="footer_operator" msprop:Generator_ColumnPropNameInTable="footer_operatorColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="footer_startdate" msprop:Generator_UserColumnName="footer_startdate" msprop:Generator_ColumnVarNameInTable="columnfooter_startdate" msprop:Generator_ColumnPropNameInRow="footer_startdate" msprop:Generator_ColumnPropNameInTable="footer_startdateColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="footer_enddate" msprop:Generator_UserColumnName="footer_enddate" msprop:Generator_ColumnVarNameInTable="columnfooter_enddate" msprop:Generator_ColumnPropNameInRow="footer_enddate" msprop:Generator_ColumnPropNameInTable="footer_enddateColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="footer_createdate" msprop:Generator_UserColumnName="footer_createdate" msprop:Generator_ColumnVarNameInTable="columnfooter_createdate" msprop:Generator_ColumnPropNameInRow="footer_createdate" msprop:Generator_ColumnPropNameInTable="footer_createdateColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="footer_updatedate" msprop:Generator_UserColumnName="footer_updatedate" msprop:Generator_ColumnVarNameInTable="columnfooter_updatedate" msprop:Generator_ColumnPropNameInRow="footer_updatedate" msprop:Generator_ColumnPropNameInTable="footer_updatedateColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="footer_createuser" msprop:Generator_UserColumnName="footer_createuser" msprop:Generator_ColumnVarNameInTable="columnfooter_createuser" msprop:Generator_ColumnPropNameInRow="footer_createuser" msprop:Generator_ColumnPropNameInTable="footer_createuserColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="footer_updateuser" msprop:Generator_UserColumnName="footer_updateuser" msprop:Generator_ColumnVarNameInTable="columnfooter_updateuser" msprop:Generator_ColumnPropNameInRow="footer_updateuser" msprop:Generator_ColumnPropNameInTable="footer_updateuserColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="footer_createip" msprop:Generator_UserColumnName="footer_createip" msprop:Generator_ColumnVarNameInTable="columnfooter_createip" msprop:Generator_ColumnPropNameInRow="footer_createip" msprop:Generator_ColumnPropNameInTable="footer_createipColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="footer_updateip" msprop:Generator_UserColumnName="footer_updateip" msprop:Generator_ColumnVarNameInTable="columnfooter_updateip" msprop:Generator_ColumnPropNameInRow="footer_updateip" msprop:Generator_ColumnPropNameInTable="footer_updateipColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="footer_ispayment" msprop:Generator_UserColumnName="footer_ispayment" msprop:Generator_ColumnVarNameInTable="columnfooter_ispayment" msprop:Generator_ColumnPropNameInRow="footer_ispayment" msprop:Generator_ColumnPropNameInTable="footer_ispaymentColumn" type="xs:boolean" minOccurs="0" />
+              <xs:element name="footer_isdefault" msprop:Generator_UserColumnName="footer_isdefault" msprop:Generator_ColumnVarNameInTable="columnfooter_isdefault" msprop:Generator_ColumnPropNameInRow="footer_isdefault" msprop:Generator_ColumnPropNameInTable="footer_isdefaultColumn" type="xs:boolean" minOccurs="0" />
+              <xs:element name="footer_projecttype" msprop:Generator_UserColumnName="footer_projecttype" msprop:Generator_ColumnVarNameInTable="columnfooter_projecttype" msprop:Generator_ColumnPropNameInRow="footer_projecttype" msprop:Generator_ColumnPropNameInTable="footer_projecttypeColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="footer_sg_id" msprop:Generator_UserColumnName="footer_sg_id" msprop:Generator_ColumnVarNameInTable="columnfooter_sg_id" msprop:Generator_ColumnPropNameInRow="footer_sg_id" msprop:Generator_ColumnPropNameInTable="footer_sg_idColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="wapisport_header" msprop:Generator_UserTableName="wapisport_header" msprop:Generator_RowDeletedName="wapisport_headerRowDeleted" msprop:Generator_RowChangedName="wapisport_headerRowChanged" msprop:Generator_RowClassName="wapisport_headerRow" msprop:Generator_RowChangingName="wapisport_headerRowChanging" msprop:Generator_RowEvArgName="wapisport_headerRowChangeEvent" msprop:Generator_RowEvHandlerName="wapisport_headerRowChangeEventHandler" msprop:Generator_TableClassName="wapisport_headerDataTable" msprop:Generator_TableVarName="tablewapisport_header" msprop:Generator_RowDeletingName="wapisport_headerRowDeleting" msprop:Generator_TablePropName="wapisport_header">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="header_id" msprop:Generator_UserColumnName="header_id" msprop:Generator_ColumnPropNameInRow="header_id" msprop:Generator_ColumnVarNameInTable="columnheader_id" msprop:Generator_ColumnPropNameInTable="header_idColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="36" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="header_level" msprop:Generator_UserColumnName="header_level" msprop:Generator_ColumnPropNameInRow="header_level" msprop:Generator_ColumnVarNameInTable="columnheader_level" msprop:Generator_ColumnPropNameInTable="header_levelColumn" type="xs:int" />
+              <xs:element name="header_index" msprop:Generator_UserColumnName="header_index" msprop:Generator_ColumnPropNameInRow="header_index" msprop:Generator_ColumnVarNameInTable="columnheader_index" msprop:Generator_ColumnPropNameInTable="header_indexColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="header_operator" msprop:Generator_UserColumnName="header_operator" msprop:Generator_ColumnPropNameInRow="header_operator" msprop:Generator_ColumnVarNameInTable="columnheader_operator" msprop:Generator_ColumnPropNameInTable="header_operatorColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="header_startdate" msprop:Generator_UserColumnName="header_startdate" msprop:Generator_ColumnPropNameInRow="header_startdate" msprop:Generator_ColumnVarNameInTable="columnheader_startdate" msprop:Generator_ColumnPropNameInTable="header_startdateColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="header_enddate" msprop:Generator_UserColumnName="header_enddate" msprop:Generator_ColumnPropNameInRow="header_enddate" msprop:Generator_ColumnVarNameInTable="columnheader_enddate" msprop:Generator_ColumnPropNameInTable="header_enddateColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="header_createdate" msprop:Generator_UserColumnName="header_createdate" msprop:Generator_ColumnPropNameInRow="header_createdate" msprop:Generator_ColumnVarNameInTable="columnheader_createdate" msprop:Generator_ColumnPropNameInTable="header_createdateColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="header_updatedate" msprop:Generator_UserColumnName="header_updatedate" msprop:Generator_ColumnPropNameInRow="header_updatedate" msprop:Generator_ColumnVarNameInTable="columnheader_updatedate" msprop:Generator_ColumnPropNameInTable="header_updatedateColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="header_createuser" msprop:Generator_UserColumnName="header_createuser" msprop:Generator_ColumnPropNameInRow="header_createuser" msprop:Generator_ColumnVarNameInTable="columnheader_createuser" msprop:Generator_ColumnPropNameInTable="header_createuserColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="header_updateuser" msprop:Generator_UserColumnName="header_updateuser" msprop:Generator_ColumnPropNameInRow="header_updateuser" msprop:Generator_ColumnVarNameInTable="columnheader_updateuser" msprop:Generator_ColumnPropNameInTable="header_updateuserColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="header_createip" msprop:Generator_UserColumnName="header_createip" msprop:Generator_ColumnPropNameInRow="header_createip" msprop:Generator_ColumnVarNameInTable="columnheader_createip" msprop:Generator_ColumnPropNameInTable="header_createipColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="header_updateip" msprop:Generator_UserColumnName="header_updateip" msprop:Generator_ColumnPropNameInRow="header_updateip" msprop:Generator_ColumnVarNameInTable="columnheader_updateip" msprop:Generator_ColumnPropNameInTable="header_updateipColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="header_ispayment" msprop:Generator_UserColumnName="header_ispayment" msprop:Generator_ColumnPropNameInRow="header_ispayment" msprop:Generator_ColumnVarNameInTable="columnheader_ispayment" msprop:Generator_ColumnPropNameInTable="header_ispaymentColumn" type="xs:boolean" minOccurs="0" />
+              <xs:element name="header_isdefault" msprop:Generator_UserColumnName="header_isdefault" msprop:Generator_ColumnPropNameInRow="header_isdefault" msprop:Generator_ColumnVarNameInTable="columnheader_isdefault" msprop:Generator_ColumnPropNameInTable="header_isdefaultColumn" type="xs:boolean" minOccurs="0" />
+              <xs:element name="header_projecttype" msprop:Generator_UserColumnName="header_projecttype" msprop:Generator_ColumnPropNameInRow="header_projecttype" msprop:Generator_ColumnVarNameInTable="columnheader_projecttype" msprop:Generator_ColumnPropNameInTable="header_projecttypeColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="header_sg_id" msprop:Generator_UserColumnName="header_sg_id" msprop:Generator_ColumnPropNameInRow="header_sg_id" msprop:Generator_ColumnVarNameInTable="columnheader_sg_id" msprop:Generator_ColumnPropNameInTable="header_sg_idColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="header_random" msprop:Generator_UserColumnName="header_random" msprop:Generator_ColumnPropNameInRow="header_random" msprop:Generator_ColumnVarNameInTable="columnheader_random" msprop:Generator_ColumnPropNameInTable="header_randomColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="wapisport_ui" msprop:Generator_UserTableName="wapisport_ui" msprop:Generator_RowDeletedName="wapisport_uiRowDeleted" msprop:Generator_RowChangedName="wapisport_uiRowChanged" msprop:Generator_RowClassName="wapisport_uiRow" msprop:Generator_RowChangingName="wapisport_uiRowChanging" msprop:Generator_RowEvArgName="wapisport_uiRowChangeEvent" msprop:Generator_RowEvHandlerName="wapisport_uiRowChangeEventHandler" msprop:Generator_TableClassName="wapisport_uiDataTable" msprop:Generator_TableVarName="tablewapisport_ui" msprop:Generator_RowDeletingName="wapisport_uiRowDeleting" msprop:Generator_TablePropName="wapisport_ui">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ui_id" msprop:Generator_UserColumnName="ui_id" msprop:Generator_ColumnVarNameInTable="columnui_id" msprop:Generator_ColumnPropNameInRow="ui_id" msprop:Generator_ColumnPropNameInTable="ui_idColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="36" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ui_master_id" msprop:Generator_UserColumnName="ui_master_id" msprop:Generator_ColumnVarNameInTable="columnui_master_id" msprop:Generator_ColumnPropNameInRow="ui_master_id" msprop:Generator_ColumnPropNameInTable="ui_master_idColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="36" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ui_projecttype" msprop:Generator_UserColumnName="ui_projecttype" msprop:Generator_ColumnVarNameInTable="columnui_projecttype" msprop:Generator_ColumnPropNameInRow="ui_projecttype" msprop:Generator_ColumnPropNameInTable="ui_projecttypeColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ui_level" msprop:Generator_UserColumnName="ui_level" msprop:Generator_ColumnVarNameInTable="columnui_level" msprop:Generator_ColumnPropNameInRow="ui_level" msprop:Generator_ColumnPropNameInTable="ui_levelColumn" type="xs:int" />
+              <xs:element name="ui_index" msprop:Generator_UserColumnName="ui_index" msprop:Generator_ColumnVarNameInTable="columnui_index" msprop:Generator_ColumnPropNameInRow="ui_index" msprop:Generator_ColumnPropNameInTable="ui_indexColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="ui_operator" msprop:Generator_UserColumnName="ui_operator" msprop:Generator_ColumnVarNameInTable="columnui_operator" msprop:Generator_ColumnPropNameInRow="ui_operator" msprop:Generator_ColumnPropNameInTable="ui_operatorColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ui_startdate" msprop:Generator_UserColumnName="ui_startdate" msprop:Generator_ColumnVarNameInTable="columnui_startdate" msprop:Generator_ColumnPropNameInRow="ui_startdate" msprop:Generator_ColumnPropNameInTable="ui_startdateColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="ui_enddate" msprop:Generator_UserColumnName="ui_enddate" msprop:Generator_ColumnVarNameInTable="columnui_enddate" msprop:Generator_ColumnPropNameInRow="ui_enddate" msprop:Generator_ColumnPropNameInTable="ui_enddateColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="ui_createdate" msprop:Generator_UserColumnName="ui_createdate" msprop:Generator_ColumnVarNameInTable="columnui_createdate" msprop:Generator_ColumnPropNameInRow="ui_createdate" msprop:Generator_ColumnPropNameInTable="ui_createdateColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="ui_updatedate" msprop:Generator_UserColumnName="ui_updatedate" msprop:Generator_ColumnVarNameInTable="columnui_updatedate" msprop:Generator_ColumnPropNameInRow="ui_updatedate" msprop:Generator_ColumnPropNameInTable="ui_updatedateColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="ui_createuser" msprop:Generator_UserColumnName="ui_createuser" msprop:Generator_ColumnVarNameInTable="columnui_createuser" msprop:Generator_ColumnPropNameInRow="ui_createuser" msprop:Generator_ColumnPropNameInTable="ui_createuserColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ui_updateuser" msprop:Generator_UserColumnName="ui_updateuser" msprop:Generator_ColumnVarNameInTable="columnui_updateuser" msprop:Generator_ColumnPropNameInRow="ui_updateuser" msprop:Generator_ColumnPropNameInTable="ui_updateuserColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ui_createip" msprop:Generator_UserColumnName="ui_createip" msprop:Generator_ColumnVarNameInTable="columnui_createip" msprop:Generator_ColumnPropNameInRow="ui_createip" msprop:Generator_ColumnPropNameInTable="ui_createipColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ui_updateip" msprop:Generator_UserColumnName="ui_updateip" msprop:Generator_ColumnVarNameInTable="columnui_updateip" msprop:Generator_ColumnPropNameInRow="ui_updateip" msprop:Generator_ColumnPropNameInTable="ui_updateipColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ui_ismaster" msprop:Generator_UserColumnName="ui_ismaster" msprop:Generator_ColumnVarNameInTable="columnui_ismaster" msprop:Generator_ColumnPropNameInRow="ui_ismaster" msprop:Generator_ColumnPropNameInTable="ui_ismasterColumn" type="xs:boolean" minOccurs="0" />
+              <xs:element name="ui_ispayment" msprop:Generator_UserColumnName="ui_ispayment" msprop:Generator_ColumnVarNameInTable="columnui_ispayment" msprop:Generator_ColumnPropNameInRow="ui_ispayment" msprop:Generator_ColumnPropNameInTable="ui_ispaymentColumn" type="xs:boolean" minOccurs="0" />
+              <xs:element name="ui_sg_id" msprop:Generator_UserColumnName="ui_sg_id" msprop:Generator_ColumnVarNameInTable="columnui_sg_id" msprop:Generator_ColumnPropNameInRow="ui_sg_id" msprop:Generator_ColumnPropNameInTable="ui_sg_idColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ui_isnews" msprop:Generator_UserColumnName="ui_isnews" msprop:Generator_ColumnVarNameInTable="columnui_isnews" msprop:Generator_ColumnPropNameInRow="ui_isnews" msprop:Generator_ColumnPropNameInTable="ui_isnewsColumn" type="xs:boolean" minOccurs="0" />
+              <xs:element name="ui_isnews_top" msprop:Generator_UserColumnName="ui_isnews_top" msprop:Generator_ColumnVarNameInTable="columnui_isnews_top" msprop:Generator_ColumnPropNameInRow="ui_isnews_top" msprop:Generator_ColumnPropNameInTable="ui_isnews_topColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ui_contentname" msprop:Generator_UserColumnName="ui_contentname" msprop:Generator_ColumnVarNameInTable="columnui_contentname" msprop:Generator_ColumnPropNameInRow="ui_contentname" msprop:Generator_ColumnPropNameInTable="ui_contentnameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ui_ispaymentwap" msprop:Generator_UserColumnName="ui_ispaymentwap" msprop:Generator_ColumnPropNameInRow="ui_ispaymentwap" msprop:Generator_ColumnVarNameInTable="columnui_ispaymentwap" msprop:Generator_ColumnPropNameInTable="ui_ispaymentwapColumn" type="xs:boolean" minOccurs="0" />
+              <xs:element name="ui_ispaymentsms" msprop:Generator_UserColumnName="ui_ispaymentsms" msprop:Generator_ColumnPropNameInRow="ui_ispaymentsms" msprop:Generator_ColumnVarNameInTable="columnui_ispaymentsms" msprop:Generator_ColumnPropNameInTable="ui_ispaymentsmsColumn" type="xs:boolean" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="wapisport_content" msprop:Generator_UserTableName="wapisport_content" msprop:Generator_RowDeletedName="wapisport_contentRowDeleted" msprop:Generator_RowChangedName="wapisport_contentRowChanged" msprop:Generator_RowClassName="wapisport_contentRow" msprop:Generator_RowChangingName="wapisport_contentRowChanging" msprop:Generator_RowEvArgName="wapisport_contentRowChangeEvent" msprop:Generator_RowEvHandlerName="wapisport_contentRowChangeEventHandler" msprop:Generator_TableClassName="wapisport_contentDataTable" msprop:Generator_TableVarName="tablewapisport_content" msprop:Generator_RowDeletingName="wapisport_contentRowDeleting" msprop:Generator_TablePropName="wapisport_content">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="content_id" msprop:Generator_UserColumnName="content_id" msprop:Generator_ColumnPropNameInRow="content_id" msprop:Generator_ColumnVarNameInTable="columncontent_id" msprop:Generator_ColumnPropNameInTable="content_idColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="36" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="master_id" msprop:Generator_UserColumnName="master_id" msprop:Generator_ColumnPropNameInRow="master_id" msprop:Generator_ColumnVarNameInTable="columnmaster_id" msprop:Generator_ColumnPropNameInTable="master_idColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="36" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="content_icon" msprop:Generator_UserColumnName="content_icon" msprop:Generator_ColumnPropNameInRow="content_icon" msprop:Generator_ColumnVarNameInTable="columncontent_icon" msprop:Generator_ColumnPropNameInTable="content_iconColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1000" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="content_createdate" msprop:Generator_UserColumnName="content_createdate" msprop:Generator_ColumnPropNameInRow="content_createdate" msprop:Generator_ColumnVarNameInTable="columncontent_createdate" msprop:Generator_ColumnPropNameInTable="content_createdateColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="content_image" msprop:Generator_UserColumnName="content_image" msprop:Generator_ColumnPropNameInRow="content_image" msprop:Generator_ColumnVarNameInTable="columncontent_image" msprop:Generator_ColumnPropNameInTable="content_imageColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1000" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="content_link" msprop:Generator_UserColumnName="content_link" msprop:Generator_ColumnPropNameInRow="content_link" msprop:Generator_ColumnVarNameInTable="columncontent_link" msprop:Generator_ColumnPropNameInTable="content_linkColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1000" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="content_text" msprop:Generator_UserColumnName="content_text" msprop:Generator_ColumnPropNameInRow="content_text" msprop:Generator_ColumnVarNameInTable="columncontent_text" msprop:Generator_ColumnPropNameInTable="content_textColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1000" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="content_align" msprop:Generator_UserColumnName="content_align" msprop:Generator_ColumnPropNameInRow="content_align" msprop:Generator_ColumnVarNameInTable="columncontent_align" msprop:Generator_ColumnPropNameInTable="content_alignColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="content_breakafter" msprop:Generator_UserColumnName="content_breakafter" msprop:Generator_ColumnPropNameInRow="content_breakafter" msprop:Generator_ColumnVarNameInTable="columncontent_breakafter" msprop:Generator_ColumnPropNameInTable="content_breakafterColumn" type="xs:boolean" minOccurs="0" />
+              <xs:element name="content_color" msprop:Generator_UserColumnName="content_color" msprop:Generator_ColumnPropNameInRow="content_color" msprop:Generator_ColumnVarNameInTable="columncontent_color" msprop:Generator_ColumnPropNameInTable="content_colorColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="content_bold" msprop:Generator_UserColumnName="content_bold" msprop:Generator_ColumnPropNameInRow="content_bold" msprop:Generator_ColumnVarNameInTable="columncontent_bold" msprop:Generator_ColumnPropNameInTable="content_boldColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="content_isredirect" msprop:Generator_UserColumnName="content_isredirect" msprop:Generator_ColumnVarNameInTable="columncontent_isredirect" msprop:Generator_ColumnPropNameInRow="content_isredirect" msprop:Generator_ColumnPropNameInTable="content_isredirectColumn" type="xs:boolean" minOccurs="0" />
+              <xs:element name="content_bgcolor" msprop:Generator_UserColumnName="content_bgcolor" msprop:Generator_ColumnVarNameInTable="columncontent_bgcolor" msprop:Generator_ColumnPropNameInRow="content_bgcolor" msprop:Generator_ColumnPropNameInTable="content_bgcolorColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="content_txtsize" msprop:Generator_UserColumnName="content_txtsize" msprop:Generator_ColumnVarNameInTable="columncontent_txtsize" msprop:Generator_ColumnPropNameInRow="content_txtsize" msprop:Generator_ColumnPropNameInTable="content_txtsizeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="content_isgallery" msprop:Generator_UserColumnName="content_isgallery" msprop:Generator_ColumnPropNameInRow="content_isgallery" msprop:Generator_ColumnVarNameInTable="columncontent_isgallery" msprop:Generator_ColumnPropNameInTable="content_isgalleryColumn" type="xs:boolean" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:wapisport_footer" />
+      <xs:field xpath="mstns:footer_id" />
+    </xs:unique>
+    <xs:unique name="wapisport_header_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:wapisport_header" />
+      <xs:field xpath="mstns:header_id" />
+    </xs:unique>
+    <xs:unique name="wapisport_ui_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:wapisport_ui" />
+      <xs:field xpath="mstns:ui_id" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

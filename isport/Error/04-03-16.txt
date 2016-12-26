@@ -1,0 +1,241 @@
+
+Log Entry : 
+04/03/2016 10:59:10
+ IP :  ::1 
+Error in: http://localhost:60878/index.aspx. Error Message:Error >>OCIEnvCreate failed with return code -1 but error message text was not available.
+__________________________
+
+Log Entry : 
+04/03/2016 10:59:30
+ IP :  ::1 
+Error in: http://localhost:60878/index.aspx. Error Message:Error >>OCIEnvCreate failed with return code -1 but error message text was not available.
+__________________________
+
+Log Entry : 
+04/03/2016 11:02:06
+ IP :  ::1 
+Error in: http://localhost:60878/index.aspx. Error Message:Error >>OCIEnvCreate failed with return code -1 but error message text was not available.
+__________________________
+
+Log Entry : 
+04/03/2016 11:17:40
+ IP :  ::1 
+Error in: http://localhost:60878/index.aspx. Error Message:Error >>OCIEnvCreate failed with return code -1 but error message text was not available.
+__________________________
+
+Log Entry : 
+04/03/2016 11:30:47
+ IP :  ::1 
+Error in: http://localhost:60878/index.aspx. Error Message:Error >>OCIEnvCreate failed with return code -1 but error message text was not available.
+__________________________
+
+Log Entry : 
+04/03/2016 11:42:57
+ IP :  ::1 
+Error in: http://localhost:60878/index.aspx. Error Message:Error >>OCIEnvCreate failed with return code -1 but error message text was not available.
+__________________________
+
+Log Entry : 
+04/03/2016 11:44:31
+ IP :  ::1 
+Error in: http://localhost:60878/index.aspx. Error Message:Error >>OCIEnvCreate failed with return code -1 but error message text was not available.
+__________________________
+
+Log Entry : 
+04/03/2016 11:44:35
+ IP :  ::1 
+Error in: http://localhost:60878/index.aspx. Error Message:Error >>OCIEnvCreate failed with return code -1 but error message text was not available.
+__________________________
+
+Log Entry : 
+04/03/2016 11:46:43
+ IP :  ::1 
+Error in: http://localhost:60878/index.aspx. Error Message:Error >>OCIEnvCreate failed with return code -1 but error message text was not available.
+__________________________
+
+Log Entry : 
+04/03/2016 11:48:00
+ IP :  ::1 
+Error in: http://localhost:60878/index.aspx. Error Message:Error >>OCIEnvCreate failed with return code -1 but error message text was not available.
+__________________________
+
+Log Entry : 
+04/03/2016 11:48:01
+ IP :  ::1 
+Error in: http://localhost:60878/index.aspx. Error Message:Error >>OCIEnvCreate failed with return code -1 but error message text was not available.
+__________________________
+
+Log Entry : 
+04/03/2016 13:46:54
+ IP :  ::1 
+Error in: http://localhost:60878/index.aspx. Error Message:Error >>OCIEnvCreate failed with return code -1 but error message text was not available.
+__________________________
+
+Log Entry : 
+04/03/2016 13:47:14
+ IP :  ::1 
+Error in: http://localhost:60878/index.aspx?p=analyse. Error Message:Error >>Subscribe_portal_log_Insert>>OCIEnvCreate failed with return code -1 but error message text was not available.
+__________________________
+
+Log Entry : 
+04/03/2016 13:52:14
+ IP :  ::1 
+Error in: http://localhost:60878/index.aspx?p=bb. Error Message:Error >>OCIEnvCreate failed with return code -1 but error message text was not available.
+__________________________
+
+Log Entry : 
+04/03/2016 13:52:26
+ IP :  ::1 
+Error in: http://localhost:60878/index.aspx?p=program. Error Message:Error >> PreGenContent >> GenContent >> isport_service.GenContent >>genProgram >> Object reference not set to an instance of an object.
+__________________________
+
+Log Entry : 
+04/03/2016 13:59:43
+ IP :  ::1 
+Error in: http://localhost:60878/index.aspx?p=analyse. Error Message:Error >>Subscribe_portal_log_Insert>>OCIEnvCreate failed with return code -1 but error message text was not available.
+__________________________
+
+Log Entry : 
+04/03/2016 14:01:05
+ IP :  ::1 
+Error in: http://localhost:60878/index.aspx?p=analyse. Error Message:Error >>Subscribe_portal_log_Insert>>OCIEnvCreate failed with return code -1 but error message text was not available.
+__________________________
+
+Log Entry : 
+04/03/2016 14:02:26
+ IP :  ::1 
+Error in: http://localhost:60878/index.aspx?p=analyse. Error Message:Error >>Subscribe_portal_log_Insert>>OCIEnvCreate failed with return code -1 but error message text was not available.
+__________________________
+
+Log Entry : 
+04/03/2016 14:03:21
+ IP :  ::1 
+Error in: http://localhost:60878/index.aspx?p=analyse. Error Message:Error >>Subscribe_portal_log_Insert>>OCIEnvCreate failed with return code -1 but error message text was not available.
+__________________________
+
+Log Entry : 
+04/03/2016 14:20:11
+ IP :  ::1 
+Error in: http://localhost:60878/index.aspx?p=analyse. Error Message:Error >>Subscribe_portal_log_Insert>>OCIEnvCreate failed with return code -1 but error message text was not available.
+__________________________
+
+Log Entry : 
+04/03/2016 14:22:56
+ IP :  ::1 
+Error in: http://localhost:60878/index.aspx?p=analyse. Error Message:Error >>Subscribe_portal_log_Insert>>OCIEnvCreate failed with return code -1 but error message text was not available.
+__________________________
+
+Log Entry : 
+04/03/2016 14:23:48
+ IP :  ::1 
+Error in: http://localhost:60878/index.aspx?p=program&class_id=. Error Message:Error >>Subscribe_portal_log_Insert>>OCIEnvCreate failed with return code -1 but error message text was not available.
+__________________________
+
+Log Entry : 
+04/03/2016 14:31:39
+ IP :  ::1 
+Error in: http://localhost:60878/index.aspx?p=program&class_id=. Error Message:Error >>Subscribe_portal_log_Insert>>OCIEnvCreate failed with return code -1 but error message text was not available.
+__________________________
+
+Log Entry : 
+04/03/2016 14:33:50
+ IP :  ::1 
+Error in: http://localhost:60878/index.aspx?p=program&class_id=. Error Message:Error >>Subscribe_portal_log_Insert>>OCIEnvCreate failed with return code -1 but error message text was not available.
+__________________________
+
+Log Entry : 
+04/03/2016 14:34:16
+ IP :  ::1 
+Error in: http://localhost:60878/index.aspx?p=program&class_id=. Error Message:Error >>Subscribe_portal_log_Insert>>OCIEnvCreate failed with return code -1 but error message text was not available.
+__________________________
+
+Log Entry : 
+04/03/2016 15:12:03
+ IP :  ::1 
+Error in: http://localhost:60878/index.aspx?p=tableMini&class_id=1&lng=L&mp_code=0025&sg=&prj=1&size=&mp=0025. Error Message:Error >>Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+04/03/2016 15:13:09
+ IP :  ::1 
+Error in: http://localhost:60878/index.aspx?p=tableMini&class_id=1&lng=L&mp_code=0025&sg=&prj=1&size=&mp=0025. Error Message:Error >>Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+04/03/2016 15:36:56
+ IP :  ::1 
+Error in: http://localhost:60878/index.aspx?p=othersport&class_id=1&lng=L&mp_code=0025&sg=&prj=1&size=&mp=0025. Error Message:Error >>Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+04/03/2016 15:39:22
+ IP :  ::1 
+Error in: http://localhost:60878/index.aspx?p=othersport&class_id=1&lng=L&mp_code=0025&sg=&prj=1&size=&mp=0025. Error Message:Error >>Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+04/03/2016 15:46:47
+ IP :  ::1 
+Error in: http://localhost:60878/index.aspx?p=result&class_id=1&lng=L&mp_code=0025&sg=&prj=1&size=&mp=0025. Error Message:Error >>Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+04/03/2016 15:54:25
+ IP :  ::1 
+Error in: http://localhost:60878/index.aspx?p=result&class_id=1&lng=L&mp_code=0025&sg=&prj=1&size=&mp=0025. Error Message:Error >>Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+04/03/2016 15:54:29
+ IP :  ::1 
+Error in: http://localhost:60878/football_result_detail.aspx?p=result&class_id=1&lng=L&mp_code=0025&sg=&prj=1&size=&mp=0025&msch_id=115091. Error Message:Error >>Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+04/03/2016 15:54:41
+ IP :  ::1 
+Error in: http://localhost:60878/football_result_detail.aspx?p=result&class_id=1&lng=L&mp_code=0025&sg=&prj=1&size=&mp=0025&msch_id=115095. Error Message:Error >>Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+04/03/2016 15:55:03
+ IP :  ::1 
+Error in: http://localhost:60878/football_result_detail.aspx?p=result&class_id=1&lng=L&mp_code=0025&sg=&prj=1&size=&mp=0025&msch_id=115094. Error Message:Error >>Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+04/03/2016 15:56:22
+ IP :  ::1 
+Error in: http://localhost:60878/football_result_detail.aspx?p=result&class_id=1&lng=L&mp_code=0025&sg=&prj=1&size=&mp=0025&msch_id=115094. Error Message:Error >>Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+04/03/2016 15:57:23
+ IP :  ::1 
+Error in: http://localhost:60878/football_result_detail.aspx?p=result&class_id=1&lng=L&mp_code=0025&sg=&prj=1&size=&mp=0025&msch_id=115094. Error Message:Error >>Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+04/03/2016 15:59:22
+ IP :  ::1 
+Error in: http://localhost:60878/football_result_detail.aspx?p=result&class_id=1&lng=L&mp_code=0025&sg=&prj=1&size=&mp=0025&msch_id=115094. Error Message:Error >>Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+04/03/2016 16:00:22
+ IP :  ::1 
+Error in: http://localhost:60878/football_result_detail.aspx?p=result&class_id=1&lng=L&mp_code=0025&sg=&prj=1&size=&mp=0025&msch_id=115094. Error Message:Error >>Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________

@@ -1,0 +1,76 @@
+
+Log Entry : 
+26/03/2015 11:24:14
+ IP :  127.0.0.1 
+Error in: http://localhost:60878/indexl.aspx. Error Message:Error >>GenFooter >>GenFooter >>GenFooter >>Column 'ui_ispayment' does not belong to table wapisport_footer.
+__________________________
+
+Log Entry : 
+26/03/2015 11:24:27
+ IP :  127.0.0.1 
+Error in: http://localhost:60878/indexl.aspx?p=bb. Error Message:Error >> PreGenContent >> isport_service.GenContent >>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+26/03/2015 12:01:01
+ IP :  127.0.0.1 
+Error in: http://localhost:60878/indexl.aspx. Error Message:Error >>Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+26/03/2015 12:09:16
+ IP :  127.0.0.1 
+Error in: http://localhost:60878/indexl.aspx. Error Message:Error >>Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+26/03/2015 12:10:36
+ IP :  127.0.0.1 
+Error in: http://localhost:60878/indexl.aspx. Error Message:Error >>Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+26/03/2015 13:08:58
+ IP :  127.0.0.1 
+Error in: http://localhost:60878/indexl.aspx?p=bb. Error Message:Error >> PreGenContent >> isport_service.GenContent >>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+26/03/2015 13:10:20
+ IP :  127.0.0.1 
+Error in: http://localhost:60878/indexl.aspx. Error Message:Error >>Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+26/03/2015 13:11:40
+ IP :  127.0.0.1 
+Error in: http://localhost:60878/indexl.aspx. Error Message:Error >>Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+26/03/2015 13:29:11
+ IP :  127.0.0.1 
+Error in: http://localhost:60878/indexl.aspx. Error Message:Error >>Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+26/03/2015 13:51:36
+ IP :  127.0.0.1 
+Error in: http://localhost:60878/indexl.aspx. Error Message:Error >>Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+26/03/2015 13:52:47
+ IP :  127.0.0.1 
+Error in: http://localhost:60878/indexl.aspx. Error Message:Error >>Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________

@@ -1,0 +1,6 @@
+
+Log Entry : 
+17/09/2014 09:56:57
+Error in: http://localhost:19937/news.aspx. Error Message:Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________

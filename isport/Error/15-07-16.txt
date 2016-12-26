@@ -1,0 +1,7 @@
+
+Log Entry : 
+15/07/2016 15:16:24
+ IP :  ::1 
+Error in: http://localhost:60878/admin/newpage.aspx. Error Message:SubmitInsert ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________

@@ -1,0 +1,117 @@
+
+Log Entry : 
+02/03/2016 15:22:32
+ IP :  ::1 
+Error in: http://localhost:8919/rep_channel.aspx. Error Message:BindReportMpCodeFromService >> Input string was not in a correct format.
+__________________________
+
+Log Entry : 
+02/03/2016 15:23:49
+ IP :  ::1 
+Error in: http://localhost:8919/rep_channel.aspx. Error Message:BindReportMpCodeFromService >> Input string was not in a correct format.
+__________________________
+
+Log Entry : 
+02/03/2016 15:24:16
+ IP :  ::1 
+Error in: http://localhost:8919/rep_channel.aspx. Error Message:BindReportMpCodeFromService >> Input string was not in a correct format.
+__________________________
+
+Log Entry : 
+02/03/2016 15:27:40
+ IP :  ::1 
+Error in: http://localhost:8919/rep_channel.aspx. Error Message:BindReportMpCodeFromService >> Input string was not in a correct format.
+__________________________
+
+Log Entry : 
+02/03/2016 15:30:19
+ IP :  ::1 
+Error in: http://localhost:8919/rep_channel.aspx. Error Message:BindChannel >> A connection was successfully established with the server, but then an error occurred during the pre-login handshake. (provider: TCP Provider, error: 0 - The handle is invalid.)
+__________________________
+
+Log Entry : 
+02/03/2016 15:30:19
+ IP :  ::1 
+Error in: http://localhost:8919/rep_channel.aspx. Error Message:Select_SipSubService >> A connection was successfully established with the server, but then an error occurred during the pre-login handshake. (provider: TCP Provider, error: 0 - The handle is invalid.)
+__________________________
+
+Log Entry : 
+02/03/2016 15:30:25
+ IP :  ::1 
+Error in: http://localhost:8919/rep_channel.aspx. Error Message:BindChannel >> A connection was successfully established with the server, but then an error occurred during the pre-login handshake. (provider: TCP Provider, error: 0 - The handle is invalid.)
+__________________________
+
+Log Entry : 
+02/03/2016 15:30:25
+ IP :  ::1 
+Error in: http://localhost:8919/rep_channel.aspx. Error Message:Select_SipSubService >> A connection was successfully established with the server, but then an error occurred during the pre-login handshake. (provider: TCP Provider, error: 0 - The handle is invalid.)
+__________________________
+
+Log Entry : 
+02/03/2016 15:30:28
+ IP :  ::1 
+Error in: http://localhost:8919/rep_channel.aspx. Error Message:BindChannel >> A connection was successfully established with the server, but then an error occurred during the pre-login handshake. (provider: TCP Provider, error: 0 - The handle is invalid.)
+__________________________
+
+Log Entry : 
+02/03/2016 15:30:28
+ IP :  ::1 
+Error in: http://localhost:8919/rep_channel.aspx. Error Message:Select_SipSubService >> A connection was successfully established with the server, but then an error occurred during the pre-login handshake. (provider: TCP Provider, error: 0 - The handle is invalid.)
+__________________________
+
+Log Entry : 
+02/03/2016 15:30:42
+ IP :  ::1 
+Error in: http://localhost:8919/rep_channel.aspx. Error Message:BindChannel >> A connection was successfully established with the server, but then an error occurred during the pre-login handshake. (provider: TCP Provider, error: 0 - The handle is invalid.)
+__________________________
+
+Log Entry : 
+02/03/2016 15:30:42
+ IP :  ::1 
+Error in: http://localhost:8919/rep_channel.aspx. Error Message:Select_SipSubService >> A connection was successfully established with the server, but then an error occurred during the pre-login handshake. (provider: TCP Provider, error: 0 - The handle is invalid.)
+__________________________
+
+Log Entry : 
+02/03/2016 15:31:04
+ IP :  ::1 
+Error in: http://localhost:8919/rep_channel.aspx. Error Message:BindChannel >> A connection was successfully established with the server, but then an error occurred during the pre-login handshake. (provider: TCP Provider, error: 0 - The handle is invalid.)
+__________________________
+
+Log Entry : 
+02/03/2016 15:31:04
+ IP :  ::1 
+Error in: http://localhost:8919/rep_channel.aspx. Error Message:Select_SipSubService >> A connection was successfully established with the server, but then an error occurred during the pre-login handshake. (provider: TCP Provider, error: 0 - The handle is invalid.)
+__________________________
+
+Log Entry : 
+02/03/2016 15:31:31
+ IP :  ::1 
+Error in: http://localhost:8919/rep_channel.aspx. Error Message:BindChannel >> A connection was successfully established with the server, but then an error occurred during the pre-login handshake. (provider: TCP Provider, error: 0 - The handle is invalid.)
+__________________________
+
+Log Entry : 
+02/03/2016 15:31:31
+ IP :  ::1 
+Error in: http://localhost:8919/rep_channel.aspx. Error Message:Select_SipSubService >> A connection was successfully established with the server, but then an error occurred during the pre-login handshake. (provider: TCP Provider, error: 0 - The handle is invalid.)
+__________________________
+
+Log Entry : 
+02/03/2016 15:35:43
+ IP :  ::1 
+Error in: http://localhost:8919/rep_channel.aspx. Error Message:btnSubmit_Click1 >> Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+__________________________
+
+Log Entry : 
+02/03/2016 15:42:09
+ IP :  ::1 
+Error in: http://localhost:8919/rep_channel.aspx. Error Message:BindReportMpCodeFromService >> Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+__________________________
+
+Log Entry : 
+02/03/2016 15:48:26
+ IP :  ::1 
+Error in: http://localhost:8919/rep_channel.aspx. Error Message:btnSubmit_Click1 >> Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+__________________________

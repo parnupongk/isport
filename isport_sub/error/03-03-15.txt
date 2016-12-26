@@ -1,0 +1,7 @@
+
+Log Entry : 
+03/03/2015 10:47:02
+ IP :  127.0.0.1 
+Error in: http://localhost:60082/index.aspx/GetOTP. Error Message:ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________

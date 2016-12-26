@@ -1,0 +1,71 @@
+﻿@model isportMVC.Models.EDTQuizGameModelList
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>index</title>
+    <script src="~/Scripts/jquery-1.10.2.js"></script>
+
+    <script type="text/javascript" src="~/scripts/moment.js"></script>
+    <script type="text/javascript" src="~/scripts/bootstrap-datepicker.js"></script>
+    <script type="text/javascript" src="~/scripts/bootstrap-datetimepicker.js"></script>
+    <link rel="stylesheet" href="~/Content/bootstrap-datetimepicker.css" />
+
+    
+    <link type="text/css" rel="stylesheet" href="~/Content/bootstrap.css" />
+    
+    
+    
+        <link type="text/css" rel="stylesheet" href="~/Content/Scripts/dropzone/dropzone.min.css" />
+        <script src="~/Content/Scripts/dropzone/dropzone.js"></script>
+        <script type="text/javascript">
+        $(document).ready(function () {
+
+            //$('.field-date').datepicker({ autoclose: true, todayHighlight: true, format: "dd/mm/yyyy" });
+
+            Dropzone.autoDiscover = false;
+            $("#dropzone-case").dropzone({
+                url: "@Url.Action("uploadFiles", "EDTQuizGame")",
+                addRemoveLinks: false,
+                success: function (file, response) {
+                    //window.location.reload();
+                    listFiles();
+                },
+                error: function (file, response) {
+                    file.previewElement.classList.add("dz-error");
+                }
+            });
+        });
+
+            function listFiles() {
+                var url = '@Url.Action("EDTModelList", "EDTQuizGame")';
+                $.post(url, function (data) {
+                    if (data !== '') {
+                        $("#listFiles").html(data);
+                    } else {
+                        $("#listFiles").hide();
+                    }
+                });
+            }
+
+        </script>
+
+</head>
+<body>
+    <div>
+        <div id="caseattachfile" class="card card-underline">
+            <form action="@Url.Action("uploadFiles", "EDTQuizGame")" class="dropzone" id="dropzone-case" style="min-height: 0; padding: 5px;">
+                <div class="dz-message">
+                    <span class="text-xl text-default-light"><i class="md md-attach-file"></i>&nbsp;Drop files here or click to upload.</span>
+                </div>
+            </form>
+        </div>
+        <div id="listFiles" class="card scroll"  style="height: 188px"></div>
+    </div>
+</body>
+</html>

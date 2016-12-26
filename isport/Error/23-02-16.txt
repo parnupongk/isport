@@ -1,0 +1,6 @@
+
+Log Entry : 
+23/02/2016 09:48:03
+ IP :  ::1 
+Error in: http://localhost:60878/detail.aspx. Error Message:InsertLogs >> Subscribe_portal_log_Insert>>OCIEnvCreate failed with return code -1 but error message text was not available.
+__________________________

@@ -1,0 +1,6 @@
+
+Log Entry : 
+03/08/2015 17:21:09
+ IP :  ::1 
+Error in: http://localhost:52520/index.aspx. Error Message:Error >>PreGenContent >> OCIEnvCreate failed with return code -1 but error message text was not available.
+__________________________

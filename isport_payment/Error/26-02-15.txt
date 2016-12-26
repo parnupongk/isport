@@ -1,0 +1,6 @@
+
+Log Entry : 
+26/02/2015 14:56:43
+Error in: http://localhost:5083/pay_dtac_ok.aspx. Error Message:WriteLogs >> ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________

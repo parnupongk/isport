@@ -1,0 +1,6 @@
+
+Log Entry : 
+04/03/2014 16:18:11
+Error in: http://localhost:5083/pay_dtac.aspx. Error Message:pay_datc:setcontent>>PaymentDtacSDPInsert_Parameter >> ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________

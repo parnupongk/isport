@@ -1,0 +1,70 @@
+
+Log Entry : 
+19/03/2015 08:58:32
+ IP :  127.0.0.1 
+Error in: http://localhost:52520/index.aspx. Error Message:Error >>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+19/03/2015 08:59:06
+ IP :  127.0.0.1 
+Error in: http://localhost:52520/index.aspx. Error Message:Error >>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+19/03/2015 09:03:01
+ IP :  127.0.0.1 
+Error in: http://localhost:52520/index.aspx. Error Message:Error >>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+19/03/2015 09:11:27
+ IP :  127.0.0.1 
+Error in: http://localhost:52520/index.aspx. Error Message:Error >>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+19/03/2015 09:11:36
+ IP :  127.0.0.1 
+Error in: http://localhost:52520/index.aspx?p=edtguide. Error Message:Error >>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+19/03/2015 09:38:45
+ IP :  127.0.0.1 
+Error in: http://localhost:52520/index.aspx. Error Message:Error >>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+19/03/2015 09:38:50
+ IP :  127.0.0.1 
+Error in: http://localhost:52520/index.aspx?p=edtguide. Error Message:Error >>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+19/03/2015 09:39:11
+ IP :  127.0.0.1 
+Error in: http://localhost:52520/index.aspx?p=edtguide. Error Message:Error >>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+19/03/2015 09:39:32
+ IP :  127.0.0.1 
+Error in: http://localhost:52520/index.aspx?p=edtguide. Error Message:Error >>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+19/03/2015 09:39:47
+ IP :  127.0.0.1 
+Error in: http://localhost:52520/index.aspx. Error Message:Error >>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________

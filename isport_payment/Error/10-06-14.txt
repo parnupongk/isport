@@ -1,0 +1,98 @@
+
+Log Entry : 
+10/06/2014 16:02:25
+Error in: http://localhost:5083/pay_ais.aspx. Error Message:E:\samart\wap_Source\UAT\isport\isport_payment\wap_id_rsa_public.xml
+__________________________
+
+Log Entry : 
+10/06/2014 16:02:29
+Error in: http://localhost:5083/pay_ais.aspx. Error Message:E:\samart\wap_Source\UAT\isport\isport_payment\wap_id_rsa_public.xml
+__________________________
+
+Log Entry : 
+10/06/2014 16:02:29
+Error in: http://localhost:5083/pay_ais.aspx. Error Message:E:\samart\wap_Source\UAT\isport\isport_payment\wap_id_rsa_public.xml
+__________________________
+
+Log Entry : 
+10/06/2014 16:02:29
+Error in: http://localhost:5083/pay_ais.aspx. Error Message:E:\samart\wap_Source\UAT\isport\isport_payment\wap_id_rsa_public.xml
+__________________________
+
+Log Entry : 
+10/06/2014 16:02:47
+Error in: http://localhost:5083/pay_ais.aspx?SG=197&LNG=L&size=S&mp=0025&prj=1&SCS_id=00066&plink=1. Error Message:E:\samart\wap_Source\UAT\isport\isport_payment\wap_id_rsa_public.xml
+__________________________
+
+Log Entry : 
+10/06/2014 16:03:33
+Error in: http://localhost:5083/pay_ais.aspx?SG=197&LNG=L&size=S&mp=0025&prj=1&SCS_id=00066&plink=1. Error Message:mBasePage Load>>Key not valid for use in specified state.
+
+__________________________
+
+Log Entry : 
+10/06/2014 16:03:56
+Error in: http://localhost:5083/pay_ais.aspx?SG=197&LNG=L&size=S&mp=0025&prj=1&SCS_id=00066&plink=1. Error Message:E:\samart\wap_Source\UAT\isport\isport_payment\wap_id_rsa_public.xml
+__________________________
+
+Log Entry : 
+10/06/2014 16:03:56
+Error in: http://localhost:5083/pay_ais.aspx?SG=197&LNG=L&size=S&mp=0025&prj=1&SCS_id=00066&plink=1. Error Message:mBasePage Load>>Key not valid for use in specified state.
+
+__________________________
+
+Log Entry : 
+10/06/2014 16:04:15
+Error in: http://localhost:5083/pay_ais.aspx. Error Message:E:\samart\wap_Source\UAT\isport\isport_payment\wap_id_rsa_public.xml
+__________________________
+
+Log Entry : 
+10/06/2014 16:04:17
+Error in: http://localhost:5083/pay_ais.aspx. Error Message:E:\samart\wap_Source\UAT\isport\isport_payment\wap_id_rsa_public.xml
+__________________________
+
+Log Entry : 
+10/06/2014 16:04:17
+Error in: http://localhost:5083/pay_ais.aspx. Error Message:E:\samart\wap_Source\UAT\isport\isport_payment\wap_id_rsa_public.xml
+__________________________
+
+Log Entry : 
+10/06/2014 16:04:17
+Error in: http://localhost:5083/pay_ais.aspx. Error Message:E:\samart\wap_Source\UAT\isport\isport_payment\wap_id_rsa_public.xml
+__________________________
+
+Log Entry : 
+10/06/2014 16:04:36
+Error in: http://localhost:5083/pay_ais.aspx?SG=197&LNG=L&size=S&mp=0025&prj=1&SCS_id=00066&plink=1. Error Message:E:\samart\wap_Source\UAT\isport\isport_payment\wap_id_rsa_public.xml
+__________________________
+
+Log Entry : 
+10/06/2014 16:04:38
+Error in: http://localhost:5083/pay_ais.aspx?SG=197&LNG=L&size=S&mp=0025&prj=1&SCS_id=00066&plink=1. Error Message:mBasePage Load>>Key not valid for use in specified state.
+
+__________________________
+
+Log Entry : 
+10/06/2014 16:05:28
+Error in: http://localhost:5083/pay_ais.aspx. Error Message:E:\samart\wap_Source\UAT\isport\isport_payment\wap_id_rsa_public.xml
+__________________________
+
+Log Entry : 
+10/06/2014 16:05:29
+Error in: http://localhost:5083/pay_ais.aspx. Error Message:E:\samart\wap_Source\UAT\isport\isport_payment\wap_id_rsa_public.xml
+__________________________
+
+Log Entry : 
+10/06/2014 16:05:30
+Error in: http://localhost:5083/pay_ais.aspx. Error Message:E:\samart\wap_Source\UAT\isport\isport_payment\wap_id_rsa_public.xml
+__________________________
+
+Log Entry : 
+10/06/2014 16:05:30
+Error in: http://localhost:5083/pay_ais.aspx. Error Message:E:\samart\wap_Source\UAT\isport\isport_payment\wap_id_rsa_public.xml
+__________________________
+
+Log Entry : 
+10/06/2014 16:05:43
+Error in: http://localhost:5083/pay_ais.aspx?SG=197&LNG=L&size=S&mp=0025&prj=1&SCS_id=00066&plink=1. Error Message:E:\samart\wap_Source\UAT\isport\isport_payment\wap_id_rsa_public.xml
+__________________________

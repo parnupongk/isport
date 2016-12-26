@@ -1,0 +1,7 @@
+
+Log Entry : 
+08/05/2015 15:34:54
+ IP :  127.0.0.1 
+Error in: http://localhost:52520/index.aspx. Error Message:Error >>PreGenContent >> ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________

@@ -1,0 +1,111 @@
+
+Log Entry : 
+15/07/2015 09:59:33
+ IP :  127.0.0.1 
+Error in: http://localhost:60878/indexl.aspx. Error Message:Error >>Object reference not set to an instance of an object.
+__________________________
+
+Log Entry : 
+15/07/2015 09:59:45
+ IP :  127.0.0.1 
+Error in: http://localhost:60878/indexl.aspx?p=kiss_sub_3. Error Message:Error >>Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+15/07/2015 10:01:35
+ IP :  127.0.0.1 
+Error in: http://localhost:60878/indexl.aspx?p=kiss_sub_3. Error Message:Error >>Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+15/07/2015 10:03:16
+ IP :  127.0.0.1 
+Error in: http://localhost:60878/indexl.aspx?p=kiss_sub_3. Error Message:Error >>Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+15/07/2015 10:08:12
+ IP :  127.0.0.1 
+Error in: http://localhost:60878/indexl.aspx?p=kiss_sub_3. Error Message:Error >>Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+15/07/2015 10:08:42
+ IP :  127.0.0.1 
+Error in: http://localhost:60878/indexl.aspx?p=kiss_sub_3. Error Message:Error >>Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+15/07/2015 10:12:35
+ IP :  127.0.0.1 
+Error in: http://localhost:60878/indexl.aspx?p=kiss_sub_3. Error Message:Error >>Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+15/07/2015 10:13:34
+ IP :  127.0.0.1 
+Error in: http://localhost:60878/indexl.aspx?p=kiss_sub_3. Error Message:Error >>Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+15/07/2015 10:16:48
+ IP :  127.0.0.1 
+Error in: http://localhost:60878/indexl.aspx?p=kiss_sub_3. Error Message:Error >>Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+15/07/2015 10:17:22
+ IP :  127.0.0.1 
+Error in: http://localhost:60878/indexl.aspx?p=kiss_sub_3. Error Message:Error >>Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+15/07/2015 10:17:32
+ IP :  127.0.0.1 
+Error in: http://localhost:60878/indexl.aspx?p=kiss_sub_3. Error Message:Error >>Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+15/07/2015 10:18:13
+ IP :  127.0.0.1 
+Error in: http://localhost:60878/indexl.aspx?p=kiss_sub_3. Error Message:Error >>Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+15/07/2015 10:19:23
+ IP :  127.0.0.1 
+Error in: http://localhost:60878/indexl.aspx?p=sportbuffet_sub. Error Message:Error >>Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+15/07/2015 13:35:54
+ IP :  127.0.0.1 
+Error in: http://localhost:60878/indexl.aspx?p=sportbuffet_sub. Error Message:Error >>Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+15/07/2015 13:36:11
+ IP :  127.0.0.1 
+Error in: http://localhost:60878/indexl.aspx?p=kiss_sub_3. Error Message:Error >>Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+15/07/2015 14:44:05
+ IP :  127.0.0.1 
+Error in: http://localhost:60878/indexl.aspx?p=sportbuffet_sub. Error Message:Error >>Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________

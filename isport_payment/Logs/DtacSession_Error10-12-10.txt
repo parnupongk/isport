@@ -1,0 +1,5 @@
+
+Log Entry : 
+10/12/2010 14:26:12
+Logs in: http://localhost:13170/pay_dtac_subscribe.aspx. Logs result: . Logs Message: Error:Object reference not set to an instance of an object.
+__________________________

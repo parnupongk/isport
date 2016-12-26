@@ -1,0 +1,60 @@
+
+Log Entry : 
+22/01/2016 17:14:43
+ IP :  ::1 
+Error in: http://localhost:19937/index.aspx?s=Cl1708&o=. Error Message:GenHeader >>Timeout expired.  The timeout period elapsed prior to obtaining a connection from the pool.  This may have occurred because all pooled connections were in use and max pool size was reached.
+__________________________
+
+Log Entry : 
+22/01/2016 17:15:02
+ IP :  ::1 
+Error in: http://localhost:19937/index.aspx. Error Message:GenHeader >>A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+__________________________
+
+Log Entry : 
+22/01/2016 17:15:02
+ IP :  ::1 
+Error in: http://localhost:19937/index.aspx?s=Cl1708&o=. Error Message:GenHeader >>A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+__________________________
+
+Log Entry : 
+22/01/2016 17:16:36
+ IP :  ::1 
+Error in: http://localhost:19937/index.aspx?s=Cl1708&o=. Error Message:GenHeader >>A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+__________________________
+
+Log Entry : 
+22/01/2016 17:17:19
+ IP :  ::1 
+Error in: http://localhost:19937/index.aspx?s=Cl1708&o=. Error Message:GenHeader >>Timeout expired.  The timeout period elapsed prior to obtaining a connection from the pool.  This may have occurred because all pooled connections were in use and max pool size was reached.
+__________________________
+
+Log Entry : 
+22/01/2016 17:17:58
+ IP :  ::1 
+Error in: http://localhost:19937/index.aspx. Error Message:GenHeader >>A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+__________________________
+
+Log Entry : 
+22/01/2016 17:20:01
+ IP :  ::1 
+Error in: http://localhost:19937/index.aspx?s=Cl1708&o=. Error Message:GenHeader >>A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+__________________________
+
+Log Entry : 
+22/01/2016 17:20:22
+ IP :  ::1 
+Error in: http://localhost:19937/index.aspx. Error Message:GenHeader >>A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+__________________________
+
+Log Entry : 
+22/01/2016 17:20:48
+ IP :  ::1 
+Error in: http://localhost:19937/index.aspx. Error Message:Subscribe_portal_log_Insert>>OCIEnvCreate failed with return code -1 but error message text was not available.
+__________________________
+
+Log Entry : 
+22/01/2016 17:21:24
+ IP :  ::1 
+Error in: http://localhost:19937/index.aspx?s=Cl1708&o=. Error Message:Subscribe_portal_log_Insert>>OCIEnvCreate failed with return code -1 but error message text was not available.
+__________________________

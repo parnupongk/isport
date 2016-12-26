@@ -1,0 +1,145 @@
+
+/* ===============================================================
+*
+*                              ROW Background 
+*
+*=================================================================*/
+.row_Black {
+  /*margin-right: -15px;
+  margin-left: -15px;*/
+  background-color:#000000;
+  margin:2px;
+  padding-bottom:1px;
+  padding-top:1px;
+}
+.row_Black:before,
+.row_Black:after {
+  display: block;
+  content: " ";
+}
+
+.row_Black:after {
+  clear: both;
+}
+
+.row_Black_Left {
+  /*margin-right: -15px;
+  margin-left: -15px;*/
+  background-color:#000000;
+  margin:2px;
+  padding-bottom:1px;
+  padding-top:1px;
+}
+.row_Black_Left:before,
+.row_Black_Left:after {
+  display: block;
+  content: " ";
+}
+
+.row_Black_Left:after {
+  clear: both;
+}
+
+.row_Black_Center {
+  /*margin-right: -15px;
+  margin-left: -15px;*/
+  background-color:#000000;
+  margin:2px;
+  padding-bottom:1px;
+  padding-top:1px;
+}
+.row_Black_Center:before,
+.row_Black_Center:after {
+  display: block;
+  content: " ";
+}
+
+.row_Black_Center:after {
+  clear: both;
+}
+
+.row_Red {
+  /*margin-right: -15px;
+  margin-left: -15px;*/
+  background-color:#FFCCCC;
+  margin:2px;
+  padding-bottom:1px;
+  padding-top:1px;
+}
+.row_Red:before,
+.row_Red:after {
+  display: block;
+  content: " ";
+}
+
+.row_Red:after {
+  clear: both;
+}
+.row_Yellow {
+  /*margin-right: -15px;
+  margin-left: -15px;*/
+  background-color:#FFFF97;
+  margin:2px;
+  padding-bottom:1px;
+  padding-top:1px;
+}
+.row_Yellow:before,
+.row_Yellow:after {
+  display: block;
+  content: " ";
+}
+
+.row_Yellow:after {
+  clear: both;
+}
+.row_Blue {
+  /*margin-right: -15px;
+  margin-left: -15px;*/
+  background-color:#AED7FF;
+  margin:2px;
+  padding-bottom:1px;
+  padding-top:1px;
+}
+.row_Blue:before,
+.row_Blue:after {
+  display: block;
+  content: " ";
+}
+
+.row_Blue:after {
+  clear: both;
+}
+.row_Green {
+  /*margin-right: -15px;
+  margin-left: -15px;*/
+  background-color:#A8EAA8;
+  margin:2px;
+  padding-bottom:1px;
+  padding-top:1px;
+}
+.row_Green:before,
+.row_Green:after {
+  display: block;
+  content: " ";
+}
+
+.row_Green:after {
+  clear: both;
+}
+.row_white {
+  /*margin-right: -15px;
+  margin-left: -15px;*/
+  background-color:#FFFFFF;
+  margin:2px;
+  padding-bottom:1px;
+  padding-top:1px;
+}
+.row_white:before,
+.row_white:after {
+  display: block;
+  content: " ";
+}
+
+.row_white:after {
+  clear: both;
+}

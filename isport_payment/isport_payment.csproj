@@ -1,0 +1,317 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C52C8A63-C204-460D-B1BE-EFCE4BD0247D}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>isport_payment</RootNamespace>
+    <AssemblyName>isport_payment</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ApplicationBlocks.Data, Version=2.0.0.0, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\isport\bin\Microsoft.ApplicationBlocks.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="MobileLibrary, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\isport\bin\MobileLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Extensions.Design, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="WebLibrary, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\isport\bin\WebLibrary.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="wap_id_rsa_pub.xml" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="accept_session_orange.aspx.cs">
+      <DependentUpon>accept_session_orange.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="accept_session_orange.aspx.designer.cs">
+      <DependentUpon>accept_session_orange.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ais_back.aspx.cs">
+      <DependentUpon>ais_back.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ais_back.aspx.designer.cs">
+      <DependentUpon>ais_back.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ais_notify.aspx.cs">
+      <DependentUpon>ais_notify.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ais_notify.aspx.designer.cs">
+      <DependentUpon>ais_notify.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AppCode\AppCode.cs" />
+    <Compile Include="AppCode\AppCode_Dtac_Payment.cs" />
+    <Compile Include="index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mBasePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="bak\pay_ais.aspx.cs">
+      <DependentUpon>pay_ais.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="bak\pay_ais.aspx.designer.cs">
+      <DependentUpon>pay_ais.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="paymentDS1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>paymentDS1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="pay_ais.aspx.cs">
+      <DependentUpon>pay_ais.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pay_ais.aspx.designer.cs">
+      <DependentUpon>pay_ais.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pay_ais_accept.aspx.cs">
+      <DependentUpon>pay_ais_accept.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pay_ais_accept.aspx.designer.cs">
+      <DependentUpon>pay_ais_accept.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pay_ais_redirect.aspx.cs">
+      <DependentUpon>pay_ais_redirect.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pay_ais_redirect.aspx.designer.cs">
+      <DependentUpon>pay_ais_redirect.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pay_ais_session.aspx.cs">
+      <DependentUpon>pay_ais_session.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pay_ais_session.aspx.designer.cs">
+      <DependentUpon>pay_ais_session.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="bak\pay_dtac.aspx.cs">
+      <DependentUpon>pay_dtac.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="bak\pay_dtac.aspx.designer.cs">
+      <DependentUpon>pay_dtac.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pay_dtac.aspx.cs">
+      <DependentUpon>pay_dtac.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pay_dtac.aspx.designer.cs">
+      <DependentUpon>pay_dtac.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pay_dtac_cancel.aspx.cs">
+      <DependentUpon>pay_dtac_cancel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pay_dtac_cancel.aspx.designer.cs">
+      <DependentUpon>pay_dtac_cancel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pay_dtac_ok.aspx.cs">
+      <DependentUpon>pay_dtac_ok.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pay_dtac_ok.aspx.designer.cs">
+      <DependentUpon>pay_dtac_ok.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pay_true.aspx.cs">
+      <DependentUpon>pay_true.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pay_true.aspx.designer.cs">
+      <DependentUpon>pay_true.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pay_true_redirect.aspx.cs">
+      <DependentUpon>pay_true_redirect.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pay_true_redirect.aspx.designer.cs">
+      <DependentUpon>pay_true_redirect.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="wmonitor.aspx.cs">
+      <DependentUpon>wmonitor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="wmonitor.aspx.designer.cs">
+      <DependentUpon>wmonitor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ws\sendpost.asmx.cs">
+      <DependentUpon>sendpost.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\isport_service\isport_service.csproj">
+      <Project>{291E8F03-00D0-4A4F-8F96-C12FDC524233}</Project>
+      <Name>isport_service</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OracleDataAccress\OracleDataAccress.csproj">
+      <Project>{32393693-8B5F-4D5B-A7AB-42CB574AD1E4}</Project>
+      <Name>OracleDataAccress</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="accept_session_orange.aspx" />
+    <Content Include="ais_back.aspx" />
+    <Content Include="ais_notify.aspx" />
+    <Content Include="css\bootstrap.css" />
+    <Content Include="css\carousel.css" />
+    <Content Include="css\customCSS.css" />
+    <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\jquery.js" />
+    <Content Include="logo.ico" />
+    <Content Include="pay_ais.aspx" />
+    <Content Include="pay_dtac.aspx" />
+    <Content Include="wap_success.xml" />
+    <Content Include="images\201011191124grid_starsoccer2.gif" />
+    <Content Include="images\free.gif" />
+    <Content Include="images\home.gif" />
+    <Content Include="images\icon_dtac.jpg" />
+    <Content Include="images\logo.gif" />
+    <Content Include="index.aspx" />
+    <Content Include="mobileStyle.css" />
+    <Content Include="bak\pay_ais.aspx" />
+    <Content Include="pay_ais_accept.aspx" />
+    <Content Include="pay_ais_redirect.aspx" />
+    <Content Include="pay_ais_session.aspx" />
+    <Content Include="bak\pay_dtac.aspx" />
+    <Content Include="pay_dtac_cancel.aspx" />
+    <Content Include="pay_dtac_ok.aspx" />
+    <Content Include="pay_true.aspx" />
+    <Content Include="pay_true_redirect.aspx" />
+    <Content Include="wap_id_rsa_public.xml" />
+    <Content Include="wmonitor.aspx" />
+    <Content Include="ws\sendpost.asmx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="paymentDS1.xsc">
+      <DependentUpon>paymentDS1.xsd</DependentUpon>
+    </None>
+    <None Include="paymentDS1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>paymentDS1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="paymentDS1.xss">
+      <DependentUpon>paymentDS1.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\PublishProfiles\Profile1.pubxml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Error\" />
+    <Folder Include="Logs\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>5083</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost/isport_payment</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

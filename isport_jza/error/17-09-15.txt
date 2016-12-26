@@ -1,0 +1,7 @@
+
+Log Entry : 
+17/09/2015 11:37:15
+ IP :  ::1 
+Error in: http://localhost:63253/index.aspx. Error Message:Error >>Subscribe_portal_log_Insert>>ORA-12154: TNS:äÁèÊÒÁÒÃ¶á»Å¤èÒµÑÇÃÐºØ¡ÒÃàª×èÍÁµèÍ·ÕèÃÐºØ
+
+__________________________

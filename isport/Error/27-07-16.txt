@@ -1,0 +1,13 @@
+
+Log Entry : 
+27/07/2016 13:45:21
+ IP :  ::1 
+Error in: http://localhost:60878/index.aspx. Error Message:Error >>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+27/07/2016 13:45:31
+ IP :  ::1 
+Error in: http://localhost:60878/index.aspx?p=edtgame. Error Message:Error >> PreGenContent >> GenContent >> Procedure or function 'usp_answer_EDTquiz' expects parameter '@cur_date', which was not supplied.
+__________________________

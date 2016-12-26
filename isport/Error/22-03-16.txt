@@ -1,0 +1,7 @@
+
+Log Entry : 
+22/03/2016 14:51:38
+ IP :  ::1 
+Error in: http://localhost:60878/index.aspx?p=bb. Error Message:Error >>Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________

@@ -1,0 +1,12 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="isport.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="isport_SendService_sendpost" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://wap.isport.co.th/sport_center/paymentnew/ws/sendpost.asmx</Value>
+    </Setting>
+    <Setting Name="isport_WSUpWowZa_upWowza" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost:60878/admin/upWowza.asmx</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

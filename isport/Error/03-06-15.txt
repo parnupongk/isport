@@ -1,0 +1,231 @@
+
+Log Entry : 
+03/06/2015 11:22:38
+ IP :  127.0.0.1 
+Error in: http://localhost:60878/admin/adminapplication.aspx. Error Message:DataModelsBinding >> ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+03/06/2015 11:22:38
+ IP :  127.0.0.1 
+Error in: http://localhost:60878/admin/adminapplication.aspx. Error Message:DataContentBinding >> ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+03/06/2015 11:23:01
+ IP :  127.0.0.1 
+Error in: http://localhost:60878/admin/adminapplication.aspx. Error Message:DataModelsBinding >> ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+03/06/2015 11:23:01
+ IP :  127.0.0.1 
+Error in: http://localhost:60878/admin/adminapplication.aspx. Error Message:DataContentBinding >> ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+03/06/2015 11:24:45
+ IP :  127.0.0.1 
+Error in: http://localhost:60878/admin/adminapplication.aspx. Error Message:DataContentBinding >> ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+03/06/2015 11:25:02
+ IP :  127.0.0.1 
+Error in: http://localhost:60878/admin/adminapplication.aspx. Error Message:DataModelsBinding >> ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+03/06/2015 11:25:02
+ IP :  127.0.0.1 
+Error in: http://localhost:60878/admin/adminapplication.aspx. Error Message:DataContentBinding >> ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+03/06/2015 11:25:41
+ IP :  127.0.0.1 
+Error in: http://localhost:60878/admin/adminapplication.aspx. Error Message:DataContentBinding >> ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+03/06/2015 11:25:59
+ IP :  127.0.0.1 
+Error in: http://localhost:60878/admin/adminapplication.aspx. Error Message:DataModelsBinding >> ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+03/06/2015 11:25:59
+ IP :  127.0.0.1 
+Error in: http://localhost:60878/admin/adminapplication.aspx. Error Message:DataContentBinding >> ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+03/06/2015 11:27:12
+ IP :  127.0.0.1 
+Error in: http://localhost:60878/admin/adminapplication.aspx. Error Message:DataContentBinding >> ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+03/06/2015 11:27:34
+ IP :  127.0.0.1 
+Error in: http://localhost:60878/admin/adminapplication.aspx. Error Message:DataModelsBinding >> ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+03/06/2015 11:27:34
+ IP :  127.0.0.1 
+Error in: http://localhost:60878/admin/adminapplication.aspx. Error Message:DataContentBinding >> ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+03/06/2015 11:28:05
+ IP :  127.0.0.1 
+Error in: http://localhost:60878/admin/adminapplication.aspx. Error Message:DataContentBinding >> ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+03/06/2015 11:32:00
+ IP :  127.0.0.1 
+Error in: http://localhost:60878/admin/adminapplication.aspx. Error Message:DataModelsBinding >> ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+03/06/2015 11:32:00
+ IP :  127.0.0.1 
+Error in: http://localhost:60878/admin/adminapplication.aspx. Error Message:DataContentBinding >> ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+03/06/2015 11:32:25
+ IP :  127.0.0.1 
+Error in: http://localhost:60878/admin/adminapplication.aspx. Error Message:DataContentBinding >> ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+03/06/2015 11:34:30
+ IP :  127.0.0.1 
+Error in: http://localhost:60878/admin/adminapplication.aspx. Error Message:DataModelsBinding >> ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+03/06/2015 11:34:30
+ IP :  127.0.0.1 
+Error in: http://localhost:60878/admin/adminapplication.aspx. Error Message:DataContentBinding >> ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+03/06/2015 11:34:51
+ IP :  127.0.0.1 
+Error in: http://localhost:60878/admin/adminapplication.aspx. Error Message:DataContentBinding >> ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+03/06/2015 11:35:46
+ IP :  127.0.0.1 
+Error in: http://localhost:60878/admin/adminapplication.aspx. Error Message:DataModelsBinding >> ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+03/06/2015 11:35:46
+ IP :  127.0.0.1 
+Error in: http://localhost:60878/admin/adminapplication.aspx. Error Message:DataContentBinding >> ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+03/06/2015 11:36:40
+ IP :  127.0.0.1 
+Error in: http://localhost:60878/admin/adminapplication.aspx. Error Message:DataContentBinding >> ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+03/06/2015 11:38:15
+ IP :  127.0.0.1 
+Error in: http://localhost:60878/admin/adminapplication.aspx. Error Message:DataModelsBinding >> ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+03/06/2015 11:38:15
+ IP :  127.0.0.1 
+Error in: http://localhost:60878/admin/adminapplication.aspx. Error Message:DataContentBinding >> ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+03/06/2015 11:38:26
+ IP :  127.0.0.1 
+Error in: http://localhost:60878/admin/adminapplication.aspx. Error Message:DataModelsBinding >> ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+03/06/2015 11:38:26
+ IP :  127.0.0.1 
+Error in: http://localhost:60878/admin/adminapplication.aspx. Error Message:DataContentBinding >> ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+03/06/2015 11:38:47
+ IP :  127.0.0.1 
+Error in: http://localhost:60878/admin/adminapplication.aspx. Error Message:DataContentBinding >> ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+03/06/2015 11:39:46
+ IP :  127.0.0.1 
+Error in: http://localhost:60878/admin/adminapplication.aspx. Error Message:DataContentBinding >> ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+03/06/2015 11:40:38
+ IP :  127.0.0.1 
+Error in: http://localhost:60878/admin/adminapplication.aspx. Error Message:DataContentBinding >> ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+03/06/2015 11:42:03
+ IP :  127.0.0.1 
+Error in: http://localhost:60878/admin/adminapplication.aspx. Error Message:DataModelsBinding >> ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+03/06/2015 11:42:03
+ IP :  127.0.0.1 
+Error in: http://localhost:60878/admin/adminapplication.aspx. Error Message:DataContentBinding >> ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+03/06/2015 11:42:36
+ IP :  127.0.0.1 
+Error in: http://localhost:60878/admin/adminapplication.aspx. Error Message:DataContentBinding >> ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________

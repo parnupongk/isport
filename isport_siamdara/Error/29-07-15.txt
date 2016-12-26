@@ -1,0 +1,28 @@
+
+Log Entry : 
+29/07/2015 10:45:30
+ IP :  127.0.0.1 
+Error in: http://localhost:19937/index.aspx. Error Message:Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+29/07/2015 10:45:33
+ IP :  127.0.0.1 
+Error in: http://localhost:19937/index.aspx?s=Cl35485&o=. Error Message:Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+29/07/2015 10:47:44
+ IP :  127.0.0.1 
+Error in: http://localhost:19937/index.aspx?s=Cl35485&o=. Error Message:Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+29/07/2015 10:56:57
+ IP :  127.0.0.1 
+Error in: http://localhost:19937/index.aspx?s=Cl35485&o=. Error Message:Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________

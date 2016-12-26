@@ -1,0 +1,6 @@
+
+Log Entry : 
+28/10/2013 15:59:57
+Error in: http://localhost:19321/detail.aspx?lng=L&mp_code=0025&size=&prj=1&sg=&scs_id=&pcntid=1170161&pcat=176. Error Message:ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________

@@ -1,0 +1,69 @@
+
+Log Entry : 
+15/07/2014 10:16:50
+Error in: http://localhost:19321/detail.aspx. Error Message:GenContent >> ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+15/07/2014 10:17:17
+Error in: http://localhost:19321/detail.aspx?lng=L&mp_code=0025&size=&prj=50&sg=255&scs_id=&pcat=176&pcnt_id=1307825. Error Message:GenContent >> ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+15/07/2014 10:21:00
+Error in: http://localhost:19321/detail.aspx. Error Message:GenContent >> ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+15/07/2014 10:21:14
+Error in: http://localhost:19321/detail.aspx?lng=L&mp_code=0025&size=&prj=50&sg=255&scs_id=&pcat=176&pcnt_id=1307825. Error Message:GenContent >> ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+15/07/2014 10:51:13
+Error in: http://localhost:19321/kiss/index.aspx. Error Message:Error >>Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+15/07/2014 10:58:59
+Error in: http://localhost:19321/kiss/index.aspx. Error Message:Error >>GenHeader >>Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+__________________________
+
+Log Entry : 
+15/07/2014 10:59:59
+Error in: http://localhost:19321/kiss/index.aspx. Error Message:Error >>Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+15/07/2014 11:01:05
+Error in: http://localhost:19321/kiss/index.aspx. Error Message:Error >>Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+15/07/2014 11:01:31
+Error in: http://localhost:19321/kiss/index.aspx. Error Message:Error >>Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+15/07/2014 11:02:37
+Error in: http://localhost:19321/kiss/index.aspx. Error Message:Error >>GenHeader >>A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+__________________________
+
+Log Entry : 
+15/07/2014 11:03:54
+Error in: http://localhost:19321/kiss/index.aspx. Error Message:Error >>GenHeader >>Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+__________________________
+
+Log Entry : 
+15/07/2014 11:05:36
+Error in: http://localhost:19321/kiss/index.aspx. Error Message:Error >>Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________

@@ -1,0 +1,5 @@
+
+Log Entry : 
+19/05/2014 10:35:42
+Logs in: http://localhost:5083/pay_ais_redirect.aspx. Logs result:  Error Subscribe status:-1 AppId= Error:Object reference not set to an instance of an object.. Logs Message: 
+__________________________

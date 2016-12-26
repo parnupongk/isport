@@ -1,0 +1,7 @@
+
+Log Entry : 
+28/06/2016 16:46:34
+ IP :  ::1 
+Error in: http://localhost:60878/index.aspx. Error Message:Error >>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________

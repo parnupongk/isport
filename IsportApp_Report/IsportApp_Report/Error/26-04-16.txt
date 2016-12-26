@@ -1,0 +1,14 @@
+
+Log Entry : 
+26/04/2016 10:27:34
+ IP :  ::1 
+Error in: http://localhost:8919/rep_channel.aspx. Error Message:btnSubmit_Click1 >> Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+__________________________
+
+Log Entry : 
+26/04/2016 10:27:43
+ IP :  ::1 
+Error in: http://localhost:8919/rep_channel.aspx. Error Message:btnSubmit_Click1 >> Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+__________________________

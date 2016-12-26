@@ -1,0 +1,29 @@
+﻿html,body{  
+	font-family: Tahoma, "MS Sans Serif", AngsanaUPC; 
+	font-size: 15px; 
+	color: #000000; 
+	text-decoration: none;
+	line-height: 25px;
+	/*background-image:url('../images/gb.png');*/
+}
+
+A:link {
+	FONT-SIZE: 14px; COLOR: #005ca2; TEXT-DECORATION: none
+}
+A:visited {
+	FONT-SIZE: 14px; COLOR: #0000cc; TEXT-DECORATION: none
+}
+A:active {
+	FONT-SIZE: 14px; COLOR: #0099ff; TEXT-DECORATION: underline
+}
+A:hover {
+	FONT-SIZE: 14px; COLOR: #0099ff; TEXT-DECORATION: underline
+}
+
+img{
+margin:5px 5px 5px 5px;
+}
+tr,td
+{
+    font-size: 15px; 
+}

@@ -1,0 +1,27 @@
+
+Log Entry : 
+06/10/2015 14:42:52
+ IP :  ::1 
+Error in: http://localhost:63253/index.aspx. Error Message:Error >>Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+06/10/2015 14:43:50
+ IP :  ::1 
+Error in: http://localhost:63253/index.aspx. Error Message:Error >>Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+06/10/2015 15:02:35
+ IP :  ::1 
+Error in: http://localhost:63253/index.aspx. Error Message:Error >>Object reference not set to an instance of an object.
+__________________________
+
+Log Entry : 
+06/10/2015 15:02:37
+ IP :  ::1 
+Error in: http://localhost:63253/inner.aspx?id=65985a33-d009-4d91-9138-7e73842a7cfa. Error Message:Error >>Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________

@@ -1,0 +1,12 @@
+
+Log Entry : 
+18/05/2015 14:40:09
+ IP :  127.0.0.1 
+Error in: http://localhost:60878/admin/newpage.aspx. Error Message: newpage page_load >> Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+__________________________
+
+Log Entry : 
+18/05/2015 14:58:25
+ IP :  127.0.0.1 
+Error in: http://localhost:60878/admin/newpage.aspx. Error Message: newpage page_load >> Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+__________________________

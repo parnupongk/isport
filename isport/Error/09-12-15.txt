@@ -1,0 +1,6 @@
+
+Log Entry : 
+09/12/2015 09:58:04
+ IP :  ::1 
+Error in: http://localhost:60878/indexl.aspx. Error Message:Error >>Object reference not set to an instance of an object.
+__________________________

@@ -1,0 +1,30 @@
+
+Log Entry : 
+08/01/2015 13:57:54
+Error in: http://localhost:52520/index.aspx. Error Message:Error >>The type initializer for 'isport_edt.AppMain' threw an exception.
+__________________________
+
+Log Entry : 
+08/01/2015 16:07:39
+Error in: http://localhost:52520/index.aspx?category=r. Error Message:Error >>GenHeader >>Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+__________________________
+
+Log Entry : 
+08/01/2015 16:07:39
+Error in: http://localhost:52520/index.aspx?category=images/logo.png. Error Message:Error >>GenHeader >>Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+__________________________
+
+Log Entry : 
+08/01/2015 16:07:39
+Error in: http://localhost:52520/index.aspx?category=/dist/js/bootstrap.min.js. Error Message:Error >>GenHeader >>Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+__________________________
+
+Log Entry : 
+08/01/2015 16:07:39
+Error in: http://localhost:52520/index.aspx?category=images/img1.jpg. Error Message:Error >>GenHeader >>Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+__________________________
+
+Log Entry : 
+08/01/2015 16:07:39
+Error in: http://localhost:52520/index.aspx?category=images/img2.jpg. Error Message:Error >>GenHeader >>Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+__________________________

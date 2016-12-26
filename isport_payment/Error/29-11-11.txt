@@ -1,0 +1,24 @@
+
+Log Entry : 
+29/11/2011 10:49:36
+Error in: http://localhost:5083/pay_dtac.aspx. Error Message:pay_datc:setcontent>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+29/11/2011 10:50:20
+Error in: http://localhost:5083/pay_dtac.aspx?lng=L&mp=0000&size=N&sg=1&prj=1. Error Message:pay_datc:setcontent>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+29/11/2011 10:50:22
+Error in: http://localhost:5083/pay_dtac.aspx?lng=L&mp=0000&size=N&sg=1&prj=1. Error Message:pay_datc:setcontent>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+29/11/2011 10:50:22
+Error in: http://localhost:5083/pay_dtac.aspx?lng=L&mp=0000&size=N&sg=1&prj=1. Error Message:pay_datc:setcontent>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________

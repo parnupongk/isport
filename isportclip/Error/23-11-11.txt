@@ -1,0 +1,6 @@
+
+Log Entry : 
+23/11/2011 15:46:36
+Error in: http://localhost:25341/index.aspx. Error Message:mBasePage Load>>  Subscribe_portal_log_Insert>>  ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________

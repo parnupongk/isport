@@ -1,0 +1,301 @@
+
+Log Entry : 
+03/07/2015 10:09:07
+ IP :  127.0.0.1 
+Error in: http://localhost:63253/index.aspx. Error Message:Error >>Object reference not set to an instance of an object.
+__________________________
+
+Log Entry : 
+03/07/2015 10:09:45
+ IP :  127.0.0.1 
+Error in: http://localhost:63253/index.aspx. Error Message:Error >>Object reference not set to an instance of an object.
+__________________________
+
+Log Entry : 
+03/07/2015 10:11:08
+ IP :  127.0.0.1 
+Error in: http://localhost:63253/index.aspx. Error Message:Error >>Object reference not set to an instance of an object.
+__________________________
+
+Log Entry : 
+03/07/2015 10:11:52
+ IP :  127.0.0.1 
+Error in: http://localhost:63253/index.aspx. Error Message:Error >>Object reference not set to an instance of an object.
+__________________________
+
+Log Entry : 
+03/07/2015 10:17:10
+ IP :  127.0.0.1 
+Error in: http://localhost:63253/index.aspx. Error Message:Error >>Object reference not set to an instance of an object.
+__________________________
+
+Log Entry : 
+03/07/2015 10:18:12
+ IP :  127.0.0.1 
+Error in: http://localhost:63253/index.aspx. Error Message:Error >>Object reference not set to an instance of an object.
+__________________________
+
+Log Entry : 
+03/07/2015 10:18:49
+ IP :  127.0.0.1 
+Error in: http://localhost:63253/index.aspx. Error Message:Error >>Object reference not set to an instance of an object.
+__________________________
+
+Log Entry : 
+03/07/2015 10:18:57
+ IP :  127.0.0.1 
+Error in: http://localhost:63253/index.aspx. Error Message:Error >>Object reference not set to an instance of an object.
+__________________________
+
+Log Entry : 
+03/07/2015 10:19:18
+ IP :  127.0.0.1 
+Error in: http://localhost:63253/index.aspx. Error Message:Error >>Object reference not set to an instance of an object.
+__________________________
+
+Log Entry : 
+03/07/2015 10:20:32
+ IP :  127.0.0.1 
+Error in: http://localhost:63253/index.aspx. Error Message:Error >>Object reference not set to an instance of an object.
+__________________________
+
+Log Entry : 
+03/07/2015 10:21:08
+ IP :  127.0.0.1 
+Error in: http://localhost:63253/index.aspx. Error Message:Error >>Object reference not set to an instance of an object.
+__________________________
+
+Log Entry : 
+03/07/2015 10:21:30
+ IP :  127.0.0.1 
+Error in: http://localhost:63253/index.aspx. Error Message:Error >>Object reference not set to an instance of an object.
+__________________________
+
+Log Entry : 
+03/07/2015 10:21:48
+ IP :  127.0.0.1 
+Error in: http://localhost:63253/index.aspx. Error Message:Error >>Object reference not set to an instance of an object.
+__________________________
+
+Log Entry : 
+03/07/2015 10:22:05
+ IP :  127.0.0.1 
+Error in: http://localhost:63253/index.aspx. Error Message:Error >>Object reference not set to an instance of an object.
+__________________________
+
+Log Entry : 
+03/07/2015 10:22:13
+ IP :  127.0.0.1 
+Error in: http://localhost:63253/index.aspx. Error Message:Error >>Object reference not set to an instance of an object.
+__________________________
+
+Log Entry : 
+03/07/2015 10:22:17
+ IP :  127.0.0.1 
+Error in: http://localhost:63253/index.aspx. Error Message:Error >>Object reference not set to an instance of an object.
+__________________________
+
+Log Entry : 
+03/07/2015 10:22:42
+ IP :  127.0.0.1 
+Error in: http://localhost:63253/index.aspx. Error Message:Error >>Object reference not set to an instance of an object.
+__________________________
+
+Log Entry : 
+03/07/2015 10:23:23
+ IP :  127.0.0.1 
+Error in: http://localhost:63253/index.aspx. Error Message:Error >>Object reference not set to an instance of an object.
+__________________________
+
+Log Entry : 
+03/07/2015 10:24:30
+ IP :  127.0.0.1 
+Error in: http://localhost:63253/index.aspx. Error Message:Error >>Object reference not set to an instance of an object.
+__________________________
+
+Log Entry : 
+03/07/2015 10:26:48
+ IP :  127.0.0.1 
+Error in: http://localhost:63253/index.aspx. Error Message:Error >>Object reference not set to an instance of an object.
+__________________________
+
+Log Entry : 
+03/07/2015 10:30:04
+ IP :  127.0.0.1 
+Error in: http://localhost:63253/index.aspx. Error Message:Error >>Object reference not set to an instance of an object.
+__________________________
+
+Log Entry : 
+03/07/2015 10:35:04
+ IP :  127.0.0.1 
+Error in: http://localhost:63253/index.aspx. Error Message:Error >>Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+03/07/2015 10:46:46
+ IP :  127.0.0.1 
+Error in: http://localhost:63253/index.aspx. Error Message:Error >>Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+03/07/2015 10:47:34
+ IP :  127.0.0.1 
+Error in: http://localhost:63253/index.aspx. Error Message:Error >>Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+03/07/2015 10:47:43
+ IP :  127.0.0.1 
+Error in: http://localhost:63253/index.aspx. Error Message:Error >>Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+03/07/2015 10:47:48
+ IP :  127.0.0.1 
+Error in: http://localhost:63253/index.aspx. Error Message:Error >>Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+03/07/2015 14:18:38
+ IP :  127.0.0.1 
+Error in: http://localhost:63253/index.aspx. Error Message:Error >>Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+03/07/2015 14:18:38
+ IP :  127.0.0.1 
+Error in: http://localhost:63253/index.aspx. Error Message:Error >>Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+03/07/2015 14:19:19
+ IP :  127.0.0.1 
+Error in: http://localhost:63253/index.aspx. Error Message:Error >>Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+03/07/2015 14:19:38
+ IP :  127.0.0.1 
+Error in: http://localhost:63253/index.aspx. Error Message:Error >>Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+03/07/2015 14:21:32
+ IP :  127.0.0.1 
+Error in: http://localhost:63253/index.aspx. Error Message:Error >>Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+03/07/2015 14:22:14
+ IP :  127.0.0.1 
+Error in: http://localhost:63253/index.aspx. Error Message:Error >>Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+03/07/2015 14:22:21
+ IP :  127.0.0.1 
+Error in: http://localhost:63253/index.aspx. Error Message:Error >>Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+03/07/2015 14:22:27
+ IP :  127.0.0.1 
+Error in: http://localhost:63253/index.aspx. Error Message:Error >>Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+03/07/2015 14:23:08
+ IP :  127.0.0.1 
+Error in: http://localhost:63253/index.aspx. Error Message:Error >>Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+03/07/2015 14:23:45
+ IP :  127.0.0.1 
+Error in: http://localhost:63253/index.aspx. Error Message:Error >>Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+03/07/2015 14:23:55
+ IP :  127.0.0.1 
+Error in: http://localhost:63253/index.aspx. Error Message:Error >>Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+03/07/2015 14:24:41
+ IP :  127.0.0.1 
+Error in: http://localhost:63253/index.aspx. Error Message:Error >>Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+03/07/2015 14:25:10
+ IP :  127.0.0.1 
+Error in: http://localhost:63253/index.aspx. Error Message:Error >>Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+03/07/2015 14:25:16
+ IP :  127.0.0.1 
+Error in: http://localhost:63253/index.aspx. Error Message:Error >>Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+03/07/2015 14:25:36
+ IP :  127.0.0.1 
+Error in: http://localhost:63253/index.aspx. Error Message:Error >>Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+03/07/2015 14:26:02
+ IP :  127.0.0.1 
+Error in: http://localhost:63253/index.aspx. Error Message:Error >>Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+03/07/2015 15:10:41
+ IP :  127.0.0.1 
+Error in: http://localhost:63253/index.aspx. Error Message:Error >>Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+03/07/2015 15:11:02
+ IP :  127.0.0.1 
+Error in: http://localhost:63253/index.aspx. Error Message:Error >>Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+03/07/2015 15:15:05
+ IP :  127.0.0.1 
+Error in: http://localhost:63253/index.aspx. Error Message:Error >>Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+03/07/2015 15:16:13
+ IP :  127.0.0.1 
+Error in: http://localhost:63253/index.aspx. Error Message:Error >>Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________

@@ -1,0 +1,62 @@
+
+Log Entry : 
+26/05/2015 10:27:43
+ IP :  127.0.0.1 
+Error in: http://localhost:60878/admin/adminapplication.aspx?contextKey={DA8BEDC8-B952-4d5d-8CC2-59FE922E2923}&done=1&guid=765B1331-0105-A8CE-40E8-DF39746A7C3E. Error Message:Session.connect: System.IO.FileNotFoundException: Could not load file or assembly 'DiffieHellman, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies. The system cannot find the file specified.
+File name: 'DiffieHellman, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'
+   at Tamir.SharpSsh.jsch.jce.DH.getE()
+   at Tamir.SharpSsh.jsch.DHG1.init(Session session, Byte[] V_S, Byte[] V_C, Byte[] I_S, Byte[] I_C)
+   at Tamir.SharpSsh.jsch.Session.receive_kexinit(Buffer buf)
+   at Tamir.SharpSsh.jsch.Session.connect(Int32 connectTimeout)
+
+=== Pre-bind state information ===
+LOG: User = parnupong\bom
+LOG: DisplayName = DiffieHellman, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+ (Fully-specified)
+LOG: Appbase = file:///E:/samart/wap_Source/UAT/isport/isport/
+LOG: Initial PrivatePath = E:\samart\wap_Source\UAT\isport\isport\bin
+Calling assembly : Tamir.SharpSSH, Version=1.1.1.13, Culture=neutral, PublicKeyToken=null.
+===
+LOG: This bind starts in default load context.
+LOG: Using application configuration file: E:\samart\wap_Source\UAT\isport\isport\web.config
+LOG: Using machine configuration file from C:\Windows\Microsoft.NET\Framework\v2.0.50727\config\machine.config.
+LOG: Policy not being applied to reference at this time (private, custom, partial, or location-based assembly bind).
+LOG: Attempting download of new URL file:///C:/Windows/Microsoft.NET/Framework/v2.0.50727/Temporary ASP.NET Files/root/bbc97fb1/49eaef9b/DiffieHellman.DLL.
+LOG: Attempting download of new URL file:///C:/Windows/Microsoft.NET/Framework/v2.0.50727/Temporary ASP.NET Files/root/bbc97fb1/49eaef9b/DiffieHellman/DiffieHellman.DLL.
+LOG: Attempting download of new URL file:///E:/samart/wap_Source/UAT/isport/isport/bin/DiffieHellman.DLL.
+LOG: Attempting download of new URL file:///E:/samart/wap_Source/UAT/isport/isport/bin/DiffieHellman/DiffieHellman.DLL.
+LOG: Attempting download of new URL file:///C:/Windows/Microsoft.NET/Framework/v2.0.50727/Temporary ASP.NET Files/root/bbc97fb1/49eaef9b/DiffieHellman.EXE.
+LOG: Attempting download of new URL file:///C:/Windows/Microsoft.NET/Framework/v2.0.50727/Temporary ASP.NET Files/root/bbc97fb1/49eaef9b/DiffieHellman/DiffieHellman.EXE.
+LOG: Attempting download of new URL file:///E:/samart/wap_Source/UAT/isport/isport/bin/DiffieHellman.EXE.
+LOG: Attempting download of new URL file:///E:/samart/wap_Source/UAT/isport/isport/bin/DiffieHellman/DiffieHellman.EXE.
+
+__________________________
+
+Log Entry : 
+26/05/2015 10:33:15
+ IP :  127.0.0.1 
+Error in: http://localhost:60878/admin/adminapplication.aspx?contextKey={DA8BEDC8-B952-4d5d-8CC2-59FE922E2923}&done=1&guid=458ACF70-7A00-607F-A335-46CE5A51A8F0. Error Message:Session.connect: System.IO.IOException: End of IO Stream Read
+   at Tamir.SharpSsh.jsch.IO.getByte(Byte[] array, Int32 begin, Int32 length)
+   at Tamir.SharpSsh.jsch.Session.read(Buffer buf)
+   at Tamir.SharpSsh.jsch.UserAuth.start(Session session)
+   at Tamir.SharpSsh.jsch.UserAuthNone.start(Session session)
+   at Tamir.SharpSsh.jsch.Session.connect(Int32 connectTimeout)
+__________________________
+
+Log Entry : 
+26/05/2015 10:37:44
+ IP :  127.0.0.1 
+Error in: http://localhost:60878/admin/adminapplication.aspx?contextKey={DA8BEDC8-B952-4d5d-8CC2-59FE922E2923}&done=1&guid=BB2C4FA0-963B-3CEE-76B8-1BD82561078C. Error Message:Upload file E:\samart\wap_Source\UAT\isport\isport\upload\201505261021820.png/201505261021820.png
+__________________________
+
+Log Entry : 
+26/05/2015 10:39:06
+ IP :  127.0.0.1 
+Error in: http://localhost:60878/admin/adminapplication.aspx?contextKey={DA8BEDC8-B952-4d5d-8CC2-59FE922E2923}&done=1&guid=DA211002-6A6D-8B3D-F85B-486EF738C7B5. Error Message:Upload file E:\samart\wap_Source\UAT\isport\isport\upload\201505261004364.3gp/201505261004364.3gp
+__________________________
+
+Log Entry : 
+26/05/2015 10:39:52
+ IP :  127.0.0.1 
+Error in: http://localhost:60878/admin/adminapplication.aspx?contextKey={DA8BEDC8-B952-4d5d-8CC2-59FE922E2923}&done=1&guid=D231C717-5485-FD55-2DFA-29602A957D76. Error Message:Upload file E:\samart\wap_Source\UAT\isport\isport\upload\201505261051420.mp4/201505261051420.mp4
+__________________________

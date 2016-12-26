@@ -1,0 +1,82 @@
+
+Log Entry : 
+02/03/2015 11:54:59
+ IP :  127.0.0.1 
+Error in: http://localhost:60082/index.aspx/GetOTP. Error Message:The type initializer for 'WS_BB.AppCode_Base' threw an exception.
+__________________________
+
+Log Entry : 
+02/03/2015 11:56:42
+ IP :  127.0.0.1 
+Error in: http://localhost:60082/index.aspx/GetOTP. Error Message:The type initializer for 'WS_BB.AppCode_Base' threw an exception.
+__________________________
+
+Log Entry : 
+02/03/2015 11:58:08
+ IP :  127.0.0.1 
+Error in: http://localhost:60082/index.aspx/GetOTP. Error Message:The type initializer for 'WS_BB.AppCode_Base' threw an exception.
+__________________________
+
+Log Entry : 
+02/03/2015 12:02:00
+ IP :  127.0.0.1 
+Error in: http://localhost:60082/index.aspx/GetOTP. Error Message:The type initializer for 'WS_BB.AppCode_Base' threw an exception.
+__________________________
+
+Log Entry : 
+02/03/2015 12:06:17
+ IP :  127.0.0.1 
+Error in: http://localhost:60082/index.aspx/GetOTP. Error Message:ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+02/03/2015 15:55:45
+ IP :  127.0.0.1 
+Error in: http://localhost:60082/index.aspx/GetOTP. Error Message:ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+02/03/2015 16:05:22
+ IP :  127.0.0.1 
+Error in: http://localhost:60082/index.aspx/GetOTP. Error Message:ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+02/03/2015 16:05:36
+ IP :  127.0.0.1 
+Error in: http://localhost:60082/index.aspx/GetOTP. Error Message:ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+02/03/2015 16:28:36
+ IP :  127.0.0.1 
+Error in: http://localhost:60082/index.aspx/SubmitOTP1. Error Message:324532543299504
+__________________________
+
+Log Entry : 
+02/03/2015 16:29:12
+ IP :  127.0.0.1 
+Error in: http://localhost:60082/index.aspx/SubmitOTP1. Error Message:324532543299504
+__________________________
+
+Log Entry : 
+02/03/2015 16:36:01
+ IP :  127.0.0.1 
+Error in: http://localhost:60082/index.aspx/SubmitOTP1. Error Message:45643346599504
+__________________________
+
+Log Entry : 
+02/03/2015 16:37:03
+ IP :  127.0.0.1 
+Error in: http://localhost:60082/index.aspx/SubmitOTP1. Error Message:rewtrtert99504
+__________________________
+
+Log Entry : 
+02/03/2015 16:37:18
+ IP :  127.0.0.1 
+Error in: http://localhost:60082/index.aspx/SubmitOTP1. Error Message:99undefined
+__________________________

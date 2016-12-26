@@ -1,0 +1,175 @@
+
+Log Entry : 
+31/08/2015 10:18:53
+ IP :  ::1 
+Error in: http://localhost:60878/indexl.aspx. Error Message:Error >>Object reference not set to an instance of an object.
+__________________________
+
+Log Entry : 
+31/08/2015 10:19:35
+ IP :  ::1 
+Error in: http://localhost:60878/indexl.aspx. Error Message:Error >>Object reference not set to an instance of an object.
+__________________________
+
+Log Entry : 
+31/08/2015 10:20:00
+ IP :  ::1 
+Error in: http://localhost:60878/indexl.aspx?p=tdedeuro. Error Message:Error >>Subscribe_portal_log_Insert>>OCIEnvCreate failed with return code -1 but error message text was not available.
+__________________________
+
+Log Entry : 
+31/08/2015 10:25:02
+ IP :  ::1 
+Error in: http://localhost:60878/indexl.aspx?p=t01campaign. Error Message:Error >>Subscribe_portal_log_Insert>>OCIEnvCreate failed with return code -1 but error message text was not available.
+__________________________
+
+Log Entry : 
+31/08/2015 10:25:21
+ IP :  ::1 
+Error in: http://localhost:60878/indexl.aspx?p=t01campaign. Error Message:Error >>Subscribe_portal_log_Insert>>OCIEnvCreate failed with return code -1 but error message text was not available.
+__________________________
+
+Log Entry : 
+31/08/2015 10:26:03
+ IP :  ::1 
+Error in: http://localhost:60878/indexl.aspx?p=t01campaign. Error Message:Error >>Subscribe_portal_log_Insert>>OCIEnvCreate failed with return code -1 but error message text was not available.
+__________________________
+
+Log Entry : 
+31/08/2015 10:28:06
+ IP :  ::1 
+Error in: http://localhost:60878/indexl.aspx?p=t01campaign. Error Message:Error >>Subscribe_portal_log_Insert>>OCIEnvCreate failed with return code -1 but error message text was not available.
+__________________________
+
+Log Entry : 
+31/08/2015 10:28:08
+ IP :  ::1 
+Error in: http://localhost:60878/indexl.aspx?p=t01campaign. Error Message:Error >>Subscribe_portal_log_Insert>>OCIEnvCreate failed with return code -1 but error message text was not available.
+__________________________
+
+Log Entry : 
+31/08/2015 10:32:12
+ IP :  ::1 
+Error in: http://localhost:60878/indexl.aspx?p=t01campaign. Error Message:Error >>Subscribe_portal_log_Insert>>OCIEnvCreate failed with return code -1 but error message text was not available.
+__________________________
+
+Log Entry : 
+31/08/2015 10:33:25
+ IP :  ::1 
+Error in: http://localhost:60878/indexl.aspx?p=t01campaign. Error Message:Error >>Subscribe_portal_log_Insert>>OCIEnvCreate failed with return code -1 but error message text was not available.
+__________________________
+
+Log Entry : 
+31/08/2015 10:33:57
+ IP :  ::1 
+Error in: http://localhost:60878/indexl.aspx?p=t01campaign. Error Message:Error >>Subscribe_portal_log_Insert>>OCIEnvCreate failed with return code -1 but error message text was not available.
+__________________________
+
+Log Entry : 
+31/08/2015 10:35:50
+ IP :  ::1 
+Error in: http://localhost:60878/indexl.aspx?p=t01campaign. Error Message:Error >>Subscribe_portal_log_Insert>>OCIEnvCreate failed with return code -1 but error message text was not available.
+__________________________
+
+Log Entry : 
+31/08/2015 10:38:30
+ IP :  ::1 
+Error in: http://localhost:60878/indexl.aspx?p=t01campaign. Error Message:Error >>Subscribe_portal_log_Insert>>OCIEnvCreate failed with return code -1 but error message text was not available.
+__________________________
+
+Log Entry : 
+31/08/2015 10:38:51
+ IP :  ::1 
+Error in: http://localhost:60878/indexl.aspx?p=t01campaign. Error Message:Error >>Subscribe_portal_log_Insert>>OCIEnvCreate failed with return code -1 but error message text was not available.
+__________________________
+
+Log Entry : 
+31/08/2015 11:07:53
+ IP :  ::1 
+Error in: http://localhost:60878/indexl.aspx?p=t01campaign. Error Message:Error >>Subscribe_portal_log_Insert>>ORA-12154: TNS:ไม่สามารถแปลค่าตัวระบุการเชื่อมต่อที่ระบุ
+
+__________________________
+
+Log Entry : 
+31/08/2015 11:11:38
+ IP :  ::1 
+Error in: http://localhost:60878/indexl.aspx?p=t01campaign. Error Message:Error >>Subscribe_portal_log_Insert>>ORA-12154: TNS:ไม่สามารถแปลค่าตัวระบุการเชื่อมต่อที่ระบุ
+
+__________________________
+
+Log Entry : 
+31/08/2015 11:13:57
+ IP :  ::1 
+Error in: http://localhost:60878/indexl.aspx?p=t01campaign. Error Message:Error >>Subscribe_portal_log_Insert>>ORA-12154: TNS:ไม่สามารถแปลค่าตัวระบุการเชื่อมต่อที่ระบุ
+
+__________________________
+
+Log Entry : 
+31/08/2015 11:14:04
+ IP :  ::1 
+Error in: http://localhost:60878/indexl.aspx?p=t01campaign. Error Message:Error >>Subscribe_portal_log_Insert>>ORA-12154: TNS:ไม่สามารถแปลค่าตัวระบุการเชื่อมต่อที่ระบุ
+
+__________________________
+
+Log Entry : 
+31/08/2015 11:14:06
+ IP :  ::1 
+Error in: http://localhost:60878/indexl.aspx?p=t01campaign. Error Message:Error >>Subscribe_portal_log_Insert>>ORA-12154: TNS:ไม่สามารถแปลค่าตัวระบุการเชื่อมต่อที่ระบุ
+
+__________________________
+
+Log Entry : 
+31/08/2015 11:14:10
+ IP :  ::1 
+Error in: http://localhost:60878/indexl.aspx?p=t01campaign. Error Message:Error >>Subscribe_portal_log_Insert>>ORA-12154: TNS:ไม่สามารถแปลค่าตัวระบุการเชื่อมต่อที่ระบุ
+
+__________________________
+
+Log Entry : 
+31/08/2015 11:14:50
+ IP :  ::1 
+Error in: http://localhost:60878/indexl.aspx?p=t01campaign. Error Message:Error >>Subscribe_portal_log_Insert>>ORA-12154: TNS:ไม่สามารถแปลค่าตัวระบุการเชื่อมต่อที่ระบุ
+
+__________________________
+
+Log Entry : 
+31/08/2015 11:15:39
+ IP :  ::1 
+Error in: http://localhost:60878/indexl.aspx?p=t01campaign. Error Message:Error >>Subscribe_portal_log_Insert>>ORA-12154: TNS:ไม่สามารถแปลค่าตัวระบุการเชื่อมต่อที่ระบุ
+
+__________________________
+
+Log Entry : 
+31/08/2015 11:26:15
+ IP :  ::1 
+Error in: http://localhost:60878/indexl.aspx?p=t01campaign. Error Message:Error >>Subscribe_portal_log_Insert>>ORA-12154: TNS:ไม่สามารถแปลค่าตัวระบุการเชื่อมต่อที่ระบุ
+
+__________________________
+
+Log Entry : 
+31/08/2015 11:26:39
+ IP :  ::1 
+Error in: http://localhost:60878/indexl.aspx?p=t01campaign. Error Message:Error >>Subscribe_portal_log_Insert>>ORA-12154: TNS:ไม่สามารถแปลค่าตัวระบุการเชื่อมต่อที่ระบุ
+
+__________________________
+
+Log Entry : 
+31/08/2015 11:27:21
+ IP :  ::1 
+Error in: http://localhost:60878/indexl.aspx?p=t01campaign. Error Message:Error >>Subscribe_portal_log_Insert>>ORA-12154: TNS:ไม่สามารถแปลค่าตัวระบุการเชื่อมต่อที่ระบุ
+
+__________________________
+
+Log Entry : 
+31/08/2015 11:27:39
+ IP :  ::1 
+Error in: http://localhost:60878/indexl.aspx?p=t01campaign. Error Message:Error >>Subscribe_portal_log_Insert>>ORA-12154: TNS:ไม่สามารถแปลค่าตัวระบุการเชื่อมต่อที่ระบุ
+
+__________________________
+
+Log Entry : 
+31/08/2015 11:42:11
+ IP :  ::1 
+Error in: http://localhost:60878/indexl.aspx?p=t01campaign. Error Message:Error >>Subscribe_portal_log_Insert>>ORA-12154: TNS:ไม่สามารถแปลค่าตัวระบุการเชื่อมต่อที่ระบุ
+
+__________________________

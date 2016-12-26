@@ -1,0 +1,170 @@
+
+Log Entry : 
+15/07/2014 15:08:34
+Error in: http://localhost:5083/pay_ais.aspx. Error Message:Error >>The method or operation is not implemented.
+__________________________
+
+Log Entry : 
+15/07/2014 15:12:14
+Error in: http://localhost:5083/pay_ais.aspx. Error Message:Error >>The method or operation is not implemented.
+__________________________
+
+Log Entry : 
+15/07/2014 15:14:05
+Error in: http://localhost:5083/pay_ais.aspx. Error Message:Error >>The method or operation is not implemented.
+__________________________
+
+Log Entry : 
+15/07/2014 15:14:27
+Error in: http://localhost:5083/pay_ais.aspx. Error Message:Error >>The method or operation is not implemented.
+__________________________
+
+Log Entry : 
+15/07/2014 15:15:20
+Error in: http://localhost:5083/pay_ais.aspx. Error Message:Error >>The method or operation is not implemented.
+__________________________
+
+Log Entry : 
+15/07/2014 15:15:25
+Error in: http://localhost:5083/pay_ais.aspx. Error Message:Error >>The method or operation is not implemented.
+__________________________
+
+Log Entry : 
+15/07/2014 15:15:36
+Error in: http://localhost:5083/pay_ais.aspx. Error Message:Error >>The method or operation is not implemented.
+__________________________
+
+Log Entry : 
+15/07/2014 15:15:45
+Error in: http://localhost:5083/pay_ais.aspx. Error Message:Error >>The method or operation is not implemented.
+__________________________
+
+Log Entry : 
+15/07/2014 15:15:46
+Error in: http://localhost:5083/pay_ais.aspx. Error Message:Error >>The method or operation is not implemented.
+__________________________
+
+Log Entry : 
+15/07/2014 15:15:57
+Error in: http://localhost:5083/pay_ais.aspx. Error Message:Error >>The method or operation is not implemented.
+__________________________
+
+Log Entry : 
+15/07/2014 15:15:57
+Error in: http://localhost:5083/pay_ais.aspx. Error Message:Error >>The method or operation is not implemented.
+__________________________
+
+Log Entry : 
+15/07/2014 15:15:58
+Error in: http://localhost:5083/pay_ais.aspx. Error Message:Error >>The method or operation is not implemented.
+__________________________
+
+Log Entry : 
+15/07/2014 15:16:06
+Error in: http://localhost:5083/pay_ais.aspx. Error Message:Error >>The method or operation is not implemented.
+__________________________
+
+Log Entry : 
+15/07/2014 15:16:07
+Error in: http://localhost:5083/pay_ais.aspx. Error Message:Error >>The method or operation is not implemented.
+__________________________
+
+Log Entry : 
+15/07/2014 15:16:07
+Error in: http://localhost:5083/pay_ais.aspx. Error Message:Error >>The method or operation is not implemented.
+__________________________
+
+Log Entry : 
+15/07/2014 15:16:14
+Error in: http://localhost:5083/pay_ais.aspx. Error Message:Error >>The method or operation is not implemented.
+__________________________
+
+Log Entry : 
+15/07/2014 15:16:15
+Error in: http://localhost:5083/pay_ais.aspx. Error Message:Error >>The method or operation is not implemented.
+__________________________
+
+Log Entry : 
+15/07/2014 15:16:15
+Error in: http://localhost:5083/pay_ais.aspx. Error Message:Error >>The method or operation is not implemented.
+__________________________
+
+Log Entry : 
+15/07/2014 15:16:16
+Error in: http://localhost:5083/pay_ais.aspx. Error Message:Error >>The method or operation is not implemented.
+__________________________
+
+Log Entry : 
+15/07/2014 15:16:16
+Error in: http://localhost:5083/pay_ais.aspx. Error Message:Error >>The method or operation is not implemented.
+__________________________
+
+Log Entry : 
+15/07/2014 15:16:30
+Error in: http://localhost:5083/pay_ais.aspx. Error Message:Error >>The method or operation is not implemented.
+__________________________
+
+Log Entry : 
+15/07/2014 15:16:31
+Error in: http://localhost:5083/pay_ais.aspx. Error Message:Error >>The method or operation is not implemented.
+__________________________
+
+Log Entry : 
+15/07/2014 15:19:32
+Error in: http://localhost:5083/pay_ais.aspx. Error Message:Error >>The method or operation is not implemented.
+__________________________
+
+Log Entry : 
+15/07/2014 15:24:48
+Error in: http://localhost:5083/pay_ais.aspx. Error Message:Error >>The method or operation is not implemented.
+__________________________
+
+Log Entry : 
+15/07/2014 15:25:28
+Error in: http://localhost:5083/pay_ais.aspx. Error Message:Error >>The method or operation is not implemented.
+__________________________
+
+Log Entry : 
+15/07/2014 15:29:04
+Error in: http://localhost:5083/pay_ais.aspx. Error Message:Error >>The method or operation is not implemented.
+__________________________
+
+Log Entry : 
+15/07/2014 15:29:05
+Error in: http://localhost:5083/pay_ais.aspx. Error Message:Error >>The method or operation is not implemented.
+__________________________
+
+Log Entry : 
+15/07/2014 15:32:43
+Error in: http://localhost:5083/pay_ais.aspx. Error Message:Error >>The method or operation is not implemented.
+__________________________
+
+Log Entry : 
+15/07/2014 15:34:42
+Error in: http://localhost:5083/pay_ais.aspx. Error Message:Error >>The method or operation is not implemented.
+__________________________
+
+Log Entry : 
+15/07/2014 15:36:10
+Error in: http://localhost:5083/pay_ais.aspx. Error Message:Error >>The method or operation is not implemented.
+__________________________
+
+Log Entry : 
+15/07/2014 15:38:15
+Error in: http://localhost:5083/pay_ais.aspx. Error Message:Error >>The method or operation is not implemented.
+__________________________
+
+Log Entry : 
+15/07/2014 16:22:15
+Error in: http://localhost:5083/pay_ais.aspx. Error Message:Error >>The method or operation is not implemented.
+__________________________
+
+Log Entry : 
+15/07/2014 16:23:29
+Error in: http://localhost:5083/pay_ais.aspx. Error Message:Error >>GenHeader >>Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+__________________________
+
+Log Entry : 
+15/07/2014 16:24:00
+Error in: http://localhost:5083/pay_ais.aspx. Error Message:Error >>The method or operation is not implemented.
+__________________________

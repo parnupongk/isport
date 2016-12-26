@@ -1,0 +1,550 @@
+﻿.dxeLoadingDiv_PlasticBlue
+{
+	background: White;
+    opacity: 0.85;
+    filter: alpha(opacity=85);
+    cursor: wait;
+}
+.dxeLoadingPanel_PlasticBlue
+{
+	font: 9pt Tahoma;
+	color: #303030;
+}
+.dxeLoadingPanel_PlasticBlue td.dx
+{
+	white-space: nowrap;
+	text-align: center;
+	padding: 12px 12px 12px 12px;
+}
+
+.dxeBase_PlasticBlue
+{
+    font-family: Tahoma;
+    font-size: 9pt;
+}
+/* -- ErrorFrame -- */
+.dxeErrorCell_PlasticBlue, .dxeErrorCell_PlasticBlue td
+{
+    font-family: Tahoma;
+	font-size: 9pt;
+	color: red;
+}
+.dxeErrorCell_PlasticBlue
+{
+	color: #a91123;
+	padding-left: 4px;	
+}
+.dxeErrorFrame_PlasticBlue
+{
+	padding-right: 3px;
+}
+.dxeEditArea_PlasticBlue 
+{
+	font-family: Tahoma;
+	font-size: 9pt;
+	border: 1px solid #A0A0A0;
+}
+/* -- Buttons -- */
+.dxeButtonEditButton_PlasticBlue, .dxeCalendarButton_PlasticBlue,
+.dxeSpinIncButton_PlasticBlue, .dxeSpinDecButton_PlasticBlue,
+.dxeSpinLargeIncButton_PlasticBlue, .dxeSpinLargeDecButton_PlasticBlue
+{	
+	vertical-align: middle;
+	border: Solid 1px #CCCCCC;
+	cursor: pointer;
+	cursor: hand;
+} 
+.dxeButtonEditButton_PlasticBlue, .dxeCalendarButton_PlasticBlue, .dxeButtonEditButton_PlasticBlue td.dx, .dxeCalendarButton_PlasticBlue td.dx,
+.dxeSpinIncButton_PlasticBlue, .dxeSpinDecButton_PlasticBlue, .dxeSpinLargeIncButton_PlasticBlue, .dxeSpinLargeDecButton_PlasticBlue,
+.dxeSpinIncButton_PlasticBlue td.dx, .dxeSpinDecButton_PlasticBlue td.dx, .dxeSpinLargeIncButton_PlasticBlue td.dx, .dxeSpinLargeDecButton_PlasticBlue td.dx
+{	
+    font-family: Tahoma;
+    font-size: 9pt;        
+	font-weight: normal;    
+    text-align: center;
+} 
+.dxeButtonEditButton_PlasticBlue
+{
+    padding: 0px;
+	background-image: url('edtButtonEditButtonBack.gif');
+    background-repeat: repeat-x;
+    background-position: top;
+    background-color: #223672;
+    border: Solid 1px #2c4182;
+}
+.dxeSpinIncButton_PlasticBlue, .dxeSpinDecButton_PlasticBlue
+{
+    padding: 2px 0px;
+	border-style: none;
+}
+.dxeSpinLargeIncButton_PlasticBlue, .dxeSpinLargeDecButton_PlasticBlue
+{
+    padding: 0px 0px;    
+}
+.dxeSpinLargeIncButton_PlasticBlue
+{
+    padding-left: 1px;
+}
+
+.dxeSpinIncButton_PlasticBlue
+{
+	background-image: url('edtSpinIncBtnBack.gif');
+    background-repeat: repeat-x;
+    background-position: top;
+	background-color: #566bad;
+	border-bottom: Solid 1px #fafafa;
+}
+.dxeSpinDecButton_PlasticBlue
+{
+	background-image: url('edtSpinDecBtnBack.gif');
+    background-repeat: repeat-x;
+    background-position: top;
+	background-color: #4a5ea0;
+    border-bottom-style: none;
+}
+.dxeSpinLargeIncButton_PlasticBlue, dxeSpinLargeDecButton_PlasticBlue
+{
+   	background-image: url('edtSpinLargeIncBtnBack.gif');
+    background-repeat: repeat-x;
+    background-position: top;
+	background-color: #223672;
+}
+.dxeSpinLargeDecButton_PlasticBlue
+{
+}
+.dxeSpinLargeIncButton_PlasticBlue
+{
+}
+
+.dxeButtonEditButton_PlasticBlue .dxbebt_PlasticBlue 
+{
+	width: 14px;
+}
+.dxeSpinIncButton_PlasticBlue table.dxbebt, .dxeSpinDecButton_PlasticBlue table.dxbebt
+{
+	width: 15px;
+}
+.dxeSpinLargeDecButton_PlasticBlue table.dxbebt
+{
+	width: 12px;
+}
+.dxeSpinLargeIncButton_PlasticBlue table.dxbebt
+{
+	width: 11px;    
+}
+.dxeButtonEditButton_PlasticBlue table.dxbebt {
+    padding-left: 3px;
+	padding-right: 3px;
+}
+
+.dxeCalendarButton_PlasticBlue
+{
+    background-image: url('edtCalendarButtonBack.gif');
+    background-position: left, top;    
+    background-color: #e5e5e5;
+    padding: 4px 13px;
+    padding-top: 2px;
+    width: 30px;
+}
+.dxeCalendarButton_PlasticBlue table.dxbebt
+{
+	width: 100%;
+}
+.dxeCalendarButton_PlasticBlue td.dx
+{
+	text-align: center;
+	white-space: nowrap;
+}
+
+/* -- Pressed -- */
+.dxeCalendarButtonPressed_PlasticBlue
+{
+	background-image: none;    
+	background-color: #dcdcdc;
+}
+.dxeButtonEditButtonPressed_PlasticBlue
+{
+	background-image: url('edtDropDownButtonPressedBack.gif');
+	background-repeat: repeat-x;
+}
+.dxeSpinIncButtonPressed_PlasticBlue
+{
+	background-image: url('edtSpinIncBtnPBack.gif');
+	background-repeat: repeat-x;
+    background-position: top;	
+    background-color: #394e8d;
+}
+.dxeSpinDecButtonPressed_PlasticBlue
+{
+	background-image: url('edtSpinDecBtnPBack.gif');
+	background-repeat: repeat-x;
+    background-position: top;	
+    background-color: #8c9ec7;    
+}
+
+.dxeSpinLargeIncButtonPressed_PlasticBlue, .dxeSpinLargeDecButtonPressed_PlasticBlue
+{
+	background-image: url('edtSpinLargeIncBtnPBack.gif');
+	background-repeat: repeat-x;
+    background-position: top;	
+    background-color: #8c9ec7;
+}
+
+/* -- Hover -- */
+.dxeCalendarButtonHover_PlasticBlue
+{
+    background-image: url('edtCalendarButtonHBack.gif');
+    background-position: top, left;
+    background-color: #F2F2F2;
+}
+.dxeButtonEditButtonHover_PlasticBlue
+{
+    background-image: url('edtDropDownButtonHoverBack.gif');
+    background-position: top, left;    
+}
+.dxeSpinLargeIncButtonHover_PlasticBlue,
+.dxeSpinLargeDecButtonHover_PlasticBlue
+{
+	background-image: url('edtSpinLargeIncBtnHBack.gif');
+    background-repeat: repeat-x;
+    background-position: top;
+    background-color: #8CA0CF;
+}
+
+.dxeSpinIncButtonHover_PlasticBlue
+{
+	background-image: url('edtSpinIncBtnHBack.gif');
+    background-repeat: repeat-x;
+    background-position: top;
+    background-color: #F2F2F2;
+}
+.dxeSpinDecButtonHover_PlasticBlue
+{
+	background-image: url('edtSpinDecBtnHBack.gif');
+    background-repeat: repeat-x;
+    background-position: top;
+    background-color: #576BA1;
+}
+
+.dxeButtonEdit_PlasticBlue
+{
+    border: Solid 1px #b8b8b8;
+    background-color: #FAFAFA;
+    width: 170px;
+}
+.dxeButtonEdit_PlasticBlue .dxeEditArea_PlasticBlue, .dxeButtonEdit_PlasticBlue td.dxic
+{
+	width: 100%;
+}
+.dxeButtonEdit_PlasticBlue td.dxic
+{
+    padding: 1px 3px 1px 3px;
+}
+.dxeTextBox_PlasticBlue, .dxeMemo_PlasticBlue
+{
+    background-color: #FAFAFA;
+    border: solid 1px #B8B8B8;
+}
+.dxeTextBox_PlasticBlue td.dxic
+{
+	padding-top:2px;
+	padding-bottom:2px;	
+	padding-left:3px;
+	padding-right:2px;
+}
+.dxeTextBox_PlasticBlue td.dxic 
+{
+	width: 100%;
+}
+.dxeRadioButtonList_PlasticBlue, .dxeRadioButtonList_PlasticBlue table
+{
+    font-family: Tahoma;
+    font-size: 9pt;
+}
+.dxeRadioButtonList_PlasticBlue td.dxe
+{
+    padding: 7px 5px 5px 6px;
+}
+.dxeRadioButtonList_PlasticBlue
+{
+    background-color: #E9E9E9; 
+    border: Solid 1px #B8B8B8;
+}
+
+/* -- Memo -- */
+.dxeMemo_PlasticBlue
+{
+	padding-left: 3px;
+	width: 170px;
+	border: Solid 1px #B8B8B8;
+}
+.dxeMemoEditArea_PlasticBlue 
+{
+	font: 9pt Tahoma;
+}
+.dxeMemo_PlasticBlue td, .dxeMemoEditArea_PlasticBlue
+{
+	width: 100%;
+}
+
+/* -- Hyperlink -- */
+.dxeHyperlink_PlasticBlue
+{
+    font-family: Tahoma;
+    font-size: 9pt;
+	font-weight: normal;    
+    color: #5A83D0;    
+}
+a:hover.dxeHyperlink_PlasticBlue
+{
+    color: #2443AA;    
+}
+a:visited.dxeHyperlink_PlasticBlue
+{
+    color: #996085;    
+}
+
+/* -- ListBox -- */
+.dxeListBox_PlasticBlue
+{
+	background-color: #fafafa;	
+	border: solid 1px #B8B8B8;
+    font-family: Tahoma;
+    font-size: 9pt;
+	height: 103px;
+    width: 70px;
+}
+.dxeListBox_PlasticBlue div.dxlbd
+{
+	padding-top: 1px;    
+    height: 102px;
+}
+.dxeListBoxItem_PlasticBlue
+{    
+    border-bottom: solid 1px #fafafa;    
+    border-left: solid 1px white;    
+    border-right: solid 1px white;    
+    color: Black;    
+    font-family: Tahoma;
+    font-size: 9pt;     
+    font-weight: normal;
+    padding: 2px 2px 3px 4px;
+    white-space: nowrap;
+    text-align: left;
+    cursor: default;
+}
+.dxeListBoxItemHover_PlasticBlue        /* inherits dxeListBoxItem */
+{
+    background-color: #dedede;
+}
+.dxeListBoxItemSelected_PlasticBlue     /* inherits dxeListBoxItem */
+{    
+    color: White;
+    background-color: #5066ac;
+}
+.dxeListBox_PlasticBlue td.dxeI 
+{
+    padding-right: 0px!important;
+    border-right-width: 0px!important;
+}
+.dxeListBox_PlasticBlue td.dxeT
+{
+    width: 100%;    
+    border-left-width: 0px!important;    
+}
+
+/* -- Calendar -- */
+.dxeCalendar_PlasticBlue
+{
+	color: black;
+    border: solid 1px #CCCCCC;
+    background-color: #FAFAFA;
+	font-weight: normal;    
+}
+.dxeCalendar_PlasticBlue td.dxMonthGrid, .dxeCalendar_PlasticBlue td.dxMonthGridWithWeekNumbers
+{
+    padding: 2px 22px 5px;
+    cursor: default;
+}
+.dxeCalendar_PlasticBlue td.dxMonthGridWithWeekNumbers
+{
+    padding-left: 10px;    
+}
+.dxeCalendarDayHeader_PlasticBlue
+{
+    color: Black;
+    font-family: Tahoma;
+    font-size: 9pt;        
+    padding: 4px 4px 6px;   
+    background-color: transparent; 
+    border-bottom: solid 1px #E8E8E8;    
+}
+.dxeCalendarWeekNumber_PlasticBlue
+{    
+    font-family: Tahoma;
+    font-size: 10px;    
+    text-align: right;
+    padding: 4px 6px;
+    color: #9CAEE3;
+}
+.dxeCalendarDay_PlasticBlue
+{    
+    font: 12px Tahoma;    
+    padding: 4px 6px 4px 6px;
+    text-align: center;
+}
+.dxeCalendarWeekend_PlasticBlue        /* inherits dxeCalendarDay */
+{
+    color: #c00000;
+}
+.dxeCalendarOtherMonth_PlasticBlue     /* inherits dxeCalendarDay */
+{
+    color: #888;
+}
+.dxeCalendarOutOfRange_PlasticBlue      /* inherits dxeCalendarDay */
+{
+    color: #d0d0d0;    
+}
+.dxeCalendarToday_PlasticBlue      /* inherits dxeCalendarDay */
+{
+    padding: 3px;
+    border: solid 1px #5066AC;
+}
+.dxeCalendarSelected_PlasticBlue       /* inherits dxeCalendarDay */
+{
+    color: White;
+    background-color: #5066AC;
+}
+.dxeCalendarHeader_PlasticBlue
+{    
+    background-color: #3F5495;
+    background-image: url('edtCalendarHeaderBack.gif');
+    background-repeat:repeat-x;
+    background-position: top;
+    
+    border-bottom: solid 1px #2C4182;
+    padding: 3px 12px;
+    padding-top: 4px;
+}
+.dxeCalendarHeader_PlasticBlue td.dxe
+{
+    color: White;
+    font-family: Tahoma;
+    font-size: 9pt;
+    text-align: center;
+	cursor: pointer;
+	cursor: hand;
+}
+.dxeCalendarFooter_PlasticBlue, .dxeCalendarFastNavFooter_PlasticBlue 
+{
+    background: url(edtCalendarFooterBack.gif) no-repeat left top #E9E9E9;
+    padding: 10px 0px;        
+    border-top: solid 1px #CCCCCC;
+}
+.dxeCalendarFastNav_PlasticBlue
+{
+    background: white;
+    border: solid 1px #cccccc;
+    border-bottom: 0px;
+    padding: 12px 8px;
+}
+.dxeCalendarFastNavFooter_PlasticBlue
+{
+	color: black;
+    border: solid 1px #cccccc;
+}
+.dxeCalendarFastNavMonth_PlasticBlue, .dxeCalendarFastNavYear_PlasticBlue
+{
+    font: normal 9pt Tahoma;
+    color: Black;
+    padding: 5px 4px;
+    text-align: center;
+	cursor: pointer;
+	cursor: hand;
+}
+.dxeCalendarFastNavMonth_PlasticBlue
+{
+    padding: 4px 20px;
+}
+.dxeCalendarFastNavMonthHover_PlasticBlue, .dxeCalendarFastNavYearHover_PlasticBlue
+{    
+    color: black;
+    background: #e9e9e9;        
+}
+.dxeCalendarFastNavMonthSelected_PlasticBlue, .dxeCalendarFastNavYearSelected_PlasticBlue
+{        
+    color: white;
+    background: #5066ac;
+}
+/* Disabled */
+.dxeDisabled_PlasticBlue, .dxeDisabled_PlasticBlue td.dxe
+{
+	color: #808080;
+	cursor: default;
+}
+.dxeButtonDisabled_PlasticBlue, .dxeButtonDisabled_PlasticBlue td.dxe
+{
+	color: #808080;
+	cursor: default;
+}
+/* -- Button -- */
+.dxbButton_PlasticBlue 
+{	
+  	color: #000000;    
+	font-weight:normal;  	
+	font-size: 9pt;
+	font-family: Tahoma;				    
+	vertical-align: middle;	 		
+	border: solid 1px #B8B8B8;
+    background: #e5e5e5 url('edtButtonBack.gif') top left;
+    padding: 1px 1px 1px 1px;
+	cursor: pointer;
+	cursor: hand;
+}
+.dxbButtonHover_PlasticBlue  
+{
+    color: #000000;    
+	background: #F2F2F2 url('edtButtonBackHover.gif') top left;
+}
+.dxbButtonChecked_PlasticBlue  
+{
+    color: #000000;
+	background-image: none;    
+	background-color: #DEDEDE;
+}
+.dxbButtonPressed_PlasticBlue  
+{
+    color: #000000;
+    background-image: none;
+	background-color: #cbcbcb;
+}
+.dxbButton_PlasticBlue  div.dxb
+{    
+    padding: 2px 10px 3px 10px;
+	border: 0px;
+}
+.dxbButton_PlasticBlue  div.dxbf
+{     
+    padding: 1px 9px 2px 9px;
+	border: Dotted 1px #000000;
+}
+.dxbButton_PlasticBlue  div.dxb table
+{    
+  	color: #000000;    
+	font-weight:normal;  	
+	font-size: 9pt;
+	font-family: Tahoma;				    
+}
+.dxbButton_PlasticBlue div.dxb td.dxb
+{    
+    background-color: transparent!important;
+    background-image: url('')!important;
+    border-width: 0px!important;
+    padding: 0px!important;
+}
+/* Disabled */
+.dxbDisabled_PlasticBlue 
+{
+	color: #808080;
+	cursor: default;
+}

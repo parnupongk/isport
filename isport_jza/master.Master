@@ -1,0 +1,135 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="master.master.cs" Inherits="isport_jza.master" %>
+
+<!DOCTYPE html PUBLIC "html5" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Keywords" content="คลิปสาว, คลิปหลุด, โหลดคลิป, คลิปเซ็กซี่, เซ็กซี่, ผู้หญิงเซ็กซี่, รูปภาพเซ็กซี่, คลิปวีดีโอเซ็กซี่" />
+    <meta name="Description" content="kiss,นิตยสารเอฟเอชเอ็มประเทศไทยเป็นนิตยสารรายเดือนสำหรับผู้ชายที่รวมเรื่องราวน่ารู้อัพเดทต่างๆสำหรับผู้ชาย">
+    <link rel="shortcut icon" href="images/icon.ico" />
+    <title>Jza</title>
+    <!-- Custom styles for this template -->
+    <!-- Bootstrap core CSS -->
+    <meta name="author" content="zabtube.com" />
+    <link rel="Stylesheet" type="text/css" href="dist/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+
+    <!--[if lt IE 9]><script src="assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+        .fixed {
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            width: 200px;
+            background-color: rgba(0, 0, 0, 0.00);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo"><a href="index.aspx">
+            <img src="img/logo.png" title="Kiss Model" alt="Kiss Model" /></a> </div>
+        <!-- end logo -->
+        <!-- Res. Menu -->
+        <div id="menu_icon"></div>
+        <!-- /Res. Menu -->
+        <!--<div id="button-subscribe"> <a href="tel:*489#56#">สมัครเลย!</a> </div>-->
+        <nav>
+            <ul>
+                <li><a href="index.aspx">หน้าหลัก</a></li>
+                <li><a href="inner.aspx?id=c5e249aa-bbbe-43af-96ac-27db29f30cac">นางแบบใจถึง</a></li>
+                <li><a href="inner.aspx?id=179aa922-54a7-4e22-b615-64094386c15d&pssvid=797">ตูมๆเต็มตา</a></li>
+                <li><a href="inner.aspx?id=179aa922-54a7-4e22-b615-64094386c15d">ถอดทีละชิ้น</a></li>
+                <li><a href="inner.aspx?id=69534f42-37f4-4bfa-8d36-30fb8e9fd567&pssvid=961">ประสบการณ์รักพริ้ตตี้</a></li>
+                <li><a href="inner.aspx?id=1b37b89b-4bbe-4f74-8773-59e0d9654683&pssvid=505">Sex tips</a></li>
+                <li><a href="*tel:*02-502-0454">Call Center 02-502-0454 Mon.-Fri. 9AM-5PM</a></li>
+            </ul>
+        </nav>
+        <!-- end navigation menu -->
+
+        <div class="footer clearfix">
+            <ul class="social clearfix">
+                <li><a href="https://www.facebook.com/kissmodel" class="fb" data-title="Facebook"></a></li>
+                <li><a href="https://plus.google.com/112676340200833898093/posts" class="google" data-title="Google +"></a></li>
+                <li><a href="https://instagram.com/kissmodelfanclub/" class="ig" data-title="Instagram"></a></li>
+                <li><a href="https://twitter.com/kissmodel" class="twitter" data-title="Twitter"></a></li>
+                <li><a href="https://www.youtube.com/channel/UCkO-2Gthj3lp0zy5bF0AZsA" class="youtube" data-title="Youtube"></a></li>
+                <li><a href="https://www.pinterest.com/kissmodel/kiss-model/" class="pin" data-title="Pinterest"></a></li>
+            </ul>
+            <!-- end social -->
+
+            <div class="rights">
+                <p>Copyright © 2015 Kiss Model.</p>
+            </div>
+            <!-- end rights -->
+        </div>
+        <!-- end footer -->
+    </header>
+    <!-- end header -->
+
+    <section class="main clearfix">
+
+        <div id="banner-top">
+            <form id="form1" runat="server">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                </asp:ContentPlaceHolder>
+
+            </form>
+        </div>
+
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+
+        <div class="fixed" id="divBanner" style="display: ;">
+            <button type='button' class='close' onclick="document.getElementById('divBanner').style.display = 'none';" data-dismiss='fixed' aria-hidden='true'>&times;</button>
+            <asp:HyperLink ID="lnkBanner" ImageUrl="~/images/banner.gif" runat="server" NavigateUrl="#"></asp:HyperLink>
+        </div>
+
+    </section>
+
+
+
+
+    <!--div class="row">
+        <div class="container">
+            <div class="col-md-8 col-sm-6 col-xs-12 text-muted pull-left">
+                Copyright &copy; 2015 KissModel | All Rights Reserved
+            </div>
+            <div class="col-md-4 col-xs-12">
+                <div class="pull-right">
+                    <a href="#">Back to top</a>
+                </div>
+            </div>
+        </div>
+    </!--div-->
+
+
+    <!-- end main -->
+    <!-- Google Analytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-59344651-12', 'auto');
+  ga('send', 'pageview');
+
+</script>
+    <!-- End Google Analytics -->
+
+</body>
+</html>

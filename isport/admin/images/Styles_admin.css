@@ -1,0 +1,122 @@
+﻿input,textarea, select
+{
+	border: #999999 1px solid;
+	font-family: Tahoma, "MS Sans Serif", AngsanaUPC;
+	text-decoration: none;
+	font-size: 11px; 
+	color: #000000;
+    }
+body,td,tr {  
+	font-family: Tahoma, "MS Sans Serif", AngsanaUPC; 
+	font-size: 11px; 
+	color: #000000; 
+	text-decoration: none;
+	line-height: 14px;
+    background-repeat: repeat-x;
+	margin-left:0;
+	margin-top:0;
+}
+a {
+	color: #0080FB;
+	text-decoration: none;
+}
+a:hover {	
+	text-decoration: none
+}
+img 
+{
+	border: none;
+}
+/*body {
+    background-image: url(images/bg.jpg);
+    background-repeat: repeat-x;
+    font: small "Segoe UI", Tahoma;
+}*/
+.main { 
+    margin: 0 auto; 
+    width: 950px; 
+}
+.bgtop { margin: 0px; padding: 0px; float: left; }
+.bgtleft {
+    background-image: url(images/ain_q_01.jpg);
+    background-repeat: no-repeat;
+    width: 21px;
+    height: 90px;  
+    float: left;  
+}
+.bgtcenter {
+    background-image: url(images/ain_q_02.jpg);
+    background-repeat: no-repeat;
+    width: 908px; 
+    float: left;
+    height: 90px;  
+    text-align: center;
+}
+.bgtright {
+    background-image: url(images/ain_q_03.jpg);
+    background-repeat: no-repeat;
+    width: 21px;
+    height: 90px;
+    float: left;    
+}
+.ttext { padding-top: 60px; }
+.textCompany {
+	font-family: Monotype Corsiva, "MS Sans Serif", AngsanaUPC; 
+	font-size: 30px;
+	/*font-weight: bold; */
+	color: #666666; 
+	text-decoration: none;
+}
+.content {
+    /*border: solid 1px #000000;*/
+    background-image: url(images/content.jpg);
+    background-repeat: repeat-y;
+    text-align: left;
+    float:left;
+    width: 100%;
+    background-color: #FFFFFF;
+}
+.text { }
+.bgcleft {
+    background-image: url(images/ain_q_04.jpg);
+    background-repeat: repeat-y;
+    width: 21px;
+    height: 359px;
+    float: left; 
+}
+.bgcright {
+    background-image: url(images/ain_q_06.jpg);
+    background-repeat: repeat-y;
+    width: 21px;
+    height: 359px;
+    float: right; 
+}
+.bgbottom {
+    background-image: url(images/ain_q_09.jpg);
+    background-repeat: no-repeat;
+    width: 950px;
+    height: 43px;
+    float: left;
+}
+        .overlay {
+        position: fixed;
+        z-index: 99;
+        top: 0px;
+        left: 0px;
+        background-color: #FFFFFF;
+        width: 100%;
+        height: 100%;
+        filter: Alpha(Opacity=70);
+        opacity: 0.70;
+        -moz-opacity: 0.70;
+    }
+    .loader {
+        z-index: 100;
+        position: absolute;
+        width: 120px;
+        margin-left: -60px;
+        top: 50%;
+        left: 50%;
+        font-weight:bold;
+        color: #000000; 
+    }

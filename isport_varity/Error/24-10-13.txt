@@ -1,0 +1,25 @@
+
+Log Entry : 
+24/10/2013 14:31:06
+Error in: http://localhost:19321/indexh.aspx?lng=L&mp_code=0025&size=&prj=1&sg=&scs_id=&stype=0. Error Message:Error >>Exception of type 'System.OutOfMemoryException' was thrown.
+__________________________
+
+Log Entry : 
+24/10/2013 14:31:09
+Error in: http://localhost:19321/indexh.aspx?lng=L&mp_code=0025&size=&prj=1&sg=&scs_id=&stype=0. Error Message:Error >>Exception of type 'System.OutOfMemoryException' was thrown.
+__________________________
+
+Log Entry : 
+24/10/2013 14:33:46
+Error in: http://localhost:19321/indexh.aspx. Error Message:Error >>Exception of type 'System.OutOfMemoryException' was thrown.
+__________________________
+
+Log Entry : 
+24/10/2013 14:33:51
+Error in: http://localhost:19321/indexh.aspx. Error Message:Error >>There is no row at position 9.
+__________________________
+
+Log Entry : 
+24/10/2013 14:34:41
+Error in: http://localhost:19321/indexh.aspx. Error Message:Error >>There is no row at position 9.
+__________________________

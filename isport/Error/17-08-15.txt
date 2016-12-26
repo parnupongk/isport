@@ -1,0 +1,70 @@
+
+Log Entry : 
+17/08/2015 11:30:50
+ IP :  ::1 
+Error in: http://localhost:60878/admin/adminapplication.aspx. Error Message:DataModelsBinding >> ORA-12154: TNS:ไม่สามารถแปลค่าตัวระบุการเชื่อมต่อที่ระบุ
+
+__________________________
+
+Log Entry : 
+17/08/2015 11:30:50
+ IP :  ::1 
+Error in: http://localhost:60878/admin/adminapplication.aspx. Error Message:DataContentBinding >> ORA-12154: TNS:ไม่สามารถแปลค่าตัวระบุการเชื่อมต่อที่ระบุ
+
+__________________________
+
+Log Entry : 
+17/08/2015 11:33:13
+ IP :  ::1 
+Error in: http://localhost:60878/admin/adminapplication.aspx. Error Message:DataModelsBinding >> ORA-12154: TNS:ไม่สามารถแปลค่าตัวระบุการเชื่อมต่อที่ระบุ
+
+__________________________
+
+Log Entry : 
+17/08/2015 11:33:13
+ IP :  ::1 
+Error in: http://localhost:60878/admin/adminapplication.aspx. Error Message:DataContentBinding >> ORA-12154: TNS:ไม่สามารถแปลค่าตัวระบุการเชื่อมต่อที่ระบุ
+
+__________________________
+
+Log Entry : 
+17/08/2015 13:10:54
+ IP :  ::1 
+Error in: http://localhost:60878/admin/adminapplication.aspx. Error Message:DataModelsBinding >> ORA-12154: TNS:ไม่สามารถแปลค่าตัวระบุการเชื่อมต่อที่ระบุ
+
+__________________________
+
+Log Entry : 
+17/08/2015 13:10:54
+ IP :  ::1 
+Error in: http://localhost:60878/admin/adminapplication.aspx. Error Message:DataContentBinding >> ORA-12154: TNS:ไม่สามารถแปลค่าตัวระบุการเชื่อมต่อที่ระบุ
+
+__________________________
+
+Log Entry : 
+17/08/2015 13:11:15
+ IP :  ::1 
+Error in: http://localhost:60878/admin/adminapplication.aspx. Error Message:DataModelsBinding >> ORA-12154: TNS:ไม่สามารถแปลค่าตัวระบุการเชื่อมต่อที่ระบุ
+
+__________________________
+
+Log Entry : 
+17/08/2015 13:11:15
+ IP :  ::1 
+Error in: http://localhost:60878/admin/adminapplication.aspx. Error Message:DataContentBinding >> ORA-12154: TNS:ไม่สามารถแปลค่าตัวระบุการเชื่อมต่อที่ระบุ
+
+__________________________
+
+Log Entry : 
+17/08/2015 13:12:03
+ IP :  ::1 
+Error in: http://localhost:60878/admin/adminapplication.aspx. Error Message:DataModelsBinding >> ORA-12154: TNS:ไม่สามารถแปลค่าตัวระบุการเชื่อมต่อที่ระบุ
+
+__________________________
+
+Log Entry : 
+17/08/2015 13:12:03
+ IP :  ::1 
+Error in: http://localhost:60878/admin/adminapplication.aspx. Error Message:DataContentBinding >> ORA-12154: TNS:ไม่สามารถแปลค่าตัวระบุการเชื่อมต่อที่ระบุ
+
+__________________________

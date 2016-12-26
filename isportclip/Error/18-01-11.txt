@@ -1,0 +1,32 @@
+
+Log Entry : 
+18/01/2011 10:22:50
+Error in: http://localhost:25341/index.aspx?lng=L&size=N&mp=0000&sg=&prj=&scs_id=10&scs_id=10&cdate=20101025. Error Message:mBasePage Load>>Subscribe_portal_log_Insert>>ORA-01722: invalid number
+ORA-06512: at "ISPORT.WAP_UI", line 22
+ORA-06512: at line 1
+
+__________________________
+
+Log Entry : 
+18/01/2011 10:28:42
+Error in: http://localhost:25341/index.aspx?lng=L&size=N&mp=0000&sg=&prj=&scs_id=10&scs_id=10&cdate=20101025. Error Message:mBasePage Load>>Subscribe_portal_log_Insert>>ORA-01722: invalid number
+ORA-06512: at "ISPORT.WAP_UI", line 22
+ORA-06512: at line 1
+
+__________________________
+
+Log Entry : 
+18/01/2011 13:12:02
+Error in: http://localhost:25341/index.aspx?scs_id=10&lng=L&mp=0000&size=N&prj=&sg=203&scs_id=. Error Message:mBasePage Load>>Subscribe_portal_log_Insert>>ORA-01722: invalid number
+ORA-06512: at "ISPORT.WAP_UI", line 22
+ORA-06512: at line 1
+
+__________________________
+
+Log Entry : 
+18/01/2011 13:13:37
+Error in: http://localhost:25341/index.aspx?scs_id=10&lng=L&mp=0000&size=N&prj=&sg=203&scs_id=. Error Message:mBasePage Load>>Subscribe_portal_log_Insert>>ORA-01722: invalid number
+ORA-06512: at "ISPORT.WAP_UI", line 22
+ORA-06512: at line 1
+
+__________________________

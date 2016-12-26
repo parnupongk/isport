@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="wmonitor.aspx.cs" Inherits="isport_payment.wmonitor" %>

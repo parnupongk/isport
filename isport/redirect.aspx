@@ -1,0 +1,1 @@
+<%@ Page Language="C#" AutoEventWireup="true" Inherits="isport.redirect" Codebehind="redirect.aspx.cs" %>

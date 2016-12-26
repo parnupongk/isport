@@ -1,0 +1,75 @@
+
+Log Entry : 
+01/03/2011 11:30:09
+Error in: http://localhost:25341/index.aspx. Error Message:mBasePage Load>>Subscribe_portal_log_Insert>>System.Data.OracleClient requires Oracle client software version 8.1.7 or greater.
+__________________________
+
+Log Entry : 
+01/03/2011 11:30:28
+Error in: http://localhost:25341/index.aspx?scs_id=10&sg=203&mp=0000&prj=32&lng=L&size=S&mp_code=. Error Message:mBasePage Load>>Subscribe_portal_log_Insert>>System.Data.OracleClient requires Oracle client software version 8.1.7 or greater.
+__________________________
+
+Log Entry : 
+01/03/2011 11:30:31
+Error in: http://localhost:25341/index.aspx?scs_id=10&sg=203&mp=0000&prj=32&lng=L&size=S&mp_code=. Error Message:mBasePage Load>>Subscribe_portal_log_Insert>>System.Data.OracleClient requires Oracle client software version 8.1.7 or greater.
+__________________________
+
+Log Entry : 
+01/03/2011 11:30:33
+Error in: http://localhost:25341/index.aspx?scs_id=10&sg=203&mp=0000&prj=32&lng=L&size=S&mp_code=. Error Message:mBasePage Load>>Subscribe_portal_log_Insert>>System.Data.OracleClient requires Oracle client software version 8.1.7 or greater.
+__________________________
+
+Log Entry : 
+01/03/2011 11:37:45
+Error in: http://localhost:25341/index.aspx. Error Message:mBasePage Load>>Subscribe_portal_log_Insert>>System.Data.OracleClient requires Oracle client software version 8.1.7 or greater.
+__________________________
+
+Log Entry : 
+01/03/2011 11:38:20
+Error in: http://localhost:25341/index.aspx?scs_id=10&sg=203&mp=0000&prj=32&lng=L&size=S&mp_code=. Error Message:mBasePage Load>>Subscribe_portal_log_Insert>>System.Data.OracleClient requires Oracle client software version 8.1.7 or greater.
+__________________________
+
+Log Entry : 
+01/03/2011 11:38:21
+Error in: http://localhost:25341/index.aspx. Error Message:mBasePage Load>>Subscribe_portal_log_Insert>>System.Data.OracleClient requires Oracle client software version 8.1.7 or greater.
+__________________________
+
+Log Entry : 
+01/03/2011 11:38:54
+Error in: http://localhost:25341/index.aspx??scs_id=10&sg=203&mp=0000&prj=32&lng=L&size=S&mp_code=. Error Message:mBasePage Load>>Subscribe_portal_log_Insert>>System.Data.OracleClient requires Oracle client software version 8.1.7 or greater.
+__________________________
+
+Log Entry : 
+01/03/2011 11:48:26
+Error in: http://localhost:25341/index.aspx. Error Message:mBasePage Load>>Subscribe_portal_log_Insert>>System.Data.OracleClient requires Oracle client software version 8.1.7 or greater.
+__________________________
+
+Log Entry : 
+01/03/2011 11:48:42
+Error in: http://localhost:25341/index.aspx?scs_id=10&sg=203&mp=0000&prj=32&lng=L&size=S&mp_code=. Error Message:mBasePage Load>>Subscribe_portal_log_Insert>>System.Data.OracleClient requires Oracle client software version 8.1.7 or greater.
+__________________________
+
+Log Entry : 
+01/03/2011 11:52:52
+Error in: http://localhost:25341/index.aspx. Error Message:mBasePage Load>>Subscribe_portal_log_Insert>>System.Data.OracleClient requires Oracle client software version 8.1.7 or greater.
+__________________________
+
+Log Entry : 
+01/03/2011 11:53:04
+Error in: http://localhost:25341/index.aspx?scs_id=10&sg=203&mp=0000&prj=32&lng=L&size=S&mp_code=. Error Message:mBasePage Load>>Subscribe_portal_log_Insert>>System.Data.OracleClient requires Oracle client software version 8.1.7 or greater.
+__________________________
+
+Log Entry : 
+01/03/2011 15:23:14
+Error in: http://localhost:25341/index.aspx?lng=L&size=S&mp=0000&sg=203&prj=32&scs_id=10&cdate=20101015&cscat=12&cid=272. Error Message:mBasePage Load>>The control with id  contains newline characters in its inner text.  A System.Web.UI.MobileControls.Label control cannot contain newline characters in its inner text.
+__________________________
+
+Log Entry : 
+01/03/2011 15:23:22
+Error in: http://localhost:25341/index.aspx?lng=L&size=S&mp=0000&sg=203&prj=32&scs_id=10&cdate=20101015&cscat=12&cid=272. Error Message:mBasePage Load>>The control with id  contains newline characters in its inner text.  A System.Web.UI.MobileControls.Label control cannot contain newline characters in its inner text.
+__________________________
+
+Log Entry : 
+01/03/2011 15:24:36
+Error in: http://localhost:25341/index.aspx?lng=L&size=S&mp=0000&sg=203&prj=32&scs_id=10&cdate=20101015&cscat=12&cid=272. Error Message:mBasePage Load>>The control with id  contains newline characters in its inner text.  A System.Web.UI.MobileControls.Label control cannot contain newline characters in its inner text.
+__________________________

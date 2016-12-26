@@ -1,0 +1,419 @@
+﻿.dxgvControl_PlasticBlue,
+.dxgvDisabled_PlasticBlue
+{
+	border: Solid 1px #CCCCCC;
+	border-top-style: none;
+	font: 9pt Tahoma;
+	background-color: #F0F0F0;
+	color: #000000;
+	cursor: default;
+}
+.dxgvControl_PlasticBlue .dxpControl_PlasticBlue
+{
+	background-color: #F0F0F0;
+	padding: 6px 0px 6px 0px;
+}
+.dxgvDisabled_PlasticBlue 
+{
+	color: #9CAFDF!important;
+}
+
+.dxgvControl_PlasticBlue a 
+{
+	color: #5A83D0;
+}
+.dxgvControl_PlasticBlue a:hover
+{
+	color: #2443AA;
+}
+.dxgvControl_PlasticBlue a:visited
+{
+	color: #5A83D0;
+}
+.dxgvDisabled_PlasticBlue a
+{
+	color: Gray;
+}
+.dxgvLoadingPanel_PlasticBlue
+{
+	border:solid 1px #CCCCCC;
+	background-color: #E8E8E8;
+	font: 9pt Tahoma;
+	color: #303030;
+}
+.dxgvLoadingPanel_PlasticBlue td
+{
+	white-space: nowrap;
+	text-align: center;
+	padding: 12px 12px 12px 12px;
+}
+.dxgvLoadingPanelStatusBar_PlasticBlue
+{
+	background-color: transparent;
+	font: 9pt Tahoma;
+	color: #000000;
+}
+.dxgvLoadingPanelStatusBar_PlasticBlue td
+{
+	white-space: nowrap;
+	text-align: center;
+	padding: 0px 2px 0px 2px;
+}
+
+.dxgvFilterPopupWindow_PlasticBlue
+{
+	color: Black;
+	font: 9pt Tahoma;
+	border: solid 1px #cbcbcb;
+}
+.dxgvFilterPopupItemsArea_PlasticBlue
+{
+	color: Black;
+	background-color: White;
+}
+.dxgvFilterPopupButtonPanel_PlasticBlue
+{
+	font: 9pt Tahoma;
+	background-color: #e8e8e8;
+	border: 1px solid #dcdcdc;
+	color: Black;
+}
+
+.dxgvFilterPopupItem_PlasticBlue td.dxgv,
+.dxgvFilterPopupActiveItem_PlasticBlue td.dxgv,
+.dxgvFilterPopupSelectedItem_PlasticBlue td.dxgv
+{
+	padding: 2px 2px 3px 4px;
+	border-left: 1px solid White;
+	border-bottom: 1px solid #FAFAFA;
+	border-right: 1px solid White;
+}
+.dxgvFilterPopupActiveItem_PlasticBlue td.dxgv
+{
+	background: #dedede;
+    color: Black;
+}
+.dxgvFilterPopupSelectedItem_PlasticBlue td.dxgv
+{
+    color: White;
+    background: #5066ac;
+}
+
+.dxgvTable_PlasticBlue
+{
+	background-color: transparent;
+	border:0;
+	border-collapse: separate !important;
+	overflow:hidden;
+	font: 9pt Tahoma;
+	color: #000000;
+}
+.dxgvInlineEditRow_PlasticBlue,
+.dxgvDataRow_PlasticBlue
+{
+}
+.dxgvInlineEditRow_PlasticBlue td.dxgv
+{
+	border-bottom: solid 1px #d9d9d9;
+	border-right: 1px solid #d9d9d9;
+}
+.dxgvFilterRow_PlasticBlue 
+{
+	background-color: #F0F0F0;
+}
+.dxgvEditFormDisplayRow_PlasticBlue 
+{
+	background-color: #DCE0F0;
+}
+
+.dxgvEditForm_PlasticBlue 
+{
+	background-color: #E8EAF6;
+}
+.dxgvEditForm_PlasticBlue  td.dxgv
+{
+	border-bottom: solid 1px #d9d9d9;
+	padding: 10px 10px 12px 10px;
+}
+.dxgvSelectedRow_PlasticBlue
+{
+	background-color:#6d82c5;
+}
+.dxgvFocusedRow_PlasticBlue
+{
+	background-color: #5066ac;
+}
+.dxgvDetailRow_PlasticBlue,
+.dxgvPreviewRow_PlasticBlue
+{
+	background-color: #E8E8E8;
+}
+.dxgvDetailCell_PlasticBlue,
+.dxgvPreviewRow_PlasticBlue td.dxgv,
+.dxgvEmptyDataRow_PlasticBlue td.dxgv
+{	
+	padding: 20px 2px 20px 4px;
+	border-bottom: solid 1px #d9d9d9;
+	border-top: 0;
+	border-left: 0;
+	border-right: 0;
+}
+.dxgvEmptyDataRow_PlasticBlue td.dxgv {
+	text-align:center;
+}
+.dxgvPreviewRow_PlasticBlue
+{
+	color: #777777;
+}
+.dxgvPreviewRow_PlasticBlue td.dxgv
+{
+	padding: 15px 15px 15px 15px;
+}
+.dxgvDetailCell_PlasticBlue
+{
+	padding: 15px 12px 15px 6px;
+}
+.dxgvDetailRow_PlasticBlue td.dxgvIndentCell
+{
+    padding-left: 0px;
+    padding-right: 0px;
+    border-bottom: solid 1px #d9d9d9;
+}
+.dxgvEditFormDisplayRow_PlasticBlue,
+.dxgvDataRow_PlasticBlue,
+.dxgvDataRowAlt_PlasticBlue,
+.dxgvSelectedRow_PlasticBlue,
+.dxgvFocusedRow_PlasticBlue
+{
+	color: White;
+}
+.dxgvEditFormDisplayRow_PlasticBlue td.dxgv,
+.dxgvDataRow_PlasticBlue td.dxgv,
+.dxgvDataRowAlt_PlasticBlue td.dxgv,
+.dxgvSelectedRow_PlasticBlue td.dxgv,
+.dxgvFocusedRow_PlasticBlue td.dxgv
+{
+	overflow:hidden;
+	border-bottom: solid 1px #d9d9d9;
+	border-right: solid 1px #d9d9d9;
+	border-top: 0;
+	border-left: 0;
+	padding: 4px 6px 5px 6px;
+}
+.dxgvDataRow_PlasticBlue
+{
+	background-color: #FFFFFF;
+	color: #000000;
+}
+.dxgvDataRowAlt_PlasticBlue
+{
+	background-color: #F1F1F1;	
+	color: #000000;
+}
+.dxgvEditFormDisplayRow_PlasticBlue
+{
+	color: #000000;
+}
+.dxgvEditingErrorRow_PlasticBlue
+{
+	background-color: #FFC8C8;
+	color: Red;
+}
+.dxgvEditingErrorRow_PlasticBlue td.dxgv
+{
+	white-space: pre-wrap;
+	border-bottom: solid 1px #d9d9d9;
+	border-right: 0;
+	border-top: 0;
+	border-left: 0;
+	padding: 6px 10px 6px 10px;
+}
+.dxgvFilterRow_PlasticBlue td.dxgv
+{
+	border-bottom: Solid 1px #D9D9D9;
+	border-right: 0;
+	border-top: 0;
+	border-left: 0;
+	padding: 3px 4px 3px 4px;
+}
+.dxgvGroupRow_PlasticBlue
+{
+	background-color: #E8E8E8;
+}
+.dxgvFocusedGroupRow_PlasticBlue
+{
+	background-color: #5066AC;
+}
+.dxgvGroupRow_PlasticBlue,
+.dxgvFocusedGroupRow_PlasticBlue
+{
+	color: #696969;
+}
+.dxgvGroupRow_PlasticBlue td.dxgv,
+.dxgvFocusedGroupRow_PlasticBlue td.dxgv
+{
+	border: none 0;	
+	vertical-align:middle;
+	white-space:nowrap;
+	border-top: solid 1px #FFFFFF;
+	border-bottom: solid 1px #d9d9d9;
+	padding: 4px 6px 5px 6px;
+}
+.dxgvFocusedGroupRow_PlasticBlue
+{
+    color: White;
+}
+.dxgvFocusedGroupRow_PlasticBlue td.dxgv
+{
+	border-top: solid 1px #5066AC;    
+}
+.dxgvHeaderPanel_PlasticBlue {
+	background-color: #D4E3E5;
+	padding: 8px 4px 8px 4px;
+	border-bottom: solid 1px #d9d9d9;
+}
+.dxgvHeader_PlasticBlue {
+	cursor:pointer;
+	white-space:nowrap;
+	padding: 7px 6px 7px 6px;
+	border: solid 1px #2c4182;
+	border-top-style: none;
+	background-image: url('gvHeaderBackground.gif');
+	background-position:top;
+	background-repeat:repeat-x;
+	background-color:#415698;
+	overflow:hidden;
+	-moz-user-select: none;
+}
+.dxgvHeader_PlasticBlue, .dxgvHeader_PlasticBlue table {
+	font: 9pt Tahoma;
+	color:White;
+}
+.dxgvHeader_PlasticBlue td{
+	white-space:nowrap;
+}
+.dxgvCustomization_PlasticBlue 
+{
+	width:100%;
+	padding:0 0 0 0;
+	margin:0 0 0 0;
+	overflow:auto;
+}
+.dxgvEmptyDataRow_PlasticBlue,
+.dxgvGroupPanel_PlasticBlue {
+	color: #848484;
+}
+.dxgvGroupPanel_PlasticBlue
+{
+	background-color: #dedede;
+	border-top: Solid 1px #CCCCCC;
+	font-size: 9pt;
+	white-space:nowrap;
+	padding: 10px 4px 10px 8px;
+}
+.dxgvFooter_PlasticBlue
+{
+	background-color: #6D82C5;  
+	color: #FFFFFF;
+	white-space:nowrap;
+	border-bottom: solid 1px #7F93D4;	
+}
+.dxgvFooter_PlasticBlue
+{
+	background-color: #6D82C5;  	
+	color: #FFFFFF;	
+}
+.dxgvFooter_PlasticBlue td.dxgv
+{
+	padding: 6px 6px 7px 6px;
+	
+	border-bottom: solid 1px #D9D9D9;
+	border-right: 0px;
+}
+.dxgvGroupFooter_PlasticBlue
+{
+	background-color: #DEDEDE;
+	white-space: nowrap;
+}
+.dxgvGroupFooter_PlasticBlue td.dxgv
+{
+	padding: 6px 5px 7px 5px;
+	border-bottom: Solid 1px #D5D5D5;
+	border-right: 0px;
+}
+.dxgvDataRow_PlasticBlue td.dxgvIndentCell,
+.dxgvGroupRow_PlasticBlue td.dxgvIndentCell,
+.dxgvGroupFooter_PlasticBlue td.dxgvIndentCell
+{
+    background-color: #E8E8E8;
+	border-right: solid 1px #D5D5D5;
+	border-top: 0px;
+}
+.dxgvTitlePanel_PlasticBlue
+{
+	padding: 3px 3px 5px 3px;
+	font-size: 15px;
+	text-align: center;
+	color: #707070;
+	border-top: Solid 1px #CCCCCC;	
+}
+.dxgvLoadingDiv_PlasticBlue
+{
+	background-color:Gray;	
+	opacity: 0.01;
+	filter:progid:DXImageTransform.Microsoft.Alpha(Style=0, Opacity=1);
+}
+.dxgvStatusBar_PlasticBlue 
+{	
+	border-top: solid 1px #CCCCCC;
+	background-color:  #E8E8E8;
+	color: White;
+}
+.dxgvStatusBar_PlasticBlue tr
+{
+	height: 20px;
+}
+.dxgvCommandColumn_PlasticBlue
+{
+	padding: 0px 2px 0px 2px;
+}
+.dxgvCommandColumn_PlasticBlue a
+{
+	margin: 0px 3px 0px 0px;
+}
+/*focused column*/
+.dxgvSelectedRow_PlasticBlue td.dxgvCommandColumn_PlasticBlue a, 
+.dxgvFocusedRow_PlasticBlue td.dxgvCommandColumn_PlasticBlue a,
+.dxgvPreviewRow_PlasticBlue td.dxgvCommandColumn_PlasticBlue a
+{
+    color: #FFFFFF;
+}
+.dxgvCommandColumnItem_PlasticBlue
+{
+	padding: 0px 2px 0px 2px;
+	padding-top: 0px;
+	padding-bottom: 0px;	
+}
+.dxgvEditFormTable_PlasticBlue
+{
+    margin: 10px 0px 10px 0px;
+	padding: 0px;
+	font: 9pt Tahoma;
+	color:Black;
+}
+.dxgvEditFormCaption_PlasticBlue
+{
+	font: 9pt Tahoma;
+	padding: 4px 4px 4px 10px; 
+	white-space: nowrap;
+}
+.dxgvInlineEditCell_PlasticBlue
+{
+	padding: 1px 1px 1px 1px; 
+}
+
+.dxgvEditFormCell_PlasticBlue
+{
+	padding: 4px 4px 4px 4px; 
+	border: 0;
+}

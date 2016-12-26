@@ -1,0 +1,130 @@
+﻿@model isportMVC.Models.EDTQuizGameModelList
+@{
+    Layout = null;
+}
+<script type="text/javascript">
+
+    $(document).ready(function () {
+
+        $('.field-date').datepicker({ autoclose: true, todayHighlight: true, format: "dd/mm/yyyy" });
+
+    });
+
+    function SubmitEDTGame(listindex,index) {
+
+        $.ajax({
+            type: "POST",
+            cache: false,
+            url: '@Url.Action("EDTQuizGameInsert", "EDTQuizGame")',
+            data: $('#frmContent-' + listindex + '-' + index).serialize(),
+            success: function (result) {
+                //return;
+                //listFiles();
+                console.log('success');
+                //$('#divGame-' +'_'+ index).empty();
+                $('#divGame-' + listindex + '-'+index).hide();
+                alert("Insert Success");
+                return;
+                if (result.strSuccess == '') {
+                    //$msgbox("Send Mail Success", { type: "info" });
+                    //$('#formModal').modal('toggle');
+                    //openSuccessDialog("Save data success");
+                    //DetailTimeline();
+                    //CaseInfo();
+
+
+                }
+                if (result.strError != '') {
+                    //$.msgbox("Send Mail Success", { type: "error" });
+                    //openErrorDialog(result.strError);
+                    //CaseInfo();
+                    return;
+                }
+            }
+        });
+    }
+</script>
+@if (Model.listModel != null && Model.listModel.Count > 0)
+{
+    <div class="row">
+        <div class="container">
+            @foreach (var list in Model.listModel)
+            {
+                <div class="col-md-12">
+                    <div class="panel-info">
+                        <h3>@list.name</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    @{ var index = 0;}
+                    @foreach (var gallery in list.gallery)
+                            {
+                                index = index + 1;
+                        <div id="divGame-@list.entry_id-@index" class="col-md-4">
+                            
+                            <form id="frmContent-@list.entry_id-@index">
+                                <div  class="col-md-12" style="padding:5px;">
+
+                                    <div class="thumbnail">
+
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <img src="@gallery" style="width:100%;max-height:150px;padding:3px;" />
+                                                <input type="hidden" id="image" name="image" value="@gallery" />
+                                                <input type="hidden" id="idEDT" name="idEDT" value="@list.entry_id-@index" />
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <label for="txtQuestion" class="col-sm-3 control-label">คำถาม</label>
+                                            <div class="col-sm-9 margin-bottom-xl">
+                                                <textarea id="txtQuestion" name="txtQuestion" class="form-control" rows="2" required data-rule-minlength="1"></textarea>
+                                            </div>
+                                            <label for="txtChoise" class="col-sm-3 control-label">คำตอบ</label>
+                                            <div class="col-sm-9 margin-bottom-xl">
+                                                <textarea id="txtChoise" name="txtChoise" class="form-control" rows="2" required data-rule-minlength="1"></textarea>
+                                            </div>
+                                            <label for="txtAnswer" class="col-sm-3 control-label">เฉลย</label>
+                                            <div class="col-sm-9 margin-bottom-xl">
+                                                <textarea id="txtAnswer" name="txtAnswer" class="form-control" rows="2" required data-rule-minlength="1"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <label for="displayDate" class="col-sm-3 control-label">display date</label>
+                                            <div id="divDisplayDate" class="col-sm-9 date field-date" style="display:">
+                                                <div class="input-group-content">
+                                                    <input type="text" name="displayDate" class="form-control fv">
+                                                </div>
+                                                <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+
+                                </div>
+
+                            </form>
+                            <div class="text-center col-md-12">
+                                <button id="btnSave" type="submit" onclick="SubmitEDTGame(@list.entry_id,@index)" class="btn ink-reaction btn-primary"><i class="fa fa-fw"></i>&nbsp;Submit</button>
+                            </div>
+                        </div>
+
+
+
+
+
+
+
+                    }
+                </div>
+                        }
+            </div>
+        </div>
+}
+else
+{
+            <div class="row">
+                <div class="container">No Data</div>
+            </div>
+            }
+            <div id="getQuery" class="col-lg-12"></div>

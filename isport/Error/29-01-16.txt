@@ -1,0 +1,129 @@
+
+Log Entry : 
+29/01/2016 10:14:52
+ IP :  ::1 
+Error in: http://localhost:60878/indexl.aspx. Error Message:Error >>GenHeader >>A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+__________________________
+
+Log Entry : 
+29/01/2016 10:15:14
+ IP :  ::1 
+Error in: http://localhost:60878/indexl.aspx?p=bb. Error Message:Error >>GenHeader >>A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+__________________________
+
+Log Entry : 
+29/01/2016 10:19:43
+ IP :  ::1 
+Error in: http://localhost:60878/indexl.aspx. Error Message:Error >>Object reference not set to an instance of an object.
+__________________________
+
+Log Entry : 
+29/01/2016 10:19:49
+ IP :  ::1 
+Error in: http://localhost:60878/indexl.aspx?p=bb. Error Message:Error >> PreGenContent >> isport_service.GenContent >>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+29/01/2016 10:26:36
+ IP :  ::1 
+Error in: http://localhost:60878/indexl.aspx?p=bb. Error Message:Error >> PreGenContent >> isport_service.GenContent >>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+29/01/2016 10:31:56
+ IP :  ::1 
+Error in: http://localhost:60878/indexl.aspx?p=bb. Error Message:Error >>Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+29/01/2016 10:35:30
+ IP :  ::1 
+Error in: http://localhost:60878/indexl.aspx?p=bb. Error Message:Error >>Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+29/01/2016 10:46:30
+ IP :  ::1 
+Error in: http://localhost:60878/indexl.aspx?p=bb. Error Message:Error >>Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+29/01/2016 10:47:06
+ IP :  ::1 
+Error in: http://localhost:60878/indexl.aspx?p=bb. Error Message:Error >>Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+29/01/2016 10:51:12
+ IP :  ::1 
+Error in: http://localhost:60878/indexl.aspx?p=bb. Error Message:Error >>Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+29/01/2016 10:52:21
+ IP :  ::1 
+Error in: http://localhost:60878/indexl.aspx?p=bb. Error Message:Error >>Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+29/01/2016 10:53:15
+ IP :  ::1 
+Error in: http://localhost:60878/indexl.aspx?p=bb. Error Message:Error >>Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+29/01/2016 10:54:14
+ IP :  ::1 
+Error in: http://localhost:60878/indexl.aspx?p=bb. Error Message:Error >>Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+29/01/2016 11:02:33
+ IP :  ::1 
+Error in: http://localhost:60878/indexl.aspx?p=bb. Error Message:Error >> PreGenContent >> isport_service.GenContent >>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+29/01/2016 15:57:53
+ IP :  ::1 
+Error in: http://localhost:60878/indexl.aspx. Error Message:Error >>Object reference not set to an instance of an object.
+__________________________
+
+Log Entry : 
+29/01/2016 15:58:00
+ IP :  ::1 
+Error in: http://localhost:60878/indexl.aspx?p=bb. Error Message:Error >> PreGenContent >> isport_service.GenContent >>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+29/01/2016 16:12:40
+ IP :  ::1 
+Error in: http://localhost:60878/index.aspx. Error Message:Error >>Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+29/01/2016 16:12:41
+ IP :  ::1 
+Error in: http://localhost:60878/index.aspx. Error Message:Error >>Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+29/01/2016 18:24:11
+ IP :  ::1 
+Error in: http://localhost:60878/index.aspx. Error Message:Error >>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________

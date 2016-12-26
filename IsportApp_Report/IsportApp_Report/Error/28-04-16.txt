@@ -1,0 +1,12 @@
+
+Log Entry : 
+28/04/2016 15:27:27
+ IP :  ::1 
+Error in: http://localhost:8919/rep_channel.aspx. Error Message:btnSubmit_Click1 >> Multiple controls with the same ID 'lblAis' were found. FindControl requires that controls have unique IDs.
+__________________________
+
+Log Entry : 
+28/04/2016 15:27:46
+ IP :  ::1 
+Error in: http://localhost:8919/rep_channel.aspx. Error Message:btnSubmit_Click1 >> Multiple controls with the same ID 'lblAis' were found. FindControl requires that controls have unique IDs.
+__________________________

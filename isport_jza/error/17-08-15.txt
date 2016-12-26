@@ -1,0 +1,258 @@
+
+Log Entry : 
+17/08/2015 14:03:17
+ IP :  ::1 
+Error in: http://localhost:63253/index.aspx. Error Message:Error >>Subscribe_portal_log_Insert>>ORA-12154: TNS:ไม่สามารถแปลค่าตัวระบุการเชื่อมต่อที่ระบุ
+
+__________________________
+
+Log Entry : 
+17/08/2015 14:08:31
+ IP :  ::1 
+Error in: http://localhost:63253/index.aspx. Error Message:Error >>Subscribe_portal_log_Insert>>ORA-12154: TNS:ไม่สามารถแปลค่าตัวระบุการเชื่อมต่อที่ระบุ
+
+__________________________
+
+Log Entry : 
+17/08/2015 14:10:27
+ IP :  ::1 
+Error in: http://localhost:63253/index.aspx. Error Message:Error >>Content >> Object reference not set to an instance of an object.
+__________________________
+
+Log Entry : 
+17/08/2015 14:14:20
+ IP :  ::1 
+Error in: http://localhost:63253/index.aspx. Error Message:Error >>Content >> Object reference not set to an instance of an object.
+__________________________
+
+Log Entry : 
+17/08/2015 14:17:02
+ IP :  ::1 
+Error in: http://localhost:63253/index.aspx. Error Message:Error >>Content >> Object reference not set to an instance of an object.
+__________________________
+
+Log Entry : 
+17/08/2015 14:17:39
+ IP :  ::1 
+Error in: http://localhost:63253/index.aspx. Error Message:Error >>Content >> Object reference not set to an instance of an object.
+__________________________
+
+Log Entry : 
+17/08/2015 14:20:31
+ IP :  ::1 
+Error in: http://localhost:63253/index.aspx. Error Message:Error >>Content >> Object reference not set to an instance of an object.
+__________________________
+
+Log Entry : 
+17/08/2015 14:21:15
+ IP :  ::1 
+Error in: http://localhost:63253/index.aspx. Error Message:Error >>Content >> Object reference not set to an instance of an object.
+__________________________
+
+Log Entry : 
+17/08/2015 14:27:00
+ IP :  ::1 
+Error in: http://localhost:63253/index.aspx. Error Message:Error >>Content >> Object reference not set to an instance of an object.
+__________________________
+
+Log Entry : 
+17/08/2015 14:28:56
+ IP :  ::1 
+Error in: http://localhost:63253/index.aspx. Error Message:Error >>Content >> Object reference not set to an instance of an object.
+__________________________
+
+Log Entry : 
+17/08/2015 14:30:44
+ IP :  ::1 
+Error in: http://localhost:63253/index.aspx. Error Message:Error >>Subscribe_portal_log_Insert>>ORA-12154: TNS:ไม่สามารถแปลค่าตัวระบุการเชื่อมต่อที่ระบุ
+
+__________________________
+
+Log Entry : 
+17/08/2015 14:34:02
+ IP :  ::1 
+Error in: http://localhost:63253/index.aspx. Error Message:Error >>Subscribe_portal_log_Insert>>ORA-12154: TNS:ไม่สามารถแปลค่าตัวระบุการเชื่อมต่อที่ระบุ
+
+__________________________
+
+Log Entry : 
+17/08/2015 14:39:14
+ IP :  ::1 
+Error in: http://localhost:63253/index.aspx. Error Message:Error >>Subscribe_portal_log_Insert>>ORA-12154: TNS:ไม่สามารถแปลค่าตัวระบุการเชื่อมต่อที่ระบุ
+
+__________________________
+
+Log Entry : 
+17/08/2015 14:41:21
+ IP :  ::1 
+Error in: http://localhost:63253/index.aspx. Error Message:Error >>Subscribe_portal_log_Insert>>ORA-12154: TNS:ไม่สามารถแปลค่าตัวระบุการเชื่อมต่อที่ระบุ
+
+__________________________
+
+Log Entry : 
+17/08/2015 14:45:04
+ IP :  ::1 
+Error in: http://localhost:63253/index.aspx. Error Message:Error >>Subscribe_portal_log_Insert>>ORA-12154: TNS:ไม่สามารถแปลค่าตัวระบุการเชื่อมต่อที่ระบุ
+
+__________________________
+
+Log Entry : 
+17/08/2015 14:47:06
+ IP :  ::1 
+Error in: http://localhost:63253/index.aspx. Error Message:Error >>Subscribe_portal_log_Insert>>ORA-12154: TNS:ไม่สามารถแปลค่าตัวระบุการเชื่อมต่อที่ระบุ
+
+__________________________
+
+Log Entry : 
+17/08/2015 14:47:23
+ IP :  ::1 
+Error in: http://localhost:63253/index.aspx. Error Message:Error >>Subscribe_portal_log_Insert>>ORA-12154: TNS:ไม่สามารถแปลค่าตัวระบุการเชื่อมต่อที่ระบุ
+
+__________________________
+
+Log Entry : 
+17/08/2015 14:49:29
+ IP :  ::1 
+Error in: http://localhost:63253/index.aspx. Error Message:Error >>Subscribe_portal_log_Insert>>ORA-12154: TNS:ไม่สามารถแปลค่าตัวระบุการเชื่อมต่อที่ระบุ
+
+__________________________
+
+Log Entry : 
+17/08/2015 14:51:30
+ IP :  ::1 
+Error in: http://localhost:63253/index.aspx. Error Message:Error >>Subscribe_portal_log_Insert>>ORA-12154: TNS:ไม่สามารถแปลค่าตัวระบุการเชื่อมต่อที่ระบุ
+
+__________________________
+
+Log Entry : 
+17/08/2015 14:53:37
+ IP :  ::1 
+Error in: http://localhost:63253/index.aspx. Error Message:Error >>Subscribe_portal_log_Insert>>ORA-12154: TNS:ไม่สามารถแปลค่าตัวระบุการเชื่อมต่อที่ระบุ
+
+__________________________
+
+Log Entry : 
+17/08/2015 14:58:35
+ IP :  ::1 
+Error in: http://localhost:63253/index.aspx. Error Message:Error >>Subscribe_portal_log_Insert>>ORA-12154: TNS:ไม่สามารถแปลค่าตัวระบุการเชื่อมต่อที่ระบุ
+
+__________________________
+
+Log Entry : 
+17/08/2015 15:03:31
+ IP :  ::1 
+Error in: http://localhost:63253/index.aspx. Error Message:Error >>Subscribe_portal_log_Insert>>ORA-12154: TNS:ไม่สามารถแปลค่าตัวระบุการเชื่อมต่อที่ระบุ
+
+__________________________
+
+Log Entry : 
+17/08/2015 15:06:38
+ IP :  ::1 
+Error in: http://localhost:63253/index.aspx. Error Message:Error >>Subscribe_portal_log_Insert>>ORA-12154: TNS:ไม่สามารถแปลค่าตัวระบุการเชื่อมต่อที่ระบุ
+
+__________________________
+
+Log Entry : 
+17/08/2015 15:08:29
+ IP :  ::1 
+Error in: http://localhost:63253/index.aspx. Error Message:Error >>Subscribe_portal_log_Insert>>ORA-12154: TNS:ไม่สามารถแปลค่าตัวระบุการเชื่อมต่อที่ระบุ
+
+__________________________
+
+Log Entry : 
+17/08/2015 15:09:30
+ IP :  ::1 
+Error in: http://localhost:63253/index.aspx. Error Message:Error >>Subscribe_portal_log_Insert>>ORA-12154: TNS:ไม่สามารถแปลค่าตัวระบุการเชื่อมต่อที่ระบุ
+
+__________________________
+
+Log Entry : 
+17/08/2015 15:11:15
+ IP :  ::1 
+Error in: http://localhost:63253/index.aspx. Error Message:Error >>Subscribe_portal_log_Insert>>ORA-12154: TNS:ไม่สามารถแปลค่าตัวระบุการเชื่อมต่อที่ระบุ
+
+__________________________
+
+Log Entry : 
+17/08/2015 15:16:08
+ IP :  ::1 
+Error in: http://localhost:63253/index.aspx. Error Message:Error >>Subscribe_portal_log_Insert>>ORA-12154: TNS:ไม่สามารถแปลค่าตัวระบุการเชื่อมต่อที่ระบุ
+
+__________________________
+
+Log Entry : 
+17/08/2015 15:18:10
+ IP :  ::1 
+Error in: http://localhost:63253/index.aspx. Error Message:Error >>Subscribe_portal_log_Insert>>ORA-12154: TNS:ไม่สามารถแปลค่าตัวระบุการเชื่อมต่อที่ระบุ
+
+__________________________
+
+Log Entry : 
+17/08/2015 15:19:07
+ IP :  ::1 
+Error in: http://localhost:63253/index.aspx. Error Message:Error >>Subscribe_portal_log_Insert>>ORA-12154: TNS:ไม่สามารถแปลค่าตัวระบุการเชื่อมต่อที่ระบุ
+
+__________________________
+
+Log Entry : 
+17/08/2015 15:26:00
+ IP :  ::1 
+Error in: http://localhost:63253/index.aspx. Error Message:Error >>Subscribe_portal_log_Insert>>ORA-12154: TNS:ไม่สามารถแปลค่าตัวระบุการเชื่อมต่อที่ระบุ
+
+__________________________
+
+Log Entry : 
+17/08/2015 15:35:46
+ IP :  ::1 
+Error in: http://localhost:63253/index.aspx. Error Message:Error >>Subscribe_portal_log_Insert>>ORA-12154: TNS:ไม่สามารถแปลค่าตัวระบุการเชื่อมต่อที่ระบุ
+
+__________________________
+
+Log Entry : 
+17/08/2015 15:36:47
+ IP :  ::1 
+Error in: http://localhost:63253/index.aspx. Error Message:Error >>Subscribe_portal_log_Insert>>ORA-12154: TNS:ไม่สามารถแปลค่าตัวระบุการเชื่อมต่อที่ระบุ
+
+__________________________
+
+Log Entry : 
+17/08/2015 15:41:12
+ IP :  ::1 
+Error in: http://localhost:63253/index.aspx. Error Message:Error >>Subscribe_portal_log_Insert>>ORA-12154: TNS:ไม่สามารถแปลค่าตัวระบุการเชื่อมต่อที่ระบุ
+
+__________________________
+
+Log Entry : 
+17/08/2015 15:42:33
+ IP :  ::1 
+Error in: http://localhost:63253/index.aspx. Error Message:Error >>Subscribe_portal_log_Insert>>ORA-12154: TNS:ไม่สามารถแปลค่าตัวระบุการเชื่อมต่อที่ระบุ
+
+__________________________
+
+Log Entry : 
+17/08/2015 15:44:23
+ IP :  ::1 
+Error in: http://localhost:63253/index.aspx. Error Message:Error >>Subscribe_portal_log_Insert>>ORA-12154: TNS:ไม่สามารถแปลค่าตัวระบุการเชื่อมต่อที่ระบุ
+
+__________________________
+
+Log Entry : 
+17/08/2015 15:45:27
+ IP :  ::1 
+Error in: http://localhost:63253/index.aspx. Error Message:Error >>Subscribe_portal_log_Insert>>ORA-12154: TNS:ไม่สามารถแปลค่าตัวระบุการเชื่อมต่อที่ระบุ
+
+__________________________
+
+Log Entry : 
+17/08/2015 15:47:13
+ IP :  ::1 
+Error in: http://localhost:63253/index.aspx. Error Message:Error >>Subscribe_portal_log_Insert>>ORA-12154: TNS:ไม่สามารถแปลค่าตัวระบุการเชื่อมต่อที่ระบุ
+
+__________________________
+
+Log Entry : 
+17/08/2015 17:13:21
+ IP :  ::1 
+Error in: http://localhost:63253/index.aspx. Error Message:Error >>Subscribe_portal_log_Insert>>ORA-12154: TNS:ไม่สามารถแปลค่าตัวระบุการเชื่อมต่อที่ระบุ
+
+__________________________

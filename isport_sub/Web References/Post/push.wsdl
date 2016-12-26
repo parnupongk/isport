@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="SendPost">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="IP_PORT" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="COMMAND" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendPostResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SendPostResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendGet">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="IP_PORT" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendGetResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SendGetResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="string" nillable="true" type="s:string" />
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="SendPostSoapIn">
+    <wsdl:part name="parameters" element="tns:SendPost" />
+  </wsdl:message>
+  <wsdl:message name="SendPostSoapOut">
+    <wsdl:part name="parameters" element="tns:SendPostResponse" />
+  </wsdl:message>
+  <wsdl:message name="SendGetSoapIn">
+    <wsdl:part name="parameters" element="tns:SendGet" />
+  </wsdl:message>
+  <wsdl:message name="SendGetSoapOut">
+    <wsdl:part name="parameters" element="tns:SendGetResponse" />
+  </wsdl:message>
+  <wsdl:message name="SendPostHttpGetIn">
+    <wsdl:part name="IP_PORT" type="s:string" />
+    <wsdl:part name="COMMAND" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SendPostHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="SendGetHttpGetIn">
+    <wsdl:part name="IP_PORT" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SendGetHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="SendPostHttpPostIn">
+    <wsdl:part name="IP_PORT" type="s:string" />
+    <wsdl:part name="COMMAND" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SendPostHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="SendGetHttpPostIn">
+    <wsdl:part name="IP_PORT" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SendGetHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:portType name="pushSoap">
+    <wsdl:operation name="SendPost">
+      <wsdl:input message="tns:SendPostSoapIn" />
+      <wsdl:output message="tns:SendPostSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendGet">
+      <wsdl:input message="tns:SendGetSoapIn" />
+      <wsdl:output message="tns:SendGetSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="pushHttpGet">
+    <wsdl:operation name="SendPost">
+      <wsdl:input message="tns:SendPostHttpGetIn" />
+      <wsdl:output message="tns:SendPostHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendGet">
+      <wsdl:input message="tns:SendGetHttpGetIn" />
+      <wsdl:output message="tns:SendGetHttpGetOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="pushHttpPost">
+    <wsdl:operation name="SendPost">
+      <wsdl:input message="tns:SendPostHttpPostIn" />
+      <wsdl:output message="tns:SendPostHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendGet">
+      <wsdl:input message="tns:SendGetHttpPostIn" />
+      <wsdl:output message="tns:SendGetHttpPostOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="pushSoap" type="tns:pushSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="SendPost">
+      <soap:operation soapAction="http://tempuri.org/SendPost" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendGet">
+      <soap:operation soapAction="http://tempuri.org/SendGet" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="pushSoap12" type="tns:pushSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="SendPost">
+      <soap12:operation soapAction="http://tempuri.org/SendPost" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendGet">
+      <soap12:operation soapAction="http://tempuri.org/SendGet" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="pushHttpGet" type="tns:pushHttpGet">
+    <http:binding verb="GET" />
+    <wsdl:operation name="SendPost">
+      <http:operation location="/SendPost" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendGet">
+      <http:operation location="/SendGet" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="pushHttpPost" type="tns:pushHttpPost">
+    <http:binding verb="POST" />
+    <wsdl:operation name="SendPost">
+      <http:operation location="/SendPost" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendGet">
+      <http:operation location="/SendGet" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="push">
+    <wsdl:port name="pushSoap" binding="tns:pushSoap">
+      <soap:address location="http://wap.isport.co.th/isportws/push.asmx" />
+    </wsdl:port>
+    <wsdl:port name="pushSoap12" binding="tns:pushSoap12">
+      <soap12:address location="http://wap.isport.co.th/isportws/push.asmx" />
+    </wsdl:port>
+    <wsdl:port name="pushHttpGet" binding="tns:pushHttpGet">
+      <http:address location="http://wap.isport.co.th/isportws/push.asmx" />
+    </wsdl:port>
+    <wsdl:port name="pushHttpPost" binding="tns:pushHttpPost">
+      <http:address location="http://wap.isport.co.th/isportws/push.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

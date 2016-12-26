@@ -1,0 +1,102 @@
+
+Log Entry : 
+14/07/2014 11:24:41
+Error in: http://localhost:19321/indexh.aspx. Error Message:Error >>GetSipContentBypCatId >>Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+__________________________
+
+Log Entry : 
+14/07/2014 11:26:12
+Error in: http://localhost:19321/indexh.aspx. Error Message:Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+14/07/2014 11:26:42
+Error in: http://localhost:19321/indexh.aspx?lng=L&mp_code=0025&size=&prj=50&sg=255&scs_id=&stype=2. Error Message:Error >>GenHeader >>Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+__________________________
+
+Log Entry : 
+14/07/2014 11:27:03
+Error in: http://localhost:19321/indexh.aspx?lng=L&mp_code=0025&size=&prj=50&sg=255&scs_id=&stype=1. Error Message:Error >>GenFooter >>Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+__________________________
+
+Log Entry : 
+14/07/2014 11:27:16
+Error in: http://localhost:19321/indexh.aspx. Error Message:Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+14/07/2014 11:27:23
+Error in: http://localhost:19321/indexh.aspx. Error Message:Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+14/07/2014 11:27:56
+Error in: http://localhost:19321/indexh.aspx?lng=L&mp_code=0025&size=&prj=50&sg=255&scs_id=&stype=1. Error Message:Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+14/07/2014 11:31:27
+Error in: http://localhost:19321/indexh.aspx?lng=L&mp_code=0025&size=&prj=50&sg=255&scs_id=&stype=2. Error Message:Error >>GenHeader >>A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+__________________________
+
+Log Entry : 
+14/07/2014 14:19:06
+Error in: http://localhost:19321/indexh.aspx. Error Message:Error >>GenHeader >>A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+__________________________
+
+Log Entry : 
+14/07/2014 14:20:32
+Error in: http://localhost:19321/indexh.aspx. Error Message:Error >>GenHeader >>A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+__________________________
+
+Log Entry : 
+14/07/2014 14:23:37
+Error in: http://localhost:19321/indexh.aspx. Error Message:Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+14/07/2014 14:23:51
+Error in: http://localhost:19321/detail.aspx?lng=L&mp_code=0025&size=&prj=50&sg=255&scs_id=&pcnt_id=1307328&pcat=176. Error Message:GenContent >> ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+14/07/2014 14:25:15
+Error in: http://localhost:19321/indexh.aspx. Error Message:Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+14/07/2014 14:25:19
+Error in: http://localhost:19321/detail.aspx?lng=L&mp_code=0025&size=&prj=50&sg=255&scs_id=&pcnt_id=1307328&pcat=176. Error Message:GenContent >> ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+14/07/2014 14:26:10
+Error in: http://localhost:19321/indexh.aspx. Error Message:Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+14/07/2014 14:26:14
+Error in: http://localhost:19321/detail.aspx?lng=L&mp_code=0025&size=&prj=50&sg=255&scs_id=&pcnt_id=1307328&pcat=176. Error Message:GenContent >> ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+14/07/2014 14:32:01
+Error in: http://localhost:19321/detail.aspx?lng=L&mp_code=0025&size=&prj=50&sg=255&scs_id=&pcnt_id=1307328&pcat=176. Error Message:GenContent >> ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+14/07/2014 14:32:59
+Error in: http://localhost:19321/detail.aspx?lng=L&mp_code=0025&size=&prj=50&sg=255&scs_id=&pcnt_id=1307328&pcat=176. Error Message:GenContent >> ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________

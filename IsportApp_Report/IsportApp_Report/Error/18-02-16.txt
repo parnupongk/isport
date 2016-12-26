@@ -1,0 +1,90 @@
+
+Log Entry : 
+18/02/2016 09:51:04
+ IP :  ::1 
+Error in: http://localhost:8919/rep_channel.aspx. Error Message:BindReportMpCodeFromService >> Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+__________________________
+
+Log Entry : 
+18/02/2016 09:52:15
+ IP :  ::1 
+Error in: http://localhost:8919/rep_channel.aspx. Error Message:btnSubmit_Click1 >> Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+__________________________
+
+Log Entry : 
+18/02/2016 09:52:39
+ IP :  ::1 
+Error in: http://localhost:8919/rep_channel.aspx. Error Message:btnSubmit_Click1 >> Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+__________________________
+
+Log Entry : 
+18/02/2016 09:53:27
+ IP :  ::1 
+Error in: http://localhost:8919/rep_channel.aspx. Error Message:btnSubmit_Click1 >> Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+__________________________
+
+Log Entry : 
+18/02/2016 10:25:00
+ IP :  ::1 
+Error in: http://localhost:8919/rep_channel.aspx. Error Message:btnSubmit_Click1 >> A transport-level error has occurred when receiving results from the server. (provider: TCP Provider, error: 0 - The semaphore timeout period has expired.)
+__________________________
+
+Log Entry : 
+18/02/2016 10:25:07
+ IP :  ::1 
+Error in: http://localhost:8919/rep_channel.aspx. Error Message:btnSubmit_Click1 >> Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+__________________________
+
+Log Entry : 
+18/02/2016 10:27:55
+ IP :  ::1 
+Error in: http://localhost:8919/rep_channel.aspx. Error Message:BindReportMpCodeFromService >> Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+__________________________
+
+Log Entry : 
+18/02/2016 10:29:21
+ IP :  ::1 
+Error in: http://localhost:8919/rep_channel.aspx. Error Message:BindReportMpCodeFromService >> Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+__________________________
+
+Log Entry : 
+18/02/2016 10:30:59
+ IP :  ::1 
+Error in: http://localhost:8919/rep_channel.aspx. Error Message:BindReportMpCodeFromService >> Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+__________________________
+
+Log Entry : 
+18/02/2016 10:31:09
+ IP :  ::1 
+Error in: http://localhost:8919/rep_channel.aspx. Error Message:BindReportMpCodeFromService >> Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+__________________________
+
+Log Entry : 
+18/02/2016 10:31:20
+ IP :  ::1 
+Error in: http://localhost:8919/rep_channel.aspx. Error Message:BindReportMpCodeFromService >> Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+__________________________
+
+Log Entry : 
+18/02/2016 10:31:25
+ IP :  ::1 
+Error in: http://localhost:8919/rep_channel.aspx. Error Message:BindReportMpCodeFromService >> Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+__________________________
+
+Log Entry : 
+18/02/2016 10:31:52
+ IP :  ::1 
+Error in: http://localhost:8919/rep_channel.aspx. Error Message:BindReportMpCodeFromService >> Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+__________________________

@@ -1,0 +1,311 @@
+
+Log Entry : 
+26/07/2014 22:11:26
+Error in: http://localhost:19937/news.aspx. Error Message:GenDaraClip >>Could not find stored procedure 'usp_wapisport_uiselectbysgid'.
+__________________________
+
+Log Entry : 
+26/07/2014 22:12:07
+Error in: http://localhost:19937/news.aspx. Error Message:Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+26/07/2014 22:15:36
+Error in: http://localhost:19937/news.aspx?n=Cl98436. Error Message:Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+26/07/2014 22:19:20
+Error in: http://localhost:19937/news.aspx. Error Message:Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+26/07/2014 22:21:37
+Error in: http://localhost:19937/news.aspx. Error Message:Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+26/07/2014 22:21:38
+Error in: http://localhost:19937/news.aspx. Error Message:Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+26/07/2014 22:21:55
+Error in: http://localhost:19937/news.aspx. Error Message:Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+26/07/2014 22:21:59
+Error in: http://localhost:19937/news.aspx. Error Message:Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+26/07/2014 22:23:13
+Error in: http://localhost:19937/news.aspx. Error Message:Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+26/07/2014 22:23:54
+Error in: http://localhost:19937/news.aspx. Error Message:Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+26/07/2014 22:25:28
+Error in: http://localhost:19937/news.aspx. Error Message:Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+26/07/2014 22:25:29
+Error in: http://localhost:19937/news.aspx. Error Message:Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+26/07/2014 22:25:44
+Error in: http://localhost:19937/news.aspx?n=Cl44366. Error Message:Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+26/07/2014 22:26:58
+Error in: http://localhost:19937/news.aspx?n=Cl44366. Error Message:Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+26/07/2014 22:28:09
+Error in: http://localhost:19937/news.aspx?n=Cl44366. Error Message:Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+26/07/2014 22:28:17
+Error in: http://localhost:19937/news.aspx?n=Cl44366. Error Message:Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+26/07/2014 22:28:21
+Error in: http://localhost:19937/news.aspx?n=Cl98436. Error Message:Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+26/07/2014 22:30:22
+Error in: http://localhost:19937/news.aspx?n=Cl98436. Error Message:Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+26/07/2014 22:30:42
+Error in: http://localhost:19937/news.aspx?n=Cl98436. Error Message:Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+26/07/2014 22:30:42
+Error in: http://localhost:19937/news.aspx?n=Cl98436. Error Message:Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+26/07/2014 22:31:44
+Error in: http://localhost:19937/news.aspx?n=Cl98436. Error Message:Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+26/07/2014 22:31:45
+Error in: http://localhost:19937/news.aspx?n=Cl98436. Error Message:Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+26/07/2014 22:31:46
+Error in: http://localhost:19937/news.aspx?n=Cl98436. Error Message:Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+26/07/2014 22:31:46
+Error in: http://localhost:19937/news.aspx?n=Cl98436. Error Message:Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+26/07/2014 22:31:49
+Error in: http://localhost:19937/news.aspx?n=Cl44366. Error Message:Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+26/07/2014 22:32:34
+Error in: http://localhost:19937/news.aspx?n=Cl44366. Error Message:Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+26/07/2014 22:32:35
+Error in: http://localhost:19937/news.aspx?n=Cl44366. Error Message:Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+26/07/2014 22:34:29
+Error in: http://localhost:19937/news.aspx?n=Cl44366. Error Message:Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+26/07/2014 22:34:57
+Error in: http://localhost:19937/news.aspx?n=Cl44366. Error Message:Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+26/07/2014 22:38:16
+Error in: http://localhost:19937/news.aspx?n=Cl44366. Error Message:Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+26/07/2014 22:38:17
+Error in: http://localhost:19937/news.aspx?n=Cl44366. Error Message:Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+26/07/2014 22:39:05
+Error in: http://localhost:19937/news.aspx?n=Cl44366. Error Message:Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+26/07/2014 22:42:20
+Error in: http://localhost:19937/news.aspx?n=Cl44366. Error Message:Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+26/07/2014 22:42:22
+Error in: http://localhost:19937/news.aspx?n=Cl44366. Error Message:Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+26/07/2014 22:42:52
+Error in: http://localhost:19937/news.aspx?n=Cl44366. Error Message:Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+26/07/2014 22:42:54
+Error in: http://localhost:19937/news.aspx?n=Cl44366. Error Message:Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+26/07/2014 22:43:27
+Error in: http://localhost:19937/news.aspx?n=Cl44366. Error Message:Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+26/07/2014 22:44:38
+Error in: http://localhost:19937/news.aspx?n=Cl44366. Error Message:Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+26/07/2014 22:44:40
+Error in: http://localhost:19937/news.aspx?n=Cl44366. Error Message:Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+26/07/2014 22:45:28
+Error in: http://localhost:19937/news.aspx?n=Cl44366. Error Message:Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+26/07/2014 22:47:26
+Error in: http://localhost:19937/news.aspx?n=Cl98436. Error Message:Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+26/07/2014 22:54:17
+Error in: http://localhost:19937/news.aspx?n=Cl98436. Error Message:Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+26/07/2014 22:54:19
+Error in: http://localhost:19937/news.aspx?n=Cl98436. Error Message:Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+26/07/2014 22:55:59
+Error in: http://localhost:19937/news.aspx?n=Cl98436. Error Message:Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+26/07/2014 22:56:01
+Error in: http://localhost:19937/news.aspx?n=Cl98436. Error Message:Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+26/07/2014 22:56:24
+Error in: http://localhost:19937/news.aspx?n=Cl98436. Error Message:Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+26/07/2014 22:56:26
+Error in: http://localhost:19937/news.aspx?n=Cl98436. Error Message:Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+26/07/2014 22:56:59
+Error in: http://localhost:19937/news.aspx. Error Message:Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+26/07/2014 22:58:42
+Error in: http://localhost:19937/news.aspx?n=Cl98436. Error Message:Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+26/07/2014 23:00:12
+Error in: http://localhost:19937/news.aspx?n=Cl98436. Error Message:Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+26/07/2014 23:00:18
+Error in: http://localhost:19937/news.aspx?n=Cl44366. Error Message:Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+26/07/2014 23:00:31
+Error in: http://localhost:19937/news.aspx?n=Cl98436. Error Message:Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________

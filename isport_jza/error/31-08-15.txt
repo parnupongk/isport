@@ -1,0 +1,14 @@
+
+Log Entry : 
+31/08/2015 13:57:39
+ IP :  ::1 
+Error in: http://localhost:63253/index.aspx. Error Message:Error >>Subscribe_portal_log_Insert>>ORA-12154: TNS:ไม่สามารถแปลค่าตัวระบุการเชื่อมต่อที่ระบุ
+
+__________________________
+
+Log Entry : 
+31/08/2015 13:57:47
+ IP :  ::1 
+Error in: http://localhost:63253/inner.aspx?id=1b37b89b-4bbe-4f74-8773-59e0d9654683&pssvid=505. Error Message:Error >>Subscribe_portal_log_Insert>>ORA-12154: TNS:ไม่สามารถแปลค่าตัวระบุการเชื่อมต่อที่ระบุ
+
+__________________________

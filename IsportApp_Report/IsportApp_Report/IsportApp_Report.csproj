@@ -1,0 +1,430 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CD41F241-0E69-4D13-8526-CAF43A0D4588}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>IsportApp_Report</RootNamespace>
+    <AssemblyName>IsportApp_Report</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=3.5.7.1213, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\bom\Documents\ASP.NET AJAX Control Toolkit\Bin\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Data.v8.1, Version=8.1.4.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v8.1, Version=8.1.4.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Web.ASPxEditors.v8.1, Version=8.1.4.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Windows\assembly\GAC_MSIL\DevExpress.Web.ASPxEditors.v8.1\8.1.4.0__9b171c9fd64da1d1\DevExpress.Web.ASPxEditors.v8.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Web.ASPxGridView.v8.1, Version=8.1.4.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Windows\assembly\GAC_MSIL\DevExpress.Web.ASPxGridView.v8.1\8.1.4.0__9b171c9fd64da1d1\DevExpress.Web.ASPxGridView.v8.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Web.ASPxGridView.v8.1.Export, Version=8.1.4.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Windows\assembly\GAC_MSIL\DevExpress.Web.ASPxGridView.v8.1.Export\8.1.4.0__9b171c9fd64da1d1\DevExpress.Web.ASPxGridView.v8.1.Export.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Web.ASPxScheduler.v8.1, Version=8.1.4.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Windows\assembly\GAC_MSIL\DevExpress.Web.ASPxScheduler.v8.1\8.1.4.0__9b171c9fd64da1d1\DevExpress.Web.ASPxScheduler.v8.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Web.v8.1, Version=8.1.4.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.ApplicationBlocks.Data, Version=2.0.0.0, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\isport\bin\Microsoft.ApplicationBlocks.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="OracleDataAccress, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\TestBlackBerry\WS_BB\bin\OracleDataAccress.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DataVisualization, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="WebLibrary, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\isport\bin\WebLibrary.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Themes\Plastic Blue\Editors\edtButtonBack.gif" />
+    <Content Include="App_Themes\Plastic Blue\Editors\edtButtonBackHover.gif" />
+    <Content Include="App_Themes\Plastic Blue\Editors\edtButtonEditButtonBack.gif" />
+    <Content Include="App_Themes\Plastic Blue\Editors\edtCalendarButtonBack.gif" />
+    <Content Include="App_Themes\Plastic Blue\Editors\edtCalendarButtonHBack.gif" />
+    <Content Include="App_Themes\Plastic Blue\Editors\edtCalendarButtonPBack.gif" />
+    <Content Include="App_Themes\Plastic Blue\Editors\edtCalendarFNNextYear.gif" />
+    <Content Include="App_Themes\Plastic Blue\Editors\edtCalendarFNPrevYear.gif" />
+    <Content Include="App_Themes\Plastic Blue\Editors\edtCalendarFooterBack.gif" />
+    <Content Include="App_Themes\Plastic Blue\Editors\edtCalendarHeaderBack.gif" />
+    <Content Include="App_Themes\Plastic Blue\Editors\edtCalendarNextMonth.gif" />
+    <Content Include="App_Themes\Plastic Blue\Editors\edtCalendarNextYear.gif" />
+    <Content Include="App_Themes\Plastic Blue\Editors\edtCalendarPrevMonth.gif" />
+    <Content Include="App_Themes\Plastic Blue\Editors\edtCalendarPrevYear.gif" />
+    <Content Include="App_Themes\Plastic Blue\Editors\edtDropDown.gif" />
+    <Content Include="App_Themes\Plastic Blue\Editors\edtDropDownButtonHoverBack.gif" />
+    <Content Include="App_Themes\Plastic Blue\Editors\edtDropDownButtonPressedBack.gif" />
+    <Content Include="App_Themes\Plastic Blue\Editors\edtDropDownDisabled.gif" />
+    <Content Include="App_Themes\Plastic Blue\Editors\edtEllipsis.gif" />
+    <Content Include="App_Themes\Plastic Blue\Editors\edtEllipsisDisabled.gif" />
+    <Content Include="App_Themes\Plastic Blue\Editors\edtError.png" />
+    <Content Include="App_Themes\Plastic Blue\Editors\edtSpinDecBtnBack.gif" />
+    <Content Include="App_Themes\Plastic Blue\Editors\edtSpinDecBtnHBack.gif" />
+    <Content Include="App_Themes\Plastic Blue\Editors\edtSpinDecBtnPBack.gif" />
+    <Content Include="App_Themes\Plastic Blue\Editors\edtSpinEditDecrementImage.gif" />
+    <Content Include="App_Themes\Plastic Blue\Editors\edtSpinEditDecrementImageDisabled.gif" />
+    <Content Include="App_Themes\Plastic Blue\Editors\edtSpinEditIncrementImage.gif" />
+    <Content Include="App_Themes\Plastic Blue\Editors\edtSpinEditIncrementImageDisabled.gif" />
+    <Content Include="App_Themes\Plastic Blue\Editors\edtSpinEditLargeDecImage.gif" />
+    <Content Include="App_Themes\Plastic Blue\Editors\edtSpinEditLargeDecImageDisabled.gif" />
+    <Content Include="App_Themes\Plastic Blue\Editors\edtSpinEditLargeIncImage.gif" />
+    <Content Include="App_Themes\Plastic Blue\Editors\edtSpinEditLargeIncImageDisabled.gif" />
+    <Content Include="App_Themes\Plastic Blue\Editors\edtSpinIncBtnBack.gif" />
+    <Content Include="App_Themes\Plastic Blue\Editors\edtSpinIncBtnHBack.gif" />
+    <Content Include="App_Themes\Plastic Blue\Editors\edtSpinIncBtnPBack.gif" />
+    <Content Include="App_Themes\Plastic Blue\Editors\edtSpinLargeIncBtnBack.gif" />
+    <Content Include="App_Themes\Plastic Blue\Editors\edtSpinLargeIncBtnHBack.gif" />
+    <Content Include="App_Themes\Plastic Blue\Editors\edtSpinLargeIncBtnPBack.gif" />
+    <Content Include="App_Themes\Plastic Blue\Editors\Loading.gif" />
+    <Content Include="App_Themes\Plastic Blue\Editors\styles.css" />
+    <Content Include="App_Themes\Plastic Blue\GridView\gvCollapsedButton.gif" />
+    <Content Include="App_Themes\Plastic Blue\GridView\gvCollapsedButton.png" />
+    <Content Include="App_Themes\Plastic Blue\GridView\gvDetailCollapsedButton.gif" />
+    <Content Include="App_Themes\Plastic Blue\GridView\gvDetailCollapsedButton.png" />
+    <Content Include="App_Themes\Plastic Blue\GridView\gvDetailExpandedButton.gif" />
+    <Content Include="App_Themes\Plastic Blue\GridView\gvDetailExpandedButton.png" />
+    <Content Include="App_Themes\Plastic Blue\GridView\gvDragAndDropArrowDown.gif" />
+    <Content Include="App_Themes\Plastic Blue\GridView\gvDragAndDropArrowUp.gif" />
+    <Content Include="App_Themes\Plastic Blue\GridView\gvDragAndDropHideColumn.gif" />
+    <Content Include="App_Themes\Plastic Blue\GridView\gvExpandedButton.gif" />
+    <Content Include="App_Themes\Plastic Blue\GridView\gvExpandedButton.png" />
+    <Content Include="App_Themes\Plastic Blue\GridView\gvHeaderBackground.gif" />
+    <Content Include="App_Themes\Plastic Blue\GridView\gvHeaderFilter.png" />
+    <Content Include="App_Themes\Plastic Blue\GridView\gvHeaderFilterActive.png" />
+    <Content Include="App_Themes\Plastic Blue\GridView\gvHeaderSortDown.png" />
+    <Content Include="App_Themes\Plastic Blue\GridView\gvHeaderSortUp.png" />
+    <Content Include="App_Themes\Plastic Blue\GridView\gvLoadingOnStatusBar.gif" />
+    <Content Include="App_Themes\Plastic Blue\GridView\gvParentGroupRows.gif" />
+    <Content Include="App_Themes\Plastic Blue\GridView\Loading.gif" />
+    <Content Include="App_Themes\Plastic Blue\GridView\styles.css" />
+    <Content Include="App_Themes\Plastic Blue\GridView\WindowResizer.gif" />
+    <Content Include="App_Themes\Plastic Blue\Web\dvAll.png" />
+    <Content Include="App_Themes\Plastic Blue\Web\dvAllDis.png" />
+    <Content Include="App_Themes\Plastic Blue\Web\dvFirst.png" />
+    <Content Include="App_Themes\Plastic Blue\Web\dvFirstDis.png" />
+    <Content Include="App_Themes\Plastic Blue\Web\dvLast.png" />
+    <Content Include="App_Themes\Plastic Blue\Web\dvLastDis.png" />
+    <Content Include="App_Themes\Plastic Blue\Web\dvLoading.gif" />
+    <Content Include="App_Themes\Plastic Blue\Web\dvNext.png" />
+    <Content Include="App_Themes\Plastic Blue\Web\dvNextDis.png" />
+    <Content Include="App_Themes\Plastic Blue\Web\dvPagerBack.gif" />
+    <Content Include="App_Themes\Plastic Blue\Web\dvPrev.png" />
+    <Content Include="App_Themes\Plastic Blue\Web\dvPrevDis.png" />
+    <Content Include="App_Themes\Plastic Blue\Web\mHorizontalPopOut.gif" />
+    <Content Include="App_Themes\Plastic Blue\Web\mItemBack.gif" />
+    <Content Include="App_Themes\Plastic Blue\Web\mItemHBack.gif" />
+    <Content Include="App_Themes\Plastic Blue\Web\mItemSBack.gif" />
+    <Content Include="App_Themes\Plastic Blue\Web\mSeparator.gif" />
+    <Content Include="App_Themes\Plastic Blue\Web\mSeparatorHor.gif" />
+    <Content Include="App_Themes\Plastic Blue\Web\mSubMenuItem.gif" />
+    <Content Include="App_Themes\Plastic Blue\Web\mSubMenuItemChecked.gif" />
+    <Content Include="App_Themes\Plastic Blue\Web\mVerticalPopOut.gif" />
+    <Content Include="App_Themes\Plastic Blue\Web\nbCollapse.gif" />
+    <Content Include="App_Themes\Plastic Blue\Web\nbExpand.gif" />
+    <Content Include="App_Themes\Plastic Blue\Web\nbHeaderBack.gif" />
+    <Content Include="App_Themes\Plastic Blue\Web\nbItemBullet.gif" />
+    <Content Include="App_Themes\Plastic Blue\Web\nbLoading.gif" />
+    <Content Include="App_Themes\Plastic Blue\Web\ncLoading.gif" />
+    <Content Include="App_Themes\Plastic Blue\Web\pcCloseButton.png" />
+    <Content Include="App_Themes\Plastic Blue\Web\pcFooterBack.gif" />
+    <Content Include="App_Themes\Plastic Blue\Web\pcHeaderBack.gif" />
+    <Content Include="App_Themes\Plastic Blue\Web\pcModalBack.gif" />
+    <Content Include="App_Themes\Plastic Blue\Web\pcSizeGrip.gif" />
+    <Content Include="App_Themes\Plastic Blue\Web\rpBottomEdge.gif" />
+    <Content Include="App_Themes\Plastic Blue\Web\rpBottomLeftCorner.png" />
+    <Content Include="App_Themes\Plastic Blue\Web\rpBottomRightCorner.png" />
+    <Content Include="App_Themes\Plastic Blue\Web\rpHeaderLeftEdge.gif" />
+    <Content Include="App_Themes\Plastic Blue\Web\rpHeaderRightEdge.gif" />
+    <Content Include="App_Themes\Plastic Blue\Web\rpHeaderSeparator.gif" />
+    <Content Include="App_Themes\Plastic Blue\Web\rpHeaderTopEdge.gif" />
+    <Content Include="App_Themes\Plastic Blue\Web\rpLeftEdge.gif" />
+    <Content Include="App_Themes\Plastic Blue\Web\rpNoHeaderTopEdge.gif" />
+    <Content Include="App_Themes\Plastic Blue\Web\rpNoHeaderTopLeftCorner.png" />
+    <Content Include="App_Themes\Plastic Blue\Web\rpNoHeaderTopRightCorner.png" />
+    <Content Include="App_Themes\Plastic Blue\Web\rpRightEdge.gif" />
+    <Content Include="App_Themes\Plastic Blue\Web\rpTopLeftCorner.png" />
+    <Content Include="App_Themes\Plastic Blue\Web\rpTopRightCorner.png" />
+    <Content Include="App_Themes\Plastic Blue\Web\smLevel0Back.gif" />
+    <Content Include="App_Themes\Plastic Blue\Web\smSecondLevelBullet.gif" />
+    <Content Include="App_Themes\Plastic Blue\Web\smThirdLevelBullet.gif" />
+    <Content Include="App_Themes\Plastic Blue\Web\styles.css" />
+    <Content Include="App_Themes\Plastic Blue\Web\tcContentBack.gif" />
+    <Content Include="App_Themes\Plastic Blue\Web\tcContentBackHor.gif" />
+    <Content Include="App_Themes\Plastic Blue\Web\tcLoading.gif" />
+    <Content Include="App_Themes\Plastic Blue\Web\tcTabABack.gif" />
+    <Content Include="App_Themes\Plastic Blue\Web\tcTabBack.gif" />
+    <Content Include="App_Themes\Plastic Blue\Web\tcTabBottomABack.gif" />
+    <Content Include="App_Themes\Plastic Blue\Web\tcTabBottomBack.gif" />
+    <Content Include="App_Themes\Plastic Blue\Web\tcTabBottomHBack.gif" />
+    <Content Include="App_Themes\Plastic Blue\Web\tcTabHBack.gif" />
+    <Content Include="App_Themes\Plastic Blue\Web\tcTabLeftABack.gif" />
+    <Content Include="App_Themes\Plastic Blue\Web\tcTabLeftBack.gif" />
+    <Content Include="App_Themes\Plastic Blue\Web\tcTabLeftHBack.gif" />
+    <Content Include="App_Themes\Plastic Blue\Web\tcTabRightABack.gif" />
+    <Content Include="App_Themes\Plastic Blue\Web\tcTabRightBack.gif" />
+    <Content Include="App_Themes\Plastic Blue\Web\tcTabRightHBack.gif" />
+    <Content Include="App_Themes\Plastic Blue\Web\tiGotToBackP.gif" />
+    <Content Include="App_Themes\Plastic Blue\Web\tiGroupHeader.gif" />
+    <Content Include="App_Themes\Plastic Blue\Web\tiLoading.gif" />
+    <Content Include="App_Themes\Soft Orange\Web\dvPagerPanelBack.gif" />
+    <Content Include="App_Themes\Soft Orange\Web\Loading.gif" />
+    <Content Include="App_Themes\Soft Orange\Web\mHorizontalPopOut.png" />
+    <Content Include="App_Themes\Soft Orange\Web\mHorizontalPopOutH.png" />
+    <Content Include="App_Themes\Soft Orange\Web\mItemBack.png" />
+    <Content Include="App_Themes\Soft Orange\Web\mItemBackH.png" />
+    <Content Include="App_Themes\Soft Orange\Web\mItemChecked.gif" />
+    <Content Include="App_Themes\Soft Orange\Web\mSeparatorBack.png" />
+    <Content Include="App_Themes\Soft Orange\Web\mSubMenuItem.gif" />
+    <Content Include="App_Themes\Soft Orange\Web\mSubMenuItemChecked.gif" />
+    <Content Include="App_Themes\Soft Orange\Web\mVerticalPopOut.png" />
+    <Content Include="App_Themes\Soft Orange\Web\mVSeparatorBack.png" />
+    <Content Include="App_Themes\Soft Orange\Web\nbCollapse.png" />
+    <Content Include="App_Themes\Soft Orange\Web\nbExpand.png" />
+    <Content Include="App_Themes\Soft Orange\Web\nbHeaderBack.png" />
+    <Content Include="App_Themes\Soft Orange\Web\nbHeaderHBack.png" />
+    <Content Include="App_Themes\Soft Orange\Web\pAll.png" />
+    <Content Include="App_Themes\Soft Orange\Web\pAllDisabled.png" />
+    <Content Include="App_Themes\Soft Orange\Web\pcCloseButton.png" />
+    <Content Include="App_Themes\Soft Orange\Web\pcFooterBack.gif" />
+    <Content Include="App_Themes\Soft Orange\Web\pcHeaderBack.gif" />
+    <Content Include="App_Themes\Soft Orange\Web\pcModalBack.gif" />
+    <Content Include="App_Themes\Soft Orange\Web\pcSizeGrip.png" />
+    <Content Include="App_Themes\Soft Orange\Web\pFirst.png" />
+    <Content Include="App_Themes\Soft Orange\Web\pFirstDisabled.png" />
+    <Content Include="App_Themes\Soft Orange\Web\pLast.png" />
+    <Content Include="App_Themes\Soft Orange\Web\pLastDisabled.png" />
+    <Content Include="App_Themes\Soft Orange\Web\pNext.png" />
+    <Content Include="App_Themes\Soft Orange\Web\pNextDisabled.png" />
+    <Content Include="App_Themes\Soft Orange\Web\pPrev.png" />
+    <Content Include="App_Themes\Soft Orange\Web\pPrevDisabled.png" />
+    <Content Include="App_Themes\Soft Orange\Web\rpBottomEdge.gif" />
+    <Content Include="App_Themes\Soft Orange\Web\rpBottomLeftCorner.png" />
+    <Content Include="App_Themes\Soft Orange\Web\rpBottomRightCorner.png" />
+    <Content Include="App_Themes\Soft Orange\Web\rpHeaderBack.gif" />
+    <Content Include="App_Themes\Soft Orange\Web\rpHeaderLeftEdge.gif" />
+    <Content Include="App_Themes\Soft Orange\Web\rpHeaderRightEdge.gif" />
+    <Content Include="App_Themes\Soft Orange\Web\rpLeftEdge.gif" />
+    <Content Include="App_Themes\Soft Orange\Web\rpNoHeaderTopEdge.gif" />
+    <Content Include="App_Themes\Soft Orange\Web\rpNoHeaderTopLeftCorner.png" />
+    <Content Include="App_Themes\Soft Orange\Web\rpNoHeaderTopRightCorner.png" />
+    <Content Include="App_Themes\Soft Orange\Web\rpRightEdge.gif" />
+    <Content Include="App_Themes\Soft Orange\Web\rpTopEdge.gif" />
+    <Content Include="App_Themes\Soft Orange\Web\rpTopLeftCorner.png" />
+    <Content Include="App_Themes\Soft Orange\Web\rpTopRightCorner.png" />
+    <Content Include="App_Themes\Soft Orange\Web\styles.css" />
+    <Content Include="App_Themes\Soft Orange\Web\tcATabBack.gif" />
+    <Content Include="App_Themes\Soft Orange\Web\tcATabBottomBack.gif" />
+    <Content Include="App_Themes\Soft Orange\Web\tcTabBack.gif" />
+    <Content Include="App_Themes\Soft Orange\Web\tiBackToTop.png" />
+    <Content Include="assets\brand\bootstrap-outline.svg" />
+    <Content Include="assets\brand\bootstrap-punchout.svg" />
+    <Content Include="assets\brand\bootstrap-solid.svg" />
+    <Content Include="assets\css\docs.min.css" />
+    <Content Include="assets\css\ie10-viewport-bug-workaround.css" />
+    <Content Include="assets\css\src\docs.css" />
+    <Content Include="assets\css\src\pygments-manni.css" />
+    <Content Include="assets\flash\ZeroClipboard.swf" />
+    <Content Include="assets\img\components.png" />
+    <Content Include="assets\img\devices.png" />
+    <Content Include="assets\img\expo-lyft.jpg" />
+    <Content Include="assets\img\expo-newsweek.jpg" />
+    <Content Include="assets\img\expo-riot.jpg" />
+    <Content Include="assets\img\expo-vogue.jpg" />
+    <Content Include="assets\img\sass-less.png" />
+    <Content Include="assets\js\customize.min.js" />
+    <Content Include="assets\js\docs.min.js" />
+    <Content Include="assets\js\ie-emulation-modes-warning.js" />
+    <Content Include="assets\js\ie10-viewport-bug-workaround.js" />
+    <Content Include="assets\js\ie8-responsive-file-warning.js" />
+    <Content Include="assets\js\raw-files.min.js" />
+    <Content Include="assets\js\src\application.js" />
+    <Content Include="assets\js\src\customizer.js" />
+    <Content Include="assets\js\vendor\anchor.js" />
+    <Content Include="assets\js\vendor\autoprefixer.js" />
+    <Content Include="assets\js\vendor\Blob.js" />
+    <Content Include="assets\js\vendor\FileSaver.js" />
+    <Content Include="assets\js\vendor\holder.min.js" />
+    <Content Include="assets\js\vendor\jquery.min.js" />
+    <Content Include="assets\js\vendor\jszip.min.js" />
+    <Content Include="assets\js\vendor\less.min.js" />
+    <Content Include="assets\js\vendor\uglify.min.js" />
+    <Content Include="assets\js\vendor\ZeroClipboard.min.js" />
+    <Content Include="bin\AjaxControlToolkit.dll" />
+    <Content Include="bin\IsportApp_Report.dll" />
+    <Content Include="bin\IsportApp_Report.pdb" />
+    <Content Include="bin\OracleDataAccress.dll" />
+    <Content Include="bin\OracleDataAccress.pdb" />
+    <Content Include="bin\System.Web.DataVisualization.dll" />
+    <Content Include="btnExcel.gif" />
+    <Content Include="Default.aspx" />
+    <Content Include="dist\css\bootstrap-theme.css" />
+    <Content Include="dist\css\bootstrap-theme.min.css" />
+    <Content Include="dist\css\bootstrap.css" />
+    <Content Include="dist\css\bootstrap.min.css" />
+    <Content Include="dist\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="dist\js\bootstrap.js" />
+    <Content Include="dist\js\bootstrap.min.js" />
+    <Content Include="dist\js\npm.js" />
+    <Content Include="rep_banner.aspx" />
+    <Content Include="rep_channel.aspx" />
+    <Content Include="wap_monitor.aspx" />
+    <Content Include="wap_report.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Default.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="rep_banner.aspx.cs">
+      <DependentUpon>rep_banner.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="rep_banner.aspx.designer.cs">
+      <DependentUpon>rep_banner.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="rep_channel.aspx.cs">
+      <DependentUpon>rep_channel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="rep_channel.aspx.designer.cs">
+      <DependentUpon>rep_channel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="wap_monitor.aspx.cs">
+      <DependentUpon>wap_monitor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="wap_monitor.aspx.designer.cs">
+      <DependentUpon>wap_monitor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="wap_report.aspx.cs">
+      <DependentUpon>wap_report.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="wap_report.aspx.designer.cs">
+      <DependentUpon>wap_report.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Error\" />
+    <Folder Include="TempImages\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="dist\css\bootstrap-theme.css.map" />
+    <Content Include="dist\css\bootstrap-theme.min.css.map" />
+    <Content Include="dist\css\bootstrap.css.map" />
+    <Content Include="dist\css\bootstrap.min.css.map" />
+    <Content Include="dist\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="dist\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="dist\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="dist\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="assets\css\docs.min.css.map" />
+    <None Include="Properties\PublishProfiles\isportapp_report.pubxml" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>8919</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

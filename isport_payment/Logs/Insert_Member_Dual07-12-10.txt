@@ -1,0 +1,40 @@
+
+Log Entry : 
+07/12/2010 17:21:22
+Logs in: http://localhost:13170/payment_ais.aspx. Logs result: . Logs Message: select WAP.INST_MEMBER_tmp('66818593778','02','00685511','01','95','0000','1','','') as status from dual;
+__________________________
+
+Log Entry : 
+07/12/2010 17:22:31
+Logs in: http://localhost:13170/payment_ais.aspx. Logs result: . Logs Message: select WAP.INST_MEMBER_tmp('66818593778','02','00685511','01','95','0000','1','','') as status from dual;
+__________________________
+
+Log Entry : 
+07/12/2010 17:25:12
+Logs in: http://localhost:13170/payment_ais.aspx. Logs result: . Logs Message: select WAP.INST_MEMBER_tmp('66818593778','02','00685511','01','95','0000','1','','') as status from dual;
+__________________________
+
+Log Entry : 
+07/12/2010 17:26:33
+Logs in: http://localhost:13170/payment_ais.aspx. Logs result: . Logs Message: select WAP.INST_MEMBER_tmp('66818593778','02','00685511','01','95','0000','1','','') as status from dual;
+__________________________
+
+Log Entry : 
+07/12/2010 17:27:36
+Logs in: http://localhost:13170/payment_ais.aspx. Logs result: . Logs Message: select WAP.INST_MEMBER_tmp('66818593778','02','00685511','01','95','0000','1','','') as status from dual;
+__________________________
+
+Log Entry : 
+07/12/2010 17:30:16
+Logs in: http://localhost:13170/payment_ais.aspx. Logs result: . Logs Message: select WAP.INST_MEMBER_tmp('66818593778','02','00685511','01','95','0000','1','','') from dual;
+__________________________
+
+Log Entry : 
+07/12/2010 17:33:02
+Logs in: http://localhost:13170/payment_ais.aspx. Logs result: . Logs Message: select WAP.INST_MEMBER_tmp('66818593778','02','00685511','01','95','0000','1','','') from dual
+__________________________
+
+Log Entry : 
+07/12/2010 17:33:40
+Logs in: http://localhost:13170/payment_ais.aspx. Logs result: . Logs Message: select WAP.INST_MEMBER_tmp('66818593778','02','00685511','01','95','0000','1','','') from dual
+__________________________

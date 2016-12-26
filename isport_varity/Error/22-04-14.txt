@@ -1,0 +1,84 @@
+
+Log Entry : 
+22/04/2014 10:06:05
+Error in: http://localhost:19321/kiss/index.aspx. Error Message:Error >>Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+22/04/2014 10:06:26
+Error in: http://localhost:19321/kiss/index.aspx?=kiss01. Error Message:Error >>Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+22/04/2014 10:08:22
+Error in: http://localhost:19321/kiss/index.aspx?p=kiss01. Error Message:Error >>Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+22/04/2014 10:09:27
+Error in: http://localhost:19321/kiss/index.aspx. Error Message:Error >>Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+22/04/2014 10:09:33
+Error in: http://localhost:19321/kiss/index.aspx?p=kiss01. Error Message:Error >>Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+22/04/2014 10:10:35
+Error in: http://localhost:19321/kiss/index.aspx?p=kiss01. Error Message:Error >>Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+22/04/2014 10:10:47
+Error in: http://localhost:19321/kiss/index.aspx?p=kiss01. Error Message:Error >>Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+22/04/2014 10:11:29
+Error in: http://localhost:19321/kiss/index.aspx?p=kiss01. Error Message:Error >>Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+22/04/2014 10:14:24
+Error in: http://localhost:19321/kiss/index.aspx?p=kiss01. Error Message:Error >>Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+22/04/2014 10:16:14
+Error in: http://localhost:19321/kiss/index.aspx?p=kiss01. Error Message:Error >>Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+22/04/2014 10:17:02
+Error in: http://localhost:19321/kiss/index.aspx?p=kiss01. Error Message:Error >>Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+22/04/2014 10:17:36
+Error in: http://localhost:19321/kiss/index.aspx?p=kiss01. Error Message:Error >>Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+22/04/2014 10:17:37
+Error in: http://localhost:19321/kiss/index.aspx?p=kiss01. Error Message:Error >>Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+22/04/2014 10:17:53
+Error in: http://localhost:19321/kiss/index.aspx?p=kiss01. Error Message:Error >>Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________

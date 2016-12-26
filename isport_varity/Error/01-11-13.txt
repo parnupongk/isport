@@ -1,0 +1,48 @@
+
+Log Entry : 
+01/11/2013 09:34:44
+Error in: http://localhost:19321/indexh.aspx. Error Message:Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+01/11/2013 09:34:45
+Error in: http://localhost:19321/indexh.aspx?o=. Error Message:Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+01/11/2013 09:34:49
+Error in: http://localhost:19321/detail.aspx?lng=L&mp_code=0025&size=&prj=50&sg=255&scs_id=&pcnt_id=934722&pcat=176. Error Message:GenContent >> ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+01/11/2013 09:35:04
+Error in: http://localhost:19321/indexh.aspx?o=. Error Message:Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+01/11/2013 09:35:26
+Error in: http://localhost:19321/detail.aspx?lng=L&mp_code=0025&size=&prj=50&sg=255&scs_id=&pcnt_id=934722&pcat=176. Error Message:GenContent >> ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+01/11/2013 09:35:43
+Error in: http://localhost:19321/detail.aspx?lng=L&mp_code=0025&size=&prj=50&sg=255&scs_id=&pcnt_id=934722&pcat=176&o=. Error Message:GenContent >> ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+01/11/2013 09:36:13
+Error in: http://localhost:19321/detail.aspx?lng=L&mp_code=0025&size=&prj=50&sg=255&scs_id=&pcnt_id=934722&pcat=176&o=. Error Message:GenContent >> ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+01/11/2013 09:43:19
+Error in: http://localhost:19321/indexh.aspx. Error Message:Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________

@@ -1,0 +1,54 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="adminMaster.master.cs" Inherits="isport.admin.adminMaster" %>
+
+<%@ Register Assembly="DevExpress.Web.v8.1, Version=8.1.4.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1"
+    Namespace="DevExpress.Web.ASPxNavBar" TagPrefix="dxnb" %>
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
+<%@ Register assembly="DevExpress.Web.v8.1, Version=8.1.4.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1" namespace="DevExpress.Web.ASPxMenu" tagprefix="dxm" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+
+    <title>I-Sport Wap Administrator</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="images/Styles_admin.css" type="text/css" rel="stylesheet"/>   
+</head>
+<body>
+    <form id="form1" runat="server">
+    <asp:ToolkitScriptManager ID="ToolkitScriptManager1" runat="server">
+    </asp:ToolkitScriptManager>
+<div style="background-image:url(images/head_bg.jpg);width:100%;text-align:center;"><img width="100%" src="images/head2.jpg" alt=""/></div>
+<div style="width:100%;text-align:right;vertical-align:top;"><dxm:ASPxMenu ID="menu" runat="server" AutoSeparators="RootOnly" 
+        CssFilePath="~/App_Themes/Blue/{0}/styles.css" CssPostfix="Blue" 
+        DataSourceID="XmlDSTopMenu" ImageFolder="~/App_Themes/Blue/{0}/" 
+        ItemSpacing="0px" SeparatorHeight="100%" SeparatorWidth="2px" 
+        ShowPopOutImages="True" ShowSubMenuShadow="False">
+        <SubMenuStyle GutterWidth="0px" />
+        <RootItemSubMenuOffset FirstItemX="-2" LastItemX="-2" X="-1" />
+        <SubMenuItemStyle ImageSpacing="19px" PopOutImageSpacing="30px">
+        </SubMenuItemStyle>
+        <ItemSubMenuOffset FirstItemX="2" FirstItemY="-12" LastItemX="2" 
+            LastItemY="-12" X="2" Y="-12" />
+    </dxm:ASPxMenu>
+            <asp:XmlDataSource ID="XmlDSTopMenu" runat="server" EnableCaching="False" 
+        DataFile="~/Setting/MenuTopAdmin.xml" XPath="//MenuGroup">
+</asp:XmlDataSource>
+</div>
+
+      <table width="100%" style="height:600px;" cellpadding="0" cellspacing="0">
+
+      <tr>
+
+        <td align="center" valign="top" width="100%">
+        <asp:ContentPlaceHolder ID="contentDetail" runat="server">
+        </asp:ContentPlaceHolder></td>
+      </tr>
+      </table> 
+
+<div  style="background-image:url(images/foot_bg.jpg);width:100%;text-align:center; "></div>
+
+    </form>
+</body>
+</html>

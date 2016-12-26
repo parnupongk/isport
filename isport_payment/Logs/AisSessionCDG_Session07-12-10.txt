@@ -1,0 +1,5 @@
+
+Log Entry : 
+07/12/2010 14:33:46
+Logs in: http://localhost:13170/payment_ais_session.aspx. Logs result: Request URL :. Logs Message: Response URL :?cmd=session&tID=&sad=&SN=&spName=511&cURL=http%3A%2F%2F203.149.62.180%2Fisport_uat%2Fisport_payment%2Fpayment_ais_accept.aspx?CPsessionID=
+__________________________

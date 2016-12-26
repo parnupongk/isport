@@ -1,0 +1,180 @@
+
+Log Entry : 
+11/11/2015 14:38:59
+ IP :  ::1 
+Error in: http://localhost:11365/index.aspx. Error Message:Error >>Object reference not set to an instance of an object.
+__________________________
+
+Log Entry : 
+11/11/2015 14:41:01
+ IP :  ::1 
+Error in: http://localhost:11365/index.aspx. Error Message:Error >>Object reference not set to an instance of an object.
+__________________________
+
+Log Entry : 
+11/11/2015 14:41:07
+ IP :  ::1 
+Error in: http://localhost:11365/index.aspx. Error Message:Error >>Object reference not set to an instance of an object.
+__________________________
+
+Log Entry : 
+11/11/2015 14:42:01
+ IP :  ::1 
+Error in: http://localhost:11365/index.aspx. Error Message:Error >>Object reference not set to an instance of an object.
+__________________________
+
+Log Entry : 
+11/11/2015 14:42:06
+ IP :  ::1 
+Error in: http://localhost:11365/index.aspx. Error Message:Error >>Object reference not set to an instance of an object.
+__________________________
+
+Log Entry : 
+11/11/2015 14:42:08
+ IP :  ::1 
+Error in: http://localhost:11365/index.aspx. Error Message:Error >>Object reference not set to an instance of an object.
+__________________________
+
+Log Entry : 
+11/11/2015 14:43:24
+ IP :  ::1 
+Error in: http://localhost:11365/index.aspx. Error Message:Error >>Object reference not set to an instance of an object.
+__________________________
+
+Log Entry : 
+11/11/2015 14:44:47
+ IP :  ::1 
+Error in: http://localhost:11365/index.aspx. Error Message:Error >>Object reference not set to an instance of an object.
+__________________________
+
+Log Entry : 
+11/11/2015 14:44:51
+ IP :  ::1 
+Error in: http://localhost:11365/index.aspx. Error Message:Error >>Object reference not set to an instance of an object.
+__________________________
+
+Log Entry : 
+11/11/2015 14:46:25
+ IP :  ::1 
+Error in: http://localhost:11365/index.aspx. Error Message:Error >>Object reference not set to an instance of an object.
+__________________________
+
+Log Entry : 
+11/11/2015 14:46:28
+ IP :  ::1 
+Error in: http://localhost:11365/index.aspx. Error Message:Error >>Object reference not set to an instance of an object.
+__________________________
+
+Log Entry : 
+11/11/2015 14:47:08
+ IP :  ::1 
+Error in: http://localhost:11365/index.aspx. Error Message:Error >>Object reference not set to an instance of an object.
+__________________________
+
+Log Entry : 
+11/11/2015 14:51:39
+ IP :  ::1 
+Error in: http://localhost:11365/index.aspx. Error Message:Error >>Object reference not set to an instance of an object.
+__________________________
+
+Log Entry : 
+11/11/2015 14:51:56
+ IP :  ::1 
+Error in: http://localhost:11365/inner.aspx?id=9dafd187-af7a-417a-9a59-83e4c259ddb0. Error Message:Error >>Subscribe_portal_log_Insert>>OCIEnvCreate failed with return code -1 but error message text was not available.
+__________________________
+
+Log Entry : 
+11/11/2015 14:52:43
+ IP :  ::1 
+Error in: http://localhost:11365/index.aspx. Error Message:Error >>Object reference not set to an instance of an object.
+__________________________
+
+Log Entry : 
+11/11/2015 14:52:48
+ IP :  ::1 
+Error in: http://localhost:11365/inner.aspx?id=65985a33-d009-4d91-9138-7e73842a7cfa. Error Message:Error >>Subscribe_portal_log_Insert>>OCIEnvCreate failed with return code -1 but error message text was not available.
+__________________________
+
+Log Entry : 
+11/11/2015 14:55:37
+ IP :  ::1 
+Error in: http://localhost:11365/index.aspx. Error Message:Error >>Object reference not set to an instance of an object.
+__________________________
+
+Log Entry : 
+11/11/2015 14:55:41
+ IP :  ::1 
+Error in: http://localhost:11365/index.aspx. Error Message:Error >>Object reference not set to an instance of an object.
+__________________________
+
+Log Entry : 
+11/11/2015 14:56:51
+ IP :  ::1 
+Error in: http://localhost:11365/index.aspx. Error Message:Error >>Object reference not set to an instance of an object.
+__________________________
+
+Log Entry : 
+11/11/2015 14:57:33
+ IP :  ::1 
+Error in: http://localhost:11365/index.aspx. Error Message:Error >>Object reference not set to an instance of an object.
+__________________________
+
+Log Entry : 
+11/11/2015 15:00:04
+ IP :  ::1 
+Error in: http://localhost:11365/index.aspx. Error Message:Error >>Object reference not set to an instance of an object.
+__________________________
+
+Log Entry : 
+11/11/2015 15:01:08
+ IP :  ::1 
+Error in: http://localhost:11365/index.aspx. Error Message:Error >>Object reference not set to an instance of an object.
+__________________________
+
+Log Entry : 
+11/11/2015 15:01:17
+ IP :  ::1 
+Error in: http://localhost:11365/index.aspx. Error Message:Error >>Object reference not set to an instance of an object.
+__________________________
+
+Log Entry : 
+11/11/2015 15:02:30
+ IP :  ::1 
+Error in: http://localhost:11365/index.aspx. Error Message:Error >>Object reference not set to an instance of an object.
+__________________________
+
+Log Entry : 
+11/11/2015 15:02:34
+ IP :  ::1 
+Error in: http://localhost:11365/index.aspx. Error Message:Error >>Object reference not set to an instance of an object.
+__________________________
+
+Log Entry : 
+11/11/2015 15:03:00
+ IP :  ::1 
+Error in: http://localhost:11365/index.aspx. Error Message:Error >>Object reference not set to an instance of an object.
+__________________________
+
+Log Entry : 
+11/11/2015 15:03:03
+ IP :  ::1 
+Error in: http://localhost:11365/index.aspx. Error Message:Error >>Object reference not set to an instance of an object.
+__________________________
+
+Log Entry : 
+11/11/2015 15:03:27
+ IP :  ::1 
+Error in: http://localhost:11365/index.aspx. Error Message:Error >>Object reference not set to an instance of an object.
+__________________________
+
+Log Entry : 
+11/11/2015 15:04:31
+ IP :  ::1 
+Error in: http://localhost:11365/index.aspx. Error Message:Error >>Object reference not set to an instance of an object.
+__________________________
+
+Log Entry : 
+11/11/2015 15:04:58
+ IP :  ::1 
+Error in: http://localhost:11365/index.aspx. Error Message:Error >>Object reference not set to an instance of an object.
+__________________________

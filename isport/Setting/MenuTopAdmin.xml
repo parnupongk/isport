@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Home>
+  <MenuGroup Text="New Page Management" NavigateUrl="~/admin/newpage.aspx" ></MenuGroup>
+  <MenuGroup Text="Content Management" NavigateUrl="~/admin/index.aspx" ></MenuGroup>
+  <MenuGroup Text="Header Management" NavigateUrl="~/admin/adminheader.aspx" ></MenuGroup>
+  <MenuGroup Text="Footer Management" NavigateUrl="~/admin/adminfooter.aspx" ></MenuGroup>
+  <MenuGroup Text="Images Management" NavigateUrl="~/admin/adminimages.aspx" ></MenuGroup>
+  <MenuGroup Text="Banner Management" NavigateUrl="~/admin/adminbanner.aspx" ></MenuGroup>
+  <MenuGroup Text="URL Management" NavigateUrl="~/admin/adminshortener.aspx" ></MenuGroup>
+  <MenuGroup Text="Content Application" NavigateUrl="~/admin/adminapplication.aspx" ></MenuGroup>
+  <MenuGroup Text="Reload EDT" NavigateUrl="~/admin/adminedtreloadapi.aspx" ></MenuGroup>
+</Home>

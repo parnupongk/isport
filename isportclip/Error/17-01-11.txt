@@ -1,0 +1,80 @@
+
+Log Entry : 
+17/01/2011 14:48:31
+Error in: http://localhost:25341/index.aspx. Error Message:mBasePage Load>>Requested value 'left' was not found.
+__________________________
+
+Log Entry : 
+17/01/2011 14:48:35
+Error in: http://localhost:25341/index.aspx. Error Message:mBasePage Load>>Requested value 'left' was not found.
+__________________________
+
+Log Entry : 
+17/01/2011 14:48:36
+Error in: http://localhost:25341/index.aspx. Error Message:mBasePage Load>>Requested value 'left' was not found.
+__________________________
+
+Log Entry : 
+17/01/2011 14:49:47
+Error in: http://localhost:25341/index.aspx. Error Message:mBasePage Load>>Requested value 'left' was not found.
+__________________________
+
+Log Entry : 
+17/01/2011 14:58:35
+Error in: http://localhost:25341/index.aspx?scs_id=10. Error Message:mBasePage Load>>Object reference not set to an instance of an object.
+__________________________
+
+Log Entry : 
+17/01/2011 14:58:37
+Error in: http://localhost:25341/index.aspx?scs_id=10. Error Message:mBasePage Load>>Object reference not set to an instance of an object.
+__________________________
+
+Log Entry : 
+17/01/2011 14:58:38
+Error in: http://localhost:25341/index.aspx?scs_id=10. Error Message:mBasePage Load>>Object reference not set to an instance of an object.
+__________________________
+
+Log Entry : 
+17/01/2011 14:58:39
+Error in: http://localhost:25341/index.aspx?scs_id=10. Error Message:mBasePage Load>>Object reference not set to an instance of an object.
+__________________________
+
+Log Entry : 
+17/01/2011 14:58:40
+Error in: http://localhost:25341/index.aspx?scs_id=10. Error Message:mBasePage Load>>Object reference not set to an instance of an object.
+__________________________
+
+Log Entry : 
+17/01/2011 14:58:41
+Error in: http://localhost:25341/index.aspx?scs_id=10. Error Message:mBasePage Load>>Object reference not set to an instance of an object.
+__________________________
+
+Log Entry : 
+17/01/2011 14:58:41
+Error in: http://localhost:25341/index.aspx?scs_id=10. Error Message:mBasePage Load>>Object reference not set to an instance of an object.
+__________________________
+
+Log Entry : 
+17/01/2011 14:58:42
+Error in: http://localhost:25341/index.aspx?scs_id=10. Error Message:mBasePage Load>>Object reference not set to an instance of an object.
+__________________________
+
+Log Entry : 
+17/01/2011 14:58:43
+Error in: http://localhost:25341/index.aspx?scs_id=10. Error Message:mBasePage Load>>Object reference not set to an instance of an object.
+__________________________
+
+Log Entry : 
+17/01/2011 14:58:44
+Error in: http://localhost:25341/index.aspx?scs_id=10. Error Message:mBasePage Load>>Object reference not set to an instance of an object.
+__________________________
+
+Log Entry : 
+17/01/2011 14:58:44
+Error in: http://localhost:25341/index.aspx?scs_id=10. Error Message:mBasePage Load>>Object reference not set to an instance of an object.
+__________________________
+
+Log Entry : 
+17/01/2011 15:00:48
+Error in: http://localhost:25341/index.aspx. Error Message:mBasePage Load>>Object reference not set to an instance of an object.
+__________________________

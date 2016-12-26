@@ -1,0 +1,10 @@
+
+Log Entry : 
+27/10/2014 11:12:12
+Error in: http://localhost:19321/kiss/index.aspx. Error Message:Error >>Object reference not set to an instance of an object.
+__________________________
+
+Log Entry : 
+27/10/2014 11:18:31
+Error in: http://localhost:19321/kiss/index.aspx. Error Message:Error >>Object reference not set to an instance of an object.
+__________________________

@@ -1,0 +1,6 @@
+
+Log Entry : 
+12/12/2013 10:56:39
+Error in: http://localhost:19321/indexh.aspx. Error Message:Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________

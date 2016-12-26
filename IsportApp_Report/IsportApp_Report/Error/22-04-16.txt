@@ -1,0 +1,119 @@
+
+Log Entry : 
+22/04/2016 10:37:55
+ IP :  ::1 
+Error in: http://localhost:8919/rep_channel.aspx. Error Message:BindChannel >> Procedure or function 'usp_partner_service' expects parameter '@pptn_id', which was not supplied.
+__________________________
+
+Log Entry : 
+22/04/2016 10:40:36
+ IP :  ::1 
+Error in: http://localhost:8919/rep_channel.aspx. Error Message:BindChannel >> DataBinding: 'System.Data.DataRow' does not contain a property with the name 'ivr_number'.
+__________________________
+
+Log Entry : 
+22/04/2016 10:48:44
+ IP :  ::1 
+Error in: http://localhost:8919/rep_channel.aspx. Error Message:BindChannel >> DataBinding: 'System.Data.DataRow' does not contain a property with the name 'ivr_number'.
+__________________________
+
+Log Entry : 
+22/04/2016 11:00:27
+ IP :  ::1 
+Error in: http://localhost:8919/rep_channel.aspx. Error Message:BindReportMpCodeFromService >> String was not recognized as a valid DateTime.
+__________________________
+
+Log Entry : 
+22/04/2016 15:55:19
+ IP :  ::1 
+Error in: http://localhost:8919/rep_channel.aspx. Error Message:BindChannel >> A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+__________________________
+
+Log Entry : 
+22/04/2016 15:55:19
+ IP :  ::1 
+Error in: http://localhost:8919/rep_channel.aspx. Error Message:Select_SipSubService >> A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+__________________________
+
+Log Entry : 
+22/04/2016 16:17:07
+ IP :  ::1 
+Error in: http://localhost:8919/rep_channel.aspx. Error Message:BindReportMpCodeFromService >> Column 'mp_code' does not belong to table Table.
+__________________________
+
+Log Entry : 
+22/04/2016 16:17:12
+ IP :  ::1 
+Error in: http://localhost:8919/rep_channel.aspx. Error Message:BindReportMpCodeFromService >> Column 'mp_code' does not belong to table Table.
+__________________________
+
+Log Entry : 
+22/04/2016 16:17:17
+ IP :  ::1 
+Error in: http://localhost:8919/rep_channel.aspx. Error Message:BindReportMpCodeFromService >> Column 'mp_code' does not belong to table Table.
+__________________________
+
+Log Entry : 
+22/04/2016 16:17:33
+ IP :  ::1 
+Error in: http://localhost:8919/rep_channel.aspx. Error Message:BindReportMpCodeFromService >> Column 'mp_code' does not belong to table Table.
+__________________________
+
+Log Entry : 
+22/04/2016 16:17:40
+ IP :  ::1 
+Error in: http://localhost:8919/rep_channel.aspx. Error Message:BindReportMpCodeFromService >> Column 'mp_code' does not belong to table Table.
+__________________________
+
+Log Entry : 
+22/04/2016 16:17:47
+ IP :  ::1 
+Error in: http://localhost:8919/rep_channel.aspx. Error Message:BindReportMpCodeFromService >> Column 'mp_code' does not belong to table Table.
+__________________________
+
+Log Entry : 
+22/04/2016 16:19:06
+ IP :  ::1 
+Error in: http://localhost:8919/rep_channel.aspx. Error Message:BindReportMpCodeFromService >> Column 'mp_code' does not belong to table Table.
+__________________________
+
+Log Entry : 
+22/04/2016 16:19:08
+ IP :  ::1 
+Error in: http://localhost:8919/rep_channel.aspx. Error Message:BindReportMpCodeFromService >> Column 'mp_code' does not belong to table Table.
+__________________________
+
+Log Entry : 
+22/04/2016 16:31:09
+ IP :  ::1 
+Error in: http://localhost:8919/rep_channel.aspx. Error Message:BindReportMpCodeFromService >> Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+__________________________
+
+Log Entry : 
+22/04/2016 16:31:15
+ IP :  ::1 
+Error in: http://localhost:8919/rep_channel.aspx. Error Message:BindReportMpCodeFromService >> Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+__________________________
+
+Log Entry : 
+22/04/2016 16:31:19
+ IP :  ::1 
+Error in: http://localhost:8919/rep_channel.aspx. Error Message:BindReportMpCodeFromService >> Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+__________________________
+
+Log Entry : 
+22/04/2016 16:31:37
+ IP :  ::1 
+Error in: http://localhost:8919/rep_channel.aspx. Error Message:BindReportMpCodeFromService >> Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+__________________________
+
+Log Entry : 
+22/04/2016 17:10:11
+ IP :  ::1 
+Error in: http://localhost:8919/rep_channel.aspx. Error Message:BindReportMpCodeFromService >> Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+__________________________

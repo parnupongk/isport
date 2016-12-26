@@ -1,0 +1,71 @@
+
+Log Entry : 
+09/01/2015 14:56:03
+Error in: http://localhost:52520/detail.aspx. Error Message:Error >>GenHeader >>A transport-level error has occurred when sending the request to the server. (provider: TCP Provider, error: 0 - An existing connection was forcibly closed by the remote host.)
+__________________________
+
+Log Entry : 
+09/01/2015 15:09:57
+Error in: http://localhost:52520/detail.aspx. Error Message:Error >>GenHeader >>Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+__________________________
+
+Log Entry : 
+09/01/2015 15:11:27
+Error in: http://localhost:52520/detail.aspx. Error Message:Error >>GenHeader >>Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+__________________________
+
+Log Entry : 
+09/01/2015 15:11:35
+Error in: http://localhost:52520/detail.aspx. Error Message:Error >>GenHeader >>Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+__________________________
+
+Log Entry : 
+09/01/2015 15:15:19
+Error in: http://localhost:52520/detail.aspx. Error Message:Error >>GenHeader >>Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+__________________________
+
+Log Entry : 
+09/01/2015 15:18:13
+Error in: http://localhost:52520/detail.aspx. Error Message:Error >>GenHeader >>Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+__________________________
+
+Log Entry : 
+09/01/2015 15:19:40
+Error in: http://localhost:52520/detail.aspx. Error Message:Error >>GenHeader >>Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+__________________________
+
+Log Entry : 
+09/01/2015 15:20:25
+Error in: http://localhost:52520/detail.aspx. Error Message:Error >>GenHeader >>Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+__________________________
+
+Log Entry : 
+09/01/2015 15:20:51
+Error in: http://localhost:52520/detail.aspx. Error Message:Error >>GenHeader >>Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+__________________________
+
+Log Entry : 
+09/01/2015 15:21:06
+Error in: http://localhost:52520/detail.aspx. Error Message:Error >>GenHeader >>Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+__________________________
+
+Log Entry : 
+09/01/2015 15:23:44
+Error in: http://localhost:52520/detail.aspx. Error Message:Error >>GenHeader >>Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+__________________________
+
+Log Entry : 
+09/01/2015 15:26:10
+Error in: http://localhost:52520/detail.aspx. Error Message:Error >>GenHeader >>Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+__________________________

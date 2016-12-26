@@ -1,0 +1,78 @@
+
+Log Entry : 
+14/03/2016 14:21:47
+ IP :  ::1 
+Error in: http://localhost:60878/index.aspx. Error Message:Error >>OCIEnvCreate failed with return code -1 but error message text was not available.
+__________________________
+
+Log Entry : 
+14/03/2016 14:22:49
+ IP :  ::1 
+Error in: http://localhost:60878/index.aspx. Error Message:Error >>OCIEnvCreate failed with return code -1 but error message text was not available.
+__________________________
+
+Log Entry : 
+14/03/2016 14:23:01
+ IP :  ::1 
+Error in: http://localhost:60878/index.aspx. Error Message:Error >>OCIEnvCreate failed with return code -1 but error message text was not available.
+__________________________
+
+Log Entry : 
+14/03/2016 14:23:06
+ IP :  ::1 
+Error in: http://localhost:60878/index.aspx. Error Message:Error >>OCIEnvCreate failed with return code -1 but error message text was not available.
+__________________________
+
+Log Entry : 
+14/03/2016 14:23:22
+ IP :  ::1 
+Error in: http://localhost:60878/index.aspx. Error Message:Error >>OCIEnvCreate failed with return code -1 but error message text was not available.
+__________________________
+
+Log Entry : 
+14/03/2016 14:23:38
+ IP :  ::1 
+Error in: http://localhost:60878/index.aspx. Error Message:Error >>OCIEnvCreate failed with return code -1 but error message text was not available.
+__________________________
+
+Log Entry : 
+14/03/2016 14:23:50
+ IP :  ::1 
+Error in: http://localhost:60878/index.aspx. Error Message:Error >>OCIEnvCreate failed with return code -1 but error message text was not available.
+__________________________
+
+Log Entry : 
+14/03/2016 14:24:02
+ IP :  ::1 
+Error in: http://localhost:60878/index.aspx. Error Message:Error >>OCIEnvCreate failed with return code -1 but error message text was not available.
+__________________________
+
+Log Entry : 
+14/03/2016 14:24:24
+ IP :  ::1 
+Error in: http://localhost:60878/index.aspx. Error Message:Error >>OCIEnvCreate failed with return code -1 but error message text was not available.
+__________________________
+
+Log Entry : 
+14/03/2016 14:25:47
+ IP :  ::1 
+Error in: http://localhost:60878/index.aspx. Error Message:Error >>OCIEnvCreate failed with return code -1 but error message text was not available.
+__________________________
+
+Log Entry : 
+14/03/2016 14:26:40
+ IP :  ::1 
+Error in: http://localhost:60878/index.aspx. Error Message:Error >>OCIEnvCreate failed with return code -1 but error message text was not available.
+__________________________
+
+Log Entry : 
+14/03/2016 14:26:58
+ IP :  ::1 
+Error in: http://localhost:60878/index.aspx. Error Message:Error >>OCIEnvCreate failed with return code -1 but error message text was not available.
+__________________________
+
+Log Entry : 
+14/03/2016 14:29:35
+ IP :  ::1 
+Error in: http://localhost:60878/index.aspx. Error Message:Error >>OCIEnvCreate failed with return code -1 but error message text was not available.
+__________________________

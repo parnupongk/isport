@@ -1,0 +1,18 @@
+
+Log Entry : 
+26/08/2015 11:07:00
+ IP :  ::1 
+Error in: http://localhost:60878/admin/adminshortener.aspx. Error Message:DataBindData >> OCIEnvCreate failed with return code -1 but error message text was not available.
+__________________________
+
+Log Entry : 
+26/08/2015 11:07:15
+ IP :  ::1 
+Error in: http://localhost:60878/admin/adminshortener.aspx. Error Message:DataBindData >> OCIEnvCreate failed with return code -1 but error message text was not available.
+__________________________
+
+Log Entry : 
+26/08/2015 11:07:24
+ IP :  ::1 
+Error in: http://localhost:60878/admin/adminshortener.aspx. Error Message:DataBindData >> OCIEnvCreate failed with return code -1 but error message text was not available.
+__________________________

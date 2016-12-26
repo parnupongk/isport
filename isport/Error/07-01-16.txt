@@ -1,0 +1,24 @@
+
+Log Entry : 
+07/01/2016 14:00:11
+ IP :  ::1 
+Error in: http://localhost:60878/indexl.aspx. Error Message:Error >>Object reference not set to an instance of an object.
+__________________________
+
+Log Entry : 
+07/01/2016 14:01:29
+ IP :  ::1 
+Error in: http://localhost:60878/indexl.aspx. Error Message:Error >>Object reference not set to an instance of an object.
+__________________________
+
+Log Entry : 
+07/01/2016 14:02:07
+ IP :  ::1 
+Error in: http://localhost:60878/indexl.aspx?p=sportbuffet_sub. Error Message:Error >>Subscribe_portal_log_Insert>>OCIEnvCreate failed with return code -1 but error message text was not available.
+__________________________
+
+Log Entry : 
+07/01/2016 14:02:52
+ IP :  ::1 
+Error in: http://localhost:60878/indexl.aspx?p=sportbuffet_sub. Error Message:Error >>Subscribe_portal_log_Insert>>OCIEnvCreate failed with return code -1 but error message text was not available.
+__________________________

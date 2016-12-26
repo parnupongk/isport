@@ -1,0 +1,16 @@
+
+Log Entry : 
+01/08/2016 14:50:12
+ IP :  ::1 
+Error in: http://localhost:60878/admin/newpage.aspx. Error Message:video/mp4
+__________________________
+
+Log Entry : 
+01/08/2016 14:50:34
+ IP :  ::1 
+Error in: http://localhost:60878/admin/newpage.aspx. Error Message:System.Net.Sockets.SocketException (0x80004005): A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond 203.149.30.25:22
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   at Tamir.SharpSsh.java.net.Socket..ctor(String host, Int32 port)
+   at Tamir.SharpSsh.jsch.Util.createSocket(String host, Int32 port, Int32 timeout)
+__________________________

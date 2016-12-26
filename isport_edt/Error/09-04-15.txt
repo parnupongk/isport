@@ -1,0 +1,21 @@
+
+Log Entry : 
+09/04/2015 15:28:04
+ IP :  127.0.0.1 
+Error in: http://localhost:52520/index.aspx. Error Message:Error >>PreGenContent >> ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+09/04/2015 15:29:33
+ IP :  127.0.0.1 
+Error in: http://localhost:52520/index.aspx. Error Message:Error >>PreGenContent >> ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+09/04/2015 15:29:46
+ IP :  127.0.0.1 
+Error in: http://localhost:52520/index.aspx?p=edtguide. Error Message:Error >>PreGenContent >> ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________

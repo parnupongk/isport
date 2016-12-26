@@ -1,0 +1,51 @@
+
+Log Entry : 
+30/10/2013 09:42:18
+Error in: http://localhost:19321/detail.aspx?lng=L&mp_code=0025&size=&prj=1&sg=&scs_id=&pcntid=619876&pcat=176. Error Message:GenContent >> ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+30/10/2013 09:42:44
+Error in: http://localhost:19321/detail.aspx?lng=L&mp_code=0025&size=&prj=1&sg=&scs_id=&pcntid=1170166&pcat=176. Error Message:GenContent >> ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+30/10/2013 10:04:55
+Error in: http://localhost:19321/indexh.aspx. Error Message:Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+30/10/2013 10:44:03
+Error in: http://localhost:19321/indexh.aspx. Error Message:Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+30/10/2013 16:06:49
+Error in: http://localhost:19321/indexh.aspx. Error Message:Error >>Object reference not set to an instance of an object.
+__________________________
+
+Log Entry : 
+30/10/2013 16:07:57
+Error in: http://localhost:19321/indexh.aspx. Error Message:Error >>Object reference not set to an instance of an object.
+__________________________
+
+Log Entry : 
+30/10/2013 16:08:36
+Error in: http://localhost:19321/indexh.aspx. Error Message:Error >>Object reference not set to an instance of an object.
+__________________________
+
+Log Entry : 
+30/10/2013 16:09:15
+Error in: http://localhost:19321/indexh.aspx. Error Message:Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________
+
+Log Entry : 
+30/10/2013 16:09:43
+Error in: http://localhost:19321/indexh.aspx. Error Message:Subscribe_portal_log_Insert>>ORA-12154: TNS:could not resolve the connect identifier specified
+
+__________________________

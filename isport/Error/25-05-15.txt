@@ -1,0 +1,179 @@
+
+Log Entry : 
+25/05/2015 16:10:32
+ IP :  127.0.0.1 
+Error in: http://localhost:60878/admin/adminapplication.aspx?contextKey={DA8BEDC8-B952-4d5d-8CC2-59FE922E2923}&done=1&guid=3275B65D-E0C8-9D49-D569-FA93FDA58D34. Error Message:Session.connect: System.IO.FileNotFoundException: Could not load file or assembly 'DiffieHellman, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies. The system cannot find the file specified.
+File name: 'DiffieHellman, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'
+   at Tamir.SharpSsh.jsch.jce.DH.getE()
+   at Tamir.SharpSsh.jsch.DHG1.init(Session session, Byte[] V_S, Byte[] V_C, Byte[] I_S, Byte[] I_C)
+   at Tamir.SharpSsh.jsch.Session.receive_kexinit(Buffer buf)
+   at Tamir.SharpSsh.jsch.Session.connect(Int32 connectTimeout)
+
+=== Pre-bind state information ===
+LOG: User = parnupong\bom
+LOG: DisplayName = DiffieHellman, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+ (Fully-specified)
+LOG: Appbase = file:///E:/samart/wap_Source/UAT/isport/isport/
+LOG: Initial PrivatePath = E:\samart\wap_Source\UAT\isport\isport\bin
+Calling assembly : Tamir.SharpSSH, Version=1.1.1.13, Culture=neutral, PublicKeyToken=null.
+===
+LOG: This bind starts in default load context.
+LOG: Using application configuration file: E:\samart\wap_Source\UAT\isport\isport\web.config
+LOG: Using machine configuration file from C:\Windows\Microsoft.NET\Framework\v2.0.50727\config\machine.config.
+LOG: Policy not being applied to reference at this time (private, custom, partial, or location-based assembly bind).
+LOG: Attempting download of new URL file:///C:/Windows/Microsoft.NET/Framework/v2.0.50727/Temporary ASP.NET Files/root/bbc97fb1/49eaef9b/DiffieHellman.DLL.
+LOG: Attempting download of new URL file:///C:/Windows/Microsoft.NET/Framework/v2.0.50727/Temporary ASP.NET Files/root/bbc97fb1/49eaef9b/DiffieHellman/DiffieHellman.DLL.
+LOG: Attempting download of new URL file:///E:/samart/wap_Source/UAT/isport/isport/bin/DiffieHellman.DLL.
+LOG: Attempting download of new URL file:///E:/samart/wap_Source/UAT/isport/isport/bin/DiffieHellman/DiffieHellman.DLL.
+LOG: Attempting download of new URL file:///C:/Windows/Microsoft.NET/Framework/v2.0.50727/Temporary ASP.NET Files/root/bbc97fb1/49eaef9b/DiffieHellman.EXE.
+LOG: Attempting download of new URL file:///C:/Windows/Microsoft.NET/Framework/v2.0.50727/Temporary ASP.NET Files/root/bbc97fb1/49eaef9b/DiffieHellman/DiffieHellman.EXE.
+LOG: Attempting download of new URL file:///E:/samart/wap_Source/UAT/isport/isport/bin/DiffieHellman.EXE.
+LOG: Attempting download of new URL file:///E:/samart/wap_Source/UAT/isport/isport/bin/DiffieHellman/DiffieHellman.EXE.
+
+__________________________
+
+Log Entry : 
+25/05/2015 16:10:49
+ IP :  127.0.0.1 
+Error in: http://localhost:60878/admin/adminapplication.aspx?contextKey={DA8BEDC8-B952-4d5d-8CC2-59FE922E2923}&done=1&guid=8B6BDCEA-4246-37DF-D2F9-B3825CCD7E17. Error Message:Session.connect: System.IO.FileNotFoundException: Could not load file or assembly 'DiffieHellman, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies. The system cannot find the file specified.
+File name: 'DiffieHellman, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'
+   at Tamir.SharpSsh.jsch.jce.DH.getE()
+   at Tamir.SharpSsh.jsch.DHG1.init(Session session, Byte[] V_S, Byte[] V_C, Byte[] I_S, Byte[] I_C)
+   at Tamir.SharpSsh.jsch.Session.receive_kexinit(Buffer buf)
+   at Tamir.SharpSsh.jsch.Session.connect(Int32 connectTimeout)
+
+=== Pre-bind state information ===
+LOG: User = parnupong\bom
+LOG: DisplayName = DiffieHellman, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+ (Fully-specified)
+LOG: Appbase = file:///E:/samart/wap_Source/UAT/isport/isport/
+LOG: Initial PrivatePath = E:\samart\wap_Source\UAT\isport\isport\bin
+Calling assembly : Tamir.SharpSSH, Version=1.1.1.13, Culture=neutral, PublicKeyToken=null.
+===
+LOG: This bind starts in default load context.
+LOG: Using application configuration file: E:\samart\wap_Source\UAT\isport\isport\web.config
+LOG: Using machine configuration file from C:\Windows\Microsoft.NET\Framework\v2.0.50727\config\machine.config.
+LOG: Policy not being applied to reference at this time (private, custom, partial, or location-based assembly bind).
+LOG: The same bind was seen before, and was failed with hr = 0x80070002.
+
+__________________________
+
+Log Entry : 
+25/05/2015 16:49:28
+ IP :  127.0.0.1 
+Error in: http://localhost:60878/admin/upWowza.asmx. Error Message:Session.connect: System.IO.FileNotFoundException: Could not load file or assembly 'DiffieHellman, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies. The system cannot find the file specified.
+File name: 'DiffieHellman, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'
+   at Tamir.SharpSsh.jsch.jce.DH.getE()
+   at Tamir.SharpSsh.jsch.DHG1.init(Session session, Byte[] V_S, Byte[] V_C, Byte[] I_S, Byte[] I_C)
+   at Tamir.SharpSsh.jsch.Session.receive_kexinit(Buffer buf)
+   at Tamir.SharpSsh.jsch.Session.connect(Int32 connectTimeout)
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+__________________________
+
+Log Entry : 
+25/05/2015 16:49:29
+ IP :  127.0.0.1 
+Error in: http://localhost:60878/admin/upWowza.asmx. Error Message:Session.connect: System.IO.FileNotFoundException: Could not load file or assembly 'DiffieHellman, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies. The system cannot find the file specified.
+File name: 'DiffieHellman, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'
+   at Tamir.SharpSsh.jsch.jce.DH.getE()
+   at Tamir.SharpSsh.jsch.DHG1.init(Session session, Byte[] V_S, Byte[] V_C, Byte[] I_S, Byte[] I_C)
+   at Tamir.SharpSsh.jsch.Session.receive_kexinit(Buffer buf)
+   at Tamir.SharpSsh.jsch.Session.connect(Int32 connectTimeout)
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+__________________________
+
+Log Entry : 
+25/05/2015 16:52:02
+ IP :  127.0.0.1 
+Error in: http://localhost:60878/admin/upWowza.asmx. Error Message:Session.connect: System.IO.FileNotFoundException: Could not load file or assembly 'DiffieHellman, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies. The system cannot find the file specified.
+File name: 'DiffieHellman, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'
+   at Tamir.SharpSsh.jsch.jce.DH.getE()
+   at Tamir.SharpSsh.jsch.DHG1.init(Session session, Byte[] V_S, Byte[] V_C, Byte[] I_S, Byte[] I_C)
+   at Tamir.SharpSsh.jsch.Session.receive_kexinit(Buffer buf)
+   at Tamir.SharpSsh.jsch.Session.connect(Int32 connectTimeout)
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+__________________________
+
+Log Entry : 
+25/05/2015 16:52:22
+ IP :  127.0.0.1 
+Error in: http://localhost:60878/admin/upWowza.asmx. Error Message:Session.connect: System.IO.FileNotFoundException: Could not load file or assembly 'DiffieHellman, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies. The system cannot find the file specified.
+File name: 'DiffieHellman, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'
+   at Tamir.SharpSsh.jsch.jce.DH.getE()
+   at Tamir.SharpSsh.jsch.DHG1.init(Session session, Byte[] V_S, Byte[] V_C, Byte[] I_S, Byte[] I_C)
+   at Tamir.SharpSsh.jsch.Session.receive_kexinit(Buffer buf)
+   at Tamir.SharpSsh.jsch.Session.connect(Int32 connectTimeout)
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+__________________________
+
+Log Entry : 
+25/05/2015 16:53:43
+ IP :  127.0.0.1 
+Error in: http://localhost:60878/admin/upWowza.asmx. Error Message:Session.connect: System.IO.FileNotFoundException: Could not load file or assembly 'DiffieHellman, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies. The system cannot find the file specified.
+File name: 'DiffieHellman, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'
+   at Tamir.SharpSsh.jsch.jce.DH.getE()
+   at Tamir.SharpSsh.jsch.DHG1.init(Session session, Byte[] V_S, Byte[] V_C, Byte[] I_S, Byte[] I_C)
+   at Tamir.SharpSsh.jsch.Session.receive_kexinit(Buffer buf)
+   at Tamir.SharpSsh.jsch.Session.connect(Int32 connectTimeout)
+
+=== Pre-bind state information ===
+LOG: User = parnupong\bom
+LOG: DisplayName = DiffieHellman, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+ (Fully-specified)
+LOG: Appbase = file:///E:/samart/wap_Source/UAT/isport/isport/
+LOG: Initial PrivatePath = E:\samart\wap_Source\UAT\isport\isport\bin
+Calling assembly : Tamir.SharpSSH, Version=1.1.1.13, Culture=neutral, PublicKeyToken=null.
+===
+LOG: This bind starts in default load context.
+LOG: Using application configuration file: E:\samart\wap_Source\UAT\isport\isport\web.config
+LOG: Using machine configuration file from C:\Windows\Microsoft.NET\Framework\v2.0.50727\config\machine.config.
+LOG: Policy not being applied to reference at this time (private, custom, partial, or location-based assembly bind).
+LOG: The same bind was seen before, and was failed with hr = 0x80070002.
+
+__________________________
+
+Log Entry : 
+25/05/2015 16:53:53
+ IP :  127.0.0.1 
+Error in: http://localhost:60878/admin/upWowza.asmx. Error Message:Session.connect: System.IO.FileNotFoundException: Could not load file or assembly 'DiffieHellman, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies. The system cannot find the file specified.
+File name: 'DiffieHellman, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'
+   at Tamir.SharpSsh.jsch.jce.DH.getE()
+   at Tamir.SharpSsh.jsch.DHG1.init(Session session, Byte[] V_S, Byte[] V_C, Byte[] I_S, Byte[] I_C)
+   at Tamir.SharpSsh.jsch.Session.receive_kexinit(Buffer buf)
+   at Tamir.SharpSsh.jsch.Session.connect(Int32 connectTimeout)
+
+=== Pre-bind state information ===
+LOG: User = parnupong\bom
+LOG: DisplayName = DiffieHellman, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+ (Fully-specified)
+LOG: Appbase = file:///E:/samart/wap_Source/UAT/isport/isport/
+LOG: Initial PrivatePath = E:\samart\wap_Source\UAT\isport\isport\bin
+Calling assembly : Tamir.SharpSSH, Version=1.1.1.13, Culture=neutral, PublicKeyToken=null.
+===
+LOG: This bind starts in default load context.
+LOG: Using application configuration file: E:\samart\wap_Source\UAT\isport\isport\web.config
+LOG: Using machine configuration file from C:\Windows\Microsoft.NET\Framework\v2.0.50727\config\machine.config.
+LOG: Policy not being applied to reference at this time (private, custom, partial, or location-based assembly bind).
+LOG: The same bind was seen before, and was failed with hr = 0x80070002.
+
+__________________________

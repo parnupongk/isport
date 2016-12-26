@@ -1,0 +1,1082 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B3C51344-4827-4F1C-B039-FEAC5CB058CB}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>isport</RootNamespace>
+    <AssemblyName>isport</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <TargetFrameworkProfile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <PackageAsSingleFile>false</PackageAsSingleFile>
+    <GenerateSerializationAssemblies>On</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <DeployIisAppPath>localhost/isportui</DeployIisAppPath>
+    <PackageAsSingleFile>false</PackageAsSingleFile>
+    <ExcludeGeneratedDebugSymbol>false</ExcludeGeneratedDebugSymbol>
+    <PublishDatabases>false</PublishDatabases>
+    <PublishDatabaseSettings>
+      <Objects>
+      </Objects>
+    </PublishDatabaseSettings>
+    <DesktopBuildPackageLocation>C:\inetpub\wwwroot\</DesktopBuildPackageLocation>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=3.5.7.1213, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\SDK\AjaxControlToolkit.Binary.NET35\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="AjaxMin, Version=4.97.4951.28478, Culture=neutral, PublicKeyToken=21ef50ce11b5d80f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\SDK\AjaxControlToolkit.Binary.NET35\AjaxMin.dll</HintPath>
+    </Reference>
+    <Reference Include="BouncyCastle.Crypto, Version=1.7.4137.9688, Culture=neutral, PublicKeyToken=a4292a325f69b123, processorArchitecture=MSIL">
+      <HintPath>..\packages\BouncyCastle.1.7.0\lib\Net40-Client\BouncyCastle.Crypto.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Data.v8.1, Version=8.1.4.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Web.ASPxEditors.v8.1, Version=8.1.4.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Web.ASPxGridView.v8.1, Version=8.1.4.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Windows\assembly\GAC_MSIL\DevExpress.Web.ASPxGridView.v8.1\8.1.4.0__9b171c9fd64da1d1\DevExpress.Web.ASPxGridView.v8.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Web.ASPxHtmlEditor.v8.1, Version=8.1.4.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Windows\assembly\GAC_MSIL\DevExpress.Web.ASPxHtmlEditor.v8.1\8.1.4.0__9b171c9fd64da1d1\DevExpress.Web.ASPxHtmlEditor.v8.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Web.v8.1, Version=8.1.4.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1, processorArchitecture=MSIL" />
+    <Reference Include="DiffieHellman">
+      <HintPath>C:\inetpub\wwwroot\isportui\bin\DiffieHellman.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.13.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>..\packages\log4net.2.0.3\lib\net40-full\log4net.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationBlocks.Data, Version=2.0.0.0, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\MyProject\MittareBizPolicy\bin\Debug\Microsoft.ApplicationBlocks.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="MobileLibrary, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\MobileLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.1\lib\net40\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Org.Mentalis.Security">
+      <HintPath>C:\inetpub\wwwroot\isportui\bin\Org.Mentalis.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel.Web">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Tamir.SharpSSH, Version=1.1.1.13, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\bom\Desktop\SharpSSH-1.1.1.13.bin\SharpSSH-1.1.1.13.bin\Tamir.SharpSSH.dll</HintPath>
+    </Reference>
+    <Reference Include="WebLibrary, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\WebLibrary.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="admin\adminapplication.aspx" />
+    <Content Include="admin\adminedtreloadapi.aspx" />
+    <Content Include="admin\adminNotify.aspx" />
+    <Content Include="admin\upWowza.asmx" />
+    <Content Include="bin\AjaxControlToolkit.dll" />
+    <Content Include="bin\AjaxMin.dll" />
+    <Content Include="bin\ar\AjaxControlToolkit.resources.dll" />
+    <Content Include="bin\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll" />
+    <Content Include="bin\cs\AjaxControlToolkit.resources.dll" />
+    <Content Include="bin\DevExpress.Data.v8.1.dll" />
+    <Content Include="bin\DevExpress.Web.ASPxEditors.v8.1.dll" />
+    <Content Include="bin\DevExpress.Web.ASPxGridView.v8.1.dll" />
+    <Content Include="bin\DevExpress.Web.ASPxHtmlEditor.v8.1.dll" />
+    <Content Include="bin\DevExpress.Web.v8.1.dll" />
+    <Content Include="bin\de\AjaxControlToolkit.resources.dll" />
+    <Content Include="bin\DiffieHellman.dll" />
+    <Content Include="bin\EnvDTE.dll" />
+    <Content Include="bin\es\AjaxControlToolkit.resources.dll" />
+    <Content Include="bin\fr\AjaxControlToolkit.resources.dll" />
+    <Content Include="bin\glyphicons-halflings-regular.svg" />
+    <Content Include="bin\he\AjaxControlToolkit.resources.dll" />
+    <Content Include="bin\hi\AjaxControlToolkit.resources.dll" />
+    <Content Include="bin\isport.dll" />
+    <Content Include="bin\isport.pdb" />
+    <Content Include="bin\isport.XmlSerializers.dll" />
+    <Content Include="bin\isport_service.dll" />
+    <Content Include="bin\isport_service.pdb" />
+    <Content Include="bin\isport_service.XmlSerializers.dll" />
+    <Content Include="bin\it\AjaxControlToolkit.resources.dll" />
+    <Content Include="bin\ja\AjaxControlToolkit.resources.dll" />
+    <Content Include="bin\ko\AjaxControlToolkit.resources.dll" />
+    <Content Include="bin\Microsoft.ApplicationBlocks.Data.dll" />
+    <Content Include="bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml" />
+    <Content Include="bin\MobileLibrary.dll" />
+    <Content Include="bin\nl\AjaxControlToolkit.resources.dll" />
+    <Content Include="bin\OracleDataAccress.dll" />
+    <Content Include="bin\OracleDataAccress.pdb" />
+    <Content Include="bin\Org.Mentalis.Security.dll" />
+    <Content Include="bin\pl\AjaxControlToolkit.resources.dll" />
+    <Content Include="bin\pt\AjaxControlToolkit.resources.dll" />
+    <Content Include="bin\ru\AjaxControlToolkit.resources.dll" />
+    <Content Include="bin\stdole.dll" />
+    <Content Include="bin\Tamir.SharpSSH.dll" />
+    <Content Include="bin\tr-TR\AjaxControlToolkit.resources.dll" />
+    <Content Include="bin\WebLibrary.dll" />
+    <Content Include="bin\zh-CHS\AjaxControlToolkit.resources.dll" />
+    <Content Include="bin\zh-CHT\AjaxControlToolkit.resources.dll" />
+    <Content Include="Error\01-02-16.txt" />
+    <Content Include="images\bg-reward-gold.png" />
+    <Content Include="images\close_btn.png" />
+    <Content Include="images\home_88.png" />
+    <Content Include="images\logo-isport.png" />
+    <Content Include="images\news-icon.png" />
+    <Content Include="Scripts\dropzone\basic.css" />
+    <Content Include="Scripts\dropzone\basic.min.css" />
+    <Content Include="Scripts\dropzone\dropzone-amd-module.js" />
+    <Content Include="Scripts\dropzone\dropzone-amd-module.min.js" />
+    <Content Include="Scripts\dropzone\dropzone.css" />
+    <Content Include="Scripts\dropzone\dropzone.js" />
+    <Content Include="Scripts\dropzone\dropzone.min.css" />
+    <Content Include="Scripts\dropzone\dropzone.min.js" />
+    <Content Include="Setting\MenuTopUser.xml" />
+    <None Include="bin\glyphicons-halflings-regular.eot" />
+    <None Include="bin\glyphicons-halflings-regular.ttf" />
+    <None Include="bin\glyphicons-halflings-regular.woff" />
+    <Content Include="bin\isport.dll.config" />
+    <Content Include="packages.config" />
+    <None Include="Properties\PublishProfiles\isportui.pubxml" />
+    <None Include="Properties\PublishProfiles\isportui_.pubxml" />
+    <None Include="Web References\WSUpWowZa\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\WSUpWowZa\upWowza.disco" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="admin\adminapplication.aspx.cs">
+      <DependentUpon>adminapplication.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\adminapplication.aspx.designer.cs">
+      <DependentUpon>adminapplication.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\adminedtreloadapi.aspx.cs">
+      <DependentUpon>adminedtreloadapi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\adminedtreloadapi.aspx.designer.cs">
+      <DependentUpon>adminedtreloadapi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\adminfooter.aspx.cs">
+      <DependentUpon>adminfooter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\adminfooter.aspx.designer.cs">
+      <DependentUpon>adminfooter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\adminheader.aspx.cs">
+      <DependentUpon>adminheader.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\adminheader.aspx.designer.cs">
+      <DependentUpon>adminheader.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\adminimages.aspx.cs">
+      <DependentUpon>adminimages.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\adminimages.aspx.designer.cs">
+      <DependentUpon>adminimages.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\adminMaster.Master.cs">
+      <DependentUpon>adminMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\adminMaster.Master.designer.cs">
+      <DependentUpon>adminMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="admin\adminNotify.aspx.cs">
+      <DependentUpon>adminNotify.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\adminNotify.aspx.designer.cs">
+      <DependentUpon>adminNotify.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\newpage.aspx.cs">
+      <DependentUpon>newpage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\newpage.aspx.designer.cs">
+      <DependentUpon>newpage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\upWowza.asmx.cs">
+      <DependentUpon>upWowza.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AppCode\AppCodeSportCC.cs" />
+    <Compile Include="AppCode\AppCodeOracle.cs" />
+    <Compile Include="AppCode\AppCode.cs" />
+    <Compile Include="AppCode\AppImages.cs" />
+    <Compile Include="AppCode\AppMain.cs" />
+    <Compile Include="AppCode\AppCode_CheckActive.cs" />
+    <Compile Include="check.aspx.cs">
+      <DependentUpon>check.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="check.aspx.designer.cs">
+      <DependentUpon>check.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="football_result_detail.aspx.cs">
+      <DependentUpon>football_result_detail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="football_result_detail.aspx.designer.cs">
+      <DependentUpon>football_result_detail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="football_static.aspx.cs">
+      <DependentUpon>football_static.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="football_static.aspx.designer.cs">
+      <DependentUpon>football_static.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="indexl.aspx.cs">
+      <DependentUpon>indexl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="indexl.aspx.designer.cs">
+      <DependentUpon>indexl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="detail.aspx.cs">
+      <DependentUpon>detail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="detail.aspx.designer.cs">
+      <DependentUpon>detail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="football_news_detail.aspx.cs">
+      <DependentUpon>football_news_detail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="football_news_detail.aspx.designer.cs">
+      <DependentUpon>football_news_detail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="indexh.aspx.cs">
+      <DependentUpon>indexh.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="indexh.aspx.designer.cs">
+      <DependentUpon>indexh.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="isportDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>isportDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="mobilestyle.ascx.cs">
+      <DependentUpon>mobilestyle.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mobilestyle.ascx.designer.cs">
+      <DependentUpon>mobilestyle.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="reqcheck.aspx.cs">
+      <DependentUpon>reqcheck.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="reqcheck.aspx.designer.cs">
+      <DependentUpon>reqcheck.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="screen.aspx.cs">
+      <DependentUpon>screen.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="screen.aspx.designer.cs">
+      <DependentUpon>screen.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sportcc_i1.aspx.cs">
+      <DependentUpon>sportcc_i1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sportcc_i1.aspx.designer.cs">
+      <DependentUpon>sportcc_i1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sportcc_icountry.aspx.cs">
+      <DependentUpon>sportcc_icountry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sportcc_icountry.aspx.designer.cs">
+      <DependentUpon>sportcc_icountry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sportcc_ileague.aspx.cs">
+      <DependentUpon>sportcc_ileague.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sportcc_ileague.aspx.designer.cs">
+      <DependentUpon>sportcc_ileague.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sportcc_imatcheven.aspx.cs">
+      <DependentUpon>sportcc_imatcheven.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sportcc_imatcheven.aspx.designer.cs">
+      <DependentUpon>sportcc_imatcheven.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sportcc_iprogram.aspx.cs">
+      <DependentUpon>sportcc_iprogram.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sportcc_iprogram.aspx.designer.cs">
+      <DependentUpon>sportcc_iprogram.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sportcc_istatic.aspx.cs">
+      <DependentUpon>sportcc_istatic.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sportcc_istatic.aspx.designer.cs">
+      <DependentUpon>sportcc_istatic.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sportcc_itable.aspx.cs">
+      <DependentUpon>sportcc_itable.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sportcc_itable.aspx.designer.cs">
+      <DependentUpon>sportcc_itable.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="test.aspx.cs">
+      <DependentUpon>test.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="test.aspx.designer.cs">
+      <DependentUpon>test.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="userControl\muSportCC.ascx.cs">
+      <DependentUpon>muSportCC.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="userControl\muSportCC.ascx.designer.cs">
+      <DependentUpon>muSportCC.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="redirect.aspx.cs">
+      <DependentUpon>redirect.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="redirect.aspx.designer.cs">
+      <DependentUpon>redirect.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sportcc_i.aspx.cs">
+      <DependentUpon>sportcc_i.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sportcc_i.aspx.designer.cs">
+      <DependentUpon>sportcc_i.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="userControl\uFootballLiveScore.ascx.cs">
+      <DependentUpon>uFootballLiveScore.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="userControl\uFootballLiveScore.ascx.designer.cs">
+      <DependentUpon>uFootballLiveScore.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="userControl\muContent.ascx.cs">
+      <DependentUpon>muContent.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="userControl\muContent.ascx.designer.cs">
+      <DependentUpon>muContent.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="userControl\muFooter.ascx.cs">
+      <DependentUpon>muFooter.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="userControl\muFooter.ascx.designer.cs">
+      <DependentUpon>muFooter.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="userControl\muHeader.ascx.cs">
+      <DependentUpon>muHeader.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="userControl\muHeader.ascx.designer.cs">
+      <DependentUpon>muHeader.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="userControl\uFootballTable.ascx.cs">
+      <DependentUpon>uFootballTable.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="userControl\uFootballTable.ascx.designer.cs">
+      <DependentUpon>uFootballTable.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="userControl\uMenu.ascx.cs">
+      <DependentUpon>uMenu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="userControl\uMenu.ascx.designer.cs">
+      <DependentUpon>uMenu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="wapMaster.Master.cs">
+      <DependentUpon>wapMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="wapMaster.Master.designer.cs">
+      <DependentUpon>wapMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\SendService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WSUpWowZa\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="wapMaster.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="admin\adminfooter.aspx" />
+    <Content Include="admin\adminheader.aspx" />
+    <Content Include="admin\adminimages.aspx" />
+    <Content Include="admin\adminMaster.Master" />
+    <Content Include="admin\images\bt-search.gif" />
+    <Content Include="admin\images\foot.jpg" />
+    <Content Include="admin\images\foot_bg.jpg" />
+    <Content Include="admin\images\head2.jpg" />
+    <Content Include="admin\images\head_bg.jpg" />
+    <Content Include="admin\images\icon_trashcan.gif" />
+    <Content Include="admin\images\Loading.gif" />
+    <Content Include="admin\images\Styles_admin.css" />
+    <Content Include="admin\images\submit2.gif" />
+    <Content Include="admin\images\tabmenu_bg.jpg" />
+    <Content Include="admin\index.aspx" />
+    <Content Include="admin\login.aspx" />
+    <Content Include="admin\newpage.aspx" />
+    <Content Include="App_Themes\Blue\Web\dvItemBack.gif" />
+    <Content Include="App_Themes\Blue\Web\dvLastDisabled.png" />
+    <Content Include="App_Themes\Blue\Web\hlTail.gif" />
+    <Content Include="App_Themes\Blue\Web\Loading.gif" />
+    <Content Include="App_Themes\Blue\Web\mHorizontalPopOut.gif" />
+    <Content Include="App_Themes\Blue\Web\mItemBack.gif" />
+    <Content Include="App_Themes\Blue\Web\mItemHBack.gif" />
+    <Content Include="App_Themes\Blue\Web\mItemSBack.gif" />
+    <Content Include="App_Themes\Blue\Web\mLargeItemBack.gif" />
+    <Content Include="App_Themes\Blue\Web\mLargeItemHBack.gif" />
+    <Content Include="App_Themes\Blue\Web\mLargeItemSBack.gif" />
+    <Content Include="App_Themes\Blue\Web\mPopupSeparatorBack.gif" />
+    <Content Include="App_Themes\Blue\Web\mSeparatorBack.gif" />
+    <Content Include="App_Themes\Blue\Web\mSubMenuItem.gif" />
+    <Content Include="App_Themes\Blue\Web\mSubMenuItemChecked.gif" />
+    <Content Include="App_Themes\Blue\Web\mVerticalPopOut.gif" />
+    <Content Include="App_Themes\Blue\Web\nbBack.gif" />
+    <Content Include="App_Themes\Blue\Web\nbCollapse.gif" />
+    <Content Include="App_Themes\Blue\Web\nbExpand.gif" />
+    <Content Include="App_Themes\Blue\Web\nbHeaderBack.gif" />
+    <Content Include="App_Themes\Blue\Web\nbHeaderBackCollapsed.gif" />
+    <Content Include="App_Themes\Blue\Web\nbHeaderHBack.gif" />
+    <Content Include="App_Themes\Blue\Web\ncBackToTop.png" />
+    <Content Include="App_Themes\Blue\Web\ncTail.gif" />
+    <Content Include="App_Themes\Blue\Web\pAll.png" />
+    <Content Include="App_Themes\Blue\Web\pAllDisabled.png" />
+    <Content Include="App_Themes\Blue\Web\pcCloseButton.png" />
+    <Content Include="App_Themes\Blue\Web\pcHeaderBack.gif" />
+    <Content Include="App_Themes\Blue\Web\pcModalBack.gif" />
+    <Content Include="App_Themes\Blue\Web\pcSizeGrip.gif" />
+    <Content Include="App_Themes\Blue\Web\pFirst.png" />
+    <Content Include="App_Themes\Blue\Web\pFirstDisabled.png" />
+    <Content Include="App_Themes\Blue\Web\pLast.png" />
+    <Content Include="App_Themes\Blue\Web\pLastDisabled.png" />
+    <Content Include="App_Themes\Blue\Web\pNext.png" />
+    <Content Include="App_Themes\Blue\Web\pNextDisabled.png" />
+    <Content Include="App_Themes\Blue\Web\pPrev.png" />
+    <Content Include="App_Themes\Blue\Web\pPrevDisabled.png" />
+    <Content Include="App_Themes\Blue\Web\rpBottomLeftCorner.png" />
+    <Content Include="App_Themes\Blue\Web\rpBottomRightCorner.png" />
+    <Content Include="App_Themes\Blue\Web\rpHeaderBack.png" />
+    <Content Include="App_Themes\Blue\Web\rpHeaderEdge.png" />
+    <Content Include="App_Themes\Blue\Web\rpNoHeaderTopLeftCorner.png" />
+    <Content Include="App_Themes\Blue\Web\rpNoHeaderTopRightCorner.png" />
+    <Content Include="App_Themes\Blue\Web\rpTopLeftCorner.png" />
+    <Content Include="App_Themes\Blue\Web\rpTopRightCorner.png" />
+    <Content Include="App_Themes\Blue\Web\smBack.gif" />
+    <Content Include="App_Themes\Blue\Web\smFirstLevelBack.gif" />
+    <Content Include="App_Themes\Blue\Web\smSecondLevelBullet.gif" />
+    <Content Include="App_Themes\Blue\Web\styles.css" />
+    <Content Include="App_Themes\Blue\Web\tcHTabBack.gif" />
+    <Content Include="App_Themes\Blue\Web\tcTabABack.gif" />
+    <Content Include="App_Themes\Blue\Web\tcTabBack.gif" />
+    <Content Include="App_Themes\Blue\Web\tiBackToTop.png" />
+    <Content Include="App_Themes\Blue\Web\tiContentBottom.gif" />
+    <Content Include="App_Themes\Glass\Editors\edtButtonBack.gif" />
+    <Content Include="App_Themes\Glass\Editors\edtButtonCheckedBack.gif" />
+    <Content Include="App_Themes\Glass\Editors\edtButtonEditButtonBack.gif" />
+    <Content Include="App_Themes\Glass\Editors\edtButtonHoverBack.gif" />
+    <Content Include="App_Themes\Glass\Editors\edtButtonPressedBack.gif" />
+    <Content Include="App_Themes\Glass\Editors\edtCalendarFNNextYear.gif" />
+    <Content Include="App_Themes\Glass\Editors\edtCalendarFNPrevYear.gif" />
+    <Content Include="App_Themes\Glass\Editors\edtCalendarNextMonth.gif" />
+    <Content Include="App_Themes\Glass\Editors\edtCalendarNextYear.gif" />
+    <Content Include="App_Themes\Glass\Editors\edtCalendarPrevMonth.gif" />
+    <Content Include="App_Themes\Glass\Editors\edtCalendarPrevYear.gif" />
+    <Content Include="App_Themes\Glass\Editors\edtCheckBoxOff.gif" />
+    <Content Include="App_Themes\Glass\Editors\edtCheckBoxOn.gif" />
+    <Content Include="App_Themes\Glass\Editors\edtCheckBoxUndefined.gif" />
+    <Content Include="App_Themes\Glass\Editors\edtDropDown.gif" />
+    <Content Include="App_Themes\Glass\Editors\edtDropDownButtonHoverBack.gif" />
+    <Content Include="App_Themes\Glass\Editors\edtDropDownButtonPressedBack.gif" />
+    <Content Include="App_Themes\Glass\Editors\edtDropDownDisabled.gif" />
+    <Content Include="App_Themes\Glass\Editors\edtEllipsis.gif" />
+    <Content Include="App_Themes\Glass\Editors\edtEllipsisDisabled.gif" />
+    <Content Include="App_Themes\Glass\Editors\edtError.png" />
+    <Content Include="App_Themes\Glass\Editors\edtRadioButtonOff.gif" />
+    <Content Include="App_Themes\Glass\Editors\edtRadioButtonOn.gif" />
+    <Content Include="App_Themes\Glass\Editors\edtSpinDecBtnBack.gif" />
+    <Content Include="App_Themes\Glass\Editors\edtSpinEditDecrementImage.gif" />
+    <Content Include="App_Themes\Glass\Editors\edtSpinEditDecrementImageDisabled.gif" />
+    <Content Include="App_Themes\Glass\Editors\edtSpinEditIncrementImage.gif" />
+    <Content Include="App_Themes\Glass\Editors\edtSpinEditIncrementImageDisabled.gif" />
+    <Content Include="App_Themes\Glass\Editors\edtSpinEditLargeDecImage.gif" />
+    <Content Include="App_Themes\Glass\Editors\edtSpinEditLargeDecImageDisabled.gif" />
+    <Content Include="App_Themes\Glass\Editors\edtSpinEditLargeIncImage.gif" />
+    <Content Include="App_Themes\Glass\Editors\edtSpinEditLargeIncImageDisabled.gif" />
+    <Content Include="App_Themes\Glass\Editors\edtSpinIncBtnBack.gif" />
+    <Content Include="App_Themes\Glass\Editors\edtSpinIncBtnHBack.gif" />
+    <Content Include="App_Themes\Glass\Editors\edtSpinIncBtnPBack.gif" />
+    <Content Include="App_Themes\Glass\Editors\edtSpinLargeIncBtnBack.gif" />
+    <Content Include="App_Themes\Glass\Editors\edtSpinLargeIncBtnHBack.gif" />
+    <Content Include="App_Themes\Glass\Editors\edtSpinLargeIncBtnPBack.gif" />
+    <Content Include="App_Themes\Glass\Editors\Loading.gif" />
+    <Content Include="App_Themes\Glass\Editors\styles.css" />
+    <Content Include="App_Themes\Glass\GridView\gvCollapsedButton.gif" />
+    <Content Include="App_Themes\Glass\GridView\gvCollapsedButton.png" />
+    <Content Include="App_Themes\Glass\GridView\gvDetailCollapsedButton.gif" />
+    <Content Include="App_Themes\Glass\GridView\gvDetailCollapsedButton.png" />
+    <Content Include="App_Themes\Glass\GridView\gvDetailExpandedButton.gif" />
+    <Content Include="App_Themes\Glass\GridView\gvDetailExpandedButton.png" />
+    <Content Include="App_Themes\Glass\GridView\gvDragAndDropArrowDown.gif" />
+    <Content Include="App_Themes\Glass\GridView\gvDragAndDropArrowUp.gif" />
+    <Content Include="App_Themes\Glass\GridView\gvDragAndDropHideColumn.gif" />
+    <Content Include="App_Themes\Glass\GridView\gvExpandedButton.gif" />
+    <Content Include="App_Themes\Glass\GridView\gvExpandedButton.png" />
+    <Content Include="App_Themes\Glass\GridView\gvGroupPanelBackground.gif" />
+    <Content Include="App_Themes\Glass\GridView\gvGroupPanelSelBackground.gif" />
+    <Content Include="App_Themes\Glass\GridView\gvHeaderBackground.gif" />
+    <Content Include="App_Themes\Glass\GridView\gvHeaderFilter.gif" />
+    <Content Include="App_Themes\Glass\GridView\gvHeaderFilterActive.gif" />
+    <Content Include="App_Themes\Glass\GridView\gvHeaderSortDown.gif" />
+    <Content Include="App_Themes\Glass\GridView\gvHeaderSortUp.gif" />
+    <Content Include="App_Themes\Glass\GridView\gvLoadingOnStatusBar.gif" />
+    <Content Include="App_Themes\Glass\GridView\gvParentGroupRows.gif" />
+    <Content Include="App_Themes\Glass\GridView\Loading.gif" />
+    <Content Include="App_Themes\Glass\GridView\styles.css" />
+    <Content Include="App_Themes\Glass\GridView\WindowResizer.gif" />
+    <Content Include="App_Themes\Glass\Web\hlTail.gif" />
+    <Content Include="App_Themes\Glass\Web\Loading.gif" />
+    <Content Include="App_Themes\Glass\Web\mHorizontalPopOut.gif" />
+    <Content Include="App_Themes\Glass\Web\mItemBack.gif" />
+    <Content Include="App_Themes\Glass\Web\mItemHBack.gif" />
+    <Content Include="App_Themes\Glass\Web\mItemSBack.gif" />
+    <Content Include="App_Themes\Glass\Web\mLargeItemBack.gif" />
+    <Content Include="App_Themes\Glass\Web\mLargeItemHBack.gif" />
+    <Content Include="App_Themes\Glass\Web\mLargeItemSBack.gif" />
+    <Content Include="App_Themes\Glass\Web\mSubMenuItem.gif" />
+    <Content Include="App_Themes\Glass\Web\mSubMenuItemChecked.gif" />
+    <Content Include="App_Themes\Glass\Web\mVerticalPopOut.gif" />
+    <Content Include="App_Themes\Glass\Web\mVItemBack.gif" />
+    <Content Include="App_Themes\Glass\Web\mVItemHBack.gif" />
+    <Content Include="App_Themes\Glass\Web\mVItemSBack.gif" />
+    <Content Include="App_Themes\Glass\Web\nbCollapse.png" />
+    <Content Include="App_Themes\Glass\Web\nbExpand.png" />
+    <Content Include="App_Themes\Glass\Web\nbHeaderBack.gif" />
+    <Content Include="App_Themes\Glass\Web\nbHeaderHBack.gif" />
+    <Content Include="App_Themes\Glass\Web\ncBackToTop.png" />
+    <Content Include="App_Themes\Glass\Web\ncTail.gif" />
+    <Content Include="App_Themes\Glass\Web\pAll.gif" />
+    <Content Include="App_Themes\Glass\Web\pAll.png" />
+    <Content Include="App_Themes\Glass\Web\pAllDisabled.gif" />
+    <Content Include="App_Themes\Glass\Web\pAllDisabled.png" />
+    <Content Include="App_Themes\Glass\Web\pcCloseButton.png" />
+    <Content Include="App_Themes\Glass\Web\pcContentBack.gif" />
+    <Content Include="App_Themes\Glass\Web\pcContentWithTabBottomBack.gif" />
+    <Content Include="App_Themes\Glass\Web\pcFooterBack.gif" />
+    <Content Include="App_Themes\Glass\Web\pcHeaderBack.gif" />
+    <Content Include="App_Themes\Glass\Web\pcModalBack.gif" />
+    <Content Include="App_Themes\Glass\Web\pcSizeGrip.png" />
+    <Content Include="App_Themes\Glass\Web\pFirst.gif" />
+    <Content Include="App_Themes\Glass\Web\pFirst.png" />
+    <Content Include="App_Themes\Glass\Web\pFirstDisabled.gif" />
+    <Content Include="App_Themes\Glass\Web\pFirstDisabled.png" />
+    <Content Include="App_Themes\Glass\Web\pLast.gif" />
+    <Content Include="App_Themes\Glass\Web\pLast.png" />
+    <Content Include="App_Themes\Glass\Web\pLastDisabled.gif" />
+    <Content Include="App_Themes\Glass\Web\pLastDisabled.png" />
+    <Content Include="App_Themes\Glass\Web\pNext.gif" />
+    <Content Include="App_Themes\Glass\Web\pNext.png" />
+    <Content Include="App_Themes\Glass\Web\pNextDisabled.gif" />
+    <Content Include="App_Themes\Glass\Web\pNextDisabled.png" />
+    <Content Include="App_Themes\Glass\Web\pPrev.gif" />
+    <Content Include="App_Themes\Glass\Web\pPrev.png" />
+    <Content Include="App_Themes\Glass\Web\pPrevDisabled.gif" />
+    <Content Include="App_Themes\Glass\Web\pPrevDisabled.png" />
+    <Content Include="App_Themes\Glass\Web\rpBottomLeftCorner.png" />
+    <Content Include="App_Themes\Glass\Web\rpBottomRightCorner.png" />
+    <Content Include="App_Themes\Glass\Web\rpContentBack.gif" />
+    <Content Include="App_Themes\Glass\Web\rpHeaderBack.gif" />
+    <Content Include="App_Themes\Glass\Web\rpHeaderLeftEdge.gif" />
+    <Content Include="App_Themes\Glass\Web\rpHeaderRightEdge.gif" />
+    <Content Include="App_Themes\Glass\Web\rpLeftRightEdge.gif" />
+    <Content Include="App_Themes\Glass\Web\rpNoHeaderTopLeftCorner.png" />
+    <Content Include="App_Themes\Glass\Web\rpNoHeaderTopRightCorner.png" />
+    <Content Include="App_Themes\Glass\Web\rpTopLeftCorner.png" />
+    <Content Include="App_Themes\Glass\Web\rpTopRightCorner.png" />
+    <Content Include="App_Themes\Glass\Web\smLevel0Back.gif" />
+    <Content Include="App_Themes\Glass\Web\styles.css" />
+    <Content Include="App_Themes\Glass\Web\tcATabBack.gif" />
+    <Content Include="App_Themes\Glass\Web\tcATabBottomBack.gif" />
+    <Content Include="App_Themes\Glass\Web\tcContentBack.gif" />
+    <Content Include="App_Themes\Glass\Web\tcHTabBack.gif" />
+    <Content Include="App_Themes\Glass\Web\tcHTabBottomBack.gif" />
+    <Content Include="App_Themes\Glass\Web\tcTabBack.gif" />
+    <Content Include="App_Themes\Glass\Web\tcTabBottomBack.gif" />
+    <Content Include="App_Themes\Glass\Web\tiBackToTop.png" />
+    <Content Include="App_Themes\Glass\Web\tiHeaderBack.gif" />
+    <Content Include="bootstrap.css" />
+    <Content Include="bootstrap.min.js" />
+    <Content Include="carousel.css" />
+    <Content Include="check.aspx" />
+    <Content Include="customCSS.css" />
+    <Content Include="football_result_detail.aspx" />
+    <Content Include="football_static.aspx" />
+    <Content Include="images\bg_footer.png" />
+    <Content Include="index.aspx" />
+    <Content Include="indexl.aspx" />
+    <Content Include="css\isportcc.css" />
+    <Content Include="detail.aspx" />
+    <Content Include="football_news_detail.aspx" />
+    <Content Include="glyphicons-halflings-regular.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="holder.js" />
+    <Content Include="html5shiv.js" />
+    <Content Include="images\bg.png" />
+    <Content Include="images\Bullet.gif" />
+    <Content Include="images\class_1.gif" />
+    <Content Include="images\class_11.gif" />
+    <Content Include="images\class_14.gif" />
+    <Content Include="images\class_15.gif" />
+    <Content Include="images\class_16.gif" />
+    <Content Include="images\class_42.gif" />
+    <Content Include="images\class_7.gif" />
+    <Content Include="images\class_8.gif" />
+    <Content Include="images\HeaderBanner1.gif" />
+    <Content Include="images\icon-news.gif" />
+    <Content Include="images\no_image.jpg" />
+    <Content Include="images\test.jpg" />
+    <Content Include="indexh.aspx" />
+    <Content Include="jquery.js" />
+    <Content Include="logo.ico" />
+    <Content Include="mobilestyle.ascx" />
+    <Content Include="mobileStyle.css" />
+    <Content Include="navbar-fixed-top.css" />
+    <Content Include="reqcheck.aspx" />
+    <Content Include="respond.min.js" />
+    <Content Include="screen.aspx" />
+    <Content Include="sportcc_i1.aspx" />
+    <Content Include="sportcc_icountry.aspx" />
+    <Content Include="sportcc_ileague.aspx" />
+    <Content Include="sportcc_imatcheven.aspx" />
+    <Content Include="sportcc_iprogram.aspx" />
+    <Content Include="sportcc_istatic.aspx" />
+    <Content Include="sportcc_itable.aspx" />
+    <Content Include="test.aspx" />
+    <Content Include="userControl\muSportCC.ascx" />
+    <Content Include="redirect.aspx" />
+    <Content Include="Setting\MenuTopAdmin.xml" />
+    <Content Include="sportcc_i.aspx" />
+    <Content Include="upload\201101041000201011181632hot_clip.gif" />
+    <Content Include="upload\20110104100120101215164012call.png" />
+    <Content Include="upload\201101041004201012151041hd_hilight2.gif" />
+    <Content Include="upload\20110104100920101215164012call.png" />
+    <Content Include="upload\201101041023201012151041hd_hilight2.gif" />
+    <Content Include="upload\20110104105120101215164012call.png" />
+    <Content Include="upload\201101131004HeaderBannerfuntong.gif" />
+    <Content Include="upload\20110113103420110104105120101215164012call.png" />
+    <Content Include="upload\201103081407header_tded_360x20.png" />
+    <Content Include="upload\201103081410header_promo_360x20.png" />
+    <Content Include="upload\201103081412analysisstartsoccer.gif" />
+    <Content Include="upload\201103081416header_hightlight_360x20.png" />
+    <Content Include="upload\201103081425live_bb_75x78.png" />
+    <Content Include="upload\20110308142806siamkelar.gif" />
+    <Content Include="upload\20110308143104sportman.gif" />
+    <Content Include="upload\201103081433stat_bb_75x78.png" />
+    <Content Include="upload\201103081436funtong_bb_75x78.png" />
+    <Content Include="upload\201103081448pool_bb_75x78.png" />
+    <Content Include="upload\20110308144901sportpool.gif" />
+    <Content Include="upload\201103081524bb_ger_75x78.png" />
+    <Content Include="upload\201103081524bb_tpl_75x78.png" />
+    <Content Include="upload\201103081533bb_spa_75x78.png" />
+    <Content Include="upload\201103081541header_hitleague_360x20.png" />
+    <Content Include="upload\201103081542header_ded_360x20.png" />
+    <Content Include="upload\201103081543bb_epl_75x78.png" />
+    <Content Include="upload\201103081548bb_other_75x78.png" />
+    <Content Include="upload\201103081549bb_cal_75x78.png" />
+    <Content Include="upload\201103081549header_hotnews_360x20.png" />
+    <Content Include="upload\201103081550bb_ucl_75x78.png" />
+    <Content Include="upload\201103081559bb_fra_75x78.png" />
+    <Content Include="upload\20110308165303talad.gif" />
+    <Content Include="userControl\uFootballLiveScore.ascx" />
+    <Content Include="upload\201011181015ATT00004.gif" />
+    <Content Include="upload\201011181015euro_90x20.gif" />
+    <Content Include="upload\20101118110790x20_2-2e.gif" />
+    <Content Include="upload\201011181110analyse2.gif" />
+    <Content Include="upload\201011181115234x58_b2.gif" />
+    <Content Include="upload\201011181130analyse.gif" />
+    <Content Include="upload\201011181131ballstep_170x42.gif" />
+    <Content Include="upload\201011181132234x58_b2.gif" />
+    <Content Include="upload\201011181134234x58_b2.gif" />
+    <Content Include="upload\20101118114312call.png" />
+    <Content Include="upload\2010111811471000_week_128x15.gif" />
+    <Content Include="upload\201011181151analyse.gif" />
+    <Content Include="upload\2010111811541000_week_128x15.gif" />
+    <Content Include="upload\201011181403head_guessit_50000.gif" />
+    <Content Include="upload\201011181628thd_wc_sms.gif" />
+    <Content Include="upload\201011181632hot_clip.gif" />
+    <Content Include="upload\201011191112ATT00004.gif" />
+    <Content Include="upload\201011191124grid_starsoccer2 Grid.gif" />
+    <Content Include="upload\201012150909hot_clip.gif" />
+    <Content Include="upload\201012151041hd_hilight2.gif" />
+    <Content Include="upload\201012151107hd_promo.gif" />
+    <Content Include="upload\20101215112101sportpool.gif" />
+    <Content Include="upload\201012151125hd_analysis2.gif" />
+    <Content Include="upload\201012151148hd_analysis2.gif" />
+    <Content Include="upload\20101215115503talad.gif" />
+    <Content Include="upload\201012151636HeaderBannerSms.gif" />
+    <Content Include="upload\20101215164012call.png" />
+    <Content Include="upload\201012151640logo.gif" />
+    <Content Include="upload\20101216100506siamkelar.gif" />
+    <Content Include="upload\201012161040hd_sean2_240x20.gif" />
+    <Content Include="upload\20101216105604sportman.gif" />
+    <Content Include="upload\201012161101ic_othersoccer01.gif" />
+    <Content Include="upload\201012161102icon_flag_france.gif" />
+    <Content Include="upload\201012161111icon_calcio.gif" />
+    <Content Include="upload\201012161125icon_UCL.gif" />
+    <Content Include="upload\201012161128icon_lalega.gif" />
+    <Content Include="upload\201012161131icon_bundes.gif" />
+    <Content Include="upload\201012161133icon_premier.gif" />
+    <Content Include="upload\201012161133ic_tpl.gif" />
+    <Content Include="upload\201012161135hd_news2.gif" />
+    <Content Include="upload\201012161146icon_ufc.gif" />
+    <Content Include="upload\201012161523hd_other2.gif" />
+    <Content Include="upload\255311181007ballstep_170x42.gif" />
+    <Content Include="upload\255311181018bodybanner6.gif" />
+    <Content Include="upload\255311181020bn_ทีเด็ดบอลชุด234x58.gif" />
+    <Content Include="upload\255311181021bodybanner6.gif" />
+    <Content Include="upload\255311181025ballstep_122x30_ais.gif" />
+    <Content Include="upload\255311181045ballstep_170x42.gif" />
+    <Content Include="upload\icon_201011191616ฟุตบอลอื่นๆ.gif" />
+    <Content Include="upload\icon_201011191630ประสบการณ์รัก_.gif" />
+    <Content Include="upload\icon_201011191640ดาวโหลด.gif" />
+    <Content Include="upload\icon_201011191646thai_boxing.gif" />
+    <Content Include="upload\icon_201011191649ดาวโหลด.gif" />
+    <Content Include="upload\icon_201011191658ฟุตบอลอื่นๆ.gif" />
+    <Content Include="upload\icon_201012151112free_02.gif" />
+    <Content Include="upload\icon_201012161112icon-new.gif" />
+    <Content Include="upload\icon_201012161508ic_golf.gif" />
+    <Content Include="upload\icon_201012161514tennis2.gif" />
+    <Content Include="upload\icon_201012161520ic_bas.gif" />
+    <Content Include="upload\icon_201012161528F1-01.gif" />
+    <Content Include="upload\icon_201012161543NFL.gif" />
+    <Content Include="userControl\muContent.ascx" />
+    <Content Include="userControl\muFooter.ascx" />
+    <Content Include="userControl\muHeader.ascx" />
+    <Content Include="userControl\uFootballTable.ascx" />
+    <Content Include="userControl\uMenu.ascx" />
+    <None Include="Web References\SendService\sendpost.disco" />
+    <None Include="Web References\WSUpWowZa\upWowza.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="admin\adminbanner.aspx" />
+    <Content Include="admin\adminshortener.aspx" />
+    <Content Include="assets\js\application.js" />
+    <Content Include="assets\js\customizer.js" />
+    <Content Include="assets\js\filesaver.js" />
+    <Content Include="assets\js\holder.js" />
+    <Content Include="assets\js\html5shiv.js" />
+    <Content Include="assets\js\jquery.js" />
+    <Content Include="assets\js\jszip.js" />
+    <Content Include="assets\js\less.js" />
+    <Content Include="assets\js\raw-files.js" />
+    <Content Include="assets\js\respond.min.js" />
+    <Content Include="assets\js\uglify.js" />
+    <Content Include="DevExpress\ASPxHtmlEditorForms\InsertImageForm.ascx" />
+    <Compile Include="admin\adminbanner.aspx.cs">
+      <DependentUpon>adminbanner.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\adminbanner.aspx.designer.cs">
+      <DependentUpon>adminbanner.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\adminshortener.aspx.cs">
+      <DependentUpon>adminshortener.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\adminshortener.aspx.designer.cs">
+      <DependentUpon>adminshortener.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AppCode\AppSendEmail.cs" />
+    <Compile Include="AppCode\AppCode_EDT.cs" />
+    <Compile Include="DevExpress\ASPxHtmlEditorForms\InsertImageForm.ascx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DevExpress\ASPxHtmlEditorForms\InsertImageForm.ascx.designer.cs" />
+    <Content Include="DevExpress\ASPxHtmlEditorForms\InsertLinkForm.ascx" />
+    <Compile Include="DevExpress\ASPxHtmlEditorForms\InsertLinkForm.ascx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DevExpress\ASPxHtmlEditorForms\InsertLinkForm.ascx.designer.cs" />
+    <Content Include="DevExpress\ASPxHtmlEditorForms\ImagePropertiesForm.ascx" />
+    <Content Include="football_analyse.aspx" />
+    <Content Include="football_tded_team.aspx" />
+    <Content Include="images\overlay2.png" />
+    <Content Include="t.aspx" />
+    <Compile Include="DevExpress\ASPxHtmlEditorForms\ImagePropertiesForm.ascx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DevExpress\ASPxHtmlEditorForms\ImagePropertiesForm.ascx.designer.cs" />
+    <Compile Include="football_analyse.aspx.cs">
+      <DependentUpon>football_analyse.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="football_analyse.aspx.designer.cs">
+      <DependentUpon>football_analyse.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="football_tded_team.aspx.cs">
+      <DependentUpon>football_tded_team.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="football_tded_team.aspx.designer.cs">
+      <DependentUpon>football_tded_team.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="t.aspx.cs">
+      <DependentUpon>t.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="t.aspx.designer.cs">
+      <DependentUpon>t.aspx</DependentUpon>
+    </Compile>
+    <None Include="glyphicons-halflings-regular.eot">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="glyphicons-halflings-regular.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="glyphicons-halflings-regular.woff">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="isportDS.xsc">
+      <DependentUpon>isportDS.xsd</DependentUpon>
+    </None>
+    <None Include="isportDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>isportDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="isportDS.xss">
+      <DependentUpon>isportDS.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="upload\201011181132" />
+    <None Include="upload\201011181152" />
+    <None Include="upload\201011181158" />
+    <None Include="upload\201011181402" />
+    <None Include="upload\201011181448" />
+    <None Include="upload\201011181457" />
+    <None Include="Web References\SendService\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\SendService\sendpost.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\isport_service\isport_service.csproj">
+      <Project>{291e8f03-00d0-4a4f-8f96-c12fdc524233}</Project>
+      <Name>isport_service</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OracleDataAccress\OracleDataAccress.csproj">
+      <Project>{32393693-8B5F-4D5B-A7AB-42CB574AD1E4}</Project>
+      <Name>OracleDataAccress</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://localhost:60878/admin/upWowza.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WSUpWowZa\</RelPath>
+      <UpdateFromURL>http://localhost:60878/admin/upWowza.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>isport_WSUpWowZa_upWowza</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://wap.isport.co.th/sport_center/paymentnew/ws/sendpost.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\SendService\</RelPath>
+      <UpdateFromURL>http://wap.isport.co.th/sport_center/paymentnew/ws/sendpost.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>isport_SendService_sendpost</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>60878</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost/isportui</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Import Project="..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets" Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets'))" />
+  </Target>
+</Project>

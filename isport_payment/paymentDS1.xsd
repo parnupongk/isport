@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="paymentDS1" targetNamespace="http://tempuri.org/paymentDS1.xsd" xmlns:mstns="http://tempuri.org/paymentDS1.xsd" xmlns="http://tempuri.org/paymentDS1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="paymentDS1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="paymentDS1" msprop:Generator_UserDSName="paymentDS1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="I_CONTENT_USAGE_LOG" msprop:Generator_TableClassName="I_CONTENT_USAGE_LOGDataTable" msprop:Generator_TableVarName="tableI_CONTENT_USAGE_LOG" msprop:Generator_TablePropName="I_CONTENT_USAGE_LOG" msprop:Generator_RowDeletingName="I_CONTENT_USAGE_LOGRowDeleting" msprop:Generator_RowChangingName="I_CONTENT_USAGE_LOGRowChanging" msprop:Generator_RowEvHandlerName="I_CONTENT_USAGE_LOGRowChangeEventHandler" msprop:Generator_RowDeletedName="I_CONTENT_USAGE_LOGRowDeleted" msprop:Generator_UserTableName="I_CONTENT_USAGE_LOG" msprop:Generator_RowChangedName="I_CONTENT_USAGE_LOGRowChanged" msprop:Generator_RowEvArgName="I_CONTENT_USAGE_LOGRowChangeEvent" msprop:Generator_RowClassName="I_CONTENT_USAGE_LOGRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CUL_ID" msprop:Generator_ColumnVarNameInTable="columnCUL_ID" msprop:Generator_ColumnPropNameInRow="CUL_ID" msprop:Generator_ColumnPropNameInTable="CUL_IDColumn" msprop:Generator_UserColumnName="CUL_ID" type="xs:decimal" />
+              <xs:element name="SG_ID" msprop:Generator_ColumnVarNameInTable="columnSG_ID" msprop:Generator_ColumnPropNameInRow="SG_ID" msprop:Generator_ColumnPropNameInTable="SG_IDColumn" msprop:Generator_UserColumnName="SG_ID" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CCAT_ID" msprop:Generator_ColumnVarNameInTable="columnCCAT_ID" msprop:Generator_ColumnPropNameInRow="CCAT_ID" msprop:Generator_ColumnPropNameInTable="CCAT_IDColumn" msprop:Generator_UserColumnName="CCAT_ID" type="xs:decimal" minOccurs="0" />
+              <xs:element name="PHONE_NO" msprop:Generator_ColumnVarNameInTable="columnPHONE_NO" msprop:Generator_ColumnPropNameInRow="PHONE_NO" msprop:Generator_ColumnPropNameInTable="PHONE_NOColumn" msprop:Generator_UserColumnName="PHONE_NO" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="11" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ACCESS_CHANNEL" msprop:Generator_ColumnVarNameInTable="columnACCESS_CHANNEL" msprop:Generator_ColumnPropNameInRow="ACCESS_CHANNEL" msprop:Generator_ColumnPropNameInTable="ACCESS_CHANNELColumn" msprop:Generator_UserColumnName="ACCESS_CHANNEL" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CONTENT_ID" msprop:Generator_ColumnVarNameInTable="columnCONTENT_ID" msprop:Generator_ColumnPropNameInRow="CONTENT_ID" msprop:Generator_ColumnPropNameInTable="CONTENT_IDColumn" msprop:Generator_UserColumnName="CONTENT_ID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="USAGE_TYPE" msprop:Generator_ColumnVarNameInTable="columnUSAGE_TYPE" msprop:Generator_ColumnPropNameInRow="USAGE_TYPE" msprop:Generator_ColumnPropNameInTable="USAGE_TYPEColumn" msprop:Generator_UserColumnName="USAGE_TYPE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="USAGE_DATE" msprop:Generator_ColumnVarNameInTable="columnUSAGE_DATE" msprop:Generator_ColumnPropNameInRow="USAGE_DATE" msprop:Generator_ColumnPropNameInTable="USAGE_DATEColumn" msprop:Generator_UserColumnName="USAGE_DATE" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="REF_ID" msprop:Generator_ColumnVarNameInTable="columnREF_ID" msprop:Generator_ColumnPropNameInRow="REF_ID" msprop:Generator_ColumnPropNameInTable="REF_IDColumn" msprop:Generator_UserColumnName="REF_ID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="I_PAYMENT_LOG" msprop:Generator_TableClassName="I_PAYMENT_LOGDataTable" msprop:Generator_TableVarName="tableI_PAYMENT_LOG" msprop:Generator_TablePropName="I_PAYMENT_LOG" msprop:Generator_RowDeletingName="I_PAYMENT_LOGRowDeleting" msprop:Generator_RowChangingName="I_PAYMENT_LOGRowChanging" msprop:Generator_RowEvHandlerName="I_PAYMENT_LOGRowChangeEventHandler" msprop:Generator_RowDeletedName="I_PAYMENT_LOGRowDeleted" msprop:Generator_UserTableName="I_PAYMENT_LOG" msprop:Generator_RowChangedName="I_PAYMENT_LOGRowChanged" msprop:Generator_RowEvArgName="I_PAYMENT_LOGRowChangeEvent" msprop:Generator_RowClassName="I_PAYMENT_LOGRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="PLOG_ID" msprop:Generator_ColumnVarNameInTable="columnPLOG_ID" msprop:Generator_ColumnPropNameInRow="PLOG_ID" msprop:Generator_ColumnPropNameInTable="PLOG_IDColumn" msprop:Generator_UserColumnName="PLOG_ID" type="xs:decimal" />
+              <xs:element name="OPT_CODE" msprop:Generator_ColumnVarNameInTable="columnOPT_CODE" msprop:Generator_ColumnPropNameInRow="OPT_CODE" msprop:Generator_ColumnPropNameInTable="OPT_CODEColumn" msprop:Generator_UserColumnName="OPT_CODE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ACCESS_CHANNEL" msprop:Generator_ColumnVarNameInTable="columnACCESS_CHANNEL" msprop:Generator_ColumnPropNameInRow="ACCESS_CHANNEL" msprop:Generator_ColumnPropNameInTable="ACCESS_CHANNELColumn" msprop:Generator_UserColumnName="ACCESS_CHANNEL" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PHONE_NO" msprop:Generator_ColumnVarNameInTable="columnPHONE_NO" msprop:Generator_ColumnPropNameInRow="PHONE_NO" msprop:Generator_ColumnPropNameInTable="PHONE_NOColumn" msprop:Generator_UserColumnName="PHONE_NO" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PTYPE_CODE" msprop:Generator_ColumnVarNameInTable="columnPTYPE_CODE" msprop:Generator_ColumnPropNameInRow="PTYPE_CODE" msprop:Generator_ColumnPropNameInTable="PTYPE_CODEColumn" msprop:Generator_UserColumnName="PTYPE_CODE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PAY_STATUS" msprop:Generator_ColumnVarNameInTable="columnPAY_STATUS" msprop:Generator_ColumnPropNameInRow="PAY_STATUS" msprop:Generator_ColumnPropNameInTable="PAY_STATUSColumn" msprop:Generator_UserColumnName="PAY_STATUS" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PAY_STATUS_DETAIL" msprop:Generator_ColumnVarNameInTable="columnPAY_STATUS_DETAIL" msprop:Generator_ColumnPropNameInRow="PAY_STATUS_DETAIL" msprop:Generator_ColumnPropNameInTable="PAY_STATUS_DETAILColumn" msprop:Generator_UserColumnName="PAY_STATUS_DETAIL" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="500" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PAY_DATE" msprop:Generator_ColumnVarNameInTable="columnPAY_DATE" msprop:Generator_ColumnPropNameInRow="PAY_DATE" msprop:Generator_ColumnPropNameInTable="PAY_DATEColumn" msprop:Generator_UserColumnName="PAY_DATE" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="I_SUBSCRIBE_PORTAL_LOG" msprop:Generator_TableClassName="I_SUBSCRIBE_PORTAL_LOGDataTable" msprop:Generator_TableVarName="tableI_SUBSCRIBE_PORTAL_LOG" msprop:Generator_TablePropName="I_SUBSCRIBE_PORTAL_LOG" msprop:Generator_RowDeletingName="I_SUBSCRIBE_PORTAL_LOGRowDeleting" msprop:Generator_RowChangingName="I_SUBSCRIBE_PORTAL_LOGRowChanging" msprop:Generator_RowEvHandlerName="I_SUBSCRIBE_PORTAL_LOGRowChangeEventHandler" msprop:Generator_RowDeletedName="I_SUBSCRIBE_PORTAL_LOGRowDeleted" msprop:Generator_UserTableName="I_SUBSCRIBE_PORTAL_LOG" msprop:Generator_RowChangedName="I_SUBSCRIBE_PORTAL_LOGRowChanged" msprop:Generator_RowEvArgName="I_SUBSCRIBE_PORTAL_LOGRowChangeEvent" msprop:Generator_RowClassName="I_SUBSCRIBE_PORTAL_LOGRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="PHONE_NO" msprop:Generator_ColumnVarNameInTable="columnPHONE_NO" msprop:Generator_ColumnPropNameInRow="PHONE_NO" msprop:Generator_ColumnPropNameInTable="PHONE_NOColumn" msprop:Generator_UserColumnName="PHONE_NO" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="11" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="USAGE_DATE" msprop:Generator_ColumnVarNameInTable="columnUSAGE_DATE" msprop:Generator_ColumnPropNameInRow="USAGE_DATE" msprop:Generator_ColumnPropNameInTable="USAGE_DATEColumn" msprop:Generator_UserColumnName="USAGE_DATE" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="USAGE_AGENT" msprop:Generator_ColumnVarNameInTable="columnUSAGE_AGENT" msprop:Generator_ColumnPropNameInRow="USAGE_AGENT" msprop:Generator_ColumnPropNameInTable="USAGE_AGENTColumn" msprop:Generator_UserColumnName="USAGE_AGENT" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="500" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SG_ID" msprop:Generator_ColumnVarNameInTable="columnSG_ID" msprop:Generator_ColumnPropNameInRow="SG_ID" msprop:Generator_ColumnPropNameInTable="SG_IDColumn" msprop:Generator_UserColumnName="SG_ID" type="xs:decimal" minOccurs="0" />
+              <xs:element name="OPT_CODE" msprop:Generator_ColumnVarNameInTable="columnOPT_CODE" msprop:Generator_ColumnPropNameInRow="OPT_CODE" msprop:Generator_ColumnPropNameInTable="OPT_CODEColumn" msprop:Generator_UserColumnName="OPT_CODE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PRJ_ID" msprop:Generator_ColumnVarNameInTable="columnPRJ_ID" msprop:Generator_ColumnPropNameInRow="PRJ_ID" msprop:Generator_ColumnPropNameInTable="PRJ_IDColumn" msprop:Generator_UserColumnName="PRJ_ID" type="xs:decimal" minOccurs="0" />
+              <xs:element name="MP_CODE" msprop:Generator_ColumnVarNameInTable="columnMP_CODE" msprop:Generator_ColumnPropNameInRow="MP_CODE" msprop:Generator_ColumnPropNameInTable="MP_CODEColumn" msprop:Generator_UserColumnName="MP_CODE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="4" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SCS_ID" msprop:Generator_ColumnVarNameInTable="columnSCS_ID" msprop:Generator_ColumnPropNameInRow="SCS_ID" msprop:Generator_ColumnPropNameInTable="SCS_IDColumn" msprop:Generator_UserColumnName="SCS_ID" type="xs:decimal" minOccurs="0" />
+              <xs:element name="USAGE_DATE_TXT" msprop:Generator_ColumnVarNameInTable="columnUSAGE_DATE_TXT" msprop:Generator_ColumnPropNameInRow="USAGE_DATE_TXT" msprop:Generator_ColumnPropNameInTable="USAGE_DATE_TXTColumn" msprop:Generator_UserColumnName="USAGE_DATE_TXT" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:I_CONTENT_USAGE_LOG" />
+      <xs:field xpath="mstns:CUL_ID" />
+    </xs:unique>
+    <xs:unique name="I_PAYMENT_LOG_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:I_PAYMENT_LOG" />
+      <xs:field xpath="mstns:PLOG_ID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
