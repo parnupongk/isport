@@ -438,6 +438,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="2017\" />
     <Folder Include="error\" />
   </ItemGroup>
   <ItemGroup>
