@@ -238,8 +238,8 @@ namespace WS_BB
                 rtnXML.Element("SportApp").Add(new XAttribute("urlbanner", GetOperatorBanner()));
                 rtnXML.Element("SportApp").Add(new XAttribute("msisdn", (muMobile.mobileOPT == "03" || muMobile.mobileOPT == "04") ? "" : muMobile.mobileNumber));// ลูกค้า true จะให้กด *4511 ในการสมัครบริการเท่านั้น
 
-                string checkActive = "Y";//CheckActiveandPromotion(AppCode_Base.AppName.SportPool,Request["imsi"],Request["imei"]
-                   // , ConfigurationManager.AppSettings["Application_SportPool_Day_Promotion"], bool.Parse(ConfigurationManager.AppSettings["Application_SportPool_IsCheck_Promotion"]), ConfigurationManager.AppSettings["Application_SportPool_PSSVID"]);
+                string checkActive = CheckActiveandPromotion(AppCode_Base.AppName.SportPool,Request["imsi"],Request["imei"]
+                    , ConfigurationManager.AppSettings["Application_SportPool_Day_Promotion"], bool.Parse(ConfigurationManager.AppSettings["Application_SportPool_IsCheck_Promotion"]), ConfigurationManager.AppSettings["Application_SportPool_PSSVID"]);
 
 
                 //if (AppCode_Subscribe.CheckIsOTPWait(Request["imsi"], Request["imei"], AppCode_Base.AppName.SportPool.ToString()) == "N")

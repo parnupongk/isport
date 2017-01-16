@@ -244,6 +244,11 @@ namespace isport_service
                                     imgGallery += "<a href='" + imgURL + "'><img class='" + classImg + "' src='" + imgURL + "'></a>";
 
                             }
+                            else if (dr["content_image"].ToString().IndexOf("pdf") > -1 )
+                            {
+                                // download pdf 
+                                ctr.Controls.AddAt(ctr.Controls.Count, new LiteralControl("<div class='" + rowCSS + "'><a href='" + imgURL + "'><img class='" + classImg + "' src='images/pdf-download.jpg'></a></div>"));
+                            }
                             else ctr.Controls.AddAt(ctr.Controls.Count, ServiceWapUI_GenControls.genImagesHeader(dr, link, level, projectType, (bool)dr["ui_ismaster"], classImg));
 
                             #endregion

@@ -8,11 +8,11 @@
 <head runat="server">
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
-    <title>www.Isport.co.th</title>
+    <title>I-Sport Co., Ltd.</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <meta name="description" content="SMS LiveScore ผลสด อัพเดททุกการทำประตู อัตราต่อรองพรีเมียร์ลีก โปรแกรมการแข่งขันและถ่ายทอดสด วิเคราะห์ทีมที่ใช้ เพิ่มความมั้นใจ ก่อนการเชียร์บอล">
+    <meta name="keyword" content="ดูบอลสด, ผลบอลสด, สยามกีฬา, siamsport, ข่าวกีฬา, ผลบอล, วิเคราะห์บอล">
+    <meta name="description" content="อัพเดทข่าวสารวงการกีฬา ฟุตบอล ผลบอล ผลฟุตบอลทั่วโลก พรีเมียร์ลีก ไทยพรีเมียร์ลีก ยูโร ยูฟ่าแชมเปี้ยนส์ลีก พร้อมทั้งวิเคราะห์บอลจาก สยามกีฬา สตาร์ซอคเก้อร์ สปอร์ตพูล สปอร์ตแมน คลิปรายการจาก สยามกีฬาทีวี ฟุตบอลสยามทีวี สตาร์ซอคเก้อร์ทีวี และ โฟโต้แกลเลอรี่">
     <meta name="author" content="">
     <link rel="shortcut icon" href="logo.ico">
 

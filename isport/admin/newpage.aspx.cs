@@ -448,13 +448,13 @@ namespace isport.admin
                     filUpload.PostedFile.SaveAs(fullPath);
                     drContent.content_image = ConfigurationManager.AppSettings["Isport_FolderUpload"] + fileName;
                     ExceptionManager.WriteError(filUpload.PostedFile.ContentType);
-                    if (filUpload.PostedFile.ContentType == "video/mp4" || filUpload.PostedFile.ContentType == "video/3gpp" || filUpload.PostedFile.ContentType == "application/octet-stream" || fileType == "3gp")
+                    if (filUpload.PostedFile.ContentType == "video/mp4" || filUpload.PostedFile.ContentType == "video/3gpp" || filUpload.PostedFile.ContentType == "application/octet-stream" || fileType == "3gp" )
                     {
                         SshTransferProtocolBase sshCp;
                         sshCp = new Sftp(ConfigurationManager.AppSettings["Isport_SFTP_Host"], ConfigurationManager.AppSettings["Isport_SFTP_User"]);
                         sshCp.Password = ConfigurationManager.AppSettings["Isport_SFTP_Password"];
                         try
-                        {
+                        { 
                             filUpload.PostedFile.SaveAs(fullPath);
                             sshCp.Connect();
                             //ExceptionManager.WriteError("conntect success");

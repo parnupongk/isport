@@ -7,26 +7,27 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="Keywords" content="ข่าวกีฬา, ฟุตบอล, ข่าวบอล, ผลบอล, ผลบอลสด,  ผลการแข่งขัน, ผลฟุตบอล, วิเคราะห์บอล, ผลบอลพรีเมียร์ลีก, ผลบอลไทยพรีเมียร์ลีก, ยูโร 2012 , ผลบอลล่าสุด, พรีเมียร์ลีก, กัลโช่, บุนเดสลีกา, ลา ลีกา, ยูฟ่า แชมเปี้ยนส์ ลีก, ยูโรปา ลีก, เทนนิส, กอล์ฟ, มวย, สยามกีฬาทีวี, NBT19, ฟุตบอลสยามทีวี, สตาร์ซอคเก้อร์ทีวี, สยามกีฬาTV, FootballsiamTV, StarsoccerTV, ไฮไลท์ฟุตบอล, ไทยพรีเมียร์ลีก, ดิวิชั่น1, ลีกภูมิภาค, ไทยคม เอฟเอคัพ, โตโยต้าลีกคัพ">
-    <meta name="Description" content="อัพเดทข่าวสารวงการกีฬา ฟุตบอล ผลบอล ผลฟุตบอลทั่วโลก พรีเมียร์ลีก ไทยพรีเมียร์ลีก ยูโร 2012 ยูฟ่าแชมเปี้ยนส์ลีก พร้อมทั้งวิเคราะห์บอลจาก สยามกีฬา สตาร์ซอคเก้อร์ สปอร์ตพูล สปอร์ตแมน คลิปรายการจาก สยามกีฬาทีวี ฟุตบอลสยามทีวี สตาร์ซอคเก้อร์ทีวี และ โฟโต้แกลเลอรี่">
+    <meta name="Description" content="SMS LiveScore ผลสด อัพเดททุกการทำประตู อัตราต่อรองพรีเมียร์ลีก โปรแกรมการแข่งขันและถ่ายทอดสด วิเคราะห์ทีมที่ใช้ เพิ่มความมั้นใจ ก่อนการเชียร์บอล">
     <meta name="author" content="">
     <link rel="shortcut icon" href="logo.ico">
-    <title>wap.isport.co.th</title>
+    <title>I-Sport Co., Ltd.</title>
     <link href="bootstrap.css" rel="stylesheet">
     <link href="customCSS.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Kanit" rel="stylesheet">
     <!-- Bootstrap core CSS -->
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="html5shiv.js"></script>
       <script src="respond.min.js"></script>
     <![endif]-->
-        <style>
-.ud-ribbon {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 9999;
-}
-    </style>
+<style type="text/css">
+body { font-family: 'Kanit', sans-serif; color: #333; }
+.ud-ribbon { position: fixed; top: 0; left: 0; z-index: 9999; }
+.bgo { background: transparent; }
+.hfix { height: 500px; background-color: #FFF; border-right: 5px solid #f7f5f5; }
+.button-download { line-height: 25px; }
+.row_Header_Left { color: #F90; }
+</style>
 
 </head>
 <body>
@@ -78,9 +79,10 @@
             }
         }
     </script>
+    <!-- 
     <div class="fixed" id="divClose" style="display:none;" runat="server"  >
                     <img  src="images/close_btn.png" onclick="javascript:close_window();"/>
-        </div>
+        </div> -->
     <div id="wrap" class="container-body">
         <asp:Label ID="lblHeader" runat="server"></asp:Label>
         <div id="divNews" runat="server" class="row" style="display: block">
@@ -117,18 +119,18 @@
 
     <hr class="featurette-divider">
 
-    <div class="row">
+    <!-- div class="row">
         <div class="col-xs-12 col-md-4 col-sm-6">
             <!-- yengo ads >
-            <script>(function (e) { var t = "DIV_YNG_" + e + "_" + parseInt(Math.random() * 1e3); document.write('<div id="' + t + '" class="yengo-block yengo-block-' + e + '"></div>'); if ("undefined" === typeof loaded_blocks_yengo) { loaded_blocks_yengo = []; function n() { var e = loaded_blocks_yengo.shift(); var t = e.adp_id; var r = e.div; var i = document.createElement("script"); i.type = "text/javascript"; i.async = true; i.charset = "windows-1251"; i.src = "//www.yengo.com/data/" + t + ".js?async=1&div=" + r + "&t=" + Math.random(); var s = document.getElementsByTagName("head")[0] || document.getElementsByTagName("body")[0]; s.appendChild(i); var o = setInterval(function () { if (document.getElementById(r).innerHTML && loaded_blocks_yengo.length) { n(); clearInterval(o) } }, 50) } setTimeout(n) } loaded_blocks_yengo.push({ adp_id: e, div: t }) })(128100)</script-->
+            <script>(function (e) { var t = "DIV_YNG_" + e + "_" + parseInt(Math.random() * 1e3); document.write('<div id="' + t + '" class="yengo-block yengo-block-' + e + '"></div>'); if ("undefined" === typeof loaded_blocks_yengo) { loaded_blocks_yengo = []; function n() { var e = loaded_blocks_yengo.shift(); var t = e.adp_id; var r = e.div; var i = document.createElement("script"); i.type = "text/javascript"; i.async = true; i.charset = "windows-1251"; i.src = "//www.yengo.com/data/" + t + ".js?async=1&div=" + r + "&t=" + Math.random(); var s = document.getElementsByTagName("head")[0] || document.getElementsByTagName("body")[0]; s.appendChild(i); var o = setInterval(function () { if (document.getElementById(r).innerHTML && loaded_blocks_yengo.length) { n(); clearInterval(o) } }, 50) } setTimeout(n) } loaded_blocks_yengo.push({ adp_id: e, div: t }) })(128100)</script>
         </div>
     <div class="col-xs-12 col-md-4 col-sm-6">
                 <!-- yengo ads>
-                <script>(function (e) { var t = "DIV_YNG_" + e + "_" + parseInt(Math.random() * 1e3); document.write('<div id="' + t + '" class="yengo-block yengo-block-' + e + '"></div>'); if ("undefined" === typeof loaded_blocks_yengo) { loaded_blocks_yengo = []; function n() { var e = loaded_blocks_yengo.shift(); var t = e.adp_id; var r = e.div; var i = document.createElement("script"); i.type = "text/javascript"; i.async = true; i.charset = "windows-1251"; i.src = "//www.yengo.com/data/" + t + ".js?async=1&div=" + r + "&t=" + Math.random(); var s = document.getElementsByTagName("head")[0] || document.getElementsByTagName("body")[0]; s.appendChild(i); var o = setInterval(function () { if (document.getElementById(r).innerHTML && loaded_blocks_yengo.length) { n(); clearInterval(o) } }, 50) } setTimeout(n) } loaded_blocks_yengo.push({ adp_id: e, div: t }) })(129843)</script-->
+                <script>(function (e) { var t = "DIV_YNG_" + e + "_" + parseInt(Math.random() * 1e3); document.write('<div id="' + t + '" class="yengo-block yengo-block-' + e + '"></div>'); if ("undefined" === typeof loaded_blocks_yengo) { loaded_blocks_yengo = []; function n() { var e = loaded_blocks_yengo.shift(); var t = e.adp_id; var r = e.div; var i = document.createElement("script"); i.type = "text/javascript"; i.async = true; i.charset = "windows-1251"; i.src = "//www.yengo.com/data/" + t + ".js?async=1&div=" + r + "&t=" + Math.random(); var s = document.getElementsByTagName("head")[0] || document.getElementsByTagName("body")[0]; s.appendChild(i); var o = setInterval(function () { if (document.getElementById(r).innerHTML && loaded_blocks_yengo.length) { n(); clearInterval(o) } }, 50) } setTimeout(n) } loaded_blocks_yengo.push({ adp_id: e, div: t }) })(129843)</script>
 
-                            <!-- google adsense -->
+                            <!-- google adsense >
                     <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- wap.isport.co.th -->
+<!-- wap.isport.co.th >
 <ins class="adsbygoogle"
      style="display:block"
      data-ad-client="ca-pub-2796964969269378"
@@ -140,7 +142,7 @@
 
             </div>
 
-        </div>
+        </!-->
 
         <hr class="featurette-divider" />
 

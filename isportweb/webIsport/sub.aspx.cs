@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 using System.Data;
 using System.Globalization;
 using WebLibrary;
-namespace webIsport._2017
+namespace webIsport
 {
     public partial class sub : System.Web.UI.Page
     {

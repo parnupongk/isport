@@ -7,7 +7,7 @@
 <head id="Head1" runat="server">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
+    <meta name="description" content="SMS LiveScore ผลสด อัพเดททุกการทำประตู อัตราต่อรองพรีเมียร์ลีก โปรแกรมการแข่งขันและถ่ายทอดสด วิเคราะห์ทีมที่ใช้ เพิ่มความมั้นใจ ก่อนการเชียร์บอล">
     <meta name="author" content="">
     <link rel="shortcut icon" href="logo.ico" >
 
@@ -15,13 +15,21 @@
     <!-- Bootstrap core CSS -->
     <link href="bootstrap.css" rel="stylesheet"/>
    <link href="customCSS.css" rel="Stylesheet" />
-
+   <link href="https://fonts.googleapis.com/css?family=Kanit" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="html5shiv.js"></script>
       <script src="respond.min.js"></script>
     <![endif]-->
+    <style type="text/css">
+body { font-family: 'Kanit', sans-serif; color: #333; }
+.ud-ribbon { position: fixed; top: 0; left: 0; z-index: 9999; }
+.bgo { background: transparent; }
+.hfix { height: 500px; background-color: #FFF; border-right: 5px solid #f7f5f5; }
+.button-download { line-height: 25px; }
+.row_Header_Left { color: #F90; }
+</style>
   </head>
 <body>
  

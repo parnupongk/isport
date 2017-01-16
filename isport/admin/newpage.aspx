@@ -21,7 +21,7 @@
     
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="contentDetail" runat="server">
-    <!--    
+   
    <asp:UpdateProgress ID="UpdateProgress1" runat="server" AssociatedUpdatePanelID="UpdatePanel1" >
     <ProgressTemplate>
       <div class="progress">
@@ -30,8 +30,6 @@
          </div>
     </ProgressTemplate>
     </asp:UpdateProgress>
-
-    -->
 
     <asp:UpdatePanel ID="UpdatePanel1" runat="server">
     <Triggers>
@@ -91,6 +89,7 @@
                                 <asp:ListItem Value="news">news</asp:ListItem>
                                 <asp:ListItem Value="gallery">gallery</asp:ListItem>
                                 <asp:ListItem Value="clip">clip</asp:ListItem>
+                                <asp:ListItem Value="pdf">pdf</asp:ListItem>
                             </asp:DropDownList>
                             
                             <asp:FileUpload ID="filUpload" runat="server"  />
@@ -131,6 +130,7 @@
                             <asp:CalendarExtender
                                 ID="calExten" runat="server" Format="yyyyMMdd" TargetControlID="txtDisplayDate">
                             </asp:CalendarExtender>
+  
                         &nbsp;Format &quot; YYYYMMDD &quot;</td>
                     </tr>
                     <tr>

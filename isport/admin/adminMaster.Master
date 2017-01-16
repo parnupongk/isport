@@ -17,8 +17,8 @@
 </head>
 <body>
     <form id="form1" runat="server">
-    <asp:ToolkitScriptManager ID="ToolkitScriptManager1" runat="server">
-    </asp:ToolkitScriptManager>
+        <asp:ToolkitScriptManager ID="ScriptManager1" runat="server"></asp:ToolkitScriptManager>
+
 <div style="background-image:url(images/head_bg.jpg);width:100%;text-align:center;"><img width="100%" src="images/head2.jpg" alt=""/></div>
 <div style="width:100%;text-align:right;vertical-align:top;"><dxm:ASPxMenu ID="menu" runat="server" AutoSeparators="RootOnly" 
         CssFilePath="~/App_Themes/Blue/{0}/styles.css" CssPostfix="Blue" 
