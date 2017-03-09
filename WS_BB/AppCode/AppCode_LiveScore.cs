@@ -879,26 +879,42 @@ namespace WS_BB
                 DataSet ds = null;
                 string teamName1 = "", teamName2 = "";
                 bool isDetail = false;
-                    if (contestGroupId == "")
+                if (contestGroupId == "")
+                {
+                    using (SqlConnection sqlConn = new SqlConnection(strConnFeed))
                     {
+                        if (sqlConn.State == ConnectionState.Closed) sqlConn.Open();
+                        SqlCommand cmd = new SqlCommand("usp_sportcc_getfootballscorebycountryId", sqlConn);
+                        cmd.CommandTimeout = 0;
+                        cmd.CommandType = CommandType.StoredProcedure;
+                        cmd.Parameters.AddWithValue("@dateadd", addDate);
+                        cmd.Parameters.AddWithValue("@byweek", isByWeek);
+                        cmd.Parameters.AddWithValue("@status", matchType.ToString());
+                        cmd.Parameters.AddWithValue("@countryId", countryId.IndexOf(",") > 0 ? "" : countryId);
+                        SqlDataAdapter da = new SqlDataAdapter();
+                        da.SelectCommand = cmd;
+                        ds = new DataSet();
+                        da.Fill(ds);
+                    }
+
                         // Get by country
-                        ds = SqlHelper.ExecuteDataset(strConnFeed, CommandType.StoredProcedure, "usp_sportcc_getfootballscorebycountryId"
+                        /*ds = SqlHelper.ExecuteDataset(strConnFeed, CommandType.StoredProcedure, "usp_sportcc_getfootballscorebycountryId"
                         , new SqlParameter[] {new SqlParameter("@dateadd",addDate)
                     ,new SqlParameter("@byweek",isByWeek)
                     ,new SqlParameter("@status",matchType.ToString())
                     ,new SqlParameter("@countryId",countryId.IndexOf(",")>0?"":countryId)
-                    });
-                    }
-                    else
-                    {
-                        // Get by contestGroupId
-                        ds = SqlHelper.ExecuteDataset(strConnFeed, CommandType.StoredProcedure, "usp_sportcc_getfootballscore"
-                           , new SqlParameter[] {new SqlParameter("@dateadd",addDate)
+                    });*/
+                }
+                else
+                {
+                    // Get by contestGroupId
+                    ds = SqlHelper.ExecuteDataset(strConnFeed, CommandType.StoredProcedure, "usp_sportcc_getfootballscore"
+                       , new SqlParameter[] {new SqlParameter("@dateadd",addDate)
                     ,new SqlParameter("@byweek",isByWeek)
                     ,new SqlParameter("@status",matchType.ToString())
                     ,new SqlParameter("@contestGroupId",contestGroupId.IndexOf(",")>0?"":contestGroupId)
-                    });
-                    }
+                });
+                }
 
                 
                 if (ds.Tables.Count > 0 && ds.Tables[0].Rows.Count > 0)

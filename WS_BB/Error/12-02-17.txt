@@ -1,0 +1,31 @@
+
+Log Entry : 
+12/02/2017 09:10:26
+ IP :  ::1 
+Error in: http://localhost:4358/sportarena.aspx?pn=getscore&imei=12345&imsi=12345&date=&sporttype=00001&contestgroupid=&type=genfile. Error Message:CommandGetScore >> Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+__________________________
+
+Log Entry : 
+12/02/2017 09:32:05
+ IP :  ::1 
+Error in: http://localhost:4358/sportarena.aspx?pn=getscore&imei=12345&imsi=12345&date=&sporttype=00001&contestgroupid=&type=genfile. Error Message:CommandGetScore >> Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+__________________________
+
+Log Entry : 
+12/02/2017 09:32:22
+ IP :  ::1 
+Error in: http://localhost:4358/sportarena.aspx?pn=getscore&imei=12345&imsi=12345&date=&sporttype=00001&contestgroupid=&type=genfile. Error Message:CommandGetScore >> Value cannot be null.
+Parameter name: dataSet
+__________________________
+
+Log Entry : 
+12/02/2017 09:32:35
+ IP :  ::1 
+Error in: http://localhost:4358/sportarena.aspx?pn=getscore&imei=12345&imsi=12345&date=&sporttype=00001&contestgroupid=&type=genfile. Error Message:CommandGetScore >> Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+__________________________
+
+Log Entry : 
+12/02/2017 09:32:35
+ IP :  ::1 
+Error in: http://localhost:4358/sportarena.aspx?pn=getscore&imei=12345&imsi=12345&date=&sporttype=00001&contestgroupid=&type=genfile. Error Message:CommandGetScore >> Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+__________________________

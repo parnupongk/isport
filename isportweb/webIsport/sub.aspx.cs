@@ -25,6 +25,11 @@ namespace webIsport
                         GenNews();
                         GenNewsFootballThai();
                         //lblAds.Controls.Add(new isport_service.ServiceWapUI_Header().GenHeader(AppMain.strConn, "", "isportweb", "", "detail.aspx", "0"));
+                        lblAds.Controls.Add(new isport_service.ServiceWapUI_Content().GenContent(AppMain.strConn
+                         , AppMain.strConnOracle
+                        , Request["mid"] == null ? "0" : Request["mid"]
+                        , Request["level"] == null ? "0" : Request["level"]
+                        , "", "result", "", "0", Request["class_id"]));
                     }
                     else
                     {
@@ -69,7 +74,7 @@ namespace webIsport
                             + "<img class='img-full' src='http://sms-gw.samartbug.com/isportimage/images/500x300/" + drContent["news_images_600"].ToString() + "'>"
                             + "<div class='caption'><h4 class='media-heading'>" + drContent["news_header_th"].ToString() + "</h4></a>"
                             + "<p>" + drContent["news_title_th"].ToString() + "</p>"
-                            + "<small-gray><img class='img-button' src='images/home_88.png'/>" + DateTime.ParseExact(drContent["news_createdate"].ToString(), "d/M/yyyy H:ss:ff", null).ToString("d/MMM/yy H:s") + "</small-gray></div></div>";
+                            + "<small-gray><i class='fa fa-clock-o fa-1' aria-hidden='true'></i>" + DateTime.ParseExact(drContent["news_createdate"].ToString(), "d/M/yyyy H:ss:ff", null).ToString("d/MMM/yy H:s") + "</small-gray></div></div>";
 
 
 
@@ -79,7 +84,7 @@ namespace webIsport
                         detailNews += "<div class='media'><a class='pull-left' href='" + url + "'>"
                             + "<img src='http://sms-gw.samartbug.com/isportimage/images/120x75/" + drContent["news_images_190"].ToString() + "'></a>"
                             + "<div class='media-body'><h4 small>" + drContent["news_header_th"].ToString() + "</h4 small>"
-                            + "<div class='media-button'><small-gray><img class='img-button' src='images/home_88.png'/>" + DateTime.ParseExact(drContent["news_createdate"].ToString(), "d/M/yyyy H:ss:ff", null).ToString("d/MMM/yy H:s") + "</small-gray></div></div></div>";
+                            + "<div class='media-button'><small-gray><i class='fa fa-clock-o fa-1' aria-hidden='true'></i>" + DateTime.ParseExact(drContent["news_createdate"].ToString(), "d/M/yyyy H:ss:ff", null).ToString("d/MMM/yy H:s") + "</small-gray></div></div></div>";
 
                     }
 
@@ -112,8 +117,8 @@ namespace webIsport
                     lblNewsFbThai.Controls.AddAt(lblNewsFbThai.Controls.Count, new LiteralControl("<div class='thumbnail'><a href='" + url + "'>"
                             + "<img class='img-full' src='http://sms-gw.samartbug.com/isportimage/images/500x300/" + drContent["news_images_600"].ToString() + "'>"
                             + "<div class='caption'><h5 class='media-heading'>" + drContent["news_header_th"].ToString() + "</h5></a>"
-                            + "<p>" + drContent["news_title_th"].ToString().Substring(0,90) + "...</p>"
-                            + "<small-gray><img class='img-button' src='images/home_88.png'/>" + DateTime.ParseExact(drContent["news_createdate"].ToString(), "d/M/yyyy H:ss:ff", null).ToString("d/MMM/yy H:s") + "</small-gray></div></div>"));
+                            + "<p>" + ((drContent["news_title_th"].ToString().Length > 90) ? drContent["news_title_th"].ToString().Substring(0,90) : drContent["news_title_th"].ToString()) + "...</p>"
+                            + "<small-gray><i class='fa fa-clock-o fa-1' aria-hidden='true'></i>" + DateTime.ParseExact(drContent["news_createdate"].ToString(), "d/M/yyyy H:ss:ff", null).ToString("d/MMM/yy H:s") + "</small-gray></div></div>"));
 
                     lblNewsFbThai.Controls.AddAt(lblNewsFbThai.Controls.Count, new LiteralControl("</div>"));
 
@@ -123,7 +128,7 @@ namespace webIsport
             }
             catch (Exception ex)
             {
-
+                ExceptionManager.WriteError(ex.Message);
             }
         }
     }

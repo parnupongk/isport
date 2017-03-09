@@ -61,15 +61,49 @@ color:rgba(192, 57, 43,1);
 	text-decoration: none;
 	padding: 8px 16px;
 	border-radius: .5em;
-	/*background: #ed145b;*/
-  background: #6efa85;
-  background-image: -webkit-linear-gradient(top, #6efa85, #002905);
+	background: #ed145b;
+  /*background: #6efa85;*/
+  /*background-image: -webkit-linear-gradient(top, #6efa85, #002905);
   background-image: -moz-linear-gradient(top, #6efa85, #002905);
   background-image: -ms-linear-gradient(top, #6efa85, #002905);
   background-image: -o-linear-gradient(top, #6efa85, #002905);
-  background-image: linear-gradient(to bottom, #6efa85, #002905);
+  background-image: linear-gradient(to bottom, #6efa85, #002905);*/
 }
 .button-download:hover {
+	color: #FFF;
+	text-decoration: none;
+}
+
+/*===============================================================
+
+
+                        button cancel
+
+=================================================================*/
+.button-cancel {
+	clear: both;
+	text-align: center;
+	max-width: 300px;
+	margin: 0 auto 20px;
+	padding-top: 20px;
+}
+.button-cancel {
+	display: block;
+	width: 100%;
+	height: 100%;
+	color: #FFF;
+	text-decoration: none;
+	padding: 8px 16px;
+	border-radius: .5em;
+	background: #858383;
+  /*background: #6efa85;*/
+  /*background-image: -webkit-linear-gradient(top, #6efa85, #002905);
+  background-image: -moz-linear-gradient(top, #6efa85, #002905);
+  background-image: -ms-linear-gradient(top, #6efa85, #002905);
+  background-image: -o-linear-gradient(top, #6efa85, #002905);
+  background-image: linear-gradient(to bottom, #6efa85, #002905);*/
+}
+.button-cancel:hover {
 	color: #FFF;
 	text-decoration: none;
 }

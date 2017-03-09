@@ -9,10 +9,14 @@
     <meta name="Keywords" content="ข่าวกีฬา, ฟุตบอล, ข่าวบอล, ผลบอล, ผลบอลสด,  ผลการแข่งขัน, ผลฟุตบอล, วิเคราะห์บอล, ผลบอลพรีเมียร์ลีก, ผลบอลไทยพรีเมียร์ลีก, ยูโร 2012 , ผลบอลล่าสุด, พรีเมียร์ลีก, กัลโช่, บุนเดสลีกา, ลา ลีกา, ยูฟ่า แชมเปี้ยนส์ ลีก, ยูโรปา ลีก, เทนนิส, กอล์ฟ, มวย, สยามกีฬาทีวี, NBT19, ฟุตบอลสยามทีวี, สตาร์ซอคเก้อร์ทีวี, สยามกีฬาTV, FootballsiamTV, StarsoccerTV, ไฮไลท์ฟุตบอล, ไทยพรีเมียร์ลีก, ดิวิชั่น1, ลีกภูมิภาค, ไทยคม เอฟเอคัพ, โตโยต้าลีกคัพ">
     <meta name="Description" content="SMS LiveScore ผลสด อัพเดททุกการทำประตู อัตราต่อรองพรีเมียร์ลีก โปรแกรมการแข่งขันและถ่ายทอดสด วิเคราะห์ทีมที่ใช้ เพิ่มความมั้นใจ ก่อนการเชียร์บอล">
     <meta name="author" content="">
-    <link rel="shortcut icon" href="logo.ico">
+    <!--link rel="shortcut icon" href="http://www.isport.co.th/dist/img/logo.png"-->
     <title>I-Sport Co., Ltd.</title>
-    <link href="bootstrap.css" rel="stylesheet">
+    <!--link href="bootstrap.css" rel="stylesheet"-->
+     <link href="http://www.isport.co.th/dist/css/bootstrap.min.css" rel="stylesheet">
+
     <link href="customCSS.css" rel="stylesheet">
+        <link rel="stylesheet" href="http://www.isport.co.th/dist/layerslider/css/layerslider.css" type="text/css">
+    <link href="http://www.isport.co.th/dist/css/theme-2017.css?v34" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Kanit" rel="stylesheet">
     <!-- Bootstrap core CSS -->
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -20,6 +24,7 @@
       <script src="html5shiv.js"></script>
       <script src="respond.min.js"></script>
     <![endif]-->
+    <link rel="stylesheet" href="http://www.isport.co.th/dist/layerslider/skins/v5/skin.css" type="text/css">
 <style type="text/css">
 body { font-family: 'Kanit', sans-serif; color: #333; }
 .ud-ribbon { position: fixed; top: 0; left: 0; z-index: 9999; }
@@ -31,7 +36,6 @@ body { font-family: 'Kanit', sans-serif; color: #333; }
 
 </head>
 <body>
-    <img class="ud-ribbon" alt="ทีเด็ดฟุตบอลวันนี้" src="http://wap.isport.co.th/isportui/images/black-ribbon.png">
 
     <div id="fb-root">
     </div>
@@ -44,7 +48,57 @@ body { font-family: 'Kanit', sans-serif; color: #333; }
                 }(document, 'script', 'facebook-jssdk'));</script>
 
     <div id="divMenuHeader" runat="server" class="navbar navbar-default">
-        <div class="container">
+        <div id="header" class="navbar navbar-fixed-top" role="navigation">
+      <div class="container">
+    <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span> </button>
+          <a href="index.aspx" id="ctl00_lnkMain" class="navbar-brand wow bounceInRight" style="visibility: visible; animation-name: bounceInRight;"><img alt="isport" src="http://www.isport.co.th/dist/img/logo.png"></a> </div>
+    <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+        <li><a href="dist/incs/sub.aspx" title="I-SPORT">HOME</a></li>
+        <li class="dropdown show"> <a data-toggle="dropdown" class="dropdown-toggle" href="http://www.isport.co.th/sub.aspx?#footer" title="SERVICES">SERVICES <i class="fa fa-angle-down" aria-hidden="true"></i> </a>
+              <ul class="dropdown-menu" id="menu1">
+            <li class="dropdown"><a href="dist/incs/pr.aspx" title="ชิงรางวัล">ชิงรางวัล <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                  <ul class="dropdown-menu">
+                <li><a href="http://wap.isport.co.th/isportui/?p=smstaijai" title="ชิงรางวัลใหญ่">ชิงรางวัลใหญ่</a></li>
+                <li><a href="http://wap.isport.co.th/isportui/index.aspx?p=menupromo" title="ชิงทอง">ชิงทอง!</a></li>
+              </ul>
+                </li>
+            <li><a href="http://wap.isport.co.th/isportui/?p=news&amp;class_id=" title="ข่าวเด่น">ข่าวเด่น</a></li>
+            <li class="dropdown"><a href="#" title="ผลฟุตบอล">ผลฟุตบอล <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                  <ul class="dropdown-menu">
+                <li><a href="http://wap.isport.co.th/sport_center/isport/football_livescore.aspx?lng=L" title="ผลฟุตบอลสด">ผลฟุตบอลสด</a></li>
+                <li><a href="http://wap.isport.co.th/isportui/?p=program&amp;lng=L&amp;class_id=" title="โปรแกรมการแข่งขัน">โปรแกรมการแข่งขัน</a></li>
+              </ul>
+                </li>
+            <li class="dropdown right"><a href="#" title="วิเคราะห์ฟุตบอล">วิเคราะห์ฟุตบอล <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                  <ul class="dropdown-menu">
+                <li><a href="http://wap.isport.co.th/isportui/?p=analyse" title="ทรรศนะวันนี้">ทรรศนะวันนี้</a></li>
+                <li><a href="http://wap.isport.co.th/isportui/?p=tdedsportpool" title="ทีเด็ดสปอร์ตพูล">ทีเด็ดสปอร์ตพูล</a></li>
+                <li><a href="http://wap.isport.co.th/isportui/?p=tdedstartscore" title="ทีเด็ดสตาร์ซอคเก้อร์">ทีเด็ดสตาร์ซอคเก้อร์</a></li>
+                <li><a href="http://wap.isport.co.th/isportui/?p=tdedfootball" title="ทีเด็ดจัดหนัก">ทีเด็ดจัดหนัก</a></li>
+              </ul>
+                </li>
+            <li><a href="http://wap.isport.co.th/isportui/?p=othersport" title="กีฬาอื่นๆ">กีฬาอื่นๆ</a></li>
+          </ul>
+            </li>
+        <li><a href="http://www.isport.co.th/sub.aspx?#service" title="SUBSCRIBE">SUBSCRIBE</a></li>
+        <li><a href="http://www.isportmart.com" target="_blank" title="SHOP">SHOP</a></li>
+        <!--<li><a href="#event" title="EVENT">EVENT</a></li>
+                    <li><a href="#tour" title="TOUR">TOUR</a></li>
+                    <li><a href="#talent" title="TALENT">TALENT</a></li>-->
+        <li><a href="http://www.isport.co.th/pr.aspx" title="NEWS">NEWS</a></li>
+        <!--<li><a href="#about" title="ABOUT">ABOUT</a></li>
+                    <li><a href="#contact" title="CONTACT">CONTACT</a></li>-->
+        <li><a href="http://career.isport.co.th" title="JOBS">JOBS</a></li>
+        <!--<li><a href="#" title="INVESTOR">INVESTOR</a></li>-->
+      </ul>
+        </div>
+    <!--/.nav-collapse --> 
+  </div>
+    </div>
+
+        <!-- div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                     <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
@@ -69,7 +123,7 @@ body { font-family: 'Kanit', sans-serif; color: #333; }
                 </ul>
             </div>
             <!--/.nav-collapse -->
-        </div>
+        </!-->
     </div>
      <script type="text/javascript">
         function close_window() {
@@ -83,7 +137,7 @@ body { font-family: 'Kanit', sans-serif; color: #333; }
     <div class="fixed" id="divClose" style="display:none;" runat="server"  >
                     <img  src="images/close_btn.png" onclick="javascript:close_window();"/>
         </div> -->
-    <div id="wrap" class="container-body">
+    <div id="wrap" class="container">
         <asp:Label ID="lblHeader" runat="server"></asp:Label>
         <div id="divNews" runat="server" class="row" style="display: block">
             <div class='row'>

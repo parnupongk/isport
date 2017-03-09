@@ -188,7 +188,7 @@ namespace isport
                             + "<img class='img-full' src='http://sms-gw.samartbug.com/isportimage/images/500x300/" + drContent["news_images_600"].ToString() + "'>"
                             + "<div class='caption'><h4 class='media-heading'>" + drContent["news_header_th"].ToString() + "</h4></a>"
                             + "<p>" + drContent["news_title_th"].ToString() + "</p>"
-                            + "<small-gray><img class='img-button' src='images/home_88.png'/>" + DateTime.ParseExact(drContent["news_createdate"].ToString(), "M/d/yyyy h:mm:ss tt", null).ToString("d/MMM/yy H:s") + "</small-gray></div></div>";
+                            + "<small-gray><i class='fa fa-clock-o fa-1' aria-hidden='true'></i>" + DateTime.ParseExact(drContent["news_createdate"].ToString(), "M/d/yyyy h:mm:ss tt", null).ToString("d/MMM/yy H:s") + "</small-gray></div></div>";
 
 
 
@@ -198,7 +198,7 @@ namespace isport
                         detailNews += "<div class='media'><a class='pull-left' href='" + url + "'>"
                             + "<img src='http://sms-gw.samartbug.com/isportimage/images/120x75/" + drContent["news_images_190"].ToString() + "'></a>"
                             + "<div class='media-body'><h4 small>" + drContent["news_header_th"].ToString() + "</h4 small>"
-                            + "<div class='media-button'><small-gray><img class='img-button' src='images/home_88.png'/>" + DateTime.ParseExact(drContent["news_createdate"].ToString(), "M/d/yyyy h:mm:ss tt", null).ToString("d/MMM/yy H:s") + "</small-gray></div></div></div>";
+                            + "<div class='media-button'><small-gray><i class='fa fa-clock-o fa-1' aria-hidden='true'></i>" + DateTime.ParseExact(drContent["news_createdate"].ToString(), "M/d/yyyy h:mm:ss tt", null).ToString("d/MMM/yy H:s") + "</small-gray></div></div></div>";
 
                     }
 

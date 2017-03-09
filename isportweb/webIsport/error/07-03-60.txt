@@ -1,0 +1,14 @@
+
+Log Entry : 
+07/03/2560 14:37:53
+ IP :  ::1 
+Error in: http://localhost:32814/sub.aspx. Error Message:Index and length must refer to a location within the string.
+Parameter name: length
+__________________________
+
+Log Entry : 
+07/03/2560 14:41:27
+ IP :  ::1 
+Error in: http://localhost:32814/sub.aspx. Error Message:Index and length must refer to a location within the string.
+Parameter name: length
+__________________________

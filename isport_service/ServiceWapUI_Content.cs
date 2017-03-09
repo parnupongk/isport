@@ -492,7 +492,7 @@ namespace isport_service
                         {
                             //ctr.Controls.AddAt(ctr.Controls.Count, ServiceWapUI_GenControls.genText("", drDetail["scs_desc"].ToString(), pageRedirect, "0", projectType, false, ""));
                             cssName = (index % 2) == 0 ? "rowprogramdetail_" : "rowprogramdetail";
-                            ctr.Controls.AddAt(ctr.Controls.Count, new LiteralControl("<div class='"+ cssName + "'><div class=col-xs-1 col-sm-1 col-lg-1 col-md-1></div><a class='linkprogram' href='football_result_detail.aspx?" + HttpContext.Current.Request.QueryString + "&msch_id=" + drDetail["msch_id"] + "'><div class=col-xs-11 col-sm-11 col-lg-11 col-md-11>" + drDetail["scs_desc"].ToString() + "</div></a></div>"));
+                            ctr.Controls.AddAt(ctr.Controls.Count, new LiteralControl("<div class='"+ cssName + "'><div class=col-xs-1 col-sm-1 col-lg-1 col-md-1></div><a class='linkprogram' href='http://wap.isport.co.th/isportui/football_result_detail.aspx?" + HttpContext.Current.Request.QueryString + "&msch_id=" + drDetail["msch_id"] + "'><div class=col-xs-11 col-sm-11 col-lg-11 col-md-11>" + drDetail["scs_desc"].ToString() + "</div></a></div>"));
                             index++;
                         }
                     }
@@ -533,7 +533,7 @@ namespace isport_service
                             "<div class='col-xs-12 col-md-4 col-sm-6'><div class='thumbnail'><a  href='" + url + "'>"
                             + "<img class='img-full' src='http://sms-gw.samartbug.com/isportimage/images/500x300/" + drContent["news_images_600"].ToString() + "'>"
                             + "<div class='caption'>" + drContent["news_header_th"].ToString() + "</a></div>"
-                            + " <div class='media-button'><small-gray><img class='img-button' src='images/home_88.png'/>" + DateTime.ParseExact(drContent["news_createdate"].ToString(), "M/d/yyyy h:mm:ss tt", null).ToString("d/MMM/yy H:s") + "</small-gray></div></div></div>"));
+                            + " <div class='media-button'><small-gray><i class='fa fa - clock - o fa - 1' aria-hidden='true'></i>" + DateTime.ParseExact(drContent["news_createdate"].ToString(), "M/d/yyyy h:mm:ss tt", null).ToString("d/MMM/yy H:s") + "</small-gray></div></div></div>"));
 
 
 
