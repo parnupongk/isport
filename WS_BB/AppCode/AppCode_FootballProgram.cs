@@ -430,7 +430,7 @@ namespace WS_BB
                     //{
                     #region Add XML
 
-                    if (contentGroupid != dr["contestgroupid"].ToString())
+                    if (contentGroupid != dr["tm_id"].ToString())
                     {
                         if (xElement != null) rtnXML.Element("SportApp").Add(xElement);
                         string img16 = dr["PIC_48X48"].ToString() == "" ? "default.png" : dr["PIC_48X48"].ToString();
@@ -467,7 +467,7 @@ namespace WS_BB
                         , new XAttribute("trend", trend)
                         ));
 
-                    contentGroupid = dr["contestgroupid"].ToString();
+                    contentGroupid = dr["tm_id"].ToString();
 
                     #endregion
                     //}
@@ -526,7 +526,7 @@ namespace WS_BB
                     //{
                     #region Add XML
 
-                    if (contentGroupid != dr["contestgroupid"].ToString())
+                    if (contentGroupid != dr["tm_id"].ToString())
                     {
                         if (xElement != null) rtnXML.Element("SportApp").Add(xElement);
                         string img16 = dr["PIC_48X48"].ToString() == "" ? "default.png" : dr["PIC_48X48"].ToString();
@@ -569,7 +569,7 @@ namespace WS_BB
                          , new XAttribute("starlike", matchLike.star)
                         ));
 
-                    contentGroupid = dr["contestgroupid"].ToString();
+                    contentGroupid = dr["tm_id"].ToString();
 
                     #endregion
                     //}
@@ -628,14 +628,14 @@ namespace WS_BB
                 XElement xElement = null;
                 if (dv.Count > 0)
                 {
-                    // บอลไทย
-                    rtnXML.Element("SportApp").Add(CommandGetFootballProgram_Isportstarsoccer("League", date, "3405", lang));
+                    // บอลไทย ไปใช้ที่ sportcc
+                    //rtnXML.Element("SportApp").Add(CommandGetFootballProgram_Isportstarsoccer("League", date, "3405", lang));
 
                     for (int index = 0; index < dv.Count; index++)
                     {
                         #region Add XML
 
-                        if (contentGroupid != dv[index]["contestgroupid"].ToString())
+                        if (contentGroupid != dv[index]["tm_id"].ToString())
                         {
                             if (xElement != null) rtnXML.Element("SportApp").Add(xElement);
                             string img16 = dv[index]["PIC_48X48"].ToString() == "" ? "default.png" : dv[index]["PIC_48X48"].ToString();
@@ -672,7 +672,7 @@ namespace WS_BB
                             , new XAttribute("trend", trend)
                             ));
 
-                        contentGroupid = dv[index]["contestgroupid"].ToString();
+                        contentGroupid = dv[index]["tm_id"].ToString();
 
                         #endregion
                     }
@@ -730,14 +730,14 @@ namespace WS_BB
                 XElement xElement = null;
                 if (dv.Count > 0)
                 {
-                    // บอลไทย
-                    rtnXML.Element("SportApp").Add(CommandGetFootballProgram_IsportPool("League", date, "3405", lang));
+                    // บอลไทย ไปใช้ที่ sportcc
+                    //rtnXML.Element("SportApp").Add(CommandGetFootballProgram_IsportPool("League", date, "3405", lang));
 
                     for (int index = 0; index < dv.Count; index++)
                     {
                         #region Add XML
 
-                        if (contentGroupid != dv[index]["contestgroupid"].ToString())
+                        if (contentGroupid != dv[index]["tm_id"].ToString())
                         {
                             if (xElement != null) rtnXML.Element("SportApp").Add(xElement);
                             string img16 = dv[index]["PIC_48X48"].ToString() == "" ? "default.png" : dv[index]["PIC_48X48"].ToString();
@@ -778,7 +778,7 @@ namespace WS_BB
                             , new XAttribute("starlike", matchLike.star)
                             ));
 
-                        contentGroupid = dv[index]["contestgroupid"].ToString();
+                        contentGroupid = dv[index]["tm_id"].ToString();
 
                         #endregion
                     }
@@ -844,7 +844,7 @@ namespace WS_BB
                     {
                         #region Add XML
 
-                        if (contentGroupid != dv[index]["contestgroupid"].ToString())
+                        if (contentGroupid != dv[index]["tm_id"].ToString())
                         {
                             if (xElement != null) rtnXML.Element("SportApp").Add(xElement);
                             string img16 = dv[index]["PIC_16X11"].ToString() == "" ? "default.png" : dv[index]["PIC_16X11"].ToString();
@@ -877,7 +877,7 @@ namespace WS_BB
                             , new XAttribute("isDetail", isDetail)
                             ));
 
-                        contentGroupid = dv[index]["contestgroupid"].ToString();
+                        contentGroupid = dv[index]["tm_id"].ToString();
 
                         #endregion
                     }
@@ -934,7 +934,7 @@ namespace WS_BB
                     {
                         #region Add XML
 
-                        if (contentGroupid != dv[index]["contestgroupid"].ToString())
+                        if (contentGroupid != dv[index]["tm_id"].ToString())
                         {
                             if (xElement != null) rtnXML.Element("SportApp").Add(xElement);
                             string img16 = dv[index]["PIC_16X11"].ToString() == "" ? "default.png" : dv[index]["PIC_16X11"].ToString();
@@ -967,7 +967,7 @@ namespace WS_BB
                             , new XAttribute("isDetail", isDetail)
                             ));
 
-                        contentGroupid = dv[index]["contestgroupid"].ToString();
+                        contentGroupid = dv[index]["tm_id"].ToString();
 
                         #endregion
                     }
@@ -1228,7 +1228,7 @@ namespace WS_BB
                     {
                         #region Add XML
 
-                        if (contentGroupid != dr["contestgroupid"].ToString())
+                        if (contentGroupid != dr["tm_id"].ToString())
                         {
                             if (xElement != null) rtnXML.Element("SportApp").Add(xElement);
                             string img16 = dr["PIC_16X11"].ToString() == "" ? "default.png" : dr["PIC_16X11"].ToString();
@@ -1257,7 +1257,7 @@ namespace WS_BB
                             , new XAttribute("analyse", dr["trendgame"].ToString())
                             ));
 
-                        contentGroupid = dr["contestgroupid"].ToString();
+                        contentGroupid = dr["tm_id"].ToString();
 
                         #endregion
                     }
@@ -1318,7 +1318,7 @@ namespace WS_BB
                     {
                         #region Add XML
 
-                        if (contentGroupid != dr["contestgroupid"].ToString())
+                        if (contentGroupid != dr["tm_id"].ToString())
                         {
                             if (xElement != null) rtnXML.Element("SportApp").Add(xElement);
                             string img16 = dr["PIC_16X11"].ToString() == "" ? "default.png" : dr["PIC_16X11"].ToString();
@@ -1360,7 +1360,7 @@ namespace WS_BB
                             , new XAttribute("starlike", matchLike.star)
                             ));
 
-                        contentGroupid = dr["contestgroupid"].ToString();
+                        contentGroupid = dr["tm_id"].ToString();
 
                         #endregion
                     }
@@ -1421,7 +1421,7 @@ namespace WS_BB
                     {
                         #region Add XML
 
-                        if (contentGroupid != dr["contestgroupid"].ToString())
+                        if (contentGroupid != dr["tm_id"].ToString())
                         {
                             if (xElement != null) rtnXML.Element("SportApp").Add(xElement);
                             string img16 = dr["PIC_16X11"].ToString() == "" ? "default.png" : dr["PIC_16X11"].ToString();
@@ -1454,7 +1454,7 @@ namespace WS_BB
                             , new XAttribute("trendgame", trend)
                             ));
 
-                        contentGroupid = dr["contestgroupid"].ToString();
+                        contentGroupid = dr["tm_id"].ToString();
 
                         #endregion
                     }
@@ -1515,7 +1515,7 @@ namespace WS_BB
                     {
                         #region Add XML
 
-                        if (contentGroupid != dr["contestgroupid"].ToString())
+                        if (contentGroupid != dr["tm_id"].ToString())
                         {
                             if (xElement != null) rtnXML.Element("SportApp").Add(xElement);
                             string img16 = dr["PIC_16X11"].ToString() == "" ? "default.png" : dr["PIC_16X11"].ToString();
@@ -1548,7 +1548,7 @@ namespace WS_BB
                              , new XAttribute("trend", trend)
                             ));
 
-                        contentGroupid = dr["contestgroupid"].ToString();
+                        contentGroupid = dr["tm_id"].ToString();
 
                         #endregion
                     }
@@ -1613,7 +1613,7 @@ namespace WS_BB
                     {
                         #region Add XML
 
-                        if (contentGroupid != dr["contestgroupid"].ToString())
+                        if (contentGroupid != dr["tm_id"].ToString())
                         {
                             if (xElement != null) rtnXML.Element("SportApp").Add(xElement);
                             string img16 = dr["PIC_16X11"].ToString() == "" ? "default.png" : dr["PIC_16X11"].ToString();
@@ -1642,7 +1642,7 @@ namespace WS_BB
                             , new XAttribute("isDetail", true)
                             ));
 
-                        contentGroupid = dr["contestgroupid"].ToString();
+                        contentGroupid = dr["tm_id"].ToString();
 
                         #endregion
                     }

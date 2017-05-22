@@ -167,8 +167,8 @@ namespace isport_varity
                     string[] ipCurrents = Request.ServerVariables["REMOTE_ADDR"].ToString().Split('.');
                     string ipCurrent = (ipCurrents.Length > 3 ) ? ipCurrents[0] +"."+ipCurrents[1] +"."+ipCurrents[2] : Request.ServerVariables["REMOTE_ADDR"].ToString() ;
 
-                    isport_service.ServiceWap.WapCheckAllService(ConfigurationManager.ConnectionStrings["IsportOracleConnectionString"].ToString(), Response, "45110531001"
-                        , ConfigurationManager.AppSettings["IsportAllowIP"], ipCurrent, opt, msisdn, userAgent, bProperty_SGID, Request["pcnt_id"], bProperty_MPCODE, bProperty_PRJ);
+                    //isport_service.ServiceWap.WapCheckAllService(ConfigurationManager.ConnectionStrings["IsportOracleConnectionString"].ToString(), Response, "45110531001"
+                    //    , ConfigurationManager.AppSettings["IsportAllowIP"], ipCurrent, opt, msisdn, userAgent, bProperty_SGID, Request["pcnt_id"], bProperty_MPCODE, bProperty_PRJ);
 
                     //isport_service.ServiceWap.WapCheckAllService(ConfigurationManager.ConnectionStrings["IsportOracleConnectionString"].ToString(), Response, "45110531001"
                      //   , ConfigurationManager.AppSettings["IsportAllowIP"], ipCurrent, opt, msisdn, userAgent, "260", Request["pcnt_id"], bProperty_MPCODE, bProperty_PRJ);

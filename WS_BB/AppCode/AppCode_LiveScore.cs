@@ -927,8 +927,8 @@ namespace WS_BB
                         for (int index = 0; index < dv.Count; index++)
                         {
                             #region Add XML
-                            if (contentGroupid != dv[index]["contestgroupid"].ToString())
-                            {
+                            if (contentGroupid != dv[index]["tm_id"].ToString()) // ต้องเปลี่ยน TM_ID เพราะ contentGroupID thai league มันซ้ำกัน
+							{
                                 if (xElement != null) rtnXML.Element("SportApp").Add(xElement);
                                 img16 = dv[index]["PIC_48X48"].ToString() == "" ? "default.png" : dv[index]["PIC_48X48"].ToString();
                                 xElement = new XElement("League",
@@ -962,7 +962,7 @@ namespace WS_BB
                                , new XAttribute("contestGroupId", dv[index]["contestgroupid"].ToString())
                                , new XAttribute("isDetail", isDetail)
                                ));
-                            contentGroupid = dv[index]["contestgroupid"].ToString();
+                            contentGroupid = dv[index]["tm_id"].ToString(); // ต้องเปลี่ยน TM_ID เพราะ contentGroupID thai league มันซ้ำกัน
 
                             #endregion
                         }
@@ -1043,8 +1043,8 @@ namespace WS_BB
                         for (int index = 0; index < dv.Count; index++)
                         {
                             #region Add XML
-                            if (contentGroupid != dv[index]["contestgroupid"].ToString())
-                            {
+                            if (contentGroupid != dv[index]["tm_id"].ToString()) // ต้องเปลี่ยน TM_ID เพราะ contentGroupID thai league มันซ้ำกัน
+							{
                                 if (xElement != null) rtnXML.Element("SportApp").Add(xElement);
                                 img16 = dv[index]["PIC_48X48"].ToString() == "" ? "default.png" : dv[index]["PIC_48X48"].ToString();
                                 xElement = new XElement("League",
@@ -1100,10 +1100,10 @@ namespace WS_BB
                                , new XAttribute("isDetail", isDetail)
                                , new XAttribute("anwser", strAnswer) // y,n
                                ));
-                            contentGroupid = dv[index]["contestgroupid"].ToString();
+                            contentGroupid = dv[index]["tm_id"].ToString(); // ต้องเปลี่ยน TM_ID เพราะ contentGroupID thai league มันซ้ำกัน
 
-                            #endregion
-                        }
+							#endregion
+						}
 
                         if (xElement != null) rtnXML.Element("SportApp").Add(xElement); // add Element สุดท้าย
 
@@ -1172,8 +1172,8 @@ namespace WS_BB
                         for (int index = 0; index < dv.Count; index++)
                         {
                             #region Add XML
-                            if (contentGroupid != dv[index]["contestgroupid"].ToString())
-                            {
+                            if (contentGroupid != dv[index]["tm_id"].ToString()) // ต้องเปลี่ยน TM_ID เพราะ contentGroupID thai league มันซ้ำกัน
+							{
                                 if (xElement != null) rtnXML.Element("SportApp").Add(xElement);
                                 img16 = dv[index]["PIC_48X48"].ToString() == "" ? "default.png" : dv[index]["PIC_48X48"].ToString();
                                 xElement = new XElement("League",
@@ -1207,10 +1207,10 @@ namespace WS_BB
                                , new XAttribute("contestGroupId", dv[index]["contestgroupid"].ToString())
                                , new XAttribute("isDetail", isDetail)
                                ));
-                            contentGroupid = dv[index]["contestgroupid"].ToString();
+                            contentGroupid = dv[index]["tm_id"].ToString(); // ต้องเปลี่ยน TM_ID เพราะ contentGroupID thai league มันซ้ำกัน
 
-                            #endregion
-                        }
+							#endregion
+						}
 
                         if (xElement != null) rtnXML.Element("SportApp").Add(xElement); // add Element สุดท้าย
 

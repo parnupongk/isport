@@ -419,7 +419,9 @@
                                    <asp:ListItem Value="topscore">topscore</asp:ListItem>
                                    <asp:ListItem Value="tded">tded</asp:ListItem>
                                    <asp:ListItem Value="video">video</asp:ListItem>
-                                   <asp:ListItem Value="subscribe">subscribe</asp:ListItem>
+                                   <asp:ListItem Value="subscribe">subscribe-ais</asp:ListItem>
+                                   <asp:ListItem Value="subscribe">subscribe-dtac</asp:ListItem>
+                                   <asp:ListItem Value="subscribe">subscribe-true</asp:ListItem>
                                </asp:DropDownList>
                            </td>
                        </tr>

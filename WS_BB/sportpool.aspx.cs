@@ -67,7 +67,7 @@ namespace WS_BB
                 }
                 else if (pn == "getscore")
                 {
-                    rtn = GetResult(appName, Request["contestgroupid"], Request["date"],Request["sporttype"],  Request["lang"],true);
+                    rtn = GetResult(appName, Request["contestgroupid"], Request["date"],Request["sporttype"],  Request["lang"],false);
                 }
                 else if (pn == "scoredetail")
                 {

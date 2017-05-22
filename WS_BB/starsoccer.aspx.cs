@@ -587,7 +587,7 @@ namespace WS_BB
                 }
                 else
                 {
-                    rtnXML = ls.CommandGetScoreResult(rtnXML, "3405", scoreDate, lang);// บอลไทย
+                    //rtnXML = ls.CommandGetScoreResult(rtnXML, "3405", scoreDate, lang);// บอลไทย
                     rtnXML = ls.CommandGetScore(rtnXML, "", lang, contentGroupId, AppCode_LiveScore.MatchType.Finished, diffDate.Days, "N");
                 }
                 
@@ -619,7 +619,7 @@ namespace WS_BB
                     catch { }
                     if (rtnXML.Element("SportApp").Element("status") == null)
                     {
-                        rtnXML = ls.CommandGetScoreResult(rtnXML, "3405", DateTime.Now.ToString("yyyyMMdd"), lang);// บอลไทย
+                        //rtnXML = ls.CommandGetScoreResult(rtnXML, "3405", DateTime.Now.ToString("yyyyMMdd"), lang);// บอลไทย
                         rtnXML = new AppCode_LiveScore().CommandGetScore(rtnXML, "", lang, contentGroupId, AppCode_LiveScore.MatchType.inprogress, 0, "N");
                         
                     }
@@ -635,7 +635,7 @@ namespace WS_BB
                 {
                     rtnXML.Element("SportApp").Element("status").Remove();
                     rtnXML.Element("SportApp").Element("message").Remove();
-                    rtnXML = ls.CommandGetScoreResult(rtnXML, "3405", DateTime.Now.ToString("yyyyMMdd"), lang);// บอลไทย
+                    //rtnXML = ls.CommandGetScoreResult(rtnXML, "3405", DateTime.Now.ToString("yyyyMMdd"), lang);// บอลไทย
                     rtnXML = new AppCode_LiveScore().CommandGetScore(rtnXML, "", lang, contentGroupId, AppCode_LiveScore.MatchType.Finished, 0, "N");
                     
                 }

@@ -11,38 +11,40 @@ namespace WS_BB
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            /*string str = "";
-            str = new push().SendPost("http://prepaid.tot3g.net/p.aspx","");
-            Response.Write(str);
+            string str = "";
+            /*str = new push().SendPost("http://prepaid.tot3g.net/p.aspx","");
+            Response.Write(str);*/
             foreach (string v in Request.ServerVariables)
             {
                 str += v + " value : " + Request.ServerVariables[v]  + "<br/>" ;
             }
 
-            Response.Write(str);*/
+            Response.Write(str);
 
            
-           MobileLibrary.MobileUtilities mU = MobileLibrary.Utilities.getMISDN(Request);
+           /* MobileLibrary.MobileUtilities mU = MobileLibrary.Utilities.getMISDN(Request);
             Response.Write("|" + mU.mobileOPT + "|" + mU.mobileNumber);
-            /*
-           ExceptionManager.WriteError(mU.mobileOPT + "|" + mU.mobileNumber);
-          string s = "",ccc="",X_OPER="",X_APN="";
-           string[] allCookies = Request.Cookies.AllKeys;
-           foreach (string cookie in allCookies)
-           {
-               s += "|" + cookie;
-               //Response.Write(cookie + "value : " + Request.Cookies[cookie].Value + "<br/>") ;
-               ExceptionManager.WriteError(cookie + "value : " + Request.Cookies[cookie].Value);
-           }
-           string[] allServer = Request.ServerVariables.AllKeys;
-           foreach (string all in allServer)
-           {
+             */
+             //ExceptionManager.WriteError(mU.mobileOPT + "|" + mU.mobileNumber);
+            string s = "",ccc="",X_OPER="",X_APN="";
+             string[] allCookies = Request.Cookies.AllKeys;
+             foreach (string cookie in allCookies)
+             {
+                 s += "|" + cookie;
+                 //Response.Write(cookie + "value : " + Request.Cookies[cookie].Value + "<br/>") ;
+                 ExceptionManager.WriteError(cookie + "value : " + Request.Cookies[cookie].Value);
+             }
+             string[] allServer = Request.ServerVariables.AllKeys;
+             foreach (string all in allServer)
+             {
 
-               ExceptionManager.WriteError( all + " server value : " + Request.ServerVariables[all]);
-              //Response.Write(all + " server value : " + Request.ServerVariables[all] + "<br/>") ;
-           } 
+                 ExceptionManager.WriteError( all + " server value : " + Request.ServerVariables[all]);
+                //Response.Write(all + " server value : " + Request.ServerVariables[all] + "<br/>") ;
+             }
 
-           */
+
+            MobileLibrary.MobileUtilities mU = MobileLibrary.Utilities.getMISDN(Request);
+            Response.Write("|" + mU.mobileOPT + "|" + mU.mobileNumber);
 
         }
     }

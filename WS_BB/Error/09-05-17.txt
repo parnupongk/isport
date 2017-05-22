@@ -1,0 +1,336 @@
+
+Log Entry : 
+09/05/2017 15:53:42
+ IP :  ::1 
+Error in: http://localhost:4358/msdn.aspx. Error Message:_gavalue : GA1.1.563170579.1483670125
+__________________________
+
+Log Entry : 
+09/05/2017 15:53:42
+ IP :  ::1 
+Error in: http://localhost:4358/msdn.aspx. Error Message:ALL_HTTP server value : HTTP_CACHE_CONTROL:max-age=0
+HTTP_CONNECTION:keep-alive
+HTTP_ACCEPT:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+HTTP_ACCEPT_ENCODING:gzip, deflate, sdch, br
+HTTP_ACCEPT_LANGUAGE:th,en;q=0.8
+HTTP_COOKIE:_ga=GA1.1.563170579.1483670125
+HTTP_HOST:localhost:4358
+HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+HTTP_UPGRADE_INSECURE_REQUESTS:1
+
+__________________________
+
+Log Entry : 
+09/05/2017 15:53:42
+ IP :  ::1 
+Error in: http://localhost:4358/msdn.aspx. Error Message:ALL_RAW server value : Cache-Control: max-age=0
+Connection: keep-alive
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding: gzip, deflate, sdch, br
+Accept-Language: th,en;q=0.8
+Cookie: _ga=GA1.1.563170579.1483670125
+Host: localhost:4358
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+Upgrade-Insecure-Requests: 1
+
+__________________________
+
+Log Entry : 
+09/05/2017 15:53:42
+ IP :  ::1 
+Error in: http://localhost:4358/msdn.aspx. Error Message:APPL_MD_PATH server value : /LM/W3SVC/9/ROOT
+__________________________
+
+Log Entry : 
+09/05/2017 15:53:42
+ IP :  ::1 
+Error in: http://localhost:4358/msdn.aspx. Error Message:APPL_PHYSICAL_PATH server value : D:\samart\wap_Source\UAT\isport\WS_BB\
+__________________________
+
+Log Entry : 
+09/05/2017 15:53:42
+ IP :  ::1 
+Error in: http://localhost:4358/msdn.aspx. Error Message:AUTH_TYPE server value : 
+__________________________
+
+Log Entry : 
+09/05/2017 15:53:42
+ IP :  ::1 
+Error in: http://localhost:4358/msdn.aspx. Error Message:AUTH_USER server value : 
+__________________________
+
+Log Entry : 
+09/05/2017 15:53:42
+ IP :  ::1 
+Error in: http://localhost:4358/msdn.aspx. Error Message:AUTH_PASSWORD server value : 
+__________________________
+
+Log Entry : 
+09/05/2017 15:53:42
+ IP :  ::1 
+Error in: http://localhost:4358/msdn.aspx. Error Message:LOGON_USER server value : 
+__________________________
+
+Log Entry : 
+09/05/2017 15:53:42
+ IP :  ::1 
+Error in: http://localhost:4358/msdn.aspx. Error Message:REMOTE_USER server value : 
+__________________________
+
+Log Entry : 
+09/05/2017 15:53:42
+ IP :  ::1 
+Error in: http://localhost:4358/msdn.aspx. Error Message:CERT_COOKIE server value : 
+__________________________
+
+Log Entry : 
+09/05/2017 15:53:42
+ IP :  ::1 
+Error in: http://localhost:4358/msdn.aspx. Error Message:CERT_FLAGS server value : 
+__________________________
+
+Log Entry : 
+09/05/2017 15:53:42
+ IP :  ::1 
+Error in: http://localhost:4358/msdn.aspx. Error Message:CERT_ISSUER server value : 
+__________________________
+
+Log Entry : 
+09/05/2017 15:53:42
+ IP :  ::1 
+Error in: http://localhost:4358/msdn.aspx. Error Message:CERT_KEYSIZE server value : 
+__________________________
+
+Log Entry : 
+09/05/2017 15:53:42
+ IP :  ::1 
+Error in: http://localhost:4358/msdn.aspx. Error Message:CERT_SECRETKEYSIZE server value : 
+__________________________
+
+Log Entry : 
+09/05/2017 15:53:42
+ IP :  ::1 
+Error in: http://localhost:4358/msdn.aspx. Error Message:CERT_SERIALNUMBER server value : 
+__________________________
+
+Log Entry : 
+09/05/2017 15:53:42
+ IP :  ::1 
+Error in: http://localhost:4358/msdn.aspx. Error Message:CERT_SERVER_ISSUER server value : 
+__________________________
+
+Log Entry : 
+09/05/2017 15:53:42
+ IP :  ::1 
+Error in: http://localhost:4358/msdn.aspx. Error Message:CERT_SERVER_SUBJECT server value : 
+__________________________
+
+Log Entry : 
+09/05/2017 15:53:42
+ IP :  ::1 
+Error in: http://localhost:4358/msdn.aspx. Error Message:CERT_SUBJECT server value : 
+__________________________
+
+Log Entry : 
+09/05/2017 15:53:42
+ IP :  ::1 
+Error in: http://localhost:4358/msdn.aspx. Error Message:CONTENT_LENGTH server value : 0
+__________________________
+
+Log Entry : 
+09/05/2017 15:53:42
+ IP :  ::1 
+Error in: http://localhost:4358/msdn.aspx. Error Message:CONTENT_TYPE server value : 
+__________________________
+
+Log Entry : 
+09/05/2017 15:53:42
+ IP :  ::1 
+Error in: http://localhost:4358/msdn.aspx. Error Message:GATEWAY_INTERFACE server value : CGI/1.1
+__________________________
+
+Log Entry : 
+09/05/2017 15:53:42
+ IP :  ::1 
+Error in: http://localhost:4358/msdn.aspx. Error Message:HTTPS server value : off
+__________________________
+
+Log Entry : 
+09/05/2017 15:53:42
+ IP :  ::1 
+Error in: http://localhost:4358/msdn.aspx. Error Message:HTTPS_KEYSIZE server value : 
+__________________________
+
+Log Entry : 
+09/05/2017 15:53:42
+ IP :  ::1 
+Error in: http://localhost:4358/msdn.aspx. Error Message:HTTPS_SECRETKEYSIZE server value : 
+__________________________
+
+Log Entry : 
+09/05/2017 15:53:42
+ IP :  ::1 
+Error in: http://localhost:4358/msdn.aspx. Error Message:HTTPS_SERVER_ISSUER server value : 
+__________________________
+
+Log Entry : 
+09/05/2017 15:53:42
+ IP :  ::1 
+Error in: http://localhost:4358/msdn.aspx. Error Message:HTTPS_SERVER_SUBJECT server value : 
+__________________________
+
+Log Entry : 
+09/05/2017 15:53:42
+ IP :  ::1 
+Error in: http://localhost:4358/msdn.aspx. Error Message:INSTANCE_ID server value : 9
+__________________________
+
+Log Entry : 
+09/05/2017 15:53:42
+ IP :  ::1 
+Error in: http://localhost:4358/msdn.aspx. Error Message:INSTANCE_META_PATH server value : /LM/W3SVC/9
+__________________________
+
+Log Entry : 
+09/05/2017 15:53:42
+ IP :  ::1 
+Error in: http://localhost:4358/msdn.aspx. Error Message:LOCAL_ADDR server value : ::1
+__________________________
+
+Log Entry : 
+09/05/2017 15:53:42
+ IP :  ::1 
+Error in: http://localhost:4358/msdn.aspx. Error Message:PATH_INFO server value : /msdn.aspx
+__________________________
+
+Log Entry : 
+09/05/2017 15:53:42
+ IP :  ::1 
+Error in: http://localhost:4358/msdn.aspx. Error Message:PATH_TRANSLATED server value : D:\samart\wap_Source\UAT\isport\WS_BB\msdn.aspx
+__________________________
+
+Log Entry : 
+09/05/2017 15:53:42
+ IP :  ::1 
+Error in: http://localhost:4358/msdn.aspx. Error Message:QUERY_STRING server value : 
+__________________________
+
+Log Entry : 
+09/05/2017 15:53:42
+ IP :  ::1 
+Error in: http://localhost:4358/msdn.aspx. Error Message:REMOTE_ADDR server value : ::1
+__________________________
+
+Log Entry : 
+09/05/2017 15:53:42
+ IP :  ::1 
+Error in: http://localhost:4358/msdn.aspx. Error Message:REMOTE_HOST server value : ::1
+__________________________
+
+Log Entry : 
+09/05/2017 15:53:42
+ IP :  ::1 
+Error in: http://localhost:4358/msdn.aspx. Error Message:REMOTE_PORT server value : 60292
+__________________________
+
+Log Entry : 
+09/05/2017 15:53:42
+ IP :  ::1 
+Error in: http://localhost:4358/msdn.aspx. Error Message:REQUEST_METHOD server value : GET
+__________________________
+
+Log Entry : 
+09/05/2017 15:53:42
+ IP :  ::1 
+Error in: http://localhost:4358/msdn.aspx. Error Message:SCRIPT_NAME server value : /msdn.aspx
+__________________________
+
+Log Entry : 
+09/05/2017 15:53:42
+ IP :  ::1 
+Error in: http://localhost:4358/msdn.aspx. Error Message:SERVER_NAME server value : localhost
+__________________________
+
+Log Entry : 
+09/05/2017 15:53:42
+ IP :  ::1 
+Error in: http://localhost:4358/msdn.aspx. Error Message:SERVER_PORT server value : 4358
+__________________________
+
+Log Entry : 
+09/05/2017 15:53:42
+ IP :  ::1 
+Error in: http://localhost:4358/msdn.aspx. Error Message:SERVER_PORT_SECURE server value : 0
+__________________________
+
+Log Entry : 
+09/05/2017 15:53:42
+ IP :  ::1 
+Error in: http://localhost:4358/msdn.aspx. Error Message:SERVER_PROTOCOL server value : HTTP/1.1
+__________________________
+
+Log Entry : 
+09/05/2017 15:53:42
+ IP :  ::1 
+Error in: http://localhost:4358/msdn.aspx. Error Message:SERVER_SOFTWARE server value : Microsoft-IIS/10.0
+__________________________
+
+Log Entry : 
+09/05/2017 15:53:42
+ IP :  ::1 
+Error in: http://localhost:4358/msdn.aspx. Error Message:URL server value : /msdn.aspx
+__________________________
+
+Log Entry : 
+09/05/2017 15:53:42
+ IP :  ::1 
+Error in: http://localhost:4358/msdn.aspx. Error Message:HTTP_CACHE_CONTROL server value : max-age=0
+__________________________
+
+Log Entry : 
+09/05/2017 15:53:42
+ IP :  ::1 
+Error in: http://localhost:4358/msdn.aspx. Error Message:HTTP_CONNECTION server value : keep-alive
+__________________________
+
+Log Entry : 
+09/05/2017 15:53:42
+ IP :  ::1 
+Error in: http://localhost:4358/msdn.aspx. Error Message:HTTP_ACCEPT server value : text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+__________________________
+
+Log Entry : 
+09/05/2017 15:53:42
+ IP :  ::1 
+Error in: http://localhost:4358/msdn.aspx. Error Message:HTTP_ACCEPT_ENCODING server value : gzip, deflate, sdch, br
+__________________________
+
+Log Entry : 
+09/05/2017 15:53:42
+ IP :  ::1 
+Error in: http://localhost:4358/msdn.aspx. Error Message:HTTP_ACCEPT_LANGUAGE server value : th,en;q=0.8
+__________________________
+
+Log Entry : 
+09/05/2017 15:53:42
+ IP :  ::1 
+Error in: http://localhost:4358/msdn.aspx. Error Message:HTTP_COOKIE server value : _ga=GA1.1.563170579.1483670125
+__________________________
+
+Log Entry : 
+09/05/2017 15:53:42
+ IP :  ::1 
+Error in: http://localhost:4358/msdn.aspx. Error Message:HTTP_HOST server value : localhost:4358
+__________________________
+
+Log Entry : 
+09/05/2017 15:53:42
+ IP :  ::1 
+Error in: http://localhost:4358/msdn.aspx. Error Message:HTTP_USER_AGENT server value : Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+__________________________
+
+Log Entry : 
+09/05/2017 15:53:42
+ IP :  ::1 
+Error in: http://localhost:4358/msdn.aspx. Error Message:HTTP_UPGRADE_INSECURE_REQUESTS server value : 1
+__________________________

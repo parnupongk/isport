@@ -535,7 +535,7 @@ namespace WS_BB
                              new XAttribute("header", ConfigurationManager.AppSettings["wordingLeagueTable"])
                              , new XAttribute("date", AppCode_LiveScore.DateText(scoreDate))
                              ));
-                rtnXML = ls.CommandGetScoreResult(rtnXML, "3405", scoreDate, lang);// บอลไทย
+                //rtnXML = ls.CommandGetScoreResult(rtnXML, "3405", scoreDate, lang);// บอลไทย
                 rtnXML = ls.CommandGetScore(rtnXML, countryId, lang, contestGroupId, AppCode_LiveScore.MatchType.Finished, diffDate.Days, "N");
                 xmlDoc.Load(rtnXML.CreateReader());
 
@@ -659,7 +659,7 @@ namespace WS_BB
         {
 
             
-           rtnXML =  new AppCode_FootballProgram().CommandGetAnalysisByLeague_test(rtnXML,contestGroupId, countryId, lang);
+           //rtnXML =  new AppCode_FootballProgram().CommandGetAnalysisByLeague_test(rtnXML,contestGroupId, countryId, lang);
             rtnXML.Element("SportApp").Add(new XAttribute("ivr_call", "025020455"));
             xmlDoc.Load(rtnXML.CreateReader());
             new AppCode_Logs().Logs_Insert("FootballAnalyse", contestGroupId, countryId, type, code, AppCode_Base.AppName.SportArena.ToString(), Request["imei"], Request["imsi"], muMobile.mobileNumber, Request["model"], muMobile.mobileOPT, AppCode_Base.GETIP(), "");

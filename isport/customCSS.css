@@ -1,8 +1,13 @@
+body { color: #333; background: url(http://www.isport.co.th/dist/img/bg_2017.jpg); }
+#wrap { background: #FFF; padding: 0; box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); -moz-box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); }
 
 [class*="bx-cf"]>.h-bar{background:#2b2b2b}
 [class*="bx-cf"]>.h-bar>a{background:#e70000;min-width:120px}
 
 .bx-cf {padding-left:0px;}
+.nav li a { color: #000; }
+.nav > li > a:hover, .nav > li > a:focus { color: #C00; background-color: #FFFFFF; box-shadow: 0 -10px 15px -5px rgba(0,0,0,0.5); -moz-box-shadow: 0 -10px 15px -5px rgba(0,0,0,0.5); -webkit-box-shadow: 0 -10px 15px -5px rgba(0,0,0,0.5); border-radius: .3em .3em 0 0; -moz-border-radius: .3em .3em 0 0; -webkit-border-radius: .3em .3em 0 0; }
+.navbar-collapse.collapse { margin-bottom: -1px; }
 .nav-campaign{padding:10px 5px 0}
 .nav-campaign>ul{display:flex; flex-direction:row;flex-wrap:wrap;align-items:stretch;list-style-type:none}
 .nav-campaign>ul>li{width:50%; margin:0 0 10px; padding:0 5px}
@@ -22,24 +27,26 @@ small-gray{font-size:80%;margin:2px;color:#D0D0D0;}
 ==============================================================*/
 .row_Header_Left {
   /*margin-right: -15px;
-  margin-left: -15px;*/
-/*  background-color:#A8EAA8;*/
-color:rgba(192, 57, 43,1);
-  font-weight:bold;
-  font-size:22px;
+  margin-left: -15px;
+  background-color:#A8EAA8;
+  color:rgba(192, 57, 43,1);
   padding-bottom:5px;
-  padding-top:10px;
-  border-bottom: 3px solid #eeeeee;
+  padding-top:10px;*/
+  color: #333 !important;
+  font-weight: 400;
+  font-size: 20px;
+  border-bottom: 2px solid #DDD;
 }
 .row_Header_Left:before,
 .row_Header_Left:after {
   display: block;
   content: " ";
 }
-
 .row_Header_Left:after {
   clear: both;
 }
+/*.row_Header_Left .img { padding-bottom: 9px; }*/
+.row_Header_Left .img { margin: 0; }
 /*===============================================================
 
 
@@ -55,24 +62,150 @@ color:rgba(192, 57, 43,1);
 }
 .button-download {
 	display: block;
-	width: 100%;
+	/*width: 100%;*/
+	width: 50%;
 	height: 100%;
 	color: #FFF;
 	text-decoration: none;
 	padding: 8px 16px;
 	border-radius: .5em;
-	background: #ed145b;
-  /*background: #6efa85;*/
-  /*background-image: -webkit-linear-gradient(top, #6efa85, #002905);
-  background-image: -moz-linear-gradient(top, #6efa85, #002905);
-  background-image: -ms-linear-gradient(top, #6efa85, #002905);
-  background-image: -o-linear-gradient(top, #6efa85, #002905);
-  background-image: linear-gradient(to bottom, #6efa85, #002905);*/
+	background: #ef1843;
+	/*background: #ed145b;
+	background: #6efa85;
+	background-image: -webkit-linear-gradient(top, #6efa85, #002905);
+	background-image: -moz-linear-gradient(top, #6efa85, #002905);
+	background-image: -ms-linear-gradient(top, #6efa85, #002905);
+	background-image: -o-linear-gradient(top, #6efa85, #002905);
+	background-image: linear-gradient(to bottom, #6efa85, #002905);*/
 }
 .button-download:hover {
 	color: #FFF;
 	text-decoration: none;
 }
+.button-download-Red {
+    clear: both;
+    text-align: center;
+    max-width: 300px;
+    margin: 0 auto 20px;
+    padding-top: 20px;
+}
+
+.button-download-Red {
+    display: block;
+    /*width: 100%;*/
+    width: 50%;
+    height: 100%;
+    color: #FFF;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: .5em;
+    background: #fe1000;
+    /*background: #ed145b;
+	background: #6efa85;
+	background-image: -webkit-linear-gradient(top, #6efa85, #002905);
+	background-image: -moz-linear-gradient(top, #6efa85, #002905);
+	background-image: -ms-linear-gradient(top, #6efa85, #002905);
+	background-image: -o-linear-gradient(top, #6efa85, #002905);
+	background-image: linear-gradient(to bottom, #6efa85, #002905);*/
+}
+
+    .button-download-Red:hover {
+        color: #FFF;
+        text-decoration: none;
+    }
+.button-download-Blue {
+    clear: both;
+    text-align: center;
+    max-width: 300px;
+    margin: 0 auto 20px;
+    padding-top: 20px;
+}
+
+.button-download-Blue {
+    display: block;
+    /*width: 100%;*/
+    width: 50%;
+    height: 100%;
+    color: #FFF;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: .5em;
+    background: #4285f4;
+    /*background: #ed145b;
+	background: #6efa85;
+	background-image: -webkit-linear-gradient(top, #6efa85, #002905);
+	background-image: -moz-linear-gradient(top, #6efa85, #002905);
+	background-image: -ms-linear-gradient(top, #6efa85, #002905);
+	background-image: -o-linear-gradient(top, #6efa85, #002905);
+	background-image: linear-gradient(to bottom, #6efa85, #002905);*/
+}
+
+    .button-download-Blue:hover {
+        color: #FFF;
+        text-decoration: none;
+    }
+.button-download-Green {
+    clear: both;
+    text-align: center;
+    max-width: 300px;
+    margin: 0 auto 20px;
+    padding-top: 20px;
+}
+
+.button-download-Green {
+    display: block;
+    /*width: 100%;*/
+    width: 50%;
+    height: 100%;
+    color: #FFF;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: .5em;
+    background: #b9cf26;
+    /*background: #ed145b;
+	background: #6efa85;
+	background-image: -webkit-linear-gradient(top, #6efa85, #002905);
+	background-image: -moz-linear-gradient(top, #6efa85, #002905);
+	background-image: -ms-linear-gradient(top, #6efa85, #002905);
+	background-image: -o-linear-gradient(top, #6efa85, #002905);
+	background-image: linear-gradient(to bottom, #6efa85, #002905);*/
+}
+
+    .button-download-Green:hover {
+        color: #FFF;
+        text-decoration: none;
+    }
+.button-download-Yellow {
+    clear: both;
+    text-align: center;
+    max-width: 300px;
+    margin: 0 auto 20px;
+    padding-top: 20px;
+}
+
+.button-download-Yellow {
+    display: block;
+    /*width: 100%;*/
+    width: 50%;
+    height: 100%;
+    color: #FFF;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: .5em;
+    background: #ef1843;
+    /*background: #ed145b;
+	background: #6efa85;
+	background-image: -webkit-linear-gradient(top, #6efa85, #002905);
+	background-image: -moz-linear-gradient(top, #6efa85, #002905);
+	background-image: -ms-linear-gradient(top, #6efa85, #002905);
+	background-image: -o-linear-gradient(top, #6efa85, #002905);
+	background-image: linear-gradient(to bottom, #6efa85, #002905);*/
+}
+
+    .button-download-Yellow:hover {
+        color: #FFF;
+        text-decoration: none;
+    }
 
 /*===============================================================
 
@@ -565,9 +698,9 @@ background: rgba(6, 186, 143,0.8);
   /*margin-right: -15px;
   margin-left: -15px;*/
   background-color:#FFFFFF;
-  
-  padding-bottom:10px;
-  padding-top:10px;
+  /*padding-bottom:10px;
+  padding-top:10px;*/
+  padding: 15px;
 }
 .row_white_Left:before,
 .row_white_Left:after {

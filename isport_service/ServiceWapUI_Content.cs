@@ -136,8 +136,9 @@ namespace isport_service
                                         {
                                             ctr.Controls.AddAt(ctr.Controls.Count, new LiteralControl("<div class='" + rowCSS + "'><a href='" + link + "'><img class='" + classImg + "' src='" + imgURL + "'></a></div>"));
                                         }
-                                        else //if (mU.mobileNumber != "")
+                                        else //if (mU.mobileNumber != "")                       
                                         {
+                                             
                                             ctr.Controls.AddAt(ctr.Controls.Count, new LiteralControl("<div class='" + rowCSS + "'><a href='" + link + "'><img class='" + classImg + "' src='" + imgURL + "'></a></div>"));
                                         }
                                     }
@@ -183,7 +184,15 @@ namespace isport_service
                                         }
                                         else //if (mU.mobileNumber != "")
                                         {
-                                            ctr.Controls.AddAt(ctr.Controls.Count, new LiteralControl("<div class='" + rowCSS + "'><a class='button-download' href='" + link + "'><" + txtCSS + ">" + dr["content_text"].ToString() + "</" + txtCSS + "></a></div>"));
+                                            string btnClass = "button-download";
+                                            switch(dr["content_color"].ToString() )
+                                            {
+                                                case "Red": btnClass += "-Red";break;
+                                                case "Blue": btnClass += "-Blue"; break;
+                                                case "Green": btnClass += "-Green"; break;
+                                                case "Yellow": btnClass += "-Yellow"; break;
+                                            }
+                                            ctr.Controls.AddAt(ctr.Controls.Count, new LiteralControl("<div class='" + rowCSS + "'><a class='"+ btnClass + "' href='" + link + "'><" + txtCSS + ">" + dr["content_text"].ToString() + "</" + txtCSS + "></a></div>"));
                                         }
                                     }
                                 }

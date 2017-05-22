@@ -131,7 +131,10 @@ namespace isport
             {
                 try
                 {
-                    
+                    if( Request["p1"] != null && ( Request["p1"] == "step3_soccer" || Request["p1"]== "step3_love" || Request["p1"] == "step3_edtguide"))
+                    {
+                        Response.Redirect("http://wap.isport.co.th/isportui/landing/dtac/"+Request["p1"]+".html",false);
+                    }
 
                     lnkMain.HRef = "index.aspx?p=bb&" + Request.QueryString.ToString().Replace("p=","p1=");
                     mU = Utilities.getMISDN(Request);
@@ -219,7 +222,7 @@ namespace isport
         {
             try
             {
-
+                lblAds.Controls.Add(new isport_service.ServiceWapUI_Header().GenHeader(AppMain.strConn, opt, "isport_ads", "", "index.aspx", "0"));
                 lblHeader.Controls.Add(new isport_service.ServiceWapUI_Header().GenHeader(AppMain.strConn, opt, projectType, "", "index.aspx", "0"));
 
             }

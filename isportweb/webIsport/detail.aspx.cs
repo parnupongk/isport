@@ -50,7 +50,7 @@ namespace webIsport
                             + "<img class='img' src='http://sms-gw.samartbug.com/isportimage/images/500x300/" + dt.Rows[0]["news_images_600"].ToString() + "'>"
                             + "<div class='caption'>"
                             + "<p class='lead'>" + dt.Rows[0]["news_title_th"].ToString() + "</p>"
-                            + "<p class='lead'>" + ReplaceTagHTML(dt.Rows[0]["news_detail_th1"].ToString()) + "</p></div></div>";
+                            + "<p class='lead'>" + ReplaceTagHTML(dt.Rows[0]["news_detail_th1"].ToString()) + ReplaceTagHTML(dt.Rows[0]["news_detail_th2"].ToString()) + "</p></div></div>";
 
                     lblNews.Controls.AddAt(lblNews.Controls.Count, new LiteralControl(headNews));
                     //lblNews.Controls.AddAt(lblNews.Controls.Count, new LiteralControl("<div class='row'><p>" + dt.Rows[0]["news_title_th"] + "</p></div>"));
