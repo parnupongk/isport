@@ -159,7 +159,7 @@ namespace isport.admin
             try
             {
                 DataSet ds = null;
-                if (ddlSubName.SelectedValue == "279")
+                if (ddlSubName.SelectedValue == "279" )
                 {
                     ds = new AppCode().Select_SipContentBuCatID(ddlSubName.SelectedValue);
                 }
@@ -279,7 +279,7 @@ namespace isport.admin
                         {
                             string pcntId = o.ToString();
                             string uiID = Guid.NewGuid().ToString();
-                            new AppCode().InsertUI(GetUIRow(uiID, pcntId), GetContentRow(uiID));
+                            new AppCode().InsertUI(GetUIRow(uiID, pcntId), GetContentRow(uiID,txtSMS.Text));
                             txtName.Text = ddlSubName.SelectedItem.Text.Substring(0, 2) + new Random().Next(99999);
                         }
                     }
@@ -317,14 +317,19 @@ namespace isport.admin
                             pcntId = appCode.Insert_SipContent(ddlSubName.SelectedValue.ToString()
                                     , GetLink(ddlSubName.SelectedValue.ToString())
                                     , txtSMS.Text.Replace("\r", "").Replace("\n", "").Length > 150 ? txtSMS.Text.Replace("\r", "").Replace("\n", "").Substring(0, 150) : txtSMS.Text.Replace("\r", "").Replace("\n", "")
-                                    , txtChoose.Text.Replace("\r", "").Replace("\n", "").Length > 150 ? txtChoose.Text.Replace("\r", "").Replace("\n", "").Substring(0, 150) : txtChoose.Text.Replace("\r", "").Replace("\n", "")
+                                    , txtChoose.Text.Replace("\r", "").Replace("\n", "")//.Length > 150 ? txtChoose.Text.Replace("\r", "").Replace("\n", "").Substring(0, 150) : txtChoose.Text.Replace("\r", "").Replace("\n", "")
                                     , ddlContentType.SelectedIndex > 0 ? ddlContentType.SelectedValue : txtAnswer.Text.Replace("\r", "").Replace("\n", "")
                                     , txtDisplayDate.Text
                                     , WebLibrary.MitTool.GetCookie(Request, "isportwapadmin")
                                     , chkSendNow.Checked ? "Y" : "N");
                         }
                         string uiID = Guid.NewGuid().ToString();
-                        appCode.InsertUI(GetUIRow(uiID, pcntId), GetContentRow(uiID));
+                        appCode.InsertUI(GetUIRow(uiID, pcntId), GetContentRow(uiID, txtSMS.Text));
+                        if(ddlSubName.SelectedValue.ToString() == "310" || ddlSubName.SelectedValue.ToString() == "309" || ddlSubName.SelectedValue.ToString() == "312")
+                        {
+                            uiID = Guid.NewGuid().ToString();
+                            appCode.InsertUI(GetUIRow(uiID, pcntId), GetContentRow(uiID, txtChoose.Text));
+                        }
                     }
                     else
                     {
@@ -347,6 +352,7 @@ namespace isport.admin
             {
                 ExceptionManager.WriteError("SubmitInsert " + ex.Message);
                 lblError.Text = ex.Message;
+                ClearPage();
             }
         }
 
@@ -417,7 +423,7 @@ namespace isport.admin
                 throw new Exception("GetUIRow>>" + ex.Message);
             }
         }
-        private isportDS.wapisport_contentRow GetContentRow(string masterID)
+        private isportDS.wapisport_contentRow GetContentRow(string masterID,string txtContent)
         {
             try
             {
@@ -427,7 +433,7 @@ namespace isport.admin
                 drContent.content_icon = "";
                 drContent.content_createdate = DateTime.Now;
                 drContent.content_link = "";
-                drContent.content_text = txtSMS.Text;
+                drContent.content_text = txtContent;
                 drContent.content_align = "Center";
                 drContent.content_breakafter = true;
                 drContent.content_color = "Black";

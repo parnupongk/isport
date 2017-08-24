@@ -41,7 +41,7 @@
 <body>
     <form id="form1" runat="server">
     <div>
-    
+        <a href="#" onclick="javascript:window.open('http://www.gtalbot.org/BrowserBugsSection/MSIE7Bugs/ClosingWindowsNotOpenedByJS.html', '_self', '');">opent opoup</a>
         <asp:FileUpload ID="file" runat="server" />
         <asp:TextBox runat="server" ID="txt"></asp:TextBox>
         <asp:Button ID="Button1" runat="server" onclick="Button1_Click" Text="Upload" />
@@ -49,7 +49,6 @@
 
 
     </div>
-    </form>
      <table id="datatable1" class="table table-striped table-hover">
                 <thead>
                     <tr>
@@ -58,7 +57,7 @@
                         <th colspan="16" style=\"background-color:#366092;color:#ffffff;font-weight:bold;\">Status</th>
                     </tr>
                     <tr>
-                        <th style=\"background-color:#366092;color:#ffffff;font-weight:bold;\" rowspan="3">Open </th>
+                        <th style=\"background-color:#366092;color:#ffffff;font-weight:bold;\" rowspan="3">Ope</th>
                         <th style=\"background-color:#366092;color:#ffffff;font-weight:bold;\" rowspan="3">Pending </th>
                         <th style=\"background-color:#366092;color:#ffffff;font-weight:bold;\" colspan="14" style=\"background-color:#366092;color:#ffffff;font-weight:bold;\">Close</th>
                     </tr>
@@ -165,29 +164,31 @@
             <tr style="box-sizing: border-box;">
                 <td style="box-sizing: border-box; padding: 0px;" class="auto-style11">
                     <p style="box-sizing: border-box; margin: 0px 0px 10px; line-height: 2;">
-                        <span style="box-sizing: border-box; font-family: Tahoma;">S</span></p>
+                        encoding</p>
                 </td>
                 <td style="box-sizing: border-box; padding: 0px;" class="auto-style11">
                     <p style="box-sizing: border-box; margin: 0px 0px 10px; line-height: 2;">
-                        <span style="box-sizing: border-box; font-family: Tahoma;">37</span></p>
+        <asp:TextBox runat="server" ID="txtEncoding"></asp:TextBox>
+                    </p>
                 </td>
                 <td style="box-sizing: border-box; padding: 0px;" class="auto-style5">
                     <p style="box-sizing: border-box; margin: 0px 0px 10px; line-height: 2;">
-                        <span style="box-sizing: border-box; font-family: Tahoma;">27&nbsp;&nbsp; &nbsp;</span></p>
+                        &nbsp;</p>
                 </td>
             </tr>
             <tr style="box-sizing: border-box;">
                 <td style="box-sizing: border-box; padding: 0px;" class="auto-style11">
                     <p style="box-sizing: border-box; margin: 0px 0px 10px; line-height: 2;">
-                        <span style="box-sizing: border-box; font-family: Tahoma;">M</span></p>
+                        decoding</p>
                 </td>
                 <td style="box-sizing: border-box; padding: 0px;" class="auto-style11">
                     <p style="box-sizing: border-box; margin: 0px 0px 10px; line-height: 2;">
-                        <span style="box-sizing: border-box; font-family: Tahoma;">39</span></p>
+        <asp:TextBox runat="server" ID="txtDecoding"></asp:TextBox>
+                    </p>
                 </td>
                 <td style="box-sizing: border-box; padding: 0px;" class="auto-style5">
                     <p style="box-sizing: border-box; margin: 0px 0px 10px; line-height: 2;">
-                        <span style="box-sizing: border-box; font-family: Tahoma;">28&nbsp;&nbsp; &nbsp;</span></p>
+                        &nbsp;</p>
                 </td>
             </tr>
             <tr style="box-sizing: border-box;">
@@ -221,5 +222,7 @@
         </tbody>
     </table>
 
+    </form>
+     
 </body>
 </html>

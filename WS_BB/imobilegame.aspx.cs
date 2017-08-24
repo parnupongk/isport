@@ -669,7 +669,8 @@ new XElement("status", "error")
                 date = year.ToString() + date.Substring(4);
                 date = (date == null || date == "") ? DateTime.Now.ToString("yyyyMMdd") : date;
                 contentGroupId = (contentGroupId == null || contentGroupId == "") ? "" : contentGroupId;
-
+                // bomupdate
+                contentGroupId = "";
                 rtnXML.Element("SportApp").Add(new XAttribute("status",CheckActive(imei,appName)));
                 rtnXML.Element("SportApp").Add(new XAttribute("msisdn",muMobile.mobileNumber));
                 rtnXML.Element("SportApp").Add(new XAttribute("optcode", muMobile.mobileOPT));

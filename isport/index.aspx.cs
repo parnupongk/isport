@@ -124,29 +124,46 @@ namespace isport
         #endregion
 
         #region page load
-
+        private bool GetHideLogo(string p)
+        {
+            bool rtn = false;
+            string[] pjHide = ConfigurationManager.AppSettings["IsportHideLogo"].Split(',');
+            foreach(string str in pjHide)
+            {
+                if (p.IndexOf(str) > -1) rtn= true;
+            }
+            return rtn;
+        }
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)
             {
                 try
                 {
+                                     
+                    if( (Request["p"]!=null && GetHideLogo( Request["p"])) || (Request["p1"] != null && GetHideLogo(Request["p1"])))
+                    {
+                        lnkMain.Attributes.Add("style", "display:none");
+
+                    }
                     if( Request["p1"] != null && ( Request["p1"] == "step3_soccer" || Request["p1"]== "step3_love" || Request["p1"] == "step3_edtguide"))
                     {
                         Response.Redirect("http://wap.isport.co.th/isportui/landing/dtac/"+Request["p1"]+".html",false);
                     }
+
+                    
 
                     lnkMain.HRef = "index.aspx?p=bb&" + Request.QueryString.ToString().Replace("p=","p1=");
                     mU = Utilities.getMISDN(Request);
                     ViewState["OperatorType"] = mU.mobileOPT;
                     bProperty_USERAGENT = Request.ServerVariables["HTTP_USER_AGENT"];
                     CheckParameter();
-                    if (mU.mobileOPT == "04" || mU.mobileOPT == "03" || mU.mobileOPT == "02") divClose.Attributes.Add("style", "display:;");
+                    if (Request["p"] !=null && Request["p"].ToString() != "bb") divClose.Attributes.Add("style", "display:;");
                     string projectType = (Request["s"] != null && Request["s"] != "") ? Request["s"] : Request["p"] == null ? "bb" : Request["p"]; // request["s"] = service game football
                     bProperty_SGID = (Request["s"] != null && Request["s"] != "") ? "269" : bProperty_SGID;
 
                     GenHeader(mU.mobileOPT, Request["p1"] == null ? (Request["p"] == null ? "" : Request["p"]) : Request["p1"]); // p1 มาจาก confirm.aspx เพื่อ show banner ของแต่ละ pack
-                    if(Request["p"] == null || Request["p"] == "bb"  )GenNews();
+                    if (Request["p"] == null || Request["p"] == "bb") GenNews_fromSQL();//GenNews();
                     else
                     {
                         divNews.Attributes.Add("style", "display:none");
@@ -170,6 +187,57 @@ namespace isport
         #endregion
 
         #region Header
+        private void GenNews_fromSQL()
+        {
+            try
+            {
+                string url="", headNews="", detailNews="", imgURL="";
+                string[] detail = new string[] { };
+                DataSet ds = new isport_service.AppCode().SelectUIByLevel_Wap(AppCode.strConn, "0", "0", "", "newsmain");
+                DataView dv = ds.Tables[0].DefaultView;
+                dv.Sort = "content_createdate desc";
+                int index = 0;
+                foreach (DataRowView dr in dv)
+                {
+                    //DataRow dr = ds.Tables[0].Rows[index];
+
+                    imgURL = dr["content_image"] == null || dr["content_image"].ToString() == "" ? imgURL : dr["content_image"].ToString();
+                    imgURL = imgURL.IndexOf("http") > -1 ? imgURL : "http://wap.isport.co.th/isportui/" + imgURL.Replace("~/", "");
+
+                    url = "detail.aspx?" + "_id=" + dr["content_id"].ToString() + ((HttpContext.Current.Request.QueryString.ToString() == "") ? "" : "&" + HttpContext.Current.Request.QueryString);//"&sg=" + dr["ui_sg_id"].ToString()
+                    // + "&class_id=" + classId;//+ "&scs_id=" + bProperty_SCSID + "&mp_code=" + bProperty_MPCODE + "&prj=" + bProperty_PRJ + "&p=" + Request["p"];
+                    detail = dr["content_text"].ToString().Split('|');
+                    if (index == 0)
+                    {
+                        headNews = "<div class='thumbnail'><a href='" + url + "'>"
+                            + "<img class='img-full' src='" + imgURL + "'>"
+                            + "<div class='caption'><h4 class='media-heading'>" + ((detail.Length>0)? detail[0]: "") + "</h4></a>"
+                            + "<p>" + ((detail.Length > 1) ? detail[1].Substring(0,200) : dr["content_text"].ToString()) + "</p>"
+                            + "<small-gray><i class='fa fa-clock-o fa-1' aria-hidden='true'></i>" + DateTime.ParseExact(dr["content_createdate"].ToString(), "M/d/yyyy h:mm:ss tt", null).ToString("d/MMM/yy H:s") + "</small-gray></div></div>";
+
+
+
+                    }
+                    else
+                    {
+                        detailNews += "<div class='media'><a class='pull-left' href='" + url + "'>"
+                            + "<img src='" + imgURL + "'></a>"
+                            + "<div class='media-body'><h4 small>" + ((detail.Length > 0) ? detail[0] : "") + "</h4 small>"
+                            + "<div class='media-button'><small-gray><i class='fa fa-clock-o fa-1' aria-hidden='true'></i>" + DateTime.ParseExact(dr["content_createdate"].ToString(), "M/d/yyyy h:mm:ss tt", null).ToString("d/MMM/yy H:s") + "</small-gray></div></div></div>";
+
+                    }
+
+                    index++;
+                }
+
+                lblNews.Controls.AddAt(lblNews.Controls.Count, new LiteralControl("<div class='col-md-5'>" + headNews + "</div>"));
+                lblNews.Controls.AddAt(lblNews.Controls.Count, new LiteralControl("<div class='col-md-4'>" + detailNews + "</div>"));
+            }
+            catch(Exception ex)
+            {
+                ExceptionManager.WriteError("GenNews_fromSQL >> " + ex.Message);                
+            }
+        }
         private void GenNews()
         {
             try
@@ -348,9 +416,24 @@ namespace isport
             try
             {
 
+                string link = "redirect.aspx" + "?lng=" + bProperty_LNG + "&mp_code=" + bProperty_MPCODE
+                                    + "&size=" + bProperty_SIZE + "&prj=" + bProperty_PRJ
+                                    + "&scs_id=" + bProperty_SCSID;
+                link += (Request["class_id"] != null && link.IndexOf("class_id") < 0) ? "&class_id=" + Request["class_id"] : "";
+
+                string pageMaster = "index.aspx" + "?lng=" + bProperty_LNG + "&mp_code=" + bProperty_MPCODE
+                                        + "&size=" + bProperty_SIZE + "&prj=" + bProperty_PRJ
+                                        + "&sg=" + bProperty_SGID + "&scs_id=" + bProperty_SCSID;
+                pageMaster += (Request["class_id"] != null && link.IndexOf("class_id") < 0) ? "&class_id=" + Request["class_id"] : "";
+
                 lblFooter.Controls.Add(new isport_service.ServiceWapUI_Footer().GenFooter(AppMain.strConn, opt, projectType, "", "index.aspx", "0", bProperty_MPCODE, bProperty_PRJ, bProperty_SCSID, Request["class_id"]));
 
-                
+                /*lblFooter.Controls.Add(new isport_service.ServiceWapUI_Content().GenContent(AppMain.strConn
+                         , AppMain.strConnOracle
+                        , Request["mid"] == null ? "0" : Request["mid"]
+                        , Request["level"] == null ? "0" : Request["level"]
+                        , opt, "ccafe", link, pageMaster, Request["class_id"]));*/
+
 
             }
             catch (Exception ex)

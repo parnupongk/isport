@@ -189,6 +189,7 @@
     <Content Include="bin\WebLibrary.dll" />
     <Content Include="bin\zh-CHS\AjaxControlToolkit.resources.dll" />
     <Content Include="bin\zh-CHT\AjaxControlToolkit.resources.dll" />
+    <Content Include="confirm.aspx" />
     <Content Include="Error\01-02-16.txt" />
     <Content Include="images\bg-reward-gold.png" />
     <Content Include="images\close_btn.png" />
@@ -307,6 +308,13 @@
     </Compile>
     <Compile Include="check.aspx.designer.cs">
       <DependentUpon>check.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="confirm.aspx.cs">
+      <DependentUpon>confirm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="confirm.aspx.designer.cs">
+      <DependentUpon>confirm.aspx</DependentUpon>
     </Compile>
     <Compile Include="football_result_detail.aspx.cs">
       <DependentUpon>football_result_detail.aspx</DependentUpon>

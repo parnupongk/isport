@@ -35,6 +35,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "webIsport", "isportweb\webI
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WS_BB", "WS_BB\WS_BB.csproj", "{66AC183B-752F-4A92-90E7-F80490DF646B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "isport_foxhun", "isport_foxhun\isport_foxhun.csproj", "{C8E3C8FC-68B9-4410-8045-0C682BB846F5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -171,6 +173,14 @@ Global
 		{66AC183B-752F-4A92-90E7-F80490DF646B}.NET45|Any CPU.Build.0 = Release|Any CPU
 		{66AC183B-752F-4A92-90E7-F80490DF646B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{66AC183B-752F-4A92-90E7-F80490DF646B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8E3C8FC-68B9-4410-8045-0C682BB846F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8E3C8FC-68B9-4410-8045-0C682BB846F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8E3C8FC-68B9-4410-8045-0C682BB846F5}.NET40|Any CPU.ActiveCfg = Release|Any CPU
+		{C8E3C8FC-68B9-4410-8045-0C682BB846F5}.NET40|Any CPU.Build.0 = Release|Any CPU
+		{C8E3C8FC-68B9-4410-8045-0C682BB846F5}.NET45|Any CPU.ActiveCfg = Release|Any CPU
+		{C8E3C8FC-68B9-4410-8045-0C682BB846F5}.NET45|Any CPU.Build.0 = Release|Any CPU
+		{C8E3C8FC-68B9-4410-8045-0C682BB846F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8E3C8FC-68B9-4410-8045-0C682BB846F5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

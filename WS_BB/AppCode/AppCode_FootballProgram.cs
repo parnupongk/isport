@@ -626,10 +626,13 @@ namespace WS_BB
                 bool isDetail = false, isLeageDetail = false;
                 string contentGroupid = "", teamName1 = "", teamName2 = "";
                 XElement xElement = null;
+
+                // บอลไทย ไปใช้ที่ sportcc 
+                //nXML.Element("SportApp").Add(CommandGetFootballProgram_Isportstarsoccer("League", date, "", lang));
+
                 if (dv.Count > 0)
                 {
-                    // บอลไทย ไปใช้ที่ sportcc
-                    //rtnXML.Element("SportApp").Add(CommandGetFootballProgram_Isportstarsoccer("League", date, "3405", lang));
+                    
 
                     for (int index = 0; index < dv.Count; index++)
                     {
@@ -686,7 +689,7 @@ namespace WS_BB
                 else
                 {
                     rtnXML.Element("SportApp").Add(new XElement("status", "success")
-                       , new XElement("message", "ขอภัยไม่พบข้อมูลที่ต้องการ"));
+                       , new XElement("message", "ขอภัยไม่พบข้อมูลที่ต้องการ")); 
                 }
             }
             catch (Exception ex)
@@ -728,10 +731,14 @@ namespace WS_BB
                 bool isDetail = false, isLeageDetail = false;
                 string contentGroupid = "", teamName1 = "", teamName2 = "";
                 XElement xElement = null;
+
+                // บอลไทย ไปใช้ที่ sportcc
+                //rtnXML.Element("SportApp").Add(CommandGetFootballProgram_IsportPool("League", date, "", lang));
+
+
                 if (dv.Count > 0)
                 {
-                    // บอลไทย ไปใช้ที่ sportcc
-                    //rtnXML.Element("SportApp").Add(CommandGetFootballProgram_IsportPool("League", date, "3405", lang));
+                    
 
                     for (int index = 0; index < dv.Count; index++)
                     {
@@ -793,6 +800,9 @@ namespace WS_BB
                 {
                     rtnXML.Element("SportApp").Add(new XElement("status", "success")
                        , new XElement("message", "ขอภัยไม่พบข้อมูลที่ต้องการ"));
+
+                   // rtnXML.Element("SportApp").Add(new XElement("status", "success")
+                    //  , new XElement("message", ""));
                 }
             }
             catch (Exception ex)

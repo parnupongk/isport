@@ -99,40 +99,53 @@ namespace isport_service
             {
                 Control ctr = new Control();
                 DataSet ds = new AppCode().SelectFooterByoperator(strConn, opt, projectType);
-                ctr.Controls.AddAt(ctr.Controls.Count, new LiteralControl("<div class='col-xs-12 col-md-4 col-sm-6'><ul class='nav nav-pills nav-stacked'>"));
-                foreach (DataRow dr in ds.Tables[0].Rows)
+
+                if (ds.Tables.Count > 0 && ds.Tables[0].Rows.Count > 0)
                 {
-                    string link = "http://wap.isport.co.th/isportui/redirect.aspx" + "?mp_code=" + mpCode
-                                    + "&prj=" + prj
-                                    + "&sg=" + dr["footer_sg_id"].ToString() + "&scs_id=" + scsId
-                                    + "&r=" + dr["content_link"].ToString().Replace('&', '|');
-                    link += "&class_id=" + classId;
-
-                    //string link = dr["content_link"].ToString() + "&sg=" + dr["footer_sg_id"].ToString();
-                    ctr.Controls.AddAt(ctr.Controls.Count, new LiteralControl("<li role='presentation' >"));
-
-                    if (dr["content_link"] != null && dr["content_link"].ToString() != "")
+                    ctr.Controls.AddAt(ctr.Controls.Count, new LiteralControl("<div class='col-xs-12 col-md-4 col-sm-6'><ul class='nav nav-pills nav-stacked'>"));
+                    foreach (DataRow dr in ds.Tables[0].Rows)
                     {
+                        string link = "http://wap.isport.co.th/isportui/redirect.aspx" + "?mp_code=" + mpCode
+                                        + "&prj=" + prj
+                                        + "&sg=" + dr["footer_sg_id"].ToString() + "&scs_id=" + scsId
+                                        + "&r=" + dr["content_link"].ToString().Replace('&', '|');
+                        link += "&class_id=" + classId;
 
-                        ctr.Controls.AddAt(ctr.Controls.Count, new LiteralControl( ServiceWapUI_GenControls.genLinkNoDiv(dr, "", link, "img","")));
-                    }
-                    else
-                    {
+                        //string link = dr["content_link"].ToString() + "&sg=" + dr["footer_sg_id"].ToString();
+                        ctr.Controls.AddAt(ctr.Controls.Count, new LiteralControl("<li role='presentation' >"));
 
-                        if (dr["content_image"] != null && dr["content_image"].ToString() != "")
+                        if (dr["content_link"] != null && dr["content_link"].ToString() != "")
                         {
-                            ctr.Controls.AddAt(ctr.Controls.Count, ServiceWapUI_GenControls.genImagesHeader(dr, pageName, level, projectType, false,"img-full"));
 
+                            ctr.Controls.AddAt(ctr.Controls.Count, new LiteralControl(ServiceWapUI_GenControls.genLinkNoDiv(dr, "", link, "img", "")));
                         }
-                        else if (dr["content_text"] != null && dr["content_text"].ToString() != "")
+                        else
                         {
-                            ctr.Controls.AddAt(ctr.Controls.Count, ServiceWapUI_GenControls.genText(dr, pageName, level, projectType, false, (bool)dr["footer_ispayment"]));
-                        }
-                    }
 
-                    ctr.Controls.AddAt(ctr.Controls.Count, new LiteralControl("</li>"));
+                            if (dr["content_image"] != null && dr["content_image"].ToString() != "")
+                            {
+                                ctr.Controls.AddAt(ctr.Controls.Count, ServiceWapUI_GenControls.genImagesHeader(dr, pageName, level, projectType, false, "img-full"));
+
+                            }
+                            else if (dr["content_text"] != null && dr["content_text"].ToString() != "")
+                            {
+                                ctr.Controls.AddAt(ctr.Controls.Count, ServiceWapUI_GenControls.genText(dr, pageName, level, projectType, false, (bool)dr["footer_ispayment"]));
+                            }
+                        }
+
+                        ctr.Controls.AddAt(ctr.Controls.Count, new LiteralControl("</li>"));
+                    }
+                    ctr.Controls.AddAt(ctr.Controls.Count, new LiteralControl("</ul></div>"));
                 }
-                ctr.Controls.AddAt(ctr.Controls.Count, new LiteralControl("</ul></div>"));
+                else
+                {
+                    string link = "redirect.aspx" + "?mp_code=" + mpCode;
+                    ctr = new ServiceWapUI_Content().GenContent(strConn
+                         , ""
+                        ,"0"
+                        , "0"
+                        , opt, "ccafe", link, "", "");
+                }
 
                 return ctr;
             }

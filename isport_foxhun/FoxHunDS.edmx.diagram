@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="355fc6408a294daf94125db7288758ab" Name="Diagram1" ZoomLevel="37">
+        <EntityTypeShape EntityType="isportModel.foxhun_region" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="isportModel.foxhun_province" Width="1.5" PointX="5.375" PointY="0.75" />
+        <EntityTypeShape EntityType="isportModel.foxhun_player" Width="1.5" PointX="5.375" PointY="3.75" />
+        <EntityTypeShape EntityType="isportModel.foxhun_player_history" Width="1.5" PointX="7.375" PointY="0.75" />
+        <EntityTypeShape EntityType="isportModel.foxhun_team" Width="1.5" PointX="0.75" PointY="3.75" />
+        <EntityTypeShape EntityType="isportModel.foxhun_users" Width="1.5" PointX="7.375" PointY="8.75" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

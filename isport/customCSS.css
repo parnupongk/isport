@@ -1,17 +1,67 @@
-body { color: #333; background: url(http://www.isport.co.th/dist/img/bg_2017.jpg); }
-#wrap { background: #FFF; padding: 0; box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); -moz-box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); }
+body { color: #333; /*background: url(http://www.isport.co.th/dist/img/bg_2017.jpg);*/ }
+a { color: #C00; }
+#wrap { padding: 0; background: #FFF; box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); -moz-box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); }
 
 [class*="bx-cf"]>.h-bar{background:#2b2b2b}
 [class*="bx-cf"]>.h-bar>a{background:#e70000;min-width:120px}
 
+.media .pull-left img {
+    width: 120px;
+    display: block;
+    float: left;
+    margin-right: 10px;
+    max-height: 70px;
+}
+
 .bx-cf {padding-left:0px;}
 .nav li a { color: #000; }
-.nav > li > a:hover, .nav > li > a:focus { color: #C00; background-color: #FFFFFF; box-shadow: 0 -10px 15px -5px rgba(0,0,0,0.5); -moz-box-shadow: 0 -10px 15px -5px rgba(0,0,0,0.5); -webkit-box-shadow: 0 -10px 15px -5px rgba(0,0,0,0.5); border-radius: .3em .3em 0 0; -moz-border-radius: .3em .3em 0 0; -webkit-border-radius: .3em .3em 0 0; }
+.nav > li > a:hover, .nav > li > a:focus {
+	color: #C00;
+	background-color: #FFF;
+	box-shadow: 0 -10px 15px -5px rgba(0,0,0,0.5);
+	-moz-box-shadow: 0 -10px 15px -5px rgba(0,0,0,0.5);
+	-webkit-box-shadow: 0 -10px 15px -5px rgba(0,0,0,0.5);
+	border-radius: .3em .3em 0 0; -moz-border-radius: .3em .3em 0 0;
+	-webkit-border-radius: .3em .3em 0 0;
+	border-bottom: 2px solid #FFF;
+	margin-bottom: -2px;
+}
 .navbar-collapse.collapse { margin-bottom: -1px; }
 .nav-campaign{padding:10px 5px 0}
 .nav-campaign>ul{display:flex; flex-direction:row;flex-wrap:wrap;align-items:stretch;list-style-type:none}
 .nav-campaign>ul>li{width:50%; margin:0 0 10px; padding:0 5px}
 .nav-campaign>ul>li>a{display:inline-flex; align-items:center;justify-content:center; text-align:center;width:100%; padding:4vh 5px;background:url(images/bg-reward-gold.png) 50% 50% no-repeat; background-size:100% 100%; font:4.5vmin "supermarket"; color:#fff}
+
+.thumbnail {
+	border: none !important;
+	border-radius: 0 !important;
+/*	padding: 10px;*/
+}
+/*.thumbnail .caption {
+    padding: 5px 0 0;
+}
+.media {
+	background: #555;
+	padding: 10px;
+    margin: 0;
+}
+.media:last-child {
+    margin-bottom: 10px !important;
+}
+.media-body h4 {
+    font-size: 14px;
+	color: #fff;
+}
+.thumbnail, .media, .row_white_Left, .row_white_Center {
+	margin-right: 10px;
+	box-shadow: 0 0 50px rgba(0,0,0,0.25);
+}
+.rowprogramheader, .rowprogramdetail, .rowprogramdetail_, .row_white_Center { margin-right: 10px; }
+.row_white { margin: 0 10px -11px 0; }
+.row_white_Center { min-height: 220px; }
+.media:last-child, .row_white_Left:last-child {
+	margin-right: 0;
+}*/
 
 @media (min-width:769px){#nav-drop>li>a:hover,#nav-drop>li>a.selected{color:#e70000}}
 @media (max-width:767px){.nav-dara>ul>li>a>b{padding-top:5px;font:3.5vmin/5.5vmin "supermarket"}}
@@ -19,7 +69,11 @@ body { color: #333; background: url(http://www.isport.co.th/dist/img/bg_2017.jpg
 [class*="bx-cf"]>.inner.bg-wh{padding:5px}
 }
 
-small-gray{font-size:80%;margin:2px;color:#D0D0D0;}
+small-gray {
+    font-size: 75%;
+    margin: 2px;
+    color: #999;
+}
 /*===========================================================
 
                 Header Text
@@ -31,11 +85,11 @@ small-gray{font-size:80%;margin:2px;color:#D0D0D0;}
   background-color:#A8EAA8;
   color:rgba(192, 57, 43,1);
   padding-bottom:5px;
-  padding-top:10px;*/
+  padding-top:10px;
+  border-bottom: 2px solid #DDD;*/
   color: #333 !important;
   font-weight: 400;
   font-size: 20px;
-  border-bottom: 2px solid #DDD;
 }
 .row_Header_Left:before,
 .row_Header_Left:after {
@@ -61,13 +115,13 @@ small-gray{font-size:80%;margin:2px;color:#D0D0D0;}
 	padding-top: 20px;
 }
 .button-download {
-	display: block;
+	/*display: block;*/
 	/*width: 100%;*/
 	width: 50%;
 	height: 100%;
 	color: #FFF;
 	text-decoration: none;
-	padding: 8px 16px;
+	padding: 8px 50px;
 	border-radius: .5em;
 	background: #ef1843;
 	/*background: #ed145b;
@@ -91,13 +145,13 @@ small-gray{font-size:80%;margin:2px;color:#D0D0D0;}
 }
 
 .button-download-Red {
-    display: block;
+    /*display: block;*/
     /*width: 100%;*/
     width: 50%;
     height: 100%;
     color: #FFF;
     text-decoration: none;
-    padding: 8px 16px;
+    padding: 8px 50px;
     border-radius: .5em;
     background: #fe1000;
     /*background: #ed145b;
@@ -122,13 +176,13 @@ small-gray{font-size:80%;margin:2px;color:#D0D0D0;}
 }
 
 .button-download-Blue {
-    display: block;
+    /*display: block;*/
     /*width: 100%;*/
     width: 50%;
     height: 100%;
     color: #FFF;
     text-decoration: none;
-    padding: 8px 16px;
+    padding: 8px 50px;
     border-radius: .5em;
     background: #4285f4;
     /*background: #ed145b;
@@ -153,13 +207,13 @@ small-gray{font-size:80%;margin:2px;color:#D0D0D0;}
 }
 
 .button-download-Green {
-    display: block;
+    /*display: inline-block;*/
     /*width: 100%;*/
     width: 50%;
     height: 100%;
     color: #FFF;
     text-decoration: none;
-    padding: 8px 16px;
+    padding: 8px 50px;
     border-radius: .5em;
     background: #b9cf26;
     /*background: #ed145b;
@@ -184,13 +238,13 @@ small-gray{font-size:80%;margin:2px;color:#D0D0D0;}
 }
 
 .button-download-Yellow {
-    display: block;
+    /*display: block;*/
     /*width: 100%;*/
     width: 50%;
     height: 100%;
     color: #FFF;
     text-decoration: none;
-    padding: 8px 16px;
+    padding: 8px 50px;
     border-radius: .5em;
     background: #ef1843;
     /*background: #ed145b;
@@ -221,7 +275,8 @@ small-gray{font-size:80%;margin:2px;color:#D0D0D0;}
 	padding-top: 20px;
 }
 .button-cancel {
-	display: block;
+	/*display: inline-block;*/
+margin-left: 20px;
 	width: 100%;
 	height: 100%;
 	color: #FFF;
@@ -248,8 +303,8 @@ small-gray{font-size:80%;margin:2px;color:#D0D0D0;}
 *
 ================================================================*/
 #social{
-	background: url(../images/overlay2.png) scroll  repeat; 
-	background-color: rgb(14, 62, 74);
+	/*background: url(../images/overlay2.png) scroll  repeat; 
+	background-color: rgb(14, 62, 74);*/
 } 
   
    .social{
@@ -274,7 +329,7 @@ small-gray{font-size:80%;margin:2px;color:#D0D0D0;}
    .footer{
     letter-spacing: 0.1px;
 	background: url(images/overlay2.png) scroll repeat;    
-	background-color:#2b2b2b;/* rgb(16, 16, 16);*/
+	/*background-color:#2b2b2b; rgb(16, 16, 16);*/
 	padding: 15px 0;
 }  
 

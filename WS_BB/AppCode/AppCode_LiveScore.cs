@@ -922,13 +922,15 @@ namespace WS_BB
                     DataView dv = FillterGetScore(ds.Tables[0].DefaultView, contestGroupId, countryId);
                     string contentGroupid = "",img16="";
                     XElement xElement = null;
+                    int countLeague = 0;
                     if (dv.Count > 0)
                     {
-                        for (int index = 0; index < dv.Count; index++)
+                        for (int index = 0; index < dv.Count && countLeague < 50 ; index++)
                         {
                             #region Add XML
                             if (contentGroupid != dv[index]["tm_id"].ToString()) // ต้องเปลี่ยน TM_ID เพราะ contentGroupID thai league มันซ้ำกัน
 							{
+                                countLeague++;
                                 if (xElement != null) rtnXML.Element("SportApp").Add(xElement);
                                 img16 = dv[index]["PIC_48X48"].ToString() == "" ? "default.png" : dv[index]["PIC_48X48"].ToString();
                                 xElement = new XElement("League",

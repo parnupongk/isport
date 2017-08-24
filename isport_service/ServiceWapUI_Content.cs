@@ -81,7 +81,7 @@ namespace isport_service
                         // mp4 ให้แสดงเป็น tag vedio เลย
                         string wowza = dr["content_link"].ToString().IndexOf("zero") > -1 ? "http://203.149.53.75/isport/content_free/" : "http://203.149.53.75/isport/content/";
 
-                        ctr.Controls.AddAt(ctr.Controls.Count, new LiteralControl("<div class='" + rowCSS + "'><video width='100%' autoplay controls poster='full/http/link/to/image/file.png'><source src='" + wowza + dr["content_link"].ToString() + "' type='video/mp4'/>Your browser does not support the video tag.</video></div>"));
+                        ctr.Controls.AddAt(ctr.Controls.Count, new LiteralControl("<div class='" + rowCSS + "'><video width='100%' autoplay loop muted playsinline><source src='" + wowza + dr["content_link"].ToString() + "' type='video/mp4'/>Your browser does not support the video tag.</video></div>"));
 
                         //break;
 
@@ -192,7 +192,7 @@ namespace isport_service
                                                 case "Green": btnClass += "-Green"; break;
                                                 case "Yellow": btnClass += "-Yellow"; break;
                                             }
-                                            ctr.Controls.AddAt(ctr.Controls.Count, new LiteralControl("<div class='" + rowCSS + "'><a class='"+ btnClass + "' href='" + link + "'><" + txtCSS + ">" + dr["content_text"].ToString() + "</" + txtCSS + "></a></div>"));
+                                            ctr.Controls.AddAt(ctr.Controls.Count, new LiteralControl("<div class='" + rowCSS + "'><a class='"+ btnClass + "' href='" + link + "'><" + txtCSS + ">" + dr["content_text"].ToString() + "</" + txtCSS + "></a><a class='button-cancel' href='http://wap.isport.co.th?mp_code="+mpCode+"'>ยกเลิก</a></div>"));
                                         }
                                     }
                                 }
@@ -368,14 +368,24 @@ namespace isport_service
                 {
                     linkContent = links[0];
                 }
+                if (System.Web.HttpContext.Current.Request["ad"] != null && System.Web.HttpContext.Current.Request["clickid"] != null)
+                {
+                    linkContent += "&ad=" + System.Web.HttpContext.Current.Request["ad"] + "&clickid=" + System.Web.HttpContext.Current.Request["clickid"];
+                }
 
                 linkContent = linkContent.Replace('&', '|');
                 mpCode = System.Web.HttpContext.Current.Request["mp_code"] == null ? "" : System.Web.HttpContext.Current.Request["mp_code"];
-                if(mpCode != "" && strOptCode.Replace("'","") =="01")
+                if (mpCode != null && mpCode.Split(',').Length > 0)
+                {
+                    mpCode = mpCode.Split(',')[0].ToString();
+                }
+
+                if (mpCode != "" && strOptCode.Replace("'","") =="01")
                 {
                     mpCode = "00" + mpCode;
                 }
                 link = strPageRedirect + "&sg=" + strSgID + "&r=" + linkContent.Replace("?mp_code", mpCode);
+                
                 return link;
 
             }
@@ -551,7 +561,7 @@ namespace isport_service
             }
             catch (Exception ex)
             {
-                throw new Exception(ex.Message);
+                //throw new Exception(ex.Message);
             }
         }
         #endregion

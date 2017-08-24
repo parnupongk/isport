@@ -109,7 +109,7 @@
                         <td align="right">
                             SMS Choose :</td>
                         <td>
-                            &nbsp;<asp:TextBox ID="txtChoose" runat="server" Height="54px" MaxLength="150" 
+                            &nbsp;<asp:TextBox ID="txtChoose" runat="server" Height="54px" 
                                 TextMode="MultiLine" Width="423px"></asp:TextBox>
                         </td>
                     </tr>

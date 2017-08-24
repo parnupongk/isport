@@ -70,7 +70,7 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li><a href="sub.aspx">Home</a></li>
+                    <li><a href="http://isport.co.th">Home</a></li>
                     <li><a href="pr.aspx">News</a></li>
                     <li><a href="#service">Subscribe</a></li>
                     <li><a href="#footer">Service</a></li>

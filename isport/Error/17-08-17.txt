@@ -1,0 +1,67 @@
+
+Log Entry : 
+17/08/2017 12:20:35
+ IP :  ::1 
+Error in: http://localhost:60878/index.aspx. Error Message:Error >>Object reference not set to an instance of an object.
+__________________________
+
+Log Entry : 
+17/08/2017 12:21:54
+ IP :  ::1 
+Error in: http://localhost:60878/index.aspx?p=bb. Error Message:Error >>GenHeader >> GenHeader >>A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+__________________________
+
+Log Entry : 
+17/08/2017 15:41:55
+ IP :  ::1 
+Error in: http://localhost:60878/index.aspx. Error Message:Error >>Object reference not set to an instance of an object.
+__________________________
+
+Log Entry : 
+17/08/2017 15:42:36
+ IP :  ::1 
+Error in: http://localhost:60878/index.aspx?p=bb. Error Message:Error >>Subscribe_portal_log_Insert>>ORA-12170: TNS:Connect timeout occurred
+ mp_code=0025 scs_id= prj=1
+__________________________
+
+Log Entry : 
+17/08/2017 16:08:24
+ IP :  ::1 
+Error in: http://localhost:60878/index.aspx?p=bb. Error Message:Error >>Subscribe_portal_log_Insert>>ORA-12170: TNS:Connect timeout occurred
+ mp_code=0025 scs_id= prj=1
+__________________________
+
+Log Entry : 
+17/08/2017 16:10:23
+ IP :  ::1 
+Error in: http://localhost:60878/index.aspx?p=bb. Error Message:Error >>Subscribe_portal_log_Insert>>ORA-12170: TNS:Connect timeout occurred
+ mp_code=0025 scs_id= prj=1
+__________________________
+
+Log Entry : 
+17/08/2017 16:11:30
+ IP :  ::1 
+Error in: http://localhost:60878/detail.aspx?_id=bfbd01b4-7fba-4d11-9949-67a2282a6747&p=bb. Error Message:InsertLogs >> Subscribe_portal_log_Insert>>ORA-12170: TNS:Connect timeout occurred
+
+__________________________
+
+Log Entry : 
+17/08/2017 16:46:37
+ IP :  ::1 
+Error in: http://localhost:60878/detail.aspx?_id=bfbd01b4-7fba-4d11-9949-67a2282a6747&p=bb. Error Message:InsertLogs >> Subscribe_portal_log_Insert>>ORA-12170: TNS:Connect timeout occurred
+
+__________________________
+
+Log Entry : 
+17/08/2017 16:54:41
+ IP :  ::1 
+Error in: http://localhost:60878/index.aspx?p=bb. Error Message:Error >>Subscribe_portal_log_Insert>>ORA-12170: TNS:Connect timeout occurred
+ mp_code=0025 scs_id= prj=1
+__________________________
+
+Log Entry : 
+17/08/2017 17:29:18
+ IP :  ::1 
+Error in: http://localhost:60878/index.aspx?p=bb. Error Message:Error >>Subscribe_portal_log_Insert>>ORA-12170: TNS:Connect timeout occurred
+ mp_code=0025 scs_id= prj=1
+__________________________

@@ -227,12 +227,12 @@ namespace IsportApp_Report
                                                                         , new SqlParameter[] { new SqlParameter("@pcat_id", pcatId) });
 
                 ddlSipService.DataSource = ds;
-                ddlSipService.DataTextField = "pssv_desc_";
+                ddlSipService.DataTextField = "pssv_desc";
                 ddlSipService.DataValueField = "pssv_id";
                 ddlSipService.DataBind();
 
                 ddlMpCodeService.DataSource = ds;
-                ddlMpCodeService.DataTextField = "pssv_desc_";
+                ddlMpCodeService.DataTextField = "pssv_desc";
                 ddlMpCodeService.DataValueField = "pssv_id";
                 ddlMpCodeService.DataBind();
                 ddlMpCodeService.ClearSelection();

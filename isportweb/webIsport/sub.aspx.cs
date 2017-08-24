@@ -22,7 +22,7 @@ namespace webIsport
 
                     if (Request["p"] == null || Request["p"] == "")
                     {
-                        GenNews();
+                        GenNews_fromSQL();//GenNews();
                         GenNewsFootballThai();
                         //lblAds.Controls.Add(new isport_service.ServiceWapUI_Header().GenHeader(AppMain.strConn, "", "isportweb", "", "detail.aspx", "0"));
                         lblAds.Controls.Add(new isport_service.ServiceWapUI_Content().GenContent(AppMain.strConn
@@ -52,7 +52,57 @@ namespace webIsport
                 }
             }
         }
+        private void GenNews_fromSQL()
+        {
+            try
+            {
+                string url = "", headNews = "", detailNews = "", imgURL = "";
+                string[] detail = new string[] { };
+                DataSet ds = new isport_service.AppCode().SelectUIByLevel_Wap(AppMain.strConn, "0", "0", "", "newsmain");
+                DataView dv = ds.Tables[0].DefaultView;
+                dv.Sort = "content_createdate desc";
+                int index = 0;
+                foreach (DataRowView dr in dv)
+                {
+                    //DataRow dr = ds.Tables[0].Rows[index];
 
+                    imgURL = dr["content_image"] == null || dr["content_image"].ToString() == "" ? imgURL : dr["content_image"].ToString();
+                    imgURL = imgURL.IndexOf("http") > -1 ? imgURL : "http://wap.isport.co.th/isportui/" + imgURL.Replace("~/", "");
+
+                    url = "detail.aspx?" + "_id=" + dr["content_id"].ToString() + ((HttpContext.Current.Request.QueryString.ToString() == "") ? "" : "&" + HttpContext.Current.Request.QueryString);//"&sg=" + dr["ui_sg_id"].ToString()
+                    // + "&class_id=" + classId;//+ "&scs_id=" + bProperty_SCSID + "&mp_code=" + bProperty_MPCODE + "&prj=" + bProperty_PRJ + "&p=" + Request["p"];
+                    detail = dr["content_text"].ToString().Split('|');
+                    if (index == 0)
+                    {
+                        headNews = "<div class='thumbnail'><a href='" + url + "'>"
+                            + "<img class='img-full' src='" + imgURL + "'>"
+                            + "<div class='caption'><h4 class='media-heading'>" + ((detail.Length > 0) ? detail[0] : "") + "</h4></a>"
+                            + "<p>" + ((detail.Length > 1) ? detail[1].Substring(0, 200) : dr["content_text"].ToString()) + "</p>"
+                            + "<small-gray><i class='fa fa-clock-o fa-1' aria-hidden='true'></i>" + DateTime.ParseExact(dr["content_createdate"].ToString(), "M/d/yyyy h:mm:ss tt", null).ToString("d/MMM/yy H:s") + "</small-gray></div></div>";
+
+
+
+                    }
+                    else
+                    {
+                        detailNews += "<div class='media'><a class='pull-left' href='" + url + "'>"
+                            + "<img src='" + imgURL + "'></a>"
+                            + "<div class='media-body'><h4 small>" + ((detail.Length > 0) ? detail[0] : "") + "</h4 small>"
+                            + "<div class='media-button'><small-gray><i class='fa fa-clock-o fa-1' aria-hidden='true'></i>" + DateTime.ParseExact(dr["content_createdate"].ToString(), "M/d/yyyy h:mm:ss tt", null).ToString("d/MMM/yy H:s") + "</small-gray></div></div></div>";
+
+                    }
+
+                    index++;
+                }
+
+                lblNews.Controls.AddAt(lblNews.Controls.Count, new LiteralControl("<div class='col-md-5'>" + headNews + "</div>"));
+                lblNews.Controls.AddAt(lblNews.Controls.Count, new LiteralControl("<div class='col-md-4'>" + detailNews + "</div>"));
+            }
+            catch (Exception ex)
+            {
+                ExceptionManager.WriteError("GenNews_fromSQL >> " + ex.Message);
+            }
+        }
         private void GenNews()
         {
             try
@@ -74,7 +124,7 @@ namespace webIsport
                             + "<img class='img-full' src='http://sms-gw.samartbug.com/isportimage/images/500x300/" + drContent["news_images_600"].ToString() + "'>"
                             + "<div class='caption'><h4 class='media-heading'>" + drContent["news_header_th"].ToString() + "</h4></a>"
                             + "<p>" + drContent["news_title_th"].ToString() + "</p>"
-                            + "<small-gray><i class='fa fa-clock-o fa-1' aria-hidden='true'></i>" + DateTime.ParseExact(drContent["news_createdate"].ToString(), "d/M/yyyy H:ss:ff", null).ToString("d/MMM/yy H:s") + "</small-gray></div></div>";
+                            + "<small-gray><i class='fa fa-clock-o fa-1' aria-hidden='true'></i>" + DateTime.ParseExact(drContent["news_createdate"].ToString(), "M/d/yyyy h:mm:ss tt", null).ToString("d/MMM/yy H:s") + "</small-gray></div></div>";
 
 
 
@@ -84,7 +134,7 @@ namespace webIsport
                         detailNews += "<div class='media'><a class='pull-left' href='" + url + "'>"
                             + "<img src='http://sms-gw.samartbug.com/isportimage/images/120x75/" + drContent["news_images_190"].ToString() + "'></a>"
                             + "<div class='media-body'><h4 small>" + drContent["news_header_th"].ToString() + "</h4 small>"
-                            + "<div class='media-button'><small-gray><i class='fa fa-clock-o fa-1' aria-hidden='true'></i>" + DateTime.ParseExact(drContent["news_createdate"].ToString(), "d/M/yyyy H:ss:ff", null).ToString("d/MMM/yy H:s") + "</small-gray></div></div></div>";
+                            + "<div class='media-button'><small-gray><i class='fa fa-clock-o fa-1' aria-hidden='true'></i>" + DateTime.ParseExact(drContent["news_createdate"].ToString(), "M/d/yyyy h:mm:ss tt", null).ToString("d/MMM/yy H:s") + "</small-gray></div></div></div>";
 
                     }
 
@@ -118,7 +168,7 @@ namespace webIsport
                             + "<img class='img-full' src='http://sms-gw.samartbug.com/isportimage/images/500x300/" + drContent["news_images_600"].ToString() + "'>"
                             + "<div class='caption'><h5 class='media-heading'>" + drContent["news_header_th"].ToString() + "</h5></a>"
                             + "<p>" + ((drContent["news_title_th"].ToString().Length > 90) ? drContent["news_title_th"].ToString().Substring(0,90) : drContent["news_title_th"].ToString()) + "...</p>"
-                            + "<small-gray><i class='fa fa-clock-o fa-1' aria-hidden='true'></i>" + DateTime.ParseExact(drContent["news_createdate"].ToString(), "d/M/yyyy H:ss:ff", null).ToString("d/MMM/yy H:s") + "</small-gray></div></div>"));
+                            + "<small-gray><i class='fa fa-clock-o fa-1' aria-hidden='true'></i>" + DateTime.ParseExact(drContent["news_createdate"].ToString(), "M/d/yyyy h:mm:ss tt", null).ToString("d/MMM/yy H:s") + "</small-gray></div></div>"));
 
                     lblNewsFbThai.Controls.AddAt(lblNewsFbThai.Controls.Count, new LiteralControl("</div>"));
 

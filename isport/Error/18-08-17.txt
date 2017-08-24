@@ -1,0 +1,14 @@
+
+Log Entry : 
+18/08/2017 09:40:54
+ IP :  ::1 
+Error in: http://localhost:60878/index.aspx. Error Message:Error >>Subscribe_portal_log_Insert>>ORA-12170: TNS:Connect timeout occurred
+ mp_code=0025 scs_id= prj=1
+__________________________
+
+Log Entry : 
+18/08/2017 10:10:14
+ IP :  ::1 
+Error in: http://localhost:60878/detail.aspx?_id=d9e65882-f289-4c84-9130-430500515431. Error Message:InsertLogs >> Subscribe_portal_log_Insert>>ORA-12170: TNS:Connect timeout occurred
+
+__________________________

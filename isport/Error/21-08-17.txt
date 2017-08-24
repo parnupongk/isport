@@ -1,0 +1,84 @@
+
+Log Entry : 
+21/08/2017 10:14:59
+ IP :  ::1 
+Error in: http://localhost:60878/index.aspx?p=kiss_sub_1&mp_code=8018. Error Message:Error >>Subscribe_portal_log_Insert>>ORA-12170: TNS:Connect timeout occurred
+ mp_code=8018 scs_id= prj=1
+__________________________
+
+Log Entry : 
+21/08/2017 10:15:00
+ IP :  ::1 
+Error in: http://localhost:60878/index.aspx. Error Message:Error >>Subscribe_portal_log_Insert>>ORA-12170: TNS:Connect timeout occurred
+ mp_code=0025 scs_id= prj=1
+__________________________
+
+Log Entry : 
+21/08/2017 10:24:32
+ IP :  ::1 
+Error in: http://localhost:60878/index.aspx. Error Message:Error >>Subscribe_portal_log_Insert>>ORA-12170: TNS:Connect timeout occurred
+ mp_code=0025 scs_id= prj=1
+__________________________
+
+Log Entry : 
+21/08/2017 10:25:00
+ IP :  ::1 
+Error in: http://localhost:60878/index.aspx?p=lucky. Error Message:Error >>Subscribe_portal_log_Insert>>ORA-12170: TNS:Connect timeout occurred
+ mp_code=0025 scs_id= prj=1
+__________________________
+
+Log Entry : 
+21/08/2017 10:25:46
+ IP :  ::1 
+Error in: http://localhost:60878/index.aspx?p=bb. Error Message:Error >>Subscribe_portal_log_Insert>>ORA-12170: TNS:Connect timeout occurred
+ mp_code=0025 scs_id= prj=1
+__________________________
+
+Log Entry : 
+21/08/2017 10:26:06
+ IP :  ::1 
+Error in: http://localhost:60878/index.aspx. Error Message:Error >>Subscribe_portal_log_Insert>>ORA-12170: TNS:Connect timeout occurred
+ mp_code=0025 scs_id= prj=1
+__________________________
+
+Log Entry : 
+21/08/2017 10:26:58
+ IP :  ::1 
+Error in: http://localhost:60878/index.aspx?p=lucky. Error Message:Error >>Subscribe_portal_log_Insert>>ORA-12170: TNS:Connect timeout occurred
+ mp_code=0025 scs_id= prj=1
+__________________________
+
+Log Entry : 
+21/08/2017 10:32:05
+ IP :  ::1 
+Error in: http://localhost:60878/index.aspx. Error Message:Error >>Subscribe_portal_log_Insert>>ORA-12170: TNS:Connect timeout occurred
+ mp_code=0025 scs_id= prj=1
+__________________________
+
+Log Entry : 
+21/08/2017 10:33:24
+ IP :  ::1 
+Error in: http://localhost:60878/index.aspx?p=lucky. Error Message:Error >>Subscribe_portal_log_Insert>>ORA-12170: TNS:Connect timeout occurred
+ mp_code=0025 scs_id= prj=1
+__________________________
+
+Log Entry : 
+21/08/2017 10:33:55
+ IP :  ::1 
+Error in: http://localhost:60878/index.aspx?p=lucky. Error Message:Error >>Subscribe_portal_log_Insert>>ORA-12170: TNS:Connect timeout occurred
+ mp_code=0025 scs_id= prj=1
+__________________________
+
+Log Entry : 
+21/08/2017 10:34:28
+ IP :  ::1 
+Error in: http://localhost:60878/index.aspx?p=lucky. Error Message:Error >>Subscribe_portal_log_Insert>>ORA-12170: TNS:Connect timeout occurred
+ mp_code=0025 scs_id= prj=1
+__________________________
+
+Log Entry : 
+21/08/2017 10:36:07
+ IP :  ::1 
+Error in: http://localhost:60878/index.aspx?p=lucky. Error Message:Error >>Subscribe_portal_log_Insert>>ORA-12170: TNS:Connect timeout occurred
+ mp_code=0025 scs_id= prj=1
+__________________________

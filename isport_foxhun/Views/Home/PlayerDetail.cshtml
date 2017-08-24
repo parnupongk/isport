@@ -1,0 +1,110 @@
+﻿@model isport_foxhun.Models.PlayerViewModelList
+
+
+<div class="row">
+    @foreach (var list in Model.playerList)
+    {
+        <div class="col-md-4">
+            <div class="row">
+                <div class="col-md-8">
+                    <h2>@list.name </h2>
+                    <p>Position : @list.position</p>
+                    <p>Age :@list.age wigth :@list.wight hight :@list.hight</p>
+                </div>
+                <div class="col-md-4">
+                    @{ if (list.image != null)
+                        {
+                            <img src="@Url.Content(list.image)" class="img-thumbnail" style="max-height:150px;" />
+                        }
+                        else
+                        {
+                            <img src="~/images/isport.png" class="img-thumbnail" style="max-height:150px;" />
+                        }
+                    }
+                </div>
+            </div>
+            <div class="row" style="margin:10px;">
+                <!--
+
+                <div class="progress">
+                    {
+                        var i = list.tacking * 10;
+                        var itxt = i.ToString() + '%';
+
+                        <div class="progress-bar" role="progressbar" aria-valuenow=list.tacking aria-valuemin="0" aria-valuemax="10" style="width: itxt">
+                            Tacking : list.tacking.ToString()
+                        </div>
+                    }
+                </div>
+                <div class="progress">
+                    {
+                        i = list.marking * 10;
+                        itxt = i.ToString() + '%';
+
+                        <div class="progress-bar" role="progressbar" aria-valuenow=list.marking aria-valuemin="0" aria-valuemax="10" style="width: itxt">
+                            Marking : list.marking.ToString()
+                        </div>
+                    }
+                </div>
+                <div class="progress">
+                    {
+                        i = list.positioning * 10;
+                        itxt = i.ToString() + '%';
+
+                        <div class="progress-bar" role="progressbar" aria-valuenow=list.positioning aria-valuemin="0" aria-valuemax="10" style="width: itxt">
+                            Positioning : list.positioning.ToString()
+                        </div>
+                    }
+                </div>
+                <div class="progress">
+                    {
+                        i = list.heading * 10;
+                        itxt = i.ToString() + '%';
+
+                        <div class="progress-bar" role="progressbar" aria-valuenow=ist.heading aria-valuemin="0" aria-valuemax="10" style="width: itxt">
+                            Heading : list.heading.ToString()
+                        </div>
+                    }
+                </div>
+                <div class="progress">
+                    {
+                        i = list.passing * 10;
+                        itxt = i.ToString() + '%';
+
+                        <div class="progress-bar" role="progressbar" aria-valuenow=list.passing aria-valuemin="0" aria-valuemax="10" style="width: itxt">
+                            Passing : list.passing.ToString()
+                        </div>
+                    }
+                </div>
+                <div class="progress">
+                    {
+                        i = list.dribbling * 10;
+                        itxt = i.ToString() + '%';
+
+                        <div class="progress-bar" role="progressbar" aria-valuenow=list.dribbling aria-valuemin="0" aria-valuemax="10" style="width: itxt">
+                            Dribbling : list.dribbling.ToString()
+                        </div>
+                    }
+                </div>
+                <div class="progress">
+                    {
+                        i = list.crossing * 10;
+                        itxt = i.ToString() + '%';
+
+                        <div class="progress-bar" role="progressbar" aria-valuenow=list.crossing aria-valuemin="0" aria-valuemax="10" style="width: itxt">
+                            Crossing : list.crossing.ToString()
+                        </div>
+                    }
+                </div>
+
+                    -->
+
+            </div>
+            <h6>Detail :</h6>
+            <p>
+                @list.detail
+            </p>
+            <p><a class="btn btn-default" href="/isport_foxhunt/player/index?id=@list.id">more detail&raquo;</a></p>
+        </div>
+    }
+</div>

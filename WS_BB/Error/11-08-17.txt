@@ -1,0 +1,92 @@
+
+Log Entry : 
+11/08/2017 11:41:04
+ IP :  ::1 
+Error in: http://localhost:4358/starsoccer.aspx. Error Message:Logs_Insert >> ORA-12170: TNS:Connect timeout occurred
+imei:imsi:phone_nomodel:opt_code:logsIP:::1
+__________________________
+
+Log Entry : 
+11/08/2017 11:41:59
+ IP :  ::1 
+Error in: http://localhost:4358/starsoccer.aspx?ap=StarSoccer&pn=program&date=&contentGroupId=&countryId=&lang=th&imsi=52001231232&imei=23432543254&model=IQ2&type=genfile. Error Message:CommandGetProgramByLeague >> A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+__________________________
+
+Log Entry : 
+11/08/2017 11:42:20
+ IP :  ::1 
+Error in: http://localhost:4358/starsoccer.aspx?ap=StarSoccer&pn=program&date=&contentGroupId=&countryId=&lang=th&imsi=52001231232&imei=23432543254&model=IQ2&type=genfile. Error Message:Logs_Insert >> ORA-12170: TNS:Connect timeout occurred
+imei:23432543254imsi:52001231232phone_nomodel:IQ2opt_code:01logsIP:::1
+__________________________
+
+Log Entry : 
+11/08/2017 11:43:52
+ IP :  ::1 
+Error in: http://localhost:4358/starsoccer.aspx?ap=StarSoccer&pn=program&date=&contentGroupId=&countryId=&lang=th&imsi=52001231232&imei=23432543254&model=IQ2&type=genfile. Error Message:CommandGetProgramByLeague >> A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+__________________________
+
+Log Entry : 
+11/08/2017 11:44:13
+ IP :  ::1 
+Error in: http://localhost:4358/starsoccer.aspx?ap=StarSoccer&pn=program&date=&contentGroupId=&countryId=&lang=th&imsi=52001231232&imei=23432543254&model=IQ2&type=genfile. Error Message:Logs_Insert >> ORA-12170: TNS:Connect timeout occurred
+imei:23432543254imsi:52001231232phone_nomodel:IQ2opt_code:01logsIP:::1
+__________________________
+
+Log Entry : 
+11/08/2017 11:57:49
+ IP :  ::1 
+Error in: http://localhost:4358/starsoccer.aspx. Error Message:Logs_Insert >> ORA-12170: TNS:Connect timeout occurred
+imei:imsi:phone_nomodel:opt_code:logsIP:::1
+__________________________
+
+Log Entry : 
+11/08/2017 12:00:41
+ IP :  ::1 
+Error in: http://localhost:4358/starsoccer.aspx?ap=StarSoccer&pn=program&date=&contentGroupId=&countryId=&lang=th&imsi=52001231232&imei=23432543254&model=IQ2&type=genfile. Error Message:CommandGetProgramByLeague >> A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+__________________________
+
+Log Entry : 
+11/08/2017 12:00:50
+ IP :  ::1 
+Error in: http://localhost:4358/starsoccer.aspx?ap=StarSoccer&pn=program&date=&contentGroupId=&countryId=&lang=th&imsi=52001231232&imei=23432543254&model=IQ2&type=genfile. Error Message:Main StartSoccer>>CheckPageName>>GetMainPage>>The process cannot access the file 'D:\samart\wap_Source\UAT\isport\WS_BB\Error\11-08-17.txt' because it is being used by another process.
+__________________________
+
+Log Entry : 
+11/08/2017 12:01:17
+ IP :  ::1 
+Error in: http://localhost:4358/starsoccer.aspx?ap=StarSoccer&pn=program&date=&contentGroupId=&countryId=&lang=th&imsi=52001231232&imei=23432543254&model=IQ2&type=genfile. Error Message:Logs_Insert >> ORA-12170: TNS:Connect timeout occurred
+imei:23432543254imsi:52001231232phone_nomodel:IQ2opt_code:01logsIP:::1
+__________________________
+
+Log Entry : 
+11/08/2017 12:11:33
+ IP :  ::1 
+Error in: http://localhost:4358/starsoccer.aspx?ap=StarSoccer&pn=program&date=&contentGroupId=&countryId=&lang=th&imsi=52001231232&imei=23432543254&model=IQ2&type=genfile. Error Message:CommandGetProgramByLeague >> A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+__________________________
+
+Log Entry : 
+11/08/2017 12:11:54
+ IP :  ::1 
+Error in: http://localhost:4358/starsoccer.aspx?ap=StarSoccer&pn=program&date=&contentGroupId=&countryId=&lang=th&imsi=52001231232&imei=23432543254&model=IQ2&type=genfile. Error Message:Logs_Insert >> ORA-12170: TNS:Connect timeout occurred
+imei:23432543254imsi:52001231232phone_nomodel:IQ2opt_code:01logsIP:::1
+__________________________
+
+Log Entry : 
+11/08/2017 12:12:20
+ IP :  ::1 
+Error in: http://localhost:4358/starsoccer.aspx?ap=StarSoccer&pn=program&date=&contentGroupId=&countryId=&lang=th&imsi=52001231232&imei=23432543254&model=IQ2&type=genfile. Error Message:CommandGetProgramByLeague >> A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+__________________________
+
+Log Entry : 
+11/08/2017 12:12:41
+ IP :  ::1 
+Error in: http://localhost:4358/starsoccer.aspx?ap=StarSoccer&pn=program&date=&contentGroupId=&countryId=&lang=th&imsi=52001231232&imei=23432543254&model=IQ2&type=genfile. Error Message:Logs_Insert >> ORA-12170: TNS:Connect timeout occurred
+imei:23432543254imsi:52001231232phone_nomodel:IQ2opt_code:01logsIP:::1
+__________________________
+
+Log Entry : 
+11/08/2017 15:19:53
+ IP :  ::1 
+Error in: http://localhost:4358/starsoccer.aspx. Error Message:Logs_Insert >> ORA-12170: TNS:Connect timeout occurred
+imei:imsi:phone_nomodel:opt_code:logsIP:::1
+__________________________

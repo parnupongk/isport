@@ -11,6 +11,7 @@ using MobileLibrary;
 using System.Text;
 using WebLibrary;
 using isport_service;
+using Microsoft.ApplicationBlocks.Data;
 namespace isport
 {
     public partial class detailh : System.Web.UI.Page
@@ -133,7 +134,11 @@ namespace isport
                 CheckParameter();
                 GenMenuHeader(vStrName,mU.mobileOPT);
                 GenHeader(mU.mobileOPT, Request["p"] == null ? "" : Request["p"]);
-                if (Request["pcnt_id"] != null && Request["pcnt_id"] != "")
+                if( Request["_id"] != null && Request["_id"] != "" )
+                {
+                    GenNewsDetail_FromSql(Request["_id"]);
+                }
+                else if (Request["pcnt_id"] != null && Request["pcnt_id"] != "")
                 {
                     GenNewsDetail(Request["pcnt_id"], mU.mobileOPT, Request["p"] == null ? "" : Request["p"]);
                 }
@@ -230,6 +235,26 @@ namespace isport
         #endregion
 
         #region Gen News Detail
+
+        private void GenNewsDetail_FromSql(string _id)
+        {
+            DataSet ds =SqlHelper.ExecuteDataset(AppCode.strConn, CommandType.StoredProcedure, "usp_wapisport_uiselectbycontentid"
+                , new SqlParameter[] {new SqlParameter("@content_id",_id) });
+            if (ds.Tables[0].Rows.Count > 0)
+            {
+                string imgURL =  ds.Tables[0].Rows[0]["content_image"].ToString();
+                imgURL = imgURL.IndexOf("http") > -1 ? imgURL : "http://wap.isport.co.th/isportui/" + imgURL.Replace("~/", "");
+
+                string[] detail = ds.Tables[0].Rows[0]["content_text"].ToString().Split('|');
+
+                frmMain.Controls.AddAt(frmMain.Controls.Count, new LiteralControl("<div class='rowprogramheader'><div class='col-xs-12 col-sm-12 col-lg-12'><h1>ข่าวบอลไทย</h1></div></div>"));
+
+                genImages(imgURL, "img-responsive");
+                frmMain.Controls.AddAt(frmMain.Controls.Count, new LiteralControl("<div class='rowheadertext'><h3>" + ((detail.Length > 0) ? detail[0] : "") + "</h3></div>"));
+                frmMain.Controls.AddAt(frmMain.Controls.Count, new LiteralControl("<div class='row'><p>" + ((detail.Length > 1) ? detail[1] : ds.Tables[0].Rows[0]["content_text"].ToString()) + "</p></div>"));
+                //frmMain.Controls.AddAt(frmMain.Controls.Count, new LiteralControl("<div class='row'><p>" + ReplaceTagHTML(ds.Tables[0].Rows[0]["news_detail_th1"].ToString()) + "</p></div>"));
+            }
+        }
         private void GenNewsDetail(string pcntId,string opt, string projectType)
         {
             try

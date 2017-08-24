@@ -1,0 +1,42 @@
+﻿@model isport_foxhun.Models.RegionViewModel
+@{
+    ViewBag.Title = "Region";
+}
+
+
+<h2>Region</h2>
+
+@using (Html.BeginForm("AddRegion", "Home", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+{
+    @Html.AntiForgeryToken()
+    <h4>Add a Region</h4>
+    <hr />
+    <div class="form-group">
+        @Html.LabelFor(m => m.seq, new { @class = "col-md-2 control-label" })
+        <div class="col-md-10">
+            @Html.TextBoxFor(m => m.seq, new { @class = "form-control" })
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.name, new { @class = "col-md-2 control-label" })
+        <div class="col-md-10">
+            @Html.TextBoxFor(m => m.name, new { @class = "form-control" })
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.detail, new { @class = "col-md-2 control-label" })
+        <div class="col-md-10">
+            @Html.TextBoxFor(m => m.detail, new { @class = "form-control" })
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" class="btn btn-default" value="Submit" />
+        </div>
+    </div>
+}
+
+
+<div id="divDetail" class="col-lg-12">
+    @{ Html.RenderAction("GetAllRegion", "Home"); }
+</div>

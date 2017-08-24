@@ -1,0 +1,75 @@
+﻿@model isport_foxhun.Models.PlayerViewModelList
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<script>
+
+    $("#frm-search").submit(function (event) {
+        //alert("Handler for .submit() called.");
+        event.preventDefault();
+    });
+
+    function beginPaging(args) {
+        // Animate
+        $('#grid-list').fadeOut(300);
+    }
+
+    function successPaging() {
+        // Animate
+        $('html, body').animate({ scrollTop: 0 }, 500);
+        $('#grid-list').fadeIn(300);
+        //$('a').tooltip();
+    }
+
+    function failurePaging() {
+        alert("Could not retrieve list.");
+    }
+</script>
+
+<div id="grid-index" class="jumbotron" style="background:url(isport_foxhunt/images/bg4.jpg) no-repeat center" >
+    <h1>สมัคร FOXHUNT </h1>
+    <p class="lead">กลุ่มบริษัท คิง เพาเวอร์  ได้เล็งเห็นความสำคัญในการสร้างเยาวชน เพื่อเป็นตัวแทนเยาวชนในการก้าวไปสู่การฝึกซ้อมฟุตบอลในระดับชั้นต่างประเทศ ดังนั้น บริษัทฯจึงได้จัดทำโครงการ “Fox Hunt Leicester City Academy” เพื่อคัดเลือกตัวแทนเยาวชนอายุไม่เกิน 16 ปี ไปศึกษาและฝึกซ้อมฟุตบอลในระดับชั้นต่างประเทศที่ Leicester City Academy</p>
+    <p><a href="isport_foxhunt/player/index" class="btn btn-primary btn-lg">Register &raquo;</a></p>
+</div>
+
+<div class="container">
+
+    <div class="row">
+
+        <div class="col-md-8"></div>
+
+        @using (Ajax.BeginForm("Index", "Home", new AjaxOptions { UpdateTargetId = "grid_list", HttpMethod = "POST" }))
+        {
+            <div class="col-md-4">
+                <div class="input-group">
+                    <input type="text" id="txtSearch" name="txtSearch" class="form-control pull-right" placeholder="Search for name or position">
+                    <div class="input-group-btn">
+                        <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                        <button class="btn btn-default">Search</button>
+                    </div>
+                </div>
+            </div>
+        }
+
+
+    </div>
+
+    <hr />
+
+    <div id="grid_list" class="row">
+
+        @{ if (Model.playerList == null)
+            {
+                @Html.Action("ListPlayer", "Home");
+            }
+            else
+            {
+                @Html.Action("PlayerDetail", "Home", Model);
+            }
+        }
+
+    </div>
+
+
+</div>

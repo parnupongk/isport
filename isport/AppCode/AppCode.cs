@@ -182,9 +182,11 @@ namespace isport
                                                         ,new SqlParameter("@update_by",createBy)
                                                         ,new SqlParameter("@pic_path_70","")
                                                         ,new SqlParameter("@pic_path_36","")}).ToString();
-
-                Insert_SipContent_Oracle(pcntId, pcatId, pcntTitle, pcntTitleLocal, pcntDetail, pcntDetailLocal, displayDate, createBy, isSendNow);
-
+                try
+                {
+                    Insert_SipContent_Oracle(pcntId, pcatId, pcntTitle, pcntTitleLocal, pcntDetail, pcntDetailLocal, displayDate, createBy, isSendNow);
+                }
+                catch { }
                 return pcntId;
             }
             catch (Exception ex)
