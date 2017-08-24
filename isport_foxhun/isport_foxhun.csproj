@@ -209,6 +209,9 @@
     <Compile Include="foxhun_team.cs">
       <DependentUpon>FoxHunDS.tt</DependentUpon>
     </Compile>
+    <Compile Include="foxhun_users.cs">
+      <DependentUpon>FoxHunDS.tt</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
