@@ -13,6 +13,21 @@ namespace isport_foxhun.Models
 
     public class TeamModels : AppCodeModel
     {
+        public List<foxhun_team> GetTeamAll()
+        {
+            try
+            {
+                using (var db = this.GetDBContext())
+                {
+                    var team = db.foxhun_team;
+                    return team.ToList();
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
         public List<foxhun_team> GetTeamById(string id)
         {
             try

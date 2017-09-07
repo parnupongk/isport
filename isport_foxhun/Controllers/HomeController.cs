@@ -9,6 +9,7 @@ using System.Data.SqlClient;
 using System.Data;
 using Microsoft.ApplicationBlocks.Data;
 using System.IO;
+using isport_foxhun.commom;
 namespace isport_foxhun.Controllers
 {
     public class HomeController : Controller
@@ -56,7 +57,12 @@ namespace isport_foxhun.Controllers
             return PartialView(model);
         }
 
-        public ActionResult Team(string region_id)
+        /// <summary>
+        /// Register Team
+        /// </summary>
+        /// <param name="region_id"></param>
+        /// <returns></returns>
+        public ActionResult Team()
         {
             ViewBag.Message = "Your contact page.";
             TeamViewModel model = new TeamViewModel();
@@ -88,14 +94,11 @@ namespace isport_foxhun.Controllers
                     var file = Request.Files[s];
                     fileName = file.FileName;
                     fileExtension = file.ContentType;
-                    Session["KINGPOWERExtension"] += fileExtension + "|";
-                    //ViewBag.Images = (ViewBag.Images == null) ? fileName + "|" : ViewBag.Images + fileName + "|";
-
                     if (!string.IsNullOrEmpty(fileName))
                     {
-                        if (!System.IO.Directory.Exists(Server.MapPath(model.pathDirectory)))
+                        if (!Directory.Exists(Server.MapPath(model.pathDirectory)))
                         {
-                            System.IO.Directory.CreateDirectory(Server.MapPath(model.pathDirectory));
+                           Directory.CreateDirectory(Server.MapPath(model.pathDirectory));
                         }
 
                         //model.pathDirectory = "~/Uploadfiles/" + teamName;
@@ -112,21 +115,6 @@ namespace isport_foxhun.Controllers
                         {
                             model.pathDoc += fileName + "|";
                         }
-
-                        /*
-                        switch (index)
-                        {
-                            case 1: model.team.file1 = "~/Uploadfiles/" + newfilename; break;
-                            case 2: model.team.file2 = "~/Uploadfiles/" + newfilename; break;
-                            case 3: model.team.file3 = "~/Uploadfiles/" + newfilename; break;
-                            case 4: model.team.file4 = "~/Uploadfiles/" + newfilename; break;
-                            case 5: model.team.file5 = "~/Uploadfiles/" + newfilename; break;
-                            case 6: model.team.file6 = "~/Uploadfiles/" + newfilename; break;
-                            case 7: model.team.file7 = "~/Uploadfiles/" + newfilename; break;
-                            case 8: model.team.file8 = "~/Uploadfiles/" + newfilename; break;
-                            case 9: model.team.file9 = "~/Uploadfiles/" + newfilename; break;
-                            case 10: model.team.file10 = "~/Uploadfiles/" + newfilename; break;
-                        }*/
 
 
                     }
@@ -146,9 +134,8 @@ namespace isport_foxhun.Controllers
 
         // POST: /Manage/AddRegion
         [HttpPost]
-        public ActionResult AddTeam(TeamViewModel model, HttpPostedFileBase image)
+        public ActionResult Team(TeamViewModel model, HttpPostedFileBase image, HttpPostedFileBase fileDoc, HttpPostedFileBase image1, HttpPostedFileBase image2, HttpPostedFileBase image3, HttpPostedFileBase image4, HttpPostedFileBase image5, HttpPostedFileBase image6)
         {
-            string img = Session["KINGPOWERExtension"].ToString();
             if (!ModelState.IsValid)
             {
                 return View(model);
@@ -157,67 +144,157 @@ namespace isport_foxhun.Controllers
             string path;
 
             if (Session["KINGPOWER"] != null) modelFileUpload = (TeamViewModel)Session["KINGPOWER"];
-
-            #region upload image
-            HttpPostedFileBase file = image;
-            if (file != null && file.ContentLength > 0)
+            else
             {
-                //if (!System.IO.Directory.Exists(modelFileUpload.pathDirectory))
-                //{
-                    //System.IO.Directory.CreateDirectory(modelFileUpload.pathDirectory);
-               //}
-                string pic = System.IO.Path.GetFileName(file.FileName);
-                path = Server.MapPath(modelFileUpload.pathDirectory) + pic;
-
-                file.SaveAs(path);
-                // Update data model
-                model.team.image = modelFileUpload.pathDirectory + pic;
+                modelFileUpload = new TeamViewModel();
+                modelFileUpload.pathDirectory = "~/Uploadfiles/" + model.name.Replace(" ", "") + "/";
             }
 
+            #region upload image
+            HttpPostedFileBase file = null;
+            /*foreach(HttpPostedFileBase f in image)
+            {
+                string pic = Path.GetFileName(file.FileName);
+                path = Server.MapPath(modelFileUpload.pathDirectory) + pic;
+
+                if (file != null && file.ContentLength > 0)
+                {
+                    try
+                    {
+                        if (!Directory.Exists(Server.MapPath(modelFileUpload.pathDirectory)))
+                        {
+                            Directory.CreateDirectory(Server.MapPath(modelFileUpload.pathDirectory));
+                        }
+                    }
+                    catch { }
+
+                    switch (f.ToString())
+                    {
+                        case "1": model.image = modelFileUpload.pathDirectory + pic; ; break;
+                        case "2": model.file2 = modelFileUpload.pathDirectory + pic; break;
+                        case "3": model.file3 = modelFileUpload.pathDirectory + pic; break;
+                        case "4": model.file4 = modelFileUpload.pathDirectory + pic; break;
+                        case "5": model.file5 = modelFileUpload.pathDirectory + pic; break;
+                        case "6": model.file6 = modelFileUpload.pathDirectory + pic; break;
+                        case "7": model.file7 = modelFileUpload.pathDirectory + pic; break;
+                        case "8": model.file8 = modelFileUpload.pathDirectory + pic; break;
+                    }
+                }
+            }*/
+            for (int i=1;i<9;i++)
+            {
+                switch (i)
+                {
+                    case 1: file = image;break;
+                    case 2: file = fileDoc;break;
+                    case 3: file = image1;break;
+                    case 4: file = image2;break;
+                    case 5: file = image3;break;
+                    case 6: file = image4;break;
+                    case 7: file = image5;break;
+                    case 8: file = image6;break;
+                }
+                if (file != null && file.ContentLength > 0)
+                {
+                    string pic = Path.GetFileName(file.FileName);
+                    path = Server.MapPath(modelFileUpload.pathDirectory) + pic;
+
+                    try
+                    {
+                        if (!Directory.Exists(Server.MapPath(modelFileUpload.pathDirectory)))
+                        {
+                            Directory.CreateDirectory(Server.MapPath(modelFileUpload.pathDirectory));
+                        }
+                    }
+                    catch { }
+                    file.SaveAs(path);
+                    // Update data model
+                    switch (i)
+                    {
+                        case 1: model.image = modelFileUpload.pathDirectory + pic; ; break;
+                        case 2: model.file2 = modelFileUpload.pathDirectory + pic; break;
+                        case 3: model.file3 = modelFileUpload.pathDirectory + pic; break;
+                        case 4: model.file4 = modelFileUpload.pathDirectory + pic; break;
+                        case 5: model.file5 = modelFileUpload.pathDirectory + pic; break;
+                        case 6: model.file6 = modelFileUpload.pathDirectory + pic; break;
+                        case 7: model.file7 = modelFileUpload.pathDirectory + pic; break;
+                        case 8: model.file8 = modelFileUpload.pathDirectory + pic; break;
+                    }
+                    
+                }
+            }           
+            /*
+            file = fileDoc;
+            if ( file != null && file.ContentLength > 0 )
+            {
+                string pic = System.IO.Path.GetFileName(file.FileName);
+                path = Server.MapPath(modelFileUpload.pathDirectory) + pic;         
+                file.SaveAs(path);                
+            }*/
             #endregion
             
 
             #region insert player
-
+        
             string teamId = Guid.NewGuid().ToString();
-            //Server.MapPath
-            //path = Server.MapPath( modelFileUpload.pathDirectory + modelFileUpload.pathDoc.Replace("|",""));
-            int rtn = AppCodeModel.InsertPlayerFromExcel(Server.MapPath(modelFileUpload.pathDirectory), modelFileUpload.pathDirectory,modelFileUpload.pathDoc.Replace("|", ""), model.team.name, teamId, modelFileUpload.pathImages,model.team.region);
+            int rtn = 0;
+            if (modelFileUpload.pathDoc != null && modelFileUpload.pathDoc != "")
+                rtn = AppCodeModel.InsertPlayerFromExcel(Server.MapPath(modelFileUpload.pathDirectory), modelFileUpload.pathDirectory, modelFileUpload.pathDoc.Replace("|", ""), model.name, teamId, modelFileUpload.pathImages, model.region);
+            else rtn = 1;
 
             if (rtn == 0) ViewBag.StatusMessage = "error";
             else
             {
+                #region insert user
+                foxhun_users user = new isport_foxhun.foxhun_users();
+                user.id = Guid.NewGuid().ToString();
+                user.createdate = DateTime.Now;
+                user.username = model.email;
+                user.password = model.password;
+                user.role = AppCodeModel.USERROLE.TEAM.ToString();
+                user.team_id = teamId;
+                new foxhunt_users().insert(user);
+                AppUtils.Session.User = user;
+                #endregion
+
                 #region insert team
                 SqlHelper.ExecuteNonQuery(AppCodeModel.strConnDB
                 , CommandType.StoredProcedure, "usp_foxhun_teaminsert"
                 , new SqlParameter[] {new SqlParameter("@id",teamId)
-                ,new SqlParameter("@region",model.team.region)
-                ,new SqlParameter("@seq",model.team.seq)
+                ,new SqlParameter("@region",model.region)
+                ,new SqlParameter("@seq",model.seq)
                 ,new SqlParameter("@create_datetime",DateTime.Now)
                 ,new SqlParameter("@update_date",DateTime.Now)
-                ,new SqlParameter("@name",model.team.name)
-                ,new SqlParameter("@detail",model.team.name)
-                ,new SqlParameter("@email",model.team.email)
-                ,new SqlParameter("@image",model.team.image)
-                ,new SqlParameter("@username",model.team.username)
-                ,new SqlParameter("@password",model.team.password)
-                ,new SqlParameter("@contact",model.team.contact)
-                ,new SqlParameter("@phone",model.team.phone)
-                ,new SqlParameter("@contact1",model.team.contact1)
-                ,new SqlParameter("@phone1",model.team.phone1)
-                ,new SqlParameter("@contact2",model.team.contact2)
-                ,new SqlParameter("@phone2",model.team.phone2)
+                ,new SqlParameter("@name",model.name)
+                ,new SqlParameter("@detail",model.name)
+                ,new SqlParameter("@email",model.email)
+                ,new SqlParameter("@image",model.image)
+                ,new SqlParameter("@username",model.email)
+                ,new SqlParameter("@password",model.password)
+                ,new SqlParameter("@contact",model.contact)
+                ,new SqlParameter("@phone",model.phone)
+                ,new SqlParameter("@contact1",model.contact1)
+                ,new SqlParameter("@phone1",model.phone1)
+                ,new SqlParameter("@contact2",model.contact2)
+                ,new SqlParameter("@contact3",model.contact3)
                 ,new SqlParameter("@file1",modelFileUpload.pathDirectory)
-                ,new SqlParameter("@file2",modelFileUpload.pathDoc)
-                ,new SqlParameter("@file3",modelFileUpload.pathImages)
-                ,new SqlParameter("@file4","")
-                ,new SqlParameter("@file5","")
-                ,new SqlParameter("@file6","")
-                ,new SqlParameter("@file7","")
-                ,new SqlParameter("@file8","")
-                ,new SqlParameter("@file9","")
-                ,new SqlParameter("@file10","")
-
+                ,new SqlParameter("@file2",model.file2)
+                ,new SqlParameter("@file3",model.file3)
+                ,new SqlParameter("@file4",model.file4)
+                ,new SqlParameter("@file5",model.file5) // image contact
+                ,new SqlParameter("@file6",model.file6) // image contact1
+                ,new SqlParameter("@file7",model.file7) // image contact2                 
+                ,new SqlParameter("@file8",model.file8) // image contact3
+                ,new SqlParameter("@file9","") // image contact4
+                ,new SqlParameter("@file10","") // image contact5
+                ,new SqlParameter("@contact4",model.contact4)
+                ,new SqlParameter("@contact5",model.contact5)
+                ,new SqlParameter("@contact6",model.contact6)
+                ,new SqlParameter("@phone2",model.phone2)
+                ,new SqlParameter("@phone3",model.phone3)
+                ,new SqlParameter("@phone4",model.phone4)
+                ,new SqlParameter("@phone5",model.phone5)
+                ,new SqlParameter("@phone6",model.phone6)
 
                 });
                 #endregion
@@ -225,7 +302,7 @@ namespace isport_foxhun.Controllers
 
             #endregion
 
-            return RedirectToAction("Team", "Home", new {  });//View("Region",model);//View(model); //RedirectToAction("VerifyPhoneNumber", new { PhoneNumber = model.Number });
+            return RedirectToAction("index", "team", new {id=teamId  });//View("Region",model);//View(model); //RedirectToAction("VerifyPhoneNumber", new { PhoneNumber = model.Number });
         }
 
         [HttpGet]

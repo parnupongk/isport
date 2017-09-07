@@ -1,0 +1,49 @@
+﻿
+@model isport_foxhun.Models.TeamViewModelList
+@{
+    Layout = null;
+}
+<div class="row">
+    @foreach(var list in Model.teamList)
+    {
+        <div class="col-md-4">
+            <div class="col-md-2">
+                <div class="form-group">
+                    <div class="form-group">
+                        @{ if (list != null && list.image != null)
+                        {
+                                <img src="@Url.Content(list.image)" class="img-thumbnail" style="max-height:150px;" />
+                                @Html.HiddenFor(m => list.image)
+                            }
+                            else
+                            {
+                                <img src="~/images/isport.png" class="img-thumbnail" style="max-height:150px;" />
+                            }
+                        }
+                    </div>
+                    <div class="form-group">
+                        <input type="file" name="image" id="image" />
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-10">
+                <div class="form-group">
+                    <div class="col-md-3 control-label">
+                        ทีม:
+                    </div>
+                    <div class="col-md-9">
+                        @Html.TextBoxFor(m => list.name, new { @class = "form-control" })
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-3 control-label">
+                        จังหว้ด:
+                    </div>
+                    <div class="col-md-9">
+                        @Html.TextBoxFor(m => list.region, new { @class = "form-control" })
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+</div>

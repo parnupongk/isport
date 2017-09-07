@@ -6,12 +6,18 @@ using System.Data;
 using System.Data.SqlClient;
 using Microsoft.ApplicationBlocks.Data;
 using System.Data.OleDb;
+using isport_foxhun;
 namespace isport_foxhun.Models
 {
     public class AppCodeModel
     {
         public static string strConnDB = System.Configuration.ConfigurationManager.ConnectionStrings["IsportWSConnectionString"].ToString();
 
+        public enum USERROLE
+        {
+            TEAM
+            ,ADMIN
+        }
         public isportEntities GetDBContext()
         {
             var ctx = new isportEntities();

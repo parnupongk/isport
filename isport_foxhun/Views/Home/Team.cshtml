@@ -7,12 +7,12 @@
 <script type="text/javascript">
         $(document).ready(function () {
 
-            $("#btnSubmit").click(function () {
+            /*$("#btnSubmit").click(function () {
                 console.log('submit');
                 $("#frmMain").submit();
-            });
+            });*/
 
-            $("#team_region").autocomplete({
+            $("#region").autocomplete({
                 source: function (request, response) {
                     $.ajax({
                         url: "/Player/Province",
@@ -69,21 +69,24 @@
 <h2>Register</h2>
 
 
-@using (Html.BeginForm("AddTeam", "Home", FormMethod.Post, new { @class = "form-horizontal", id = "frmMain", role = "form", enctype = "multipart/form-data" }))
+@using (Html.BeginForm("Team", "Home", FormMethod.Post, new { @class = "form-horizontal", id = "frmMain", role = "form", enctype = "multipart/form-data" }))
 {
 
+
+    <!-- Html.ValidationSummary("", new { class = "text-danger" })-->
     <div class="row">
         @Html.AntiForgeryToken()
         <h2>Step 1</h2>
         <hr />
-        @Html.HiddenFor(m => m.team.id)
+        @Html.HiddenFor(m => m.id)
+
         <div class="col-md-2">
             <div class="form-group">
                 <div class="form-group">
-                    @{ if (Model.team != null && Model.team.image != null)
+                    @{ if (Model != null && Model.image != null)
                 {
-                            <img src="@Url.Content(Model.team.image)" class="img-thumbnail" style="max-height:150px;" />
-                            @Html.HiddenFor(m => m.team.image)
+                            <img src="@Url.Content(Model.image)" class="img-thumbnail" style="max-height:150px;" />
+                            @Html.HiddenFor(m => m.image)
                         }
                         else
                         {
@@ -96,109 +99,272 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-5">
-                <div class="form-group">
-                    <div class="col-md-3 control-label">
-                        ทีม :
-                    </div>
-                    <div class="col-md-9">
-                        @Html.TextBoxFor(m => m.team.name, new { @class = "form-control" })
-                    </div>
+        <div class="col-md-10">
+            <div class="form-group">
+                <div class="col-md-3 control-label">
+                    เอกสารใบสมัคร พร้อมประทับตรา :
                 </div>
-
-                <div class="form-group">
-                    <div class="col-md-3 control-label">
-                        จังหว้ด :
-                    </div>
-                    <div class="col-md-9">
-                        @Html.TextBoxFor(m => m.team.region, new { @class = "form-control" })
-                    </div>
-                </div>
-
-                <div class="form-group">
-                    <div class="col-md-3 control-label">
-                        Email :
-                    </div>
-                    <div class="col-md-9">
-                        @Html.TextBoxFor(m => m.team.email, new { @class = "form-control" })
-                    </div>
-                </div>
-                <div class="form-group">
-                    <div class="col-md-3 control-label">
-                        Username :
-                    </div>
-                    <div class="col-md-9">
-                        @Html.TextBoxFor(m => m.team.username, new { @class = "form-control" })
-                    </div>
-                </div>
-                <div class="form-group">
-                    <div class="col-md-3 control-label">
-                        Password :
-                    </div>
-                    <div class="col-md-9">
-                        @Html.TextBoxFor(m => m.team.password, new { @class = "form-control" })
-                    </div>
+                <div class="col-md-9">
+                    <input type="file" class="form-control" name="fileDoc" id="fileDoc" />
                 </div>
             </div>
+        </div>
             <div class="col-md-5">
                 <div class="form-group">
                     <div class="col-md-3 control-label">
-                        หัวหน้าผู้ฝึกสอน :
+                        จังหว้ด:
                     </div>
                     <div class="col-md-9">
-                        @Html.TextBoxFor(m => m.team.contact, new { @class = "form-control" })
-                    </div>
-                </div>
-                <div class="form-group">
-                    <div class="col-md-3 control-label">
-                        เบอร์โทรศัพท์ :
-                    </div>
-                    <div class="col-md-9">
-                        @Html.TextBoxFor(m => m.team.phone, new { @class = "form-control" })
-                    </div>
-                </div>
-                <div class="form-group">
-                    <div class="col-md-3 control-label">
-                        ผู้ช่วยผู้ฝึกสอน :
-                    </div>
-                    <div class="col-md-9">
-                        @Html.TextBoxFor(m => m.team.contact1, new { @class = "form-control" })
-                    </div>
-                </div>
-                <div class="form-group">
-                    <div class="col-md-3 control-label">
-                        เบอร์โทรศัพท์ :
-                    </div>
-                    <div class="col-md-9">
-                        @Html.TextBoxFor(m => m.team.phone1, new { @class = "form-control" })
-                    </div>
-                </div>
-                <div class="form-group">
-                    <div class="col-md-3 control-label">
-                        ผู้ช่วยผู้ฝึกสอน :
-                    </div>
-                    <div class="col-md-9">
-                        @Html.TextBoxFor(m => m.team.contact2, new { @class = "form-control" })
-                    </div>
-                </div>
-                <div class="form-group">
-                    <div class="col-md-3 control-label">
-                        เบอร์โทรศัพท์ :
-                    </div>
-                    <div class="col-md-9">
-                        @Html.TextBoxFor(m => m.team.phone2, new { @class = "form-control" })
+                        @Html.TextBoxFor(m => m.region, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(m => m.region, "", new { @class = "text-danger" })
                     </div>
                 </div>
 
+
+
+
+                <div class="form-group">
+                    <div class="col-md-3 control-label">
+                        Email:
+                    </div>
+                    <div class="col-md-9">
+                        @Html.TextBoxFor(m => m.email, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(m => m.email, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-5">
+
+                <div class="form-group">
+                    <div class="col-md-3 control-label">
+                        ทีม:
+                    </div>
+                    <div class="col-md-9">
+                        @Html.TextBoxFor(m => m.name, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(m => m.name, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-3 control-label">
+                        Password:
+                    </div>
+                    <div class="col-md-9">
+                        @Html.TextBoxFor(m => m.password, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(m => m.password, "", new { @class = "text-danger" })
+                    </div>
+                </div>
             </div>
 
 
         </div>
 
-                }
+        <h2>Step 2</h2><p class="text-info"><h4>ข้อมูลทีมงาน</h4></p>
+        <hr/>
+        <div class="row">
+            <div class="col-md-6 form-group">
+                <div class="col-md-3">
+                    <div class="form-group">
+                        <img src="~/images/isport.png" class="img-thumbnail" style="max-height:150px;" />
+                    </div>
+                    <div class="form-group">
+                        <input type="file" name="image1" id="image1" />
+                        @Html.ValidationMessageFor(m => m.image1, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <div class="form-group">
+                        <div class="col-md-5 control-label">
+                            ผู้จัดการทีม:
+                        </div>
+                        <div class="col-md-7">
+                            @Html.TextBoxFor(m => m.contact, new { @class = "form-control" })
+                            @Html.ValidationMessageFor(m => m.contact, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-5 control-label">
+                            เบอร์โทรศัพท์:
+                        </div>
+                        <div class="col-md-7">
+                            @Html.TextBoxFor(m => m.phone, new { @class = "form-control" })
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 form-group">
+                <div class="col-md-3">
+                    <div class="form-group">
+                        <img src="~/images/isport.png" class="img-thumbnail" style="max-height:150px;" />
+                    </div>
+                    <div class="form-group">
+                        <input type="file" name="image2" id="image2" />
+                        @Html.ValidationMessageFor(m => m.image2, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <div class="form-group">
+                        <div class="col-md-5 control-label">
+                            หัวหน้าผู้ฝึกสอน:
+                        </div>
+                        <div class="col-md-7">
+                            @Html.TextBoxFor(m => m.contact1, new { @class = "form-control" })
+                            @Html.ValidationMessageFor(m => m.contact1, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-5 control-label">
+                            เบอร์โทรศัพท์:
+                        </div>
+                        <div class="col-md-7">
+                            @Html.TextBoxFor(m => m.phone1, new { @class = "form-control" })
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 form-group">
+                <div class="col-md-3">
+                    <div class="form-group">
+                        <img src="~/images/isport.png" class="img-thumbnail" style="max-height:150px;" />
+                    </div>
+                    <div class="form-group">
+                        <input type="file" name="image3" id="image3" />
+                        @Html.ValidationMessageFor(m => m.image3, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <div class="form-group">
+                        <div class="col-md-5 control-label">
+                            ผู้ช่วยฝึกสอน:
+                        </div>
+                        <div class="col-md-7">
+                            @Html.TextBoxFor(m => m.contact2, new { @class = "form-control" })
+                            @Html.ValidationMessageFor(m => m.contact2, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-5 control-label">
+                            เบอร์โทรศัพท์:
+                        </div>
+                        <div class="col-md-7">
+                            @Html.TextBoxFor(m => m.phone2, new { @class = "form-control" })
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 form-group">
+                <div class="col-md-3">
+                    <div class="form-group">
+                        <img src="~/images/isport.png" class="img-thumbnail" style="max-height:150px;" />
+                    </div>
+                    <div class="form-group">
+                        <input type="file" name="image4" id="image4" />
+                        @Html.ValidationMessageFor(m => m.image4, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <div class="form-group">
+                        <div class="col-md-5 control-label">
+                            เจ้าหน้าที่ทีม:
+                        </div>
+                        <div class="col-md-7">
+                            @Html.TextBoxFor(m => m.contact3, new { @class = "form-control" })
+                            @Html.ValidationMessageFor(m => m.contact3, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-5 control-label">
+                            เบอร์โทรศัพท์:
+                        </div>
+                        <div class="col-md-7">
+                            @Html.TextBoxFor(m => m.phone3, new { @class = "form-control" })
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 form-group">
+                <div class="col-md-3">
+                    <div class="form-group">
+                        <img src="~/images/isport.png" class="img-thumbnail" style="max-height:150px;" />
+                    </div>
+                    <div class="form-group">
+                        <input type="file" name="image5" id="image5" />
+                        @Html.ValidationMessageFor(m => m.image5, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <div class="form-group">
+                        <div class="col-md-5 control-label">
+                            เจ้าหน้าที่ทีม:
+                        </div>
+                        <div class="col-md-7">
+                            @Html.TextBoxFor(m => m.contact4, new { @class = "form-control" })
+                            @Html.ValidationMessageFor(m => m.contact4, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-5 control-label">
+                            เบอร์โทรศัพท์:
+                        </div>
+                        <div class="col-md-7">
+                            @Html.TextBoxFor(m => m.phone4, new { @class = "form-control" })
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 form-group">
+                <div class="col-md-3">
+                    <div class="form-group">
+                        <img src="~/images/isport.png" class="img-thumbnail" style="max-height:150px;" />
+                    </div>
+                    <div class="form-group">
+                        <input type="file" name="image6" id="image6" />
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <div class="form-group">
+                        <div class="col-md-5 control-label">
+                            ผู้ประสานงานทีม:
+                        </div>
+                        <div class="col-md-7">
+                            @Html.TextBoxFor(m => m.contact5, new { @class = "form-control" })
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-5 control-label">
+                            เบอร์โทรศัพท์:
+                        </div>
+                        <div class="col-md-7">
+                            @Html.TextBoxFor(m => m.phone5, new { @class = "form-control" })
+                        </div>
+                    </div>
+                </div>
+            </div>
 
+        </div>
+
+        <h2>Step 3</h2>
+        <hr />
+
+        <div class="row">
+            <div class="form-group">
+                @Html.Action("terms", "Home")
+            </div>
+            <div class="form-group">
+                <div class="col-md-12">
+                    <input id="btnSubmit" type="submit" class="btn btn-primary btn-lg center-block" value="Submit" />
+                </div>
+            </div>
+        </div>
+
+                        }
+<!-- 
 <h2>Step 2</h2>
+<h4>Upload ข้อมูลนักกีฬา (รูป + Excel)</h4>
 <hr />
+<div class="row">
+    Html.Action("insert", "player")
+</div>
 <div class="row">
     <div class="form-group">
         <div id="caseattachfile" class="card card-underline">
@@ -208,27 +374,14 @@
                 </div>
             </form>
         </div>
-        <!--div id="listFiles" class="card scroll" style="height: 188px"></!--div> -->
     </div>
 </div>
-<h2>Step 3</h2>
-<hr/>
 
-<div class="row">
-    <div class="form-group">
-        @Html.Action("terms", "Home")
-        </div>
-        <div class="form-group">
-            <div class="col-md-12">
-                <input id="btnSubmit" class="btn btn-default center-block" value="Submit" />
-            </div>
-        </div>
-    </div>
+    -->
 
 
-    <div id="divDetail" class="col-lg-12">
-        @if (Model.team != null)
-        {
-            Html.RenderAction("GetTeamByRegionID", "Home", new { region_id = Model.team.id });
-        }
-    </div>
+
+
+
+
+

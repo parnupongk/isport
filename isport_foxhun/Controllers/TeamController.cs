@@ -21,76 +21,20 @@ namespace isport_foxhun.Controllers
             return View(models);
         }
 
-        // GET: Team/Details/5
-        public ActionResult Details(int id)
+        public ActionResult GetPlayerByTeamId(TeamViewModels model)
         {
-            return View();
+            PlayerViewModelList player = new PlayerViewModelList();
+            player.playerList = model.modelPlayer;
+            return PartialView("~/Views/Home/PlayerDetail.cshtml", player);
         }
 
-        // GET: Team/Create
-        public ActionResult Create()
+        public ActionResult TeamDetail()
         {
-            return View();
+            TeamViewModelList models = new TeamViewModelList();
+            models.teamList = new TeamModels().GetTeamAll();
+            return PartialView(models);
         }
 
-        // POST: Team/Create
-        [HttpPost]
-        public ActionResult Create(FormCollection collection)
-        {
-            try
-            {
-                // TODO: Add insert logic here
-
-                return RedirectToAction("Index");
-            }
-            catch
-            {
-                return View();
-            }
-        }
-
-        // GET: Team/Edit/5
-        public ActionResult Edit(int id)
-        {
-            return View();
-        }
-
-        // POST: Team/Edit/5
-        [HttpPost]
-        public ActionResult Edit(int id, FormCollection collection)
-        {
-            try
-            {
-                // TODO: Add update logic here
-
-                return RedirectToAction("Index");
-            }
-            catch
-            {
-                return View();
-            }
-        }
-
-        // GET: Team/Delete/5
-        public ActionResult Delete(int id)
-        {
-            return View();
-        }
-
-        // POST: Team/Delete/5
-        [HttpPost]
-        public ActionResult Delete(int id, FormCollection collection)
-        {
-            try
-            {
-                // TODO: Add delete logic here
-
-                return RedirectToAction("Index");
-            }
-            catch
-            {
-                return View();
-            }
-        }
+        
     }
 }

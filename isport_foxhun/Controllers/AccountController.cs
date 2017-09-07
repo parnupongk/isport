@@ -10,7 +10,7 @@ using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
 using isport_foxhun.Models;
 using isport_foxhun.commom;
-
+using System.Collections.Generic;
 namespace isport_foxhun.Controllers
 {
 
@@ -81,11 +81,20 @@ namespace isport_foxhun.Controllers
             //ApplicationUser user = UserManager.FindByEmail(model.Email);
 
             SignInStatus result = SignInStatus.Failure;
-            if (model.Email == "admin@admin.com" && model.Password == "test") result = SignInStatus.Success;
+            
+            List<foxhun_users> users = new foxhunt_users().getUsers(model.Username, model.Password);
+
+            if (users.Count > 0)
+            {
+                if( users[0].role == AppCodeModel.USERROLE.TEAM.ToString() )
+                returnUrl = (users.Count > 0)? "~/Team/Index?id=" + users[0].team_id: "~/Team/Index";
+                //else 
+                AppUtils.Session.User = users[0];                
+                result = SignInStatus.Success;
+            }
             else result = SignInStatus.Failure;
-            User usr = new commom.User();
-            AppUtils.Session.User = usr;
-            returnUrl = "~/Team/Index";
+
+            
             //var result = await SignInManager.PasswordSignInAsync(model.Email, model.Password, model.RememberMe, shouldLockout: false);
             switch (result)
             {
@@ -97,7 +106,7 @@ namespace isport_foxhun.Controllers
                     return RedirectToAction("SendCode", new { ReturnUrl = returnUrl, RememberMe = model.RememberMe });
                 case SignInStatus.Failure:
                 default:
-                    ModelState.AddModelError("", "Invalid login attempt.");
+                    ModelState.AddModelError("", "Invalid login attempt.8888");
                     return View(model);
             }
         }
@@ -160,26 +169,45 @@ namespace isport_foxhun.Controllers
         [ValidateAntiForgeryToken]
         public async Task<ActionResult> Register(RegisterViewModel model)
         {
-            if (ModelState.IsValid)
+            try
             {
-                var user = new ApplicationUser { UserName = model.Email, Email = model.Email };
-                var result = await UserManager.CreateAsync(user, model.Password);
-                if (result.Succeeded)
-                {
-                    await SignInManager.SignInAsync(user, isPersistent:false, rememberBrowser:false);
-                    
-                    // For more information on how to enable account confirmation and password reset please visit http://go.microsoft.com/fwlink/?LinkID=320771
-                    // Send an email with this link
-                    // string code = await UserManager.GenerateEmailConfirmationTokenAsync(user.Id);
-                    // var callbackUrl = Url.Action("ConfirmEmail", "Account", new { userId = user.Id, code = code }, protocol: Request.Url.Scheme);
-                    // await UserManager.SendEmailAsync(user.Id, "Confirm your account", "Please confirm your account by clicking <a href=\"" + callbackUrl + "\">here</a>");
+                if (ModelState.IsValid)
+                {/*
+                    IdentityResult result = new IdentityResult();
+                    if (new foxhunt_users().insert(model.Username, model.Password, AppCodeModel.USERROLE.TEAM.ToString(), "") > 0)
+                    {
 
-                    return RedirectToAction("Index", "Home");
+                        return RedirectToAction("login", "Account");
+                    }
+                    else
+                    {
+                        ModelState.AddModelError("", "Cannot Insert Data");//AddErrors(result);
+                    }
+                    //var user = new ApplicationUser { UserName = model.Email, Email = model.Email };
+                    //var result = await UserManager.CreateAsync(user, model.Password);
+                     if (result.Succeeded)
+                     {
+                         await SignInManager.SignInAsync(user, isPersistent:false, rememberBrowser:false);
+
+                         // For more information on how to enable account confirmation and password reset please visit http://go.microsoft.com/fwlink/?LinkID=320771
+                         // Send an email with this link
+                         // string code = await UserManager.GenerateEmailConfirmationTokenAsync(user.Id);
+                         // var callbackUrl = Url.Action("ConfirmEmail", "Account", new { userId = user.Id, code = code }, protocol: Request.Url.Scheme);
+                         // await UserManager.SendEmailAsync(user.Id, "Confirm your account", "Please confirm your account by clicking <a href=\"" + callbackUrl + "\">here</a>");
+
+                         return RedirectToAction("login", "Account");
+                     }*/
+
                 }
-                AddErrors(result);
+
+                // If we got this far, something failed, redisplay form
+                
+            }
+            catch( Exception ex)
+            {
+                ModelState.AddModelError("", ex.Message);
             }
 
-            // If we got this far, something failed, redisplay form
             return View(model);
         }
 
@@ -402,8 +430,8 @@ namespace isport_foxhun.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult LogOff()
         {
-            
-            AuthenticationManager.SignOut(DefaultAuthenticationTypes.ApplicationCookie);
+            AppUtils.Session.User = null;
+            //AuthenticationManager.SignOut(DefaultAuthenticationTypes.ApplicationCookie);
             return RedirectToAction("Index", "Home");
         }
 

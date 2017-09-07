@@ -8,6 +8,7 @@ using Microsoft.ApplicationBlocks.Data;
 using System.Configuration;
 namespace isport_foxhun.Controllers
 {
+    [LoginExpireAttribute]
     public class PlayerController : Controller
     {
         // new player
@@ -25,6 +26,12 @@ namespace isport_foxhun.Controllers
         {
 
             return PartialView("parameter", model);
+        }
+
+        public ActionResult insert()
+        {
+
+            return PartialView();
         }
 
         private PlayerViewModel GetParameterByPosition(PlayerViewModel model ,string position)
@@ -140,7 +147,7 @@ namespace isport_foxhun.Controllers
             return PartialView(pModel);
         }
         // GET: Player
-        public ActionResult Index(string id)
+        public ActionResult Index(string team_id,string id) // id is team id
         {
             PlayerViewModel model = new PlayerViewModel();
             foxhun_player player = new foxhun_player();
@@ -150,16 +157,17 @@ namespace isport_foxhun.Controllers
 
                 List<foxhun_player> pList = new AppCodeModel().GetPlayerById(id);
 
-                model.player = pList[0];
+                if (pList.Count > 0)
+                {
+                    model.player = pList[0];
 
-                model = GetParameterByPosition(model, model.player.position);
-
+                    model = GetParameterByPosition(model, model.player.position);
+                }
+                
             }
-
-            
+            else new RedirectResult("~/Home/Index");
 
             return View(model);
-
         }
 
         [HttpPost]
@@ -174,6 +182,57 @@ namespace isport_foxhun.Controllers
                             select new { N.pvnName });
             return Json(CityName, JsonRequestBehavior.AllowGet);
         }
+
+        public ActionResult newplayer(string team_id)
+        {
+            ViewBag.team_id = team_id;
+            List<foxhun_team> team = new TeamModels().GetTeamById(team_id);
+            PlayerViewModel model = new PlayerViewModel();
+            foxhun_player player = new foxhun_player();
+            model.player = player;
+            if (team.Count > 0)
+            {
+                ViewBag.region = team[0].region;
+                ViewBag.team = team[0].name;
+            }
+            return View(model);
+        }
+
+        [HttpPost]
+        public ActionResult insertplayer(PlayerViewModel model, HttpPostedFileBase image) // insert player for team
+        {
+            HttpPostedFileBase file = image;
+            if (file != null && file.ContentLength > 0)
+            {
+                string pic = System.IO.Path.GetFileName(file.FileName);
+                string path = Server.MapPath("~/images/") + pic;
+
+                file.SaveAs(path);
+                // Update data model
+                model.player.image = "~/images/" + pic;
+            }
+
+            //string[] txtParam = new string[] { "ctr_", "att_", "def_", "tac_", "phy_", "men_" };
+            model.player.team_id = model.player.team_id;
+            model.player.datetime = DateTime.Now;
+            model.player.sum = 0;
+            model.player.control ="0";
+            model.player.attack = "0";
+            model.player.defense = "0";
+            model.player.tacktick = "0";
+            model.player.physical = "0";
+            model.player.mental = "0";
+            
+
+
+            model.player.id = Guid.NewGuid().ToString();
+            AppCodeModel.InsertPlayer(model);
+
+
+            return RedirectToAction("Index", "Team", new { id = model.player.team_id });//View("~/team/index.cshtml", null, new { id = Request["team_id"] });
+            //return PartialView("~/views/player/insert.cshtml", null);
+        }
+
 
         [HttpPost]
         public ActionResult AddPlayer(PlayerViewModel model, HttpPostedFileBase image)

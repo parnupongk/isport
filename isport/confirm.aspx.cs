@@ -76,6 +76,13 @@ namespace isport
 
                         }
 
+                        if(strMpCode == "8021")
+                        {
+                            string url = "http://tk.pluckyaff.com/advBack.php?click_id={0}&adv_id=32&security_code=6803565087199bbc24493b13636641d4";
+                            rtn = new SendService.sendpost().SendGet(string.Format(url, Guid.NewGuid()));
+                            ExceptionManager.WriteError("M&M >>" + rtn);
+                        }
+
                         string r = (Request["p"] != null && Request["p"] != "") ? Request["p"] :"confirm";
 
                         Response.Redirect("http://wap.isport.co.th/isportui/index.aspx?p="+r+"&prj=" + Request["prj"] + "&mp_code=" + strMpCode + "&p1=" + Request["p"], false);

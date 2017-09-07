@@ -1,8 +1,70 @@
 ﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-
+using System;
+using System.Linq;
+using System.Data;
+using System.Data.SqlClient;
+using Microsoft.ApplicationBlocks.Data;
 namespace isport_foxhun.Models
 {
+    public class foxhunt_users : AppCodeModel
+    {
+        public List<foxhun_users> getUsers(string username, string password)
+        {
+            try
+            {
+                using (var db = this.GetDBContext())
+                {
+                    var user = db.foxhun_users
+                        .Where(r => r.username == username && r.password == password);
+
+                    return user.ToList();
+
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+        public int insert(foxhun_users user)
+        {
+            try
+            {
+                int rtn = 0;
+                rtn = SqlHelper.ExecuteNonQuery(strConnDB, CommandType.StoredProcedure, "usp_foxhun_usersinsert"
+                    , new SqlParameter[] {new SqlParameter("@id",user.id)
+                                            ,new SqlParameter("@createdate",user.createdate)
+                                            ,new SqlParameter("@username",user.username)
+                                            ,new SqlParameter("@password",user.password)
+                                            ,new SqlParameter("@role",user.role)
+                                            ,new SqlParameter("@team_id",user.team_id)
+                                         });
+                return rtn;
+            }
+            catch(Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+    }
+
+    public class LoginViewModel
+    {
+        [Required]
+        [Display(Name = "Email")]
+        [EmailAddress]
+        public string Email { get; set; }
+
+        [Required]
+        [DataType(DataType.Password)]
+        [Display(Name = "Password")]
+        public string Password { get; set; }
+
+        [Display(Name = "Remember me?")]
+        public bool RememberMe { get; set; }
+    }
+
     public class ExternalLoginConfirmationViewModel
     {
         [Required]
@@ -46,9 +108,14 @@ namespace isport_foxhun.Models
         public string Email { get; set; }
     }
 
+    /*
     public class LoginViewModel
     {
         [Required]
+        [Display(Name = "Username")]
+        public string Username { get; set; }
+
+        /*[Required]
         [Display(Name = "Email")]
         [EmailAddress]
         public string Email { get; set; }
@@ -60,17 +127,22 @@ namespace isport_foxhun.Models
 
         [Display(Name = "Remember me?")]
         public bool RememberMe { get; set; }
-    }
+    }*/
 
     public class RegisterViewModel
     {
         [Required]
+        [Display(Name = "Username")]
+        public string Username { get; set; }
+
+        /*
+        [Required]
         [EmailAddress]
         [Display(Name = "Email")]
-        public string Email { get; set; }
+        public string Email { get; set; }*/
 
         [Required]
-        [StringLength(100, ErrorMessage = "The {0} must be at least {2} characters long.", MinimumLength = 6)]
+        [StringLength(100, ErrorMessage = "The {0} must be at least {2} characters long.", MinimumLength = 4)]
         [DataType(DataType.Password)]
         [Display(Name = "Password")]
         public string Password { get; set; }

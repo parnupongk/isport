@@ -8,11 +8,6 @@ using System.Configuration;
 
 namespace isport_foxhun.commom
 {
-    public class User
-    {
-        public string username { get; set; }
-        public string password { get; set; }
-    }
     public class AppUtils
     {
         public class Session
@@ -51,11 +46,11 @@ namespace isport_foxhun.commom
             }
       
 
-            public static User User
+            public static foxhun_users User
             {
                 get
                 {
-                    var obj = GetSessionValue<User>("USER");
+                    var obj = GetSessionValue<foxhun_users>("USER");
                     
                     return obj;
                 }

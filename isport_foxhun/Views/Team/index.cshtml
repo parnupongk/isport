@@ -3,6 +3,327 @@
 @{
     ViewBag.Title = "Team";
 }
+<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css" />
+<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script> 
+<link rel="stylesheet" href="~/Content/bootstrap.css" />
 <h2>Team</h2>
 
-@foreach(var team in )
+<script>
+  $( function() {
+    $( "#tabs" ).tabs();
+  } );
+</script>
+
+@foreach (var model in Model.modelTeam)
+{
+
+    <div id="tabs">
+        <ul>
+            <li><a href="#tabs-1">ทีม</a></li>
+            <li><a href="#tabs-2">ทีมงาน</a></li>
+        </ul>
+        <div id="tabs-1">
+            <div class="row">
+                @Html.AntiForgeryToken()
+                <hr />
+                @Html.HiddenFor(m => model.id)
+                <div class="col-md-2">
+                    <div class="form-group">
+                        <div class="form-group">
+                            @{ if (model.id != null && model.image != null)
+                                {
+                                    <img src="@Url.Content(model.image)" class="img-thumbnail" style="max-height:150px;" />
+                                    @Html.HiddenFor(m => model.image)
+                                }
+                                else
+                                {
+                                    <img src="~/images/isport.png" class="img-thumbnail" style="max-height:150px;" />
+                                }
+                            }
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="form-group">
+                        <div class="col-md-3 control-label">
+                            จังหว้ด:
+                        </div>
+                        <div class="col-md-9">
+                            @Html.TextBoxFor(m => model.region, new { @class = "form-control" })
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-md-3 control-label">
+                            Email:
+                        </div>
+                        <div class="col-md-9">
+                            @Html.TextBoxFor(m => model.email, new { @class = "form-control" })
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="form-group">
+                        <div class="col-md-3 control-label">
+                            ทีม:
+                        </div>
+                        <div class="col-md-9">
+                            @Html.TextBoxFor(m => model.name, new { @class = "form-control" })
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-3 control-label">
+                            Password:
+                        </div>
+                        <div class="col-md-9">
+                            @Html.TextBoxFor(m => model.password, new { @class = "form-control" })
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+        <div id="tabs-2">
+            <!-- ผู้จัดการทีม -->
+            <div class="row">
+                <div class="col-md-6 form-group">
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            @{ if (model.id != null && model.file3 != null)
+                                {
+                                    <img src="@Url.Content(model.file3)" class="img-thumbnail" style="max-height:150px;" />
+                                    @Html.HiddenFor(m => model.file3)
+                                }
+                                else
+                                {
+                                    <img src="~/images/isport.png" class="img-thumbnail" style="max-height:150px;" />
+                                }
+                            }
+                        </div>
+                    </div>
+                    <div class="col-md-9">
+                        <div class="form-group">
+                            <div class="col-md-5 control-label">
+                                ผู้จัดการทีม:
+                            </div>
+                            <div class="col-md-7">
+                                @Html.TextBoxFor(m => model.contact, new { @class = "form-control" })
+                                @Html.ValidationMessageFor(m => model.contact, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-5 control-label">
+                                เบอร์โทรศัพท์:
+                            </div>
+                            <div class="col-md-7">
+                                @Html.TextBoxFor(m => model.phone, new { @class = "form-control" })
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 form-group">
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            @{ if (model.id != null && model.file4 != null)
+                                {
+                                    <img src="@Url.Content(model.file4)" class="img-thumbnail" style="max-height:150px;" />
+                                    @Html.HiddenFor(m => model.file4)
+                                }
+                                else
+                                {
+                                    <img src="~/images/isport.png" class="img-thumbnail" style="max-height:150px;" />
+                                }
+                            }
+                        </div>
+                    </div>
+                    <div class="col-md-9">
+                        <div class="form-group">
+                            <div class="col-md-5 control-label">
+                                หัวหน้าผู้ฝึกสอน:
+                            </div>
+                            <div class="col-md-7">
+                                @Html.TextBoxFor(m => model.contact1, new { @class = "form-control" })
+                                @Html.ValidationMessageFor(m => model.contact1, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-5 control-label">
+                                เบอร์โทรศัพท์:
+                            </div>
+                            <div class="col-md-7">
+                                @Html.TextBoxFor(m => model.phone1, new { @class = "form-control" })
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 form-group">
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            @{ if (model.id != null && model.file5 != null)
+                                {
+                                    <img src="@Url.Content(model.file5)" class="img-thumbnail" style="max-height:150px;" />
+                                    @Html.HiddenFor(m => model.file5)
+                                }
+                                else
+                                {
+                                    <img src="~/images/isport.png" class="img-thumbnail" style="max-height:150px;" />
+                                }
+                            }
+                        </div>
+                    </div>
+                    <div class="col-md-9">
+                        <div class="form-group">
+                            <div class="col-md-5 control-label">
+                                ผู้ช่วยฝึกสอน:
+                            </div>
+                            <div class="col-md-7">
+                                @Html.TextBoxFor(m => model.contact2, new { @class = "form-control" })
+                                @Html.ValidationMessageFor(m => model.contact2, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-5 control-label">
+                                เบอร์โทรศัพท์:
+                            </div>
+                            <div class="col-md-7">
+                                @Html.TextBoxFor(m => model.phone2, new { @class = "form-control" })
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 form-group">
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            @{ if (model.id != null && model.file6 != null)
+                                {
+                                    <img src="@Url.Content(model.file6)" class="img-thumbnail" style="max-height:150px;" />
+                                    @Html.HiddenFor(m => model.file6)
+                                }
+                                else
+                                {
+                                    <img src="~/images/isport.png" class="img-thumbnail" style="max-height:150px;" />
+                                }
+                            }
+                        </div>
+                    </div>
+                    <div class="col-md-9">
+                        <div class="form-group">
+                            <div class="col-md-5 control-label">
+                                เจ้าหน้าที่ทีม:
+                            </div>
+                            <div class="col-md-7">
+                                @Html.TextBoxFor(m => model.contact3, new { @class = "form-control" })
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-5 control-label">
+                                เบอร์โทรศัพท์:
+                            </div>
+                            <div class="col-md-7">
+                                @Html.TextBoxFor(m => model.phone3, new { @class = "form-control" })
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 form-group">
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            @{ if (model.id != null && model.file7 != null)
+                                {
+                                    <img src="@Url.Content(model.file7)" class="img-thumbnail" style="max-height:150px;" />
+                                    @Html.HiddenFor(m => model.file7)
+                                }
+                                else
+                                {
+                                    <img src="~/images/isport.png" class="img-thumbnail" style="max-height:150px;" />
+                                }
+                            }
+                        </div>
+                    </div>
+                    <div class="col-md-9">
+                        <div class="form-group">
+                            <div class="col-md-5 control-label">
+                                เจ้าหน้าที่ทีม:
+                            </div>
+                            <div class="col-md-7">
+                                @Html.TextBoxFor(m => model.contact4, new { @class = "form-control" })
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-5 control-label">
+                                เบอร์โทรศัพท์:
+                            </div>
+                            <div class="col-md-7">
+                                @Html.TextBoxFor(m => model.phone4, new { @class = "form-control" })
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 form-group">
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            @{ if (model.id != null && model.file8 != null)
+                                {
+                                    <img src="@Url.Content(model.file8)" class="img-thumbnail" style="max-height:150px;" />
+                                    @Html.HiddenFor(m => model.file8)
+                                }
+                                else
+                                {
+                                    <img src="~/images/isport.png" class="img-thumbnail" style="max-height:150px;" />
+                                }
+                            }
+                        </div>
+                        <!-- div class="form-group">
+                            <input type="file" name="image6" id="image6" />
+                        </!--div> -->
+                    </div>
+                    <div class="col-md-9">
+                        <div class="form-group">
+                            <div class="col-md-5 control-label">
+                                ผู้ประสานงานทีม:
+                            </div>
+                            <div class="col-md-7">
+                                @Html.TextBoxFor(m => model.contact5, new { @class = "form-control" })
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-5 control-label">
+                                เบอร์โทรศัพท์:
+                            </div>
+                            <div class="col-md-7">
+                                @Html.TextBoxFor(m => model.phone5, new { @class = "form-control" })
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <br/>
+    <div class="container">
+        <div class="row">
+            @Html.ActionLink("เพิ่มข้อมูลนักกีฬา", "newplayer", "Player", new { team_id = model.id }, new { @Class = "btn btn-primary pull-right" })
+        </div>
+    </div>
+
+    <br />
+
+    <div id="grid_list" class="row">
+
+        @{ if (Model != null)
+            {
+                @Html.Action("GetPlayerByTeamId", "Team", Model);
+            }
+        }
+
+    </div>
+
+            }

@@ -47,8 +47,83 @@ namespace isport_foxhun.Models
 
     public class TeamViewModel
     {
+        [Required]
+        [Display(Name = "เอกสารใบสมัคร")]
+        public string fileDoc { get; set; }
+        [Required]
+        [Display(Name = "ผู้จัดการทีม")]
+        public string image1 { get; set; }
+        [Required]
+        [Display(Name = "หัวหน้าผู้ฝึกสอน")]
+        public string image2 { get; set; }
+        [Required]
+        [Display(Name = "ผู้ช่วยฝึกสอน")]
+        public string image3 { get; set; }
+        [Required]
+        [Display(Name = "เจ้าหน้าที่ทีม")]
+        public string image4 { get; set; }
+        [Required]
+        [Display(Name = "เจ้าหน้าที่ทีม")]
+        public string image5 { get; set; }
+        public string id { get; set; }
 
-        public foxhun_team team { get; set; }
+        [Required]
+        [Display(Name = "จังหวัด")]
+        public string region { get; set; }
+        public int index { get; set; }
+        public int seq { get; set; }
+
+        [Required]
+        [Display(Name = "ชื่อทีม")]
+        public string name { get; set; }
+        public string detail { get; set; }
+
+        [Required]
+        [EmailAddress]
+        [Display(Name = "Email")]
+        public string email { get; set; }
+        [Required]
+        public string image { get; set; }
+        public string username { get; set; }
+        [Required]
+        [Display(Name = "password")]
+        public string password { get; set; }
+        public string file1 { get; set; }
+        public string file2 { get; set; }
+        public string file3 { get; set; }
+        public string file4 { get; set; }
+        public string file5 { get; set; }
+        public string file6 { get; set; }
+        public string file7 { get; set; }
+        public string file8 { get; set; }
+        public string file9 { get; set; }
+        public string file10 { get; set; }
+        [Required]
+        [Display(Name = "ผู้จัดการทีม")]
+        public string contact { get; set; }
+        [Required]
+        [Display(Name = "หัวหน้าผู้ฝึกสอน")]
+        public string contact1 { get; set; }
+        [Required]
+        [Display(Name = "ผู้ช่วยฝึกสอน")]
+        public string contact2 { get; set; }
+        public string phone { get; set; }
+        public string phone1 { get; set; }
+
+        [Required]
+        [Display(Name = "เจ้าหน้าที่ทีม")]
+        public string contact3 { get; set; }
+
+        [Required]
+        [Display(Name = "เจ้าหน้าที่ทีม")]
+        public string contact4 { get; set; }
+        public string contact5 { get; set; }
+        public string contact6 { get; set; }
+        public string phone3 { get; set; }
+        public string phone4 { get; set; }
+        public string phone5 { get; set; }
+        public string phone6 { get; set; }
+        public string phone2 { get; set; }
         public string pathExcel { get; set; }
         public string pathDoc { get; set; }
         public string pathImages { get; set; }
