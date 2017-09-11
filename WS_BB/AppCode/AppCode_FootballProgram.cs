@@ -628,7 +628,7 @@ namespace WS_BB
                 XElement xElement = null;
 
                 // บอลไทย ไปใช้ที่ sportcc 
-                //nXML.Element("SportApp").Add(CommandGetFootballProgram_Isportstarsoccer("League", date, "", lang));
+                rtnXML.Element("SportApp").Add(CommandGetFootballProgram_Isportstarsoccer("League", date, "", lang));
 
                 if (dv.Count > 0)
                 {
@@ -733,7 +733,7 @@ namespace WS_BB
                 XElement xElement = null;
 
                 // บอลไทย ไปใช้ที่ sportcc
-                //rtnXML.Element("SportApp").Add(CommandGetFootballProgram_IsportPool("League", date, "", lang));
+                rtnXML.Element("SportApp").Add(CommandGetFootballProgram_IsportPool("League", date, "", lang));
 
 
                 if (dv.Count > 0)
