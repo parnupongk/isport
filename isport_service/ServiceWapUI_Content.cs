@@ -372,18 +372,22 @@ namespace isport_service
                 {
                     linkContent += "&ad=" + System.Web.HttpContext.Current.Request["ad"] + "&clickid=" + System.Web.HttpContext.Current.Request["clickid"];
                 }
+                else if(HttpContext.Current.Request["click_id"] != null)
+                {
+                    linkContent +=  "&click_id=" + HttpContext.Current.Request["click_id"] + "&aff_id=" + HttpContext.Current.Request["aff_id"] +"&source_id=" + HttpContext.Current.Request["source_id"];
+                }
 
                 linkContent = linkContent.Replace('&', '|');
-                mpCode = System.Web.HttpContext.Current.Request["mp_code"] == null ? "" : System.Web.HttpContext.Current.Request["mp_code"];
+                mpCode = HttpContext.Current.Request["mp_code"] == null ? "" : HttpContext.Current.Request["mp_code"];
                 if (mpCode != null && mpCode.Split(',').Length > 0)
                 {
                     mpCode = mpCode.Split(',')[0].ToString();
                 }
 
-                if (mpCode != "" && strOptCode.Replace("'","") =="01")
-                {
-                    mpCode = "00" + mpCode;
-                }
+               // if (mpCode != "" && strOptCode.Replace("'","") =="01")
+               // {
+                //    mpCode = "00" + mpCode;
+               // }
                 link = strPageRedirect + "&sg=" + strSgID + "&r=" + linkContent.Replace("?mp_code", mpCode);
                 
                 return link;

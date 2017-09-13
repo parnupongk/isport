@@ -17,3 +17,28 @@ Log Entry :
 Error in: http://localhost:4358/isportapp.asmx/Isport_GetSiamSportAllTag. Error Message:Logs_Insert >> ORA-12170: TNS:Connect timeout occurred
 imei:imsi:phone_nomodel:opt_code:logsIP:::1
 __________________________
+
+Log Entry : 
+11/09/2017 10:49:43
+ IP :  ::1 
+Error in: http://localhost:4358/isport.asmx/GetLastScore. Error Message:GetLiveScore >> A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+__________________________
+
+Log Entry : 
+11/09/2017 10:51:24
+ IP :  ::1 
+Error in: http://localhost:4358/isport.asmx/GetLastScore. Error Message:GetLiveScore >> Error converting data type nvarchar to numeric.
+__________________________
+
+Log Entry : 
+11/09/2017 10:51:54
+ IP :  ::1 
+Error in: http://localhost:4358/isport.asmx/GetLastScore?strMenu=&scsId=&code=. Error Message:GetLiveScore >> Error converting data type nvarchar to numeric.
+__________________________
+
+Log Entry : 
+11/09/2017 11:22:53
+ IP :  ::1 
+Error in: http://localhost:4358/isportapp.asmx/Isport_GetSiamSportAllTag. Error Message:Logs_Insert >> ORA-12170: TNS:Connect timeout occurred
+imei:imsi:phone_nomodel:opt_code:logsIP:::1
+__________________________

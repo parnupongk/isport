@@ -536,7 +536,8 @@ namespace WS_BB
                              , new XAttribute("date", AppCode_LiveScore.DateText(scoreDate))
                              ));
                 //rtnXML = ls.CommandGetScoreResult(rtnXML, "3405", scoreDate, lang);// บอลไทย
-                rtnXML = ls.CommandGetScore(rtnXML, countryId, lang, contestGroupId, AppCode_LiveScore.MatchType.Finished, diffDate.Days, "N");
+                rtnXML = ls.CommandLiveScore_(rtnXML,"","00001", true, lang);
+                //rtnXML = ls.CommandGetScore(rtnXML, countryId, lang, contestGroupId, AppCode_LiveScore.MatchType.Finished, diffDate.Days, "N");
                 xmlDoc.Load(rtnXML.CreateReader());
 
             }

@@ -119,8 +119,13 @@ namespace isport.admin
             if (ViewState["DataContent"] == null) DataBindContent();
             else
             {
-                System.Data.DataSet ds = (System.Data.DataSet)ViewState["DataContent"];
-                gvContent.DataSource = ds;
+               DataSet ds = (DataSet)ViewState["DataContent"];
+
+                DataView dv = null;
+                dv = ds.Tables[0].DefaultView;
+                dv.Sort = (ddlProject.SelectedValue == "newsmain") ? "ui_startdate desc" : "";
+
+                gvContent.DataSource = dv;
                 gvContent.DataBind();
             }
         }
@@ -130,19 +135,25 @@ namespace isport.admin
             {
                 //if (ddlProject.SelectedIndex > 0)
                 //{
-                    lnkLevel.Text = GetLevel.ToString();
+                lnkLevel.Text = GetLevel.ToString();
 
-                    uMenu1.MenuID = GetMasterID;
-                    uMenu1.uGenMenu();
+                uMenu1.MenuID = GetMasterID;
+                uMenu1.uGenMenu();
+                
+                System.Data.DataSet ds = new AppCode().SelectUIByLevel(GetMasterID, GetLevel, (ddlProject.SelectedIndex > 0 ? ddlProject.SelectedValue : Request["p"]));
 
-                    System.Data.DataSet ds = new AppCode().SelectUIByLevel(GetMasterID, GetLevel, (ddlProject.SelectedIndex > 0 ? ddlProject.SelectedValue : Request["p"] ));
-                    ViewState["DataContent"] = ds;
-                    RowCount = ds.Tables[0].Rows.Count;
-                    gvContent.DataSource = ds;
-                    gvContent.DataBind();
+                System.Data.DataView dv = null;
+                dv = ds.Tables[0].DefaultView;           
+                dv.Sort = (ddlProject.SelectedValue == "newsmain") ? "ui_startdate desc" : "" ;
+                
+
+                ViewState["DataContent"] = ds;
+                RowCount = dv.Count;
+                gvContent.DataSource = dv;
+                gvContent.DataBind();
                 //}
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 ExceptionManager.WriteError("DataBindContent:" + ex.Message);
             }

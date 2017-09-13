@@ -420,8 +420,8 @@ namespace WS_BB
             }
             else
             {
-
-                rtnXML = new AppCode_LiveScore().CommandGetScore(rtnXML, countryId, lang, contestGroupId, AppCode_LiveScore.MatchType.inprogress, addTime, "N");
+                rtnXML = new AppCode_LiveScore().CommandLiveScore_(rtnXML, "", "00001", false, lang);
+                //rtnXML = new AppCode_LiveScore().CommandGetScore(rtnXML, countryId, lang, contestGroupId, AppCode_LiveScore.MatchType.inprogress, addTime, "N");
 
                 if (rtnXML.Element("SportApp").Element("League") == null)
                 {

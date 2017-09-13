@@ -311,13 +311,15 @@ namespace WS_BB
                     if (rtnXML.Element("SportApp").Element("status") == null)
                     {
                         if (isFootballThai) rtnXML = ls.CommandGetScoreResult(rtnXML, "3405", scoreDate, lang);// บอลไทย
-                        rtnXML = ls.CommandGetScore(rtnXML, "", lang, contentGroupId, AppCode_LiveScore.MatchType.Finished, diffDate.Days, "N");
+                        rtnXML = ls.CommandLiveScore_(rtnXML, "", "00001", true, lang);
+                        //rtnXML = ls.CommandGetScore(rtnXML, "", lang, contentGroupId, AppCode_LiveScore.MatchType.Finished, diffDate.Days, "N");
                     }
                 }
                 else
                 {
                     if (isFootballThai)  rtnXML = ls.CommandGetScoreResult(rtnXML, "3405", scoreDate, lang);// บอลไทย
                     rtnXML = ls.CommandGetScore(rtnXML, "", lang, contentGroupId, AppCode_LiveScore.MatchType.Finished, diffDate.Days, "N");
+
                 }
 
                 rtnXML.Element("SportApp").SetAttributeValue("date", AppCode_LiveScore.DateText(scoreDate));
