@@ -1,0 +1,10 @@
+
+Log Entry : 
+17/09/2017 11:53:33
+ IP :  ::1 
+Error in: http://localhost:4358/sportpool.aspx. Error Message:Logs_Insert >> ORA-06550: line 1, column 7:
+PLS-00306: wrong number or types of arguments in call to 'SPORTAPP_INSERT_LOGS'
+ORA-06550: line 1, column 7:
+PL/SQL: Statement ignored
+imei:imsi:phone_nomodel:opt_code:logsIP:::1
+__________________________

@@ -99,7 +99,7 @@ namespace WS_BB
             return outProgram;
         }
 
-        public XElement CommandGetFootballProgram_Isportstarsoccer(string elementName,string date , string scsId, string lang)
+        public XDocument CommandGetFootballProgram_Isportstarsoccer(XDocument rtnXML,string elementName,string date , string scsId, string lang)
         {
             XElement element = null ;
             string str = "";
@@ -156,6 +156,8 @@ namespace WS_BB
                             }
                             
                         }
+
+                        rtnXML.Element("SportApp").Add(element);
                     }
 
                 }
@@ -166,10 +168,10 @@ namespace WS_BB
                 //rtnXML.Element("SportApp").Add(new XElement("status", "error")
                 //    , new XElement("message", ex.Message));
             }
-            return element;
+            return rtnXML;
         }
 
-        public XElement CommandGetFootballProgram_IsportPool(string elementName, string date, string scsId, string lang)
+        public XDocument CommandGetFootballProgram_IsportPool(XDocument rtnXML,string elementName, string date, string scsId, string lang)
         {
             XElement element = null;
             string str = "";
@@ -229,6 +231,8 @@ namespace WS_BB
                             }
 
                         }
+
+                        rtnXML.Element("SportApp").Add(element);
                     }
 
                 }
@@ -239,7 +243,7 @@ namespace WS_BB
                 //rtnXML.Element("SportApp").Add(new XElement("status", "error")
                 //    , new XElement("message", ex.Message));
             }
-            return element;
+            return rtnXML;
         }
 
         public XElement CommandGetFootballProgram(string elementName,string scsId,string lang)
@@ -609,6 +613,13 @@ namespace WS_BB
         {
             try
             {
+                rtnXML= CommandGetFootballProgram_Isportstarsoccer(rtnXML,"League", date, "", lang);
+
+                rtnXML.Element("SportApp").Add(
+                        new XElement("status", "success")
+                        , new XElement("message", ""));
+                /*
+
                 DataSet ds = null;
 
                 if (contestGroupId == null || contestGroupId == "")
@@ -628,7 +639,7 @@ namespace WS_BB
                 XElement xElement = null;
 
                 // บอลไทย ไปใช้ที่ sportcc 
-                rtnXML.Element("SportApp").Add(CommandGetFootballProgram_Isportstarsoccer("League", date, "", lang));
+                
 
                 if (dv.Count > 0)
                 {
@@ -682,15 +693,14 @@ namespace WS_BB
 
                     if (xElement != null) rtnXML.Element("SportApp").Add(xElement); // add Element สุดท้าย
 
-                    rtnXML.Element("SportApp").Add(
-                        new XElement("status", "success")
-                        , new XElement("message", ""));
+                    
                 }
                 else
                 {
                     rtnXML.Element("SportApp").Add(new XElement("status", "success")
                        , new XElement("message", "ขอภัยไม่พบข้อมูลที่ต้องการ")); 
                 }
+                */
             }
             catch (Exception ex)
             {
@@ -714,6 +724,13 @@ namespace WS_BB
         {
             try
             {
+                rtnXML= CommandGetFootballProgram_IsportPool(rtnXML,"League", date, "", lang);
+
+                rtnXML.Element("SportApp").Add(
+                      new XElement("status", "success")
+                      , new XElement("message", ""));
+
+                /*
                 DataSet ds = null;
 
                 if (contestGroupId == null || contestGroupId == "")
@@ -733,7 +750,7 @@ namespace WS_BB
                 XElement xElement = null;
 
                 // บอลไทย ไปใช้ที่ sportcc
-                rtnXML.Element("SportApp").Add(CommandGetFootballProgram_IsportPool("League", date, "", lang));
+                
 
 
                 if (dv.Count > 0)
@@ -804,6 +821,7 @@ namespace WS_BB
                    // rtnXML.Element("SportApp").Add(new XElement("status", "success")
                     //  , new XElement("message", ""));
                 }
+                */
             }
             catch (Exception ex)
             {
