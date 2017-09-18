@@ -1,0 +1,152 @@
+﻿@model isport_foxhun.Models.PlayerViewModelList
+<script>
+
+    $(document).ready(function () {
+        $('#grid-terms').hide();
+
+        $("#btnTerms").click(function () {
+
+            $('#grid-index').hide("slow");
+            $('html, body').animate({ scrollTop: 0 }, 500);
+            $('#grid-terms').show(2000);
+        });
+
+        $("#chkAreent").change(function () {
+            if (this.checked) {
+
+                $('#btnSubmit').prop('disabled', false);
+            } else {
+                $('#btnSubmit').prop('disabled', true);
+            }
+        });
+
+    });
+
+
+
+    $("#frm-search").submit(function (event) {
+        //alert("Handler for .submit() called.");
+        event.preventDefault();
+    });
+
+    function beginPaging(args) {
+        // Animate
+        $('#grid-list').fadeOut(300);
+    }
+
+    function successPaging() {
+        // Animate
+        $('html, body').animate({ scrollTop: 0 }, 500);
+        $('#grid-list').fadeIn(300);
+        //$('a').tooltip();
+    }
+
+    function failurePaging() {
+        alert("Could not retrieve list.");
+    }
+</script>
+
+@using (Html.BeginForm("Team", "Home", FormMethod.Get, new { @class = "form-horizontal" }))
+{
+
+<div id="grid-index"  style="margin-top:-70px;">
+    @*<h1>ระเบียบการแข่งขันฟุตบอลเยาวชน รุ่นอายุไม่เกิน 15 ปี ประจำปี 2560 <br/>KING POWER’S CUP 2017</h1>*@
+    <div class="row">
+        <div style="text-align:center">
+            
+                <h2>เปิดรับสมัครทีมโรงดรียนทั่วประเทศ</h2>
+
+                <h1>KING POWER'S CUP 2017</h1>
+
+                <h2>รุ่นอายุไม่เกิน15 ปี ชิงเงินรางวัลสูงสุด 1 ล้านบาท</h2>
+
+                <h2>สมัครได้แล้ว วันนี้ - 30 กันยายน 2560</h2>
+            
+        </div>
+    </div>
+    <div class="row">
+        <p>
+            <a  id="btnTerms" class="btn btn-primary center-block" style="background-color:brown;">ระเบียบการสมัคร &raquo;</a>
+        </p>
+    </div>
+</div>
+
+<div class="container " id="grid-terms" >
+    <div class="row center-block"><h2>ระเบียบการแข่งขันฟุตบอลรุ่นอายุไม่เกิน 15 ปี KING POWER'S CUP 2017</h2></div>
+    <div class="row container">
+        <div class="col-md-8">
+            <br /><br /><br />
+            <div class="form-group">
+                @Html.Action("terms", "Home")
+            </div>
+            <div class="row"><label class="checkbox-inline pull-right"> <input id="chkAreent" type="checkbox" class="pull-right" /> ยอมรับเงือนไข</label></div>
+        </div>
+        <div class="col-md-4">
+            <div style="margin-left:5px;">
+                <div class="row">
+                    <h3 class="center-block" style="text-align:center;">คุณสมบัติของผู้สมัคร</h3>
+                </div>
+                <p class="text-lowercase">
+                    •	ผู้สมัครต้องเป็นเพศชาย สัญชาติไทย และเป็นผู้มีบัตรประจำตัวประชาชน
+                    <br />
+                    •	นักเรียน ที่สมัครแข่งขันต้องศึกษาอยู่ในสถานศึกษา ในหลักสูตรการศีกษาระดับมัธยมศึกษา และศึกษาในภาคปกติ โดยต้องเข้าศึกษาสถานศึกษานั้นๆ ก่อนวันที่ 15 มิถุนายน 2560
+                    <br />
+                    •	นักเรียนที่มีชื่ออยู่  2 สถาบัน ไม่มีสิทธิเข้าร่วมการแข่งขัน
+                    <br />
+                    •	นักเรียน 1 คน สามารถสมัครเข้าแข่งขันเพียง  1  ทีมเท่านั้น หากมีรายชื่อซ้ำซ้อน จะถูกตัดสิทธิ์ไม่ให้เข้าร่วมแข่งขันตลอดทัวร์นาเม้นท์  โดยจะอ้างว่ามีผู้นำชื่อตนเองไปเข้าสมัครแข่งขัน โดยตนเองไม่ทราบไม่ได้
+                    <br />
+                    •	นักเรียนทุกคนที่เข้าร่วมสมัครการแข่งขันจะต้องมีสถานศึกษารับรองการศึกษาที่ออกจากทางโรงเรียน และลงนามโดยผู้อำนวยการโรงเรียน  อาจารย์ใหญ่ หรือฝ่ายทะเบียนที่สถานศึกษาของนักเรียนอยู่ในปัจจุบัน
+                </p>
+
+                <a id="btnDownload" href="~/download/แบบฟอร์มสมัครking-power's-cup.doc" target="_blank"><img class="center-block" style="width:150px;" src="~/images/download_images.png" /></a>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <p>
+            <input id="btnSubmit"   disabled type="submit" class="btn btn-primary btn-lg center-block" value="สมัคร KING POWER'S CUP" />            
+        </p>
+    </div>
+</div>
+}
+<!--
+<div class="container">
+
+    <div class="row">
+
+        <div class="col-md-8"></div>
+
+        using (Ajax.BeginForm("Index", "Home", new AjaxOptions { UpdateTargetId = "grid_list", HttpMethod = "POST" }))
+        {
+            <div class="col-md-4">
+                <div class="input-group">
+                    <input type="text" id="txtSearch" name="txtSearch" class="form-control pull-right" placeholder="Search for name or position">
+                    <div class="input-group-btn">
+                        <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                        <button class="btn btn-default">Search</button>
+                    </div>
+                </div>
+            </div>
+        }
+
+
+    </div>
+
+    <hr />
+
+    <div id="grid_list" class="row">
+
+        { if (Model.playerList == null)
+            {
+                Html.Action("ListPlayer", "Home");
+            }
+            else
+            {
+                Html.Action("PlayerDetail", "Home", Model);
+            }
+        }
+
+    </div>
+
+
+</div>-->

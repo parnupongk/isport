@@ -1,0 +1,215 @@
+﻿@using isport_foxhun.commom
+@using isport_foxhun.Models
+@{
+    ViewBag.Title = "KING POWER'S CUP";
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title</title>
+    <link rel="shortcut icon" href="~/images/king_power_cup_logo_b_TCj_icon.ico" />
+    @Scripts.Render("~/bundles/modernizr")
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/bootstrap-slider.min.js"></script>
+
+
+    
+
+    <style>
+           .fixed {
+    position: fixed;
+    bottom: 0;
+    top:0;
+    right: 0;
+    width: 100%;
+    height:100%;
+    background-color: rgba(0, 0, 0, 0.00);
+}
+        input[type=range] {
+            -webkit-appearance: none;
+            width: 100%;
+            margin: 13.8px 0;
+        }
+
+            input[type=range]:focus {
+                outline: none;
+            }
+
+            input[type=range]::-webkit-slider-runnable-track {
+                width: 100%;
+                height: 8.4px;
+                cursor: pointer;
+                box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+                background: #3071a9;
+                border-radius: 1.3px;
+                border: 0.2px solid #010101;
+            }
+
+            input[type=range]::-webkit-slider-thumb {
+                box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+                border: 1px solid #000000;
+                height: 36px;
+                width: 16px;
+                border-radius: 3px;
+                background: #ffffff;
+                cursor: pointer;
+                -webkit-appearance: none;
+                margin-top: -14px;
+            }
+
+            input[type=range]:focus::-webkit-slider-runnable-track {
+                background: #367ebd;
+            }
+
+            input[type=range]::-moz-range-track {
+                width: 100%;
+                height: 8.4px;
+                cursor: pointer;
+                box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+                background: #3071a9;
+                border-radius: 1.3px;
+                border: 0.2px solid #010101;
+            }
+
+            input[type=range]::-moz-range-thumb {
+                box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+                border: 1px solid #000000;
+                height: 36px;
+                width: 16px;
+                border-radius: 3px;
+                background: #ffffff;
+                cursor: pointer;
+            }
+
+            input[type=range]::-ms-track {
+                width: 100%;
+                height: 8.4px;
+                cursor: pointer;
+                background: transparent;
+                border-color: transparent;
+                color: transparent;
+            }
+
+            input[type=range]::-ms-fill-lower {
+                background: #2a6495;
+                border: 0.2px solid #010101;
+                border-radius: 2.6px;
+                box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+            }
+
+            input[type=range]::-ms-fill-upper {
+                background: #3071a9;
+                border: 0.2px solid #010101;
+                border-radius: 2.6px;
+                box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+            }
+
+            input[type=range]::-ms-thumb {
+                box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+                border: 1px solid #000000;
+                height: 36px;
+                width: 16px;
+                border-radius: 3px;
+                background: #ffffff;
+                cursor: pointer;
+                height: 8.4px;
+            }
+
+            input[type=range]:focus::-ms-fill-lower {
+                background: #3071a9;
+            }
+
+            input[type=range]:focus::-ms-fill-upper {
+                background: #367ebd;
+            }
+    </style>
+</head>
+<body>
+
+    
+    <!-- div class="fixed"><img src="~/images/Banner_3.jpg" style="width:100%;height:100%;" alt="Kingpowerscup" /></!--div> -->
+
+    @if (AppUtils.Session.User == null)
+    {
+        @Html.Partial("_HeaderPartial")
+        <link rel="stylesheet" href="~/Content/bootstrap.css" />
+    }
+    else
+    {
+     <link rel="stylesheet" href="~/Content/bootstrap.css" />
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+
+                    <a href='@Url.Action("Index", "Home")'>
+                        <img src="~/images/foxhunt.png" />
+                    </a>
+
+
+            </div>
+            <div class="navbar-collapse collapse">
+                @*<ul class="nav navbar-nav">
+        <li>@Html.ActionLink("Home", "Index", "Home")</li>
+        <li>@Html.ActionLink("About", "About", "Home")</li>
+        <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+    </ul>*@
+                @Html.Partial("_LoginPartial")
+            </div>
+        </div>
+    </div>
+    }
+
+
+    <div class="container body-content">
+        <div class="container-body">
+            @RenderBody()
+        </div>
+        <hr />
+    </div>
+
+    <footer style="background-color:#012060;margin-bottom:0px;">
+        <div class="container">
+            <div class="col-md-4"></div>
+                <div class="col-md-5">
+                    <img src="~/images/logo-01.png" class="text-center" style="width:80px;" />
+                    <img src="~/images/logo-02.png" class="text-center" style="width:80px;" />
+                    <img src="~/images/logo-03.png" class="text-center" style="width:80px;" />
+                    <img src="~/images/logo-04.png" class="text-center" style="width:80px;" />
+                </div>
+            </div>
+        <div class="col-md-3"></div>
+        @*<p>&copy; @DateTime.Now.Year - KING POWER'S CUP</p>*@
+    </footer>
+    
+    
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css" />
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+
+    <!-- datetimepicker --->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment.min.js"></script>
+    <!-- script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></!--script> -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/js/bootstrap-datetimepicker.min.js"></script>
+
+    <link rel="stylesheet" href="~/Content/dropzone/dropzone.css" />
+    <script src="~/Content/dropzone/dropzone.min.js"></script>
+    
+
+
+
+</body>
+</html>

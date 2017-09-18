@@ -1,0 +1,1110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="isportModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'ISPORT.dbo.foxhun_match' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="foxhun_match">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="nvarchar" MaxLength="36" Nullable="false" />
+          <Property Name="createdate" Type="datetime" />
+          <Property Name="updatedate" Type="datetime" />
+          <Property Name="matchdate" Type="nvarchar" MaxLength="50" />
+          <Property Name="team1" Type="nvarchar" MaxLength="100" />
+          <Property Name="team2" Type="nvarchar" MaxLength="100" />
+          <Property Name="ht" Type="nvarchar" MaxLength="10" />
+          <Property Name="ft" Type="nvarchar" MaxLength="10" />
+          <Property Name="field" Type="nvarchar" MaxLength="100" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'ISPORT.dbo.foxhun_player' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="foxhun_player">
+          <Key>
+            <PropertyRef Name="id" />
+            <PropertyRef Name="region" />
+            <PropertyRef Name="team" />
+            <PropertyRef Name="datetime" />
+            <PropertyRef Name="index" />
+          </Key>
+          <Property Name="id" Type="nvarchar" MaxLength="36" Nullable="false" />
+          <Property Name="region" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="team" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="datetime" Type="datetime" Nullable="false" />
+          <Property Name="index" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="seq" Type="int" />
+          <Property Name="position" Type="nvarchar" MaxLength="10" />
+          <Property Name="name" Type="nvarchar" MaxLength="100" />
+          <Property Name="control" Type="nvarchar" MaxLength="1000" />
+          <Property Name="attack" Type="nvarchar" MaxLength="1000" />
+          <Property Name="tacktick" Type="nvarchar" MaxLength="1000" />
+          <Property Name="defense" Type="nvarchar" MaxLength="1000" />
+          <Property Name="physical" Type="nvarchar" MaxLength="1000" />
+          <Property Name="mental" Type="nvarchar" MaxLength="1000" />
+          <Property Name="adversary" Type="nvarchar" MaxLength="100" />
+          <Property Name="contact" Type="nvarchar" MaxLength="100" />
+          <Property Name="HT" Type="nvarchar" MaxLength="100" />
+          <Property Name="FT" Type="nvarchar" MaxLength="100" />
+          <Property Name="competition" Type="int" />
+          <Property Name="score" Type="int" />
+          <Property Name="see" Type="int" />
+          <Property Name="detail" Type="ntext" />
+          <Property Name="wight" Type="int" />
+          <Property Name="hight" Type="int" />
+          <Property Name="age" Type="int" />
+          <Property Name="country" Type="nvarchar" MaxLength="50" />
+          <Property Name="image" Type="nvarchar" MaxLength="500" />
+          <Property Name="sum" Type="int" />
+          <Property Name="team_id" Type="nvarchar" MaxLength="36" />
+          <Property Name="number" Type="int" />
+          <Property Name="birthday" Type="nvarchar" MaxLength="20" />
+          <Property Name="nameen" Type="nvarchar" MaxLength="100" />
+          <Property Name="size" Type="nvarchar" MaxLength="10" />
+          <Property Name="sizepants" Type="nvarchar" MaxLength="10" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'ISPORT.dbo.foxhun_player_history' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="foxhun_player_history">
+          <Key>
+            <PropertyRef Name="id" />
+            <PropertyRef Name="player_id" />
+            <PropertyRef Name="region" />
+            <PropertyRef Name="team" />
+            <PropertyRef Name="datetime" />
+            <PropertyRef Name="index" />
+          </Key>
+          <Property Name="id" Type="nvarchar" MaxLength="36" Nullable="false" />
+          <Property Name="player_id" Type="nvarchar" MaxLength="36" Nullable="false" />
+          <Property Name="region" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="team" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="datetime" Type="datetime" Nullable="false" />
+          <Property Name="index" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="seq" Type="int" />
+          <Property Name="position" Type="nvarchar" MaxLength="10" />
+          <Property Name="name" Type="nvarchar" MaxLength="100" />
+          <Property Name="control" Type="nvarchar" MaxLength="1000" />
+          <Property Name="attack" Type="nvarchar" MaxLength="1000" />
+          <Property Name="defense" Type="nvarchar" MaxLength="1000" />
+          <Property Name="tacktick" Type="nvarchar" MaxLength="1000" />
+          <Property Name="physical" Type="nvarchar" MaxLength="1000" />
+          <Property Name="mental" Type="nvarchar" MaxLength="1000" />
+          <Property Name="adversary" Type="nvarchar" MaxLength="100" />
+          <Property Name="contact" Type="nvarchar" MaxLength="100" />
+          <Property Name="HT" Type="nvarchar" MaxLength="100" />
+          <Property Name="FT" Type="nvarchar" MaxLength="100" />
+          <Property Name="competition" Type="int" />
+          <Property Name="score" Type="int" />
+          <Property Name="see" Type="int" />
+          <Property Name="detail" Type="ntext" />
+          <Property Name="wight" Type="int" />
+          <Property Name="hight" Type="int" />
+          <Property Name="age" Type="int" />
+          <Property Name="country" Type="nvarchar" MaxLength="50" />
+          <Property Name="image" Type="nvarchar" MaxLength="500" />
+          <Property Name="sum" Type="int" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'ISPORT.dbo.foxhun_province' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="foxhun_province">
+          <Key>
+            <PropertyRef Name="pvnID" />
+            <PropertyRef Name="lclID" />
+            <PropertyRef Name="pvnName" />
+            <PropertyRef Name="pvnModifiedOn" />
+            <PropertyRef Name="pvnModifiedBy" />
+          </Key>
+          <Property Name="pvnID" Type="int" Nullable="false" />
+          <Property Name="lclID" Type="varchar" MaxLength="2" Nullable="false" />
+          <Property Name="zneID" Type="int" />
+          <Property Name="pvnName" Type="nvarchar" MaxLength="255" Nullable="false" />
+          <Property Name="pvnModifiedOn" Type="smalldatetime" Nullable="false" />
+          <Property Name="pvnModifiedBy" Type="int" Nullable="false" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'ISPORT.dbo.foxhun_region' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="foxhun_region">
+          <Key>
+            <PropertyRef Name="id" />
+            <PropertyRef Name="index" />
+          </Key>
+          <Property Name="id" Type="nvarchar" MaxLength="36" Nullable="false" />
+          <Property Name="index" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="seq" Type="int" />
+          <Property Name="datetime" Type="datetime" />
+          <Property Name="name" Type="nvarchar" MaxLength="500" />
+          <Property Name="detail" Type="ntext" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'ISPORT.dbo.foxhun_scout' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="foxhun_scout">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="nvarchar" MaxLength="36" Nullable="false" />
+          <Property Name="createdate" Type="datetime" />
+          <Property Name="match_id" Type="nvarchar" MaxLength="36" />
+          <Property Name="user_id" Type="nvarchar" MaxLength="36" />
+          <Property Name="player_id" Type="nvarchar" MaxLength="36" />
+          <Property Name="team_id" Type="nvarchar" MaxLength="36" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'ISPORT.dbo.foxhun_team' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="foxhun_team">
+          <Key>
+            <PropertyRef Name="id" />
+            <PropertyRef Name="region" />
+            <PropertyRef Name="index" />
+          </Key>
+          <Property Name="id" Type="nvarchar" MaxLength="36" Nullable="false" />
+          <Property Name="region" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="index" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="seq" Type="int" />
+          <Property Name="create_datetime" Type="datetime" />
+          <Property Name="update_date" Type="datetime" />
+          <Property Name="name" Type="nvarchar" MaxLength="500" />
+          <Property Name="detail" Type="ntext" />
+          <Property Name="email" Type="nvarchar" MaxLength="100" />
+          <Property Name="image" Type="nvarchar" MaxLength="500" />
+          <Property Name="username" Type="nvarchar" MaxLength="100" />
+          <Property Name="password" Type="nvarchar" MaxLength="100" />
+          <Property Name="contact" Type="nvarchar" MaxLength="100" />
+          <Property Name="contact1" Type="nvarchar" MaxLength="100" />
+          <Property Name="contact2" Type="nvarchar" MaxLength="100" />
+          <Property Name="phone" Type="nvarchar" MaxLength="100" />
+          <Property Name="phone1" Type="nvarchar" MaxLength="100" />
+          <Property Name="contact3" Type="nvarchar" MaxLength="100" />
+          <Property Name="file1" Type="nvarchar" MaxLength="500" />
+          <Property Name="file2" Type="nvarchar" MaxLength="500" />
+          <Property Name="file3" Type="nvarchar" MaxLength="500" />
+          <Property Name="file4" Type="nvarchar" MaxLength="500" />
+          <Property Name="file5" Type="nvarchar" MaxLength="500" />
+          <Property Name="file6" Type="nvarchar" MaxLength="500" />
+          <Property Name="file7" Type="nvarchar" MaxLength="500" />
+          <Property Name="file8" Type="nvarchar" MaxLength="500" />
+          <Property Name="file9" Type="nvarchar" MaxLength="500" />
+          <Property Name="file10" Type="nvarchar" MaxLength="500" />
+          <Property Name="contact4" Type="nvarchar" MaxLength="100" />
+          <Property Name="contact5" Type="nvarchar" MaxLength="100" />
+          <Property Name="contact6" Type="nvarchar" MaxLength="100" />
+          <Property Name="phone2" Type="nvarchar" MaxLength="100" />
+          <Property Name="phone3" Type="nvarchar" MaxLength="100" />
+          <Property Name="phone4" Type="nvarchar" MaxLength="100" />
+          <Property Name="phone5" Type="nvarchar" MaxLength="100" />
+          <Property Name="phone6" Type="nvarchar" MaxLength="100" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'ISPORT.dbo.foxhun_users' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="foxhun_users">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="nvarchar" MaxLength="36" Nullable="false" />
+          <Property Name="createdate" Type="datetime" />
+          <Property Name="username" Type="nvarchar" MaxLength="100" />
+          <Property Name="password" Type="nvarchar" MaxLength="500" />
+          <Property Name="role" Type="nvarchar" MaxLength="50" />
+          <Property Name="team_id" Type="nvarchar" MaxLength="36" />
+        </EntityType>
+        <Function Name="usp_foxhun_matchinsert" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="id" Type="nvarchar" Mode="In" />
+          <Parameter Name="createdate" Type="datetime" Mode="In" />
+          <Parameter Name="updatedate" Type="datetime" Mode="In" />
+          <Parameter Name="matchdate" Type="nvarchar" Mode="In" />
+          <Parameter Name="team1" Type="nvarchar" Mode="In" />
+          <Parameter Name="team2" Type="nvarchar" Mode="In" />
+          <Parameter Name="ht" Type="nvarchar" Mode="In" />
+          <Parameter Name="ft" Type="nvarchar" Mode="In" />
+          <Parameter Name="field" Type="nvarchar" Mode="In" />
+        </Function>
+        <Function Name="usp_foxhun_playerinsert" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="id" Type="nvarchar" Mode="In" />
+          <Parameter Name="region" Type="nvarchar" Mode="In" />
+          <Parameter Name="team" Type="nvarchar" Mode="In" />
+          <Parameter Name="datetime" Type="datetime" Mode="In" />
+          <Parameter Name="seq" Type="int" Mode="In" />
+          <Parameter Name="position" Type="nvarchar" Mode="In" />
+          <Parameter Name="name" Type="nvarchar" Mode="In" />
+          <Parameter Name="control" Type="nvarchar" Mode="In" />
+          <Parameter Name="attack" Type="nvarchar" Mode="In" />
+          <Parameter Name="tacktick" Type="nvarchar" Mode="In" />
+          <Parameter Name="defense" Type="nvarchar" Mode="In" />
+          <Parameter Name="physical" Type="nvarchar" Mode="In" />
+          <Parameter Name="mental" Type="nvarchar" Mode="In" />
+          <Parameter Name="adversary" Type="nvarchar" Mode="In" />
+          <Parameter Name="contact" Type="nvarchar" Mode="In" />
+          <Parameter Name="HT" Type="nvarchar" Mode="In" />
+          <Parameter Name="FT" Type="nvarchar" Mode="In" />
+          <Parameter Name="competition" Type="int" Mode="In" />
+          <Parameter Name="score" Type="int" Mode="In" />
+          <Parameter Name="see" Type="int" Mode="In" />
+          <Parameter Name="detail" Type="ntext" Mode="In" />
+          <Parameter Name="wight" Type="int" Mode="In" />
+          <Parameter Name="hight" Type="int" Mode="In" />
+          <Parameter Name="age" Type="int" Mode="In" />
+          <Parameter Name="country" Type="nvarchar" Mode="In" />
+          <Parameter Name="image" Type="nvarchar" Mode="In" />
+          <Parameter Name="sum" Type="int" Mode="In" />
+          <Parameter Name="team_id" Type="nvarchar" Mode="In" />
+          <Parameter Name="number" Type="int" Mode="In" />
+          <Parameter Name="birthday" Type="nvarchar" Mode="In" />
+          <Parameter Name="nameen" Type="nvarchar" Mode="In" />
+          <Parameter Name="size" Type="nvarchar" Mode="In" />
+          <Parameter Name="sizepants" Type="nvarchar" Mode="In" />
+        </Function>
+        <Function Name="usp_foxhun_playerupdate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="id" Type="nvarchar" Mode="In" />
+          <Parameter Name="region" Type="nvarchar" Mode="In" />
+          <Parameter Name="team" Type="nvarchar" Mode="In" />
+          <Parameter Name="datetime" Type="datetime" Mode="In" />
+          <Parameter Name="seq" Type="int" Mode="In" />
+          <Parameter Name="position" Type="nvarchar" Mode="In" />
+          <Parameter Name="name" Type="nvarchar" Mode="In" />
+          <Parameter Name="control" Type="nvarchar" Mode="In" />
+          <Parameter Name="attack" Type="nvarchar" Mode="In" />
+          <Parameter Name="defense" Type="nvarchar" Mode="In" />
+          <Parameter Name="tacktick" Type="nvarchar" Mode="In" />
+          <Parameter Name="physical" Type="nvarchar" Mode="In" />
+          <Parameter Name="mental" Type="nvarchar" Mode="In" />
+          <Parameter Name="adversary" Type="nvarchar" Mode="In" />
+          <Parameter Name="contact" Type="nvarchar" Mode="In" />
+          <Parameter Name="HT" Type="nvarchar" Mode="In" />
+          <Parameter Name="FT" Type="nvarchar" Mode="In" />
+          <Parameter Name="competition" Type="int" Mode="In" />
+          <Parameter Name="score" Type="int" Mode="In" />
+          <Parameter Name="see" Type="int" Mode="In" />
+          <Parameter Name="detail" Type="ntext" Mode="In" />
+          <Parameter Name="wight" Type="int" Mode="In" />
+          <Parameter Name="hight" Type="int" Mode="In" />
+          <Parameter Name="age" Type="int" Mode="In" />
+          <Parameter Name="country" Type="nvarchar" Mode="In" />
+          <Parameter Name="image" Type="nvarchar" Mode="In" />
+          <Parameter Name="sum" Type="int" Mode="In" />
+          <Parameter Name="nameen" Type="nvarchar" Mode="In" />
+          <Parameter Name="size" Type="nvarchar" Mode="In" />
+          <Parameter Name="sizepants" Type="nvarchar" Mode="In" />
+        </Function>
+        <Function Name="usp_foxhun_regioninsert" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="id" Type="nvarchar" Mode="In" />
+          <Parameter Name="seq" Type="int" Mode="In" />
+          <Parameter Name="datetime" Type="datetime" Mode="In" />
+          <Parameter Name="name" Type="nvarchar" Mode="In" />
+          <Parameter Name="detail" Type="ntext" Mode="In" />
+        </Function>
+        <Function Name="usp_foxhun_regionselectall" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="usp_foxhun_regionselectbyid" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="region_id" Type="nvarchar" Mode="In" />
+        </Function>
+        <Function Name="usp_foxhun_teaminsert" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="id" Type="nvarchar" Mode="In" />
+          <Parameter Name="region" Type="nvarchar" Mode="In" />
+          <Parameter Name="seq" Type="int" Mode="In" />
+          <Parameter Name="create_datetime" Type="datetime" Mode="In" />
+          <Parameter Name="update_date" Type="datetime" Mode="In" />
+          <Parameter Name="name" Type="nvarchar" Mode="In" />
+          <Parameter Name="detail" Type="ntext" Mode="In" />
+          <Parameter Name="email" Type="nvarchar" Mode="In" />
+          <Parameter Name="image" Type="nvarchar" Mode="In" />
+          <Parameter Name="username" Type="nvarchar" Mode="In" />
+          <Parameter Name="password" Type="nvarchar" Mode="In" />
+          <Parameter Name="contact" Type="nvarchar" Mode="In" />
+          <Parameter Name="contact1" Type="nvarchar" Mode="In" />
+          <Parameter Name="contact2" Type="nvarchar" Mode="In" />
+          <Parameter Name="phone" Type="nvarchar" Mode="In" />
+          <Parameter Name="phone1" Type="nvarchar" Mode="In" />
+          <Parameter Name="contact3" Type="nvarchar" Mode="In" />
+          <Parameter Name="file1" Type="nvarchar" Mode="In" />
+          <Parameter Name="file2" Type="nvarchar" Mode="In" />
+          <Parameter Name="file3" Type="nvarchar" Mode="In" />
+          <Parameter Name="file4" Type="nvarchar" Mode="In" />
+          <Parameter Name="file5" Type="nvarchar" Mode="In" />
+          <Parameter Name="file6" Type="nvarchar" Mode="In" />
+          <Parameter Name="file7" Type="nvarchar" Mode="In" />
+          <Parameter Name="file8" Type="nvarchar" Mode="In" />
+          <Parameter Name="file9" Type="nvarchar" Mode="In" />
+          <Parameter Name="file10" Type="nvarchar" Mode="In" />
+          <Parameter Name="contact4" Type="nvarchar" Mode="In" />
+          <Parameter Name="contact5" Type="nvarchar" Mode="In" />
+          <Parameter Name="contact6" Type="nvarchar" Mode="In" />
+          <Parameter Name="phone2" Type="nvarchar" Mode="In" />
+          <Parameter Name="phone3" Type="nvarchar" Mode="In" />
+          <Parameter Name="phone4" Type="nvarchar" Mode="In" />
+          <Parameter Name="phone5" Type="nvarchar" Mode="In" />
+          <Parameter Name="phone6" Type="nvarchar" Mode="In" />
+        </Function>
+        <Function Name="usp_foxhun_teamselectall" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="region_id" Type="nvarchar" Mode="In" />
+        </Function>
+        <Function Name="usp_foxhun_usersinsert" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="id" Type="nvarchar" Mode="In" />
+          <Parameter Name="createdate" Type="datetime" Mode="In" />
+          <Parameter Name="username" Type="nvarchar" Mode="In" />
+          <Parameter Name="password" Type="nvarchar" Mode="In" />
+          <Parameter Name="role" Type="nvarchar" Mode="In" />
+          <Parameter Name="team_id" Type="nvarchar" Mode="In" />
+        </Function>
+        <EntityContainer Name="isportModelStoreContainer">
+          <EntitySet Name="foxhun_match" EntityType="Self.foxhun_match" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [foxhun_match].[id] AS [id], 
+    [foxhun_match].[createdate] AS [createdate], 
+    [foxhun_match].[updatedate] AS [updatedate], 
+    [foxhun_match].[matchdate] AS [matchdate], 
+    [foxhun_match].[team1] AS [team1], 
+    [foxhun_match].[team2] AS [team2], 
+    [foxhun_match].[ht] AS [ht], 
+    [foxhun_match].[ft] AS [ft], 
+    [foxhun_match].[field] AS [field]
+    FROM [dbo].[foxhun_match] AS [foxhun_match]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="foxhun_player" EntityType="Self.foxhun_player" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [foxhun_player].[id] AS [id], 
+    [foxhun_player].[region] AS [region], 
+    [foxhun_player].[team] AS [team], 
+    [foxhun_player].[datetime] AS [datetime], 
+    [foxhun_player].[index] AS [index], 
+    [foxhun_player].[seq] AS [seq], 
+    [foxhun_player].[position] AS [position], 
+    [foxhun_player].[name] AS [name], 
+    [foxhun_player].[control] AS [control], 
+    [foxhun_player].[attack] AS [attack], 
+    [foxhun_player].[tacktick] AS [tacktick], 
+    [foxhun_player].[defense] AS [defense], 
+    [foxhun_player].[physical] AS [physical], 
+    [foxhun_player].[mental] AS [mental], 
+    [foxhun_player].[adversary] AS [adversary], 
+    [foxhun_player].[contact] AS [contact], 
+    [foxhun_player].[HT] AS [HT], 
+    [foxhun_player].[FT] AS [FT], 
+    [foxhun_player].[competition] AS [competition], 
+    [foxhun_player].[score] AS [score], 
+    [foxhun_player].[see] AS [see], 
+    [foxhun_player].[detail] AS [detail], 
+    [foxhun_player].[wight] AS [wight], 
+    [foxhun_player].[hight] AS [hight], 
+    [foxhun_player].[age] AS [age], 
+    [foxhun_player].[country] AS [country], 
+    [foxhun_player].[image] AS [image], 
+    [foxhun_player].[sum] AS [sum], 
+    [foxhun_player].[team_id] AS [team_id], 
+    [foxhun_player].[number] AS [number], 
+    [foxhun_player].[birthday] AS [birthday], 
+    [foxhun_player].[nameen] AS [nameen], 
+    [foxhun_player].[size] AS [size], 
+    [foxhun_player].[sizepants] AS [sizepants]
+    FROM [dbo].[foxhun_player] AS [foxhun_player]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="foxhun_player_history" EntityType="Self.foxhun_player_history" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [foxhun_player_history].[id] AS [id], 
+    [foxhun_player_history].[player_id] AS [player_id], 
+    [foxhun_player_history].[region] AS [region], 
+    [foxhun_player_history].[team] AS [team], 
+    [foxhun_player_history].[datetime] AS [datetime], 
+    [foxhun_player_history].[index] AS [index], 
+    [foxhun_player_history].[seq] AS [seq], 
+    [foxhun_player_history].[position] AS [position], 
+    [foxhun_player_history].[name] AS [name], 
+    [foxhun_player_history].[control] AS [control], 
+    [foxhun_player_history].[attack] AS [attack], 
+    [foxhun_player_history].[defense] AS [defense], 
+    [foxhun_player_history].[tacktick] AS [tacktick], 
+    [foxhun_player_history].[physical] AS [physical], 
+    [foxhun_player_history].[mental] AS [mental], 
+    [foxhun_player_history].[adversary] AS [adversary], 
+    [foxhun_player_history].[contact] AS [contact], 
+    [foxhun_player_history].[HT] AS [HT], 
+    [foxhun_player_history].[FT] AS [FT], 
+    [foxhun_player_history].[competition] AS [competition], 
+    [foxhun_player_history].[score] AS [score], 
+    [foxhun_player_history].[see] AS [see], 
+    [foxhun_player_history].[detail] AS [detail], 
+    [foxhun_player_history].[wight] AS [wight], 
+    [foxhun_player_history].[hight] AS [hight], 
+    [foxhun_player_history].[age] AS [age], 
+    [foxhun_player_history].[country] AS [country], 
+    [foxhun_player_history].[image] AS [image], 
+    [foxhun_player_history].[sum] AS [sum]
+    FROM [dbo].[foxhun_player_history] AS [foxhun_player_history]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="foxhun_province" EntityType="Self.foxhun_province" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [foxhun_province].[pvnID] AS [pvnID], 
+    [foxhun_province].[lclID] AS [lclID], 
+    [foxhun_province].[zneID] AS [zneID], 
+    [foxhun_province].[pvnName] AS [pvnName], 
+    [foxhun_province].[pvnModifiedOn] AS [pvnModifiedOn], 
+    [foxhun_province].[pvnModifiedBy] AS [pvnModifiedBy]
+    FROM [dbo].[foxhun_province] AS [foxhun_province]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="foxhun_region" EntityType="Self.foxhun_region" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [foxhun_region].[id] AS [id], 
+    [foxhun_region].[index] AS [index], 
+    [foxhun_region].[seq] AS [seq], 
+    [foxhun_region].[datetime] AS [datetime], 
+    [foxhun_region].[name] AS [name], 
+    [foxhun_region].[detail] AS [detail]
+    FROM [dbo].[foxhun_region] AS [foxhun_region]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="foxhun_scout" EntityType="Self.foxhun_scout" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [foxhun_scout].[id] AS [id], 
+    [foxhun_scout].[createdate] AS [createdate], 
+    [foxhun_scout].[match_id] AS [match_id], 
+    [foxhun_scout].[user_id] AS [user_id], 
+    [foxhun_scout].[player_id] AS [player_id], 
+    [foxhun_scout].[team_id] AS [team_id]
+    FROM [dbo].[foxhun_scout] AS [foxhun_scout]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="foxhun_team" EntityType="Self.foxhun_team" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [foxhun_team].[id] AS [id], 
+    [foxhun_team].[region] AS [region], 
+    [foxhun_team].[index] AS [index], 
+    [foxhun_team].[seq] AS [seq], 
+    [foxhun_team].[create_datetime] AS [create_datetime], 
+    [foxhun_team].[update_date] AS [update_date], 
+    [foxhun_team].[name] AS [name], 
+    [foxhun_team].[detail] AS [detail], 
+    [foxhun_team].[email] AS [email], 
+    [foxhun_team].[image] AS [image], 
+    [foxhun_team].[username] AS [username], 
+    [foxhun_team].[password] AS [password], 
+    [foxhun_team].[contact] AS [contact], 
+    [foxhun_team].[contact1] AS [contact1], 
+    [foxhun_team].[contact2] AS [contact2], 
+    [foxhun_team].[phone] AS [phone], 
+    [foxhun_team].[phone1] AS [phone1], 
+    [foxhun_team].[contact3] AS [contact3], 
+    [foxhun_team].[file1] AS [file1], 
+    [foxhun_team].[file2] AS [file2], 
+    [foxhun_team].[file3] AS [file3], 
+    [foxhun_team].[file4] AS [file4], 
+    [foxhun_team].[file5] AS [file5], 
+    [foxhun_team].[file6] AS [file6], 
+    [foxhun_team].[file7] AS [file7], 
+    [foxhun_team].[file8] AS [file8], 
+    [foxhun_team].[file9] AS [file9], 
+    [foxhun_team].[file10] AS [file10], 
+    [foxhun_team].[contact4] AS [contact4], 
+    [foxhun_team].[contact5] AS [contact5], 
+    [foxhun_team].[contact6] AS [contact6], 
+    [foxhun_team].[phone2] AS [phone2], 
+    [foxhun_team].[phone3] AS [phone3], 
+    [foxhun_team].[phone4] AS [phone4], 
+    [foxhun_team].[phone5] AS [phone5], 
+    [foxhun_team].[phone6] AS [phone6]
+    FROM [dbo].[foxhun_team] AS [foxhun_team]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="foxhun_users" EntityType="Self.foxhun_users" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [foxhun_users].[id] AS [id], 
+    [foxhun_users].[createdate] AS [createdate], 
+    [foxhun_users].[username] AS [username], 
+    [foxhun_users].[password] AS [password], 
+    [foxhun_users].[role] AS [role], 
+    [foxhun_users].[team_id] AS [team_id]
+    FROM [dbo].[foxhun_users] AS [foxhun_users]</DefiningQuery>
+          </EntitySet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="isportModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="foxhun_match">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="String" MaxLength="36" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="createdate" Type="DateTime" Precision="3" />
+          <Property Name="updatedate" Type="DateTime" Precision="3" />
+          <Property Name="matchdate" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="team1" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="team2" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="ht" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="ft" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="field" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="foxhun_player">
+          <Key>
+            <PropertyRef Name="id" />
+            <PropertyRef Name="region" />
+            <PropertyRef Name="team" />
+            <PropertyRef Name="datetime" />
+            <PropertyRef Name="index" />
+          </Key>
+          <Property Name="id" Type="String" MaxLength="36" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="region" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="team" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="datetime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="index" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="seq" Type="Int32" />
+          <Property Name="position" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="name" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="control" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="attack" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="tacktick" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="defense" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="physical" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="mental" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="adversary" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="contact" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="HT" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="FT" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="competition" Type="Int32" />
+          <Property Name="score" Type="Int32" />
+          <Property Name="see" Type="Int32" />
+          <Property Name="detail" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="wight" Type="Int32" />
+          <Property Name="hight" Type="Int32" />
+          <Property Name="age" Type="Int32" />
+          <Property Name="country" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="image" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="sum" Type="Int32" />
+          <Property Name="team_id" Type="String" MaxLength="36" FixedLength="false" Unicode="true" />
+          <Property Name="number" Type="Int32" />
+          <Property Name="birthday" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="nameen" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="size" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="sizepants" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="foxhun_player_history">
+          <Key>
+            <PropertyRef Name="id" />
+            <PropertyRef Name="player_id" />
+            <PropertyRef Name="region" />
+            <PropertyRef Name="team" />
+            <PropertyRef Name="datetime" />
+            <PropertyRef Name="index" />
+          </Key>
+          <Property Name="id" Type="String" MaxLength="36" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="player_id" Type="String" MaxLength="36" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="region" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="team" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="datetime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="index" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="seq" Type="Int32" />
+          <Property Name="position" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="name" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="control" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="attack" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="defense" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="tacktick" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="physical" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="mental" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="adversary" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="contact" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="HT" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="FT" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="competition" Type="Int32" />
+          <Property Name="score" Type="Int32" />
+          <Property Name="see" Type="Int32" />
+          <Property Name="detail" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="wight" Type="Int32" />
+          <Property Name="hight" Type="Int32" />
+          <Property Name="age" Type="Int32" />
+          <Property Name="country" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="image" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="sum" Type="Int32" />
+        </EntityType>
+        <EntityType Name="foxhun_province">
+          <Key>
+            <PropertyRef Name="pvnID" />
+            <PropertyRef Name="lclID" />
+            <PropertyRef Name="pvnName" />
+            <PropertyRef Name="pvnModifiedOn" />
+            <PropertyRef Name="pvnModifiedBy" />
+          </Key>
+          <Property Name="pvnID" Type="Int32" Nullable="false" />
+          <Property Name="lclID" Type="String" MaxLength="2" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="zneID" Type="Int32" />
+          <Property Name="pvnName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="pvnModifiedOn" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="pvnModifiedBy" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="foxhun_region">
+          <Key>
+            <PropertyRef Name="id" />
+            <PropertyRef Name="index" />
+          </Key>
+          <Property Name="id" Type="String" MaxLength="36" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="index" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="seq" Type="Int32" />
+          <Property Name="datetime" Type="DateTime" Precision="3" />
+          <Property Name="name" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="detail" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="foxhun_scout">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="String" MaxLength="36" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="createdate" Type="DateTime" Precision="3" />
+          <Property Name="match_id" Type="String" MaxLength="36" FixedLength="false" Unicode="true" />
+          <Property Name="user_id" Type="String" MaxLength="36" FixedLength="false" Unicode="true" />
+          <Property Name="player_id" Type="String" MaxLength="36" FixedLength="false" Unicode="true" />
+          <Property Name="team_id" Type="String" MaxLength="36" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="foxhun_team">
+          <Key>
+            <PropertyRef Name="id" />
+            <PropertyRef Name="region" />
+            <PropertyRef Name="index" />
+          </Key>
+          <Property Name="id" Type="String" MaxLength="36" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="region" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="index" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="seq" Type="Int32" />
+          <Property Name="create_datetime" Type="DateTime" Precision="3" />
+          <Property Name="update_date" Type="DateTime" Precision="3" />
+          <Property Name="name" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="detail" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="email" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="image" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="username" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="password" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="contact" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="contact1" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="contact2" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="phone" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="phone1" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="contact3" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="file1" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="file2" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="file3" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="file4" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="file5" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="file6" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="file7" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="file8" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="file9" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="file10" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="contact4" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="contact5" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="contact6" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="phone2" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="phone3" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="phone4" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="phone5" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="phone6" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="foxhun_users">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="String" MaxLength="36" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="createdate" Type="DateTime" Precision="3" />
+          <Property Name="username" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="password" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="role" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="team_id" Type="String" MaxLength="36" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityContainer Name="isportEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="foxhun_match" EntityType="Self.foxhun_match" />
+          <EntitySet Name="foxhun_player" EntityType="Self.foxhun_player" />
+          <EntitySet Name="foxhun_player_history" EntityType="Self.foxhun_player_history" />
+          <EntitySet Name="foxhun_province" EntityType="Self.foxhun_province" />
+          <EntitySet Name="foxhun_region" EntityType="Self.foxhun_region" />
+          <EntitySet Name="foxhun_scout" EntityType="Self.foxhun_scout" />
+          <EntitySet Name="foxhun_team" EntityType="Self.foxhun_team" />
+          <EntitySet Name="foxhun_users" EntityType="Self.foxhun_users" />
+          <FunctionImport Name="usp_foxhun_playerinsert">
+            <Parameter Name="id" Mode="In" Type="String" />
+            <Parameter Name="region" Mode="In" Type="String" />
+            <Parameter Name="team" Mode="In" Type="String" />
+            <Parameter Name="datetime" Mode="In" Type="DateTime" />
+            <Parameter Name="seq" Mode="In" Type="Int32" />
+            <Parameter Name="position" Mode="In" Type="String" />
+            <Parameter Name="name" Mode="In" Type="String" />
+            <Parameter Name="control" Mode="In" Type="String" />
+            <Parameter Name="attack" Mode="In" Type="String" />
+            <Parameter Name="tacktick" Mode="In" Type="String" />
+            <Parameter Name="defense" Mode="In" Type="String" />
+            <Parameter Name="physical" Mode="In" Type="String" />
+            <Parameter Name="mental" Mode="In" Type="String" />
+            <Parameter Name="adversary" Mode="In" Type="String" />
+            <Parameter Name="contact" Mode="In" Type="String" />
+            <Parameter Name="HT" Mode="In" Type="String" />
+            <Parameter Name="FT" Mode="In" Type="String" />
+            <Parameter Name="competition" Mode="In" Type="Int32" />
+            <Parameter Name="score" Mode="In" Type="Int32" />
+            <Parameter Name="see" Mode="In" Type="Int32" />
+            <Parameter Name="detail" Mode="In" Type="String" />
+            <Parameter Name="wight" Mode="In" Type="Int32" />
+            <Parameter Name="hight" Mode="In" Type="Int32" />
+            <Parameter Name="age" Mode="In" Type="Int32" />
+            <Parameter Name="country" Mode="In" Type="String" />
+            <Parameter Name="image" Mode="In" Type="String" />
+            <Parameter Name="sum" Mode="In" Type="Int32" />
+            <Parameter Name="team_id" Mode="In" Type="String" />
+            <Parameter Name="number" Mode="In" Type="Int32" />
+            <Parameter Name="birthday" Mode="In" Type="String" />
+            <Parameter Name="nameen" Mode="In" Type="String" />
+            <Parameter Name="size" Mode="In" Type="String" />
+            <Parameter Name="sizepants" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="usp_foxhun_playerupdate">
+            <Parameter Name="id" Mode="In" Type="String" />
+            <Parameter Name="region" Mode="In" Type="String" />
+            <Parameter Name="team" Mode="In" Type="String" />
+            <Parameter Name="datetime" Mode="In" Type="DateTime" />
+            <Parameter Name="seq" Mode="In" Type="Int32" />
+            <Parameter Name="position" Mode="In" Type="String" />
+            <Parameter Name="name" Mode="In" Type="String" />
+            <Parameter Name="control" Mode="In" Type="String" />
+            <Parameter Name="attack" Mode="In" Type="String" />
+            <Parameter Name="defense" Mode="In" Type="String" />
+            <Parameter Name="tacktick" Mode="In" Type="String" />
+            <Parameter Name="physical" Mode="In" Type="String" />
+            <Parameter Name="mental" Mode="In" Type="String" />
+            <Parameter Name="adversary" Mode="In" Type="String" />
+            <Parameter Name="contact" Mode="In" Type="String" />
+            <Parameter Name="HT" Mode="In" Type="String" />
+            <Parameter Name="FT" Mode="In" Type="String" />
+            <Parameter Name="competition" Mode="In" Type="Int32" />
+            <Parameter Name="score" Mode="In" Type="Int32" />
+            <Parameter Name="see" Mode="In" Type="Int32" />
+            <Parameter Name="detail" Mode="In" Type="String" />
+            <Parameter Name="wight" Mode="In" Type="Int32" />
+            <Parameter Name="hight" Mode="In" Type="Int32" />
+            <Parameter Name="age" Mode="In" Type="Int32" />
+            <Parameter Name="country" Mode="In" Type="String" />
+            <Parameter Name="image" Mode="In" Type="String" />
+            <Parameter Name="sum" Mode="In" Type="Int32" />
+            <Parameter Name="nameen" Mode="In" Type="String" />
+            <Parameter Name="size" Mode="In" Type="String" />
+            <Parameter Name="sizepants" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="usp_foxhun_regioninsert">
+            <Parameter Name="id" Mode="In" Type="String" />
+            <Parameter Name="seq" Mode="In" Type="Int32" />
+            <Parameter Name="datetime" Mode="In" Type="DateTime" />
+            <Parameter Name="name" Mode="In" Type="String" />
+            <Parameter Name="detail" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="usp_foxhun_regionselectall" ReturnType="Collection(isportModel.usp_foxhun_regionselectall_Result)" />
+          <FunctionImport Name="usp_foxhun_regionselectbyid" ReturnType="Collection(isportModel.usp_foxhun_regionselectbyid_Result)">
+          <Parameter Name="region_id" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="usp_foxhun_teaminsert">
+            <Parameter Name="id" Mode="In" Type="String" />
+            <Parameter Name="region" Mode="In" Type="String" />
+            <Parameter Name="seq" Mode="In" Type="Int32" />
+            <Parameter Name="create_datetime" Mode="In" Type="DateTime" />
+            <Parameter Name="update_date" Mode="In" Type="DateTime" />
+            <Parameter Name="name" Mode="In" Type="String" />
+            <Parameter Name="detail" Mode="In" Type="String" />
+            <Parameter Name="email" Mode="In" Type="String" />
+            <Parameter Name="image" Mode="In" Type="String" />
+            <Parameter Name="username" Mode="In" Type="String" />
+            <Parameter Name="password" Mode="In" Type="String" />
+            <Parameter Name="contact" Mode="In" Type="String" />
+            <Parameter Name="contact1" Mode="In" Type="String" />
+            <Parameter Name="contact2" Mode="In" Type="String" />
+            <Parameter Name="phone" Mode="In" Type="String" />
+            <Parameter Name="phone1" Mode="In" Type="String" />
+            <Parameter Name="contact3" Mode="In" Type="String" />
+            <Parameter Name="file1" Mode="In" Type="String" />
+            <Parameter Name="file2" Mode="In" Type="String" />
+            <Parameter Name="file3" Mode="In" Type="String" />
+            <Parameter Name="file4" Mode="In" Type="String" />
+            <Parameter Name="file5" Mode="In" Type="String" />
+            <Parameter Name="file6" Mode="In" Type="String" />
+            <Parameter Name="file7" Mode="In" Type="String" />
+            <Parameter Name="file8" Mode="In" Type="String" />
+            <Parameter Name="file9" Mode="In" Type="String" />
+            <Parameter Name="file10" Mode="In" Type="String" />
+            <Parameter Name="contact4" Mode="In" Type="String" />
+            <Parameter Name="contact5" Mode="In" Type="String" />
+            <Parameter Name="contact6" Mode="In" Type="String" />
+            <Parameter Name="phone2" Mode="In" Type="String" />
+            <Parameter Name="phone3" Mode="In" Type="String" />
+            <Parameter Name="phone4" Mode="In" Type="String" />
+            <Parameter Name="phone5" Mode="In" Type="String" />
+            <Parameter Name="phone6" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="usp_foxhun_teamselectall">
+          <Parameter Name="region_id" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="usp_foxhun_usersinsert">
+            <Parameter Name="id" Mode="In" Type="String" />
+            <Parameter Name="createdate" Mode="In" Type="DateTime" />
+            <Parameter Name="username" Mode="In" Type="String" />
+            <Parameter Name="password" Mode="In" Type="String" />
+            <Parameter Name="role" Mode="In" Type="String" />
+            <Parameter Name="team_id" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="usp_foxhun_matchinsert">
+            <Parameter Name="id" Mode="In" Type="String" />
+            <Parameter Name="createdate" Mode="In" Type="DateTime" />
+            <Parameter Name="updatedate" Mode="In" Type="DateTime" />
+            <Parameter Name="matchdate" Mode="In" Type="String" />
+            <Parameter Name="team1" Mode="In" Type="String" />
+            <Parameter Name="team2" Mode="In" Type="String" />
+            <Parameter Name="ht" Mode="In" Type="String" />
+            <Parameter Name="ft" Mode="In" Type="String" />
+            <Parameter Name="field" Mode="In" Type="String" />
+          </FunctionImport>
+        </EntityContainer>
+        <ComplexType Name="usp_foxhun_regionselectall_Result">
+          <Property Type="String" Name="id" Nullable="false" MaxLength="36" />
+          <Property Type="Int32" Name="index" Nullable="false" />
+          <Property Type="Int32" Name="seq" Nullable="true" />
+          <Property Type="DateTime" Name="datetime" Nullable="true" Precision="23" />
+          <Property Type="String" Name="name" Nullable="true" MaxLength="500" />
+          <Property Type="String" Name="detail" Nullable="true" MaxLength="Max" />
+        </ComplexType>
+        <ComplexType Name="usp_foxhun_regionselectbyid_Result">
+          <Property Type="String" Name="id" Nullable="false" MaxLength="36" />
+          <Property Type="Int32" Name="index" Nullable="false" />
+          <Property Type="Int32" Name="seq" Nullable="true" />
+          <Property Type="DateTime" Name="datetime" Nullable="true" Precision="23" />
+          <Property Type="String" Name="name" Nullable="true" MaxLength="500" />
+          <Property Type="String" Name="detail" Nullable="true" MaxLength="Max" />
+        </ComplexType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="isportModelStoreContainer" CdmEntityContainer="isportEntities">
+          <EntitySetMapping Name="foxhun_match">
+            <EntityTypeMapping TypeName="isportModel.foxhun_match">
+              <MappingFragment StoreEntitySet="foxhun_match">
+                <ScalarProperty Name="field" ColumnName="field" />
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="createdate" ColumnName="createdate" />
+                <ScalarProperty Name="updatedate" ColumnName="updatedate" />
+                <ScalarProperty Name="matchdate" ColumnName="matchdate" />
+                <ScalarProperty Name="team1" ColumnName="team1" />
+                <ScalarProperty Name="team2" ColumnName="team2" />
+                <ScalarProperty Name="ht" ColumnName="ht" />
+                <ScalarProperty Name="ft" ColumnName="ft" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="foxhun_player">
+            <EntityTypeMapping TypeName="isportModel.foxhun_player">
+              <MappingFragment StoreEntitySet="foxhun_player">
+                <ScalarProperty Name="sizepants" ColumnName="sizepants" />
+                <ScalarProperty Name="size" ColumnName="size" />
+                <ScalarProperty Name="nameen" ColumnName="nameen" />
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="region" ColumnName="region" />
+                <ScalarProperty Name="team" ColumnName="team" />
+                <ScalarProperty Name="datetime" ColumnName="datetime" />
+                <ScalarProperty Name="index" ColumnName="index" />
+                <ScalarProperty Name="seq" ColumnName="seq" />
+                <ScalarProperty Name="position" ColumnName="position" />
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="control" ColumnName="control" />
+                <ScalarProperty Name="attack" ColumnName="attack" />
+                <ScalarProperty Name="tacktick" ColumnName="tacktick" />
+                <ScalarProperty Name="defense" ColumnName="defense" />
+                <ScalarProperty Name="physical" ColumnName="physical" />
+                <ScalarProperty Name="mental" ColumnName="mental" />
+                <ScalarProperty Name="adversary" ColumnName="adversary" />
+                <ScalarProperty Name="contact" ColumnName="contact" />
+                <ScalarProperty Name="HT" ColumnName="HT" />
+                <ScalarProperty Name="FT" ColumnName="FT" />
+                <ScalarProperty Name="competition" ColumnName="competition" />
+                <ScalarProperty Name="score" ColumnName="score" />
+                <ScalarProperty Name="see" ColumnName="see" />
+                <ScalarProperty Name="detail" ColumnName="detail" />
+                <ScalarProperty Name="wight" ColumnName="wight" />
+                <ScalarProperty Name="hight" ColumnName="hight" />
+                <ScalarProperty Name="age" ColumnName="age" />
+                <ScalarProperty Name="country" ColumnName="country" />
+                <ScalarProperty Name="image" ColumnName="image" />
+                <ScalarProperty Name="sum" ColumnName="sum" />
+                <ScalarProperty Name="team_id" ColumnName="team_id" />
+                <ScalarProperty Name="number" ColumnName="number" />
+                <ScalarProperty Name="birthday" ColumnName="birthday" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="foxhun_player_history">
+            <EntityTypeMapping TypeName="isportModel.foxhun_player_history">
+              <MappingFragment StoreEntitySet="foxhun_player_history">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="player_id" ColumnName="player_id" />
+                <ScalarProperty Name="region" ColumnName="region" />
+                <ScalarProperty Name="team" ColumnName="team" />
+                <ScalarProperty Name="datetime" ColumnName="datetime" />
+                <ScalarProperty Name="index" ColumnName="index" />
+                <ScalarProperty Name="seq" ColumnName="seq" />
+                <ScalarProperty Name="position" ColumnName="position" />
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="control" ColumnName="control" />
+                <ScalarProperty Name="attack" ColumnName="attack" />
+                <ScalarProperty Name="defense" ColumnName="defense" />
+                <ScalarProperty Name="tacktick" ColumnName="tacktick" />
+                <ScalarProperty Name="physical" ColumnName="physical" />
+                <ScalarProperty Name="mental" ColumnName="mental" />
+                <ScalarProperty Name="adversary" ColumnName="adversary" />
+                <ScalarProperty Name="contact" ColumnName="contact" />
+                <ScalarProperty Name="HT" ColumnName="HT" />
+                <ScalarProperty Name="FT" ColumnName="FT" />
+                <ScalarProperty Name="competition" ColumnName="competition" />
+                <ScalarProperty Name="score" ColumnName="score" />
+                <ScalarProperty Name="see" ColumnName="see" />
+                <ScalarProperty Name="detail" ColumnName="detail" />
+                <ScalarProperty Name="wight" ColumnName="wight" />
+                <ScalarProperty Name="hight" ColumnName="hight" />
+                <ScalarProperty Name="age" ColumnName="age" />
+                <ScalarProperty Name="country" ColumnName="country" />
+                <ScalarProperty Name="image" ColumnName="image" />
+                <ScalarProperty Name="sum" ColumnName="sum" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="foxhun_province">
+            <EntityTypeMapping TypeName="isportModel.foxhun_province">
+              <MappingFragment StoreEntitySet="foxhun_province">
+                <ScalarProperty Name="pvnID" ColumnName="pvnID" />
+                <ScalarProperty Name="lclID" ColumnName="lclID" />
+                <ScalarProperty Name="zneID" ColumnName="zneID" />
+                <ScalarProperty Name="pvnName" ColumnName="pvnName" />
+                <ScalarProperty Name="pvnModifiedOn" ColumnName="pvnModifiedOn" />
+                <ScalarProperty Name="pvnModifiedBy" ColumnName="pvnModifiedBy" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="foxhun_region">
+            <EntityTypeMapping TypeName="isportModel.foxhun_region">
+              <MappingFragment StoreEntitySet="foxhun_region">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="index" ColumnName="index" />
+                <ScalarProperty Name="seq" ColumnName="seq" />
+                <ScalarProperty Name="datetime" ColumnName="datetime" />
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="detail" ColumnName="detail" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="foxhun_scout">
+            <EntityTypeMapping TypeName="isportModel.foxhun_scout">
+              <MappingFragment StoreEntitySet="foxhun_scout">
+                <ScalarProperty Name="team_id" ColumnName="team_id" />
+                <ScalarProperty Name="player_id" ColumnName="player_id" />
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="createdate" ColumnName="createdate" />
+                <ScalarProperty Name="match_id" ColumnName="match_id" />
+                <ScalarProperty Name="user_id" ColumnName="user_id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="foxhun_team">
+            <EntityTypeMapping TypeName="isportModel.foxhun_team">
+              <MappingFragment StoreEntitySet="foxhun_team">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="region" ColumnName="region" />
+                <ScalarProperty Name="index" ColumnName="index" />
+                <ScalarProperty Name="seq" ColumnName="seq" />
+                <ScalarProperty Name="create_datetime" ColumnName="create_datetime" />
+                <ScalarProperty Name="update_date" ColumnName="update_date" />
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="detail" ColumnName="detail" />
+                <ScalarProperty Name="email" ColumnName="email" />
+                <ScalarProperty Name="image" ColumnName="image" />
+                <ScalarProperty Name="username" ColumnName="username" />
+                <ScalarProperty Name="password" ColumnName="password" />
+                <ScalarProperty Name="contact" ColumnName="contact" />
+                <ScalarProperty Name="contact1" ColumnName="contact1" />
+                <ScalarProperty Name="contact2" ColumnName="contact2" />
+                <ScalarProperty Name="phone" ColumnName="phone" />
+                <ScalarProperty Name="phone1" ColumnName="phone1" />
+                <ScalarProperty Name="contact3" ColumnName="contact3" />
+                <ScalarProperty Name="file1" ColumnName="file1" />
+                <ScalarProperty Name="file2" ColumnName="file2" />
+                <ScalarProperty Name="file3" ColumnName="file3" />
+                <ScalarProperty Name="file4" ColumnName="file4" />
+                <ScalarProperty Name="file5" ColumnName="file5" />
+                <ScalarProperty Name="file6" ColumnName="file6" />
+                <ScalarProperty Name="file7" ColumnName="file7" />
+                <ScalarProperty Name="file8" ColumnName="file8" />
+                <ScalarProperty Name="file9" ColumnName="file9" />
+                <ScalarProperty Name="file10" ColumnName="file10" />
+                <ScalarProperty Name="contact4" ColumnName="contact4" />
+                <ScalarProperty Name="contact5" ColumnName="contact5" />
+                <ScalarProperty Name="contact6" ColumnName="contact6" />
+                <ScalarProperty Name="phone2" ColumnName="phone2" />
+                <ScalarProperty Name="phone3" ColumnName="phone3" />
+                <ScalarProperty Name="phone4" ColumnName="phone4" />
+                <ScalarProperty Name="phone5" ColumnName="phone5" />
+                <ScalarProperty Name="phone6" ColumnName="phone6" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="foxhun_users">
+            <EntityTypeMapping TypeName="isportModel.foxhun_users">
+              <MappingFragment StoreEntitySet="foxhun_users">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="createdate" ColumnName="createdate" />
+                <ScalarProperty Name="username" ColumnName="username" />
+                <ScalarProperty Name="password" ColumnName="password" />
+                <ScalarProperty Name="role" ColumnName="role" />
+                <ScalarProperty Name="team_id" ColumnName="team_id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="usp_foxhun_playerinsert" FunctionName="isportModel.Store.usp_foxhun_playerinsert" />
+          <FunctionImportMapping FunctionImportName="usp_foxhun_playerupdate" FunctionName="isportModel.Store.usp_foxhun_playerupdate" />
+          <FunctionImportMapping FunctionImportName="usp_foxhun_regioninsert" FunctionName="isportModel.Store.usp_foxhun_regioninsert" />
+          <FunctionImportMapping FunctionImportName="usp_foxhun_regionselectall" FunctionName="isportModel.Store.usp_foxhun_regionselectall">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="isportModel.usp_foxhun_regionselectall_Result">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="index" ColumnName="index" />
+                <ScalarProperty Name="seq" ColumnName="seq" />
+                <ScalarProperty Name="datetime" ColumnName="datetime" />
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="detail" ColumnName="detail" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="usp_foxhun_regionselectbyid" FunctionName="isportModel.Store.usp_foxhun_regionselectbyid">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="isportModel.usp_foxhun_regionselectbyid_Result">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="index" ColumnName="index" />
+                <ScalarProperty Name="seq" ColumnName="seq" />
+                <ScalarProperty Name="datetime" ColumnName="datetime" />
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="detail" ColumnName="detail" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="usp_foxhun_teaminsert" FunctionName="isportModel.Store.usp_foxhun_teaminsert" />
+          <FunctionImportMapping FunctionImportName="usp_foxhun_teamselectall" FunctionName="isportModel.Store.usp_foxhun_teamselectall" />
+          <FunctionImportMapping FunctionImportName="usp_foxhun_usersinsert" FunctionName="isportModel.Store.usp_foxhun_usersinsert" />
+          <FunctionImportMapping FunctionImportName="usp_foxhun_matchinsert" FunctionName="isportModel.Store.usp_foxhun_matchinsert" />
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

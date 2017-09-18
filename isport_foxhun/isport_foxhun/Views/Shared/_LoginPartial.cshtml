@@ -1,0 +1,40 @@
+﻿@using Microsoft.AspNet.Identity
+@using isport_foxhun.commom
+@using isport_foxhun.Models
+@if (AppUtils.Session.User != null)
+{
+    using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logoutForm", @class = "navbar-right" }))
+    {
+        @Html.AntiForgeryToken()
+
+        <ul class="nav navbar-nav navbar-right">
+
+            @if (AppUtils.Session.User.role == AppCodeModel.USERROLE.TEAM.ToString())
+            {
+                <li>
+                    @Html.ActionLink("Hello " + AppUtils.Session.User.role + "!", "Index", "Team", new { id = AppUtils.Session.User.team_id }, htmlAttributes: new { title = "Manage" })
+                </li>
+            }
+            else
+            {
+                <li>
+                    @Html.ActionLink("Hello " + AppUtils.Session.User.role + "!", "Index", "Match", routeValues: null, htmlAttributes: new { title = "Manage" })
+                </li>
+                <li>
+                    @Html.ActionLink("List Team ", "teamlist", "Team", routeValues: null, htmlAttributes: new { title = "Manage" })
+                </li>
+            }
+
+            <li>
+                <a href="javascript:document.getElementById('logoutForm').submit()">Log off</a>
+            </li>
+        </ul>
+    }
+}
+else
+{
+    <ul class="nav navbar-nav navbar-right">
+        <li>@Html.ActionLink("Register", "team", "Home", routeValues: null, htmlAttributes: new { id = "registerLink" })</li>
+        <li>@Html.ActionLink("Log in", "Login", "Account", routeValues: null, htmlAttributes: new { id = "loginLink" })</li>
+    </ul>
+}

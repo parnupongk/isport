@@ -1,0 +1,51 @@
+﻿
+@model isport_foxhun.Models.TeamViewModelList
+@{
+    Layout = null;
+}
+<hr/>
+<div class="container">
+    @foreach (var list in Model.teamList)
+    {
+        <div class="col-md-4">
+            <div class="thumbnail" style="min-height:200px;">
+                <div class="caption">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div class="form-group">
+                                <p class="lead">Team: @list.name</p>
+                            </div>
+                            <div class="form-group">
+                                <p class="lead">Province: @list.region</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <div class="form-group">
+                                    @{ if (list != null && list.image != "")
+                                        {
+                                            <img src="@Url.Content(list.image)" class="img-thumbnail" style="width:100%;max-height:100px;min-height:100px;" />
+                                        }
+                                        else
+                                        {
+                                            <img src="~/images/KING_POWER_CUP_LOGO_B.jpg" class="img-thumbnail" style="max-height:150px;" />
+                                        }
+                                    }
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p>
+                                <a class="btn btn-primary center-block" target="_blank" href="~/team/index?id=@list.id">more detail&raquo;</a>
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+                                        }
+</div>

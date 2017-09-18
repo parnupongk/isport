@@ -1,0 +1,37 @@
+﻿@model isport_foxhun.Models.PlayerViewModelList
+@{
+    Layout = null;
+}
+
+
+
+@foreach (var list in Model.playerList)
+{
+
+    <div class="col-md-6">
+        <div class="row">
+            <div class="col-md-8">
+                <p>Position : @list.position</p>
+                <p>Age :@list.age wigth :@list.wight hight :@list.hight</p>
+            </div>
+            <div class="col-md-4">
+                @{ if (list.image != null)
+                    {
+                        <img src="@Url.Content(list.image)" class="img-thumbnail" style="max-height:150px;" />
+                    }
+                    else
+                    {
+                        <img src="~/images/isport.png" class="img-thumbnail" style="max-height:150px;" />
+                    }
+                }
+            </div>
+        </div>
+        <div class="row" style="margin:10px;">
+        </div>
+        <h6>Detail :</h6>
+        <p>
+            @list.detail
+        </p>
+        <p><a class="btn btn-primary" target="_blank" href="~/player/index?id=@list.id">more detail&raquo;</a></p> 
+    </div>
+                    }

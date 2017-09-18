@@ -1,0 +1,120 @@
+﻿@using isport_foxhun.commom
+
+   
+    <link rel="stylesheet" id="style-css" href="~/Content/style.css" type="text/css" media="all">
+    
+    <link rel="stylesheet" id="superfish-css" href="~/Content/superfish.css" type="text/css" media="all">
+    <link rel="stylesheet" id="dlmenu-css" href="~/Content/component.css" type="text/css" media="all">
+    <link rel="stylesheet" id="font-awesome-css" href="~/Content/font-awesome.min.css" type="text/css" media="all">
+
+
+    <link rel="stylesheet" id="style-custom-css" href="~/Content/style-custom.css" type="text/css" media="all">
+
+
+
+    <header class="gdlr-header-wrapper ">
+        <!-- top navigation -->
+        <div class="top-navigation-wrapper">
+
+            <div class="top-navigation-container container">
+                <div class="top-navigation-left">
+                    <div class="top-navigation-left-text">
+                        <!--img src="http://www.lcfcthai.com/wp-content/uploads/2016/06/kpg-01.png" alt="KingPowerGroup"> -->
+                    </div>
+                </div>
+                <div class="top-navigation-right">
+                    <div class="top-social-wrapper">
+                        <div class="social-icon">
+                            <a href="mailto:kingpowerscup@gmail.com" target="_blank">
+                                <img width="32" height="32" src="http://www.lcfcthai.com/wp-content/themes/realsoccer-v1-08/images/light/social-icon/email.png" alt="Email">
+                            </a>
+                        </div>
+                        <div class="social-icon">
+                            <a href="https://www.facebook.com/Kingpowercup/" target="_blank">
+                                <img width="32" height="32" src="http://www.lcfcthai.com/wp-content/themes/realsoccer-v1-08/images/light/social-icon/facebook.png" alt="Facebook">
+                            </a>
+                        </div>
+                        @*
+    <div class="social-icon">
+        <a href="http://www.twitter.com/leicesterth" target="_blank">
+            <img width="32" height="32" src="http://www.lcfcthai.com/wp-content/themes/realsoccer-v1-08/images/light/social-icon/twitter.png" alt="Twitter">
+        </a>
+    </div>
+    <div class="social-icon">
+        <a href="https://www.youtube.com/user/LeicesterTH" target="_blank">
+            <img width="32" height="32" src="http://www.lcfcthai.com/wp-content/themes/realsoccer-v1-08/images/light/social-icon/youtube.png" alt="Youtube">
+        </a>
+    </div>*@
+                        <div class="clear"></div>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+
+        <!-- logo -->
+        <div class="gdlr-header-inner">
+            <div class="gdlr-header-container container">
+                <!-- logo -->
+                <div class="gdlr-logo" style="min-height:330px;">
+                    <!-- >a href="http://www.lcfcthai.com">
+                        <img src="~/images/KING_POWER_CUP_LOGO_W.png" alt="Leicester City Thailand Fanclub" width="320" height="320">
+                    </!--a-->
+                    
+                </div>
+
+                <!-- navigation -->
+                <div class="gdlr-navigation-wrapper">
+                    <div class="gdlr-navigation-container container">
+                        <nav class="gdlr-navigation sf-js-enabled sf-arrows" id="gdlr-main-navigation" role="navigation">
+                            <ul id="menu-top-manu-1" class="sf-menu gdlr-main-menu">
+                                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-10menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-10 gdlr-normal-menu">
+                                    @Html.ActionLink("หน้าแรก", "index", "home", routeValues: null, htmlAttributes: new { id = "homeLink", @class = "sf-with-ul" })
+                                </li>
+                                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-10menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-10 gdlr-normal-menu"><a href="http://www.lcfcthai.com/about-academy-club/">ความเป็นมา</a></li>
+                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-421menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-421 gdlr-normal-menu">
+                                    <a title="ข่าวสารสโมสรฟุตบอล เลสเตอร์ ซิตี้" href="http://www.lcfcthai.com/lcfc-news/" class="sf-with-ul">ข่าวสาร</a>
+                                </li>
+                                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-5383menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-5383 gdlr-normal-menu">
+                                    <a href="http://www.lcfcthai.com/premier-league-schedule/" class="sf-with-ul">โปรแกรมการแข่งขัน</a>
+                                </li>
+                                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2589menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2589 gdlr-normal-menu">
+                                    <a title="ผู้เล่นและสตาฟฟ์" href="http://www.lcfcthai.com/first-team-squad/" class="sf-with-ul">ทีมและผู้เล่น</a>
+                                </li>
+                                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2589menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2589 gdlr-normal-menu">
+
+                                    @Html.ActionLink("ติดต่อสอบถาม", "contact", "home", routeValues: null, htmlAttributes: new { id = "contactLink", @class = "sf-with-ul" })
+                                </li>
+                                
+                                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-5382menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-5382 gdlr-normal-menu">
+                                   
+                                    @if (AppUtils.Session.User == null)
+                                    {
+                                     @Html.ActionLink("Login", "Login", "Account", routeValues: null, htmlAttributes: new { id = "loginLink", @class = "sf-with-ul" })
+                                    }
+                                    else
+                                    {
+                                        <a href="javascript:document.getElementById('logoutForm').submit()">Log off</a>
+                                    }
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="gdlr-menu-search" id="gdlr-menu-search">
+                            <form method="get" id="searchform" action="http://www.lcfcthai.com/">
+                                <div class="search-text">
+                                    <input type="text" value="Type Keywords" name="s" autocomplete="off" data-default="Type Keywords">
+                                </div>
+                                <input type="submit" value="">
+                                <div class="clear"></div>
+                            </form>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div><div id="gdlr-header-substitute"></div>
+
+                <div class="clear"></div>
+            </div>
+        </div>
+
+        <div class="clear"></div>
+    </header>

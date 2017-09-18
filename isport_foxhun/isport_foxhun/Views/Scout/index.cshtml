@@ -1,0 +1,80 @@
+﻿@model isport_foxhun.Models.ScoutViewListModels
+@{
+    ViewBag.Title = "index";
+    int index = 1;
+}
+
+@using (Html.BeginForm("insertplayer", "Scout", FormMethod.Post, new { @class = "form-horizontal", role = "form", enctype = "multipart/form-data" }))
+{
+
+<div class="container">
+    
+    @foreach (var item in Model.list)
+    {
+        if (index == 1)
+        {
+            @Html.HiddenFor( m=> item.match_id, new { @Value = ViewBag.match_id })
+
+            <div class="row">
+                <div class="col-md-12">
+                    <h3> @item.match</h3>
+                </div>
+            </div>
+            <h3> Player Favorite</h3>
+            <hr />
+        }
+
+        
+        <div class="col-md-4">
+            <div class="thumbnail">
+                <div class="caption">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <p class="lead">Name : @item.player</p>
+                            <p class="lead">Position : @item.player_position</p>
+                            <p class="lead">Team : @item.team</p>
+
+                        </div>
+                        <div class="col-md-4">
+                            @if (item.player_image != null && item.player_image != "")
+                            {
+                                <img src="@Url.Content(item.player_image)" class="img-thumbnail" style="max-height:150px;min-height:90px;" />
+                            }
+                            else
+                            {
+                                <img src="~/images/KING_POWER_CUP_LOGO_B.jpg" class="img-thumbnail" style="max-height:150px;min-height:90px;" />
+                            }
+                        
+                        
+                        </div><br/>
+                        <p><a class="btn btn-primary" target="_blank" href="~/player/index?id=@item.player_id">more detail&raquo;</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        index++;
+    }
+
+</div>
+<hr>
+<h3> Player Other</h3>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            @Html.Action("viewplayerbyteam", "Match", new { team_id = ViewBag.TeamCode1, team = "team1" })
+        </div>
+        <div class="col-md-6 panel-info">
+            @Html.Action("viewplayerbyteam", "Match", new { team_id = ViewBag.TeamCode2, team = "team2" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-md-12">
+            <input id="btnSubmit" type="submit" class="btn btn-primary btn-lg center-block" value="Add Player" />
+        </div>
+    </div>
+</div>
+
+}

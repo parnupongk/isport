@@ -1,0 +1,54 @@
+﻿@model isport_foxhun.Models.PlayerViewModelList
+
+@{
+    Layout = null;
+}
+
+
+<input type="hidden" id="ViewBag.team" name="@ViewBag.team" value="@ViewBag.team_id">
+
+@foreach (var list in Model.playerList)
+{
+
+    var nameInfo = "infoPlayer_" + ViewBag.team;
+
+    <div class="col-md-6">
+        <div class="thumbnail">
+            <div class="caption">
+                <div class="row">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <label class="checkbox-inline text-info">
+                                <input type="checkbox" class="checkbox top" style="border:solid;" name=@nameInfo value="@list.id" id="@list.id">
+                                @list.name</label>
+
+                            <p class="container text-info">Position : @list.position</p>
+                        </div>
+                        <div class="col-md-4">
+                            @{ if (list.image != null)
+                                {
+                                    <img src="@Url.Content(list.image)" class="img-thumbnail" style="max-height:150px;" />
+                                }
+                                else
+                                {
+                                    <img src="~/images/isport.png" class="img-thumbnail" style="max-height:150px;" />
+                                }
+                            }
+                        </div>
+
+                    </div>
+                    <div class="container">
+                        <p>Age :@list.age wigth :@list.wight hight :@list.hight</p>
+                    </div>
+                    <div class="row" style="margin:10px;">
+                    </div>
+                    <!--<h6>Detail :</h6>
+                    <p>
+                        list.detail
+                    </p>
+                     p><a class="btn btn-primary" target="_blank" href="~/player/index?id=@list.id">more detail&raquo;</a></!--p> -->
+                </div>
+            </div>
+        </div>
+    </div>
+                                }

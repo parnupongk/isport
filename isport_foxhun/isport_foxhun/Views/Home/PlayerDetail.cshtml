@@ -1,0 +1,55 @@
+﻿@model isport_foxhun.Models.PlayerViewModelList
+
+
+<div class="row">
+    @foreach (var list in Model.playerList)
+    {
+        <div class="col-md-4">
+            <div class="thumbnail">
+                <div class="caption">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <h2>@list.name </h2>
+                            <p>Position : @list.position</p>
+                            <p>Age :@list.age wigth :@list.wight hight :@list.hight</p>
+                        </div>
+                        <div class="col-md-4">
+                            @{ if (list.image != null)
+                                {
+                                    <img src="@Url.Content(list.image)" class="img-thumbnail" style="max-height:150px;min-height:90px;" />
+                                }
+                                else
+                                {
+                                    <img src="~/images/isport.png" class="img-thumbnail" style="max-height:150px;min-height:90px;" />
+                                }
+                            }
+                        </div>
+                    </div>
+                    <div class="row" style="margin:10px;">
+                        <!--
+
+                        <div class="progress">
+                            {
+                                var i = list.tacking * 10;
+                                var itxt = i.ToString() + '%';
+
+                                <div class="progress-bar" role="progressbar" aria-valuenow=list.tacking aria-valuemin="0" aria-valuemax="10" style="width: itxt">
+                                    Tacking : list.tacking.ToString()
+                                </div>
+                            }
+                        </div>
+                            -->
+
+                    </div>
+                    <h6>Detail :</h6>
+                    <p>
+                        @list.detail
+                    </p>
+                    <p><a class="btn btn-primary" target="_blank" href="~/player/index?id=@list.id">more detail&raquo;</a></p>
+
+                </div>
+            </div>
+
+        </div>
+                                }
+</div>

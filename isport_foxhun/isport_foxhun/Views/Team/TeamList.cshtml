@@ -1,0 +1,26 @@
+﻿@model isport_foxhun.Models.TeamViewModelList
+
+<h2>List Team</h2>
+
+<div class="container">
+    @using (Ajax.BeginForm("TeamList", "Team", new AjaxOptions { UpdateTargetId = "grid_list", HttpMethod = "POST" }))
+    {
+    <div class="col-md-12">
+        <div class="input-group">
+            <input type="text" id="txtSearch" name="txtSearch" class="form-control pull-right" placeholder="Search for Team Name or Province">
+            <div class="input-group-btn">
+                <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                <button class="btn btn-default">Search</button>
+            </div>
+        </div>
+    </div>
+    }
+</div>
+<div class="container">
+    <div id="grid_list" class="row">
+
+
+                @Html.Action("TeamDetail", "Team", Model);
+
+    </div>
+</div>
