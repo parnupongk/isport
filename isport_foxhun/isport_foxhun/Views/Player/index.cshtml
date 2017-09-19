@@ -67,7 +67,7 @@
 
 </script>
 
-<script>console.log("sdfsdfdf");</script>
+
 @if (TempData["AddPlayer_Message"] != null)
 {
     
@@ -75,195 +75,200 @@
     var str = @TempData.Remove("AddPlayer_Message");
 }
 
-@using (Html.BeginForm("AddPlayer", "Player", FormMethod.Post, new { @class = "form-horizontal", role = "form", enctype = "multipart/form-data" }))
-{
-    @Html.AntiForgeryToken()
+<div class="row">
 
-    <hr />
-    <div class="col-md-12">
-        <h2>Info</h2>
+    @using (Html.BeginForm("AddPlayer", "Player", FormMethod.Post, new { @class = "form-horizontal", role = "form", enctype = "multipart/form-data" }))
+    {
+        @Html.AntiForgeryToken()
+
         <hr />
-        <div class="col-md-2">
-            @Html.HiddenFor(m => m.player.id)
-            @{ if (Model.player.image != null)
-                {
-                    <img src="@Url.Content(Model.player.image)" class="img-thumbnail" style="max-height:150px;" />
-                    @Html.HiddenFor(m => m.player.image)
-                }
-                else
-                {
-                    <img src="~/images/isport.png" class="img-thumbnail" style="max-height:150px;" />
-                }
-            }
-            <div class="form-group">
-                <input type="file" name="image" id="image" />
-            </div>
-        </div>
-        <div class="col-md-10 left">
-            <div class="form-group">
-                <div class="col-md-2 control-label">
-                    Province Name :
-                </div>
-                <div class="col-md-4">
-                    @Html.TextBoxFor(m => m.player.region, new { @class = "form-control", required = "required" })
-                </div>
-                <div class="col-md-2 control-label">
-                    Team Name :
-                </div>
-                <div class="col-md-4">
-
-                    @Html.TextBoxFor(m => m.player.team, new { @class = "form-control", required = "required" })
-                </div>
-            </div>
-
-            <div class="form-group">
-                <div class="col-md-2 control-label">
-                    Name TH :
-                </div>
-                <div class="col-md-4">
-                    @Html.TextBoxFor(m => m.player.name, new { @class = "form-control", required = "required" })
-                </div>
-                <div class="col-md-2 control-label">
-                    Name EN :
-                </div>
-                <div class="col-md-4">
-                    @Html.TextBoxFor(m => m.player.nameen, new { @class = "form-control", required = "required" })
-                </div>
-            </div>
-
-
-            <div class="form-group">
-                <div class="col-md-2 control-label">
-                    Position :
-                </div>
-                <div class="col-md-2">
-                    @Html.DropDownListFor(model => model.player.position, new SelectList(new string[] { "GK", "CB", "LB", "FB", "LWB", "RWB", "DM", "CM", "AM", "LW", "RW", "CF", "WF", "ST" }), "-Selected-", new { @class = "form-control", @onchange = "CallChangefunc(this.value)", required = "required" })
-                </div>
-                <div class="col-md-1 control-label">
-                    Shirt :
-                </div>
-                <div class="col-md-1">
-                    @Html.DropDownListFor(model => model.player.size, new SelectList(new string[] { "S", "M", "L", "XL", "XXL" }), "-select-", new { @class = "form-control", required = "required" })
-                </div>
-                <div class="col-md-1 control-label">
-                    pants :
-                </div>
-                <div class="col-md-1">
-                    @Html.DropDownListFor(model => model.player.sizepants, new SelectList(new string[] { "S", "M", "L", "XL", "XXL" }), "-select-", new { @class = "form-control", required = "required" })
-                </div>
-                <div class="col-md-2 control-label">
-                    No. :
-                </div>
-                <div class="col-md-2">
-                    @Html.TextBoxFor(m => m.player.seq, new { onkeydown = "return ValidateNumber(event);", @class = "form-control", required = "required" })
-                </div>
-            </div>
-
-
-            <div class="form-group">
-                <div class="col-md-2 control-label">
-                    Age :
-                </div>
-                <div class="col-md-2">
-                    @Html.TextBoxFor(m => m.player.age, new { onkeydown = "return ValidateNumber(event);", @class = "form-control", required = "required" })
-                </div>
-                <div class="col-md-2 control-label">
-                    height :
-                </div>
-                <div class="col-md-2">
-                    @Html.TextBoxFor(m => m.player.hight, new { onkeydown = "return ValidateNumber(event);", @class = "form-control", required = "required" })
-                </div>
-                <div class="col-md-2 control-label">
-                    weight :
-                </div>
-                <div class="col-md-2">
-                    @Html.TextBoxFor(m => m.player.wight, new { onkeydown = "return ValidateNumber(event);", @class = "form-control", required = "required" })
-                </div>
-            </div>
-@if (AppUtils.Session.User.role == AppCodeModel.USERROLE.ADMIN.ToString())
-{
-            <div class="form-group">
-                <div class="col-md-2 control-label">
-                    HT :
-                </div>
-                <div class="col-md-4">
-                    @Html.TextBoxFor(m => m.player.HT, new { onkeydown = "return ValidateNumber(event);", @class = "form-control" })
-                </div>
-                <div class="col-md-2 control-label">
-                    FT :
-                </div>
-                <div class="col-md-4">
-                    @Html.TextBoxFor(m => m.player.FT, new { onkeydown = "return ValidateNumber(event);", @class = "form-control" })
-                </div>
-            </div>
-
-            <div class="form-group">
-                <div class="col-md-2 control-label">
-                    จำนวนนัดที่ลงเล่น :
-                </div>
-                <div class="col-md-2">
-                    @Html.TextBoxFor(m => m.player.competition, new { onkeydown = "return ValidateNumber(event);", @class = "form-control" })
-                </div>
-                <div class="col-md-2 control-label">
-                    ประตูที่ทำได้ :
-                </div>
-                <div class="col-md-2">
-                    @Html.TextBoxFor(m => m.player.score, new { onkeydown = "return ValidateNumber(event);", @class = "form-control" })
-                </div>
-                <div class="col-md-2 control-label">
-                    จำนวนครั้งที่ได้เห็น :
-                </div>
-                <div class="col-md-2">
-                    @Html.TextBoxFor(m => m.player.see, new { onkeydown = "return ValidateNumber(event);", @class = "form-control" })
-                </div>
-            </div>
-}
-
-            <div class="form-group">
-                <div class="col-md-2 control-label">
-                    Detail :
-                </div>
-                <div class="col-md-10">
-                    @Html.TextAreaFor(m => m.player.detail, new { @class = "form-control", @style = "width :100%; " })
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="col-md-12">
-
-        <!--div id="divParameter"></!_-div> -->
-        @if (AppUtils.Session.User.role == AppCodeModel.USERROLE.ADMIN.ToString())
-        {
-            @Html.Action("Parameter1", "Player", Model);
-        }
-
-    </div>
-            
-
-    <div class="form-group">
         <div class="col-md-12">
-            <input type="submit" class="btn btn-primary center-block" value="Submit" />
-        </div>
-    </div>
- }
-
-@if (AppUtils.Session.User.role == AppCodeModel.USERROLE.ADMIN.ToString())
-{
-    <div class="row">
-        <div class="col-md-12">
-            <h2>History</h2>
+            <h2>Info</h2>
             <hr />
-            @Html.Action("History", "Player", new { player_id = @Model.player.id })
+            <div class="col-md-2">
+                @Html.HiddenFor(m => m.player.id)
+                @{ if (Model.player.image != null)
+                {
+                        <img src="@Url.Content(Model.player.image)" class="img-thumbnail" style="max-height:150px;" />
+                        @Html.HiddenFor(m => m.player.image)
+                    }
+                    else
+                    {
+                        <img src="~/images/isport.png" class="img-thumbnail" style="max-height:150px;" />
+                    }
+                }
+                <div class="form-group">
+                    <input type="file" name="image" id="image" />
+                </div>
+            </div>
+            <div class="col-md-10 left">
+                <div class="form-group">
+                    <div class="col-md-2 control-label">
+                        Province Name :
+                    </div>
+                    <div class="col-md-4">
+                        @Html.TextBoxFor(m => m.player.region, new { @class = "form-control", required = "required" })
+                    </div>
+                    <div class="col-md-2 control-label">
+                        Team Name :
+                    </div>
+                    <div class="col-md-4">
+
+                        @Html.TextBoxFor(m => m.player.team, new { @class = "form-control", required = "required" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-md-2 control-label">
+                        Name TH :
+                    </div>
+                    <div class="col-md-4">
+                        @Html.TextBoxFor(m => m.player.name, new { @class = "form-control", required = "required" })
+                    </div>
+                    <div class="col-md-2 control-label">
+                        Name EN :
+                    </div>
+                    <div class="col-md-4">
+                        @Html.TextBoxFor(m => m.player.nameen, new { @class = "form-control", required = "required" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-md-2 control-label">
+                        Position :
+                    </div>
+                    <div class="col-md-4">
+                        @Html.DropDownListFor(model => model.player.position, new SelectList(new string[] { "GK", "CB", "LB", "FB", "LWB", "RWB", "DM", "CM", "AM", "LW", "RW", "CF", "WF", "ST" }), "-Selected-", new { @class = "form-control", @onchange = "CallChangefunc(this.value)", required = "required" })
+                    </div>
+                    <div class="col-md-2 control-label">
+                        No. :
+                    </div>
+                    <div class="col-md-4">
+                        @Html.TextBoxFor(m => m.player.seq, new { onkeydown = "return ValidateNumber(event);", @class = "form-control", required = "required" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+
+                    <div class="col-md-2 control-label">
+                        Shirt :
+                    </div>
+                    <div class="col-md-4">
+                        @Html.DropDownListFor(model => model.player.size, new SelectList(new string[] { "S", "M", "L", "XL", "XXL" }), "-select-", new { @class = "form-control", required = "required" })
+                    </div>
+                    <div class="col-md-2 control-label">
+                        pants :
+                    </div>
+                    <div class="col-md-4">
+                        @Html.DropDownListFor(model => model.player.sizepants, new SelectList(new string[] { "S", "M", "L", "XL", "XXL" }), "-select-", new { @class = "form-control", required = "required" })
+                    </div>
+                </div>
+
+
+                <div class="form-group">
+                    <div class="col-md-2 control-label">
+                        Age :
+                    </div>
+                    <div class="col-md-2">
+                        @Html.TextBoxFor(m => m.player.age, new { onkeydown = "return ValidateNumber(event);", @class = "form-control", required = "required" })
+                    </div>
+                    <div class="col-md-2 control-label">
+                        height :
+                    </div>
+                    <div class="col-md-2">
+                        @Html.TextBoxFor(m => m.player.hight, new { onkeydown = "return ValidateNumber(event);", @class = "form-control", required = "required" })
+                    </div>
+                    <div class="col-md-2 control-label">
+                        weight :
+                    </div>
+                    <div class="col-md-2">
+                        @Html.TextBoxFor(m => m.player.wight, new { onkeydown = "return ValidateNumber(event);", @class = "form-control", required = "required" })
+                    </div>
+                </div>
+                @if (AppUtils.Session.User.role == AppCodeModel.USERROLE.ADMIN.ToString())
+                {
+                    <div class="form-group">
+                        <div class="col-md-2 control-label">
+                            HT :
+                        </div>
+                        <div class="col-md-4">
+                            @Html.TextBoxFor(m => m.player.HT, new { onkeydown = "return ValidateNumber(event);", @class = "form-control" })
+                        </div>
+                        <div class="col-md-2 control-label">
+                            FT :
+                        </div>
+                        <div class="col-md-4">
+                            @Html.TextBoxFor(m => m.player.FT, new { onkeydown = "return ValidateNumber(event);", @class = "form-control" })
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-md-2 control-label">
+                            จำนวนนัดที่ลงเล่น :
+                        </div>
+                        <div class="col-md-2">
+                            @Html.TextBoxFor(m => m.player.competition, new { onkeydown = "return ValidateNumber(event);", @class = "form-control" })
+                        </div>
+                        <div class="col-md-2 control-label">
+                            ประตูที่ทำได้ :
+                        </div>
+                        <div class="col-md-2">
+                            @Html.TextBoxFor(m => m.player.score, new { onkeydown = "return ValidateNumber(event);", @class = "form-control" })
+                        </div>
+                        <div class="col-md-2 control-label">
+                            จำนวนครั้งที่ได้เห็น :
+                        </div>
+                        <div class="col-md-2">
+                            @Html.TextBoxFor(m => m.player.see, new { onkeydown = "return ValidateNumber(event);", @class = "form-control" })
+                        </div>
+                    </div>
+                }
+
+                <div class="form-group">
+                    <div class="col-md-2 control-label">
+                        Detail :
+                    </div>
+                    <div class="col-md-10">
+                        @Html.TextAreaFor(m => m.player.detail, new { @class = "form-control", @style = "width :100%; " })
+                    </div>
+                </div>
+            </div>
         </div>
+
+        <div class="col-md-12">
+
+            <!--div id="divParameter"></!_-div> -->
+            @if (AppUtils.Session.User.role == AppCodeModel.USERROLE.ADMIN.ToString())
+            {
+                @Html.Action("Parameter1", "Player", Model);
+            }
+
+        </div>
+
+
+        <div class="form-group">
+            <div class="col-md-12">
+                <input type="submit" class="btn btn-primary center-block" value="Submit" />
+            </div>
+        </div>
+                    }
+
+    @if (AppUtils.Session.User.role == AppCodeModel.USERROLE.ADMIN.ToString())
+    {
+        <div class="row">
+            <div class="col-md-12">
+                <h2>History</h2>
+                <hr />
+                @Html.Action("History", "Player", new { player_id = @Model.player.id })
+            </div>
+        </div>
+    }
+    <div id="divDetail" class="col-lg-12">
+
     </div>
-}
-<div id="divDetail" class="col-lg-12">
+
 
 </div>
-
-
-
 <!--
 <div class="form-group">
     <div class="col-md-2 control-label">

@@ -594,6 +594,10 @@
     <Content Include="Views\Scout\player.cshtml" />
     <Content Include="Views\Shared\_HeaderPartial.cshtml" />
     <Content Include="Views\Team\TeamList.cshtml" />
+    <Content Include="Views\Scout\listplayer.cshtml" />
+    <Content Include="Views\Player\compareplayer.cshtml" />
+    <Content Include="Views\Player\parametersum.cshtml" />
+    <Content Include="Views\Scout\PlayerDetail.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

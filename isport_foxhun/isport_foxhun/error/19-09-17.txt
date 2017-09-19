@@ -1,0 +1,6 @@
+
+Log Entry : 
+19/09/2017 16:22:33
+ IP :  ::1 
+Error in: http://localhost:57278/Team/teamlist. Error Message:The underlying provider failed on Open.
+__________________________

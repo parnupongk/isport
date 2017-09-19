@@ -11,7 +11,7 @@
                     dataType: "json",
                     data: { Prefix: request.term },
                     success: function (data) {
-                        console.log(data);
+                        //console.log(data);
                         response($.map(data, function (item) {
                             return { label: item.pvnName, value: item.pvnName };
                         }))
@@ -111,32 +111,32 @@
                     <div class="col-md-2 control-label">
                         Position :
                     </div>
-                    <div class="col-md-2">
+                    <div class="col-md-4">
                         @Html.DropDownListFor(model => model.player.position, new SelectList(new string[] { "GK", "CB", "LB", "FB", "LWB", "RWB", "DM", "CM", "AM", "LW", "RW", "CF", "WF", "ST" }), "-select-", new { @class = "form-control", @onchange = "CallChangefunc(this.value)", required = "required" })
-                    </div>
-                    <div class="col-md-1 control-label">
-                        Shirt :
-                    </div>
-                    <div class="col-md-1">
-                        @Html.DropDownListFor(model => model.player.size, new SelectList(new string[] { "S", "M", "L", "XL", "XXL"}), "-select-", new { @class = "form-control", required = "required" })
-                    </div>
-                    <div class="col-md-1 control-label">
-                        pants :
-                    </div>
-                    <div class="col-md-1">
-                        @Html.DropDownListFor(model => model.player.sizepants, new SelectList(new string[] { "S", "M", "L", "XL", "XXL" }), "-select-", new { @class = "form-control", required = "required" })
                     </div>
                     <div class="col-md-2 control-label">
                         No. :
                     </div>
-                    <div class="col-md-2">
+                    <div class="col-md-4">
                         @Html.TextBoxFor(m => m.player.seq, new { onkeydown = "return ValidateNumber(event);", @class = "form-control", required = "required" })
+                    </div>
+                </div>
+                <div class="form-group">
+
+                    <div class="col-md-2 control-label">
+                        Shirt :
+                    </div>
+                    <div class="col-md-4">
+                        @Html.DropDownListFor(model => model.player.size, new SelectList(new string[] { "S", "M", "L", "XL", "XXL"}), "-select-", new { @class = "form-control", required = "required" })
+                    </div>
+                    <div class="col-md-2 control-label">
+                        pants :
+                    </div>
+                    <div class="col-md-4">
+                        @Html.DropDownListFor(model => model.player.sizepants, new SelectList(new string[] { "S", "M", "L", "XL", "XXL" }), "-select-", new { @class = "form-control", required = "required" })
                     </div>
 
                 </div>
-
-
-
 
                 <div class="form-group">
                     <div class="col-md-2 control-label">

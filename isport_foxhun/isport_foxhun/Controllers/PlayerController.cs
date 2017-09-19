@@ -21,6 +21,20 @@ namespace isport_foxhun.Controllers
             return PartialView(model);
         }
 
+        public ActionResult ParameterSum(string position)
+        {
+            PlayerViewModel model = new PlayerViewModel();
+
+            model = GetParameterByPosition(model, position);
+
+            return PartialView(model);
+        }
+
+        public ActionResult ParameterSum1(PlayerViewModel model)
+        {
+            return PartialView("ParameterSum", model);
+        }
+
         // update player
         public ActionResult Parameter1(PlayerViewModel model)
         {
@@ -273,6 +287,30 @@ namespace isport_foxhun.Controllers
             TempData["AddPlayer_Message"] = ConfigurationManager.AppSettings["AddPlayer_Message"];
 
             return RedirectToAction("Index", "Player",new {id= model.player.id });
+        }
+
+
+        public ActionResult ComparePlayer(string id) // id is team id
+        {
+            PlayerViewModel model = new PlayerViewModel();
+            foxhun_player player = new foxhun_player();
+            model.player = player;
+            if (id != null && id != "")
+            {
+
+                List<foxhun_player> pList = new AppCodeModel().GetPlayerById(id);
+
+                if (pList.Count > 0)
+                {
+                    model.player = pList[0];
+
+                    model = GetParameterByPosition(model, model.player.position);
+                }
+
+            }
+            //else new RedirectResult("~/Home/Index");
+
+            return PartialView(model);
         }
     }
 }

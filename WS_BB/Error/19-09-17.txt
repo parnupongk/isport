@@ -1,0 +1,7 @@
+
+Log Entry : 
+19/09/2017 13:50:16
+ IP :  ::1 
+Error in: http://localhost:4358/sportpool.aspx. Error Message:Logs_Insert >> ORA-12170: TNS:Connect timeout occurred
+imei:imsi:phone_nomodel:opt_code:logsIP:::1
+__________________________

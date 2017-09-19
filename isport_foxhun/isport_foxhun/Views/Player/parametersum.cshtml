@@ -1,0 +1,74 @@
+﻿@model isport_foxhun.Models.PlayerViewModel
+
+<div id="divParameter" class="row">
+    <h2>Parameter</h2>
+    <hr />
+
+    <div class="row">
+        <div class="col-md-4">
+            <h5>Control</h5>
+            @{ int index = 0, sum = 0; }
+            @foreach (var s in Model.Control)
+            {
+                index++;
+                sum = sum + @s.value;
+            }
+            <p> sum : @sum </p>
+        </div>
+        <div class="col-md-4">
+            <h5>Attack</h5>
+            @{ index = 0; sum = 0;}
+            @foreach (var s in Model.Attack)
+            {
+                index++;
+                sum = sum + @s.value;
+            }
+            <p> sum : @sum </p>
+        </div>
+        <div class="col-md-4">
+            <h5>Defense</h5>
+            @{ index = 0; sum = 0;}
+            @foreach (var s in Model.Defense)
+            {
+                index++;
+                sum = sum + @s.value;
+            }
+            <p> sum : @sum </p>
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <h5>Tacktick</h5>
+            @{ index = 0; sum = 0;}
+            @foreach (var s in Model.Tacktick)
+            {
+                index++;
+                sum = sum + @s.value;
+            }
+            <p> sum : @sum </p>
+        </div>
+        <div class="col-md-4">
+            <h5>Physical</h5>
+            @{ index = 0; sum = 0;}
+            @foreach (var s in Model.Physical)
+            {
+                index++;
+                sum = sum + @s.value;
+            }
+            <p> sum : @sum </p>
+        </div>
+        <div class="col-md-4">
+            <h5>Mental</h5>
+            @{ index = 0; sum = 0;}
+            @foreach (var s in Model.Mental)
+            {
+                index++;
+                sum = sum + @s.value;
+            }
+            <p> sum : @sum </p>
+        </div>
+
+    </div>
+
+</div>

@@ -1,6 +1,8 @@
 ﻿@model isport_foxhun.Models.PlayerHistoryViewModel
 
-<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+@{ 
+    var id = "";
+}
 <script type="text/javascript">
       google.charts.load('current', {'packages':['corechart']});
       google.charts.setOnLoadCallback(drawChart);
@@ -23,6 +25,7 @@
         {
             var date = history.datetime;
             var sum = history.sum;
+            id = history.id;
             @:data.addRow(["@date",parseFloat("@sum")]);
         }
 
@@ -34,11 +37,11 @@
           vAxis: {minValue: 0}
         };
 
-        var chart = new google.visualization.AreaChart(document.getElementById('chart_div'));
+        var chart = new google.visualization.AreaChart(document.getElementById('chart_div_@id'));
         chart.draw(data, options);
       }
 </script>
 
 <div class="row">
-    <div id="chart_div" style="width: 100%; height: 300px;"></div>
+    <div id="chart_div_@id" style="width: 100%; height: 300px;"></div>
 </div>

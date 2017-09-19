@@ -1,0 +1,147 @@
+﻿
+@using isport_foxhun.commom
+@using isport_foxhun.Models
+@model isport_foxhun.Models.PlayerViewModel
+
+
+<div class="row">
+
+    @Html.AntiForgeryToken()
+
+    <hr />
+    <div class="col-md-12">
+        <div class="thumbnail">
+            <div class="caption">
+                <div class="row">
+                    @Html.HiddenFor(m => m.player.id)
+                    @{ if (Model.player.image != null)
+                        {
+                            <img src="@Url.Content(Model.player.image)" class="img-thumbnail" style="max-height:150px;" />
+                                @Html.HiddenFor(m => m.player.image)
+                        }
+                        else
+                        {
+                            <img src="~/images/isport.png" class="img-thumbnail" style="max-height:150px;" />
+                        }
+                    }
+
+                    <div class="form-group">
+                        <div class="col-md-6 control-label">
+                            Province : @Model.player.region
+                        </div>
+                        <div class="col-md-6 control-label">
+                            Team : @Model.player.team
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-md-6 control-label">
+                            Name TH : @Model.player.name
+                        </div>
+                        <div class="col-md-6 control-label">
+                            Name EN : @Model.player.nameen
+                        </div>
+                    </div>
+
+
+                    <div class="form-group">
+                        <div class="col-md-6 control-label">
+                            Position : @Model.player.position
+                        </div>
+                        @*
+                            <div class="col-md-1 control-label">
+                                Shirt :
+                            </div>
+                            <div class="col-md-1">
+                                @Html.DropDownListFor(model => model.player.size, new SelectList(new string[] { "S", "M", "L", "XL", "XXL" }), "-select-", new { @class = "form-control", required = "required" })
+                            </div>
+                            <div class="col-md-1 control-label">
+                                pants :
+                            </div>
+                            <div class="col-md-1">
+                                @Html.DropDownListFor(model => model.player.sizepants, new SelectList(new string[] { "S", "M", "L", "XL", "XXL" }), "-select-", new { @class = "form-control", required = "required" })
+                            </div>
+                        *@
+                        <div class="col-md-6 control-label">
+                            No. : @Model.player.seq
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-6 control-label">
+                            HT : @Model.player.HT
+                        </div>
+                        <div class="col-md-6 control-label">
+                            FT : @Model.player.FT
+                        </div>
+                    </div>
+
+
+                    <div class="form-group">
+                        <div class="col-md-4 control-label">
+                            Age : @Model.player.age
+                        </div>
+                        <div class="col-md-4 control-label">
+                            height : @Model.player.hight
+                        </div>
+                        <div class="col-md-4 control-label">
+                            weight :@Model.player.wight
+                        </div>
+                    </div>
+
+
+
+
+                            <div class="form-group">
+                                <div class="col-md-4 control-label">
+                                    จำนวนนัดที่ลงเล่น : @Model.player.competition
+                                </div>
+                                <div class="col-md-4 control-label">
+                                    ประตูที่ทำได้ : @Model.player.score
+                                </div>
+
+                                <div class="col-md-4 control-label">
+                                    จำนวนครั้งที่เห็น : @Model.player.see
+                                </div>
+                            </div>
+
+                    @*
+                        <div class="form-group">
+                            <div class="col-md-2 control-label">
+                                Detail :
+                            </div>
+                            <div class="col-md-10">
+                                @Html.TextAreaFor(m => m.player.detail, new { @class = "form-control", @style = "width :100%; " })
+                            </div>
+                        </div>*@
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-12">
+
+        <!--div id="divParameter"></!_-div> -->
+        @if (AppUtils.Session.User.role == AppCodeModel.USERROLE.ADMIN.ToString())
+            {
+            @Html.Action("ParameterSum1", "Player", Model);
+            }
+
+    </div>
+
+
+    @if (AppUtils.Session.User.role == AppCodeModel.USERROLE.ADMIN.ToString())
+    {
+        <div class="row">
+            <div class="col-md-12">
+                <h2>History</h2>
+                <hr />
+                @Html.Action("History", "Player", new { player_id = @Model.player.id })
+            </div>
+        </div>
+    }
+    <div id="divDetail" class="col-lg-12">
+
+    </div>
+
+
+</div>

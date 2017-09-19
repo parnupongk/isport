@@ -23,11 +23,26 @@ namespace isport_foxhun.Controllers
             }
             return View(model);
         }
+
+        public ActionResult PlayerDetail(PlayerViewModelList model)
+        {
+            //PlayerViewModelList pList = new Models.PlayerViewModelList();
+            //pList.playerList = new AppCodeModel().GetPlayerAll(txtSearch);
+            return PartialView(model);
+        }
+
         public ActionResult player(string player_id)
         {
             PlayerViewModelList model = new PlayerViewModelList();
             model.playerList = new AppCodeModel().GetPlayerById(player_id);
             return PartialView(model);
+        }
+
+        public ActionResult ListPlayer(string txtSearch)
+        {
+            PlayerViewModelList pList = new Models.PlayerViewModelList();
+            pList.playerList = new AppCodeModel().GetPlayerAll(txtSearch);
+            return View(pList);
         }
 
         [HttpPost]

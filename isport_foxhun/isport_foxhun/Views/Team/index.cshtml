@@ -7,7 +7,7 @@
 <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
 <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script> 
 <link rel="stylesheet" href="~/Content/bootstrap.css" />
-<h2>Team</h2>
+
 
 <script>
   $( function() {
@@ -17,7 +17,18 @@
 
 @foreach (var model in Model.modelTeam)
 {
-
+    using (Html.BeginForm("update", "team", FormMethod.Post, new { @class = "form-horizontal", role = "form", enctype = "multipart/form-data" }))
+    {
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>Team</h2>
+                </div>
+                <div class="col-md-6">
+                    <input id="btnSubmit" type="submit" class="btn btn-primary btn-lg center-block pull-right" value="update team" />
+                </div>
+            </div>
+        </div>
     <div id="tabs">
         <ul>
             <li><a href="#tabs-1">ทีม</a></li>
@@ -26,7 +37,6 @@
         <div id="tabs-1">
             <div class="row">
                 @Html.AntiForgeryToken()
-                <hr />
                 @Html.HiddenFor(m => model.id)
                 <div class="col-md-2">
                     <div class="form-group">
@@ -43,6 +53,9 @@
                             }
                         </div>
                     </div>
+                    <div class="form-group">
+                        <input type="file" name="fileLogo" id="fileLogo" required accept=".png , .jpg ,.gif" />
+                    </div>
                 </div>
                 <div class="col-md-10">
                     <div class="form-group">
@@ -50,9 +63,15 @@
                             เอกสารใบสมัคร :
                         </div>
                         <div class="col-md-9">
-                            @{ var link = model.file2; }
-                            <a href="@link.Replace("~","..")" class="btn-link pull-left" target="_blank">แบบฟอร์มสมัครking-power's-cup 2017</a>
+                            <div class="col-md-6">
+                                @{ var link = model.file2; }
+                                <a href="@link.Replace("~", "..")" class="btn-link pull-left" target="_blank">แบบฟอร์มสมัครking-power's-cup 2017</a>
+                            </div>
+                                <div class="col-md-6">
+                                <input type="file" name="fileDocument" id="fileDocument" required accept=".doc" />
+                            </div>
                         </div>
+                        
                     </div>
                 </div>
                 <div class="col-md-5">
@@ -70,7 +89,7 @@
                             Email:
                         </div>
                         <div class="col-md-9">
-                            @Html.TextBoxFor(m => model.email, new { @class = "form-control" })
+                            @Html.TextBoxFor(m => model.email, new { @class = "form-control" ,@readonly= "readonly" })
                         </div>
                     </div>
                 </div>
@@ -80,7 +99,7 @@
                             ทีม:
                         </div>
                         <div class="col-md-9">
-                            @Html.TextBoxFor(m => model.name, new { @class = "form-control" })
+                            @Html.TextBoxFor(m => model.name, new { @class = "form-control", @readonly = "readonly" })
                         </div>
                     </div>
                     <div class="form-group">
@@ -88,7 +107,7 @@
                             Password:
                         </div>
                         <div class="col-md-9">
-                            @Html.TextBoxFor(m => model.password, new { @class = "form-control" })
+                            @Html.TextBoxFor(m => model.password, new { @class = "form-control", @readonly = "readonly" })
                         </div>
                     </div>
 
@@ -314,7 +333,7 @@
             </div>
         </div>
     </div>
-
+                                }
 
 
 

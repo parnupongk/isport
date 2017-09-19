@@ -171,35 +171,7 @@ namespace isport_foxhun.Controllers
 
                 #region upload image
                 HttpPostedFileBase file = null;
-                /*foreach(HttpPostedFileBase f in image)
-                {
-                    string pic = Path.GetFileName(file.FileName);
-                    path = Server.MapPath(modelFileUpload.pathDirectory) + pic;
-
-                    if (file != null && file.ContentLength > 0)
-                    {
-                        try
-                        {
-                            if (!Directory.Exists(Server.MapPath(modelFileUpload.pathDirectory)))
-                            {
-                                Directory.CreateDirectory(Server.MapPath(modelFileUpload.pathDirectory));
-                            }
-                        }
-                        catch { }
-
-                        switch (f.ToString())
-                        {
-                            case "1": model.image = modelFileUpload.pathDirectory + pic; ; break;
-                            case "2": model.file2 = modelFileUpload.pathDirectory + pic; break;
-                            case "3": model.file3 = modelFileUpload.pathDirectory + pic; break;
-                            case "4": model.file4 = modelFileUpload.pathDirectory + pic; break;
-                            case "5": model.file5 = modelFileUpload.pathDirectory + pic; break;
-                            case "6": model.file6 = modelFileUpload.pathDirectory + pic; break;
-                            case "7": model.file7 = modelFileUpload.pathDirectory + pic; break;
-                            case "8": model.file8 = modelFileUpload.pathDirectory + pic; break;
-                        }
-                    }
-                }*/
+               
                 for (int i = 1; i < 9; i++)
                 {
                     switch (i)
@@ -273,7 +245,7 @@ namespace isport_foxhun.Controllers
                     user.role = AppCodeModel.USERROLE.TEAM.ToString();
                     user.team_id = teamId;
                     new foxhunt_users().insert(user);
-                    //AppUtils.Session.User = user;
+                    AppUtils.Session.User = user;
                     #endregion
 
                     #region insert team
@@ -329,7 +301,7 @@ namespace isport_foxhun.Controllers
 
                 TempData["Register_Message"] = System.Configuration.ConfigurationManager.AppSettings["Register_Message"];
 
-                return RedirectToAction("login", "account", new { id = teamId });//View("Region",model);//View(model); //RedirectToAction("VerifyPhoneNumber", new { PhoneNumber = model.Number });
+                return RedirectToAction("index", "team", new { id = teamId });//View("Region",model);//View(model); //RedirectToAction("VerifyPhoneNumber", new { PhoneNumber = model.Number });
             }catch(Exception ex)
             {
                 ModelState.AddModelError("", ex.Message);

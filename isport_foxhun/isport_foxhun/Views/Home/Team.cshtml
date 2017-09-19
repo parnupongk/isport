@@ -8,7 +8,7 @@
 
 
             $("#region").autocomplete({
-                
+
                 source: function (request, response) {
                     $.ajax({
                         url: "/Home/Province",
@@ -43,7 +43,7 @@
                 error: function (file, response) {
                     file.previewElement.classList.add("dz-error");
                 }
-                
+
             });
         });
 
@@ -78,6 +78,7 @@
         @Html.ValidationSummary("", new { @class = "text-danger" })
         <div class="col-md-2">
             <div class="form-group">
+                <h4>รูป Logo ทีม/โรงเรียน</h4>
                 <div class="form-group">
                     @{ if (Model != null && Model.image != null)
                 {
@@ -89,12 +90,12 @@
                             <img src="~/images/KING_POWER_CUP_LOGO_B.jpg" class="img-thumbnail" style="max-height:150px;" />
                         }
                     }
-                    </div>
-                    <div class="form-group">
-                        <input type="file" name="image" id="image" required />
-                    </div>
+                </div>
+                <div class="form-group">
+                    <input type="file" name="image" id="image" required accept=".png , .jpg ,.gif" />
                 </div>
             </div>
+        </div>
         <div class="col-md-10">
             <div class="form-group">
                 <div class="col-md-3 control-label">
@@ -105,58 +106,58 @@
                 </div>
             </div>
         </div>
-            <div class="col-md-5">
-                <div class="form-group">
-                    <div class="col-md-3 control-label">
-                        จังหว้ด:
-                    </div>
-                    <div class="col-md-9">
-                        @Html.TextBoxFor(m => m.region, new { @class = "form-control" ,required = "required" })
-                        @Html.ValidationMessageFor(m => m.region, "", new { @class = "text-danger" })
-                    </div>
+        <div class="col-md-5">
+            <div class="form-group">
+                <div class="col-md-3 control-label">
+                    จังหว้ด:
                 </div>
-
-
-
-
-                <div class="form-group">
-                    <div class="col-md-3 control-label">
-                        Email:
-                    </div>
-                    <div class="col-md-9">
-                        @Html.TextBoxFor(m => m.email, new { @class = "form-control", required = "required" })
-                        @Html.ValidationMessageFor(m => m.email, "", new { @class = "text-danger" })
-                    </div>
-                </div>
-
-            </div>
-            <div class="col-md-5">
-
-                <div class="form-group">
-                    <div class="col-md-3 control-label">
-                        ทีม:
-                    </div>
-                    <div class="col-md-9">
-                        @Html.TextBoxFor(m => m.name, new { @class = "form-control", required = "required" })
-                        @Html.ValidationMessageFor(m => m.name, "", new { @class = "text-danger" })
-                    </div>
-                </div>
-                <div class="form-group">
-                    <div class="col-md-3 control-label">
-                        Password:
-                    </div>
-                    <div class="col-md-9">
-                        @Html.TextBoxFor(m => m.password, new { @class = "form-control", required = "required" })
-                        @Html.ValidationMessageFor(m => m.password, "", new { @class = "text-danger" })
-                    </div>
+                <div class="col-md-9">
+                    @Html.TextBoxFor(m => m.region, new { @class = "form-control", required = "required" })
+                    @Html.ValidationMessageFor(m => m.region, "", new { @class = "text-danger" })
                 </div>
             </div>
 
+
+
+
+            <div class="form-group">
+                <div class="col-md-3 control-label">
+                    Email:
+                </div>
+                <div class="col-md-9">
+                    @Html.TextBoxFor(m => m.email, new { @class = "form-control", required = "required" })
+                    @Html.ValidationMessageFor(m => m.email, "", new { @class = "text-danger" })
+                </div>
+            </div>
 
         </div>
+        <div class="col-md-5">
+
+            <div class="form-group">
+                <div class="col-md-3 control-label">
+                    ทีม:
+                </div>
+                <div class="col-md-9">
+                    @Html.TextBoxFor(m => m.name, new { @class = "form-control", required = "required" })
+                    @Html.ValidationMessageFor(m => m.name, "", new { @class = "text-danger" })
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-md-3 control-label">
+                    Password:
+                </div>
+                <div class="col-md-9">
+                    @Html.TextBoxFor(m => m.password, new { @class = "form-control", required = "required" })
+                    @Html.ValidationMessageFor(m => m.password, "", new { @class = "text-danger" })
+                </div>
+            </div>
+        </div>
+
+
+    </div>
 
         <h2>Step 2</h2><p class="text-info"><h4>ข้อมูลทีมงาน</h4></p>
-        <hr/>
+        <hr />
         <div class="row">
             <div class="col-md-6 form-group">
                 <div class="col-md-3">
@@ -164,7 +165,7 @@
                         <img src="~/images/KING_POWER_CUP_LOGO_B.jpg" class="img-thumbnail" style="max-height:150px;" />
                     </div>
                     <div class="form-group">
-                        <input type="file" name="image1" id="image1" required />
+                        <input type="file" name="image1" id="image1" required accept=".png , .jpg ,.gif" />
                         @Html.ValidationMessageFor(m => m.image1, "", new { @class = "text-danger" })
                     </div>
                 </div>
@@ -194,7 +195,7 @@
                         <img src="~/images/KING_POWER_CUP_LOGO_B.jpg" class="img-thumbnail" style="max-height:150px;" />
                     </div>
                     <div class="form-group">
-                        <input type="file" name="image2" id="image2" required />
+                        <input type="file" name="image2" id="image2" required accept=".png , .jpg ,.gif" />
                         @Html.ValidationMessageFor(m => m.image2, "", new { @class = "text-danger" })
                     </div>
                 </div>
@@ -255,7 +256,7 @@
                     </div>
                     <div class="form-group">
                         <input type="file" name="image4" id="image4" />
-                        @Html.ValidationMessageFor(m => m.image4, "", new { @class = "text-danger"  })
+                        @Html.ValidationMessageFor(m => m.image4, "", new { @class = "text-danger" })
                     </div>
                 </div>
                 <div class="col-md-9">
@@ -339,7 +340,7 @@
 
         </div>
         <div class="row">
-            
+
             <div class="form-group">
                 <div class="col-md-12">
                     <input id="btnSubmit" type="submit" class="btn btn-primary btn-lg center-block" value="สมัคร KING POWER'S CUP" />
@@ -348,7 +349,7 @@
         </div>
 
                         }
-<!-- 
+<!--
 <h2>Step 2</h2>
 <h4>Upload ข้อมูลนักกีฬา (รูป + Excel)</h4>
 <hr />
@@ -368,10 +369,3 @@
 </div>
 
     -->
-
-
-
-
-
-
-
