@@ -64,8 +64,8 @@
                         </div>
                         <div class="col-md-9">
                             <div class="col-md-6">
-                                @{ var link = model.file2; }
-                                <a href="@link.Replace("~", "..")" class="btn-link pull-left" target="_blank">แบบฟอร์มสมัครking-power's-cup 2017</a>
+                                @{ var link = model.file2; var name = link.Split('/')[link.Split('/').Length - 1];  }
+                                <a href="@link.Replace("~", "..")" class="btn-link pull-left" target="_blank">@name</a>
                             </div>
                                 <div class="col-md-6">
                                 <input type="file" name="fileDocument" id="fileDocument" required accept=".doc" />
@@ -124,12 +124,12 @@
                         <div class="form-group">
                             @{ if (model.id != null && model.file3 != null)
                                 {
-                                    <img src="@Url.Content(model.file3)" class="img-thumbnail" style="max-height:150px;" />
+                                    <img src="@Url.Content(model.file3)" class="img-thumbnail" style="max-height:150px;min-height:120px;" />
                                     @Html.HiddenFor(m => model.file3)
                                 }
                                 else
                                 {
-                                    <img src="~/images/isport.png" class="img-thumbnail" style="max-height:150px;" />
+                                    <img src="~/images/isport.png" class="img-thumbnail" style="max-height:150px;min-height:120px;" />
                                 }
                             }
                         </div>
@@ -159,12 +159,12 @@
                         <div class="form-group">
                             @{ if (model.id != null && model.file4 != null)
                                 {
-                                    <img src="@Url.Content(model.file4)" class="img-thumbnail" style="max-height:150px;" />
+                                    <img src="@Url.Content(model.file4)" class="img-thumbnail" style="max-height:150px;min-height:120px;" />
                                     @Html.HiddenFor(m => model.file4)
                                 }
                                 else
                                 {
-                                    <img src="~/images/isport.png" class="img-thumbnail" style="max-height:150px;" />
+                                    <img src="~/images/isport.png" class="img-thumbnail" style="max-height:150px;min-height:120px;" />
                                 }
                             }
                         </div>
@@ -194,12 +194,12 @@
                         <div class="form-group">
                             @{ if (model.id != null && model.file5 != null)
                                 {
-                                    <img src="@Url.Content(model.file5)" class="img-thumbnail" style="max-height:150px;" />
+                                    <img src="@Url.Content(model.file5)" class="img-thumbnail" style="max-height:150px;min-height:120px;" />
                                     @Html.HiddenFor(m => model.file5)
                                 }
                                 else
                                 {
-                                    <img src="~/images/isport.png" class="img-thumbnail" style="max-height:150px;" />
+                                    <img src="~/images/isport.png" class="img-thumbnail" style="max-height:150px;min-height:120px;" />
                                 }
                             }
                         </div>
@@ -229,12 +229,12 @@
                         <div class="form-group">
                             @{ if (model.id != null && model.file6 != null)
                                 {
-                                    <img src="@Url.Content(model.file6)" class="img-thumbnail" style="max-height:150px;" />
+                                    <img src="@Url.Content(model.file6)" class="img-thumbnail" style="max-height:150px;min-height:120px;" />
                                     @Html.HiddenFor(m => model.file6)
                                 }
                                 else
                                 {
-                                    <img src="~/images/isport.png" class="img-thumbnail" style="max-height:150px;" />
+                                    <img src="~/images/isport.png" class="img-thumbnail" style="max-height:150px;min-height:120px;" />
                                 }
                             }
                         </div>
@@ -263,12 +263,12 @@
                         <div class="form-group">
                             @{ if (model.id != null && model.file7 != null)
                                 {
-                                    <img src="@Url.Content(model.file7)" class="img-thumbnail" style="max-height:150px;" />
+                                    <img src="@Url.Content(model.file7)" class="img-thumbnail" style="max-height:150px;min-height:120px;" />
                                     @Html.HiddenFor(m => model.file7)
                                 }
                                 else
                                 {
-                                    <img src="~/images/isport.png" class="img-thumbnail" style="max-height:150px;" />
+                                    <img src="~/images/isport.png" class="img-thumbnail" style="max-height:150px;min-height:120px;" />
                                 }
                             }
                         </div>
@@ -297,12 +297,12 @@
                         <div class="form-group">
                             @{ if (model.id != null && model.file8 != null)
                                 {
-                                    <img src="@Url.Content(model.file8)" class="img-thumbnail" style="max-height:150px;" />
+                                    <img src="@Url.Content(model.file8)" class="img-thumbnail" style="max-height:150px;min-height:120px;" />
                                     @Html.HiddenFor(m => model.file8)
                                 }
                                 else
                                 {
-                                    <img src="~/images/isport.png" class="img-thumbnail" style="max-height:150px;" />
+                                    <img src="~/images/isport.png" class="img-thumbnail" style="max-height:150px;min-height:120px;" />
                                 }
                             }
                         </div>

@@ -78,8 +78,9 @@ namespace isport
 
                         if(strMpCode == "8021" && Request["click_id"] != null)
                         {
-                            string url = "http://tk.pluckyaff.com/advBack.php?click_id={0}&adv_id=32&security_code=6803565087199bbc24493b13636641d4";
-                            rtn = new SendService.sendpost().SendGet(string.Format(url, Request["click_id"]));
+                            //"&aff_id=" + HttpContext.Current.Request["aff_id"] + "&source_id=" + HttpContext.Current.Request["source_id"]
+                            string url = "http://tk.pluckyaff.com/advBack.php?click_id={0}&adv_id=32&security_code=6803565087199bbc24493b13636641d4&aff_id={1}&source_id={2}";
+                            rtn = new SendService.sendpost().SendGet(string.Format(url, Request["click_id"], Request["aff_id"], Request["source_id"]));
                             ExceptionManager.WriteError("M&M >>" + rtn);
                         }
 

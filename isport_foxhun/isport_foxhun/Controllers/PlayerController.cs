@@ -202,36 +202,44 @@ namespace isport_foxhun.Controllers
         [HttpPost]
         public ActionResult insertplayer(PlayerViewModel model, HttpPostedFileBase image) // insert player for team
         {
-            HttpPostedFileBase file = image;
-            if (file != null && file.ContentLength > 0)
+            try
             {
-                string pic = System.IO.Path.GetFileName(file.FileName);
-                string path = Server.MapPath("~/images/") + pic;
+                HttpPostedFileBase file = image;
+                if (file != null && file.ContentLength > 0)
+                {
+                    string pic = System.IO.Path.GetFileName(file.FileName);
+                    string path = Server.MapPath("~/images/") + pic;
 
-                file.SaveAs(path);
-                // Update data model
-                model.player.image = "~/images/" + pic;
+                    file.SaveAs(path);
+                    // Update data model
+                    model.player.image = "~/images/" + pic;
+                }
+
+                //string[] txtParam = new string[] { "ctr_", "att_", "def_", "tac_", "phy_", "men_" };
+                model.player.team_id = model.player.team_id;
+                model.player.datetime = DateTime.Now;
+                model.player.sum = 0;
+                model.player.control = "0";
+                model.player.attack = "0";
+                model.player.defense = "0";
+                model.player.tacktick = "0";
+                model.player.physical = "0";
+                model.player.mental = "0";
+
+
+
+                model.player.id = Guid.NewGuid().ToString();
+                AppCodeModel.InsertPlayer(model);
+
+
+                return RedirectToAction("Index", "Team", new { id = model.player.team_id });//View("~/team/index.cshtml", null, new { id = Request["team_id"] });
+                                                                                            //return PartialView("~/views/player/insert.cshtml", null);
             }
-
-            //string[] txtParam = new string[] { "ctr_", "att_", "def_", "tac_", "phy_", "men_" };
-            model.player.team_id = model.player.team_id;
-            model.player.datetime = DateTime.Now;
-            model.player.sum = 0;
-            model.player.control ="0";
-            model.player.attack = "0";
-            model.player.defense = "0";
-            model.player.tacktick = "0";
-            model.player.physical = "0";
-            model.player.mental = "0";
-            
-
-
-            model.player.id = Guid.NewGuid().ToString();
-            AppCodeModel.InsertPlayer(model);
-
-
-            return RedirectToAction("Index", "Team", new { id = model.player.team_id });//View("~/team/index.cshtml", null, new { id = Request["team_id"] });
-            //return PartialView("~/views/player/insert.cshtml", null);
+            catch (Exception ex)
+            {
+                ModelState.AddModelError("", ex.Message);
+                return View("newplayer","player",new {team_id= model.player.team_id });
+            }
         }
 
 
