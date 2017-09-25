@@ -6,21 +6,21 @@
     {
         <div class="col-md-4">
             <div class="thumbnail">
-                <div class="caption">
+                <div class="caption" style="min-height:320px;">
                     <div class="row">
                         <div class="col-md-8">
-                            <h3>@list.name </h3>
+                            <p><b>@list.name </b></p>
                             <p>Position : @list.position</p>
                             <p>Age :@list.age wigth :@list.wight hight :@list.hight</p>
                         </div>
                         <div class="col-md-4">
                             @{ if (list.image != null)
                                 {
-                                    <img src="@Url.Content(list.image)" class="img-thumbnail" style="max-height:150px;min-height:90px;" />
+                                    <img src="@Url.Content(list.image)" class="img-thumbnail" style="max-height:150px;min-height:150px;" />
                                 }
                                 else
                                 {
-                                    <img src="~/images/isport.png" class="img-thumbnail" style="max-height:150px;min-height:90px;" />
+                                    <img src="~/images/isport.png" class="img-thumbnail" style="max-height:150px;min-height:150px;" />
                                 }
                             }
                         </div>

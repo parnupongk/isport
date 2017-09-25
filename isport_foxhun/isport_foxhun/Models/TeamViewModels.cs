@@ -26,7 +26,7 @@ namespace isport_foxhun.Models
                                         ,new SqlParameter("@seq",model.seq)
                                         ,new SqlParameter("@update_date",DateTime.Now)
                                         ,new SqlParameter("@name",model.name)
-                                        ,new SqlParameter("@detail",model.name)
+                                        ,new SqlParameter("@detail",model.detail)
                                         ,new SqlParameter("@image",model.image)
                                         ,new SqlParameter("@username",model.username)
                                         ,new SqlParameter("@contact",model.contact)

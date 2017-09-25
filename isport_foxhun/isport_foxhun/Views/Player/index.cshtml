@@ -3,7 +3,7 @@
 @model isport_foxhun.Models.PlayerViewModel
 
 <h2>Player</h2>
-
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 <script type="text/javascript">
 
     $(document).ready(function () {
@@ -204,19 +204,19 @@
 
                     <div class="form-group">
                         <div class="col-md-2 control-label">
-                            จำนวนนัดที่ลงเล่น :
+                            1st Team Apps :
                         </div>
                         <div class="col-md-2">
                             @Html.TextBoxFor(m => m.player.competition, new { onkeydown = "return ValidateNumber(event);", @class = "form-control" })
                         </div>
                         <div class="col-md-2 control-label">
-                            ประตูที่ทำได้ :
+                            Goals Scored :
                         </div>
                         <div class="col-md-2">
                             @Html.TextBoxFor(m => m.player.score, new { onkeydown = "return ValidateNumber(event);", @class = "form-control" })
                         </div>
                         <div class="col-md-2 control-label">
-                            จำนวนครั้งที่ได้เห็น :
+                            No. of Times Seen :
                         </div>
                         <div class="col-md-2">
                             @Html.TextBoxFor(m => m.player.see, new { onkeydown = "return ValidateNumber(event);", @class = "form-control" })

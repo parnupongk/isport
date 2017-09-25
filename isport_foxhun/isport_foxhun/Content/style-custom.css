@@ -10,10 +10,10 @@ body.single .gdlr-header-wrapper{ background-image: url('../images/bg_header.jpg
 body.single-portfolio .gdlr-header-wrapper{ background-image: url('../images/bg_header.jpg'); }
 body.archive .gdlr-header-wrapper, body.search .gdlr-header-wrapper{ background-image: url('../images/bg_header.jpg'); }
 body.error404 .gdlr-header-wrapper{ background-image: url('../images/bg_header.jpg'); }
-h1, h2, h3, h4, h5, h6, .gdlr-title-font{ font-family: "Open Sans Condensed"; }
-body, input, textarea, select{ font-family: "Open Sans"; }
-.gdlr-navigation-wrapper .gdlr-main-menu > li > a{ font-family: "Open Sans Condensed"; }
-.gdlr-slider-item{ font-family: "ABeeZee"; }
+h1, h2, h3, h4, h5, h6, .gdlr-title-font{ font-family: "KingPower" "Open Sans Condensed"; }
+body, input, textarea, select{ font-family: "KingPower" "Open Sans"; }
+.gdlr-navigation-wrapper .gdlr-main-menu > li > a{ font-family: "KingPower" "Open Sans Condensed"; }
+.gdlr-slider-item{ font-family: "KingPower" "ABeeZee"; }
 body{ font-size: 13px; }
 h1{ font-size: 47px; }
 h2{ font-size: 41px; }

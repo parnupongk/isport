@@ -8,9 +8,9 @@
     @foreach (var list in Model.teamList)
     {
         <div class="col-md-4">
-            <div class="thumbnail" style="min-height:200px;">
-                <div class="caption">
-                    <div class="row">
+            <div class="thumbnail" style="min-height:260px;">
+                <div class="caption" style="min-height:260px;">
+                    <div class="row" style="min-height:210px;">
                         <div class="col-md-8">
                             <div class="form-group">
                                 <p class="lead">Team: @list.name</p>
@@ -35,10 +35,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row" >
                         <div class="col-md-12">
                             <p>
-                                <a class="btn btn-primary center-block" target="_blank" href="~/team/index?id=@list.id">more detail&raquo;</a>
+                                <a class="btn btn-primary center-block"  target="_blank" href="~/team/index?id=@list.id">more detail&raquo;</a>
                             </p>
                         </div>
                     </div>

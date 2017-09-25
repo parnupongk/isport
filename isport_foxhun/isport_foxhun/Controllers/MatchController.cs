@@ -26,7 +26,7 @@ namespace isport_foxhun.Controllers
             string[] team = Request.Form["teamList"] != null ? Request.Form["teamList"].Split(',') :null;
             if (team.Length > 0)
             {
-                int rtn = MatchModels.insertMatch(matchId, Request.Form["matchdate"], (team.Length > 0 ? team[0] : ""), (team.Length > 1 ? team[1] : ""), Request.Form["txtField"]);
+                int rtn = MatchModels.insertMatch(matchId, Request.Form["matchdate"], (team.Length > 0 ? team[0] : ""), (team.Length > 1 ? team[1] : ""), Request.Form["field"]);
                 for (int i = 1; i < 3; i++)
                 {
                     string[] playerId = Request.Form["infoPlayer_team" + i.ToString()] != null ? Request.Form["infoPlayer_team" + i.ToString()].Split(',') : null;

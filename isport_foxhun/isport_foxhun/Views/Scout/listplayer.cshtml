@@ -5,31 +5,40 @@
     int index = 1;
 }
 
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+
+
 <script>
-    
+
 
     $(document).ready(function () {
         var compare1 = "";
-        
+
+        $(function () {
+            $("#tabs").tabs();
+        });
+
     });
 
-    function GetCompare(id)
-    {
+    function GetCompare(id) {
         $.ajax({
             type: "GET",
             url: "/player/compareplayer",
             data: { id: id }
         }).done(function (htmlResponse) {
-            console.log(@index);
-            
-            if ($("#lblCompare").val() == "" ) {
+            //console.log(index);
+
+            if ($("#lblCompare").val() == "") {
                 compare1 = "false";
                 $("#compare1").html(htmlResponse)
                 $("#lblCompare").val("false");
+                alert("keep success");
             } else {
                 $("#compare2").html(htmlResponse)
+                alert("keep success");
             }
-            @{ 
+            @{
                 index++;
             }
         });
@@ -41,42 +50,54 @@
 <h2>List Player</h2>
 
 <input id="lblCompare" type="hidden" value="" />
-<div class="container">
+<div class="row" style="margin-left:20px;">
 
-    <div class="row">
+    <div class="col-md-6"></div>
 
-        <div class="col-md-8"></div>
-
-        @using (Ajax.BeginForm("listplayer", "scout", new AjaxOptions { UpdateTargetId = "grid_list", HttpMethod = "POST" }))
-        {
-            <div class="col-md-4">
-                <div class="input-group">
-                    <input type="text" id="txtSearch" name="txtSearch" class="form-control pull-right" placeholder="Search for name or position">
-                    <div class="input-group-btn">
-                        <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
-                        <button class="btn btn-default">Search</button>
-                    </div>
+    @using (Ajax.BeginForm("listplayer", "scout", new AjaxOptions { UpdateTargetId = "grid_list", HttpMethod = "POST" }))
+    {
+        <div class="col-md-6">
+            <div class="input-group">
+                <input type="text" id="txtSearch" name="txtSearch" class="form-control pull-right" placeholder="Search for name or position">
+                <div class="input-group-btn">
+                    <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                    <button class="btn btn-default">Search</button>
                 </div>
             </div>
-        }
-
-
-    </div>
-
-    <hr />
-
-    <div id="grid_list" class="row">
-
-           @Html.Action("PlayerDetail", "scout", Model)
-
-    </div>
+        </div>
+    }
 
 
 </div>
-<hr>
-<h2>Compare Player</h2>
+<hr />
+<div id="tabs">
+    <ul>
+        <li><a href="#tabs-1">List Player</a></li>
+        <li><a href="#tabs-2">Compare Player</a></li>
+    </ul>
+    <div id="tabs-1">
+        <div>
 
-    <div class="row">
-        <div id="compare1" class="col-md-6" style="width:50%;max-width:50%;"></div>
-        <div id="compare2" class="col-md-6" style="width:50%;max-width:50%;"></div>
+            
+
+            
+
+            <div id="grid_list" class="row">
+
+                @Html.Action("PlayerDetail", "scout", Model)
+
+            </div>
+
+
+        </div>
     </div>
+    <div id="tabs-2">
+        <div class="row">
+            <div id="compare1" class="col-md-6" style="width:50%;max-width:50%;"></div>
+            <div id="compare2" class="col-md-6" style="width:50%;max-width:50%;"></div>
+        </div>
+    </div>
+</div>
+        
+     
+        

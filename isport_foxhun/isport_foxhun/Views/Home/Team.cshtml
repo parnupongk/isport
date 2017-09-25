@@ -62,7 +62,7 @@
 
 <p class="text-success">@ViewBag.StatusMessage</p>
 
-<h2>Register</h2>
+
 
 
 @using (Html.BeginForm("Team", "Home", FormMethod.Post, new { @class = "form-horizontal", id = "frmMain", role = "form", enctype = "multipart/form-data" }))
@@ -70,7 +70,8 @@
 
 
     <!-- Html.ValidationSummary("", new { class = "text-danger" })-->
-    <div class="container">
+    <div class="container" style="margin-top:-70px;">
+        <h2>Register</h2>
         @Html.AntiForgeryToken()
         <h2>Step 1</h2>
         <hr />
@@ -105,8 +106,6 @@
                     <input type="file" class="form-control" name="fileDoc" id="fileDoc" required />
                 </div>
             </div>
-        </div>
-        <div class="col-md-5">
             <div class="form-group">
                 <div class="col-md-3 control-label">
                     จังหว้ด:
@@ -116,10 +115,17 @@
                     @Html.ValidationMessageFor(m => m.region, "", new { @class = "text-danger" })
                 </div>
             </div>
-
-
-
-
+        </div>
+        <div class="col-md-5">
+            <div class="form-group">
+                <div class="col-md-3 control-label">
+                    Team Name :
+                </div>
+                <div class="col-md-9">
+                    @Html.TextBoxFor(m => m.name, new { @class = "form-control", required = "required" })
+                    @Html.ValidationMessageFor(m => m.name, "", new { @class = "text-danger" })
+                </div>
+            </div>
             <div class="form-group">
                 <div class="col-md-3 control-label">
                     Email:
@@ -135,11 +141,11 @@
 
             <div class="form-group">
                 <div class="col-md-3 control-label">
-                    ทีม:
+                    ชื่อทีม:
                 </div>
                 <div class="col-md-9">
-                    @Html.TextBoxFor(m => m.name, new { @class = "form-control", required = "required" })
-                    @Html.ValidationMessageFor(m => m.name, "", new { @class = "text-danger" })
+                    @Html.TextBoxFor(m => m.detail, new { @class = "form-control", required = "required" })
+                    @Html.ValidationMessageFor(m => m.detail, "", new { @class = "text-danger" })
                 </div>
             </div>
             <div class="form-group">

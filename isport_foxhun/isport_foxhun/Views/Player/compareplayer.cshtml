@@ -10,7 +10,7 @@
 
     <hr />
     <div class="col-md-12">
-        <div class="thumbnail">
+        <div class="thumbnail" style="min-height:250px;">
             <div class="caption">
                 <div class="row">
                     @Html.HiddenFor(m => m.player.id)
@@ -93,14 +93,14 @@
 
                             <div class="form-group">
                                 <div class="col-md-4 control-label">
-                                    จำนวนนัดที่ลงเล่น : @Model.player.competition
+                                    1st Team Apps : @Model.player.competition
                                 </div>
                                 <div class="col-md-4 control-label">
-                                    ประตูที่ทำได้ : @Model.player.score
+                                    Goals Scored : @Model.player.score
                                 </div>
 
                                 <div class="col-md-4 control-label">
-                                    จำนวนครั้งที่เห็น : @Model.player.see
+                                    Times  of Seen : @Model.player.see
                                 </div>
                             </div>
 

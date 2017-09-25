@@ -28,6 +28,8 @@ namespace isport_foxhun.Models
                 throw new Exception(ex.Message);
             }
         }
+
+      
         public int insert(foxhun_users user)
         {
             try

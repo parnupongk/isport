@@ -394,6 +394,8 @@
     <Content Include="bin\roslyn\Microsoft.CSharp.Core.targets" />
     <Content Include="bin\roslyn\Microsoft.VisualBasic.Core.targets" />
     <Content Include="bin\roslyn\VBCSCompiler.exe.config" />
+    <Content Include="fonts\KingPowerText-Regular.otf" />
+    <Content Include="fonts\KingPowerText-Regular.ttf" />
     <None Include="Properties\PublishProfiles\kingpowerscup.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />

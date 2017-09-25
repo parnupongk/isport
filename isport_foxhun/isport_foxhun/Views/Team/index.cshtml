@@ -64,8 +64,13 @@
                         </div>
                         <div class="col-md-9">
                             <div class="col-md-6">
-                                @{ var link = model.file2; var name = link.Split('/')[link.Split('/').Length - 1];  }
-                                <a href="@link.Replace("~", "..")" class="btn-link pull-left" target="_blank">@name</a>
+                                @{ if (model.file2 != null && model.file2.Split('/').Count() > 0)
+                                    {
+                                        var link = model.file2; var name = link.Split('/')[link.Split('/').Length - 1];
+
+                                        <a href="@link.Replace("~", "..")" class="btn-link pull-left" target="_blank">@name</a>
+                                     }
+                                    }
                             </div>
                                 <div class="col-md-6">
                                 <input type="file" name="fileDocument" id="fileDocument" required accept=".doc" />
@@ -73,8 +78,6 @@
                         </div>
                         
                     </div>
-                </div>
-                <div class="col-md-5">
                     <div class="form-group">
                         <div class="col-md-3 control-label">
                             จังหว้ด:
@@ -83,7 +86,17 @@
                             @Html.TextBoxFor(m => model.region, new { @class = "form-control" })
                         </div>
                     </div>
-
+                </div>
+                <div class="col-md-5">
+                    
+                    <div class="form-group">
+                        <div class="col-md-3 control-label">
+                            Team Name:
+                        </div>
+                        <div class="col-md-9">
+                            @Html.TextBoxFor(m => model.name, new { @class = "form-control", @readonly = "readonly" })
+                        </div>
+                    </div>
                     <div class="form-group">
                         <div class="col-md-3 control-label">
                             Email:
@@ -96,10 +109,10 @@
                 <div class="col-md-5">
                     <div class="form-group">
                         <div class="col-md-3 control-label">
-                            ทีม:
+                            ชื่อทีม:
                         </div>
                         <div class="col-md-9">
-                            @Html.TextBoxFor(m => model.name, new { @class = "form-control", @readonly = "readonly" })
+                            @Html.TextBoxFor(m => model.detail, new { @class = "form-control", @readonly = "readonly" })
                         </div>
                     </div>
                     <div class="form-group">
