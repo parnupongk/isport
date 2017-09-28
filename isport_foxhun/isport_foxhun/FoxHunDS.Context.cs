@@ -520,7 +520,7 @@ namespace isport_foxhun
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("usp_foxhun_usersinsert", idParameter, createdateParameter, usernameParameter, passwordParameter, roleParameter, team_idParameter);
         }
     
-        public virtual int usp_foxhun_matchinsert(string id, Nullable<System.DateTime> createdate, Nullable<System.DateTime> updatedate, string matchdate, string team1, string team2, string ht, string ft, string field)
+        public virtual int usp_foxhun_matchinsert(string id, Nullable<System.DateTime> createdate, Nullable<System.DateTime> updatedate, string matchdate, string team1, string team2, string ht, string ft, string field, string round)
         {
             var idParameter = id != null ?
                 new ObjectParameter("id", id) :
@@ -558,7 +558,11 @@ namespace isport_foxhun
                 new ObjectParameter("field", field) :
                 new ObjectParameter("field", typeof(string));
     
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("usp_foxhun_matchinsert", idParameter, createdateParameter, updatedateParameter, matchdateParameter, team1Parameter, team2Parameter, htParameter, ftParameter, fieldParameter);
+            var roundParameter = round != null ?
+                new ObjectParameter("round", round) :
+                new ObjectParameter("round", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("usp_foxhun_matchinsert", idParameter, createdateParameter, updatedateParameter, matchdateParameter, team1Parameter, team2Parameter, htParameter, ftParameter, fieldParameter, roundParameter);
         }
     }
 }

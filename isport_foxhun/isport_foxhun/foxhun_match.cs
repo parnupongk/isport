@@ -23,5 +23,6 @@ namespace isport_foxhun
         public string ht { get; set; }
         public string ft { get; set; }
         public string field { get; set; }
+        public string round { get; set; }
     }
 }

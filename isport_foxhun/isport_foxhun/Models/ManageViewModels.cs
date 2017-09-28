@@ -31,7 +31,49 @@ namespace isport_foxhun.Models
     {
         public List<foxhun_player> playerList { get; set; }
     }
+    public class PlayertoScoutedViewModelList
+    {
+        public List<PlayerVModel> playerList { get; set; }
+    }
+    public class PlayerVModel
+    {
+        public string id { get; set; }
+        public string region { get; set; }
+        public string team { get; set; }
+        public System.DateTime datetime { get; set; }
+        public int? index { get; set; }
+        public int? seq { get; set; }
+        public string position { get; set; }
+        public string name { get; set; }
+        public string control { get; set; }
+        public string attack { get; set; }
+        public string tacktick { get; set; }
+        public string defense { get; set; }
+        public string physical { get; set; }
+        public string mental { get; set; }
+        public string adversary { get; set; }
+        public string contact { get; set; }
+        public string HT { get; set; }
+        public string FT { get; set; }
+        public int? competition { get; set; }
+        public int? score { get; set; }
+        public int? see { get; set; }
+        public string detail { get; set; }
+        public int? wight { get; set; }
+        public int? hight { get; set; }
+        public int? age { get; set; }
+        public string country { get; set; }
+        public string image { get; set; }
+        public int? sum { get; set; }
+        public string team_id { get; set; }
+        public int? number { get; set; }
+        public string birthday { get; set; }
+        public string nameen { get; set; }
+        public string size { get; set; }
+        public string sizepants { get; set; }
 
+        public bool isScouted { get; set; }
+    }
     public class RegionViewModel
     {
         

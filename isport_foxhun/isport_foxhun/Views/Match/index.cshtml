@@ -39,16 +39,16 @@
 @using (Html.BeginForm("Match", "Match", FormMethod.Post, new { @class = "form-horizontal", role = "form", enctype = "multipart/form-data" }))
 {
 <div class="row">
-    <div class="col-md-4"><p class="lead center-block">Team 1</p></div>
-    <div class="col-md-4"></div>
-    <div class="col-md-4"><p class="lead center-block">Team 2</p></div>
+    <div class="col-md-4 col-sm-4"><p class="lead center-block">Team 1</p></div>
+    <div class="col-md-4 col-sm-4"></div>
+    <div class="col-md-4 col-sm-4"><p class="lead center-block">Team 2</p></div>
  </div>
 <div class="row">
-    <div class="col-md-4">
+    <div class="col-md-4 col-sm-4">
         
         @Html.DropDownListFor(m => m.teamList, new SelectList(Model.teamList, "id", "name"), "-select-", new { @class = "form-control", @id = "team1", @name = "team1", @onchange = "CallChangefunc1(this.value)" , required = "required" })
     </div>
-    <div class="col-md-4">
+    <div class="col-md-4 col-sm-4">
         <div class="form-group">
             <div class='input-group date' id='datetimepicker1'>
                 <input type='text' id="matchdate" name="matchdate" class="form-control" required placeholder="วันที่แข่งขัน"  />
@@ -61,17 +61,20 @@
             @Html.DropDownListFor(m => m.field, new SelectList(new string[] { "สนามกีฬาองค์การบริการส่วนจังหวัดขอนแก่น", "สนามกีฬาเทศบาลนครเชียงใหม่", "สนามกีฬาเทศบาลเมืองฉะเชิงเทรา", "สนามฟุตบอลมหาวิทยาลัยสงขลานครินทร์จังหวดสงขลา", "สนามกีฬากลางจังหวัดพระนครศรีอยุธยา", "สนามซ้อมสโมสรฟุตบอล SCG เมืองทอง ยูไนเต็ด" }), "-select-", new { @class = "form-control", @id = "txtField", @name = "txtField", required = "required" })
            @* <input type='text' id="txtField" name="txtField" required class="form-control" placeholder="สนามที่แข่งขัน" /> *@
             </div>
+        <div class="form-group">
+            <input type='text' id="txtRound" name="txtRound" class="form-control" required placeholder="รอบ" />
+        </div>
         </div>
 
-    <div class="col-md-4">
+    <div class="col-md-4 col-sm-4">
         
         @Html.DropDownListFor(m => m.teamList, new SelectList(Model.teamList, "id", "name"), "-select-", new { @class = "form-control", @id = "team2", @name = "team2", @onchange = "CallChangefunc2(this.value)", required = "required" })
     </div>
 </div>
 <div class="row">
-    <div id="divPlayer1" class="col-md-6 alert alert-info panel-body" style="min-height:300px;"></div>
+    <div id="divPlayer1" class="col-md-6 col-sm-6 alert alert-info panel-body" style="min-height:300px;"></div>
     
-    <div id="divPlayer2" class="col-md-6 alert alert-info panel-body" style="min-height:300px;"></div>
+    <div id="divPlayer2" class="col-md-6 col-sm-6 alert alert-info panel-body" style="min-height:300px;"></div>
 
 </div>
 

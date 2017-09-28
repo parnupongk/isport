@@ -26,7 +26,7 @@ namespace isport_foxhun.Controllers
             string[] team = Request.Form["teamList"] != null ? Request.Form["teamList"].Split(',') :null;
             if (team.Length > 0)
             {
-                int rtn = MatchModels.insertMatch(matchId, Request.Form["matchdate"], (team.Length > 0 ? team[0] : ""), (team.Length > 1 ? team[1] : ""), Request.Form["field"]);
+                int rtn = MatchModels.insertMatch(matchId, Request.Form["matchdate"], (team.Length > 0 ? team[0] : ""), (team.Length > 1 ? team[1] : ""), Request.Form["field"],Request.Form["txtRound"]);
                 for (int i = 1; i < 3; i++)
                 {
                     string[] playerId = Request.Form["infoPlayer_team" + i.ToString()] != null ? Request.Form["infoPlayer_team" + i.ToString()].Split(',') : null;
@@ -60,8 +60,8 @@ namespace isport_foxhun.Controllers
         {
             ViewBag.team = team;
             ViewBag.team_id = team_id;
-            PlayerViewModelList model = new PlayerViewModelList();
-            model.playerList = new PlayerViewModels().GetPlayerByTeamId(team_id);
+            PlayertoScoutedViewModelList model = new PlayertoScoutedViewModelList();
+            model.playerList = new PlayerViewModels().GetPlayertoScoutedByTeamId(team_id);
             return PartialView(model);
         }
     }

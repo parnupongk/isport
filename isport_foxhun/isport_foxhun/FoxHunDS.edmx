@@ -20,6 +20,7 @@ warning 6002: The table/view 'ISPORT.dbo.foxhun_match' does not have a primary k
           <Property Name="ht" Type="nvarchar" MaxLength="10" />
           <Property Name="ft" Type="nvarchar" MaxLength="10" />
           <Property Name="field" Type="nvarchar" MaxLength="100" />
+          <Property Name="round" Type="nvarchar" MaxLength="100" />
         </EntityType>
         <!--Errors Found During Generation:
 warning 6002: The table/view 'ISPORT.dbo.foxhun_player' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
@@ -219,6 +220,7 @@ warning 6002: The table/view 'ISPORT.dbo.foxhun_users' does not have a primary k
           <Parameter Name="ht" Type="nvarchar" Mode="In" />
           <Parameter Name="ft" Type="nvarchar" Mode="In" />
           <Parameter Name="field" Type="nvarchar" Mode="In" />
+          <Parameter Name="round" Type="nvarchar" Mode="In" />
         </Function>
         <Function Name="usp_foxhun_playerinsert" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
           <Parameter Name="id" Type="nvarchar" Mode="In" />
@@ -357,7 +359,8 @@ warning 6002: The table/view 'ISPORT.dbo.foxhun_users' does not have a primary k
     [foxhun_match].[team2] AS [team2], 
     [foxhun_match].[ht] AS [ht], 
     [foxhun_match].[ft] AS [ft], 
-    [foxhun_match].[field] AS [field]
+    [foxhun_match].[field] AS [field], 
+    [foxhun_match].[round] AS [round]
     FROM [dbo].[foxhun_match] AS [foxhun_match]</DefiningQuery>
           </EntitySet>
           <EntitySet Name="foxhun_player" EntityType="Self.foxhun_player" store:Type="Tables" store:Schema="dbo">
@@ -529,6 +532,7 @@ warning 6002: The table/view 'ISPORT.dbo.foxhun_users' does not have a primary k
           <Property Name="ht" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
           <Property Name="ft" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
           <Property Name="field" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="round" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
         </EntityType>
         <EntityType Name="foxhun_player">
           <Key>
@@ -849,6 +853,7 @@ warning 6002: The table/view 'ISPORT.dbo.foxhun_users' does not have a primary k
             <Parameter Name="ht" Mode="In" Type="String" />
             <Parameter Name="ft" Mode="In" Type="String" />
             <Parameter Name="field" Mode="In" Type="String" />
+            <Parameter Name="round" Mode="In" Type="String" />
           </FunctionImport>
         </EntityContainer>
         <ComplexType Name="usp_foxhun_regionselectall_Result">
@@ -876,6 +881,7 @@ warning 6002: The table/view 'ISPORT.dbo.foxhun_users' does not have a primary k
           <EntitySetMapping Name="foxhun_match">
             <EntityTypeMapping TypeName="isportModel.foxhun_match">
               <MappingFragment StoreEntitySet="foxhun_match">
+                <ScalarProperty Name="round" ColumnName="round" />
                 <ScalarProperty Name="field" ColumnName="field" />
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="createdate" ColumnName="createdate" />

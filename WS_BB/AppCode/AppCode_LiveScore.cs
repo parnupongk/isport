@@ -522,7 +522,7 @@ namespace WS_BB
                              , new XAttribute("matchDate", DatetoText(dr["match_date"].ToString(), lang))
                             , new XAttribute("mschId", matchDR["msch_id"].ToString())
                             , new XAttribute("status", match_status)
-                            , new XAttribute("minutes", "FT")
+                            , new XAttribute("minutes", match_status)
                             , new XAttribute("curent_period", "Finished")
                             , new XAttribute("teamName1", (lang == Country.th.ToString()) ? teamName1 : teamName1EN)
                             , new XAttribute("score_home", resultTeam1)
@@ -532,7 +532,7 @@ namespace WS_BB
                             ));
                         #endregion
                     }
-
+                    
                     rtnXML.Element("SportApp").Add(xElement);
                 }
 
@@ -543,6 +543,8 @@ namespace WS_BB
                 // rtnXML.Element("SportApp").Add(new XElement("status", "error")
                 //     , new XElement("message", ex.Message));
             }
+            rtnXML.Element("SportApp").Add(new XElement("status", "success")
+                        , new XElement("message", ""));
             return rtnXML;
         }
 

@@ -165,8 +165,8 @@ namespace WS_BB
                              new XAttribute("header", "")
                              , new XAttribute("date", AppCode_LiveScore.DateText(DateTime.Now.ToString("yyyyMMdd")))
                              ));
-                rtnXML = new AppCode_LiveScore().CommandGetScore(rtnXML, countryId, lang, contestGroupId, AppCode_LiveScore.MatchType.inprogress, addTime, "N");
-
+                //rtnXML = new AppCode_LiveScore().CommandGetScore(rtnXML, countryId, lang, contestGroupId, AppCode_LiveScore.MatchType.inprogress, addTime, "N");
+                rtnXML = new AppCode_LiveScore().CommandLiveScore_(rtnXML, "", "00001", false, lang);
                 if (rtnXML.Element("SportApp").Element("League") == null)
                 {
                     rtnXML.Element("SportApp").Element("status").Remove();

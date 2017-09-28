@@ -105,7 +105,7 @@ namespace isport_foxhun.Models
                 throw new Exception(ex.Message);
             }
         }
-        public static int insertMatch(string matchId,string txtMatcDate,string team1,string team2,string txtField)
+        public static int insertMatch(string matchId,string txtMatcDate,string team1,string team2,string txtField,string txtRound)
         {
             try
             {
@@ -119,6 +119,7 @@ namespace isport_foxhun.Models
                                         ,new SqlParameter("@ht","")
                                         ,new SqlParameter("@ft","")
                                         ,new SqlParameter("@field",txtField)
+                                        ,new SqlParameter("@round",txtRound)
                                         });
             }catch(Exception ex)
             {

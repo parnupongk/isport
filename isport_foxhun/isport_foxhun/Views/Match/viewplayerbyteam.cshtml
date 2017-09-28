@@ -1,4 +1,4 @@
-﻿@model isport_foxhun.Models.PlayerViewModelList
+﻿@model isport_foxhun.Models.PlayertoScoutedViewModelList
 
 @{
     Layout = null;
@@ -12,19 +12,12 @@
 
     var nameInfo = "infoPlayer_" + ViewBag.team;
 
-    <div class="col-md-6">
-        <div class="thumbnail">
+    <div class="col-md-6 col-sm-6">
+        <div class="thumbnail" style="min-height:250px;">
             <div class="caption">
-                <div class="row">
+                <div class="row" style="margin-left:10px;">
                     <div class="row">
-                        <div class="col-md-8">
-                            <label class="checkbox-inline text-info">
-                                <input type="checkbox" class="checkbox top" style="border:solid;" name=@nameInfo value="@list.id" id="@list.id">
-                                @list.name</label>
-
-                            <p class="container text-info">Position : @list.position</p>
-                        </div>
-                        <div class="col-md-4">
+                        <div class="col-md-6 col-sm-6">
                             @{ if (list.image != null)
                                 {
                                     <img src="@Url.Content(list.image)" class="img-thumbnail" style="max-height:150px;" />
@@ -35,18 +28,39 @@
                                 }
                             }
                         </div>
+                        <div class="col-md-6 col-sm-6">
+                            <p>No. @list.seq</p>
+                            <p>@list.isScouted</p>
+                        </div>
+                        </div>
+                    <div class="row">
+                        
+                            <label class="checkbox-inline text-info">
+                                <input type="checkbox" class="checkbox top" style="border:solid;" name=@nameInfo  value="@list.id" id="@list.id">
+                                @list.name</label>
+                      
+                    </div>
+                    
+                    <div class="row">
+                        <br/>
+                        <p>Position : @list.position</p>
+                        <p>Age :@list.age weight :@list.wight height :@list.hight</p>
+                    </div>
+                    <div class="row">
 
-                    </div>
-                    <div class="container">
-                        <p>Age :@list.age wigth :@list.wight hight :@list.hight</p>
-                    </div>
-                    <div class="row" style="margin:10px;">
-                    </div>
-                    <!--<h6>Detail :</h6>
-                    <p>
-                        list.detail
-                    </p>
-                     p><a class="btn btn-primary" target="_blank" href="~/player/index?id=@list.id">more detail&raquo;</a></!--p> -->
+
+                        <p>
+                            Detail :
+                            @if (list.detail != null && list.detail.Length > 50)
+                            {
+                                @list.detail.Substring(0, 50)
+                            }
+                            else
+                            {
+                                @list.detail
+                            }
+                        </p>
+                    </div> 
                 </div>
             </div>
         </div>
