@@ -13,7 +13,7 @@
     var nameInfo = "infoPlayer_" + ViewBag.team;
 
     <div class="col-md-6 col-sm-6">
-        <div class="thumbnail" style="min-height:250px;">
+        <div class="thumbnail" style="min-height:300px;">
             <div class="caption">
                 <div class="row" style="margin-left:10px;">
                     <div class="row">
@@ -29,8 +29,12 @@
                             }
                         </div>
                         <div class="col-md-6 col-sm-6">
+                            <div class="row" style="height:5px;background-color:@ViewBag.color;border-style:solid;border-width:1px;"></div>
                             <p>No. @list.seq</p>
-                            <p>@list.isScouted</p>
+                            @if (list.isScouted)
+                            {
+                            <p style="color:red;">Scouted</p>
+                            }
                         </div>
                         </div>
                     <div class="row">
@@ -49,7 +53,7 @@
                     <div class="row">
 
 
-                        <p>
+                        <p class="small">
                             Detail :
                             @if (list.detail != null && list.detail.Length > 50)
                             {

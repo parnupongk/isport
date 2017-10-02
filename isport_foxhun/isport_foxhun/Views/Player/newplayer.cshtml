@@ -113,7 +113,7 @@
                         Position :
                     </div>
                     <div class="col-md-4">
-                        @Html.DropDownListFor(model => model.player.position, new SelectList(new string[] { "GK", "CB", "LB", "FB", "LWB", "RWB", "DM", "CM", "AM", "LW", "RW", "CF", "WF", "ST" }), "-select-", new { @class = "form-control", @onchange = "CallChangefunc(this.value)", required = "required" })
+                        @Html.DropDownListFor(model => model.player.position, new SelectList(new string[] { "GK", "CB", "LB", "FB", "DM", "CM", "AM", "LW", "RW", "CF", "WF", "ST" }), "-select-", new { @class = "form-control", @onchange = "CallChangefunc(this.value)", required = "required" })
                     </div>
                     <div class="col-md-2 control-label">
                         No. :

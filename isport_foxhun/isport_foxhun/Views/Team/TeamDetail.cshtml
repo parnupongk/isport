@@ -7,19 +7,19 @@
 <div class="container">
     @foreach (var list in Model.teamList)
     {
-        <div class="col-md-4">
+        <div class="col-md-4 col-sm-4">
             <div class="thumbnail" style="min-height:260px;">
                 <div class="caption" style="min-height:260px;">
                     <div class="row" style="min-height:210px;">
-                        <div class="col-md-8">
+                        <div class="col-md-8 col-sm-8">
                             <div class="form-group">
-                                <p class="lead">Team: @list.name</p>
+                                <p>Team: @list.name</p>
                             </div>
                             <div class="form-group">
-                                <p class="lead">Province: @list.region</p>
+                                <p>Province: @list.region</p>
                             </div>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-4 col-sm-4">
                             <div class="form-group">
                                 <div class="form-group">
                                     @{ if (list != null && list.image != "")

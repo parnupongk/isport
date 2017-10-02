@@ -72,26 +72,29 @@
 <hr />
 <div id="tabs">
     <ul>
-        <li><a href="#tabs-1">List Player</a></li>
-        <li><a href="#tabs-2">Compare Player</a></li>
+        <li><a href="#tabs-1">player to scout</a></li>
+        <li><a href="#tabs-2">List Player</a></li>
+        <li><a href="#tabs-3">Compare Player</a></li>
+        
     </ul>
     <div id="tabs-1">
         <div>
-
-            
-
-            
-
+            <div id="playertoscout" class="row">
+                @Html.Action("playertoscout", "scout", Model)
+            </div>
+        </div>
+    </div>
+    <div id="tabs-2">
+        <div>
             <div id="grid_list" class="row">
 
                 @Html.Action("PlayerDetail", "scout", Model)
 
             </div>
 
-
         </div>
     </div>
-    <div id="tabs-2">
+    <div id="tabs-3">
         <div class="row">
             <div id="compare1" class="col-md-6" style="width:50%;max-width:50%;"></div>
             <div id="compare2" class="col-md-6" style="width:50%;max-width:50%;"></div>

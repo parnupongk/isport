@@ -9,9 +9,9 @@
                 <div class="caption" style="min-height:320px;">
                     <div class="row">
                         <div class="col-md-8">
-                            <p><b>@list.name </b></p>
+                            <p>No. @list.seq</p>
                             <p>Position : @list.position</p>
-                            <p>Age :@list.age wigth :@list.wight hight :@list.hight</p>
+                            
                         </div>
                         <div class="col-md-4">
                             @{ if (list.image != null)
@@ -26,6 +26,9 @@
                         </div>
                     </div>
                     <div class="row" style="margin:10px;">
+                        <p>@list.name</p>
+                        <p>Age :@list.age wigth :@list.wight hight :@list.hight</p>
+                        <p class="small">Team : @list.team</p>
                         <!--
 
                         <div class="progress">
@@ -42,7 +45,7 @@
 
                     </div>
                     <h6>Detail :</h6>
-                    <p>
+                    <p class="small">
                         @list.detail
                     </p>
                     <p><a class="btn btn-primary" id="btnPlayerDetail" onclick="GetCompare('@list.id');" >Keep detail&raquo;</a></p> <!-- href="~/player/index?id=list.id" -->

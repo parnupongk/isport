@@ -20,19 +20,20 @@
                     <h3> @item.match</h3>
                 </div>
             </div>
-            <h3> Player Favorite</h3>
+            <h3> player to scout</h3>
             <hr />
         }
 
         
-        <div class="col-md-4">
-            <div class="thumbnail" style="min-height:250px;">
+        <div class="col-md-4 col-sm-4">
+            <div class="thumbnail" style="min-height:300px;">
                 <div class="caption">
                     <div class="row">
-                        <div class="col-md-8">
-                            <p class="lead">Name : @item.player</p>
-                            <p class="lead">Position : @item.player_position</p>
-                            <p class="lead">Team : @item.team</p>
+                        <div class="col-md-8 col-sm-8">
+                            <p>No. : @item.seq</p>
+                            <p>Name : @item.player</p>
+                            <p>Position : @item.player_position</p>
+                            
 
                         </div>
                         <div class="col-md-4">
@@ -49,6 +50,10 @@
                         </div><br/>
                         <p><a class="btn btn-primary" target="_blank" href="~/player/index?id=@item.player_id">more detail&raquo;</a></p>
                     </div>
+                    <div class="row">
+                        <p class="small">Team : @item.team</p>
+                        <p class="small">Detail : @item.detail</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -58,7 +63,7 @@
 
 </div>
 <hr>
-<h3> Player Other</h3>
+<h3> other player</h3>
 
 <div class="container">
     <div class="row">

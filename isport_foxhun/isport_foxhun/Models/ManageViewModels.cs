@@ -30,6 +30,8 @@ namespace isport_foxhun.Models
     public class PlayerViewModelList
     {
         public List<foxhun_player> playerList { get; set; }
+        public List<ScoutViewModels> listScout { get; set; }
+
     }
     public class PlayertoScoutedViewModelList
     {

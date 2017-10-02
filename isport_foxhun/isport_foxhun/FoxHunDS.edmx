@@ -151,6 +151,7 @@ warning 6002: The table/view 'ISPORT.dbo.foxhun_scout' does not have a primary k
           <Property Name="user_id" Type="nvarchar" MaxLength="36" />
           <Property Name="player_id" Type="nvarchar" MaxLength="36" />
           <Property Name="team_id" Type="nvarchar" MaxLength="36" />
+          <Property Name="color" Type="nvarchar" MaxLength="20" />
         </EntityType>
         <!--Errors Found During Generation:
 warning 6002: The table/view 'ISPORT.dbo.foxhun_team' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
@@ -461,7 +462,8 @@ warning 6002: The table/view 'ISPORT.dbo.foxhun_users' does not have a primary k
     [foxhun_scout].[match_id] AS [match_id], 
     [foxhun_scout].[user_id] AS [user_id], 
     [foxhun_scout].[player_id] AS [player_id], 
-    [foxhun_scout].[team_id] AS [team_id]
+    [foxhun_scout].[team_id] AS [team_id], 
+    [foxhun_scout].[color] AS [color]
     FROM [dbo].[foxhun_scout] AS [foxhun_scout]</DefiningQuery>
           </EntitySet>
           <EntitySet Name="foxhun_team" EntityType="Self.foxhun_team" store:Type="Tables" store:Schema="dbo">
@@ -653,6 +655,7 @@ warning 6002: The table/view 'ISPORT.dbo.foxhun_users' does not have a primary k
           <Property Name="user_id" Type="String" MaxLength="36" FixedLength="false" Unicode="true" />
           <Property Name="player_id" Type="String" MaxLength="36" FixedLength="false" Unicode="true" />
           <Property Name="team_id" Type="String" MaxLength="36" FixedLength="false" Unicode="true" />
+          <Property Name="color" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
         </EntityType>
         <EntityType Name="foxhun_team">
           <Key>
@@ -996,6 +999,7 @@ warning 6002: The table/view 'ISPORT.dbo.foxhun_users' does not have a primary k
           <EntitySetMapping Name="foxhun_scout">
             <EntityTypeMapping TypeName="isportModel.foxhun_scout">
               <MappingFragment StoreEntitySet="foxhun_scout">
+                <ScalarProperty Name="color" ColumnName="color" />
                 <ScalarProperty Name="team_id" ColumnName="team_id" />
                 <ScalarProperty Name="player_id" ColumnName="player_id" />
                 <ScalarProperty Name="id" ColumnName="id" />

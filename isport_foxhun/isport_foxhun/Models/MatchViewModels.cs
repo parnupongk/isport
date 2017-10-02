@@ -87,7 +87,7 @@ namespace isport_foxhun.Models
                 throw new Exception(ex.Message);
             }
         }
-        public static int insertScout(string matchId,string userId,string playerId,string teamId)
+        public static int insertScout(string matchId,string userId,string playerId,string teamId,string color)
         {
             try
             {
@@ -98,6 +98,7 @@ namespace isport_foxhun.Models
                                     ,new SqlParameter("@user_id",userId)
                                     ,new SqlParameter("@player_id",playerId)
                                     ,new SqlParameter("@team_id",teamId)
+                                    ,new SqlParameter("@color",color)
                                         });
             }
             catch(Exception ex)

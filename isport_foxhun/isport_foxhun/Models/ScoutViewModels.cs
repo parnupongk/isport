@@ -23,6 +23,8 @@ namespace isport_foxhun.Models
         public string player_image { get; set; }
         public string team_id { get; set; }
         public string team { get; set; }
+        public string seq { get; set; }
+        public string detail { get; set; }
     }
     public class ScoutModels : AppCodeModel
     {
@@ -42,6 +44,53 @@ namespace isport_foxhun.Models
             catch(Exception ex) { ExceptionManager.WriteError(ex.Message); }
             return rtn;
         }
+
+        public List<ScoutViewModels> GetScoutByScoutId(string scoutId)
+        {
+            try
+            {
+                using (var db = this.GetDBContext())
+                {
+                    var scout = (from s in db.foxhun_scout
+                                 from s1 in db.foxhun_player.Where(p => p.id == s.player_id)
+                                 from t in db.foxhun_team.Where(p => p.id == s.team_id)
+                                 where (s.user_id == scoutId) // && s.user_id == AppUtils.Session.User.id
+                                 select new ScoutViewModels
+                                 {
+                                     id = s.id,
+                                     match_id = s.match_id,
+                                     match = "",//GetMatchName(s.match_id).ToString(),
+                                     team = t.name,
+                                     player = s1.name,
+                                     player_id = s1.id,
+                                     player_position = s1.position,
+                                     player_image = s1.image,
+                                     seq = s1.seq.ToString(),
+                                     detail = s1.detail
+                                 })
+                                .AsEnumerable()
+                                .Select(x => new ScoutViewModels
+                                {
+                                    id = x.id,
+                                    match_id = x.match_id,
+                                    match = GetMatchName(x.match_id).ToString(),
+                                    team = x.team,
+                                    player = x.player,
+                                    player_id = x.player_id,
+                                    player_position = x.player_position,
+                                    player_image = x.player_image,
+                                    seq = x.seq,
+                                    detail = x.detail
+                                }).OrderBy(x => x.player_position);
+                    return scout.ToList();
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+
         public List<ScoutViewModels> GetScoutByMatchId(string matchId)
         {
             try
@@ -61,7 +110,9 @@ namespace isport_foxhun.Models
                                      player = s1.name,
                                      player_id = s1.id,
                                      player_position = s1.position,
-                                     player_image = s1.image
+                                     player_image = s1.image,
+                                     seq = s1.seq.ToString(),
+                                     detail = s1.detail
                                  })
                                 .AsEnumerable()
                                 .Select(x => new ScoutViewModels {
@@ -72,8 +123,10 @@ namespace isport_foxhun.Models
                                     player = x.player,
                                     player_id = x.player_id,
                                     player_position = x.player_position,
-                                    player_image = x.player_image
-                                });
+                                    player_image = x.player_image,
+                                    seq = x.seq,
+                                    detail = x.detail
+                                }).OrderBy(x => x.player_position);
                     return scout.ToList();
                 }
             }

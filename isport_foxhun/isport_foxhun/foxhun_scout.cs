@@ -20,5 +20,6 @@ namespace isport_foxhun
         public string user_id { get; set; }
         public string player_id { get; set; }
         public string team_id { get; set; }
+        public string color { get; set; }
     }
 }

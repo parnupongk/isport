@@ -1,0 +1,46 @@
+﻿@model isport_foxhun.Models.PlayerViewModelList
+
+<div class="=row">
+    @foreach (var lScout in Model.listScout)
+            {
+        <div class="col-md-4 col-sm-4 ">
+            <div class="thumbnail" style="min-height:300px;">
+                <div class="caption">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <p>No. : @lScout.seq</p>
+                            <p>Position : @lScout.player_position</p>
+                        </div>
+                        <div class="col-md-4 col-sm-4">
+                            @if (lScout.player_image != null && lScout.player_image != "")
+                            {
+                                <img src="@Url.Content(lScout.player_image)" class="img-thumbnail" style="max-height:150px;min-height:90px;" />
+                            }
+                            else
+                            {
+                                <img src="~/images/KING_POWER_CUP_LOGO_B.jpg" class="img-thumbnail" style="max-height:150px;min-height:90px;" />
+                            }
+
+
+                        </div><br />
+                        <p><a class="btn btn-primary" target="_blank" href="~/player/index?id=@lScout.player_id">more detail&raquo;</a></p>
+                    </div>
+                    <div class="row">
+                        <p>Name : @lScout.player</p>                        
+                        <p class="small">Team : @lScout.team</p>
+                        <p class="small">Detail : 
+                        @if (lScout.detail != null && lScout.detail.Length > 50)
+                        {
+                            @lScout.detail.Substring(0, 50)
+                        }
+                        else
+                        {
+                            @lScout.detail
+                        }
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+</div>

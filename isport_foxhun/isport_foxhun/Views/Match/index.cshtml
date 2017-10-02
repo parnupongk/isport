@@ -7,10 +7,12 @@
     function CallChangefunc1(e) {
         //console.log(e);
         if (e != "-select-") {
+            var color = $("#listcolor1").val();
+            console.log(color);
             $.ajax({
                 type: "GET",
                 url: "/Match/viewplayerbyteam",
-                data: { team_id: e ,team:"team1"}
+                data: { team_id: e ,team:"team1",color:color}
             }).done(function (htmlResponse) {
                 //console.log(htmlResponse);
                 $("#divPlayer1").html(htmlResponse)
@@ -20,10 +22,12 @@
     function CallChangefunc2(e) {
         //console.log(e);
         if (e != "-select-") {
+            var color1 = $("#listcolor2").val();
+            console.log(color1 );
             $.ajax({
                 type: "GET",
                 url: "/Match/viewplayerbyteam",
-                data: { team_id: e, team: "team2" }
+                data: { team_id: e, team: "team2", color: color1 }
             }).done(function (htmlResponse) {
                 //console.log(htmlResponse);
                 $("#divPlayer2").html(htmlResponse)
@@ -34,14 +38,14 @@
 <h2></h2>
 @Html.Action("match_list", "Match" ,new { scout_id= ViewBag.scout_id })
 
-<h2>Scout player</h2>
+<h2>Team Sheet</h2>
 @Html.ValidationSummary(true, "", new { @class = "text-danger" })
 @using (Html.BeginForm("Match", "Match", FormMethod.Post, new { @class = "form-horizontal", role = "form", enctype = "multipart/form-data" }))
 {
 <div class="row">
-    <div class="col-md-4 col-sm-4"><p class="lead center-block">Team 1</p></div>
+    <div class="col-md-4 col-sm-4"><p class="lead center-block">Team @Html.DropDownList("listcolor1", ViewData["listcolor"] as SelectList)</p></div>
     <div class="col-md-4 col-sm-4"></div>
-    <div class="col-md-4 col-sm-4"><p class="lead center-block">Team 2</p></div>
+    <div class="col-md-4 col-sm-4"><p class="lead center-block">Team @Html.DropDownList("listcolor2", ViewData["listcolor"] as SelectList)</p></div>
  </div>
 <div class="row">
     <div class="col-md-4 col-sm-4">
@@ -72,9 +76,9 @@
     </div>
 </div>
 <div class="row">
-    <div id="divPlayer1" class="col-md-6 col-sm-6 alert alert-info panel-body" style="min-height:300px;"></div>
+    <div id="divPlayer1" class="col-md-6 col-sm-6 " style="min-height:300px;"></div>
     
-    <div id="divPlayer2" class="col-md-6 col-sm-6 alert alert-info panel-body" style="min-height:300px;"></div>
+    <div id="divPlayer2" class="col-md-6 col-sm-6 " style="min-height:300px;"></div>
 
 </div>
 

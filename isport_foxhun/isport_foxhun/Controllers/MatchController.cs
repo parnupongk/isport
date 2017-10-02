@@ -15,6 +15,14 @@ namespace isport_foxhun.Controllers
             ViewBag.scout_id = id;
             MatchViewModels models = new MatchViewModels();
             models.teamList = new TeamModels().GetTeamAll();
+            var list = new SelectList(new[]
+            {
+                new { ID = "blue", Name = "blue" },
+                new { ID = "white", Name = "white" },
+                new { ID = "red", Name = "red" },
+            }, "ID", "Name");
+
+            ViewData["listcolor"] = list;
             return View(models);
         }
 
@@ -35,7 +43,7 @@ namespace isport_foxhun.Controllers
                         foreach (string p in playerId)
                         {
                             // insert scout
-                            MatchModels.insertScout(matchId, commom.AppUtils.Session.User.id, p, team[i-1]);
+                            MatchModels.insertScout(matchId, commom.AppUtils.Session.User.id, p, team[i-1],( i==1? Request.Form["listcolor1"] : Request.Form["listcolor2"]));
                         }
 
                     }
@@ -56,10 +64,11 @@ namespace isport_foxhun.Controllers
             model.list = new MatchModels().GetMatchAll();
             return PartialView(model);
         }
-        public ActionResult viewplayerbyteam(string team_id,string team)
+        public ActionResult viewplayerbyteam(string team_id,string team,string color)
         {
             ViewBag.team = team;
             ViewBag.team_id = team_id;
+            ViewBag.color = color;
             PlayertoScoutedViewModelList model = new PlayertoScoutedViewModelList();
             model.playerList = new PlayerViewModels().GetPlayertoScoutedByTeamId(team_id);
             return PartialView(model);

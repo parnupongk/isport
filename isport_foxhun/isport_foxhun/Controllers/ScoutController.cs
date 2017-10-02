@@ -38,10 +38,15 @@ namespace isport_foxhun.Controllers
             return PartialView(model);
         }
 
+        public ActionResult playertoscout(PlayerViewModelList model)
+        {
+            return PartialView(model);
+        }
         public ActionResult ListPlayer(string txtSearch)
         {
             PlayerViewModelList pList = new Models.PlayerViewModelList();
             pList.playerList = new AppCodeModel().GetPlayerAll(txtSearch);
+            pList.listScout = new ScoutModels().GetScoutByScoutId(commom.AppUtils.Session.User.id);
             return View(pList);
         }
 
@@ -57,7 +62,7 @@ namespace isport_foxhun.Controllers
                     foreach (string p in playerId)
                     {
                         // insert scout
-                        MatchModels.insertScout(matchId, commom.AppUtils.Session.User.id, p, Request.Form["team"+i.ToString()]);
+                        MatchModels.insertScout(matchId, commom.AppUtils.Session.User.id, p, Request.Form["team"+i.ToString()], "blue");
                     }
 
                 }
