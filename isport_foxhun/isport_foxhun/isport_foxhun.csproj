@@ -244,47 +244,129 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="bin\Antlr3.Runtime.dll" />
-    <Content Include="bin\Antlr3.Runtime.pdb" />
-    <Content Include="bin\EntityFramework.dll" />
-    <Content Include="bin\EntityFramework.SqlServer.dll" />
-    <Content Include="bin\EntityFramework.SqlServer.xml" />
-    <Content Include="bin\EntityFramework.xml" />
-    <Content Include="bin\isport_foxhun.dll" />
-    <Content Include="bin\isport_foxhun.pdb" />
-    <Content Include="bin\Microsoft.ApplicationBlocks.Data.dll" />
-    <Content Include="bin\Microsoft.AspNet.Identity.Core.dll" />
-    <Content Include="bin\Microsoft.AspNet.Identity.Core.xml" />
-    <Content Include="bin\Microsoft.AspNet.Identity.EntityFramework.dll" />
-    <Content Include="bin\Microsoft.AspNet.Identity.EntityFramework.xml" />
-    <Content Include="bin\Microsoft.AspNet.Identity.Owin.dll" />
-    <Content Include="bin\Microsoft.AspNet.Identity.Owin.xml" />
-    <Content Include="bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll" />
-    <Content Include="bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml" />
-    <Content Include="bin\Microsoft.Owin.dll" />
-    <Content Include="bin\Microsoft.Owin.Host.SystemWeb.dll" />
-    <Content Include="bin\Microsoft.Owin.Host.SystemWeb.xml" />
-    <Content Include="bin\Microsoft.Owin.Security.Cookies.dll" />
-    <Content Include="bin\Microsoft.Owin.Security.Cookies.xml" />
-    <Content Include="bin\Microsoft.Owin.Security.dll" />
-    <Content Include="bin\Microsoft.Owin.Security.Facebook.dll" />
-    <Content Include="bin\Microsoft.Owin.Security.Facebook.xml" />
-    <Content Include="bin\Microsoft.Owin.Security.Google.dll" />
-    <Content Include="bin\Microsoft.Owin.Security.Google.xml" />
-    <Content Include="bin\Microsoft.Owin.Security.MicrosoftAccount.dll" />
-    <Content Include="bin\Microsoft.Owin.Security.MicrosoftAccount.xml" />
-    <Content Include="bin\Microsoft.Owin.Security.OAuth.dll" />
-    <Content Include="bin\Microsoft.Owin.Security.OAuth.xml" />
-    <Content Include="bin\Microsoft.Owin.Security.Twitter.dll" />
-    <Content Include="bin\Microsoft.Owin.Security.Twitter.xml" />
-    <Content Include="bin\Microsoft.Owin.Security.xml" />
-    <Content Include="bin\Microsoft.Owin.xml" />
-    <Content Include="bin\Microsoft.Web.Infrastructure.dll" />
-    <Content Include="bin\Newtonsoft.Json.dll" />
-    <Content Include="bin\Newtonsoft.Json.xml" />
-    <Content Include="bin\OracleDataAccress.dll" />
-    <Content Include="bin\OracleDataAccress.pdb" />
-    <Content Include="bin\Owin.dll" />
+    <Content Include="bin\Antlr3.Runtime.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\Antlr3.Runtime.pdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\EntityFramework.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\EntityFramework.SqlServer.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\EntityFramework.SqlServer.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\EntityFramework.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\isport_foxhun.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\isport_foxhun.pdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\Microsoft.ApplicationBlocks.Data.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\Microsoft.AspNet.Identity.Core.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\Microsoft.AspNet.Identity.Core.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\Microsoft.AspNet.Identity.EntityFramework.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\Microsoft.AspNet.Identity.EntityFramework.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\Microsoft.AspNet.Identity.Owin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\Microsoft.AspNet.Identity.Owin.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\Microsoft.Owin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\Microsoft.Owin.Host.SystemWeb.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\Microsoft.Owin.Host.SystemWeb.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\Microsoft.Owin.Security.Cookies.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\Microsoft.Owin.Security.Cookies.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\Microsoft.Owin.Security.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\Microsoft.Owin.Security.Facebook.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\Microsoft.Owin.Security.Facebook.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\Microsoft.Owin.Security.Google.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\Microsoft.Owin.Security.Google.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\Microsoft.Owin.Security.MicrosoftAccount.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\Microsoft.Owin.Security.MicrosoftAccount.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\Microsoft.Owin.Security.OAuth.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\Microsoft.Owin.Security.OAuth.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\Microsoft.Owin.Security.Twitter.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\Microsoft.Owin.Security.Twitter.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\Microsoft.Owin.Security.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\Microsoft.Owin.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\Microsoft.Web.Infrastructure.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\Newtonsoft.Json.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\Newtonsoft.Json.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\OracleDataAccress.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\OracleDataAccress.pdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\Owin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="bin\roslyn\csc.exe" />
     <Content Include="bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll" />
     <Content Include="bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll" />
@@ -294,22 +376,54 @@
     <Content Include="bin\roslyn\System.Reflection.Metadata.dll" />
     <Content Include="bin\roslyn\vbc.exe" />
     <Content Include="bin\roslyn\VBCSCompiler.exe" />
-    <Content Include="bin\System.Web.Helpers.dll" />
-    <Content Include="bin\System.Web.Helpers.xml" />
-    <Content Include="bin\System.Web.Mvc.dll" />
-    <Content Include="bin\System.Web.Mvc.xml" />
-    <Content Include="bin\System.Web.Optimization.dll" />
-    <Content Include="bin\System.Web.Optimization.xml" />
-    <Content Include="bin\System.Web.Razor.dll" />
-    <Content Include="bin\System.Web.Razor.xml" />
-    <Content Include="bin\System.Web.WebPages.Deployment.dll" />
-    <Content Include="bin\System.Web.WebPages.Deployment.xml" />
-    <Content Include="bin\System.Web.WebPages.dll" />
-    <Content Include="bin\System.Web.WebPages.Razor.dll" />
-    <Content Include="bin\System.Web.WebPages.Razor.xml" />
-    <Content Include="bin\System.Web.WebPages.xml" />
-    <Content Include="bin\WebGrease.dll" />
-    <Content Include="bin\WebLibrary.dll" />
+    <Content Include="bin\System.Web.Helpers.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\System.Web.Helpers.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\System.Web.Mvc.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\System.Web.Mvc.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\System.Web.Optimization.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\System.Web.Optimization.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\System.Web.Razor.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\System.Web.Razor.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\System.Web.WebPages.Deployment.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\System.Web.WebPages.Deployment.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\System.Web.WebPages.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\System.Web.WebPages.Razor.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\System.Web.WebPages.Razor.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\System.Web.WebPages.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\WebGrease.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\WebLibrary.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -390,7 +504,9 @@
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="download\แบบฟอร์มสมัครking-power%27s-cup.doc" />
-    <Content Include="bin\isport_foxhun.dll.config" />
+    <Content Include="bin\isport_foxhun.dll.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="bin\roslyn\Microsoft.CSharp.Core.targets" />
     <Content Include="bin\roslyn\Microsoft.VisualBasic.Core.targets" />
     <Content Include="bin\roslyn\VBCSCompiler.exe.config" />
